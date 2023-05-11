@@ -21,7 +21,7 @@ The purpose of a variant is to minimize the necessity to enter selections when r
 
 ### Choose a Variant
 Choose a variant from the drop-down-list *Variant* (1). <br>
-If you create a new variant in SAP after creating the query extraction, click on the **[Refresh]** icon ( ![refresh](/img/content/icons/refresh.png)) to load the new variant.
+If you create a new variant in SAP after creating the query extraction, click ![refresh](/img/content/icons/refresh.png) to load the new variant.
 
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 
@@ -38,7 +38,7 @@ The *Selection Screen* in the query window corresponds to the query's input scre
 {: .box-note }
 **Note:** Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, open the query's input screen in SAP. 
-Click on a selection field and press the function key **[F1]** to display the technical name of the selection field. 
+Click a selection field and press the function key **[F1]** to display the technical name of the selection field. 
 
 Follow the steps below to edit selection fields in Xtract for Alteryx:
 1. Click the **[Edit]** button next to the selection field you want to edit. The window “Edit Selection” opens.

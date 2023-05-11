@@ -21,7 +21,7 @@ Der Zweck einer Variante ist es, Selektionen zu speichern. Das minimiert die Ein
 
 ### Eine Variante wählen
 Wählen Sie eine Variante aus der Drop-Down-Liste *Variant* (1) aus. <br>
-Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen, klicken Sie [Refresh]( ![refresh](/img/content/icons/refresh.png)), um die neue Variante zu laden.
+Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen, klicken Sie ![refresh](/img/content/icons/refresh.png)**, um die neue Variante zu laden.
 
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 
@@ -41,7 +41,7 @@ Um zu verstehen, welches Feld einem Feld in SAP entspricht, öffnen Sie die Eing
 Klicken Sie auf ein Selektionsfeld und drücken Sie die Funktionstaste **[F1]**, um den technischen Namen des Selektionsfeldes anzuzeigen. 
 
 Befolgen Sie die nachstehenden Schritte in Xtract for Alteryx:
-1. Klicken Sie die **[Edit]**-Taste neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.
+1. Klicken Sie auf **[Edit]** neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.
 2. Klicken Sie auf **[Add Selection]**, um ein neues Filterkriterium hinzuzufügen.
 3. Wählen Sie *Include* in der **Sign** (1) Spalte aus, um nur die gefilterten Daten in die Ausgabe aufzunehmen. <br>
 Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten von der Ausgabe auszuschließen.<br>
