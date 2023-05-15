@@ -15,7 +15,7 @@ The following section shows how to use the integration type *Function Module / B
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
-To use this integration type, access to the designated authority objects (RFC) in SAP must be available. For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+To use the integration type *Function Module / BAPI*, access to the designated authority objects (RFC) in SAP must be available. For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
 
 ### Look up a Function Module / BAPI
 
