@@ -20,9 +20,11 @@ A report extraction is possible if the report returns a table-like structure in 
 {: .box-note}
 **Note:** The integration type *Report* is still in preview mode. This means that breaking changes can be released any time. 
 
+<!---
 {: .box-note }
-**Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. As of Z_XTRACT_IS_REMOTE_REPORT version 1.2 access to reports must be explicitly granted. 
+**Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. 
 For more information, see [Installation of Z_XTRACT_IS_REMOTE_REPORT](#sap-customizing).
+-->
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
@@ -38,10 +40,10 @@ The following graphic shows the general workflow of setting up report services w
 
 1. Create a new *Service* of type *Report (preview)*. 
 2. Click **[Save and edit]**. The *Search SAP Reports* menu opens.
-3. Enter the name of a report or the TCODE of a report in the field **Search by a report name or an exact TCODE** (1). When looking up report names, the use of wildcards ( * ) is supported.
+3. Enter the name of a report or the TCODE of a report in the field **Search by a report name or an exact TCODE** (1). The use of wildcards ( * ) is only supported for report names.
 ![SAP-Table-or-Views](/img/content/yunio/report-lookup.png){:class="img-responsive" width="750px"}
-4. To look up report names, click **[Search]** (2). The search results are displayed.<br>
-To look up TCODES, click **[By TCODE]** (2). to display the search results.
+4. To look up report names, click **[Search]** (2).
+To look up TCODES, click **[By TCODE]**.
 5. Select a source file from the list of available search results (3). 
 The extraction settings of *Report (preview)* open automatically.<br>
 
@@ -105,6 +107,10 @@ To understand which field corresponds to a field in SAP, take a look at the repo
 Click on a selection field and press function key F1. 
 This displays the technical name of a selection field.
 
+{: .box-note}
+**Note:** If a selection parameter is left empty, the report uses the value that is defined in the report. 
+
+
 ### Output Columns
 
 This section displays the length and names of the detected report columns. 
@@ -118,18 +124,15 @@ The following example shows how to set up a yunIO service that extracts the SAP 
 1. Create a new service of integration type *Report*, see [Getting Started: Creating a Service](./getting-started#creating-a-service).
 2. Look up the report RLT10010, see [Look Up a Report](#look-up-a-report).
 3. Select a variant or enter selection parameters. This example uses a variant *VAR01*.<br>
-![SAP-Table-or-Views](/img/content/yunio/report-rlt10010.png){:class="img-responsive"}
+![report-rlt10010](/img/content/yunio/report-rlt10010.png){:class="img-responsive"}
 4. Set **Skip rows from top** to 10 to skip the header of the report. Run the report in SAP to determine the number of rows that need to be skipped.
 ![SAP-Table-or-Views](/img/content/yunio/report-sap.png){:class="img-responsive"}
 5. Click **[Detect Columns]** to automatically detect the columns of the report. The detected columns are displayed in the section *Output Columns*.
 6. Click **[Save]** to save the service.
 7. To test the output of the service, run the service in your browser, see [Getting Started: How to Run a Service](./getting-started#how-to-run-a-service).<br>
-![SAP-Table-or-Views](/img/content/yunio/report-response.png){:class="img-responsive"}
+![report-response.png](/img/content/yunio/report-response.png){:class="img-responsive"}
 
 <!---
-wait for Max' feedback on whether the custom function module is installed in the ABAP folder or not.
-yunIO probably can't use the include 1:1, because of the installation path.
-
 ## SAP Customizing
 
 {% include _content/en/sap-customizing/install-report-custom-function-module.md  %}
