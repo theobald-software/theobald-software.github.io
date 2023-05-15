@@ -16,7 +16,7 @@ The [empty template](./empty_template) to copy and fill with content is located 
 
 ### About the introduction information
 Especially for "landing pages" that are placed before a bigger section it is advisable to write an introduction:
-In this section... / this section gives an overview.../ the following section is about...
+In the following section... / the following section gives an overview.../ the following section is about...
 
 Keep in mind that function descriptions differ textually and in terms of formatting from the procedural tasks - a reader must see, if there is a todo immediately.
 <!--Einleitung und kurze Einführung worum es im Folgenden geht, bitte kein "Will"-Future verwenden-->

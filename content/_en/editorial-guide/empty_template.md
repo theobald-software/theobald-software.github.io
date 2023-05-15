@@ -12,7 +12,7 @@ lang: en_GB
 
 
 ### Writing a description
-In this section... / this section gives an overview.../ the following section is about..
+In the following section... / the following section gives an overview.../ the following section is about..
 
 1. Open the xyz. 
 2. Click **[OK]**. The window "Window Name" opens.

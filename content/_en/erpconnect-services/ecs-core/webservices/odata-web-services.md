@@ -13,7 +13,7 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=odata_web_services1
 
 To create an OData web service for ECS Core click *New* in the *Package* section of start screen and select the option *Creates Odata specific web service*. 
 
-Please note that the creation of OData web services has serious limitations compared to REST web service that's why we recommend to use REST web services for your cloud scenarios. You find more detailed information about the exact limitations in this section. 
+Note that the creation of OData web services has serious limitations compared to REST web service that's why we recommend to use REST web services for your cloud scenarios. You find more detailed information about the exact limitations in the following section. 
 
 ![ecscore-webservices7](/img/content/ecscore-webservices7.png){:class="img-responsive"}
 

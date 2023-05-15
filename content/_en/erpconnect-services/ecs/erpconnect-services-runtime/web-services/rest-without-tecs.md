@@ -13,6 +13,6 @@ old_url: /ERPConnect-Services-EN/default.aspx?pageid=rest-without-tecs
 ---
 
 For Programming with ECS and JavaScript we recommend to use our JavaScript Library tEcs.
-If you prefer not to use tEcs you can find in this section some samples. 
+If you prefer not to use tEcs you can find in the following section some samples. 
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
