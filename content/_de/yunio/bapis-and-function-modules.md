@@ -14,6 +14,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 
 Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *Function Module / BAPI*.
 
+{: .box-warning}
+**Warnung!** **Fehlende Berechtigungen** Um den Integrationstyp *Function Module / BAPI* zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+
 ### Einen Funktionsbaustein / BAPI finden
 
 1. Legen Sie einen neuen *Service* vom Typ *Function Module / BAPI* an. 
