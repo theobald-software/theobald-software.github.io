@@ -13,6 +13,10 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 
 The following section shows how to use the integration type *Function Module / BAPI*.
 
+{: .box-warning}
+**Warning!** **Missing Authorization**
+To use this integration type, access to the designated authority objects (RFC) in SAP must be available. For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+
 ### Look up a Function Module / BAPI
 
 1. Create a new *Service* of type *Function Module / BAPI*.
