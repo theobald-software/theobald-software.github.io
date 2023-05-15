@@ -21,7 +21,7 @@ To use the Table component, access to the designated authority objects (RFC) in 
 For more information, refer to the knowledge base article [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
 
-### Look Up an SAP Table or View
+## Look Up an SAP Table or View
 
 1. Create a new *Service* of type *SAP Table or View*. 
 2. Click **[Save and edit]**. The *Search SAP Table or View* menu opens.
@@ -31,7 +31,7 @@ For more information, refer to the knowledge base article [SAP User Rights: Tabl
 5. Select a source file from the list of available search results (3). 
 The extraction settings of *SAP Table and Views* open automatically.<br>
 
-### Settings
+## Settings
 The *SAP Table or View* settings consist of the following subsections:
 - [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
 - [Advanced Settings](#advanced-settings) (5) define how the data is extract from SAP.
@@ -185,10 +185,15 @@ When adding or editing a criteria only the relevant components are displayed e.g
 {: .box-note }
 **Note:** The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
 
+## SAP Customizing
+
+{: .box-note }
+**Note:** SAP customizing is optional. The installation of the custom function module `Z_THEO_READ_TABLE` is recommended.
+
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
 
 *****
 #### Related Links
-- [Knowledge Base Article: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Knowledge Base Article: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+- [Integration Scenarios](./integration)
+- [Knowledge Base Article: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

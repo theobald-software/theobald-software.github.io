@@ -20,7 +20,7 @@ Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *SAP Table 
 Um die Table Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
-### Eine SAP Tabelle oder View finden
+## Eine SAP Tabelle oder View finden
 
 1. Legen Sie einen neuen *Service* vom Typ *SAP Table and Views* an.
 2. Klicken Sie auf **[Save and edit]**. Das *Search SAP Table or View* Menü öffnet sich.
@@ -30,7 +30,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 5. Wählen Sie einen Eintrag aus der Liste der Suchergebnisse aus (3). 
 Die Extraktionseinstellungen für *SAP Tabelle und Ansichten* öffnen sich automatisch.<br>
 
-### Einstellungen
+## Einstellungen
 Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 - [Table or View](#table-or-view) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder View an.
 - [Advanced Settings](#advanced-settings) (5) definieren, wie Daten aus SAP extrahiert werden.
@@ -184,10 +184,14 @@ Alle grün markierten Flächen können bearbeitet werden.<br>
 {: .box-note }
 **Hinweis:** Die WHERE-Bedingung wird überschrieben, wenn eine WHERE-Bedingung manuell in das dafür vorgesehene Textfeld eingetragen wird, bzw. wenn beim Aufruf des Service' eine WHERE-Bedingung in dem Body der Service-Definition übergeben wird.
 
+## SAP Customizing
+
+{: .box-note }
+**Hinweis:** Anpassungen im SAP-System sind optional. Die Installation des Funktionsbausteins `Z_THEO_READ_TABLE` ist empfohlen.
 
 {% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}
 
 *****
 #### Weiterführende Links
-- [Knowledge Base Artikel: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Knowledge Base Artikel: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+- [Integration Scenarios](./integration)
+- [Knowledge Base Artikel: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

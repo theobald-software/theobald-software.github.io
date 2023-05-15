@@ -20,6 +20,10 @@ A report extraction is possible if the report returns a table-like structure in 
 {: .box-note}
 **Note:** The integration type *Report* is still in preview mode. This means that breaking changes can be released any time. 
 
+{: .box-note }
+**Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. As of Z_XTRACT_IS_REMOTE_REPORT version 1.2 access to reports must be explicitly granted. 
+For more information, see [Installation of Z_XTRACT_IS_REMOTE_REPORT](#sap-customizing).
+
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use Reports in yunIO, access to the designated authority objects (RFC) in SAP must be available.
@@ -122,8 +126,11 @@ The following example shows how to set up a yunIO service that extracts the SAP 
 7. To test the output of the service, run the service in your browser, see [Getting Started: How to Run a Service](./getting-started#how-to-run-a-service).<br>
 ![SAP-Table-or-Views](/img/content/yunio/report-response.png){:class="img-responsive"}
 
+<!---
+wait for Max' feedback on whether the custom function module is installed in the ABAP folder or not.
+yunIO probably can't use the include 1:1, because of the installation path.
 
-*****
-#### Related Links
-- [Knowledge Base Article: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Knowledge Base Article: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+## SAP Customizing
+
+{% include _content/en/sap-customizing/install-report-custom-function-module.md  %}
+-->
