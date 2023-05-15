@@ -112,7 +112,7 @@ You can use any other [db client](https://docs.aws.amazon.com/redshift/latest/mg
 
 ![RS-Configure-AnySQL-Add-Profile-Button](/img/content/RS-Configure-AnySQL-Add-Profile-Button.png){:class="img-responsive"}
 
-- In the Create Database Profiles Wizard, click on the button next to the Connection string field.
+- In the Create Database Profiles Wizard, click the button next to the connection string field.
 
 ![RS-Configure-AnySQL-Database-Profiles-Wizard](/img/content/RS-Configure-AnySQL-Database-Profiles-Wizard.png){:class="img-responsive"}
 

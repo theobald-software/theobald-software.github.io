@@ -13,7 +13,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-infopackages
 The following section shows how to use the BW Loader component.
 
 ### Look up an InfoPackage
-1. Within the main window "Write to SAP BW" click on **[Search]** (binocular icon).
+1. Within the main window "Write to SAP BW" click **[Search]** (binocular icon).
 ![BWLoader-Configuration-00](/img/content/BWLoader-Configuration-00.png){:class="img-responsive"}
 The dialog "Look Up InfoPackage" opens. 
 ![BWLoader-Configuration-10](/img/content/BWLoader-Configuration-10.png){:class="img-responsive"}

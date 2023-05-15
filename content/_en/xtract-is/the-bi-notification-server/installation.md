@@ -10,7 +10,7 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation7
 ---
-All tools can be found in the BINoticationReceiver sub directory of the Xtract IS installation directory. The tool can be started via double click on the console program (BINotification-ReceiverConsole.exe) or it can be installed as windows service (BINotificationReceiverService.exe). It is strongly recommended to use the console program for evaluation purpose because it is easier to handle. Later on in production environment, you can install the windows service. To set up the service on the windows system execute *installutil.exe BINotifi-cationReceiverService.exe* on the command line.
+All tools can be found in the BINoticationReceiver sub directory of the Xtract IS installation directory. The tool can be started via double click the console program (BINotification-ReceiverConsole.exe) or it can be installed as windows service (BINotificationReceiverService.exe). It is strongly recommended to use the console program for evaluation purpose because it is easier to handle. Later on in production environment, you can install the windows service. To set up the service on the windows system execute *installutil.exe BINotifi-cationReceiverService.exe* on the command line.
 
 ![Notification-Server-Install-01](/img/content/Notification-Server-Install-01.png){:class="img-responsive" }
 

@@ -12,10 +12,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=creating-an-infocube
 ---
 Before we now discuss the last type of loading, the transaction data, we need an InfoCube into which the data can be loaded.
 Create a new SSIS package, define an OleDB source in the Sales test table and link the pipeline with a BW Loader target.
-Then click on the link *Create Cube* in the editor. The following window will open. Through the pipeline that you already linked from the source, Xtract IS already "knows" how the cube should look like. One InfoObject for each element will be needed to create a cube.
+Click the link *Create Cube* in the editor. The following window opens:.
 
 
 ![BWLoader-Create-InfoCube-01](/img/content/BWLoader-Create-InfoCube-01.png){:class="img-responsive"}
+ Through the already linked pipeline, Xtract IS has the correct properties of the cube. One InfoObject for each element is necessary to create a cube.
 
 OrderID was not in the system as an InfoObject up to now, which is why it should be created by clicking the *Create* link:
 

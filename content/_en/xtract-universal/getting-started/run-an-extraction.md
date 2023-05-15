@@ -18,7 +18,7 @@ You can define runtime parameters and other options to run an extraction directl
 ### Run Extraction 
  
 Select an extraction from the list of Extractions and click **[Run]** to open the "Run Extraction" window.<br>
-You can also right-click on an extraction or use the Main Menu Bar to open the "Run Extraction" window.
+You can alternatively right-click an extraction or use the main menu bar to open the "Run Extraction" window.
 
 ![Run-Table-Extraction](/img/content/xu/xu_run_extraction_dialogue.png){:class="img-responsive"}
 

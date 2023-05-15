@@ -14,7 +14,7 @@ The following section shows how to use the Query component.
 
 ### Look up Queries
 
-1. Within the main window "Extract SAP ERP Queries" click on **[Search]** (binocular icon).
+1. Within the main window "Extract SAP ERP Queries" click **[Search]** (binocular icon).
 ![Query-Defining](/img/content/Query-DefiningExtraction.png){:class="img-responsive" }
 The window "Look Up Query" opens.
 2. Search for **Query Name** or **User Group** by using **[Search]** (binoculars icon), you can use wildcards (*), if needed.

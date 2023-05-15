@@ -41,7 +41,7 @@ Alternatively, click **[Stop]** to start parameterizing, see [Parameterize Trans
 Follow the steps below to assign input and output parameters to a transaction service. <br>
 
 1. Open the transaction service. 
-2. In the *SAP GUI* section click on the action you want to parameterize. The corresponding input screen opens.<br>
+2. In the *SAP GUI* section click the action you want to parameterize. The corresponding input screen opens.<br>
 3. Click on the fields you want to parameterize. The window "Parameterize Element" opens.
 All fields that can be parameterized are highlighted in green when hovering over them. <br>
 ![transaction-actions](/img/content/yunio/va02param.gif)

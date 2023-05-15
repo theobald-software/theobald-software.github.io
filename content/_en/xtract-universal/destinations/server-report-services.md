@@ -117,7 +117,7 @@ The following steps guide you through the creation of an Xtract Universal data s
 
 1. Create a new "Report Server Project" in Visual Studio.
 ![New-Project](/img/content/xu/ssrs/New-Project.png){:class="img-responsive"}
-2. Right-click on the *Shared Data Sources* folder in the *Solution Explorer* and select **Add New Data Source**. The window "Shared Data Source Properties" opens.
+2. Right-click the *Shared Data Sources* folder in the *Solution Explorer* and select **Add New Data Source**. The window "Shared Data Source Properties" opens.
 3. In the tab *General*, assign a name of your choice or leave the default one for the new data source (1).
 4. Select the type *Xtract Universal* from the drop-down list (2). <br>If *Xtract Universal* is not available or displayed in all caps, make sure that the latest Xtract Universal version and *Microsoft Reporting Services Projects* plugin are both installed.
 5. Enter a *connection string* (3) to XU's [Web Server](../security/server-security) in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`. Note that the *connection string* is case sensitive.
@@ -138,7 +138,7 @@ If *Xtract Universal* is not available in the drop-down list (2) even though the
 The following steps guide you through the creation of a Report in Visual Studio using an Xtract Universal data source: 
 
 1. [Add an SSRS extraction as a data source in Visual Studio](#add-an-extraction-as-a-data-source-in-visual-studio).
-2. Right-click on the *Reports* folder in the *Solution Explorer* and select **Add New Report**. The "Report Wizard" opens.
+2. Right-click the *Reports* folder in the *Solution Explorer* and select **Add New Report**. The "Report Wizard" opens.
 3. In the wizard, select a data source and click **[Next]**.
 4. Click **[Query Builder...]**. The window "Query Designer" opens.
 5. Select an Xtract Universal extraction from the drop-down menu (5). <br>If no extractions are available, make sure the *connection string* (3) in the data source is correct and an extraction with an *SQL Server Reporting Server* destination exists in Xtract Universal.

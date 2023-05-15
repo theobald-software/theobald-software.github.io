@@ -80,7 +80,7 @@ The main form provides a text field where you can directly insert an MDX stateme
 
 ![BWCube-Settings-03](/img/content/BWCube-Settings-03.png){:class="img-responsive" }
 
-After inserting the MDX statement, click on **Execute MDX and refresh statement** to get the metadata from the BW system. 
+After inserting the MDX statement, click *Execute MDX and refresh statement* to get the metadata from the BW system. 
 
 ![BWCube-Settings-04](/img/content/BWCube-Settings-04.png){:class="img-responsive" }
 
