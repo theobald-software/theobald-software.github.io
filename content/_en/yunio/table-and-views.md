@@ -33,14 +33,14 @@ The extraction settings of *SAP Table and Views* open automatically.<br>
 
 ### Settings
 The *SAP Table or View* settings consist of the following subsections:
-
-![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
-
 - [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
 - [Advanced Settings](#advanced-settings) (5) define how the data is extract from SAP.
 - [Output Columns](#output-columns) (6) define which columns are extracted.
 - [WHERE Clause](#where-clause) (7) offers an optional data filter.
 - [WHERE Clause Editor](#where-clause-editor) (8) offers a toolkit for creating WHERE clauses.
+
+![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
+
 
 
 ### Table or View
