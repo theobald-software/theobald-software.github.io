@@ -1,0 +1,1991 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_2260_7a6ac31a8c3f554388df46224763b038_\Engine_2260_7c99d16d0ece114a92c19e100b30f3e8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">\SalesData.xlsx|||SalesData</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>SalesData</AnnotationText>
+          <DefaultAnnotationText>SalesData.xlsx
+Query=SalesData</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="64" MaxRecords="">\Sales_Data.hyper</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sales_Data.hyper</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="450" width="144" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Write Sales data to an Excel file</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="558" width="144" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Provide data to Tableau, PowerBI, AutoInsights etc. for visual analytics</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="318" width="144" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse Top 10 Customers</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="234" width="288" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Output Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="234" width="252" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="318" y="234" width="468" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Data Preparation & Cleansing]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_2260_7a6ac31a8c3f554388df46224763b038_\Engine_2260_0aef1832ec873f48ae9e50dafe0ea46d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1032" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from a SAP BW InfoProvider (SD Demo Cube - $0D_DECU) and prepare it for further analysis in Excel or a 3rd party BI solution.
+
+To use the Xtract Cube component which read data from SAP Business Warehouse systems such as BW or BW/4HANA you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Calendar Year/Month" selected="True" rename="Month" />
+            <SelectField field="Document currency" selected="True" rename="Currency" />
+            <SelectField field="Net Value" selected="True" rename="Net Amount" type="FixedDecimal" size="19.2" />
+            <SelectField field="Tax Amount" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="Theobald.Alteryx.Cube.CubeInputToolFactory">
+        <Position x="126" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>BW2</Connection>
+          <Definition>{
+    "mdxDefinition": {
+        "name": "$0D_DECU",
+        "packageSize": 20000,
+        "measures": 
+        [
+            {
+                "name": "[Measures].[0D_COST]",
+                "description": "Costs",
+                "abapType": "FloatingPoint",
+                "shortName": "0D_COST",
+                "caption": "Costs",
+                "customDecimals": 2
+            },
+            {
+                "name": "[Measures].[0D_INV_QTY]",
+                "description": "Billed Quantity",
+                "abapType": "FloatingPoint",
+                "isSelected": true,
+                "shortName": "0D_INV_QTY",
+                "caption": "Billed Quantity",
+                "customDecimals": 3
+            },
+            {
+                "name": "[Measures].[0D_NETVLINV]",
+                "description": "Net Value",
+                "abapType": "FloatingPoint",
+                "isSelected": true,
+                "shortName": "0D_NETVLINV",
+                "caption": "Net Value",
+                "customDecimals": 2
+            },
+            {
+                "name": "[Measures].[0D_TAXAMOUN]",
+                "description": "Tax Amount",
+                "abapType": "FloatingPoint",
+                "isSelected": true,
+                "shortName": "0D_TAXAMOUN",
+                "caption": "Tax Amount",
+                "customDecimals": 2
+            }
+        ],
+        "dimensions": 
+        [
+            {
+                "name": "[0D_CO_CODE]",
+                "description": "Company code",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_CO_CODE",
+                "caption": "Company code",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_CO_CODE]",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20D_CO_CODE]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[50D_CO_CODE]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50D_CO_CODE]",
+                        "caption": "Medium Name"
+                    },
+                    {
+                        "name": "[20D_COUNTRY]",
+                        "description": "Country (Key)",
+                        "abapType": "CharacterString",
+                        "length": 3,
+                        "shortName": "[20D_COUNTRY]",
+                        "caption": "Country (Key)"
+                    },
+                    {
+                        "name": "[10D_COUNTRY]",
+                        "description": "Country (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_COUNTRY]",
+                        "caption": "Country (Name)"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Company code",
+                        "uniqueName": "[0D_CO_CODE]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_CO_CODE].[LEVEL00]",
+                                "uniqueName": "Company code Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_CO_CODE].[LEVEL01]",
+                                "uniqueName": "Company code Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_DIS_CHAN]",
+                "description": "Distribution channel",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_DIS_CHAN",
+                "caption": "Distribution channel",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_DIS_CHAN]",
+                        "abapType": "CharacterString",
+                        "length": 2,
+                        "shortName": "[20D_DIS_CHAN]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_DIS_CHAN]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_DIS_CHAN]",
+                        "caption": "Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Distribution channel",
+                        "uniqueName": "[0D_DIS_CHAN]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_DIS_CHAN].[LEVEL00]",
+                                "uniqueName": "Distribution channel Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_DIS_CHAN].[LEVEL01]",
+                                "uniqueName": "Distribution channel Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_DIV]",
+                "description": "Division",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_DIV",
+                "caption": "Division",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_DIV]",
+                        "abapType": "CharacterString",
+                        "length": 2,
+                        "shortName": "[20D_DIV]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_DIV]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_DIV]",
+                        "caption": "Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Division",
+                        "uniqueName": "[0D_DIV]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_DIV].[LEVEL00]",
+                                "uniqueName": "Division Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_DIV].[LEVEL01]",
+                                "uniqueName": "Division Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_MATERIAL]",
+                "description": "Material (SAP Demo)",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_MATERIAL",
+                "caption": "Material (SAP Demo)",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_MATERIAL]",
+                        "abapType": "CharacterString",
+                        "length": 18,
+                        "shortName": "[20D_MATERIAL]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_MATERIAL]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_MATERIAL]",
+                        "caption": "Name"
+                    },
+                    {
+                        "name": "[50D_MATERIAL]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50D_MATERIAL]",
+                        "caption": "Medium Name"
+                    },
+                    {
+                        "name": "[40D_MATERIAL]",
+                        "abapType": "CharacterString",
+                        "length": 60,
+                        "shortName": "[40D_MATERIAL]",
+                        "caption": "Long Name"
+                    },
+                    {
+                        "name": "[20D_MTLGROUP]",
+                        "description": "Material group (Key)",
+                        "abapType": "CharacterString",
+                        "length": 9,
+                        "shortName": "[20D_MTLGROUP]",
+                        "caption": "Material group (Key)"
+                    },
+                    {
+                        "name": "[10D_MTLGROUP]",
+                        "description": "Material group (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_MTLGROUP]",
+                        "caption": "Material group (Name)"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Material (SAP Demo)",
+                        "uniqueName": "[0D_MATERIAL]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_MATERIAL].[LEVEL00]",
+                                "uniqueName": "Material (SAP Demo) Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_MATERIAL].[LEVEL01]",
+                                "uniqueName": "Material (SAP Demo) Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_PROD_HIE]",
+                "description": "Product hierarchy",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "0D_PROD_HIE",
+                "caption": "Product hierarchy",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_PROD_HIE]",
+                        "abapType": "CharacterString",
+                        "length": 18,
+                        "shortName": "[20D_PROD_HIE]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_PROD_HIE]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_PROD_HIE]",
+                        "caption": "Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Product hierarchy",
+                        "uniqueName": "[0D_PROD_HIE]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_PROD_HIE].[LEVEL00]",
+                                "uniqueName": "Product hierarchy Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_PROD_HIE].[LEVEL01]",
+                                "uniqueName": "Product hierarchy Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_SALE_EMP]",
+                "description": "Sales Personnel",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_SALE_EMP",
+                "caption": "Sales Personnel",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_SALE_EMP]",
+                        "abapType": "CharacterString",
+                        "length": 8,
+                        "shortName": "[20D_SALE_EMP]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[50D_SALE_EMP]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50D_SALE_EMP]",
+                        "caption": "Medium Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Sales Personnel",
+                        "uniqueName": "[0D_SALE_EMP]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_SALE_EMP].[LEVEL00]",
+                                "uniqueName": "Sales Personnel Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_SALE_EMP].[LEVEL01]",
+                                "uniqueName": "Sales Personnel Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_SALE_ORG]",
+                "description": "Sales organization",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_SALE_ORG",
+                "caption": "Sales organization",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_SALE_ORG]",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20D_SALE_ORG]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_SALE_ORG]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_SALE_ORG]",
+                        "caption": "Name"
+                    },
+                    {
+                        "name": "[20D_COUNTRY]",
+                        "description": "Country (Key)",
+                        "abapType": "CharacterString",
+                        "length": 3,
+                        "shortName": "[20D_COUNTRY]",
+                        "caption": "Country (Key)"
+                    },
+                    {
+                        "name": "[10D_COUNTRY]",
+                        "description": "Country (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_COUNTRY]",
+                        "caption": "Country (Name)"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Sales organization",
+                        "uniqueName": "[0D_SALE_ORG]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_SALE_ORG].[LEVEL00]",
+                                "uniqueName": "Sales organization Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_SALE_ORG].[LEVEL01]",
+                                "uniqueName": "Sales organization Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_SOLD_TO]",
+                "description": "Sold-to party",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0D_SOLD_TO",
+                "caption": "Sold-to party",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_SOLD_TO]",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20D_SOLD_TO]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_SOLD_TO]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_SOLD_TO]",
+                        "caption": "Name"
+                    },
+                    {
+                        "name": "[20ALTITUDE]",
+                        "description": "Geographical Height (Key)",
+                        "abapType": "CharacterString",
+                        "length": 23,
+                        "shortName": "[20ALTITUDE]",
+                        "caption": "Geographical Height (Key)"
+                    },
+                    {
+                        "name": "[20D_CITY]",
+                        "description": "Location (Key)",
+                        "abapType": "CharacterString",
+                        "length": 35,
+                        "shortName": "[20D_CITY]",
+                        "caption": "Location (Key)"
+                    },
+                    {
+                        "name": "[20D_COUNTRY]",
+                        "description": "Country (Key)",
+                        "abapType": "CharacterString",
+                        "length": 3,
+                        "shortName": "[20D_COUNTRY]",
+                        "caption": "Country (Key)"
+                    },
+                    {
+                        "name": "[10D_COUNTRY]",
+                        "description": "Country (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_COUNTRY]",
+                        "caption": "Country (Name)"
+                    },
+                    {
+                        "name": "[20D_INDUSTRY]",
+                        "description": "Industry keys (Key)",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20D_INDUSTRY]",
+                        "caption": "Industry keys (Key)"
+                    },
+                    {
+                        "name": "[10D_INDUSTRY]",
+                        "description": "Industry keys (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_INDUSTRY]",
+                        "caption": "Industry keys (Name)"
+                    },
+                    {
+                        "name": "[20D_PHONE]",
+                        "description": "Telephone 1 (Key)",
+                        "abapType": "CharacterString",
+                        "length": 16,
+                        "shortName": "[20D_PHONE]",
+                        "caption": "Telephone 1 (Key)"
+                    },
+                    {
+                        "name": "[20D_REGION]",
+                        "description": "Region (Key)",
+                        "abapType": "CharacterString",
+                        "length": 7,
+                        "shortName": "[20D_REGION]",
+                        "caption": "Region (Key)"
+                    },
+                    {
+                        "name": "[10D_REGION]",
+                        "description": "Region (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_REGION]",
+                        "caption": "Region (Name)"
+                    },
+                    {
+                        "name": "[20D_STREET]",
+                        "description": "Street Name (Key)",
+                        "abapType": "CharacterString",
+                        "length": 35,
+                        "shortName": "[20D_STREET]",
+                        "caption": "Street Name (Key)"
+                    },
+                    {
+                        "name": "[20LATITUDE]",
+                        "description": "Latitude (Key)",
+                        "abapType": "CharacterString",
+                        "length": 17,
+                        "shortName": "[20LATITUDE]",
+                        "caption": "Latitude (Key)"
+                    },
+                    {
+                        "name": "[20LONGITUDE]",
+                        "description": "Longitude (Key)",
+                        "abapType": "CharacterString",
+                        "length": 17,
+                        "shortName": "[20LONGITUDE]",
+                        "caption": "Longitude (Key)"
+                    },
+                    {
+                        "name": "[20PRECISID]",
+                        "description": "Geo-precision (Key)",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20PRECISID]",
+                        "caption": "Geo-precision (Key)"
+                    },
+                    {
+                        "name": "[10PRECISID]",
+                        "description": "Geo-precision (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10PRECISID]",
+                        "caption": "Geo-precision (Name)"
+                    },
+                    {
+                        "name": "[50PRECISID]",
+                        "description": "Geo-precision (Medium Name)",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50PRECISID]",
+                        "caption": "Geo-precision (Medium Name)"
+                    },
+                    {
+                        "name": "[40PRECISID]",
+                        "description": "Geo-precision (Long Name)",
+                        "abapType": "CharacterString",
+                        "length": 60,
+                        "shortName": "[40PRECISID]",
+                        "caption": "Geo-precision (Long Name)"
+                    },
+                    {
+                        "name": "[20SRCID]",
+                        "description": "DatSrc.ID of GeoLoct (Key)",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20SRCID]",
+                        "caption": "DatSrc.ID of GeoLoct (Key)"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Sold-to party",
+                        "uniqueName": "[0D_SOLD_TO]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_SOLD_TO].[LEVEL00]",
+                                "uniqueName": "Sold-to party Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_SOLD_TO].[LEVEL01]",
+                                "uniqueName": "Sold-to party Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_VERSION]",
+                "description": "Version",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "0D_VERSION",
+                "caption": "Version",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_VERSION]",
+                        "abapType": "CharacterString",
+                        "length": 3,
+                        "shortName": "[20D_VERSION]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[50D_VERSION]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50D_VERSION]",
+                        "caption": "Medium Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Version",
+                        "uniqueName": "[0D_VERSION]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_VERSION].[LEVEL00]",
+                                "uniqueName": "Version Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_VERSION].[LEVEL01]",
+                                "uniqueName": "Version Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0D_VTYPE]",
+                "description": "Value Type",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "0D_VTYPE",
+                "caption": "Value Type",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20D_VTYPE]",
+                        "abapType": "CharacterString",
+                        "length": 3,
+                        "shortName": "[20D_VTYPE]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10D_VTYPE]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10D_VTYPE]",
+                        "caption": "Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Value Type",
+                        "uniqueName": "[0D_VTYPE]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0D_VTYPE].[LEVEL00]",
+                                "uniqueName": "Value Type Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0D_VTYPE].[LEVEL01]",
+                                "uniqueName": "Value Type Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0CALDAY]",
+                "description": "Calendar Day",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "0CALDAY",
+                "caption": "Calendar Day",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20CALDAY]",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20CALDAY]",
+                        "caption": "Key"
+                    }
+                ],
+                "dimensionType": "Time",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Calendar Day",
+                        "uniqueName": "[0CALDAY]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0CALDAY].[LEVEL00]",
+                                "uniqueName": "Calendar Day Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0CALDAY].[LEVEL01]",
+                                "uniqueName": "Calendar Day Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0CALMONTH]",
+                "description": "Calendar Year/Month",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0CALMONTH",
+                "caption": "Calendar Year/Month",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20CALMONTH]",
+                        "abapType": "CharacterString",
+                        "length": 7,
+                        "shortName": "[20CALMONTH]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[50CALMONTH]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50CALMONTH]",
+                        "caption": "Medium Name"
+                    },
+                    {
+                        "name": "[40CALMONTH]",
+                        "abapType": "CharacterString",
+                        "length": 60,
+                        "shortName": "[40CALMONTH]",
+                        "caption": "Long Name"
+                    },
+                    {
+                        "name": "[20CALMONTH2]",
+                        "description": "Calendar month (Key)",
+                        "abapType": "CharacterString",
+                        "length": 2,
+                        "shortName": "[20CALMONTH2]",
+                        "caption": "Calendar month (Key)"
+                    },
+                    {
+                        "name": "[50CALMONTH2]",
+                        "description": "Calendar month (Medium Name)",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50CALMONTH2]",
+                        "caption": "Calendar month (Medium Name)"
+                    },
+                    {
+                        "name": "[40CALMONTH2]",
+                        "description": "Calendar month (Long Name)",
+                        "abapType": "CharacterString",
+                        "length": 60,
+                        "shortName": "[40CALMONTH2]",
+                        "caption": "Calendar month (Long Name)"
+                    },
+                    {
+                        "name": "[20CALYEAR]",
+                        "description": "Calendar Year (Key)",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20CALYEAR]",
+                        "caption": "Calendar Year (Key)"
+                    },
+                    {
+                        "name": "[20DATEFROM]",
+                        "description": "Valid from (Key)",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20DATEFROM]",
+                        "caption": "Valid from (Key)"
+                    },
+                    {
+                        "name": "[20DATETO]",
+                        "description": "Valid to (Key)",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20DATETO]",
+                        "caption": "Valid to (Key)"
+                    },
+                    {
+                        "name": "[20NUMDAY]",
+                        "description": "Number of Days (Key)",
+                        "abapType": "CharacterString",
+                        "length": 11,
+                        "shortName": "[20NUMDAY]",
+                        "caption": "Number of Days (Key)"
+                    },
+                    {
+                        "name": "[20NUMWDAY]",
+                        "description": "Number of Workdays (Key)",
+                        "abapType": "CharacterString",
+                        "length": 11,
+                        "shortName": "[20NUMWDAY]",
+                        "caption": "Number of Workdays (Key)"
+                    }
+                ],
+                "dimensionType": "Time",
+                "hierarchies": 
+                [
+                    {
+                        "name": "0CALMONTH",
+                        "caption": "Calendar Year/Month",
+                        "uniqueName": "[0CALMONTH]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0CALMONTH].[LEVEL00]",
+                                "uniqueName": "Calendar Year/Month Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0CALMONTH].[LEVEL01]",
+                                "uniqueName": "Calendar Year/Month Level 01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HIER_0CALMONTH                   99991231",
+                        "caption": "HIER_0CALMONTH",
+                        "uniqueName": "[0CALMONTH                     HIER_0CALMONTH]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0CALMONTH                     HIER_0CALMONTH].[LEVEL00]",
+                                "uniqueName": "Level 01"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0CALMONTH                     HIER_0CALMONTH].[LEVEL01]",
+                                "uniqueName": "Level 02"
+                            },
+                            {
+                                "name": "LEVEL02",
+                                "caption": "[0CALMONTH                     HIER_0CALMONTH].[LEVEL02]",
+                                "uniqueName": "HIER_0CALMONTH Level 02"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0CALQUARTER]",
+                "description": "Cal. Year/Quarter",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "0CALQUARTER",
+                "caption": "Cal. Year/Quarter",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20CALQUARTER]",
+                        "abapType": "CharacterString",
+                        "length": 6,
+                        "shortName": "[20CALQUARTER]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10CALQUARTER]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10CALQUARTER]",
+                        "caption": "Name"
+                    },
+                    {
+                        "name": "[40CALQUARTER]",
+                        "abapType": "CharacterString",
+                        "length": 60,
+                        "shortName": "[40CALQUARTER]",
+                        "caption": "Long Name"
+                    },
+                    {
+                        "name": "[20CALQUART1]",
+                        "description": "Quarter (Key)",
+                        "abapType": "CharacterString",
+                        "length": 1,
+                        "shortName": "[20CALQUART1]",
+                        "caption": "Quarter (Key)"
+                    },
+                    {
+                        "name": "[10CALQUART1]",
+                        "description": "Quarter (Name)",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10CALQUART1]",
+                        "caption": "Quarter (Name)"
+                    },
+                    {
+                        "name": "[40CALQUART1]",
+                        "description": "Quarter (Long Name)",
+                        "abapType": "CharacterString",
+                        "length": 60,
+                        "shortName": "[40CALQUART1]",
+                        "caption": "Quarter (Long Name)"
+                    },
+                    {
+                        "name": "[20CALYEAR]",
+                        "description": "Calendar Year (Key)",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20CALYEAR]",
+                        "caption": "Calendar Year (Key)"
+                    },
+                    {
+                        "name": "[20DATEFROM]",
+                        "description": "Valid from (Key)",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20DATEFROM]",
+                        "caption": "Valid from (Key)"
+                    },
+                    {
+                        "name": "[20DATETO]",
+                        "description": "Valid to (Key)",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20DATETO]",
+                        "caption": "Valid to (Key)"
+                    },
+                    {
+                        "name": "[20NUMDAY]",
+                        "description": "Number of Days (Key)",
+                        "abapType": "CharacterString",
+                        "length": 11,
+                        "shortName": "[20NUMDAY]",
+                        "caption": "Number of Days (Key)"
+                    },
+                    {
+                        "name": "[20NUMWDAY]",
+                        "description": "Number of Workdays (Key)",
+                        "abapType": "CharacterString",
+                        "length": 11,
+                        "shortName": "[20NUMWDAY]",
+                        "caption": "Number of Workdays (Key)"
+                    }
+                ],
+                "dimensionType": "Time",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Cal. Year/Quarter",
+                        "uniqueName": "[0CALQUARTER]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0CALQUARTER].[LEVEL00]",
+                                "uniqueName": "Cal. Year/Quarter Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0CALQUARTER].[LEVEL01]",
+                                "uniqueName": "Cal. Year/Quarter Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0CALYEAR]",
+                "description": "Calendar Year",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0CALYEAR",
+                "caption": "Calendar Year",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20CALYEAR]",
+                        "abapType": "CharacterString",
+                        "length": 4,
+                        "shortName": "[20CALYEAR]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[20DATEFROM]",
+                        "description": "Valid from (Key)",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20DATEFROM]",
+                        "caption": "Valid from (Key)"
+                    },
+                    {
+                        "name": "[20DATETO]",
+                        "description": "Valid to (Key)",
+                        "abapType": "CharacterString",
+                        "length": 10,
+                        "shortName": "[20DATETO]",
+                        "caption": "Valid to (Key)"
+                    },
+                    {
+                        "name": "[20NUMDAY]",
+                        "description": "Number of Days (Key)",
+                        "abapType": "CharacterString",
+                        "length": 11,
+                        "shortName": "[20NUMDAY]",
+                        "caption": "Number of Days (Key)"
+                    },
+                    {
+                        "name": "[20NUMWDAY]",
+                        "description": "Number of Workdays (Key)",
+                        "abapType": "CharacterString",
+                        "length": 11,
+                        "shortName": "[20NUMWDAY]",
+                        "caption": "Number of Workdays (Key)"
+                    }
+                ],
+                "dimensionType": "Time",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Calendar Year",
+                        "uniqueName": "[0CALYEAR]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0CALYEAR].[LEVEL00]",
+                                "uniqueName": "Calendar Year Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0CALYEAR].[LEVEL01]",
+                                "uniqueName": "Calendar Year Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0DOC_CURRCY]",
+                "description": "Document currency",
+                "abapType": "CharacterString",
+                "length": 255,
+                "isSelected": true,
+                "shortName": "0DOC_CURRCY",
+                "caption": "Document currency",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20DOC_CURRCY]",
+                        "abapType": "CharacterString",
+                        "length": 5,
+                        "shortName": "[20DOC_CURRCY]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10DOC_CURRCY]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10DOC_CURRCY]",
+                        "caption": "Name"
+                    },
+                    {
+                        "name": "[50DOC_CURRCY]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50DOC_CURRCY]",
+                        "caption": "Medium Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Document currency",
+                        "uniqueName": "[0DOC_CURRCY]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0DOC_CURRCY].[LEVEL00]",
+                                "uniqueName": "Document currency Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0DOC_CURRCY].[LEVEL01]",
+                                "uniqueName": "Document currency Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[0SALES_UNIT]",
+                "description": "Sales unit",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "0SALES_UNIT",
+                "caption": "Sales unit",
+                "containsKeyFigures": false,
+                "properties": 
+                [
+                    {
+                        "name": "[20SALES_UNIT]",
+                        "abapType": "CharacterString",
+                        "length": 3,
+                        "shortName": "[20SALES_UNIT]",
+                        "caption": "Key"
+                    },
+                    {
+                        "name": "[10SALES_UNIT]",
+                        "abapType": "CharacterString",
+                        "length": 20,
+                        "shortName": "[10SALES_UNIT]",
+                        "caption": "Name"
+                    },
+                    {
+                        "name": "[50SALES_UNIT]",
+                        "abapType": "CharacterString",
+                        "length": 40,
+                        "shortName": "[50SALES_UNIT]",
+                        "caption": "Medium Name"
+                    }
+                ],
+                "dimensionType": "Normal",
+                "hierarchies": 
+                [
+                    {
+                        "name": "",
+                        "caption": "Sales unit",
+                        "uniqueName": "[0SALES_UNIT]",
+                        "isSelected": false,
+                        "hierarchyLevels": 
+                        [
+                            {
+                                "name": "LEVEL00",
+                                "caption": "[0SALES_UNIT].[LEVEL00]",
+                                "uniqueName": "Sales unit Level 00"
+                            },
+                            {
+                                "name": "LEVEL01",
+                                "caption": "[0SALES_UNIT].[LEVEL01]",
+                                "uniqueName": "Sales unit Level 01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[MEASURES]",
+                "description": "Key Figures",
+                "abapType": "CharacterString",
+                "length": 255,
+                "shortName": "Measures",
+                "caption": "Key Figures",
+                "containsKeyFigures": true,
+                "dimensionType": "Measure"
+            }
+        ],
+        "mdxSets": 
+        [
+            {
+                "MdxCrossJoin": {
+                    "subSets": 
+                    [
+                        2
+                    ]
+                }
+            },
+            {
+                "MdxCrossJoin": {
+                    "subSets": 
+                    [
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                    ]
+                }
+            },
+            {
+                "MdxSetMeasures": {
+                    "subSets": 
+                    [
+                        3,
+                        4,
+                        5
+                    ],
+                    "cubeDimension": "[MEASURES]"
+                }
+            },
+            {
+                "MdxMemberMeasure": {
+                    "referenceMeasure": "[Measures].[0D_NETVLINV]"
+                }
+            },
+            {
+                "MdxMemberMeasure": {
+                    "referenceMeasure": "[Measures].[0D_INV_QTY]"
+                }
+            },
+            {
+                "MdxMemberMeasure": {
+                    "referenceMeasure": "[Measures].[0D_TAXAMOUN]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_CO_CODE]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_DIS_CHAN]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_DIV]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_MATERIAL]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_SALE_EMP]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_SALE_ORG]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0D_SOLD_TO]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0CALMONTH]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0CALYEAR]"
+                }
+            },
+            {
+                "MdxMemberAll": {
+                    "cubeDimension": "[0DOC_CURRCY]"
+                }
+            }
+        ],
+        "setOnColumns": 0,
+        "setOnRows": 1,
+        "onlyStructures": false
+    }
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text"
+}</DestinationSettings>
+          <ExtractorsVersion>1.42.4.1</ExtractorsVersion>
+          <RuntimeParameters />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>$0D_DECU</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.CubeInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Cube.CubeInputTool" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Net Amount]+[Tax Amount]" field="Gross Amount" size="19.2" type="FixedDecimal" />
+            <FormulaField expression="Round([Tax Amount]*100/[Gross Amount],2)" field="Tax in %" size="10.1" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Gross Amount = [Net Amount]+[Tax Amount]
+Tax in % = Round([Tax Amount]*100/[Gros...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="618" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Calendar Year" action="GroupBy" rename="Calendar Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Distribution channel" action="GroupBy" rename="Distribution channel" />
+            <SummarizeField field="Net Amount" action="Sum" rename="Net Amount" />
+            <SummarizeField field="Tax in %" action="Avg" rename="Avg Tax in %" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="702" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Calendar Year" order="Ascending" />
+            <Field field="Month" order="Ascending" />
+            <Field field="Distribution channel" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sort</AnnotationText>
+          <DefaultAnnotationText>Calendar Year - Ascending
+Month - Ascending
+Distribution channel - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Distribution channel</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-04-20 11:59:19</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>#</Operand>
+              <StartDate>2023-04-20 11:59:19</StartDate>
+              <EndDate>2023-04-20 11:59:19</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Distribution channel] != "#"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="318" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Calendar Year/Month" selected="True" rename="Month" />
+            <SelectField field="Document currency" selected="True" rename="Currency" />
+            <SelectField field="Net Value" selected="True" rename="Net Amount" type="FixedDecimal" size="19.2" />
+            <SelectField field="Tax Amount" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="563" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Sold-to party" action="GroupBy" rename="Sold-to party" />
+            <SummarizeField field="Gross Amount" action="Sum" rename="Gross Amount" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="644" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Gross Amount" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sort</AnnotationText>
+          <DefaultAnnotationText>Gross Amount - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Company code</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-04-20 12:05:04</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>IDES</Operand>
+              <StartDate>2023-04-20 12:05:04</StartDate>
+              <EndDate>2023-04-20 12:05:04</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Company code] = "IDES"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="474" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Net Amount]+[Tax Amount]" field="Gross Amount" size="19.2" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Formula</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Gross Amount = [Net Amount]+[Tax Amount]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="726" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>10</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 10 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Cube - BW InfoProvider</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ceb2df07-f129-4500-b993-61e1cd00c89e" />
+      <Telemetry>
+        <PreviousWorkflowId value="adafc94e-f3f5-4c16-b77b-b479fc381891" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
