@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_23100_a9bd9635642639439a698bfa4f722ae5_\Engine_23100_6b82679ddb7c674bb561720f25184682~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="234" width="288" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Output Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="234" width="252" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="318" y="234" width="468" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Data Preparation & Cleansing]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_23100_a9bd9635642639439a698bfa4f722ae5_\Engine_23100_8d04f10c41401649bb2aa0ae383bb4b9~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="30" width="1032" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load Business Partner master data from a SAP S/4HANA CDS view using SAP's Operational Data Provisioning framework that allows full and delta extractions. The data is then cleaned and in this example a list of all Business Partners that have birthday in the current month is returned which could be used to re-engage passive business partners by sending them birthday wishes.
+
+To use the Xtract ODP component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
+]]></Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
+        <Position x="162" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>S4H</Connection>
+          <Definition>{
+    "name": "IBUSINESSPARTNER$P",
+    "description": "Business Partner",
+    "guid": "4281257c-45b3-40ec-99ac-afb7d807a7f2",
+    "hierarchy": "",
+    "semantics": "MasterDataOrAttributes",
+    "context": "ABAP_CDS",
+    "supportsFull": true,
+    "supportsDelta": true,
+    "mode": "Full",
+    "transferDataOnDeltaInit": true,
+    "columns": 
+    [
+        {
+            "name": "TS_SEQUENCE_NUMBER",
+            "description": "[GENERATED] Sequence number of row in current extraction",
+            "abapType": "FourByteInteger",
+            "isPrimaryKey": true,
+            "isDeltaColumn": true,
+            "generated": true,
+            "outputLength": 0
+        },
+        {
+            "name": "BUSINESSPARTNER",
+            "description": "Business Partner Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isPrimaryKey": true,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "BUSINESSPARTNERCATEGORY",
+            "description": "Business Partner Category",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AUTHORIZATIONGROUP",
+            "description": "Authorization Group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "BUSINESSPARTNERUUID",
+            "description": "Business Partner GUID",
+            "abapType": "ByteSequence",
+            "length": 16,
+            "selectionPermission": "All",
+            "outputLength": 32
+        },
+        {
+            "name": "PERSONNUMBER",
+            "description": "Person Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "ETAG",
+            "description": "ETAG",
+            "abapType": "CharacterString",
+            "length": 26,
+            "selectionPermission": "All",
+            "outputLength": 26
+        },
+        {
+            "name": "BUSINESSPARTNERNAME",
+            "description": "Business Partner Name",
+            "abapType": "CharacterString",
+            "length": 81,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 81
+        },
+        {
+            "name": "BUSINESSPARTNERFULLNAME",
+            "description": "BUSINESSPARTNERFULLNAME",
+            "abapType": "CharacterString",
+            "length": 81,
+            "selectionPermission": "All",
+            "outputLength": 81
+        },
+        {
+            "name": "CREATEDBYUSER",
+            "description": "User who created the object",
+            "abapType": "CharacterString",
+            "length": 12,
+            "selectionPermission": "All",
+            "outputLength": 12
+        },
+        {
+            "name": "CREATIONDATE",
+            "description": "Date on which the object was created",
+            "abapType": "Date",
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "CREATIONTIME",
+            "description": "Time at which the object was created",
+            "abapType": "Time",
+            "selectionPermission": "All",
+            "outputLength": 6
+        },
+        {
+            "name": "LASTCHANGEDBYUSER",
+            "description": "Last user to change object",
+            "abapType": "CharacterString",
+            "length": 12,
+            "selectionPermission": "All",
+            "outputLength": 12
+        },
+        {
+            "name": "LASTCHANGEDATE",
+            "description": "Date when object was last changed",
+            "abapType": "Date",
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "LASTCHANGETIME",
+            "description": "Time at which object was last changed",
+            "abapType": "Time",
+            "selectionPermission": "All",
+            "outputLength": 6
+        },
+        {
+            "name": "BUSINESSPARTNERISBLOCKED",
+            "description": "Central Block for Business Partner",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISBUSINESSPURPOSECOMPLETED",
+            "description": "Business Purpose Completed Flag",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "FIRSTNAME",
+            "description": "First name of business partner (person)",
+            "abapType": "CharacterString",
+            "length": 40,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "LASTNAME",
+            "description": "Last name of business partner (person)",
+            "abapType": "CharacterString",
+            "length": 40,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "PERSONFULLNAME",
+            "description": "Full Name",
+            "abapType": "CharacterString",
+            "length": 80,
+            "selectionPermission": "All",
+            "outputLength": 80
+        },
+        {
+            "name": "ORGANIZATIONBPNAME1",
+            "description": "Name 1 of organization",
+            "abapType": "CharacterString",
+            "length": 40,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "ORGANIZATIONBPNAME2",
+            "description": "Name 2 of organization",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "ORGANIZATIONBPNAME3",
+            "description": "Name 3 of organization",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "ORGANIZATIONBPNAME4",
+            "description": "Name 4 of organization",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER1",
+            "description": "International location number  (part 1)",
+            "abapType": "NumericCharacterString",
+            "length": 7,
+            "selectionPermission": "All",
+            "outputLength": 7
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER2",
+            "description": "International location number (Part 2)",
+            "abapType": "NumericCharacterString",
+            "length": 5,
+            "selectionPermission": "All",
+            "outputLength": 5
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER3",
+            "description": "Check digit for the international location number",
+            "abapType": "NumericCharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "LEGALFORM",
+            "description": "BP: Legal form of organization",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "ORGANIZATIONFOUNDATIONDATE",
+            "description": "Date organization founded",
+            "abapType": "Date",
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "ORGANIZATIONLIQUIDATIONDATE",
+            "description": "Liquidation date of organization",
+            "abapType": "Date",
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "INDUSTRY",
+            "description": "Industry sector",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "ISNATURALPERSON",
+            "description": "Business Partner Is a Natural Person Under the Tax Laws",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISFEMALE",
+            "description": "Selection: Business partner is female",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISMALE",
+            "description": "Selection: Business partner is male",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISSEXUNKNOWN",
+            "description": "Selection: Sex of business partner is not known",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "FORMOFADDRESS",
+            "description": "Form-of-Address Key",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "ACADEMICTITLE",
+            "description": "Academic Title: Key",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "ACADEMICTITLE2",
+            "description": "Second academic title (key)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "NAMEFORMAT",
+            "description": "Name format",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "NAMECOUNTRY",
+            "description": "Country/Region for Name Format Rule",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "BUSINESSPARTNERGROUPING",
+            "description": "Business Partner Grouping",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "BUSINESSPARTNERTYPE",
+            "description": "Business Partner Type",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "MIDDLENAME",
+            "description": "Middle name or second forename of a person",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "ADDITIONALLASTNAME",
+            "description": "Other Last Name of a Person",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "GROUPBUSINESSPARTNERNAME1",
+            "description": "Name 1 (group)",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "GROUPBUSINESSPARTNERNAME2",
+            "description": "Name 2 (group)",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "CORRESPONDENCELANGUAGE",
+            "description": "Business Partner: Correspondence Language",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "LANGUAGE",
+            "description": "Business partner: Language",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "SEARCHTERM1",
+            "description": "Search Term 1 for Business Partner",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "SEARCHTERM2",
+            "description": "Search Term 2 for Business Partner",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "BPLASTNAMESEARCHHELP",
+            "description": "Search Help Field 1 (Name 1/Last Name)",
+            "abapType": "CharacterString",
+            "length": 35,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "BPFIRSTNAMESEARCHHELP",
+            "description": "Search Help Field 2 (Name 2/First Name)",
+            "abapType": "CharacterString",
+            "length": 35,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "BUSINESSPARTNERNICKNAMELABEL",
+            "description": "Nickname of Business Partner (Person)",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "INDEPENDENTADDRESSID",
+            "description": "Address Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "ISACTIVEENTITY",
+            "description": "Draft - Indicator - Is active document",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BIRTHDATE",
+            "description": "Date of Birth of Business Partner",
+            "abapType": "Date",
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "ISMARKEDFORARCHIVING",
+            "description": "Central Archiving Flag",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "CONTACTPERMISSION",
+            "description": "Business Partner: Contact Permission",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BUSINESSPARTNERIDBYEXTSYSTEM",
+            "description": "Business Partner Number in External System",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "LEGALENTITYOFORGANIZATION",
+            "description": "Legal Entity of Organization",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "BUSINESSPARTNERPRINTFORMAT",
+            "description": "Business Partner Print Format",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BUSINESSPARTNERDATAORIGINTYPE",
+            "description": "Data Origin Types",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "BUSINESSPARTNERISNOTRELEASED",
+            "description": "Indicator: Not Released",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISNOTCONTRACTUALLYCAPABLE",
+            "description": "Indicator: Not Legally Competent",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BUSINESSPARTNEROCCUPATION",
+            "description": "Occupation/group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "BUSPARTMARITALSTATUS",
+            "description": "Marital Status of Business Partner",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BUSPARTNATIONALITY",
+            "description": "Nationality",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "NONRESIDENTCOMPANYORIGINCNTRY",
+            "description": "Country/Region of Origin: Non-Resident Companies",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "BUSINESSPARTNERSALUTATION",
+            "description": "Salutation",
+            "abapType": "CharacterString",
+            "length": 50,
+            "selectionPermission": "All",
+            "outputLength": 50
+        },
+        {
+            "name": "BUSINESSPARTNERBIRTHNAME",
+            "description": "Name at birth of business partner",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "BUSINESSPARTNERSUPPLEMENTNAME",
+            "description": "Name supplement, e.g. noble title (key)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "BUSINESSPARTNERBIRTHPLACENAME",
+            "description": "Birthplace of business partner",
+            "abapType": "CharacterString",
+            "length": 40,
+            "selectionPermission": "All",
+            "outputLength": 40
+        },
+        {
+            "name": "NATURALPERSONEMPLOYERNAME",
+            "description": "Name of Employer of a Natural Person",
+            "abapType": "CharacterString",
+            "length": 35,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "BUSINESSPARTNERDEATHDATE",
+            "description": "Date of death of business partner",
+            "abapType": "Date",
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "BUSINESSPARTNERBIRTHDATESTATUS",
+            "description": "Date of Birth: Status",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BUSINESSPARTNERGROUPTYPE",
+            "description": "Group type",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "LASTNAMEPREFIX",
+            "description": "Name Prefix (Key)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "LASTNAMESECONDPREFIX",
+            "description": "2nd name prefix (key)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "INITIALS",
+            "description": "\"Middle Initial\" or personal initials",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "GENDERCODENAME",
+            "description": "Sex of business partner (person)",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TRDCMPLNCLICENSEISMILITARYSCTR",
+            "description": "ID for mainly military use",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TRDCMPLNCLICENSEISNUCLEARSCTR",
+            "description": "Nuclear Sector (Indicator)",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ODQ_CHANGEMODE",
+            "description": "Change Mode for a Data Record in the Delta",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isDeltaColumn": true,
+            "outputLength": 1
+        },
+        {
+            "name": "ODQ_ENTITYCNTR",
+            "description": "Number of Data Units (Data Records for Example)",
+            "abapType": "PackedNumber",
+            "length": 19,
+            "isDeltaColumn": true,
+            "outputLength": 20
+        }
+    ],
+    "parameterSet": {
+    }
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>1.40.4.0</ExtractorsVersion>
+          <RuntimeParameters />
+          <UpdateMode>Full</UpdateMode>
+          <HierarchyName>
+          </HierarchyName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Business Partner - Master Data</AnnotationText>
+          <DefaultAnnotationText>IBUSINESSPARTNER$P (ABAP_CDS)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.OdpInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Odp.OdpInputTool" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Business Partner Number" selected="True" />
+            <SelectField field="Business Partner Category" selected="False" />
+            <SelectField field="Business Partner Name" selected="True" />
+            <SelectField field="Date on which the object was created" selected="False" />
+            <SelectField field="Date when object was last changed" selected="False" />
+            <SelectField field="First name of business partner (person)" selected="True" />
+            <SelectField field="Last name of business partner (person)" selected="True" />
+            <SelectField field="Name 1 of organization" selected="True" />
+            <SelectField field="Business partner: Language" selected="False" />
+            <SelectField field="Date of Birth of Business Partner" selected="True" />
+            <SelectField field="Business Partner: Contact Permission" selected="False" />
+            <SelectField field="Occupation/group" selected="False" />
+            <SelectField field="Marital Status of Business Partner" selected="False" />
+            <SelectField field="Nationality" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings>
+        <Position x="458" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Business Partner Number","Business Partner Name","First name of business partner (person)","Last name of business partner (person)","Name 1 of organization","Date of Birth of Business Partner"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="714" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Birth Month] = [Current Month]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Birth Month] = [Current Month]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="586" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeMonth([Date of Birth of Business Partner])" field="Birth Month" size="2" type="Int16" />
+            <FormulaField expression="DateTimeMonth(DateTimeNow())" field="Current Month" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Birth Month = DateTimeMonth([Date of Birth of Business Partner])
+Current Month =...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output26" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ODP - S4</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9a67be77-bcb3-4d72-bc45-b56c6a7c1917" />
+      <Telemetry>
+        <PreviousWorkflowId value="6d4bebcf-07eb-45e1-a32d-55a7f2d2c808" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

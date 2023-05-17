@@ -1,0 +1,2692 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_22480_f3bd43ea85df67478f91c79087b78617_\Engine_22480_df59223c867bd54ca22a525aabcc48ec~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="64" MaxRecords="">C:\Users\simon\Documents\Alteryx Workflows\Starter Kit\Sales_Data.hyper</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sales_Data.hyper</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="402" width="144" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Provide new Sales Data to Tableau, PowerBI, AutoInsights etc. for visual analytics</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="318" width="144" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse Top 20 Customers since last Delta Load</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="234" width="288" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Output Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="234" width="252" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="318" y="234" width="468" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Data Preparation & Cleansing]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_22480_f3bd43ea85df67478f91c79087b78617_\Engine_22480_578a889551877f429588eeeb97679b5f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="42" width="1032" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[This workflow uses the Xtract ODP component of the 'Xtract for Alteryx' connector to load sales documents (transaction data) and customer master data from an SAP ERP system. The data is then combined, cleaned, and prepared for further analysis.
+
+To use the Xtract ODP component install the Xtract for Alteryx connector. 
+Please contact your Alteryx sales rep for more information. A free 30-day trial is available at https://theobald-software.com/en/download-trial
+
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
+]]></Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
+        <Position x="150" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>EC5</Connection>
+          <Definition>{
+    "name": "2LIS_11_VAITM",
+    "description": "Sales Document Item Data",
+    "guid": "9770721a-4744-4fc1-8964-0089decf9a90",
+    "hierarchy": "",
+    "semantics": "TransactionalDataOrFacts",
+    "context": "SAPI",
+    "supportsFull": true,
+    "supportsDelta": true,
+    "mode": "Full",
+    "transferDataOnDeltaInit": true,
+    "columns": 
+    [
+        {
+            "name": "TS_SEQUENCE_NUMBER",
+            "description": "[GENERATED] Sequence number of row in current extraction",
+            "abapType": "FourByteInteger",
+            "isPrimaryKey": true,
+            "isDeltaColumn": true,
+            "generated": true,
+            "outputLength": 0
+        },
+        {
+            "name": "ROCANCEL",
+            "description": "Indicator: Cancel Data Record",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "VBELN",
+            "description": "Sales and Distribution Document Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "ABSTA",
+            "description": "Rejection status for SD item",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "POSNR",
+            "description": "Item number of the SD document",
+            "abapType": "NumericCharacterString",
+            "length": 6,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "RFGSA",
+            "description": "Overall status of reference",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "RFSTA",
+            "description": "Reference status",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "UVALL",
+            "description": "General Incompletion Status of Item",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "UVFAK",
+            "description": "Item Incompletion Status with Respect to Billing",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "UVPRS",
+            "description": "Pricing for item is incomplete",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "UVVLK",
+            "description": "Incompletion status of the item with regard to delivery",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "ANGDT",
+            "description": "Quotation/Inquiry is valid from",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "AUART",
+            "description": "Sales Document Type",
+            "abapType": "CharacterString",
+            "length": 4,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "AUGRU",
+            "description": "Order reason (reason for the business transaction)",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "BNDDT",
+            "description": "Date until which bid/quotation is binding (valid-to date)",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "BUKRS",
+            "description": "Company Code",
+            "abapType": "CharacterString",
+            "length": 4,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "FAKSK",
+            "description": "Billing block in SD document",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "HWAER",
+            "description": "Local Currency",
+            "abapType": "CharacterString",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 5
+        },
+        {
+            "name": "KUNNR",
+            "description": "Sold-to party",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "KURST",
+            "description": "Exchange Rate Type",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "KVGR1",
+            "description": "Customer group 1",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "KVGR2",
+            "description": "Customer group 2",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "KVGR3",
+            "description": "Customer group 3",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "KVGR4",
+            "description": "Customer group 4",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "KVGR5",
+            "description": "Customer group 5",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "LIFSK",
+            "description": "Delivery block (document header)",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "STWAE",
+            "description": "Statistics currency",
+            "abapType": "CharacterString",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 5
+        },
+        {
+            "name": "VBTYP",
+            "description": "SD document category",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "VKBUR",
+            "description": "Sales Office",
+            "abapType": "CharacterString",
+            "length": 4,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "VKGRP",
+            "description": "Sales Group",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "VKORG",
+            "description": "Sales Organization",
+            "abapType": "CharacterString",
+            "length": 4,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "VTWEG",
+            "description": "Distribution Channel",
+            "abapType": "CharacterString",
+            "length": 2,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "ABGRU",
+            "description": "Reason for rejection of quotations and sales orders",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "AEDAT",
+            "description": "Changed On",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "AWAHR",
+            "description": "Order probability of the item",
+            "abapType": "NumericCharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "BRGEW",
+            "description": "Gross Weight of the Item",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "GEWEI"
+        },
+        {
+            "name": "BWAPPLNM",
+            "description": "Application Component",
+            "abapType": "CharacterString",
+            "length": 30,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 30
+        },
+        {
+            "name": "BWVORG",
+            "description": "SAP BW transaction key",
+            "abapType": "NumericCharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "CHARG",
+            "description": "Batch Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "CMKUA",
+            "description": "Credit data exchange rate for requested delivery date",
+            "abapType": "PackedNumber",
+            "length": 9,
+            "decimalCount": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 11
+        },
+        {
+            "name": "EAN11",
+            "description": "International Article Number (EAN/UPC)",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 18
+        },
+        {
+            "name": "ERDAT",
+            "description": "Date on Which Record Was Created",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "ERNAM",
+            "description": "Name of Person who Created the Object",
+            "abapType": "CharacterString",
+            "length": 12,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 12
+        },
+        {
+            "name": "ERZET",
+            "description": "Entry time",
+            "abapType": "Time",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "FAKSP",
+            "description": "Billing block for item",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "GEWEI",
+            "description": "Weight Unit",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "KBMENG",
+            "description": "Cumulative confirmed quantity in sales unit",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "VRKME"
+        },
+        {
+            "name": "KLMENG",
+            "description": "Cumulative confirmed quantity in base unit",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "MEINS"
+        },
+        {
+            "name": "KMEIN",
+            "description": "Condition unit",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "KNUMA_AG",
+            "description": "Sales deal",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "KPEIN",
+            "description": "Condition pricing unit",
+            "abapType": "PackedNumber",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "KWMENG",
+            "description": "Cumulative Order Quantity in Sales Units",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "VRKME"
+        },
+        {
+            "name": "KZWI1",
+            "description": "Subtotal 1 from pricing procedure for condition",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "KZWI2",
+            "description": "Subtotal 2 from pricing procedure for condition",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "KZWI3",
+            "description": "Subtotal 3 from pricing procedure for condition",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "KZWI4",
+            "description": "Subtotal 4 from pricing procedure for condition",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "KZWI5",
+            "description": "Subtotal 5 from pricing procedure for condition",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "KZWI6",
+            "description": "Subtotal 6 from pricing procedure for condition",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "LFMNG",
+            "description": "Minimum delivery quantity in delivery note processing",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 3,
+            "outputLength": 15,
+            "referenceField": "MEINS"
+        },
+        {
+            "name": "LGORT",
+            "description": "Storage Location",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "LSMENG",
+            "description": "Cumulative required delivery qty (all dlv-relev.sched.lines)",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "VRKME"
+        },
+        {
+            "name": "MATKL",
+            "description": "Material Group",
+            "abapType": "CharacterString",
+            "length": 9,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 9
+        },
+        {
+            "name": "MATNR",
+            "description": "Material Number",
+            "abapType": "CharacterString",
+            "length": 18,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 18
+        },
+        {
+            "name": "MATWA",
+            "description": "Material entered",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 18
+        },
+        {
+            "name": "MEINS",
+            "description": "Base Unit of Measure",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "MVGR1",
+            "description": "Material group 1",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "MVGR2",
+            "description": "Material group 2",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "MVGR3",
+            "description": "Material group 3",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "MVGR4",
+            "description": "Material group 4",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "MVGR5",
+            "description": "Material group 5",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "MWSBP",
+            "description": "Tax amount in document currency",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "NETPR",
+            "description": "Net price",
+            "abapType": "PackedNumber",
+            "length": 11,
+            "decimalCount": 2,
+            "isSelected": true,
+            "isCurrency": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 13,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "NETWR",
+            "description": "Net value of the order item in document currency",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 17,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "NTGEW",
+            "description": "Net Weight of the Item",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "GEWEI"
+        },
+        {
+            "name": "PABLA",
+            "description": "Unloading point of the ship-to party",
+            "abapType": "CharacterString",
+            "length": 25,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 25
+        },
+        {
+            "name": "PKUNRE",
+            "description": "Bill-to party",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "PKUNRG",
+            "description": "Payer",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "PKUNWE",
+            "description": "Ship-to party",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "PRODH",
+            "description": "Product hierarchy",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 18
+        },
+        {
+            "name": "PSPDNR",
+            "description": "Forwarding agent",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "PSTYV",
+            "description": "Sales document item category",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "PVRTNR",
+            "description": "Sales employee",
+            "abapType": "NumericCharacterString",
+            "length": 8,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "PZPERS",
+            "description": "Person responsible",
+            "abapType": "NumericCharacterString",
+            "length": 8,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "ROOT_DATE",
+            "description": "Date of the Root Item",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "ROOT_HEAD",
+            "description": "Document Number of the Root Header",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "ROOT_ITEM",
+            "description": "Item Number of the Root Item",
+            "abapType": "NumericCharacterString",
+            "length": 6,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "ROUTE",
+            "description": "Route",
+            "abapType": "CharacterString",
+            "length": 6,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "SOBKZ",
+            "description": "Special Stock Indicator",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "SPART",
+            "description": "Division",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "STADAT",
+            "description": "Statistics date",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "STCUR",
+            "description": "Exchange rate for statistics (Exch.rate at time of creation)",
+            "abapType": "PackedNumber",
+            "length": 9,
+            "decimalCount": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 11
+        },
+        {
+            "name": "SUGRD",
+            "description": "Reason for material substitution",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "UEBTK",
+            "description": "Unlimited overdelivery allowed",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "UEBTO",
+            "description": "Overdelivery Tolerance Limit",
+            "abapType": "PackedNumber",
+            "length": 3,
+            "decimalCount": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 5
+        },
+        {
+            "name": "UMVKN",
+            "description": "Denominator (Divisor) for Conversion of Sales Qty into SKU",
+            "abapType": "PackedNumber",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "UMVKZ",
+            "description": "Numerator (factor) for conversion of sales quantity into SKU",
+            "abapType": "PackedNumber",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "UMZIN",
+            "description": "Factor for converting sales units to base units (target qty)",
+            "abapType": "PackedNumber",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "UMZIZ",
+            "description": "Factor for converting sales units to base units (target qty)",
+            "abapType": "PackedNumber",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "UNTTO",
+            "description": "Underdelivery Tolerance Limit",
+            "abapType": "PackedNumber",
+            "length": 3,
+            "decimalCount": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 5
+        },
+        {
+            "name": "VDATU",
+            "description": "Date of update for statistics updating",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "VGBEL",
+            "description": "Document number of the reference document",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "VGPOS",
+            "description": "Item number of the reference item",
+            "abapType": "NumericCharacterString",
+            "length": 6,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "VGTYP",
+            "description": "Document category of preceding SD document",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "VOLEH",
+            "description": "Volume unit",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "VOLUM",
+            "description": "Volume of the item",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 3,
+            "outputLength": 17,
+            "referenceField": "VOLEH"
+        },
+        {
+            "name": "VRKME",
+            "description": "Sales unit",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "VSTEL",
+            "description": "Shipping Point/Receiving Point",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "WAERK",
+            "description": "SD Document Currency",
+            "abapType": "CharacterString",
+            "length": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 5
+        },
+        {
+            "name": "WAVWR",
+            "description": "Cost in document currency",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "WERKS",
+            "description": "Plant (Own or External)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "ZIEME",
+            "description": "Target quantity UoM",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "ZMENG",
+            "description": "Target quantity in sales units",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 3,
+            "outputLength": 15,
+            "referenceField": "ZIEME"
+        },
+        {
+            "name": "ZWERT",
+            "description": "Target Value for Outline Agreement in Document Currency",
+            "abapType": "PackedNumber",
+            "length": 13,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 15,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "BZIRK",
+            "description": "Sales district",
+            "abapType": "CharacterString",
+            "length": 6,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 6
+        },
+        {
+            "name": "FBUDA",
+            "description": "Date on which services rendered",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "FKDAT",
+            "description": "Billing date for billing index and printout",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "INCO1",
+            "description": "Incoterms (Part 1)",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "INCO2",
+            "description": "Incoterms (Part 2)",
+            "abapType": "CharacterString",
+            "length": 28,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 28
+        },
+        {
+            "name": "KDGRP",
+            "description": "Customer group",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "KTGRD",
+            "description": "Account assignment group for this customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "KURSK",
+            "description": "Exchange Rate for Price Determination",
+            "abapType": "PackedNumber",
+            "length": 9,
+            "decimalCount": 5,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 11
+        },
+        {
+            "name": "KURSK_DAT",
+            "description": "Translation Date",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "PRSDT",
+            "description": "Date for pricing and exchange rate",
+            "abapType": "Date",
+            "selectionPermission": "Equals, Between",
+            "outputLength": 8
+        },
+        {
+            "name": "WAKTION",
+            "description": "Promotion",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "WMINR",
+            "description": "Product catalog number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "WAERK_VBAK",
+            "description": "SD Document Currency",
+            "abapType": "CharacterString",
+            "length": 5,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 5
+        },
+        {
+            "name": "SPARA",
+            "description": "Division for order header",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "VGTYP_AK",
+            "description": "Sales Document Category of Reference Doc. in Order Header",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "PS_POSID",
+            "description": "Work Breakdown Structure Element (WBS Element)",
+            "abapType": "CharacterString",
+            "length": 24,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 24
+        },
+        {
+            "name": "ANZAUPO",
+            "description": "Number of order items",
+            "abapType": "PackedNumber",
+            "length": 9,
+            "outputLength": 10
+        },
+        {
+            "name": "PERIV",
+            "description": "Fiscal Year Variant",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "MCEX_APCAMPAIGN",
+            "description": "Campaign of referred sales order item for BW-Extraction",
+            "abapType": "CharacterString",
+            "length": 32,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 32
+        },
+        {
+            "name": "APOPLANNED",
+            "description": "Planning in APO",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "MCBW_NETPR_AVKM",
+            "description": "BW: Net Price Referring to Sales Quantity for Order Item",
+            "abapType": "PackedNumber",
+            "length": 11,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 13,
+            "referenceField": "WAERK"
+        },
+        {
+            "name": "ODQ_CHANGEMODE",
+            "description": "Change Mode for a Data Record in the Delta",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isDeltaColumn": true,
+            "outputLength": 1
+        },
+        {
+            "name": "ODQ_ENTITYCNTR",
+            "description": "Number of Data Units (Data Records for Example)",
+            "abapType": "PackedNumber",
+            "length": 19,
+            "isDeltaColumn": true,
+            "outputLength": 20
+        }
+    ],
+    "parameterSet": {
+    }
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>1.42.4.1</ExtractorsVersion>
+          <RuntimeParameters />
+          <UpdateMode>Full</UpdateMode>
+          <HierarchyName>
+          </HierarchyName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sales Documents - Transaction Data - Full load</AnnotationText>
+          <DefaultAnnotationText>2LIS_11_VAITM (SAPI)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.OdpInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Odp.OdpInputTool" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="330" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Sold-to party" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Customer Number" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Sold-to party" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sales and Distribution Document Number" selected="True" rename="Document Number" />
+            <SelectField field="Sales Document Type" selected="True" rename="Document Type" />
+            <SelectField field="Company Code" selected="True" />
+            <SelectField field="Sales Office" selected="True" />
+            <SelectField field="Sales Group" selected="True" />
+            <SelectField field="Sales Organization" selected="True" />
+            <SelectField field="Distribution Channel" selected="True" />
+            <SelectField field="Name of Person who Created the Object" selected="True" />
+            <SelectField field="Material Group" selected="True" />
+            <SelectField field="Material Number" selected="True" />
+            <SelectField field="Sales employee" selected="True" />
+            <SelectField field="Plant (Own or External)" selected="True" rename="Plant" />
+            <SelectField field="Sales district" selected="True" />
+            <SelectField field="SD Document Currency" selected="True" />
+            <SelectField field="Customer Number" selected="True" />
+            <SelectField field="Country Key" selected="True" rename="Customer Country" />
+            <SelectField field="Name 1" selected="True" rename="Customer Name" />
+            <SelectField field="City" selected="True" rename="Customer City" />
+            <SelectField field="Net price" selected="True" rename="Net amount" />
+            <SelectField field="Address" selected="True" />
+            <SelectField field="Express train station" selected="True" />
+            <SelectField field="Train station" selected="True" />
+            <SelectField field="Customer classification" selected="True" />
+            <SelectField field="Name 2" selected="True" />
+            <SelectField field="Postal Code" selected="True" />
+            <SelectField field="Language Key" selected="True" />
+            <SelectField field="First telephone number" selected="True" />
+            <SelectField field="VAT Registration Number" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="546" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Customer Number" action="GroupBy" rename="Customer Number" />
+            <SummarizeField field="Customer Name" action="GroupBy" rename="Customer Name" />
+            <SummarizeField field="Customer City" action="GroupBy" rename="Customer City" />
+            <SummarizeField field="Net amount" action="Sum" rename="Revenue" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="630" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Revenue" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Revenue - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="714" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>20</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 20 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
+        <Position x="150" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>EC5</Connection>
+          <Definition>{
+    "name": "0CUSTOMER_ATTR",
+    "description": "Customer Number",
+    "guid": "fde70d64-1d29-4c3a-9814-f150c0be92b3",
+    "hierarchy": "",
+    "semantics": "MasterDataOrAttributes",
+    "context": "SAPI",
+    "supportsFull": true,
+    "supportsDelta": true,
+    "mode": "Full",
+    "transferDataOnDeltaInit": true,
+    "columns": 
+    [
+        {
+            "name": "TS_SEQUENCE_NUMBER",
+            "description": "[GENERATED] Sequence number of row in current extraction",
+            "abapType": "FourByteInteger",
+            "isPrimaryKey": true,
+            "isDeltaColumn": true,
+            "generated": true,
+            "outputLength": 0
+        },
+        {
+            "name": "KUNNR",
+            "description": "Customer Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isPrimaryKey": true,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "ADRNR",
+            "description": "Address",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "outputLength": 10
+        },
+        {
+            "name": "ANRED",
+            "description": "Title",
+            "abapType": "CharacterString",
+            "length": 15,
+            "outputLength": 15
+        },
+        {
+            "name": "AUFSD",
+            "description": "Central order block for customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "BAHNE",
+            "description": "Express train station",
+            "abapType": "CharacterString",
+            "length": 25,
+            "isSelected": true,
+            "outputLength": 25
+        },
+        {
+            "name": "BAHNS",
+            "description": "Train station",
+            "abapType": "CharacterString",
+            "length": 25,
+            "isSelected": true,
+            "outputLength": 25
+        },
+        {
+            "name": "BBBNR",
+            "description": "International location number  (part 1)",
+            "abapType": "NumericCharacterString",
+            "length": 7,
+            "outputLength": 7
+        },
+        {
+            "name": "BBSNR",
+            "description": "International location number (Part 2)",
+            "abapType": "NumericCharacterString",
+            "length": 5,
+            "outputLength": 5
+        },
+        {
+            "name": "BEGRU",
+            "description": "Authorization Group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "BRSCH",
+            "description": "Industry key",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 4
+        },
+        {
+            "name": "BUBKZ",
+            "description": "Check digit for the international location number",
+            "abapType": "NumericCharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DATLT",
+            "description": "Data communication line no.",
+            "abapType": "CharacterString",
+            "length": 14,
+            "outputLength": 14
+        },
+        {
+            "name": "ERDAT",
+            "description": "Date on which the Record Was Created",
+            "abapType": "Date",
+            "outputLength": 8
+        },
+        {
+            "name": "ERNAM",
+            "description": "Name of Person who Created the Object",
+            "abapType": "CharacterString",
+            "length": 12,
+            "outputLength": 12
+        },
+        {
+            "name": "EXABL",
+            "description": "Indicator: Unloading points exist",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "FAKSD",
+            "description": "Central billing block for customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "FISKN",
+            "description": "Account number of the master record with the fiscal address",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "KNAZK",
+            "description": "Working Time Calendar",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KNRZA",
+            "description": "Account number of an alternative payer",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "KONZS",
+            "description": "Group key",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "KTOKD",
+            "description": "Customer Account Group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "KUKLA",
+            "description": "Customer classification",
+            "abapType": "CharacterString",
+            "length": 2,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 2
+        },
+        {
+            "name": "LAND1",
+            "description": "Country Key",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "LIFNR",
+            "description": "Account Number of Vendor or Creditor",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "LIFSD",
+            "description": "Central delivery block for the customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "LOCCO",
+            "description": "City Coordinates",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "LOEVM",
+            "description": "Central Deletion Flag for Master Record",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "NAME1",
+            "description": "Name 1",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "outputLength": 35
+        },
+        {
+            "name": "NAME2",
+            "description": "Name 2",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "outputLength": 35
+        },
+        {
+            "name": "NAME3",
+            "description": "Name 3",
+            "abapType": "CharacterString",
+            "length": 35,
+            "outputLength": 35
+        },
+        {
+            "name": "NAME4",
+            "description": "Name 4",
+            "abapType": "CharacterString",
+            "length": 35,
+            "outputLength": 35
+        },
+        {
+            "name": "NIELS",
+            "description": "Nielsen ID",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "ORT01",
+            "description": "City",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "outputLength": 35
+        },
+        {
+            "name": "ORT02",
+            "description": "District",
+            "abapType": "CharacterString",
+            "length": 35,
+            "outputLength": 35
+        },
+        {
+            "name": "PFACH",
+            "description": "PO Box",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "PSTL2",
+            "description": "P.O. Box Postal Code",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "PSTLZ",
+            "description": "Postal Code",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 10
+        },
+        {
+            "name": "REGIO",
+            "description": "Region (State, Province, County)",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 3
+        },
+        {
+            "name": "COUNC",
+            "description": "County Code",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "CITYC",
+            "description": "City Code",
+            "abapType": "CharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "RPMKR",
+            "description": "Regional Market",
+            "abapType": "CharacterString",
+            "length": 5,
+            "outputLength": 5
+        },
+        {
+            "name": "SORTL",
+            "description": "Sort field",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "SPERR",
+            "description": "Central posting block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "SPRAS",
+            "description": "Language Key",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "outputLength": 1
+        },
+        {
+            "name": "STCD1",
+            "description": "Tax Number 1",
+            "abapType": "CharacterString",
+            "length": 16,
+            "outputLength": 16
+        },
+        {
+            "name": "STCD2",
+            "description": "Tax Number 2",
+            "abapType": "CharacterString",
+            "length": 11,
+            "outputLength": 11
+        },
+        {
+            "name": "STKZA",
+            "description": "Indicator: Business Partner Subject to Equalization Tax?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "STKZU",
+            "description": "Liable for VAT",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "STRAS",
+            "description": "House number and street",
+            "abapType": "CharacterString",
+            "length": 35,
+            "outputLength": 35
+        },
+        {
+            "name": "TELBX",
+            "description": "Telebox number",
+            "abapType": "CharacterString",
+            "length": 15,
+            "outputLength": 15
+        },
+        {
+            "name": "TELF1",
+            "description": "First telephone number",
+            "abapType": "CharacterString",
+            "length": 16,
+            "isSelected": true,
+            "outputLength": 16
+        },
+        {
+            "name": "TELF2",
+            "description": "Second telephone number",
+            "abapType": "CharacterString",
+            "length": 16,
+            "outputLength": 16
+        },
+        {
+            "name": "TELFX",
+            "description": "Fax Number",
+            "abapType": "CharacterString",
+            "length": 31,
+            "outputLength": 31
+        },
+        {
+            "name": "TELTX",
+            "description": "Teletex number",
+            "abapType": "CharacterString",
+            "length": 30,
+            "outputLength": 30
+        },
+        {
+            "name": "TELX1",
+            "description": "Telex number",
+            "abapType": "CharacterString",
+            "length": 30,
+            "outputLength": 30
+        },
+        {
+            "name": "LZONE",
+            "description": "Transportation zone to or from which the goods are delivered",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "XCPDK",
+            "description": "Indicator: Is the account a one-time account?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "XZEMP",
+            "description": "Indicator: Alternative payee in document allowed ?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "VBUND",
+            "description": "Company ID of trading partner",
+            "abapType": "CharacterString",
+            "length": 6,
+            "outputLength": 6
+        },
+        {
+            "name": "STCEG",
+            "description": "VAT Registration Number",
+            "abapType": "CharacterString",
+            "length": 20,
+            "isSelected": true,
+            "outputLength": 20
+        },
+        {
+            "name": "DEAR1",
+            "description": "Indicator: Competitor",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DEAR2",
+            "description": "Indicator: Sales partner",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DEAR3",
+            "description": "Indicator: Sales prospect",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DEAR4",
+            "description": "Indicator for customer type 4",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DEAR5",
+            "description": "ID for default sold-to party",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DEAR6",
+            "description": "Indicator: Consumer",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "GFORM",
+            "description": "Legal status",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "BRAN1",
+            "description": "Industry Code 1",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "BRAN2",
+            "description": "Industry code 2",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "BRAN3",
+            "description": "Industry code 3",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "BRAN4",
+            "description": "Industry code 4",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "BRAN5",
+            "description": "Industry code 5",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "EKONT",
+            "description": "Initial contact",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "UMSAT",
+            "description": "Annual sales",
+            "abapType": "PackedNumber",
+            "length": 8,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 11,
+            "referenceField": "UWAER"
+        },
+        {
+            "name": "UMJAH",
+            "description": "Year For Which Sales are Given",
+            "abapType": "NumericCharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "UWAER",
+            "description": "Currency of sales figure",
+            "abapType": "CharacterString",
+            "length": 5,
+            "outputLength": 5
+        },
+        {
+            "name": "JMZAH",
+            "description": "Yearly number of employees",
+            "abapType": "NumericCharacterString",
+            "length": 6,
+            "outputLength": 6
+        },
+        {
+            "name": "JMJAH",
+            "description": "Year for which the number of employees is given",
+            "abapType": "NumericCharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "KATR1",
+            "description": "Attribute 1",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KATR2",
+            "description": "Attribute 2",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KATR3",
+            "description": "Attribute 3",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KATR4",
+            "description": "Attribute 4",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KATR5",
+            "description": "Attribute 5",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KATR6",
+            "description": "Attribute 6",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "KATR7",
+            "description": "Attribute 7",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "KATR8",
+            "description": "Attribute 8",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "KATR9",
+            "description": "Attribute 9",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "KATR10",
+            "description": "Attribute 10",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "STKZN",
+            "description": "Natural Person",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "UMSA1",
+            "description": "Annual sales",
+            "abapType": "PackedNumber",
+            "length": 15,
+            "decimalCount": 2,
+            "isCurrency": true,
+            "outputLength": 17,
+            "referenceField": "UWAER"
+        },
+        {
+            "name": "TXJCD",
+            "description": "Tax Jurisdiction",
+            "abapType": "CharacterString",
+            "length": 15,
+            "outputLength": 15
+        },
+        {
+            "name": "MCOD1",
+            "description": "Search term for matchcode search",
+            "abapType": "CharacterString",
+            "length": 25,
+            "outputLength": 25
+        },
+        {
+            "name": "MCOD2",
+            "description": "Search Term for Matchcode Search",
+            "abapType": "CharacterString",
+            "length": 25,
+            "outputLength": 25
+        },
+        {
+            "name": "MCOD3",
+            "description": "Search term for matchcode search",
+            "abapType": "CharacterString",
+            "length": 25,
+            "outputLength": 25
+        },
+        {
+            "name": "PERIV",
+            "description": "Fiscal Year Variant",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "ABRVW",
+            "description": "Usage Indicator",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "INSPBYDEBI",
+            "description": "Inspection Carried Out By Customer (No Inspection Lot)",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "INSPATDEBI",
+            "description": "Inspection for a Delivery Note After Outbound Delivery",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "KTOCD",
+            "description": "Reference Account Group for One-Time Account (Customer)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "PFORT",
+            "description": "PO Box city",
+            "abapType": "CharacterString",
+            "length": 35,
+            "outputLength": 35
+        },
+        {
+            "name": "WERKS",
+            "description": "Plant",
+            "abapType": "CharacterString",
+            "length": 4,
+            "outputLength": 4
+        },
+        {
+            "name": "DTAMS",
+            "description": "Indicator for Data Medium Exchange",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "DTAWS",
+            "description": "Instruction key for data medium exchange",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "DUEFL",
+            "description": "Status of Data Transfer into Subsequent Release",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "HZUOR",
+            "description": "Assignment to Hierarchy",
+            "abapType": "NumericCharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "SPERZ",
+            "description": "Payment Block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "ETIKG",
+            "description": "IS-R Labeling: customer/plant group",
+            "abapType": "CharacterString",
+            "length": 10,
+            "outputLength": 10
+        },
+        {
+            "name": "CIVVE",
+            "description": "ID for mainly non-military use",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "MILVE",
+            "description": "ID for mainly military use",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "KDKG1",
+            "description": "Customer condition group 1",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KDKG2",
+            "description": "Customer condition group 2",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KDKG3",
+            "description": "Customer condition group 3",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KDKG4",
+            "description": "Customer condition group 4",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KDKG5",
+            "description": "Customer condition group 5",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "XKNZA",
+            "description": "Indicator: Alternative payer using account number",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "FITYP",
+            "description": "Tax type",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "STCDT",
+            "description": "Tax Number Type",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "STCD3",
+            "description": "Tax Number 3",
+            "abapType": "CharacterString",
+            "length": 18,
+            "outputLength": 18
+        },
+        {
+            "name": "STCD4",
+            "description": "Tax Number 4",
+            "abapType": "CharacterString",
+            "length": 18,
+            "outputLength": 18
+        },
+        {
+            "name": "XICMS",
+            "description": "Customer is ICMS-exempt",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "XXIPI",
+            "description": "Customer is IPI-exempt",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "XSUBT",
+            "description": "Customer group for Substituiçao Tributária calculation",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "CFOPC",
+            "description": "Customer's CFOP category",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "TXLW1",
+            "description": "Tax law: ICMS",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "TXLW2",
+            "description": "Tax law: IPI",
+            "abapType": "CharacterString",
+            "length": 3,
+            "outputLength": 3
+        },
+        {
+            "name": "CCC01",
+            "description": "Indicator for biochemical warfare for legal control",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "CCC02",
+            "description": "Indicator for nuclear nonproliferation for legal control",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "CCC03",
+            "description": "Indicator for national security for legal control",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "CCC04",
+            "description": "Indicator for missile technology for legal control",
+            "abapType": "CharacterString",
+            "length": 1,
+            "outputLength": 1
+        },
+        {
+            "name": "CASSD",
+            "description": "Central sales block for customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "outputLength": 2
+        },
+        {
+            "name": "KNURL",
+            "description": "Uniform Resource Locator",
+            "abapType": "CharacterString",
+            "length": 132,
+            "outputLength": 132
+        },
+        {
+            "name": "ZZNOT_EXIST",
+            "description": "Not Existing - dummy",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 1
+        },
+        {
+            "name": "ZZNAME1",
+            "description": "Name 1",
+            "abapType": "CharacterString",
+            "length": 35,
+            "selectionPermission": "Equals, Between",
+            "outputLength": 35
+        },
+        {
+            "name": "ODQ_CHANGEMODE",
+            "description": "Change Mode for a Data Record in the Delta",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isDeltaColumn": true,
+            "outputLength": 1
+        },
+        {
+            "name": "ODQ_ENTITYCNTR",
+            "description": "Number of Data Units (Data Records for Example)",
+            "abapType": "PackedNumber",
+            "length": 19,
+            "isDeltaColumn": true,
+            "outputLength": 20
+        }
+    ],
+    "parameterSet": {
+    }
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>1.42.4.1</ExtractorsVersion>
+          <RuntimeParameters />
+          <UpdateMode>Full</UpdateMode>
+          <HierarchyName>
+          </HierarchyName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Customer Master Data - Full Load</AnnotationText>
+          <DefaultAnnotationText>0CUSTOMER_ATTR (SAPI)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.OdpInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Odp.OdpInputTool" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\simon\Documents\Alteryx Workflows\Starter Kit\Transactions_without_Customer_MD.xlsx|||Missing Customer Master Data</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Transactions with missing customer master data</AnnotationText>
+          <DefaultAnnotationText>Transactions_without_Customer_MD.xlsx
+Query=Missing Customer Master Data</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="510" width="144" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Save a list of transactions with missing customer master data</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="51" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="51" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Join" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Left" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ODP - ERP</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="178c7789-26af-4a0a-ac4f-e5784c5fe1ba" />
+      <Telemetry>
+        <PreviousWorkflowId value="e648e7fa-2d23-4e45-8bb2-5bf848dd8f6d" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

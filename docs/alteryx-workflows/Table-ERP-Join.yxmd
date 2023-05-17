@@ -1,0 +1,2961 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="Theobald.Alteryx.Table.TableInputToolFactory">
+        <Position x="162" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>EC5</Connection>
+          <Definition>{
+    "functionName": "Z_THEO_READ_TABLE",
+    "runInBackgroundJob": false,
+    "backgroundJobTimeout": 180,
+    "tables": 
+    [
+        {
+            "name": "KNA1",
+            "description": "General Data in Customer Master",
+            "isView": false,
+            "fields": 
+            [
+                {
+                    "name": "MANDT",
+                    "description": "Client",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isPrimaryKey": true,
+                    "checkTable": "T000",
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": true
+                },
+                {
+                    "name": "KUNNR",
+                    "description": "Customer Number",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "isPrimaryKey": true,
+                    "isSelected": true,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "LAND1",
+                    "description": "Country Key",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isSelected": true,
+                    "checkTable": "T005",
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME1",
+                    "description": "Name 1",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME2",
+                    "description": "Name 2",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ORT01",
+                    "description": "City",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSTLZ",
+                    "description": "Postal Code",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "isSelected": true,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "REGIO",
+                    "description": "Region (State, Province, County)",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isSelected": true,
+                    "checkTable": "T005S",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SORTL",
+                    "description": "Sort field",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STRAS",
+                    "description": "House number and street",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELF1",
+                    "description": "First telephone number",
+                    "abapType": "CharacterString",
+                    "length": 16,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELFX",
+                    "description": "Fax Number",
+                    "abapType": "CharacterString",
+                    "length": 31,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XCPDK",
+                    "description": "Indicator: Is the account a one-time account?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ADRNR",
+                    "description": "Address",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "MCOD1",
+                    "description": "Search term for matchcode search",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MCOD2",
+                    "description": "Search Term for Matchcode Search",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MCOD3",
+                    "description": "Search term for matchcode search",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ANRED",
+                    "description": "Title",
+                    "abapType": "CharacterString",
+                    "length": 15,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AUFSD",
+                    "description": "Central order block for customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVAST",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BAHNE",
+                    "description": "Express train station",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BAHNS",
+                    "description": "Train station",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BBBNR",
+                    "description": "International location number  (part 1)",
+                    "abapType": "NumericCharacterString",
+                    "length": 7,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BBSNR",
+                    "description": "International location number (Part 2)",
+                    "abapType": "NumericCharacterString",
+                    "length": 5,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BEGRU",
+                    "description": "Authorization Group",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRSCH",
+                    "description": "Industry key",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T016",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BUBKZ",
+                    "description": "Check digit for the international location number",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DATLT",
+                    "description": "Data communication line no.",
+                    "abapType": "CharacterString",
+                    "length": 14,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ERDAT",
+                    "description": "Date on which the Record Was Created",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ERNAM",
+                    "description": "Name of Person who Created the Object",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EXABL",
+                    "description": "Indicator: Unloading points exist",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FAKSD",
+                    "description": "Central billing block for customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVFS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FISKN",
+                    "description": "Account number of the master record with the fiscal address",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "indexed": "Ascending",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNAZK",
+                    "description": "Working Time Calendar",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TFACD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNRZA",
+                    "description": "Account number of an alternative payer",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "KONZS",
+                    "description": "Group key",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KTOKD",
+                    "description": "Customer Account Group",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T077D",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KUKLA",
+                    "description": "Customer classification",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TKUKL",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LIFNR",
+                    "description": "Account Number of Vendor or Creditor",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "LFA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "LIFSD",
+                    "description": "Central delivery block for the customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVLS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LOCCO",
+                    "description": "City Coordinates",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LOEVM",
+                    "description": "Central Deletion Flag for Master Record",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME3",
+                    "description": "Name 3",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME4",
+                    "description": "Name 4",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NIELS",
+                    "description": "Nielsen ID",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TNLS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ORT02",
+                    "description": "District",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PFACH",
+                    "description": "PO Box",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSTL2",
+                    "description": "P.O. Box Postal Code",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "COUNC",
+                    "description": "County Code",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "T005E",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CITYC",
+                    "description": "City Code",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T005G",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RPMKR",
+                    "description": "Regional Market",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPERR",
+                    "description": "Central posting block",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPRAS",
+                    "description": "Language Key",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "formattedLength": 2,
+                    "checkTable": "T002",
+                    "conversionExit": "ISOLA",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD1",
+                    "description": "Tax Number 1",
+                    "abapType": "CharacterString",
+                    "length": 16,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD2",
+                    "description": "Tax Number 2",
+                    "abapType": "CharacterString",
+                    "length": 11,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STKZA",
+                    "description": "Indicator: Business Partner Subject to Equalization Tax?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STKZU",
+                    "description": "Liable for VAT",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELBX",
+                    "description": "Telebox number",
+                    "abapType": "CharacterString",
+                    "length": 15,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELF2",
+                    "description": "Second telephone number",
+                    "abapType": "CharacterString",
+                    "length": 16,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELTX",
+                    "description": "Teletex number",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELX1",
+                    "description": "Telex number",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LZONE",
+                    "description": "Transportation zone to or from which the goods are delivered",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TZONE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XZEMP",
+                    "description": "Indicator: Is an alternative payer allowed in document?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VBUND",
+                    "description": "Company ID of trading partner",
+                    "abapType": "CharacterString",
+                    "length": 6,
+                    "checkTable": "T880",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCEG",
+                    "description": "VAT Registration Number",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR1",
+                    "description": "Indicator: Competitor",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR2",
+                    "description": "Indicator: Sales partner",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR3",
+                    "description": "Indicator: Sales prospect",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR4",
+                    "description": "Indicator for customer type 4",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR5",
+                    "description": "ID for default sold-to party",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "GFORM",
+                    "description": "Legal status",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVGF",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN1",
+                    "description": "Industry Code 1",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN2",
+                    "description": "Industry code 2",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN3",
+                    "description": "Industry code 3",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN4",
+                    "description": "Industry code 4",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN5",
+                    "description": "Industry code 5",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EKONT",
+                    "description": "Initial contact",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "VBUK",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "UMSAT",
+                    "description": "Annual sales",
+                    "abapType": "PackedNumber",
+                    "length": 8,
+                    "decimalCount": 2,
+                    "formattedLength": 10,
+                    "conversionExit": "",
+                    "referenceTable": "KNA1",
+                    "referenceField": "UWAER",
+                    "isCurrency": true,
+                    "isClientField": false
+                },
+                {
+                    "name": "UMJAH",
+                    "description": "Year For Which Sales are Given",
+                    "abapType": "NumericCharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UWAER",
+                    "description": "Currency of sales figure",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "checkTable": "TCURC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "JMZAH",
+                    "description": "Yearly number of employees",
+                    "abapType": "NumericCharacterString",
+                    "length": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "JMJAH",
+                    "description": "Year for which the number of employees is given",
+                    "abapType": "NumericCharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR1",
+                    "description": "Attribute 1",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK1",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR2",
+                    "description": "Attribute 2",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK2",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR3",
+                    "description": "Attribute 3",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK3",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR4",
+                    "description": "Attribute 4",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK4",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR5",
+                    "description": "Attribute 5",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK5",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR6",
+                    "description": "Attribute 6",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK6",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR7",
+                    "description": "Attribute 7",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK7",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR8",
+                    "description": "Attribute 8",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK8",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR9",
+                    "description": "Attribute 9",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK9",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR10",
+                    "description": "Attribute 10",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK0",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STKZN",
+                    "description": "Natural Person",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UMSA1",
+                    "description": "Annual sales",
+                    "abapType": "PackedNumber",
+                    "length": 15,
+                    "decimalCount": 2,
+                    "formattedLength": 20,
+                    "conversionExit": "",
+                    "referenceTable": "KNA1",
+                    "referenceField": "UWAER",
+                    "isCurrency": true,
+                    "isClientField": false
+                },
+                {
+                    "name": "TXJCD",
+                    "description": "Tax Jurisdiction",
+                    "abapType": "CharacterString",
+                    "length": 15,
+                    "checkTable": "TTXJ",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PERIV",
+                    "description": "Fiscal Year Variant",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "T009",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ABRVW",
+                    "description": "Usage Indicator",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVLV",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INSPBYDEBI",
+                    "description": "Inspection Carried Out By Customer (No Inspection Lot)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INSPATDEBI",
+                    "description": "Inspection for a Delivery Note After Outbound Delivery",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KTOCD",
+                    "description": "Reference Account Group for One-Time Account (Customer)",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T077D",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PFORT",
+                    "description": "PO Box city",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "WERKS",
+                    "description": "Plant",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T001W",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DTAMS",
+                    "description": "Indicator for Data Medium Exchange",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DTAWS",
+                    "description": "Instruction key for data medium exchange",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DUEFL",
+                    "description": "Status of Data Transfer into Subsequent Release",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "HZUOR",
+                    "description": "Assignment to Hierarchy",
+                    "abapType": "NumericCharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPERZ",
+                    "description": "Payment Block",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ETIKG",
+                    "description": "IS-R Labeling: customer/plant group",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TWEK",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CIVVE",
+                    "description": "ID for mainly non-military use",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MILVE",
+                    "description": "ID for mainly military use",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG1",
+                    "description": "Customer condition group 1",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG2",
+                    "description": "Customer condition group 2",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG3",
+                    "description": "Customer condition group 3",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG4",
+                    "description": "Customer condition group 4",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG5",
+                    "description": "Customer condition group 5",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XKNZA",
+                    "description": "Indicator: Alternative payer using account number",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FITYP",
+                    "description": "Tax type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1AFITP",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCDT",
+                    "description": "Tax Number Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1ATODC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD3",
+                    "description": "Tax Number 3",
+                    "abapType": "CharacterString",
+                    "length": 18,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD4",
+                    "description": "Tax Number 4",
+                    "abapType": "CharacterString",
+                    "length": 18,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD5",
+                    "description": "Tax Number 5",
+                    "abapType": "CharacterString",
+                    "length": 60,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XICMS",
+                    "description": "Customer is ICMS-exempt",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XXIPI",
+                    "description": "Customer is IPI-exempt",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XSUBT",
+                    "description": "Customer group for Substituiçao Tributária calculation",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "J_1BTXSTG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CFOPC",
+                    "description": "Customer's CFOP category",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "TXLW1",
+                    "description": "Tax law: ICMS",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "J_1BATL1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "TXLW2",
+                    "description": "Tax law: IPI",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "J_1BATL2",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC01",
+                    "description": "Indicator for biochemical warfare for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC02",
+                    "description": "Indicator for nuclear nonproliferation for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC03",
+                    "description": "Indicator for national security for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC04",
+                    "description": "Indicator for missile technology for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CASSD",
+                    "description": "Central sales block for customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNURL",
+                    "description": "Uniform Resource Locator",
+                    "abapType": "CharacterString",
+                    "length": 132,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1KFREPRE",
+                    "description": "Name of Representative",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1KFTBUS",
+                    "description": "Type of Business",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "checkTable": "BUSTYPE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1KFTIND",
+                    "description": "Type of Industry",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "checkTable": "INDUSTYPE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CONFS",
+                    "description": "Status of Change Authorization (Central)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UPDAT",
+                    "description": "Date on Which the Changes Were Confirmed",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UPTIM",
+                    "description": "Time of Last Change Confirmation",
+                    "abapType": "Time",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NODEL",
+                    "description": "Central deletion block for master record",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR6",
+                    "description": "Indicator: Consumer",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SUFRAMA",
+                    "description": "Suframa Code",
+                    "abapType": "CharacterString",
+                    "length": 9,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RG",
+                    "description": "RG Number",
+                    "abapType": "CharacterString",
+                    "length": 11,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EXP",
+                    "description": "Issued by",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UF",
+                    "description": "State",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RGDATE",
+                    "description": "RG Issue Date",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RIC",
+                    "description": "RIC Number",
+                    "abapType": "NumericCharacterString",
+                    "length": 11,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RNE",
+                    "description": "Foreign National Registration",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RNEDATE",
+                    "description": "RNE Issue Date",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CNAE",
+                    "description": "CNAE",
+                    "abapType": "CharacterString",
+                    "length": 7,
+                    "checkTable": "J_1BTCNAE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LEGALNAT",
+                    "description": "Legal Nature",
+                    "abapType": "NumericCharacterString",
+                    "length": 4,
+                    "checkTable": "J_1BTLEGALNAT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CRTN",
+                    "description": "CRT Number",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ICMSTAXPAY",
+                    "description": "ICMS Taxpayer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTICMSTAXPAY",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INDTYP",
+                    "description": "Industry Main Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTINDTYP",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TDT",
+                    "description": "Tax Declaration Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTTDT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "COMSIZE",
+                    "description": "Company Size",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTCOMSIZE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DECREGPC",
+                    "description": "Declaration Regimen for PIS/COFINS",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTDECREGPC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_PALHGT",
+                    "description": "Maximum Stacking Height of the Packaging Material (VSO)",
+                    "abapType": "PackedNumber",
+                    "length": 13,
+                    "decimalCount": 3,
+                    "formattedLength": 17,
+                    "conversionExit": "",
+                    "referenceTable": "KNA1",
+                    "referenceField": "/VSO/R_PAL_UL",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_PAL_UL",
+                    "description": "Unit of Length for Packaging Material (VSO)",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "T006",
+                    "conversionExit": "CUNIT",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_PK_MAT",
+                    "description": "Customer-Related Packing for Each Packaging Material (VSO)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_MATPAL",
+                    "description": "Packaging Material of the Customer in VSO",
+                    "abapType": "CharacterString",
+                    "length": 18,
+                    "checkTable": "MARA",
+                    "conversionExit": "MATN1",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_I_NO_LYR",
+                    "description": "Number Layers Under an Inter-Pallet (VSO)",
+                    "abapType": "NumericCharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_ONE_MAT",
+                    "description": "Packing Material-Specific for Each Packaging Material",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_ONE_SORT",
+                    "description": "Pack Only One Package Type for Each PKM (VSO)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_ULD_SIDE",
+                    "description": "Side Preference of Loading/Unloading (VSO)",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_LOAD_PREF",
+                    "description": "Front/Back Preference of Loading/Unloading (VSO)",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_DPOINT",
+                    "description": "Collective Unloading Point for VSO",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "/VSO/R_DPOINT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/CUSTOMER",
+                    "description": "Data element to differentiate customer",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/SYSID",
+                    "description": "Name of SAP System",
+                    "abapType": "CharacterString",
+                    "length": 8,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/CLIENT",
+                    "description": "Client",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "conversionExit": "",
+                    "isClientField": true
+                },
+                {
+                    "name": "/XLSO/PARTNER",
+                    "description": "Business Partner Number",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/PREF_PAY",
+                    "description": "Version Number Component",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ALC",
+                    "description": "Agency Location Code",
+                    "abapType": "CharacterString",
+                    "length": 8,
+                    "checkTable": "FMFGT_ALC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PMT_OFFICE",
+                    "description": "Payment Office",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "checkTable": "FMFGT_PO",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FEE_SCHEDULE",
+                    "description": "Fee schedule",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DUNS",
+                    "description": "DUNS Number",
+                    "abapType": "CharacterString",
+                    "length": 9,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DUNS4",
+                    "description": "DUNS+4",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOFG",
+                    "description": "Processor group",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "PSO19",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOIS",
+                    "description": "Subledger acct preprocessing procedure",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSON1",
+                    "description": "Name 1",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSON2",
+                    "description": "Name 2",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSON3",
+                    "description": "Name 3",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOVN",
+                    "description": "First Name",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOTL",
+                    "description": "Title",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOHS",
+                    "description": "House number: is no longer used from Release 4.6B",
+                    "abapType": "CharacterString",
+                    "length": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOST",
+                    "description": "Street: No longer used from Release 4.6B",
+                    "abapType": "CharacterString",
+                    "length": 28,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO1",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO2",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO3",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO4",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO5",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "OIDRC",
+                    "description": "Differential Reference Code (DRC)",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "checkTable": "OICDC",
+                    "conversionExit": "NUMCV",
+                    "isClientField": false
+                },
+                {
+                    "name": "OID_POREQD",
+                    "description": "Purchase order required: X = Yes, Blank = No",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "OIPBL",
+                    "description": "Business location identifier (IS-Oil MRN)",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "OIFSPBL",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                }
+            ]
+        },
+        {
+            "name": "KNVV",
+            "description": "Customer Master Sales Data",
+            "isView": false,
+            "fields": 
+            [
+                {
+                    "name": "MANDT",
+                    "description": "Client",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isPrimaryKey": true,
+                    "checkTable": "T000",
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": true
+                },
+                {
+                    "name": "KUNNR",
+                    "description": "Customer Number",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "isPrimaryKey": true,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "VKORG",
+                    "description": "Sales Organization",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "isPrimaryKey": true,
+                    "isSelected": true,
+                    "checkTable": "TVKO",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VTWEG",
+                    "description": "Distribution Channel",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "isPrimaryKey": true,
+                    "isSelected": true,
+                    "checkTable": "TVTW",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPART",
+                    "description": "Division",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "isPrimaryKey": true,
+                    "isSelected": true,
+                    "checkTable": "TSPA",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ERNAM",
+                    "description": "Name of Person who Created the Object",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ERDAT",
+                    "description": "Date on Which Record Was Created",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BEGRU",
+                    "description": "Authorization Group",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LOEVM",
+                    "description": "Deletion flag for customer (sales level)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VERSG",
+                    "description": "Customer Statistics Group",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "checkTable": "TVSD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AUFSD",
+                    "description": "Customer order block (sales area)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVAST",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KALKS",
+                    "description": "Pricing procedure assigned to this customer",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "checkTable": "TVKD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDGRP",
+                    "description": "Customer group",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "T151",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BZIRK",
+                    "description": "Sales district",
+                    "abapType": "CharacterString",
+                    "length": 6,
+                    "isSelected": true,
+                    "checkTable": "T171",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KONDA",
+                    "description": "Price group (customer)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "T188",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PLTYP",
+                    "description": "Price list type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "T189",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AWAHR",
+                    "description": "Order probability of the item",
+                    "abapType": "NumericCharacterString",
+                    "length": 3,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INCO1",
+                    "description": "Incoterms (Part 1)",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TINC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INCO2",
+                    "description": "Incoterms (Part 2)",
+                    "abapType": "CharacterString",
+                    "length": 28,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LIFSD",
+                    "description": "Customer delivery block (sales area)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVLS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AUTLF",
+                    "description": "Complete delivery defined for each sales order?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ANTLF",
+                    "description": "Maximum Number of Partial Deliveries Allowed Per Item",
+                    "abapType": "PackedNumber",
+                    "length": 1,
+                    "formattedLength": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KZTLF",
+                    "description": "Partial delivery at item level",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KZAZU",
+                    "description": "Order Combination Indicator",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CHSPL",
+                    "description": "Batch split allowed",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LPRIO",
+                    "description": "Delivery Priority",
+                    "abapType": "NumericCharacterString",
+                    "length": 2,
+                    "checkTable": "TPRIO",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EIKTO",
+                    "description": "Shipper's (Our) Account Number at the Customer or Vendor",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VSBED",
+                    "description": "Shipping Conditions",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVSB",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FAKSD",
+                    "description": "Billing block for customer (sales and distribution)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVFS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MRNKZ",
+                    "description": "Manual invoice maintenance",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PERFK",
+                    "description": "Invoice dates (calendar identification)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TFACD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PERRL",
+                    "description": "Invoice list schedule (calendar identification)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TFACD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVAKZ",
+                    "description": "Cost estimate indicator (inactive)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVAWT",
+                    "description": "Value limit for cost estimate (inactive)",
+                    "abapType": "PackedNumber",
+                    "length": 13,
+                    "decimalCount": 2,
+                    "formattedLength": 16,
+                    "conversionExit": "",
+                    "referenceTable": "T001",
+                    "referenceField": "WAERS",
+                    "isCurrency": true,
+                    "isClientField": false
+                },
+                {
+                    "name": "WAERS",
+                    "description": "Currency",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "checkTable": "TCURC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KLABC",
+                    "description": "Customer classification (ABC analysis)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KTGRD",
+                    "description": "Account assignment group for this customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ZTERM",
+                    "description": "Terms of Payment Key",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VWERK",
+                    "description": "Delivering Plant (Own or External)",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "TVKWZ",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VKGRP",
+                    "description": "Sales Group",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVBVK",
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VKBUR",
+                    "description": "Sales Office",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "TVBUR",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VSORT",
+                    "description": "Item proposal",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "VBUK",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVGR1",
+                    "description": "Customer group 1",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVV1",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVGR2",
+                    "description": "Customer group 2",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVV2",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVGR3",
+                    "description": "Customer group 3",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVV3",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVGR4",
+                    "description": "Customer group 4",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVV4",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KVGR5",
+                    "description": "Customer group 5",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVV5",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BOKRE",
+                    "description": "Indicator: Customer Is Rebate-Relevant",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BOIDT",
+                    "description": "Start of validity per.for the rebate index for the customer",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KURST",
+                    "description": "Exchange Rate Type",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "TCURV",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRFRE",
+                    "description": "Relevant for price determination ID",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT1",
+                    "description": "ID for product attribute 1",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT2",
+                    "description": "ID for product attribute 2",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT3",
+                    "description": "ID for product attribute 3",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT4",
+                    "description": "ID for product attribute 4",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT5",
+                    "description": "ID for product attribute 5",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT6",
+                    "description": "ID for product attribute 6",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT7",
+                    "description": "ID for product attribute 7",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT8",
+                    "description": "ID for product attribute 8",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRAT9",
+                    "description": "ID for product attribute 9",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PRATA",
+                    "description": "ID for product attribute 10",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KABSS",
+                    "description": "Customer payment guarantee procedure",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T691P",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KKBER",
+                    "description": "Credit control area",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T014",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CASSD",
+                    "description": "Sales block for customer (sales area)",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RDOFF",
+                    "description": "Switch off rounding?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AGREL",
+                    "description": "Indicator: Relevant for agency business",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MEGRU",
+                    "description": "Unit of Measure Group",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "TWMEG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UEBTO",
+                    "description": "Overdelivery Tolerance Limit",
+                    "abapType": "PackedNumber",
+                    "length": 3,
+                    "decimalCount": 1,
+                    "formattedLength": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UNTTO",
+                    "description": "Underdelivery Tolerance Limit",
+                    "abapType": "PackedNumber",
+                    "length": 3,
+                    "decimalCount": 1,
+                    "formattedLength": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UEBTK",
+                    "description": "Unlimited overdelivery allowed",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PVKSM",
+                    "description": "Customer procedure for product proposal",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TPVD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PODKZ",
+                    "description": "Relevant for POD processing",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PODTG",
+                    "description": "Timeframe for Confirmation of POD",
+                    "abapType": "PackedNumber",
+                    "length": 11,
+                    "formattedLength": 10,
+                    "conversionExit": "TSTRG",
+                    "isClientField": false
+                },
+                {
+                    "name": "BLIND",
+                    "description": "Index Structure Active for Subsequent Settlement (in AB)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CARRIER_NOTIF",
+                    "description": "Carrier is to be notified",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/BEV1/EMLGPFAND",
+                    "description": "Deposit on Empties",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/BEV1/EMLGFORTS",
+                    "description": "Indicator for Empties Update",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/CUST_DIS",
+                    "description": "Rate (condition amount or percentage) where no scale exists",
+                    "abapType": "PackedNumber",
+                    "length": 11,
+                    "decimalCount": 2,
+                    "formattedLength": 16,
+                    "conversionExit": "",
+                    "referenceTable": "RV13A",
+                    "referenceField": "KONWA",
+                    "isCurrency": true,
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/COMP_NAME",
+                    "description": "Name 1",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/INDUSTRY",
+                    "description": "Industry key",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/H_NUMBER",
+                    "description": "House Number",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/STREET",
+                    "description": "Street",
+                    "abapType": "CharacterString",
+                    "length": 60,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/POST_CODE",
+                    "description": "Postal Code",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/CITY",
+                    "description": "City",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/REGION",
+                    "description": "Region (State, Province, County)",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/COUNTRY",
+                    "description": "Country Key",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/XLSO/INACTIVE",
+                    "description": "Single-Character Indicator",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                }
+            ]
+        }
+    ],
+    "joins": 
+    [
+        {
+            "leftTableName": "KNA1",
+            "rightTableName": "KNVV",
+            "fieldMappings": 
+            [
+                {
+                    "leftFieldName": "KUNNR"
+                }
+            ]
+        }
+    ],
+    "scalarRuntimeParameters": {
+    },
+    "whereSequence": [
+    ]
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>1.42.4.1</ExtractorsVersion>
+          <RuntimeParameters />
+          <WhereClause>
+          </WhereClause>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Customer Master (KNA1) Joined with Customer Master Sales data filtered for US &amp; German customers</AnnotationText>
+          <DefaultAnnotationText>General Data in Customer Master (KNA1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.TableInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Table.TableInputTool" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="846" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_4552_2b0ff6f4917a6145aa43dd99e6aae716_\Engine_4552_cea6e8bb322ae445a40cfce027724a8a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="420" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">\Missing_Address_Information.xlsx|||MissingMasterData</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Missing_Address_Information.xlsx</AnnotationText>
+          <DefaultAnnotationText>Missing_Address_Information.xlsx
+Query=MissingMasterData</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="64" MaxRecords="">\Customer Master Data.hyper</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Customer Master Data.hyper</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="954" y="414" width="144" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Write customers with incomplete address data to an Excel file</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="954" y="522" width="144" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Provide data to Tableau, PowerBI, AutoInsights etc. for visual analytics</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="954" y="318" width="144" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse Top Distribution Channel per Country</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="810" y="234" width="288" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Output Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="234" width="252" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="330" y="234" width="468" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Data Preparation & Cleansing]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="410" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_4552_2b0ff6f4917a6145aa43dd99e6aae716_\Engine_4552_6ed97ad10e2aba4d903139e5f49e42be~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="18" width="1032" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from SAP ERP's Customer Master Data (KNA1) table and prepare it for further analysis in Excel or a 3rd party BI solution. Records with incomplete data are separated.
+
+To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
+For increased performance and features use the Z_THEO_READ_TABLE function module which needs to be installed separately (see https://help.theobald-software.com/en/xtract-for-alteryx/table)</Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Country Key" selected="True" description="Country" />
+            <SelectField field="Name 1" selected="True" description="Name" />
+            <SelectField field="Region (State, Province, County)" selected="False" />
+            <SelectField field="Name of Person who Created the Object" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="493" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[!IsEmpty([House number and street])
+OR
+!IsEmpty([City])
+OR
+!IsEmpty([Postal Code])
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter: customers without complete address information</AnnotationText>
+          <DefaultAnnotationText>!IsEmpty([House number and street])
+OR
+!IsEmpty([City])
+OR
+!IsEmpty([Postal Code...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="575" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Country Key" action="GroupBy" rename="Country Key" />
+            <SummarizeField field="Distribution Channel" action="GroupBy" rename="Distribution Channel" />
+            <SummarizeField field="Customer Number" action="CountDistinct" rename="No. of Customers" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="656" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Country Key" order="Ascending" />
+            <Field field="No. of Customers" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sort</AnnotationText>
+          <DefaultAnnotationText>Country Key - Ascending
+No. of Customers - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings>
+        <Position x="412" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"City","House number and street"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="738" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="Country Key" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>First row per Country</AnnotationText>
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="34" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="False" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output26" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Table - ERP - Customer Master Data - Joined</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="adafc94e-f3f5-4c16-b77b-b479fc381891" />
+      <Telemetry>
+        <PreviousWorkflowId value="240ded9b-6dfa-42e5-8cf2-edf27b6ccb73" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

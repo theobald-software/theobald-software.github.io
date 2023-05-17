@@ -1,0 +1,2134 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_23688_e077b6b8dcfb234495536fa0af1f293a_\Engine_23688_c194fa7354968642b760d52a71071bec~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="438" width="144" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Write customers with incomplete address data to an Excel file</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="342" width="144" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse new Customers and Suppliers (since last extraction)</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="258" width="288" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Output Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="258" width="252" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="318" y="258" width="468" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Data Preparation & Cleansing]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="606" width="204" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Detailed instructions how to set-up the SAP connection can be found here:
+https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_23688_e077b6b8dcfb234495536fa0af1f293a_\Engine_23688_cb950d382c5f1c4a97b308861a9fdca7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1032" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load supplier and customer data (master data CDS views) from a SAP S/4HANA system using SAP's Operational Data Provisioning framework that allows delta extractions. This means only data that is new or changed since the last extraction is loaded and then processed in the workflow it is checked for missing address information.
+
+To use the Xtract ODP component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
+]]></Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
+        <Position x="138" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>S4H</Connection>
+          <Definition>{
+    "name": "I_CUSTOMER_CDS$P",
+    "description": "Customer",
+    "guid": "462a56af-7db8-4475-840b-9379f3681b2f",
+    "hierarchy": "",
+    "semantics": "MasterDataOrAttributes",
+    "context": "ABAP_CDS",
+    "supportsFull": true,
+    "supportsDelta": true,
+    "mode": "Delta",
+    "transferDataOnDeltaInit": true,
+    "columns": 
+    [
+        {
+            "name": "TS_SEQUENCE_NUMBER",
+            "description": "[GENERATED] Sequence number of row in current extraction",
+            "abapType": "FourByteInteger",
+            "isPrimaryKey": true,
+            "isDeltaColumn": true,
+            "generated": true,
+            "outputLength": 0
+        },
+        {
+            "name": "CUSTOMER",
+            "description": "Customer Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isPrimaryKey": true,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "CUSTOMERNAME",
+            "description": "Name of Customer",
+            "abapType": "CharacterString",
+            "length": 80,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 80
+        },
+        {
+            "name": "CUSTOMERFULLNAME",
+            "description": "Customer Full Name",
+            "abapType": "CharacterString",
+            "length": 220,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 220
+        },
+        {
+            "name": "CREATEDBYUSER",
+            "description": "Name of Person who Created the Object",
+            "abapType": "CharacterString",
+            "length": 12,
+            "selectionPermission": "All",
+            "outputLength": 12
+        },
+        {
+            "name": "CREATIONDATE",
+            "description": "Date on which the Record Was Created",
+            "abapType": "Date",
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "ADDRESSID",
+            "description": "Address",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "CUSTOMERCLASSIFICATION",
+            "description": "Customer Classification",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "VATREGISTRATION",
+            "description": "VAT Registration Number",
+            "abapType": "CharacterString",
+            "length": 20,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "CUSTOMERACCOUNTGROUP",
+            "description": "Customer Account Group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "AUTHORIZATIONGROUP",
+            "description": "Authorization Group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "DELIVERYISBLOCKED",
+            "description": "Central delivery block for the customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "POSTINGISBLOCKED",
+            "description": "Central posting block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BILLINGISBLOCKEDFORCUSTOMER",
+            "description": "Central billing block for customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "ORDERISBLOCKEDFORCUSTOMER",
+            "description": "Central order block for customer",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER1",
+            "description": "International location number  (part 1)",
+            "abapType": "NumericCharacterString",
+            "length": 7,
+            "selectionPermission": "All",
+            "outputLength": 7
+        },
+        {
+            "name": "ISONETIMEACCOUNT",
+            "description": "Indicator: Is the account a one-time account?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TAXJURISDICTION",
+            "description": "Tax Jurisdiction",
+            "abapType": "CharacterString",
+            "length": 15,
+            "selectionPermission": "All",
+            "outputLength": 15
+        },
+        {
+            "name": "INDUSTRY",
+            "description": "Industry key",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "TAXNUMBERTYPE",
+            "description": "Tax Number Type",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "TAXNUMBER1",
+            "description": "Tax Number 1",
+            "abapType": "CharacterString",
+            "length": 16,
+            "selectionPermission": "All",
+            "outputLength": 16
+        },
+        {
+            "name": "TAXNUMBER2",
+            "description": "Tax Number 2",
+            "abapType": "CharacterString",
+            "length": 11,
+            "selectionPermission": "All",
+            "outputLength": 11
+        },
+        {
+            "name": "TAXNUMBER3",
+            "description": "Tax Number 3",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "All",
+            "outputLength": 18
+        },
+        {
+            "name": "TAXNUMBER4",
+            "description": "Tax Number 4",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "All",
+            "outputLength": 18
+        },
+        {
+            "name": "TAXNUMBER5",
+            "description": "Tax Number 5",
+            "abapType": "CharacterString",
+            "length": 60,
+            "selectionPermission": "All",
+            "outputLength": 60
+        },
+        {
+            "name": "TAXNUMBER6",
+            "description": "Tax Number 6",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "CUSTOMERCORPORATEGROUP",
+            "description": "Group key",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "SUPPLIER",
+            "description": "Account Number of Supplier",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "NIELSENREGION",
+            "description": "Nielsen ID",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "INDUSTRYCODE1",
+            "description": "Industry code 1",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "INDUSTRYCODE2",
+            "description": "Industry code 2",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "INDUSTRYCODE3",
+            "description": "Industry code 3",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "INDUSTRYCODE4",
+            "description": "Industry code 4",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "INDUSTRYCODE5",
+            "description": "Industry code 5",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "COUNTRY",
+            "description": "Country/Region Key",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "ORGANIZATIONBPNAME1",
+            "description": "Name 1",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "ORGANIZATIONBPNAME2",
+            "description": "Name 2",
+            "abapType": "CharacterString",
+            "length": 35,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "CITYNAME",
+            "description": "City",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "POSTALCODE",
+            "description": "Postal Code",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "STREETNAME",
+            "description": "Street and House Number",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "SORTFIELD",
+            "description": "Sort field",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "FAXNUMBER",
+            "description": "Fax Number",
+            "abapType": "CharacterString",
+            "length": 31,
+            "selectionPermission": "All",
+            "outputLength": 31
+        },
+        {
+            "name": "BR_SUFRAMACODE",
+            "description": "Suframa Code",
+            "abapType": "CharacterString",
+            "length": 9,
+            "selectionPermission": "All",
+            "outputLength": 9
+        },
+        {
+            "name": "REGION",
+            "description": "Region (State, Province, County)",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "TELEPHONENUMBER1",
+            "description": "First telephone number",
+            "abapType": "CharacterString",
+            "length": 16,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 16
+        },
+        {
+            "name": "TELEPHONENUMBER2",
+            "description": "Second telephone number",
+            "abapType": "CharacterString",
+            "length": 16,
+            "selectionPermission": "All",
+            "outputLength": 16
+        },
+        {
+            "name": "ALTERNATIVEPAYERACCOUNT",
+            "description": "Account Number of an Alternative Payer",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "DATAMEDIUMEXCHANGEINDICATOR",
+            "description": "Report key for data medium exchange",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "VATLIABILITY",
+            "description": "Liable for VAT",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISBUSINESSPURPOSECOMPLETED",
+            "description": "Business Purpose Completed Flag",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "RESPONSIBLETYPE",
+            "description": "Tax type",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FISCALADDRESS",
+            "description": "Account number of the master record with the fiscal address",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "NFPARTNERISNATURALPERSON",
+            "description": "Natural Person",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "DELETIONINDICATOR",
+            "description": "Central Deletion Flag for Master Record",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "LANGUAGE",
+            "description": "Language Key",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TRADINGPARTNER",
+            "description": "Company ID of Trading Partner",
+            "abapType": "CharacterString",
+            "length": 6,
+            "selectionPermission": "All",
+            "outputLength": 6
+        },
+        {
+            "name": "DELIVERYDATETYPERULE",
+            "description": "Delivery Date Rule",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "EXPRESSTRAINSTATIONNAME",
+            "description": "Express train station",
+            "abapType": "CharacterString",
+            "length": 25,
+            "selectionPermission": "All",
+            "outputLength": 25
+        },
+        {
+            "name": "TRAINSTATIONNAME",
+            "description": "Train station",
+            "abapType": "CharacterString",
+            "length": 25,
+            "selectionPermission": "All",
+            "outputLength": 25
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER2",
+            "description": "International location number (Part 2)",
+            "abapType": "NumericCharacterString",
+            "length": 5,
+            "selectionPermission": "All",
+            "outputLength": 5
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER3",
+            "description": "Check digit for the international location number",
+            "abapType": "NumericCharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "CITYCODE",
+            "description": "City Code",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "COUNTY",
+            "description": "County Code",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "CUSTOMERHASUNLOADINGPOINT",
+            "description": "Indicator: Unloading points exist",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "CUSTOMERWORKINGTIMECALENDAR",
+            "description": "Working Time Calendar",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "ISCOMPETITOR",
+            "description": "Indicator: Competitor",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TAXINVOICEREPRESENTATIVENAME",
+            "description": "Name of Representative",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "BUSINESSTYPE",
+            "description": "Type of Business",
+            "abapType": "CharacterString",
+            "length": 30,
+            "selectionPermission": "All",
+            "outputLength": 30
+        },
+        {
+            "name": "INDUSTRYTYPE",
+            "description": "Type of Industry",
+            "abapType": "CharacterString",
+            "length": 30,
+            "selectionPermission": "All",
+            "outputLength": 30
+        },
+        {
+            "name": "TW_COLLVBILLINGISSUPPORTED",
+            "description": "Consolidated Invoicing for Taiwan",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ALTERNATIVEPAYEEISALLOWED",
+            "description": "Indicator: Is an alternative payer allowed in document?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE01",
+            "description": "Attribute 1",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE02",
+            "description": "Attribute 2",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE03",
+            "description": "Attribute 3",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE04",
+            "description": "Attribute 4",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE05",
+            "description": "Attribute 5",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE06",
+            "description": "Attribute 6",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE07",
+            "description": "Attribute 7",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE08",
+            "description": "Attribute 8",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE09",
+            "description": "Attribute 9",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "FREEDEFINEDATTRIBUTE10",
+            "description": "Attribute 10",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "ODQ_CHANGEMODE",
+            "description": "Change Mode for a Data Record in the Delta",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isDeltaColumn": true,
+            "outputLength": 1
+        },
+        {
+            "name": "ODQ_ENTITYCNTR",
+            "description": "Number of Data Units (Data Records for Example)",
+            "abapType": "PackedNumber",
+            "length": 19,
+            "isDeltaColumn": true,
+            "outputLength": 20
+        }
+    ],
+    "parameterSet": {
+    }
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>1.42.4.1</ExtractorsVersion>
+          <RuntimeParameters />
+          <UpdateMode>Delta</UpdateMode>
+          <HierarchyName>
+          </HierarchyName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>S4 Customer - Master Data - Delta Extraction</AnnotationText>
+          <DefaultAnnotationText>I_CUSTOMER_CDS$P (ABAP_CDS)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.OdpInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Odp.OdpInputTool" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
+        <Position x="138" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>S4H</Connection>
+          <Definition>{
+    "name": "I_SUPPLIER_CDS$P",
+    "description": "Supplier",
+    "guid": "0458f329-57d1-4af8-ac41-e3fd87bfe85a",
+    "hierarchy": "",
+    "semantics": "MasterDataOrAttributes",
+    "context": "ABAP_CDS",
+    "supportsFull": true,
+    "supportsDelta": true,
+    "mode": "Delta",
+    "transferDataOnDeltaInit": true,
+    "columns": 
+    [
+        {
+            "name": "TS_SEQUENCE_NUMBER",
+            "description": "[GENERATED] Sequence number of row in current extraction",
+            "abapType": "FourByteInteger",
+            "isPrimaryKey": true,
+            "isDeltaColumn": true,
+            "generated": true,
+            "outputLength": 0
+        },
+        {
+            "name": "SUPPLIER",
+            "description": "Account Number of Supplier",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isPrimaryKey": true,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "SUPPLIERACCOUNTGROUP",
+            "description": "Vendor account group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "SUPPLIERNAME",
+            "description": "Name of Supplier",
+            "abapType": "CharacterString",
+            "length": 80,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 80
+        },
+        {
+            "name": "SUPPLIERFULLNAME",
+            "description": "Supplier Full Name",
+            "abapType": "CharacterString",
+            "length": 220,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 220
+        },
+        {
+            "name": "ISBUSINESSPURPOSECOMPLETED",
+            "description": "Business Purpose Completed Flag",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "CREATEDBYUSER",
+            "description": "Name of Person who Created the Object",
+            "abapType": "CharacterString",
+            "length": 12,
+            "selectionPermission": "All",
+            "outputLength": 12
+        },
+        {
+            "name": "CREATIONDATE",
+            "description": "Date on which the Record Was Created",
+            "abapType": "Date",
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "ISONETIMEACCOUNT",
+            "description": "Indicator: Is the account a one-time account?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AUTHORIZATIONGROUP",
+            "description": "Authorization Group",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "VATREGISTRATION",
+            "description": "VAT Registration Number",
+            "abapType": "CharacterString",
+            "length": 20,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "ACCOUNTISBLOCKEDFORPOSTING",
+            "description": "Central posting block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TAXJURISDICTION",
+            "description": "Tax Jurisdiction",
+            "abapType": "CharacterString",
+            "length": 15,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 15
+        },
+        {
+            "name": "SUPPLIERCORPORATEGROUP",
+            "description": "Group key",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "CUSTOMER",
+            "description": "Customer Number",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "INDUSTRY",
+            "description": "Industry key",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "TAXNUMBER1",
+            "description": "Tax Number 1",
+            "abapType": "CharacterString",
+            "length": 16,
+            "selectionPermission": "All",
+            "outputLength": 16
+        },
+        {
+            "name": "TAXNUMBER2",
+            "description": "Tax Number 2",
+            "abapType": "CharacterString",
+            "length": 11,
+            "selectionPermission": "All",
+            "outputLength": 11
+        },
+        {
+            "name": "TAXNUMBER3",
+            "description": "Tax Number 3",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "All",
+            "outputLength": 18
+        },
+        {
+            "name": "TAXNUMBER4",
+            "description": "Tax Number 4",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "All",
+            "outputLength": 18
+        },
+        {
+            "name": "TAXNUMBER5",
+            "description": "Tax Number 5",
+            "abapType": "CharacterString",
+            "length": 60,
+            "selectionPermission": "All",
+            "outputLength": 60
+        },
+        {
+            "name": "TAXNUMBER6",
+            "description": "Tax Number 6",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "POSTINGISBLOCKED",
+            "description": "Central posting block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "PURCHASINGISBLOCKED",
+            "description": "Centrally imposed purchasing block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER1",
+            "description": "International location number  (part 1)",
+            "abapType": "NumericCharacterString",
+            "length": 7,
+            "selectionPermission": "All",
+            "outputLength": 7
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER2",
+            "description": "International location number (Part 2)",
+            "abapType": "NumericCharacterString",
+            "length": 5,
+            "selectionPermission": "All",
+            "outputLength": 5
+        },
+        {
+            "name": "INTERNATIONALLOCATIONNUMBER3",
+            "description": "Check digit for the international location number",
+            "abapType": "NumericCharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ADDRESSID",
+            "description": "Address",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "REGION",
+            "description": "Region (State, Province, County)",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "ORGANIZATIONBPNAME1",
+            "description": "Name 1",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "ORGANIZATIONBPNAME2",
+            "description": "Name 2",
+            "abapType": "CharacterString",
+            "length": 35,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "CITYNAME",
+            "description": "City",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "POSTALCODE",
+            "description": "Postal Code",
+            "abapType": "CharacterString",
+            "length": 10,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "STREETNAME",
+            "description": "Street and House Number",
+            "abapType": "CharacterString",
+            "length": 35,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 35
+        },
+        {
+            "name": "COUNTRY",
+            "description": "Country/Region Key",
+            "abapType": "CharacterString",
+            "length": 3,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "CONCATENATEDINTERNATIONALLOCNO",
+            "description": "Cocatenated International Location Number",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "SUPPLIERPROCUREMENTBLOCK",
+            "description": "Function That Will Be Blocked",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "SUPLRQUALITYMANAGEMENTSYSTEM",
+            "description": "Supplier's QM System",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "SUPLRQLTYINPROCMTCERTFNVALIDTO",
+            "description": "Validity Date of Certification",
+            "abapType": "Date",
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "SUPPLIERLANGUAGE",
+            "description": "Language Key",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ALTERNATIVEPAYEEACCOUNTNUMBER",
+            "description": "Account Number of the Alternative Payee",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "PHONENUMBER1",
+            "description": "First telephone number",
+            "abapType": "CharacterString",
+            "length": 16,
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 16
+        },
+        {
+            "name": "FAXNUMBER",
+            "description": "Fax Number",
+            "abapType": "CharacterString",
+            "length": 31,
+            "selectionPermission": "All",
+            "outputLength": 31
+        },
+        {
+            "name": "ISNATURALPERSON",
+            "description": "Natural Person",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TAXNUMBERRESPONSIBLE",
+            "description": "Tax Number at Responsible Tax Authority",
+            "abapType": "CharacterString",
+            "length": 18,
+            "selectionPermission": "All",
+            "outputLength": 18
+        },
+        {
+            "name": "UK_CONTRACTORBUSINESSTYPE",
+            "description": "Subcontractor's Business Type",
+            "abapType": "CharacterString",
+            "length": 12,
+            "selectionPermission": "All",
+            "outputLength": 12
+        },
+        {
+            "name": "UK_PARTNERTRADINGNAME",
+            "description": "Partner's Trading Name",
+            "abapType": "CharacterString",
+            "length": 30,
+            "selectionPermission": "All",
+            "outputLength": 30
+        },
+        {
+            "name": "UK_PARTNERTAXREFERENCE",
+            "description": "Partner's Unique Tax Reference (UTR)",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "UK_VERIFICATIONSTATUS",
+            "description": "Verification Status",
+            "abapType": "CharacterString",
+            "length": 3,
+            "selectionPermission": "All",
+            "outputLength": 3
+        },
+        {
+            "name": "UK_VERIFICATIONNUMBER",
+            "description": "Verification Number",
+            "abapType": "CharacterString",
+            "length": 20,
+            "selectionPermission": "All",
+            "outputLength": 20
+        },
+        {
+            "name": "UK_COMPANYREGISTRATIONNUMBER",
+            "description": "Companies House Registration Number",
+            "abapType": "CharacterString",
+            "length": 8,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "UK_VERIFIEDTAXSTATUS",
+            "description": "Tax Status of the Verified Subcontractor",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "FORMOFADDRESS",
+            "description": "Title",
+            "abapType": "CharacterString",
+            "length": 15,
+            "selectionPermission": "All",
+            "outputLength": 15
+        },
+        {
+            "name": "REFERENCEACCOUNTGROUP",
+            "description": "Reference Account Group for One-Time Account (Vendor)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "VATLIABILITY",
+            "description": "Liable for VAT",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "RESPONSIBLETYPE",
+            "description": "Tax type",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "TAXNUMBERTYPE",
+            "description": "Tax Number Type",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "FISCALADDRESS",
+            "description": "Account number of the master record with fiscal address",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "BUSINESSTYPE",
+            "description": "Type of Business",
+            "abapType": "CharacterString",
+            "length": 30,
+            "selectionPermission": "All",
+            "outputLength": 30
+        },
+        {
+            "name": "BIRTHDATE",
+            "description": "Date of Birth of the Person Subject to Withholding Tax",
+            "abapType": "Date",
+            "isSelected": true,
+            "selectionPermission": "All",
+            "outputLength": 8
+        },
+        {
+            "name": "PAYMENTISBLOCKEDFORSUPPLIER",
+            "description": "Payment Block",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "SORTFIELD",
+            "description": "Sort field",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "PHONENUMBER2",
+            "description": "Second telephone number",
+            "abapType": "CharacterString",
+            "length": 16,
+            "selectionPermission": "All",
+            "outputLength": 16
+        },
+        {
+            "name": "DELETIONINDICATOR",
+            "description": "Central Deletion Flag for Master Record",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TAXINVOICEREPRESENTATIVENAME",
+            "description": "Name of Representative",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "INDUSTRYTYPE",
+            "description": "Type of Industry",
+            "abapType": "CharacterString",
+            "length": 30,
+            "selectionPermission": "All",
+            "outputLength": 30
+        },
+        {
+            "name": "IN_GSTSUPPLIERCLASSIFICATION",
+            "description": "Vendor Classification for GST",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "SUPLRPROOFOFDELIVRLVTCODE",
+            "description": "Supplier indicator relevant for proof of delivery",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TRADINGPARTNER",
+            "description": "Company ID of Trading Partner",
+            "abapType": "CharacterString",
+            "length": 6,
+            "selectionPermission": "All",
+            "outputLength": 6
+        },
+        {
+            "name": "BR_TAXISSPLIT",
+            "description": "Tax Split",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_PAYERISPAYINGTOCARRYONENT",
+            "description": "Is payer making payment in course of carrying on enterprise",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_INDIVIDUALISUNDER18",
+            "description": "Is an individual under 18 and payment does not exceed $350",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_PAYMENTISEXCEEDING75",
+            "description": "The payment does not exceed $75, excl. GST",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_PAYMENTISWHOLLYINPUTTAXED",
+            "description": "The supply that the payment relates to is wholly input taxed",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_PARTNERISSUPPLYWITHOUTGAIN",
+            "description": "The supply is made by an individual without gain",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_SUPPLIERISENTITLEDTOABN",
+            "description": "The supplier is not entitled to an ABN",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_PAYMENTISINCOMEEXEMPTED",
+            "description": "The whole of the payment is exempt income.",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_SUPPLYISMADEASPRIVATEHOBBY",
+            "description": "An activity done as a private recreational pursuit",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "AU_SUPPLYMADEISOFDMSTCNATURE",
+            "description": "wholly of a private or domestic nature",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "ISTOBEACCEPTEDATORIGIN",
+            "description": "Acceptance At Origin",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BPISEQUALIZATIONTAXSUBJECT",
+            "description": "Checkbox",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "BRSPCFCTAXBASEPERCENTAGECODE",
+            "description": "Tax Base in Percentage",
+            "abapType": "NumericCharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "DATAMEDIUMEXCHANGEINDICATOR",
+            "description": "Report key for data medium exchange",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "DATAEXCHANGEINSTRUCTIONKEY",
+            "description": "Instruction Key for Data Medium Exchange",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "SUPPLIERISSUBRANGERELEVANT",
+            "description": "Indicator: vendor sub-range relevant",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "TRAINSTATIONNAME",
+            "description": "Train station",
+            "abapType": "CharacterString",
+            "length": 25,
+            "selectionPermission": "All",
+            "outputLength": 25
+        },
+        {
+            "name": "ALTERNATIVEPAYEEISALLOWED",
+            "description": "Indicator: Alternative Payee in Document Allowed?",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "PAYTSLIPWTHREFSUBSCRIBER",
+            "description": "ISR subscriber number",
+            "abapType": "CharacterString",
+            "length": 11,
+            "selectionPermission": "All",
+            "outputLength": 11
+        },
+        {
+            "name": "TRANSPSERVICEAGENTSTSTCGRP",
+            "description": "Shipment: statistics group, transportation service agent",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "SUPPLIERISPLANTRELEVANT",
+            "description": "Indicator: plant level relevant",
+            "abapType": "CharacterString",
+            "length": 1,
+            "selectionPermission": "All",
+            "outputLength": 1
+        },
+        {
+            "name": "SUPLRTAXAUTHORITYACCOUNTNUMBER",
+            "description": "Account Number of Master Record of Tax Office Responsible",
+            "abapType": "CharacterString",
+            "length": 10,
+            "selectionPermission": "All",
+            "outputLength": 10
+        },
+        {
+            "name": "SUPPLIERPLANT",
+            "description": "Plant (Own or External)",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "FACTORYCALENDAR",
+            "description": "Factory calendar key",
+            "abapType": "CharacterString",
+            "length": 2,
+            "selectionPermission": "All",
+            "outputLength": 2
+        },
+        {
+            "name": "PAYMENTREASON",
+            "description": "Payment Reason",
+            "abapType": "CharacterString",
+            "length": 4,
+            "selectionPermission": "All",
+            "outputLength": 4
+        },
+        {
+            "name": "ODQ_CHANGEMODE",
+            "description": "Change Mode for a Data Record in the Delta",
+            "abapType": "CharacterString",
+            "length": 1,
+            "isDeltaColumn": true,
+            "outputLength": 1
+        },
+        {
+            "name": "ODQ_ENTITYCNTR",
+            "description": "Number of Data Units (Data Records for Example)",
+            "abapType": "PackedNumber",
+            "length": 19,
+            "isDeltaColumn": true,
+            "outputLength": 20
+        }
+    ],
+    "parameterSet": {
+    }
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>1.40.4.0</ExtractorsVersion>
+          <RuntimeParameters />
+          <UpdateMode>Delta</UpdateMode>
+          <HierarchyName>
+          </HierarchyName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>S4 Supplier - Master Data - Delta Extraction</AnnotationText>
+          <DefaultAnnotationText>I_SUPPLIER_CDS$P (ABAP_CDS)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.OdpInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Odp.OdpInputTool" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings>
+        <Position x="342" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Customer Number","Name of Customer","Customer Full Name","Date on which the Record Was Created","VAT Registration Number","Name 1","City","Postal Code","Street and House Number","Region (State, Province, County)","First telephone number","Language Key"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_23688_e077b6b8dcfb234495536fa0af1f293a_\Engine_23688_00030a8e0eceae4389786d792827e1a9~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings>
+        <Position x="342" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Account Number of Supplier","Name of Supplier","Supplier Full Name","Date on which the Record Was Created","VAT Registration Number","Tax Jurisdiction","Customer Number","Address","Region (State, Province, County)","Name 1","City","Postal Code","Street and House Number","Country/Region Key","Language Key","First telephone number","Date of Birth of the Person Subject to Withholding Tax"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Customer Number" selected="True" rename="Number" />
+            <SelectField field="Name 1" selected="True" rename="Name" />
+            <SelectField field="Country/Region Key" selected="True" />
+            <SelectField field="Region (State, Province, County)" selected="True" />
+            <SelectField field="City" selected="True" />
+            <SelectField field="Postal Code" selected="True" />
+            <SelectField field="Street and House Number" selected="True" />
+            <SelectField field="VAT Registration Number" selected="True" />
+            <SelectField field="Date on which the Record Was Created" selected="True" />
+            <SelectField field="Language Key" selected="False" />
+            <SelectField field="First telephone number" selected="False" />
+            <SelectField field="Name of Customer" selected="False" />
+            <SelectField field="Customer Full Name" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Account Number of Supplier" selected="True" rename="Number" />
+            <SelectField field="Name of Supplier" selected="True" rename="Name" />
+            <SelectField field="Country/Region Key" selected="True" />
+            <SelectField field="Region (State, Province, County)" selected="True" />
+            <SelectField field="City" selected="True" />
+            <SelectField field="Postal Code" selected="True" />
+            <SelectField field="Supplier Full Name" selected="False" />
+            <SelectField field="Tax Jurisdiction" selected="False" />
+            <SelectField field="Customer Number" selected="False" />
+            <SelectField field="Address" selected="False" />
+            <SelectField field="Name 1" selected="False" />
+            <SelectField field="Street and House Number" selected="True" />
+            <SelectField field="VAT Registration Number" selected="True" />
+            <SelectField field="Date on which the Record Was Created" selected="True" />
+            <SelectField field="Language Key" selected="False" />
+            <SelectField field="First telephone number" selected="False" />
+            <SelectField field="Date of Birth of the Person Subject to Withholding Tax" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="618" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Customer'" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Type = 'Customer'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Supplier'" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Type = 'Supplier'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="702" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>IsEmpty([Country/Region Key])
+OR
+IsEmpty([City])
+OR
+IsEmpty([Postal Code])
+OR
+IsEmpty([Street and House Number])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsEmpty([Country/Region Key])
+OR
+IsEmpty([City])
+OR
+IsEmpty([Postal Code])
+OR
+Is...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">\BusinessPartner_Incomplete_Address.xlsx|||BP</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Records with Incomplete Address</AnnotationText>
+          <DefaultAnnotationText>BusinessPartner_Incomplete_Address.xlsx
+Query=BP</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="60" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="62" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output26" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output26" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ODP - S4 - Delta</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="af7ad1bc-1496-42b5-af0e-504f1070de59" />
+      <Telemetry>
+        <PreviousWorkflowId value="66a25570-37d9-4f21-a9c0-c0879f3406eb" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
