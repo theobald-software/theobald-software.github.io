@@ -125,7 +125,7 @@ Das folgende Beispiel zeigt, wie man einen yunIO-Service einrichtet, der den SAP
 2. Suchen Sie nach dem Report RLT10010, siehe [Einen Report finden](#einen-report-finden).
 3. Wählen Sie eine Variante oder geben Sie Selektionsparameter ein. Das angeführte Beispiel verwendet eine Variante *VAR01*.<br>
 ![report-rlt10010](/img/content/yunio/report-rlt10010.png){:class="img-responsive"}
-4. Setzen Sie die Einstellung **Skip rows from top** auf 8, um die Kopfzeile des Reports zu überspringen. Führen Sie den Report in SAP aus, um die Anzahl der zu überspringenden Zeilen zu ermitteln.
+4. Führen Sie den Report in SAP aus, um die Anzahl der zu überspringenden Zeilen zu ermitteln. Setzen Sie die Einstellung **Skip rows from top** auf 8, um die Kopfzeile des Reports zu überspringen. 
 ![SAP-Table-or-Views](/img/content/yunio/report-sap3.png){:class="img-responsive"}
 5. Klicken Sie auf **[Detect Columns]**, um die Spalten des Reports automatisch zu ermitteln. Die ermittelten Spalten werden im Abschnitt *Output Columns* angezeigt.
 6. Klicken Sie auf **[Save]**, um den Service zu speichern.
