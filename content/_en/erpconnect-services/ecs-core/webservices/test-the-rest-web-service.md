@@ -22,7 +22,7 @@ The web service URL is displayed here according the settings in the connection d
 In the *Query String* section all scalar input parameters are listed. 
 
 **Request Body**<br>
-Complex parameters such as *List-Of* and *Structure* parameters are listed in this section. You don't have to fill values for more than one item if you have complex parameters for multiple items defined. In standard always two items are proposed for *List-Of* parameters.
+Complex parameters such as *List-Of* and *Structure* parameters are listed in the current section. You don't have to fill values for more than one item if you have complex parameters for multiple items defined. In standard always two items are proposed for *List-Of* parameters.
 
 **Execute**<br>
 Clicking on Execute will execute the service in live mode, any updates made will be comitted.  

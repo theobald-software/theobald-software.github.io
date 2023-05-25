@@ -5,7 +5,7 @@ It creates a log table in SAP that record insert, update, and delete activities 
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the Table CDC component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: Table CDC](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table-cdc).
+For more information, refer to the knowledge base article [SAP User Rights: Table CDC](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table-cdc).
 
 
 {: .box-tip }

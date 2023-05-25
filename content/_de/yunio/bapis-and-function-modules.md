@@ -27,6 +27,8 @@ Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *Function M
 5. Wählen Sie einen Eintrag aus der Liste der Suchergebnisse aus (3). 
 Die Extraktionseinstellungen für *Function Module / BAPI* öffnen sich automatisch.<br>
 
+## Einstellungen
+
 Das *Function Module / BAPI* Menü ist in folgende Unterabschnitte unterteilt:
 - [Function Module](#funktion-module) (4) zeigt den Namen und die Beschreibung des gewählten Funktionsbausteins / BAPIs an.
 - [Advanced Settings](#advanced-settings) (5) definieren, wie Daten aus SAP extrahiert werden.
@@ -50,7 +52,7 @@ Diese Option ist für einige SAP Funktionsbausteine (z.B. BAPI_PO_CREATE) erford
 Im Abschnitt *Function Module Interface Parameters* werden alle verfügbaren Parameter des Funktionsbausteins / BAPIs angezeigt.
 Funktionsbausteine /BAPIs können bis zu vier Parametertypen haben: [Import](#import-parameter), [Export](#export-parameter), [Changing](#changing-parameter) and [Table](#table-parameter).
 
-### Import-Parameter
+## Import-Parameter
 
 Import-Parameter repräsentieren die Eingabewerte, die vom Client an SAP gesendet werden. 
 Im Tab **Import** können Sie Eingabeparameter definieren.
@@ -75,7 +77,7 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
 
-### Export-Parameter
+## Export-Parameter
 Export-Parameter repräsentieren die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.
 Im Tab **Export** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden:
 - Um ein Feld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.<br>
@@ -83,12 +85,12 @@ Optional: Sie können den Namen des Ausgabe-Parameters ändern. Bei Tabellen mus
 
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
-### Changing-Parameter
+## Changing-Parameter
 
 Changing-Parameter repräsentieren Parameter, die sowohl für Eingabe als auch Ausgabe verwendet werden können.<br>
 Im Tab **Changing** können Sie die entsprechenden Parameter definieren. 
 
-### Tables-Parameter
+## Tables-Parameter
 
 Tables-Parameter haben eine Tabellenstruktur, die aus mehreren Zeilen besteht. 
 Tabellen können als Eingabe und Ausgabe verwendet werden.
@@ -109,5 +111,5 @@ Optional: Sie können den Namen des Ausgabe-Parameters ändern. Bei Tabellen mus
 
 *****
 #### Weiterführende Links
-- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [KB: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+- [Integration Scenarios](./integration)
+- [Knowledge Base Artikel: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

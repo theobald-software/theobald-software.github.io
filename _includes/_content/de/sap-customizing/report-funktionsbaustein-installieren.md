@@ -1,11 +1,11 @@
-Die Report Komponente benötigt die Installation eines Z-Funktionsbausteins auf Ihrem SAP-System.<br>
+Die Extraktion von Reports setzt die Installation eines Z-Funktionsbausteins auf Ihrem SAP-System voraus.<br>
 Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installieren, wenden Sie sich an Ihre SAP-Basis-Abteilung. 
 
 {: .box-note}
 **Hinweis:** Ab Version 1.2 des benutzerdefinierten Funktionsbausteins `Z_XTRACT_IS_REMOTE_REPORT` muss der Zugriff auf Reports explizit erteilt werden, siehe [Berechtigungsobjekte für Z_XTRACT_IS_REMOTE_REPORT](#berechtigungsobjekte-für-z_xtract_is_remote_report).
 
 
-### Installation
+### Installation von Z_XTRACT_IS_REMOTE_REPORT
 Installieren Sie den Funktionsbaustein über den mitgelieferten Transportauftrag *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
 Der Transportauftrag befindet sich in folgendem Installationsverzeichnis: `C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.
 

@@ -15,7 +15,7 @@ In the last sample we have used the function tEcs.executeXql() to extract data f
 Now we will repeat the last sample to execute an SAP function using the function tEcs.executeFunction(). 
 
 For all other basics please refer to the sample in [Getting started with ECS Core and SharePoint Online](./getting-started-with-ecs-core-and-sharepoint-online). 
-For this section the knowledge about the basic usage is assumed!
+For the following section the knowledge about the basic usage is assumed!
 
 
 Let's check the following demo function module on the SAP side: SD_RFC_CUSTOMER_GET.<br> 

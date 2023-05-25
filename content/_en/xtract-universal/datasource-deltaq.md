@@ -21,7 +21,7 @@ DeltaQ is an old component. If possible, use the newer component **[ODP](./odp)*
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the DeltaQ component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: DeltaQ](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#deltaq).
+For more information, refer to the knowledge base article [SAP User Rights: DeltaQ](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#deltaq).
 
 
 {: .box-tip }

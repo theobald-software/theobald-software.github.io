@@ -18,10 +18,10 @@ This section shows how to use the integration type *SAP Table or View*.
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+For more information, refer to the knowledge base article [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
 
 
-### Look Up an SAP Table or View
+## Look Up an SAP Table or View
 
 1. Create a new *Service* of type *SAP Table or View*. 
 2. Click **[Save and edit]**. The *Search SAP Table or View* menu opens.
@@ -31,21 +31,21 @@ For more information, see the knowledge base article on [SAP User Rights: Table]
 5. Select a source file from the list of available search results (3). 
 The extraction settings of *SAP Table and Views* open automatically.<br>
 
-### Settings
+## Settings
 The *SAP Table or View* settings consist of the following subsections:
-
-![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
-
 - [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
-- [Advanced Settings](#advanced-settings) (5) define how data is extract from SAP.
+- [Advanced Settings](#advanced-settings) (5) define how the data is extract from SAP.
 - [Output Columns](#output-columns) (6) define which columns are extracted.
 - [WHERE Clause](#where-clause) (7) offers an optional data filter.
 - [WHERE Clause Editor](#where-clause-editor) (8) offers a toolkit for creating WHERE clauses.
 
+![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
+
+
 
 ### Table or View
 
-The name and description of the selected Table or View is displayed in the **Table or View** section.<br>
+The **Table or View** section displays the name and description of the selected table or view.<br>
 To select a different source file, click **Select** in the upper right corner of the section.
 
 ### Advanced Settings
@@ -98,7 +98,7 @@ Activate the setting **Run in background** for long-running extractions with a l
 
 You can select either all or only individual columns for extraction. <br>
 Per default all columns are selected to be extracted. 
-Deselect the ones you don’t want to extract.
+Deselect the columns you don’t want to extract.
 
 ### WHERE Clause
 Use a WHERE clause to filter your data.
@@ -185,10 +185,15 @@ When adding or editing a criteria only the relevant components are displayed e.g
 {: .box-note }
 **Note:** The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
 
+## SAP Customizing
+
+{: .box-note }
+**Note:** SAP customizing is optional. The installation of the custom function module `Z_THEO_READ_TABLE` is recommended.
+
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
 
 *****
 #### Related Links
-- [Knowledge Base Article: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [Knowledge Base Article: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+- [Integration Scenarios](./integration)
+- [Knowledge Base Article: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

@@ -88,7 +88,7 @@ In the most simple case, the Windows task scheduler can be used for calling and 
 By default the parameters "-s" (Server for extraction), "-p" (Listening port of the Xtract Universal Server) and "-n" (Name of the extraction) are generated for any extraction. 
 
 ### Logs and Output (4) 
-When an extraction is executed, information about the extraction is displayed in this section.
+When an extraction is executed, information about the extraction is displayed in the following section.
 
 #### Log 
 In the *Log* tab the extraction log is displayed in real time.

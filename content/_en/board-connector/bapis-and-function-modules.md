@@ -18,7 +18,7 @@ Basic Board Connector the knowledge is required to understand the following sect
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the BAPI component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+For more information, refer to the knowledge base article [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
 
 {: .box-tip }
 **Tip:** To get information on the basics of Board Connector, refer to [Getting Started](./getting-started). <br>

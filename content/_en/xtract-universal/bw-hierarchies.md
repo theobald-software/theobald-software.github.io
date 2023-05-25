@@ -18,7 +18,7 @@ The component BW Hierarchy enables the extraction of hierarchies from an SAP BW 
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use the BW Hierarchy component, access to the designated authority objects (RFC) in SAP must be available.
-For more information, see the knowledge base article on [SAP User Rights: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
+For more information, refer to the knowledge base article [SAP User Rights: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
 
 {% include _content/en/hierarchies-recommendation.md %}
 

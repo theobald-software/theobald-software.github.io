@@ -26,24 +26,25 @@ To use the integration type *Function Module / BAPI*, access to the designated a
 4. Click **[Search]** (2) to display the search results.
 5. Select a source file from the list of available search results (3). The settings of *Function Module / BAPI* open automatically.<br>
 
+## Settings
 The settings for *Function Module* consist of the following subsections:
 
 - [Function Module](#function-module) (4) displays the name and description of the selected Function Module / BAPI.
-- [Advanced Settings](#advanced-settings) (5) define how data is comitted to and from SAP.
-- [Function Module Interface Parameters](#function-module-interface-parameters) (6) define what data is comitted to and from SAP.
+- [Advanced Settings](#advanced-settings) (5) define how data is committed to and from SAP.
+- [Function Module Interface Parameters](#function-module-interface-parameters) (6) define what data is committed to and from SAP.
 
 ![yunIO-function-module](/img/content/yunio/bapi-settings.png){:class="img-responsive"}
 
 ### Function Module
 
-The name and description of the selected Function Module or BAPI is displayed in the **Function Module** section.<br>
+The **Function Module** section displays the name and description of the selected function module or BAPI. <br>
 To select a different source file, click **Select** in the upper right corner of the section.
 
 ### Advanced Settings
 
 #### Commits Transaction
 
-If this option is active, the funtion module "BAPI_TRANSACTION_COMMIT" is called after processing the selected Function Module / BAPI. 
+If this option is active, the function module "BAPI_TRANSACTION_COMMIT" is called after processing the selected Function Module / BAPI. 
 Some SAP Function Modules (e.g., BAPI_PO_CREATE) require this commit function to successfully update data in the database.
 
 ### Function Module Interface Parameters
@@ -51,7 +52,7 @@ Some SAP Function Modules (e.g., BAPI_PO_CREATE) require this commit function to
 In the *Function Module Interface Parameters* section all parameters of the selected Function Module / BAPI are displayed.
 Function Modules / BAPIs can have up to four parameter types: [Import](#import-parameters), [Export](#export-parameters), [Changing](#changing-parameters) and [Table](#table-parameters).
 
-### Import Parameters
+## Import Parameters
 Import parameters represent the input values sent from the client to SAP. In the tab **Import** you can define import parameters.
  
 Select import parameters using the drop-down list next to the parameter:
@@ -73,7 +74,7 @@ For more information on parameterizing services, refer to the following knowledg
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
-### Export Parameters
+## Export Parameters
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
 In the tab **Export** you can select the items you want to add to the output of the Function Module / BAPI: 
 - To add an item to the output of the Function Module / BAPI, mark the checkbox in the *Output* column.<br>
@@ -81,11 +82,11 @@ Optional: you can change the name of the output parameter. Tables must use the f
 
 ![BAPI export parameters](/img/content/yunio/BAPI-output.png){:class="img-responsive"}
 
-### Changing Parameters
+## Changing Parameters
 
 Changing parameters represent parameters that can be used for input and output. In the tab **Changing** you can define the changing parameters.
 
-### Table Parameters
+## Table Parameters
 
 Table parameters are parameters presented in a table structure consisting of multiple rows. Tables can be used for input and output.
 In the tab **Tables** you can define table parameters for importing and exporting data into and from an SAP Function Module or BAPI.
@@ -103,5 +104,5 @@ Optional: you can change the name of the output parameter. Tables must use the f
 
 *****
 #### Related Links
-- [KB: Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
-- [KB: Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
+- [Integration Scenarios](./integration)
+- [Knowledge Base Article: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
