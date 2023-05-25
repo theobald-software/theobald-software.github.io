@@ -86,7 +86,7 @@ Enter the number of rows to skip at the end of the report.
 
 A variant contains a set of [selections parameters](#selection-parameters) that limit the result set of the report to records that match the selection.
 A selection variant can be created in SAP at the input screen of an ABAP report. 
-The purpose of a variant is to minimizes the necessity to enter selections each time you run a report.
+The purpose of a variant is to minimize the necessity to enter selections each time you run a report.
 If available, variants can be selected from the drop-down-list.<br>
 
 
