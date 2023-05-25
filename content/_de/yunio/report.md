@@ -38,7 +38,7 @@ Die folgende Grafik zeigt den allgemeinen Workflow der Einrichtung von Report Se
 
 ## Einen Report finden
 
-1. Legen Sie einen [*Service*](./getting-started#creating-a-service) vom Typ *Report* an. 
+1. Legen Sie einen [*Service*](./erste-schritte#einen-service-anlegen) vom Typ *Report* an. 
 2. Suchen Sie nach einem Report im Menu *Search SAP Reports*, indem Sie die folgenden Schritte ausführen.
 3. Geben Sie den Namen eines Reports oder den TCODE eines Reports in das Feld **Search by a report name or an exact TCODE** (1). Die Verwendung von Wildcards ( * ) wird nur für Reportnamen unterstützt.
 ![SAP-Table-or-Views](/img/content/yunio/report-lookup.png){:class="img-responsive" width="750px"}
@@ -49,7 +49,7 @@ Die Extraktionseinstellungen von *Report* werden automatisch geöffnet. <br>
 
 ## Einstellungen
 *Report* Einstellungen bestehen aus folgenden Unterabschnitten:
-- Name[Report](#report) (4) zeigt den Namen und die Beschreibung des ausgewählten Reports.
+- [Report](#report) (4) zeigt den Namen und die Beschreibung des ausgewählten Reports.
 - [Advanced Settings](#advanced-settings) (Erweiterte Einstellungen) (5) bestimmen, wie die Daten aus SAP extrahiert werden.
 - [Selection Parameters](#selection-parameters) (Auswahlparameter) (6) bestimmen die Auswahlparameter für den yunIO-Service.
 - [Output Columns](#output-columns) (Ausgabe-Spalten) (7) bestimmen die Ausgabe des yunIO-Services.
