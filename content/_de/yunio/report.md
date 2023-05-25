@@ -12,9 +12,9 @@ lang: de_DE
 
 ---
 
-Der folgende Abschnitt zeigt, wie den Integrationstyp *Report* verwendet wird.<br>
+Der folgende Abschnitt zeigt, wie der Integrationstyp *Report* verwendet wird.<br>
 Integrationstyp *Report* extrahiert Daten aus den am häufigsten verwendeten und benutzerdefinierten ABAP-Reports und SAP-Transaktionen.
-Eine Report-Extraktion möglich, wenn der Report in SAP eine tabellenartige Struktur zurückgibt.
+Eine Report-Extraktion ist möglich, wenn der Report in SAP eine tabellenartige Struktur zurückgibt.
 
 {: .box-note}
 **Hinweis:** Der Integrationstyp *Report* ist im Vorschaumodus. Grundlegende Änderungen können jederzeit veröffentlicht werden. 
@@ -44,7 +44,7 @@ Die folgende Grafik zeigt den allgemeinen Workflow der Einrichtung von Report Se
 ![SAP-Table-or-Views](/img/content/yunio/report-lookup.png){:class="img-responsive" width="750px"}
 4. Um nach Reportnamen zu suchen, klicken Sie auf **[Search]**. (2)
 Um nach TCODES zu suchen, klicken Sie auf **[By TCODE]**.
-5. Wählen Sie eine Quelldatei aus der Liste der Suchergebnisse aus (3)(3). 
+5. Wählen Sie eine Quelldatei aus der Liste der Suchergebnisse aus (3). 
 Die Extraktionseinstellungen von *Report* werden automatisch geöffnet. <br>
 
 ## Einstellungen
