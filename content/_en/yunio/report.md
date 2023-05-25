@@ -125,7 +125,7 @@ The following example shows how to set up a yunIO service that extracts the SAP 
 2. Look up the report RLT10010, see [Look Up a Report](#look-up-a-report).
 3. Select a variant or enter selection parameters. The given example uses a variant *VAR01*.<br>
 ![report-rlt10010](/img/content/yunio/report-rlt10010.png){:class="img-responsive"}
-4. Set **Skip rows from top** to 8 to skip the header of the report. Run the report in SAP to determine the number of rows to skip.
+4. Run the report in SAP to determine the number of rows to skip. Set **Skip rows from top** to 8 to skip the header of the report.
 ![SAP-Table-or-Views](/img/content/yunio/report-sap3.png){:class="img-responsive"}
 5. Click **[Detect Columns]** to automatically detect the columns of the report. The detected columns are displayed in the section *Output Columns*.
 6. Click **[Save]** to save the service.
