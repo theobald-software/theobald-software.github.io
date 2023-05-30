@@ -175,7 +175,7 @@ The following compatibility modes are available:
 - *Spark* 
 - *BigQuery*
 
-Spark does not support the data types used in pure mode, so other data types need to be used. Special characters can be used in column names, when the option *Allow special characters in column name* is activated.<br>
+Spark does not support the data types used in pure mode, so other data types need to be used. Special characters (e.g. ~) can be used in column names, when the option *Allow special characters in column name* is activated.<br>
 ![Azure](/img/content/xu/azure_spark_options.png){:class="img-responsive"} 
 
 <!--

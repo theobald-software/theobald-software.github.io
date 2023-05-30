@@ -175,7 +175,7 @@ Die folgenden Kompatibilitätsmodi sind verfügbar:
 - *Spark* 
 - *BigQuery*
 
-Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. Sonderzeichen können in Spaltennamen verwendet werden, wenn die Option *Allow special characters in column name* activiert ist.
+Spark unterstützt nicht die im Pure-Mode verwendeten Datentypen, daher müssen andere Datentypen verwendet werden. Sonderzeichen (z.B. ~ ) können in Spaltennamen verwendet werden, wenn die Option *Allow special characters in column name* activiert ist.
 <br>
 ![Azure](/img/content/xu/azure_spark_options.png){:class="img-responsive"} 
 <!-- Sonderzeichen und Leerzeichen werden im Spark-Modus durch einen Unterstrich `_` ersetzt. -->
