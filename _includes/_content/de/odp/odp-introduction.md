@@ -36,10 +36,9 @@ DataSources/Extraktoren [[SAPI](./odp/odp-extractors)] | - DataSources und Extra
 
 Für mehr Information über SAP ODP, siehe [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
 
-### Technische Voraussetzungen
+### Voraussetzungen
 
-Es gibt einige Voraussetzungen, die auf der SAP-Seite erfüllt sein müssen, Um die ODP-Komponente zu verwenden, müssen SAP-seitige Voraussetzungen erfüllt sein.
-Implementieren Sie die folgenden SAP-Hinweise:
+Implementieren Sie die folgenden SAP-Hinweise, um ODP zu verwenden:
 - [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427/D)
 - [2232584 - Freigabe von SAP Extraktoren für ODP Replikation (ODP-SAPI)](https://launchpad.support.sap.com/#/notes/2232584/D)
 - [1560241 - Freigabe von DataSources für das 'ODP data replication API'](https://launchpad.support.sap.com/#/notes/1560241/D)
