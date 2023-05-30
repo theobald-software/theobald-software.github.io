@@ -11,7 +11,6 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
 
-
 General Settings are independent of the extraction type.
 
 ### To open General Settings
