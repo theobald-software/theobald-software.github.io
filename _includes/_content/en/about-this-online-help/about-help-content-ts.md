@@ -4,7 +4,7 @@ Additionally to the Online Help, Theobald Software describes the more advanced t
 
 Theobald Software's claim is to keep the Online Help up to date according to the latest product version. Information concerning the older version is removed gradually from the Online Help content. It is generally recommended to always install the latest version of the product.
 
-©2021 Theobald Software GmbH. All rights reserved.
+©2023 Theobald Software GmbH. All rights reserved.
 
 ### Target group and audience
 This Online Help is intended for all users of products of Theobald Software. The Online Help offers an overview of the interface, of the navigation and of the basic information to the users who have never or rarely worked with the product. 

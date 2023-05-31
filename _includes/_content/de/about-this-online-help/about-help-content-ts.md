@@ -4,7 +4,7 @@ Zusätzlich zur Online-Hilfe beschreibt Theobald Software die fortgeschrittenere
 
 Der Anspruch von Theobald Software ist es, die Online-Hilfe entsprechend der neuesten Produktversion auf dem neuesten Stand zu halten. Informationen, die die ältere Version betreffen, werden schrittweise aus dem Inhalt der Online-Hilfe entfernt.  Es wird allgemein empfohlen, immer die neueste Version des Produkts zu installieren.
 
-©2021 Theobald Software GmbH. Alle Rechte vorbehalten.
+©2023 Theobald Software GmbH. Alle Rechte vorbehalten.
 
 ### Zielgruppe und Kundenkreis
 Diese Online-Hilfe richtet sich an alle Benutzer von Produkten von Theobald Software. Die Online-Hilfe bietet Benutzern, die noch nie oder selten mit dem Produkt gearbeitet haben, einen Überblick über die Schnittstelle, die Navigation und die grundlegenden Informationen. 
