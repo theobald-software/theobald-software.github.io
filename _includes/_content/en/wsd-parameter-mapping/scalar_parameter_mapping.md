@@ -51,11 +51,11 @@ Then call the activity dialog and scroll down to the input table REQUISITION_ITE
 
 ![WSD-MappingSkalarMappingInput1](/img/content/WSD-MappingSkalarMappingInput1.png){:class="img-responsive"}
 
-To map the table, click on the input button to the right of the *Mapping Expression* field and choose *New* in the subsequent dialog box. 
+To map the table, click the input button to the right of the *Mapping Expression* field and choose *New* in the subsequent dialog box. 
 
 ![WSD-MappingSkalarMappingInput2](/img/content/WSD-MappingSkalarMappingInput2.png){:class="img-responsive"}
 
-Now assign the input parameters to the corresponding fields. To do this, click on the row with the desired table field and click on the input button on the right to access the next dialog box. 
+Now assign the input parameters to the corresponding fields. To do this, click the row with the desired table field and click on the input button on the right to access the next dialog box. 
 
 ![WSD-MappingSkalarMappingInput14](/img/content/WSD-MappingSkalarMappingInput14.png){:class="img-responsive"}
 

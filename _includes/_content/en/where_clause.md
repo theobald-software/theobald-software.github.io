@@ -1,6 +1,6 @@
 If a filter shall be used additionally, a so called **Where Clause** can be built into the model. 
 
-Make a right click on the *EXECUTE TABLE* activity and choose *Edit*. Click the button on the right side of the *Where Clause* field to define a filter. Click *New* to create a filter condition called Namefilter. Use the button in the *Expression* field to select the filter parameter *Name*.   
+Right-click the *EXECUTE TABLE* activity and choose *Edit*. Click the button on the right side of the *Where Clause* field to define a filter. Click *New* to create a filter condition called Namefilter. Use the button in the *Expression* field to select the filter parameter *Name*.   
 
 ![WSD_NewWhereClauseParameterDialog](/img/content/WSD_NewWhereClauseParameterDialog.png){:class="img-responsive"}
 

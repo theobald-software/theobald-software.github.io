@@ -223,3 +223,11 @@ If necessary, use `style="border:1px solid black` to add a black border to the a
 
 Example: 
 ![yunIO-transaction-parameters](/img/content/yunio/va02param.gif){:class="img-responsive"}
+
+### Icons
+
+Icons can be used in the following manner:
+
+Click ![trashbin](/img/content/icons/trashbin.png) to delete an entry.
+
+Additional clarification that an icon is an icon is unnecessary. Make sure not to write "click on".

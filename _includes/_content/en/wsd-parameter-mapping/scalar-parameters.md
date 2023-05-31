@@ -61,7 +61,7 @@ Under *Output Mappings*, click on *New* to continue mapping the output parameter
 
 ![WSD-MappingSkalarMappingOutput2](/img/content/WSD-MappingSkalarMappingOutput2.png){:class="img-responsive"}
 
-Double-click on the output parameter *ResultMessage* and click on the button with the three dots to the right of the Mapping Expression line to open the Mapping Expression dialog.
+Double-click the output parameter *ResultMessage* and click on the button with the three dots to the right of the Mapping Expression line to open the Mapping Expression dialog.
 
 ![WSD-MappingSkalarMappingOutput4](/img/content/WSD-MappingSkalarMappingOutput4.png){:class="img-responsive"}
 

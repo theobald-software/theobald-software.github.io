@@ -11,5 +11,5 @@
 {% elsif page.childidentifier == "report" %}![Toolbox](/img/content/xis/query-toolbox.png){:class="img-responsive"}
 {% elsif page.childidentifier == "deltaq" %}![Toolbox](/img/content/xis/deltaq-toolbox.png){:class="img-responsive"}
 {% elsif page.childidentifier == "table" %}![Toolbox](/img/content/xis/table-toolbox.png){:class="img-responsive"} {% endif %}
-3. Double-click on the component. The main window of the component opens.
+3. Double-click the component. The main window of the component opens.
 The majority of the functions of the component can be accessed using the main window.<br>

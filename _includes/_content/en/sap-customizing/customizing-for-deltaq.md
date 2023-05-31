@@ -64,7 +64,9 @@ In our [Knowledge Base](https://kb.theobald-software.com/sap/registering-rfc-ser
 **Note** This step applies to SAP kernel version 720 and higher.
 
 ### 7. qRFC Monitor (QOUT Scheduler)
-Call transaction *SMQS*. Select the previously created RFC destination, e.g. **XTRACT01**. Then click on the button 'Register without activation' and change the parameter *Max.Verb.* to the value *10*. 
+1. Call transaction *SMQS*. 
+2. Select the previously created RFC destination, e.g. **XTRACT01**. 
+3. Click *Register without activation* and change the parameter *Max.Verb.* to the value *10*. 
 Increase this value in case of parallel execution of several DeltaQ extractions on the same RFC destination.
 
 ![DeltaQ-Customizing-06](/img/content/DeltaQ-Customizing-06.png){:class="img-responsive" }

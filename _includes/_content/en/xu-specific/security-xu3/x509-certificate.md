@@ -16,7 +16,7 @@ Make sure to have a TLS certificate issued by your IT network team considering t
 - The certificate common name (CN) attribute contains the DNS name of the server. 
 
 {: .box-tip }
-**Tip:** To display the Common Name (CN) of the certificate, double-click on the certificate in the Cetrificate Manager and navigate to the *Details* tab.
+**Tip:** To display the Common Name (CN) of the certificate, double-click the certificate in the Cetrificate Manager and navigate to the *Details* tab.
 
 ### Integrate X.509 certificate
 
