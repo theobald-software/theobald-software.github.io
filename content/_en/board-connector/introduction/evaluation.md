@@ -20,6 +20,7 @@ You are guaranteed to get an unrestricted support by the Theobald Software suppo
 In case of any questions or doubts, feel free to contact Theobald Software: <br>
 - [https://support.theobald-software.com](https://support.theobald-software.com)
 - [International contact details](https://theobald-software.com/en/contact/)
+- [Setting Up Board Connector](/docs/sap-customizing/Requirements_BoardConnector.pdf){:download="Requirements_BoardConnector"}
 
 <!---
 ### Support
