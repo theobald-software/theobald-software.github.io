@@ -16,22 +16,35 @@ The following section contains information on the server and transaction logs cr
 
 ### Display Logs
 The logs are located in the *Logs* section of the yunIO Designer.
-There are 2 types of Logs:
-- *Services:* Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
+There are 3 types of Logs:
+- *Service Runs:* Displays a list of service runs.
+- *Service Workers:* Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
 It receives the HTTP request, executes the service, and sends the response to the caller.
-- *Transactions:* Displays logs of [Transaction](./transactions) services. 
+- *Transaction Workers:* Displays logs of [Transaction](./transactions) services. 
 When running Transactions services, a transaction worker process is started. 
 It executes the service and produces the response, which is then forwarded to the caller by the service worker.
 
-The log menu consists of two sections:
+### Service Runs
+
+The list consist of the following columns:
+- Name of the service
+- Date of the log
+- Duration of the service run
+- State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*)
+
+Click on a service run to display the corresponding [service worker log](#service-workers-and-transaction-workers) at the bottom of the menu.
+![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
+
+### Service Workers and Transaction Workers
+
+The logs of the service worker and transaction worker consist of two sections:
 - timestamps of the logs (1)
 - content of the logs (2)
 
 Click on a timestamp to open the corresponding logs.<br>
 ![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
 
-
-### How to Read Logs
+#### How to Read Worker Logs
 
 A single log has the following format: `Time | Type | Source | Message`. Example:
 
@@ -49,7 +62,7 @@ Each log entry is assigned one of the following message types:
 - **W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
 - **D - Debug Details:** detailed information that help find the reason for errors.
 
-#### Structure od a Service Log
+#### Structure of a Service Worker Log
 
 The following example highlights the basic structure of service logs that are created when running a yunIO service.<br>
 The example is specific for SAP Table extractions, the logs are different for Functions and Transactions and are subject to change.
