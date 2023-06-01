@@ -12,9 +12,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
 progressstate: 5
 ---
 
-Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen vorzunehmen.
-Die *Extraction Settings* beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen, während die *General Settings* bei allen Extraktionstypen gleich sind.
-Sie finden Informationen zu den *General Settings* im Abschnitt [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen). 
+Eine Extraktion hat zwei Einstellungen: die Extraktionseinstellungen beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen, während die [Allgemeinen Einstellungen](../erste-schritte/allgemeine-einstellungen) bei allen Extraktionstypen gleich sind.
  
 ### Extraction Settings Öffnen
 Im Fenster "Extract Single and Joint SAP Tables or Views" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" öffnet sich. 

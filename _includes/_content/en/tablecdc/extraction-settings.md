@@ -1,0 +1,23 @@
+
+![table-cdc-extraction-settings](/img/content/tablecdc/table-cdc-extraction-settings.png){:class="img-responsive"}
+
+### Initial Load
+
+#### Extract data in background job
+If this checkbox is checked, the initial load is executed as a background job in SAP. 
+Activate this option for long-running extractions with a large amount of data that may run into a timeout error ("Time limit exceeded"), when using the foreground mode. <br>
+
+{: .box-tip }
+**Tip:** The background jobs can be found in the SAP JobLog (SM37) under the JobName *THEO_READ_TABLE*.
+
+{: .box-warning }
+**Warning! Shared Memory ran out of memory!** <br>
+If this error message pops up when running an extraction in the background, adjust the size of the Shared Memory.
+SAP recommends a Shared Memory size of 800MB~1.5GB for a production/test system or 2GB~4GB for S/4 systems, see [SAP: How to solve SYSTEM_NO_SHM_MEMORY runtime error](https://ga.support.sap.com/dtp/viewer/#/tree/1080/actions/12107).
+
+
+#### Background job timeout (seconds)
+{% if page.product == "xtract-universal" %}This option can be used if the data transfer to a destination takes a lot of time, e.g., when bulk-inserts are deactivated for database destinations.{% endif %} 
+**Background job timeout (seconds)** sets a timeout period for extractions that run in background mode.<br>
+The default value is 180 seconds. The maximum timeout value is 3600 seconds. 
+

@@ -51,7 +51,7 @@ S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
 ### Extract data in background job
 Durch Ankreuzen der Checkbox "Extract data in background" wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
 Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
-Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit sehr großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen könnten. <br>
+Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen können. <br>
 
 {: .box-tip }
 **Tipp:** Die Extraktionsjobs befinden sich im SAP JobLog (SM37) unter dem JobName *THEO_READ_TABLE*.
@@ -68,7 +68,7 @@ SAP empfiehlt eine Größe von 800MB~1.5GB für ein Produktiv/Testsystem oder 2G
 
 Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben in die Destination zeitintensiv ist, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.
 **Background job timeout (seconds)** legt den Timeout für Extraktionen fest, die als Hintergrund-Job ausgeführt werden. <br>
-Der Standardwert ist 180 Sekunden. Der maximale Wert für den Timeout liegt bei 3600 Sekunden. Verändern Sie diesen Wert nur nach Absprache mit [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
+Der Standardwert ist 180 Sekunden. Der maximale Wert für den Timeout liegt bei 3600 Sekunden. 
 
 {: .box-note }
 **Hinweis:** Diese Einstellung ist nur dann effektiv, wenn die Extraktion als Hintergrund-Job aufgeführt wird und wenn Sie [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.11 oder höher verwenden.

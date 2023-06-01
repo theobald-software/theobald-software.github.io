@@ -1,7 +1,7 @@
 ---
 ref: xu-table-06
 layout: page
-title: General settings
+title: General Settings
 description: General settings
 product: xtract-universal
 parent: table

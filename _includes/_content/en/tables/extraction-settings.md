@@ -49,7 +49,7 @@ S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
  
 ### Extract data in background job
 If this checkbox is checked, the table extraction is executed as a background job in SAP. Extract data in background job setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0.
-Activate the setting *Extract data in background job*  for long-running extractions with a very large amounts of data that may run into a timeout error ("Time limit exceeded"), when using the foreground mode. <br>
+Activate this option for long-running extractions with a large amount of data that may run into a timeout error ("Time limit exceeded"), when using the foreground mode. <br>
 
 {: .box-tip }
 **Tip:** The extraction jobs can be found in the SAP JobLog (SM37) under the JobName *THEO_READ_TABLE*.
@@ -66,10 +66,10 @@ SAP recommends a Shared Memory size of 800MB~1.5GB for a production/test system 
 
 This option can be used if the data transfer to a destination takes a lot of time e.g., when bulk-inserts are deactivated for database destinations.
 **Background job timeout (seconds)** sets a timeout period for extractions that run in background mode.<br>
-The default value is 180 seconds. The maximum timeout value is 3600 seconds. Change this value only after consulting with [Theobald Support](https://support.theobald-software.com/helpdesk/User/Login). 
+The default value is 180 seconds. The maximum timeout value is 3600 seconds. 
 
 {: .box-note }
-**Note:** This setting only takes effect if the extractions are running in background mode and when using [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) version 2.11 or higher.
+**Note:** This setting only takes effect if the extractions run in background mode and when using [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction) version 2.11 or higher.
 
 
 #### Adjust Currency Decimals
