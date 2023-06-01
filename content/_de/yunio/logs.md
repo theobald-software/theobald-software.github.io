@@ -13,12 +13,12 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 
 Dieser Abschnitt enthält Informationen über die Server-Logs und Transaktions-Logs, die von yunIO erstellt werden.<br>
 
-### Logs anzeigen lassen
+### Logs Anzeigen
 Öffnen Sie die Logs unter dem Menüpunkt *Logs*.
 Es gbt 2 Arten von Logs:
-- *Services:* Zeigt Logs der Service Worker-Prozesse an. Für jede TCP-Verbindung, wird ein Service Worker-Prozess gestartet.
+- **Services:** Zeigt Logs der Service Worker-Prozesse an. Für jede TCP-Verbindung, wird ein Service Worker-Prozess gestartet.
 Der Service Worker empfängt die HTTP-Anfrage, führt Services aus und sendet die HTTP-Antwort and den Aufrufer.
-- *Transactions:* Zeigt Logs von [Transaktion-Services](./transactions) an.
+- **Transactions:** Zeigt Logs von [Transaktion-Services](./transactions) an.
 Wenn Sie einen Transaktion-Service ausführen, wird ein Worker-Prozess für Transaktionen gestartet.
 Der Worker-Prozess führt die Services aus und erstellt die HTTP-Antwort, die dann vom Service Worker an den Aufrufer weitergegeben wird.
 
@@ -29,7 +29,7 @@ Das Log-Menü besteht aus zwei Abschnitten:
 Klicken Sie auf einen Zeitstempel, um die dazugehörigen Logs anzuzeigen.<br>
 ![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
 
-### Logs lesen
+#### Worker-Logs lesen
 
 Ein Log-Eintrag hat folgendes Format: `Zeit | Typ | Quelle | Nachricht`. Beispiel:
 

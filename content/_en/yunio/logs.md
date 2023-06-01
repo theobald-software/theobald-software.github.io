@@ -17,10 +17,10 @@ The following section contains information on the server and transaction logs cr
 ### Display Logs
 The logs are located in the *Logs* section of the yunIO Designer.
 There are 3 types of Logs:
-- *Service Runs:* Displays a list of service runs.
-- *Service Workers:* Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
+- **Service Runs:** Displays a list of the latest service runs, including the status of the service run.
+- **Service Workers:** Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
 It receives the HTTP request, executes the service, and sends the response to the caller.
-- *Transaction Workers:* Displays logs of [Transaction](./transactions) services. 
+- **Transaction Workers:** Displays logs of [Transaction](./transactions) services. 
 When running Transactions services, a transaction worker process is started. 
 It executes the service and produces the response, which is then forwarded to the caller by the service worker.
 
@@ -32,8 +32,9 @@ The list consist of the following columns:
 - Duration of the service run
 - State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*)
 
-Click on a service run to display the corresponding [service worker log](#service-workers-and-transaction-workers) at the bottom of the menu.
-![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
+Click on a service run to display the corresponding extraction log at the bottom of the menu (1).
+
+![yunIO-Logs](/img/content/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
 
 ### Service Workers and Transaction Workers
 
@@ -41,7 +42,8 @@ The logs of the service worker and transaction worker consist of two sections:
 - timestamps of the logs (1)
 - content of the logs (2)
 
-Click on a timestamp to open the corresponding logs.<br>
+Click on a timestamp to open the corresponding logs.
+
 ![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
 
 #### How to Read Worker Logs
