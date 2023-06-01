@@ -4,7 +4,7 @@
 ### Initial Load
 
 #### Extract data in background job
-Wenn diese Option aktiv ist, wird der erste Ladeprozess von Table CDC als Hintergrund-Job in SAP ausgeführt. 
+Wenn diese Option aktiv ist, wird der erste Ladeprozess als Hintergrund-Job in SAP ausgeführt. 
 Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen. <br>
 
 {: .box-tip }
@@ -20,3 +20,4 @@ SAP empfiehlt eine Größe von 800MB~1.5GB für ein Produktiv/Testsystem oder 2G
 Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben in die Destination zeitintensiv ist, z.B. bei Deaktivierung des Bulk-Inserts bei Datenbank-Destinationen.{% endif %} 
 **Background job timeout (seconds)** legt den Timeout für Extraktionen fest, die als Hintergrund-Job ausgeführt werden. <br>
 Der Standardwert ist 180 Sekunden. Der maximale Wert für den Timeout liegt bei 3600 Sekunden. 
+
