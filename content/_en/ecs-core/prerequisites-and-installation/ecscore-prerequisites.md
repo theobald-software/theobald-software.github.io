@@ -46,7 +46,7 @@ The following ports have to be opened depending on the SAP system, where nn is t
 - SAP Application Server: Port 33nn
 - SAP Message Server (Load Balancing): Port 36nn
 - Secure Network Communications (SNC): Port 48nn
-- SAP Router: Port 3399
+- SAP Router: Port 3299
 
 It is recommended to install ECS Core on a computer without any other Theobald Software components. 
 Although this is possible, it makes error analysis and troubleshooting more difficult.

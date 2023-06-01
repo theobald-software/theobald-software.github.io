@@ -23,7 +23,7 @@ Die folgenden SAP Systeme werden nicht unterstützt:
 - SAP-Systeme, die keine RFC-Konnektivität bieten.
  
 Beispiele:
-SAP S/4HANA Cloud Essentials Edition (ES), Business By Design, Business One, Business Objects, Sybase, Ariba, Success Factors, Concur.
+SAP S/4HANA Cloud Public Edition, Business By Design, Business One, Business Objects, Sybase, Ariba, Success Factors, Concur.
 
 ### HANA Datenbank
 Mit Operational Data Provisioning (ODP) können Sie die SAP HANA-Datenbank eines SAP ABAP Quellsystems verbinden. 

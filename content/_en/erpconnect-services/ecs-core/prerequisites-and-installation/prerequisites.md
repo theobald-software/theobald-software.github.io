@@ -58,7 +58,7 @@ where nn is the instance number of the SAP system (e.g. 00 or 99).
 - SAP Application Server: Port 33nn
 - SAP Message Server (Load Balancing): Port 36nn
 - Secure Network Communications (SNC): Port 48nn
-- SAP Router: Port 3399
+- SAP Router: Port 3299
 
 **SAP Licenses**
 

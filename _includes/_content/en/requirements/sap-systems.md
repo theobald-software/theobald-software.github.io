@@ -21,7 +21,7 @@ The following SAP Systems are not supported:
 - SAP systems that don’t run on ABAP systems 
 - SAP systems that don't provide RFC connectivity. <br>
 
-Examples: SAP S/4HANA Cloud Essentials Edition (ES), Business By Design, Business One, Business Objects, Sybase, Ariba, Success Factors, Concur
+Examples: SAP S/4HANA Cloud Public Edition, Business By Design, Business One, Business Objects, Sybase, Ariba, Success Factors, Concur
 
 ### HANA Database
 You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. 
