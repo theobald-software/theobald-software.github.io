@@ -22,9 +22,16 @@ Für die Verwendung der Alteryx-Destination wird das Xtract Universal Alteryx Pl
 Das Xtract Universal Setup installiert das Xtract Universal Alteryx Plugin automatisch, wenn Alteryx bereits auf dem Zielsystem installiert. <br>
 Wenn Sie Alteryx nach Xtract Universal installieren, führen Sie das Xtract Universal Setup erneut aus.
 
+Das Xtract Unviersal Setup erstellt die folgenden Einträge und Erweiterungen im Installationsverzeichnis dieser Alteryx Installation:
+- `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
+- `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
+- `Alteryx\bin\RuntimeData\DefaultSettings.xml`
+
 {: .box-note }
 **Hinweis:** Führen Sie das Xtract Universal Setup auf allen Maschinen aus, die das Xtract Universal Alteryx Plugin benötigen.
+Wenn Sie mehrere Alteryx-Installationen auf einem System haben, erkennt das Xtract Universal Setup nur eine Installation.
 
+<!---
 #### Mehrere Alteryx-Installationen auf einer Maschine
 
 Wenn Sie mehrere Alteryx-Installationen auf einem System haben, erkennt das Xtract Universal Setup nur eine Installation.
@@ -35,6 +42,7 @@ Das Xtract Unviersal Setup erstellt die folgenden Einträge und Erweiterungen im
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
 Um das Xtract Universal Alteryx Plugin in allen Alteryx-Installationen zu verwenden, kopieren Sie die o.g. Dateien manuell in die Alteryx-Installationsverzeichnisse, die nicht vom Xtract Universal Setup erkannt wurden.
+-->
 
 <!---
 {: .box-note }
