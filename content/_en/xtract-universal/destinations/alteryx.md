@@ -24,9 +24,16 @@ The Xtract Universal Alteryx plugin for the Alteryx Designer is required to use 
 The Xtract Universal setup installs the Xtract Universal Alteryx plugin if there is a valid Alteryx installation on the current system. <br>
 If you install Alteryx after installing Xtract Universal, run the Xtract Universal setup again.
 
+The Xtract Universal setup creates the following entries and extensions in the installation directory of that Alteryx installation:
+- `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
+- `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
+- `Alteryx\bin\RuntimeData\DefaultSettings.xml`
+
 {: .box-note }
 **Note:** Run the Xtract Universal setup on every machine that needs the Xtract Universal Alteryx  plugin. 
+If there is more than one Alteryx installation on your system, the Xtract Universal setup only detects one installation. 
 
+<!---
 #### Multiple Alteryx Installation on the same Machine
 
 If there is more than one Alteryx installation on your system, the Xtract Universal setup only detects one installation. 
@@ -37,7 +44,7 @@ The Xtract Universal setup creates the following entries and extensions in the i
 - `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
 To use the Xtract Universal Alteryx plugin, copy the files to the respective Alteryx installation directory that was not detected by the setup.
-
+-->
 <!---
 {: .box-note }
 **Note:** Should you have more than one Alteryx installation on your system, the setup will only detect one installation. 
