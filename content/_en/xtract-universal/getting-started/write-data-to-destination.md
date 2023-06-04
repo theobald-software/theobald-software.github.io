@@ -41,7 +41,7 @@ Follow the steps below to create a new destination:
 ![Select-Destination-Type](/img/content/sqlserver_destination-details.png){:class="img-responsive"}
 5. Fill out the destination details. The destination details vary depending on the destination type. <br>
 For more information about the destination details, select your destination: <select name="destinationlist" id="destination" onChange="getSelectedValueDetails();">
-    <option value=" " disabled selected>Select your destination</option>
+    <option value=" " disabled selected>Select a destination</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
     <option value="parquet">Flat File Parquet</option>
@@ -55,6 +55,7 @@ For more information about the destination details, select your destination: <se
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
 	<option value="hadoop">Hadoop</option>
+	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM DB2</option>
 	<option value="knime">KNIME</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
@@ -100,7 +101,7 @@ Follow the steps below to assign a destination to an extraction:
 4. Optional: change the destination settings.<br>
 Destination settings are specific to the selected extraction and vary depending on the destination type. <br>
 For more information about the destination settings, select your destination: <select id="destinationsettings" onChange="getSelectedValueSettings();">
-    <option value=" " disabled selected>Select your destination</option>
+    <option value=" " disabled selected>Select a destination</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
     <option value="parquet">Flat File Parquet</option>
@@ -114,6 +115,7 @@ For more information about the destination settings, select your destination: <s
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
 	<option value="hadoop">Hadoop</option>
+	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM DB2</option>
 	<option value="knime">KNIME</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
