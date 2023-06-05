@@ -142,7 +142,7 @@ The following settings can be defined for the destination:
 
 ### Folder
 
-Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](#azure-storage-connection). <br>
+Option to create a folder structure within the container for saving files, see also [Connection > Folder Path](#azure-storage-connection). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
