@@ -146,13 +146,12 @@ The *Azure Storage (Blob / Data Lake)* destination can now be used.
 **Note:** The settings in *Misc* can only be used in combination with a Blob container.<br> 
 
 **Folder path** <br>
-Option to create a folder structure within the container for saving files. 
-See also [**Destination Settings > Folder Path**](#folder-path). <br>
+Option to create a folder structure within the container for saving files, see also [**Destination Settings > Folder Path**](#folder-path).. <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-**Folder path** allows entry of [script expressions](./../advanced-techniques/script-expressions).
-This allows to dynamically set a folder path when running an extraction. <br>
+{% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
+
 
 ### Column Encryption (4)
 
@@ -209,7 +208,7 @@ See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/archit
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction, see [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction).
 2. Click **[Destination]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

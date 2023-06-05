@@ -76,7 +76,7 @@ After entering Access key ID and Secret key, click **[Connect]**. After successf
 #### Bucket
 
 **Bucket name and Region**<br>
-Select a bucket and a region of the bucket's location. The SAP data is extracted into the particular bucket.
+Select a bucket and a region of the bucket's location. The SAP data is extracted into the selected bucket.
 
 {: .box-note }
 **Note:** The drop-down menus list **all** available buckets and regions, make sure to select the correct combination of bucket & region. Validate the connectivity to the selected bucket by clicking **[Test Connection)**.
@@ -156,7 +156,7 @@ If a connection is not established during the timespan of 140 seconds, the extra
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction, see [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction).
 2. Click **[Destination]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 

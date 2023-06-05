@@ -12,9 +12,15 @@ progressstate: 5
 ---
 The following section describes data extraction to a Huawei Cloud Object Storage Service (OBS).
 
-## Requirements
+{: .box-note }
+**Note:** The BICS component is still in beta phase. This means that breaking changes can be released any time. 
 
-storage accounts?
+{: .box-warning }
+**Warning! File fragments in the cloud storage**<br>
+Huawei Cloud OBS destination uses multipart upload. That means that data is uploaded in fragments that are merged into a single file at the end of the extraction. 
+When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. 
+In that case the uploaded fragments must be deleted manually, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 
+
 
 ## Connection
 
@@ -25,50 +31,36 @@ storage accounts?
 ![huawei-destination-details](/img/content/xu/huawei-destination-details.png){:class="img-responsive"}
 
 
-#### Authentication
-This method of authentication authorizes access to the complete storage account. 
-General information about this method of authentication can be found in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). <br>
-Check the **Access key** checkbox to select this connection type.
+### Authentication
 
-#### Connection via Access Key
-**Storage account** <br>
-Enter your storage account name. Do not enter the full URL.
-
-**Access key** <br>
-Enter the access key of the Azure Storage account. 
+**Access Key ID (AK)** <br>
+Enter the access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
  
- {: .box-tip }
-**Tip:** Copy your storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
+**Secret Access Key ID (SK)** <br>
+Enter the secret access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
 
+**Region**<br>
+Select the region of the data storage.
 
 **Connect** <br>
 Click **[Connect]** to establish a connection to the storage account. 
-If the connection is successful, a "Connection successful" info window opens.
-Click **[OK]** to confirm. <br>
-
-
-**Test connection** <br>
-Click **[Test Connection]** to check if the storage container can be accessed. <br>
-If the connection is successful, a "Connection to container <*name of container*> successful" info window opens. <br>
+If the connection is successful, a "Connected" text is displayed next to the button.
 
 ### Bucket
 
-{% include _content/en/xu-specific/destinations/general/column-encryption.md %}
+**Bucket**<br>
+This setting only becomes available after a connection to the storage account has been established.<br>
+Select a bucket. The SAP data is extracted into the selected bucket. 
+Click ![refresh](/img/content/icons/refresh.png){:class="img-responsive" style="display:inline"} to refresh the list of available buckets.
 
 ### Misc
 
-{: .box-note }
-**Note:** The settings in *Misc* can only be used in combination with a Blob container.<br> 
-
 **Folder path** <br>
-Option to create a folder structure within the container for saving files. 
-See also [**Destination Settings > Folder Path**](#folder-path). <br>
+Option to create a folder structure within the container for saving files, see also [**Destination Settings > Folder Path**](#folder-path).. <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-**Folder path** allows entry of [script expressions](./../advanced-techniques/script-expressions).
-This allows to dynamically set a folder path when running an extraction. <br>
-
+{% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
 
 ### File Format
 
@@ -103,28 +95,27 @@ In spark mode special characters and spaces are replaced with an underscore `_`.
 
 ### Connection Retry and Rollback
 
-Connection retry and rollback are built-in functions of the Azure Storage destination.
+<!---- The following section is copied 1:1 from Azure Storage --->
+
+Connection retry and rollback are built-in functions of the Huawei Cloud OBS destination.
 They are activated by default. 
 
-Connection retry is a functionality that prevents extractions from failing if the connection to Azure is interrupted.
+Connection retry is a functionality that prevents extractions from failing if the connection to Huawei is interrupted.
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. 
 
-If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
+If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Huawei.
 The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
 If a connection is not established during this timespan, the extraction fails.
 
-Rollback covers scenarios where extractions do not fail due to connection failures to Azure but e.g. due to an error when connecting to SAP.
-In those particular cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
-
-<!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
-See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->
+Rollback covers scenarios where extractions do not fail due to connection failures to Huawei but e.g. due to an error when connecting to SAP.
+In those particular cases Xtract Universal tries to remove any files from the Huawei Cloud storage that were created in the course of the extraction.
 
 
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction, see [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction).
 2. Click **[Destination]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -135,6 +126,8 @@ The following settings can be defined for the destination:
 ![huawei-destination-settings](/img/content/xu/huawei-destination-settings.png){:class="img-responsive"}
 
 {% include _content/en/xu-specific/destinations/general/file-name.md %}
+
+The character `/` is replaced with underscores.
 
 {: .box-note }
 **Note:** If the name of an object does not begin with a letter, it will be prefixed with an ‘x’, e.g. an object by the name `_namespace_tabname.csv` will be renamed `x_namespace_tabname.csv` when uploaded to the destination.
@@ -149,16 +142,6 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 <!-- ### Date Conversion -->
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 
-### Blob Type
-
-**Append Blob**<br>
-Creates an [Append Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).
-
-**Block Blob**<br>
-Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-block-blobs).
-
-{: .box-note }
-**Note:** For both file types an MD5 hash is created upon upload to Azure storage.
 
 ### Folder
 
@@ -168,24 +151,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 {% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
 
-### Common Data Model
-
-If this option is enabled, a Common Data Model JSON file is generated and written to the destination alongside the extracted data.<br>
-The CDM file can be used to automate data transformation in Azure.
-
-For more information on Common Data Models, see [Microsoft Documentation: Common Data Model](https://learn.microsoft.com/en-us/common-data-model/).
-
-**Entity name**<br>
-Enter a name for the generated .cdm.json file.
-
-{: .box-note }
-**Note:** This option is still in preview mode.
 
 {% include _content/en/xu-specific/destinations/general/compression.md %}
 
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
-
-*****
-## Related Links
-- [Youtube Tutorial: SAP data in Azure Storage via Xtract Universal](https://www.youtube.com/watch?v=Q9mF-vsFxnQ){:target="_blank"}
-- [Integration via Azure Data Factory](../execute-and-automate-extractions/call-via-etl#integration-via-azure-data-factory)
