@@ -199,7 +199,7 @@ The selected exponential retry strategy results in 7 retry attempts and an overa
 If a connection is not established during this timespan, the extraction fails.
 
 Rollback covers scenarios where extractions do not fail due to connection failures to Azure but e.g. due to an error when connecting to SAP.
-In those particular cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
+In those cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
 
 <!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
 See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->

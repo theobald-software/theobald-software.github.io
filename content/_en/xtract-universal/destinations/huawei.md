@@ -109,7 +109,7 @@ The selected exponential retry strategy results in 7 retry attempts and an overa
 If a connection is not established during this timespan, the extraction fails.
 
 Rollback covers scenarios where extractions do not fail due to connection failures to Huawei but e.g. due to an error when connecting to SAP.
-In those particular cases Xtract Universal tries to remove any files from the Huawei Cloud storage that were created in the course of the extraction.
+In those cases Xtract Universal tries to remove any files from the Huawei Cloud storage that were created in the course of the extraction.
 
 
 ## Settings
@@ -127,11 +127,8 @@ The following settings can be defined for the destination:
 
 {% include _content/en/xu-specific/destinations/general/file-name.md %}
 
-The character `/` is replaced with underscores.
-
 {: .box-note }
-**Note:** If the name of an object does not begin with a letter, it will be prefixed with an ‘x’, e.g. an object by the name `_namespace_tabname.csv` will be renamed `x_namespace_tabname.csv` when uploaded to the destination.
-This is to ensure that all uploaded objects are compatible with Azure Data Factory, Hadoop and Spark, which require object names to begin with a letter or give special meaning to objects whose names start with certain non-alphabetic characters. 
+**Note:** If the file name contains the character `/`, it is replaced with an underscore. 
 
 {% include _content/en/xu-specific/destinations/general/file-name-script-expressions.md %}
 
