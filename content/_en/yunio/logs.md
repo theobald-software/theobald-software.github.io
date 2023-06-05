@@ -15,44 +15,60 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 The following section contains information on the server and transaction logs created by yunIO.
 
 ### Display Logs
-The logs are located in the *Logs* section of the yunIO Designer.
-There are 2 types of Logs:
-- *Services:* Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
+The logs are located in the *Logs* section of the yunIO Designer. <br>
+There are 3 types of logs:
+- **Service Runs:** Displays a list of the latest service runs, including the status of the service run.
+- **Service Workers:** Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
 It receives the HTTP request, executes the service, and sends the response to the caller.
-- *Transactions:* Displays logs of [Transaction](./transactions) services. 
+- **Transaction Workers:** Displays logs of [Transaction](./transactions) services. 
 When running Transactions services, a transaction worker process is started. 
 It executes the service and produces the response, which is then forwarded to the caller by the service worker.
 
-The log menu consists of two sections:
-- timestamps of the logs (1)
-- content of the logs (2)
+### Service Runs
 
-Click on a timestamp to open the corresponding logs.<br>
+The list of service runs consists of the following columns:
+- Name of the service
+- Date of the log
+- Duration of the service run
+- State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*)
+
+Click a service run to display the corresponding extraction log at the bottom of the menu (1).
+
+![yunIO-Logs](/img/content/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
+
+### Service Workers and Transaction Workers
+
+The logs of the service worker and transaction worker consist of two sections:
+- Timestamps of the logs (1)
+- Content of the logs (2)
+
+Click a timestamp to open the corresponding logs.
+
 ![yunIO-Logs](/img/content/yunio/yunIO-Logs.png){:class="img-responsive"}
 
+#### How to Read Worker Logs
 
-### How to Read Logs
-
-A single log has the following format: `Time | Type | Source | Message`. Example:
+A single log has the following format: `Time | Type | Source | Message`. 
+<br> Example:
 
 | Time | Type | Source | Message | 
 |--------|--------|--------|---|
-| PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback.  | 
+| PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback  | 
 
 **Time**<br>
-Each log has a timestamp that uses pacific time (PT) in hours(H), minutes(M) and seconds(S), e.g., `PT00H00M43.777S`.
+Each log has a timestamp that uses pacific time (PT) in hours (H), minutes (M) and seconds (S), e.g., `PT00H00M43.777S`.
 
 **Type**<br>
 Each log entry is assigned one of the following message types:
 - **E - Errors:** error messages issued during the extraction process.<br>
 - **I - Information:** status messages, about processes that do not lead to an error.<br>
 - **W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
-- **D - Debug Details:** detailed information that help find the reason for errors.
+- **D - Debug Details:** detailed information that helps finding error cause.
 
-#### Structure od a Service Log
+#### Structure of a Service Worker Log
 
 The following example highlights the basic structure of service logs that are created when running a yunIO service.<br>
-The example is specific for SAP Table extractions, the logs are different for Functions and Transactions and are subject to change.
+The example is specific for SAP Table extractions, the logs are different for functions and transactions and are subject to change.
 
 1. General technical information is displayed.
 ```
@@ -120,7 +136,7 @@ The following list shows all logs that are created in the `logs` folder of yunIO
 |diagnostic_runs |- | Contains debug information about transaction services. This folder is only created when diagnostics mode is enabled in the settings of a transaction service. |
 |extractions |- | Contains logs (.json and .log files) for every service run. The .json file contains the duration and result status of the run and the .log file contains the details of the run. |
 |servers| | Contains server logs. The subfolders `azurerelay`, `designer`, `services` and `websockets` each represent a web server used by yunIO. Each server has a listener and a worker. The listener listens on the configured port of the server for connections (listener logs). Each connection starts a worker that processes requests (worker logs).|
-| | azurerelay| Contains listener logs for Azure Relay connections. This folder is only created when the [server setting](./server-settings) are set to use an *Azure Hybrid Connection*.|
+| | azurerelay| Contains listener logs for Azure Relay connections. This folder is only created when the [server settings](./server-settings) are set to use an *Azure Hybrid Connection*.|
 | | designer| Contains listener and transaction logs. The transaction logs are created when recording a transaction in the Designer.|
 | | services| Contains listener, worker and transaction logs. The transaction logs are created when a transaction service is run.|
 | | websockets| Contains listener and worker logs of the websocket server that provides the yunIO Designer with data. |
