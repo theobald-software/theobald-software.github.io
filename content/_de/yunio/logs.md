@@ -14,8 +14,8 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 Dieser Abschnitt enthält Informationen über die Server-Logs und Transaktions-Logs, die von yunIO erstellt werden.<br>
 
 ### Logs Anzeigen
-Öffnen Sie die Logs unter dem Menüpunkt *Logs*.
-Es gbt 2 Arten von Logs:
+Die Logs befinden sich im Bereich *Logs* des yunIO Designers. <br>
+Es gbt 3 Arten von logs:
 - **Services:** Zeigt Logs der Service Worker-Prozesse an. Für jede TCP-Verbindung, wird ein Service Worker-Prozess gestartet.
 Der Service Worker empfängt die HTTP-Anfrage, führt Services aus und sendet die HTTP-Antwort and den Aufrufer.
 - **Transactions:** Zeigt Logs von [Transaktion-Services](./transactions) an.
@@ -35,7 +35,7 @@ Ein Log-Eintrag hat folgendes Format: `Zeit | Typ | Quelle | Nachricht`. Beispie
 
 | Zeit | Typ | Quelle | Nachricht | 
 |--------|--------|--------|---|
-| PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback.  | 
+| PT00H00M43.777S | D | ExecutionCore: | Extraction finished, firing callback (Extraktion beendet, Rückruf ausgelöst).  | 
 
 **Zeit**<br>
 Der Zeitstempel in den Logs ist angegeben als pazifische Zeit (PT) in Stunden (H), Minuten (M) und Sekunden (S), z.B. `PT00H00M43.777S`.
@@ -52,11 +52,11 @@ Jeder Logeintrag ist einem der folgenden Typen zugewiesen:
 - **W - Warnings:**  Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.<br>
 - **D - Debug Details:** detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
-#### Struktur eines Service Logs
+#### Struktur eines Dienst-Logs
 
-Das folgende Beispiel zeigt, wie Logs strukturiert sind, die durch das Ausführen eines Services entstehen.<br>
-In dem Beispiel wird ein Service ausgeführt, der eine SAP Tabelle extrahiert. 
-Logs von Services, die Funktionsbausteine und Transaktionen ausführen, können von diesem Beispiel abweichen.
+Das folgende Beispiel zeigt, wie Logs strukturiert sind, die durch das Ausführen eines Dienstes entstehen.<br>
+In dem Beispiel wird ein Dienst ausgeführt, der eine SAP Tabelle extrahiert. 
+Logs von Diensten, die Funktionsbausteine und Transaktionen ausführen, können von diesem Beispiel abweichen.
 
 1. Allgemeine technische Informationen werden angezeigt.
 ```
