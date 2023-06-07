@@ -135,7 +135,7 @@ Wählen Sie einen Connection manager aus der Dropdown-Liste aus und klicken Sie 
 #### Einen Connection Manager manuell zuweisen
 
 1. Erstellen Sie einen Connection Manager wie in [SAP-Verbindung herstellen ](./verbindungsmanager#sap-verbindung-herstellen) beschrieben.
-2. Drag & drop eine Xtract Komponente wie z.B. **Xtract Table**, **Xtract BAPI**, etc.  
+2. Ziehen Sie eine Xtract Komponente in den Data Flow Task.   
 3. Wählen Sie die Xtract Komponente aus. Unter *Properties* öffnen Sie den *Show Advanced Editor* (1). Das Fenster "Advanced Editor" öffnet sich (2). 
 4. Wählen Sie einen Connection Manager aus der Dropdown-Liste aus (3). 
 5. Bestätigen Sie Ihre Auswahl mit **[OK]** (4).
