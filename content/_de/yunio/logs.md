@@ -52,11 +52,11 @@ Jeder Logeintrag ist einem der folgenden Typen zugewiesen:
 - **W - Warnings:**  Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.<br>
 - **D - Debug Details:** detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
-#### Struktur eines Dienst-Logs
+#### Struktur eines Server-Worker-Logs
 
-Das folgende Beispiel zeigt, wie Logs strukturiert sind, die durch das Ausführen eines Dienstes entstehen.<br>
-In dem Beispiel wird ein Dienst ausgeführt, der eine SAP Tabelle extrahiert. 
-Logs von Diensten, die Funktionsbausteine und Transaktionen ausführen, können von diesem Beispiel abweichen.
+Das folgende Beispiel zeigt, wie Logs strukturiert sind, die durch das Ausführen eines Services entstehen.<br>
+In dem Beispiel wird ein Service ausgeführt, der eine SAP Tabelle extrahiert. 
+Logs von Services, die Funktionsbausteine und Transaktionen ausführen, können von diesem Beispiel abweichen.
 
 1. Allgemeine technische Informationen werden angezeigt.
 ```
@@ -127,4 +127,4 @@ Die folgende Liste enthält alle Logs, die im `logs`-Ordner des yunIO installati
 | | designer| Enthält Listener-Logs und Transaktions-Logs. Die Transaktions-Logs werden erstellt, wenn Sie im Designer Service vom Typ Transaktion erstellen.|
 | | services| Enthält Listener-Logs, Worker-Logs und Transaktions-Logs. Die Transaktions-Logs werden erstellt, wenn ein Service vom Typ Transaktion ausgeführt wird.|
 | | websockets| Enthält Listener-Logs und Worker-Logs des Websocket-Servers, der die Daten für den yunIO Designer liefert. |
-|ServiceLog.txt |- | Logs des yunIO Windows-Dienstes.|
+|ServiceLog.txt |- | Logs des yunIO Windows-Services.|
