@@ -18,4 +18,4 @@ If you use BW7.x or below, select **Third party tool (legacy)** as your extracti
 
 
 {: .box-note }
-**Note:** To use data sources you need to configurate SAP BW, see [Customizing for OHS in BW](../sap-customizing/preparation-for-ohs-in-bw).
+**Note:** To use data sources, configure SAP BW, see [Customizing for OHS in BW](../sap-customizing/preparation-for-ohs-in-bw).
