@@ -2,7 +2,7 @@
 ref: xi-open-hub-service-ohs-02
 layout: page
 title: Eine OHS Extraktion definieren
-description: Suchen einer OHS-Extraktion
+description: Suche nach einer OHS-Extraktion
 product: xtract-is
 parent: open-hub-service
 permalink: /:collection/:path
@@ -24,7 +24,7 @@ Falls Sie BW7.x order niedriger verwenden, wählen Sie **Third party tool (legac
 ![Look-Up-Infospoke-Destination](/img/content/Look-Up-Infospoke-Destination.png){:class="img-responsive"}
 4. Klicken Sie auf **[Suchen]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) wählen Sie eine OHS Destination Ihrer Wahl aus der angezeigten Liste aus (2).
 5. Bestätigen Sie die Auswahl mit **[OK]**.
-6. Wenn das Feld **Process Chain** leer ist, geben Sie eine SAP Prozesskette ein, die Ihrer OHS Extraktion zugewiesen ist, siehe [SAP Dokumentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
+6. Wenn das Feld **Process Chain** leer ist, geben Sie eine SAP Prozesskette ein, die Ihrer OHS Extraktion zugewiesen ist, siehe [SAP Dokumentation: Display/Maintenance of Process Chain Attributes](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/4a/2cf30c6ed91c62e10000000a42189c/content.htm).
 Wenn **Process Chain** leer bleibt, schlägt die Extraktion fehl.
 7. Optional: Setzen Sie neben **Timeout** ein Zeitlimit für die Rückmeldung des BWs. Wenn das Zeitlimit überschritten wird, schlägt die Extraktion fehl.
 8. Prüfen / bearbeiten Sie die [Einstellungen](./settings) der Extraktion.
