@@ -77,6 +77,12 @@ Instead of loading RFC function definitions from SAP for each function call, the
 This may increase the performance of the BICS component.
 
 **Create BICS Compatibility Report**<br>
+
+{: .box-warning }
+**Warning:** **Breaking changes possible**
+The component is still in beta phase. Breaking changes can be released any time. 
+Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
+
 As the BICS mode is still in beta phase, you may encounter errors when using this component.
 Click **[Create BICS Compatibility Report]** to run a number of tests to help us analyze why and where the error occured.<br>
 The test results are automatically stored in a .zip file.
