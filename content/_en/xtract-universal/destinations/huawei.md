@@ -14,14 +14,14 @@ The following section describes data extraction to a Huawei Cloud Object Storage
 
 {: .box-warning }
 **Warning:** **Breaking changes possible**
-The component is still in beta phase. Breaking changes can be released any time. 
+The component is still in beta phase. Breaking changes can be released anytime. <br>
 Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
 
 
 {: .box-warning }
 **Warning! File fragments in the cloud storage**<br>
 Huawei Cloud OBS destination uses multipart upload. Data is uploaded in fragments to be merged into a single file when extraction is finished. 
-When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. 
+When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. <br>
 Delete the uploaded fragments manually, to save storage space and prevent any errors.
 
 For more information on deleting file fragments, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 
@@ -61,7 +61,7 @@ Click ![refresh](/img/content/icons/refresh.png){:class="img-responsive" style="
 ### Misc
 
 **Folder path** <br>
-Option to create a folder structure within the container for saving files, see also [**Destination Settings > Folder Path**](#folder-path).<br>
+Option to create a folder structure within the container for saving files, see also [*Destination Settings > Folder Path*](#folder).<br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 

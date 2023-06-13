@@ -13,7 +13,7 @@ The described scenario supports script expressions based on .NET and the followi
 |```#{Extraction.SapObjectName}# ```|  Name of the SAP object the extraction is extracting data from. |
 |```#{Extraction.Timestamp}# ```|  Timestamp of the extraction.  |
 |```#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}# ```  |Removes the first slash '/' of an SAP object. <br> Example: /BIO/TMATERIAL to BIO/TMATERIAL - prevents creating an empty folder in a file path.
-|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Replaces all slashes '/' of an SAP object. <br> Example: /BIO/TMATERIAL to _BIO_TMATERIAL -prevents spliting the SAP object name by folders in a file path.         |
+|```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Replaces all slashes '/' of an SAP object. <br> Example: /BIO/TMATERIAL to _BIO_TMATERIAL - prevents spliting the SAP object name by folders in a file path.         |
 |```#{Extraction.Context}# ```|  Only for ODP extractions: returns the context of the ODP object (*SAPI*, *ABAP_CDS*, etc). |
 |```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Only for ODP extractions: returns the input value of a defined selection / filter.| 
 |```#{TableExtraction.WhereClause}#``` | Only for Table extractions: returns the WHERE clause of the extraction.  |
