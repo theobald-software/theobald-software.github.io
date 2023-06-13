@@ -12,25 +12,28 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
 
-To pass parameters to Xtract components in Alteryx, you can use a [batch macro](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm) that contains a workflow with [control parameters](http://downloads.alteryx.com/betawh_xnext/ControlParam.htm). <br>
-The following example shows how to parameterize the Xtract ODP component.
+There are 2 ways to parameterize Xtract components:
+- Pass parameters using the input arrows of Xtract components. <br>
+Input arrows are available for all Xtract components as of Xtract for Alteryx version 1.19.
+- Pass parameters using [control parameters](http://downloads.alteryx.com/betawh_xnext/ControlParam.htm) in [batch macros](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm).<br> 
+The parameterization via batch macros is supported by Xtract BAPI, Xtract Table, Xtract Cube and Xtract ODP.
 
-{: .box-note}
-**Note:** As of now, the parameterization using batch macros and control parameters is only supported for the components Xtract BAPI, Xtract ODP and Xtract Table.
+The following sections describe how to parameterize Xtract components using batch macros.
 
-### Creating an Extraction
-The goal of this example is to parameterize a selection filter for the DataSource *0MATERIAL_ATTR*, so that only materials with a material number between the parameters *p_MATNR_low* and *p_MATNR_high* are extracted. 
+### Creating an Extraction for a Batch Macro
+The following example uses the Xtract ODP component to show how to parameterize selection filters.
 
-1. Open a **new workflow** and create an Xtract ODP extraction. 
-2. Look up the DataSource *0MATERIAL_ATTR*.
-3. Create 2 new runtime parameters of type *String* and name them *p_MATNR_low* and *p_MATNR_high*. 
-4. Assign the parameters as selection filters to the column *MATNR*, so that only materials with numbers between *p_MATNR_low* and *p_MATNR_high* are included in the result data.
+1. Create a **new** workflow.
+2. Add an Xtract ODP component. 
+3. Look up the DataSource *0MATERIAL_ATTR*.
+4. Create 2 new runtime parameters of type *String* and name them *p_MATNR_low* and *p_MATNR_high*. 
+5. Assign the parameters as selection filters to the column *MATNR*, so that only materials with numbers between *p_MATNR_low* and *p_MATNR_high* are included in the result data.
 
 For more detailed information on how to create an ODP extraction, see [Define an ODP Extraction](./odp/odp-define).<br>
 
 ### Creating a Batch Macro with Control Parameters
 
-1. Create a new workflow that contains an extraction as described in [Create an Extraction](#create-an-extraction).
+1. Create a new workflow that contains an extraction as described in [Creating an Extraction for a Batch Macro](#creating-an-extraction-for-a-batch-macro).
 2. To use the workflow as a batch macro, navigate to the *Workflow Configuration* and select **Batch Macro** as the Workflow Type from drop down list.<br>
 ![BatchMacro](/img/content/xfa/batchmakro.png){:class="img-responsive"}
 3. Save the file. Once the workflow is saved as a batch macro each tool in the workflow gets a lightning bolt anchor. Only *Interface* Tools can connect to these anchors.
@@ -45,18 +48,18 @@ For this example, assign the control parameter *cp_MAKT_low* to the Xtract ODP r
 
 {: .box-note}
 **Note:** To use formulas with parameters, select *Update Value with Formula* from the drop-down list **Select an action type** in the *Action Configuration* menu.
-Enter a formular directly into the **Formula** field at the bottom of the menu or click **[...]** to open a formula editor.
+Enter a formula directly into the **Formula** field at the bottom of the menu or click **[...]** to open a formula editor.
 
 #### Parameterizing Components without Runtime Parameters
 
-Some Xtract components don't use runtime parameters, but have other settings available for parameterization in the *Action Configuration* menu.
+Some Xtract components don't use runtime parameters, but have offer other settings in the *Action Configuration* menu.
 
 Example: Parameterizing a WHERE-clause of an Xtract Table component <br>
 - To parameterize a WHERE-clause, mark the WHERE-clause in the tree menu *Value or Attribute to Update*.<br>
 - To parameterize only parts of a WHERE-clause, activate **Replace a specific string** and specify what part of the WHERE-clause is to be replaced e.g., in the WHERE-clause `KNA1~LAND1 = 'param'` "param" can be used as a placeholder for the actual input.
 ![WHERE-clause-parameter](/img/content/xfa/table-where-parameterize.png){:class="img-responsive"}
 
-### Integrating the Batch Macro into a Workflow
+### Integrating a Batch Macro into a Workflow
 
 This example uses the **Text Input** tool to define the parameters for the extraction.
 

@@ -12,36 +12,41 @@ lang: de_DE
 old_url: /Xtract-Universal-EN/default.aspx?pageid=abap-reports
 ---
 
-Um Xtract Komponenten im Alteryx Designer zu parametrisieren, verwenden Sie ein [Batch Makro](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm) das einen Workflow mit Control Parametern enthält.<br>
-Das folgende Beispiel zeigt Ihnen, wie man eine Xtract ODP Komponente parametrisiert.
+Es gibt 2 Möglichkeiten Xtract Komponenten zu parametrisieren:
+- Übergeben Sie Parameter an die Eingabeanker der Xtract Komponenten. <br>
+Eingabeanker sind ab Xtract for Alteryx Version 1.19 für alle Xtract Komponenten verfügbar.
+- Übergeben Sie Parameter an ein [Batch-Makro](https://help.alteryx.com/de/20231/designer/batch-macro), das einen Workflow mit [Steuerungsparametern](https://help.alteryx.com/de/20231/designer/control-parameter-tool) enthält.<br>
+Die Parametrisierung über Batch-Makros wird von Xtract BAPI, Xtract Table, Xtract Cube und Xtract ODP unterstützt.
 
-{: .box-note}
-**Hinweis:** Aktuell wird die Parametrisierung anhand von Batch Makros und Control Parametern nur von den Komponenten Xtract BAPI, Xtract ODP und Xtract Table unterstützt.
+Die folgenden Abschnitte beschreiben die Parametrisierung von Xtract Komponenten über Batch-Makros.
 
-### Eine Extraktion erstellen
-Das Ziel dieses Beispiels ist es, einen Filter für das DataSource *0MATERIAL_ATTR*so zu parametrieren, sodass nur Materialien mit einer Materialnummer zwischen den Grenzwerten *p_MATNR_low* und *p_MATNR_high* extrahiert werden.
 
-1. Öffnen Sie einen **neuen Workflow** und erstellen Sie eine Xtract ODP Extraktion.
-2. Suchen Sie das DataSource *0MATERIAL_ATTR*.
-3. Erstellen Sie 2 neue Laufzeitparameter vom Typ *String* und geben SIe ihnen die Namen *p_MATNR_low* und *p_MATNR_high*.
-4. Weisen Sie die Laufzeitparameter als Filterwerte der Spalte *MATNR* zu, sodass das Ergebnis der Extraktion nur Materialnummern zwischen *p_MATNR_low* und *p_MATNR_high* enthält. 
+### Eine Extraktion für ein Batch-Makro erstellen
 
-Für detailierte Informationen über die Xtract ODP Komponente, siehe [Eine ODP Extraktion definieren](./odp/odp-define).<br>
+Das folgende Beispiel verwendet the Xtract ODP Komponente, um zu zeigen, wie Filter parametrisiert werden.
 
-### Erstellen eines Batch Makros mit Control Parametern
+1. Erstellen Sie einen **neuen** Workflow.
+2. Fügen Sie eine Xtract ODP Komponente hinzu.
+3. Suchen Sie das DataSource *0MATERIAL_ATTR*.
+4. Erstellen Sie 2 neue Laufzeitparameter vom Typ *String* und geben Sie ihnen die Namen *p_MATNR_low* und *p_MATNR_high*.
+5. Weisen Sie die Laufzeitparameter als Filterwerte der Spalte *MATNR* zu, sodass das Ergebnis der Extraktion nur Materialnummern zwischen *p_MATNR_low* und *p_MATNR_high* enthält. 
 
-1. Erstellen Sie einen neuen Workflow, der eine Extraktion enthält, siehe  [Eine Extraktion erstellen](#eine-extraktion-erstellen).
+Für mehr Informationen über die Xtract ODP Komponente, siehe [Eine ODP Extraktion definieren](./odp/odp-define).
+
+### Erstellen eines Batch-Makros mit Steuerungsparametern
+
+1. Erstellen Sie einen neuen Workflow, der eine Extraktion enthält, siehe [Eine Extraktion für ein Batch-Makro erstellen](#eine-extraktion-für-ein-batch-makro-erstellen).
 2. Um den Workflow als Batch Makro verwenden zu können, navigieren Sie zu *Workflow Configuration* und wählen Sie in der Dropdown-Liste **Batch Makro** als Workflow Type aus.<br>
 ![BatchMacro](/img/content/xfa/batchmakro.png){:class="img-responsive"}
 3. Speichern Sie die Datei. Sobald der Workflow als Batch Makro gespeichert ist, erhält jedes Tool im Workflow einen Anker (Blitzsymbol) mit dem sich nur *Interface* Toole verbinden können.
 4. Fügen Sie einen **Control Parameter** aus der *Interface* Toolbox hinzu und labeln Sie den Parameter, z.B. *cp_MATNR_low* und *cp_MATNR_high*, um mehrere Parameter voneinander unterscheiden zu können (1).
 5. Vebinden Sie das **Control Parameter** Tool mit der Xtract Komponente. Dadurch wird automatisch das *Action* Tool **Update Value** hinzugefügt (2). <br>
 ![Workflow-Sequence](/img/content/xfa/workflow-sequence.png){:class="img-responsive"}
-6. Um einen Control Parameter einem Xtract Parameter zuzuweisen, markieren Sie im **Update Value** Tool den entsprechenden Xtract Parameter aus dem Baummenü *Value or Attribute to Update* (3). 
+6. Um einen Steuerungsparameter einem Xtract Laufzeitparameter zuzuweisen, markieren Sie im **Update Value** Tool den entsprechenden Xtract Laufzeitparameter aus dem Baummenü *Value or Attribute to Update* (3). 
 ![Workflow-Sequence2](/img/content/xfa/workflow-sequence2.png){:class="img-responsive"}
-Für dieses Beispiel weisen Sie den Control Parameter *cp_MAKT_low* dem Xtract ODP Laufzeitparameter *p_MATNR_low* zu. *cp_MAKT_high* weisen Sie *p_MATNR_high* zu.
-7. Ziehen Sie das **Macro Output** Tool der *Interface* Toolbox in den Workflow, um dem Batch Makro eine Ausgabe hinzuzufügen (4). 
-8. Speichern Sie das Makro.
+Für dieses Beispiel weisen Sie den Steuerungsparameter *cp_MAKT_low* dem Xtract ODP Laufzeitparameter *p_MATNR_low* zu. *cp_MAKT_high* weisen Sie *p_MATNR_high* zu.
+7. Ziehen Sie das **Macro Output** Tool der *Interface* Toolbox in den Workflow, um dem Batch-Makro eine Ausgabe hinzuzufügen (4). 
+8. Speichern Sie das Batch-Makro.
 
 {: .box-note}
 **Hinweis:** Um Parameter mit Formeln zu verwenden, wählen Sie im **Update Value** Tool die Option *Update Value with Formula* aus der Dropdown-Liste **Select an action type** aus.
@@ -63,11 +68,11 @@ Dieses Beispiel verwendet das **Text Input** Tool, um die Parameter der Extrakti
 1. Fügen Sie ein **Text Input** Tool hinzu, um die Eingabeparameter für das Batch Makro zu definieren.Geben Sie gültige Parameterwerte ein und fügen Sie für jeden Control Parameter eine neue Spalte hinzu. (1)<br>
 Beispiel: 000000000000000023 als Eingabe für *p_MATNR_low* und 000000000000000100 als Eingabe für *p_MATNR_high*.<br>
 ![Input-Text](/img/content/xfa/input-text.png){:class="img-responsive"}
-2. Um ein Batch Makro zu importieren, machen Sie einen Rechtsklick auf die Leinwand und navigieren zu **Insert > Macro**. Fügen Sie das Makro hinzu, das die Xtract Komponente und die Control Parameter beinhaltet. <br>
-3. Verbinden Sie das **Text Input** Tool mit dem Batch Makro (2).
-4. Markieren Sie das Batch Makro (2) und verwenden Sie die Dropdown-Listen **Choose field**, um den Control Parametern die Werte aus den **Text Input** Spalten zuzuweisen.<br>
+2. Um ein Batch-Makro zu importieren, machen Sie einen Rechtsklick auf die Leinwand und navigieren zu **Insert > Macro**. Fügen Sie das Makro hinzu, das die Xtract Komponente und die Steuerungsparameter beinhaltet. <br>
+3. Verbinden Sie das **Text Input** Tool mit dem Batch-Makro (2).
+4. Markieren Sie das Batch-Makro (2) und verwenden Sie die Dropdown-Listen **Choose field**, um den Steuerungsparametern die Werte aus den **Text Input** Spalten zuzuweisen.<br>
 ![Import-Macro](/img/content/xfa/importmacro.png){:class="img-responsive"}
-5. Fügen Sie ein **Browse** Tool (3) hinzu, um das Ergebnis des Batch Makros zu prüfen und führen Sie den Workflow aus.<br>
+5. Fügen Sie ein **Browse** Tool (3) hinzu, um das Ergebnis des Batch-Makros zu prüfen und führen Sie den Workflow aus.<br>
 
 ****
 #### Weiterführende Links
