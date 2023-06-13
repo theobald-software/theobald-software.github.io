@@ -6,8 +6,8 @@ Klicken Sie auf **Edit Parameters**, um dynamische Laufzeitparameter anzulegen u
 
 1. Um die Bearbeitungsfunktion für die Parameter anzuzeigen, klicken Sie je nach Produkt entweder *oben* oder *unten* auf **Edit parameter** im Hauptfenster. <br/>
 Das Fenster "Edit Runtime Parameters" wird geöffnet.<br> 
-![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
-2. Klicken Sie auf **[Add]** (1), um Parameter zu definieren, die als Platzhalter für die Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. 
+![Add parameters](/img/content/extractors.bapi/BAPI-Create-Runtime-Parameters.png){:class="img-responsive"}<br> 
+2. Klicken Sie auf **[Add Scalar]** (1), um Parameter zu definieren, die als Platzhalter für die Datenselektionen verwendet werden können. Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden. 
 Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: *"p_MATNR"*).
 3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen müssen mit den SAP-Datentypen übereinstimmen. 
@@ -26,4 +26,4 @@ Weisen Sie Selektionen Laufzeitparameter zu.
 Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
 Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
 3. Wählen Sie einen Laufzeitparameter aus der Drop-Down-Liste aus, um ihn dem Element zuzuweisen.
-![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![Assign parameters](/img/content/xfa/XfA-BAPI-Runtime-Parameters.png){:class="img-responsive"}{% else %}![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"} {% endif %}

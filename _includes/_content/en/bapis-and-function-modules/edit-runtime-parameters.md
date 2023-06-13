@@ -7,7 +7,7 @@ Click **Edit Parameters** to create or edit dynamic runtime parameters.
 1. Depending on the product, click **Edit Parameters** or **Edit runtime parameters** either at the *top* or at the *bottom* of the main BAPI Component window. <br/>
 The window "Edit Runtime Parameters" opens.<br> 
 ![Add parameters](/img/content/extractors.bapi/BAPI-Create-Runtime-Parameters.png){:class="img-responsive"}<br> 
-2. Click **[Add]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
+2. Click **[Add Scalar]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
 This allows you to dynamically set filters at runtime.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: *"p_MATNR"*).
 3. Open the drop-down menu (2) and assign one of the following data types to the parameter.
@@ -26,5 +26,4 @@ Assign the parameters to selections.
 If there are runtime parameters, a parameter icon is displayed next to the input fields. <br>
 Clicking the icons switches between entering actual input values and entering parameters.<br>
 3. Assign a parameter by selecting a runtime parameter from the dropdown-list.
-![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"}
-
+{% if page.product == "xtract-for-alteryx" %}![Assign parameters](/img/content/xfa/XfA-BAPI-Runtime-Parameters.png){:class="img-responsive"}{% else %}![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"} {% endif %}

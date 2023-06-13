@@ -9,7 +9,7 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
 Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden.
 
-![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
 
@@ -34,8 +34,9 @@ Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich.
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
 2. Geben Sie unter **Values** statische Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) ein.
-Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.<br>
-![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
+Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
+
+{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
 ### Export-Parameter
 **Exports** repräsentiert die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.
@@ -45,7 +46,7 @@ Im Tab **Exports** können Sie Ausgabeparameter definieren, die entweder als Ska
 #### Der Ausgabe Elemente hinzufügen
 Aktivieren Sie die Checkbox in der Ausgabespalte, um ein Element der Ausgabe hinzuzufügen.
 
-![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
 
@@ -66,15 +67,15 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 {: .box-note }
 **Hinweis:** Nur **5** Tabellen stehen für einen parallelen Export zur Verfügung.
 
-![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfA/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Auf Metadaten der Tabelle zugreifen (1)
 
 Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
-Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **[Refresh metadata**.<br>
-
+{% if page.product != "xtract-for-alteryx" %}
+Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **Refresh metadata**.<br>
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
-
+{% endif %}
 
 ### Der Ausgabe Tabellen hinzufügen (2)
 
