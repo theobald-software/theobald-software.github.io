@@ -1,7 +1,7 @@
 ---
 ref: xi-query-03
 layout: page
-title: Settings
+title: Einstellungen
 description: Settings
 product: xtract-is
 parent: query

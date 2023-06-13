@@ -18,7 +18,7 @@ Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
 - **NodeName:**
 Der (technische) Name des Knotens.
 - **NodeText:**
-Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den [Extraktionseinstellungen](./hierarchie-extraktionseinstellungen) auf *true/wahr* gesetzt wurde).
 - **DateFrom:** 
 Datum ab wann der Knoten gültig ist.
 - **DateTo:**
@@ -43,7 +43,7 @@ Name des InfoObjects, das hinter dem jeweiligen Knoten steht.
 - **NodeName:**
 Der (technische) Name des Knotens.
 - **NodeText:**
-Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den [Extraktionseinstellungen](./hierarchie-extraktionseinstellungen) auf *true/wahr* gesetzt wurde).
 - **DateFrom:** 
 Datum ab wann der Knoten gültig ist.
 - **DateTo:**
@@ -62,7 +62,7 @@ Eindeutiger Schlüssel des Knoten.
 - **NodeName:**
 Der (technische) Name des Knotens.
 - **NodeText:**
-Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den Einstellungen auf *true/wahr* gesetzt wurde).
+Der beschreibende Text in der jeweiligen Anmeldesprache  (nur wenn *FetchText* in den [Extraktionseinstellungen](./hierarchie-extraktionseinstellungen) auf *true/wahr* gesetzt wurde).
 - **ParentNodeID:**
 Schlüssel des Vaterknotens.
 - **ParentNodeName:**
