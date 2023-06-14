@@ -26,7 +26,7 @@ Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgab
 Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Namen und Datentypen der Tabellenfelder zu prüfen (1).<br>
 Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.<br>
 Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um die Tabelle zu bearbeiten (3). <br>
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfA/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 5. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
 

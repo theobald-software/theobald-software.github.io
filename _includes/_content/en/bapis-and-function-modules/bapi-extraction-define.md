@@ -26,7 +26,7 @@ Select output by activating the checkbox next to the items.
 Click the ![glasses](/img/content/icons/glasses.png) icon to check the names and data types of the table fields (1).<br>
 Activate the checkbox next to the items to add items to the output (2).<br>
 Click the ![pen](/img/content/icons/pen.png) icon to edit tables (3).
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfA/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 5. Click **[OK]** to confirm.
 
 {: .box-note }
