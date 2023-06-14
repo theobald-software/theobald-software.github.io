@@ -26,10 +26,6 @@ Alternativ können Sie nach Function Group suchen.
 ### Import, Export, Changings und Tables definieren
 
 Das Fenster "Xtract BAPI" zeigt die Parameter des ausgewählten BAPI.<br>
-Ein BAPI kann bis zu vier Paramtertypen haben: [Parametertypen](./parameter): Imports, Exports, Changings und Tables.
-
-{: .box-note }
-**Hinweis:** Sie können verschachtelte Parameter verwenden, z.B. Tabellen in Tabellen, Strukturen in Tabellen und Strukturen in Strukturen.<br>
 
 1. Geben Sie in **Imports** Eingabeparameter an, die an SAP gesendet werden, siehe [Import-Parameter](./parameter#import-parameter). <br>
 Sie können Skalarwerte (1) oder Strukturen (2) übergeben. Sie können auch SSIS-Variablen zuweisen.<br>
@@ -44,6 +40,9 @@ Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Aus
 Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um die Tabelle zu bearbeiten (3). <br>
 ![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 5. Bestätigen Sie Ihre Eingabe mit **[OK]**.
+
+{: .box-note }
+**Hinweis:** Sie können verschachtelte Parameter verwenden, z.B. Tabellen in Tabellen, Strukturen in Tabellen und Strukturen in Strukturen.<br>
 
 ****
 #### Weiterführende Links

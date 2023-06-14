@@ -26,11 +26,7 @@ Alternatively you can search for function groups.
 
 ### Define Import, Export, Changings and Tables
 
-In the main BAPI Component window all parameters of the selected BAPI are displayed.
-BAPIs can have up to four parameter types: Imports, Exports, Changings and Tables.
-
-{: .box-note }
-**Note:** You can use of nested parameters, e.g., tables in tables, structures in tables and structures in structures.<br>
+The main window of the BAPI component shows all parameters of the selected BAPI. 
 
 1. Add input parameters to send to SAP in **Imports**, see [Import Parameters](./parameters#import-parameters). <br>
 You can enter scalar values (1) or structures (2). You can also select SSIS variables.<br>
@@ -45,6 +41,10 @@ Activate the checkbox next to the items to add items to the output (2).<br>
 Click the ![pen](/img/content/icons/pen.png) icon to edit tables (3).<br>
 ![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 5. Click **[OK]** to confirm.
+
+{: .box-note }
+**Note:** You can use of nested parameters, e.g., tables in tables, structures in tables and structures in structures.<br>
+
 
 ****
 #### Related Links

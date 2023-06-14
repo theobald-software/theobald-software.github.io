@@ -8,7 +8,7 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
 
-![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -40,9 +40,9 @@ Export parameters represent the output values sent from SAP back to the client a
 In the tab **Exports** you can define export parameters that can be presented as scalar values, structures or tables. 
 
 #### Add Items to Output
-Mark the checkbox in the output column to add an item to the output.<br>
+Mark the checkbox in the output column to add an item to the output.
 
-![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -63,12 +63,14 @@ To use the filtering function, enter text in the headers of the columns **Name**
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
 
-![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfA/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Access Metadata of Tables (1)
-Click the ![glasses](/img/content/icons/glasses.png) icon to display the metadata of the selected table including the name and the data type of all fields. <br> 
+Click the ![glasses](/img/content/icons/glasses.png) icon to display the metadata of the selected table including the name and the data type of all fields. 
+{% if page.product != "xtract-for-alteryx" %}
 If the function module was edited in SAP, you can refresh the data by clicking **Refresh metadata**<br>
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
+{% endif %}
 
 ### Add Tables to Output (2)
 
