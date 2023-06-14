@@ -16,6 +16,7 @@ progressstate: 5
 - Visual Studio 2015
 - Visual Studio 2017
 - Visual Studio 2019
+- Visual Studio 2022
 
 {: .box-note }
 **Hinweis:** Um SSIS-Pakete zu erstellen, werden SQL Server Data Tools (SSDT) benötigt. 
@@ -37,6 +38,7 @@ Für mehr Informationen siehe [Microsoft Dokumentation: Herunterladen von SQL Se
 - SQL Server Integration Services (SSIS) 2016 SP2 (bis 14.07.2026)
 - SQL Server Integration Services (SSIS) 2017 (bis 12.10.2027)
 - SQL Server Integration Services (SSIS) 2019 (bis 08.01.2030)
+- SQL Server Integration Services (SSIS) 2022
 
 Die Version der SQL Server-Datenbank, die zum Lesen oder Schreiben von Daten verwendet wird, kann von der SQL Server Integration Services (SSIS) Version abweichen, d.h. Sie können SSIS Version 2019 verwenden, um Daten in die SQL Server-Datenbank Version 2022 zu schreiben.
 
