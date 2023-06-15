@@ -52,7 +52,7 @@ This option can be used to temporarily disable users from using yunIO.
 7. Call the service using basic authentication. Enter the credentials of a user that is allowed to run services.
 
 {: .box-note }
-**Note:** If you get shut out and can't log in to the Designer, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
+**Note:** If you lock yourself out and cannot log in to the Designer, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
 Restart the yunIO server.
 
 {: .box-tip }
