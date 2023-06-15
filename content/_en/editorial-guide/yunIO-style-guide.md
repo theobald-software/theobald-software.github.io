@@ -26,7 +26,6 @@ h4 {
 },
 ```
 
-![Capture](/img/content/help_concept/yunIO/greenshot_capture.png){:class="img-responsive"}
 
--->
+![Capture](/img/content/help_concept/yunIO/new-h4-definition.png){:class="img-responsive"}
 
