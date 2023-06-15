@@ -67,7 +67,7 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 {: .box-note }
 **Hinweis:** Nur **5** Tabellen stehen für einen parallelen Export zur Verfügung.
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfA/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Auf Metadaten der Tabelle zugreifen (1)
 
