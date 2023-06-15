@@ -43,9 +43,12 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 | Column names of Key figures           | EnterpriseID                                              | Technical name<br>  If techn. name is empty: name of the base measure.  <br> If name of the base measure is empty: EnterpriseID. <br>**Tip:** In case of duplicate names, change the technical name in the BEx Query Designer. |
 | Character limit for dimension members | max. 60 characters      | -      |
 
-{: .box-note }
-**Note:** The BICS component is still in beta phase. 
-This means that breaking changes can be released any time. 
+{: .box-warning }
+**Warning:** **Breaking changes possible**
+The component is still in beta phase. Breaking changes can be released anytime. 
+Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
+
+ 
 Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update.
 Therefore we recommend to not use BICS in the production environment.
 

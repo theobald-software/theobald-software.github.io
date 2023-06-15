@@ -146,13 +146,12 @@ The *Azure Storage (Blob / Data Lake)* destination can now be used.
 **Note:** The settings in *Misc* can only be used in combination with a Blob container.<br> 
 
 **Folder path** <br>
-Option to create a folder structure within the container for saving files. 
-See also [**Destination Settings > Folder Path**](#folder-path). <br>
+Option to create a folder structure within the container for saving files, see also [**Destination Settings > Folder Path**](#folder-path).. <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
-**Folder path** allows entry of [script expressions](./../advanced-techniques/script-expressions).
-This allows to dynamically set a folder path when running an extraction. <br>
+{% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
+
 
 ### Column Encryption (4)
 
@@ -200,7 +199,7 @@ The selected exponential retry strategy results in 7 retry attempts and an overa
 If a connection is not established during this timespan, the extraction fails.
 
 Rollback covers scenarios where extractions do not fail due to connection failures to Azure but e.g. due to an error when connecting to SAP.
-In those particular cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
+In those cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
 
 <!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
 See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->
@@ -209,7 +208,7 @@ See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/archit
 ## Settings
 
 ### Opening the Destination Settings
-1. Create or select an existing extraction (see also [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction)).
+1. Create or select an existing extraction, see [Getting Started with Xtract Universal](../getting-started/define-a-table-extraction).
 2. Click **[Destination]**. The window "Destination Settings" opens.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -247,7 +246,7 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 
 ### Folder
 
-Option to create a folder structure within the container for saving files. See also [Connection > Folder Path](#azure-storage-connection). <br>
+Option to create a folder structure within the container for saving files, see also [Connection > Folder Path](#azure-storage-connection). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 

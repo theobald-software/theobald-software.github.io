@@ -147,13 +147,11 @@ Die Destination *Azure Storage (Blob / Data Lake)* kann nun verwendet werden.
 **Hinweis:** Die Einstellungen in *Misc* können nur in Kombination mit einem Blob Container verwendet werden.<br> 
 
 **Folder path**<br>
-Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien. 
-Siehe auch: [**Einstellungen > Folder Path**](#folder-path).<br>
+Option zum Erstellen eines Verzeichnisses innerhalb des Containers zum Abspeichern von Dateien, siehe auch: [**Einstellungen > Folder Path**](#folder-path).<br>
 Wenn die Extraktionsdaten in einen Ordner innerhalb eines Azure-Blob-Containers geschrieben werden sollen, geben Sie hier einen Ordnernamen ohne Schrägstriche ein: `[Ordner]` <br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden: `[ordner]/[unterordner_1]/[unterordner_2]/…`
 
-Anstatt eines festen Verzeichnisses, kann der Verzeichnispfad mithilfe von [Skript-Ausdrücken](./../fortgeschrittene-techniken/script-ausdruecke#definierte-eigenschaften) definiert werden. 
-Dabei wird der Verzeichnispfad dynamisch beim Ausführen der Extraktion ermittelt. <br>
+{% include _content/de/xu-specific/destinationen/general/folder-script-expressions.md %}
 
 ### Column Encryption (4)
 {% include _content/de/xu-specific/destinationen/general/column-encryption.md %}
@@ -205,7 +203,7 @@ In solchen Fällen versucht Xtract Universal alle Dateien aus dem Azure Storage 
 
 ### Destination Settings öffnen
 
-1. Eine bestehende Extraktion anlegen oder auswählen (siehe auch [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen)).
+1. Eine bestehende Extraktion anlegen oder auswählen, siehe [Erste Schritte mit Xtract Universal](../erste-schritte/eine-neue-extraktion-anlegen).
 2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" wird geöffnet.
 ![Destination-settings](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
 
@@ -217,6 +215,8 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 
 {% include _content/de/xu-specific/destinationen/general/file-name.md %}
 
+
+ 
 {: .box-note }
 **Hinweis:** Wenn der Name eines Objekts nicht mit einem Buchstaben beginnt, wird 'x' als Präfix ergänzt, z.B. wird das Objekt `_namespace_tabname.csv` zu `x_namespace_tabname.csv`, wenn es auf die Destination hochgeladen wird.
 Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sichergestellt, die mit Buchstaben beginnende Objektnamen voraussetzen oder die nicht alphabetischen Zeichen besondere Bedeutungen zuweisen.
