@@ -14,17 +14,15 @@ The following section describes data extraction to a Huawei Cloud Object Storage
 
 {: .box-warning }
 **Warning:** **Breaking changes possible**
-The component is still in beta phase. Breaking changes can be released anytime. <br>
+The component is still in beta phase. Breaking changes can be released any time. 
 Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
 
 
 {: .box-warning }
 **Warning! File fragments in the cloud storage**<br>
-Huawei Cloud OBS destination uses multipart upload. Data is uploaded in fragments to be merged into a single file when extraction is finished. 
-When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. <br>
-Delete the uploaded fragments manually, to save storage space and prevent any errors.
-
-For more information on deleting file fragments, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 
+Huawei Cloud OBS destination uses multipart upload. That means that data is uploaded in fragments that are merged into a single file at the end of the extraction. 
+When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. 
+In that case the uploaded fragments must be deleted manually, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 
 
 
 ## Connection
@@ -39,29 +37,29 @@ For more information on deleting file fragments, see [Huawei Cloud Support: Dele
 ### Authentication
 
 **Access Key ID (AK)** <br>
-Enter the access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html).
+Enter the access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
  
 **Secret Access Key ID (SK)** <br>
-Enter the secret access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html).
+Enter the secret access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
 
 **Region**<br>
 Select the region of the data storage.
 
 **Connect** <br>
 Click **[Connect]** to establish a connection to the storage account. 
-If the connection is successful, a "Connected" text is displayed next to the button.
+If the connection is successful, "Connected" is displayed next to the button.
 
 ### Bucket
 
 **Bucket**<br>
-The bucket setting only becomes available after a connection to the storage account is established.<br>
-Select a bucket. The SAP data is extracted into the selected bucket. <br>
+This setting only becomes available after a connection to the storage account is established.<br>
+Select a bucket. The SAP data is extracted into the selected bucket. 
 Click ![refresh](/img/content/icons/refresh.png){:class="img-responsive" style="display:inline"} to refresh the list of available buckets.
 
 ### Misc
 
 **Folder path** <br>
-Option to create a folder structure within the container for saving files, see also [*Destination Settings > Folder Path*](#folder).<br>
+Option to create a folder structure within the container for saving files, see also [**Destination Settings > Folder Path**](#folder-path). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
@@ -70,7 +68,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 ### File Format
 
 **File type**<br>
-Select the required file format:  *CSV*, *Parquet* or *JSON*.
+Select the required file format. Possible options are: *CSV*, *Parquet* and *JSON*.
 
 ![huawei-destination-details2](/img/content/xu/huawei-destination-details2.png){:class="img-responsive"}
 
@@ -86,7 +84,7 @@ The following compatibility modes are available:
 - *Spark* 
 - *BigQuery*
 
-Spark does not support the data types used in pure mode. Special characters (e.g., ~) can be used in column names, when the option *Allow special characters in column name* is activated.<br>
+Spark does not support the data types used in pure mode, so other data types need to be used. Special characters (e.g. ~) can be used in column names, when the option *Allow special characters in column name* is activated.<br>
 
 ![huawei-destination-details3](/img/content/xu/huawei-destination-details3.png){:class="img-responsive"}
 
@@ -106,8 +104,6 @@ Connection retry and rollback are built-in functions of the Huawei Cloud OBS des
 They are activated by default. 
 
 Connection retry is a functionality that prevents extractions from failing if the connection to Huawei is interrupted.
-The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
-The retry logic is based on WebExceptionStatus. 
 
 If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Huawei.
 The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
@@ -147,7 +143,7 @@ The following settings can be defined for the destination:
 
 ### Folder
 
-Option to create a folder structure within the container for saving files, see also [Connection > Folder Path](#azure-storage-connection). <br>
+Option to create a folder structure within the container for saving files, see also [Connection > Folder Path](#connection). <br>
 For creating a single folder, enter a folder name without slashes: `[folder]` <br>
 Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
