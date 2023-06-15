@@ -63,7 +63,7 @@ To use the filtering function, enter text in the headers of the columns **Name**
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfA/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Access Metadata of Tables (1)
 Click the ![glasses](/img/content/icons/glasses.png) icon to display the metadata of the selected table including the name and the data type of all fields. 
