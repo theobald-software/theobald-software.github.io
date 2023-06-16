@@ -36,10 +36,6 @@ One or more keywords (Tags) can be set to an extraction.
 Keywords can be entered directly in the keyword field.
 Within the Designer you can use these keywords to filter  extractions. 
 
-{:.box-tip}
-**Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
- 
-
 ### Primary Key Tab
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}

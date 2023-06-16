@@ -40,10 +40,6 @@ Ein oder mehrere Schlüsselwörter (Tags) können auf eine Extraktion gesetzt we
 Schlüsselwörter können direkt in das Schlüsselwortfeld eingegeben werden.
 Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extraktionen verwenden. 
 
-{:.box-tip}
-**Tipp:** zum Anzeigen der Filteroptionen, navigieren Sie zu **[Extractions] > [Filter]** oder drücken Sie **[CTRL]+[F]**.
-
-
 ### Primary Key Tab
 Tabellenextraktionen erben die Primärschlüssel von SAP. Andere Objekte wie z.B. SAP Query, BW Cube etc. erfordern eine manuelle Einstellung von Primärschlüsseln. 
 ![General-Settings-Primary-Key](/img/content/XU_table_Primary_key.png){:class="img-responsive"}
