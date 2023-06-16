@@ -48,7 +48,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 - [Azure Storage](./destinationen/azure-storage) 
 - [Google Cloud Storage](./destinationen/google-cloud-storage)
 - [Hadoop](./destinationen/hadoop)
-- [Huawei Cloud OBS](./huawei)
+- [Huawei Cloud OBS](./destinationen/huawei)
 
 ### Business Systeme
 

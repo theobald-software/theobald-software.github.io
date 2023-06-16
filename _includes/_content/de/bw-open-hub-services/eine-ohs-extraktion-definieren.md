@@ -13,7 +13,7 @@ Falls Sie BW7.x order niedriger verwenden, wählen Sie **Third party tool (legac
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 ### Einstellungen
-1. Wenn im Hauptfenster der Komponente das Feld **Process Chain** leer ist, geben Sie eine SAP Prozesskette ein, die Ihrer OHS Extraktion zugewiesen ist, siehe [SAP Dokumentation: Display/Maintenance of Process Chain Attributes](http://saphelp.ucc.ovgu.de/NW750/EN/4a/2cf30c6ed91c62e10000000a42189c/frameset.htm).
+1. Wenn im Hauptfenster der Komponente das Feld **Process Chain** leer ist, geben Sie eine SAP Prozesskette ein, die Ihrer OHS Extraktion zugewiesen ist, siehe [SAP Dokumentation: Display/Maintenance of Process Chain Attributes](https://help.sap.com/docs/SAP_NETWEAVER_701/6da591e86c4b1014b43de329b9ffb859/4a2cf30c6ed91c62e10000000a42189c.html).
 Wenn **Process Chain** leer bleibt, schlägt die Extraktion fehl.
 2. Optional: Setzen Sie neben **Timeout** ein Zeitlimit für die Rückmeldung des BWs. Wenn das Zeitlimit überschritten wird, schlägt die Extraktion fehl.
 3. Prüfen / bearbeiten Sie die [Extraktionseinstellungen](./open-hub-services-settings) und [Allgemeinen Einstellungen](../erste-schritte/allgemeine-einstellungen).
