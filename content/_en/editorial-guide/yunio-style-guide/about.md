@@ -4,13 +4,10 @@ title: About
 description: About
 parent: editorial-guide
 parent: yunio-style-guide
-weight: 14
+weight: 1
 permalink: /:collection/:path
 lang: en_GB
 ---
-The yunIO Style Guide of Theobald Software provides a set of guidelines for writing for the UI of yunIO. The guidelines are not binding rules that must be applied in every case. However, it is recommended to follow the yunIO Style Guide to improve the quality of the textual and language content of the UI in terms of consistency and correctness.  
-
-*****
 
 <!---
 hi Maia,
