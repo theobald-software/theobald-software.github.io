@@ -17,20 +17,27 @@ The following section contains an overview of the yunIO server settings in the *
 To save any changes made in the **Settings** menu, click **[Save]**.
 
 {: .box-note }
-**Note:** All server setting changes require a yunIO service restart. All Swagger/OpenAPI definitions must be updated manually on server settings change by saving the service once more.
+**Note:** All changes in the **Settings** menu require a restart of the yunIO service. 
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
-### Endpoint
+### Services Endpoint
 
 The **Service URL Kind** option defines the URL that is used to connect to yunIO services.
 
 - *Default*: <br>
-If TLS is active, the *Subject Alternative Name* provided by the X.509 certificate is used as the hostname, see [Transport Layer Security](#transport-layer-security). <br>
-- *Azure Relay Hybrid Connection*:<br>
-When an Azure Relay Hybrid Connection is set up, yunIO services use an Azure Relay address to become accessible to applications running in the Azure cloud. For more information on Azure Relay, refer to the knowledge base article [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection).
+If TLS is active, the first *Subject Alternative Name* provided by the X.509 certificate is used as the hostname, see [Transport Layer Security](#transport-layer-security). 
 - *Custom*: <br>
 Allows you to enter a custom hostname. Enter the hostname in the field **Custom Hostname** and click **[Save]** to update the OpenAPI definitions of all existing services.
+- *Azure Relay Hybrid Connection*:<br>
+When an Azure Relay Hybrid Connection is set up, yunIO services use an Azure Relay address to become accessible to applications running in the Azure cloud. 
+For more information on Azure Relay, refer to the knowledge base article [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection).
+
+{: .box-note }
+**Note:** Wildcard certificates are supported. Enter the hostname of the certificate as a custom endpoint.
+
+{: .box-tip }
+**Tip:** To set up multiple endpoints, use multiple yunIO servers, one for each endpoint.
 
 ### Transport Layer Security
 
@@ -42,7 +49,7 @@ For more information on TLS, see [Microsoft: Transport Layer Security Protocol](
 Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
 If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
 The certificate must have *Subject Alternative Name* set. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
-A custom hostname can be entered in the [Endpoint](#endpoint) setting.
+A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
 
 For information on how to renew a certificate, refer to our knowledge base article [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
