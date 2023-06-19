@@ -56,8 +56,8 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
 - Extraktions-URL vor der Parameteränderung<br>
 `http://localhost:8065?name=Plants`
-- Extraktions-URL nach der Parameteränderung in **destination**:<br>
-`http://localhost:8085/?name=Plants&destination=http-csv`  
+- Extraktions-URL nach der Parameteränderung in **source**:<br>
+`http://localhost:8085/?name=Plants&source=SAP_PROD`  
 
 ### Source
 Die Verbindungseinstellungen zu einer SAP Quelle können dynamisch über die URL oder die xu.exe geändert werden. 
