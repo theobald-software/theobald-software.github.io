@@ -60,8 +60,8 @@ columnSeparator |  to set a symbol which indicates the start of a new column | a
 2. Enter the value and confirm by pressing enter. 
 - Extraction URL before changing the parameter:<br>
 `http://localhost:8065?name=Plants`
-- Extraction URL after editing the parameter **destination**:<br>
-`http://localhost:8065/?name=Plants&destination=http-csv` 
+- Extraction URL after editing the parameter **source**:<br>
+`http://localhost:8065/?name=Plants&source=SAP_PROD` 
 
 
 ### Source
