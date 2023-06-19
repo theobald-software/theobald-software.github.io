@@ -17,20 +17,27 @@ Dieser Abschnitt enthält Informationen über die yunIO Server-Einstellungen.<br
 Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 {: .box-note }
-**Hinweis:** Starten Sie den yunIO-Server neu, um die Änderungen zu übernehmen.
+**Hinweis:** Starten Sie den yunIO-Dienst neu, um die Änderungen zu übernehmen.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
-### Endpoint
+### Services Endpoint
 
 Die Option **Service URL Kind** definiert die URL, mit der man sich mit yunIO Services verbindet.
 
 - *Default*: <br>
 Wenn TLS aktiv ist ist, wird der *Subject Alternative Name* aus dem X.509 Zertificate als Hostname verwendet, siehe [Transport Layer Security](#transport-layer-security). <br>
-- *Azure Relay Hybrid Connection*:<br>
-Wenn eine Azure Relay Hybrid Verbindung eingerichtet ist, verwenden die Services eine Azure Relay Adresse, um für Anwendungen in der Azure Cloud erreichbar zu sein. Für mehr Informationen zu Azure Relay, siehe [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection). <br>
 - *Custom*: <br>
 Geben Sie im Feld **Custom Hostname** einen benutzerdefinierten Hostnamen ein und klicken Sie auf **[Save]**, um die OpenAPI Definitionen aller angelegten Services zu aktualisieren.
+- *Azure Relay Hybrid Connection*:<br>
+Wenn eine Azure Relay Hybrid Verbindung eingerichtet ist, verwenden die Services eine Azure Relay Adresse, um für Anwendungen in der Azure Cloud erreichbar zu sein. Für mehr Informationen zu Azure Relay, siehe [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection). <br>
+
+{: .box-note }
+**Hinweis:** Wildcard-Zertifikate werden unterstützt. Geben Sie den Hostnamen des Zertifikats als benutzerdefinierten Endpunkt an.
+
+{: .box-tip }
+**Tipp:** Um mehrere Endpunkte zu verwenden, richten Sie mehrere yunIO Server ein, einen Server für jeden Endpunkt.
+
 
 ### Transport Layer Security
 
@@ -43,7 +50,7 @@ Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.mi
 Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
 Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
 In dem Zertifikat muss ein *Subject Alternative Name* hinterlegt sein. Dieser wird als neuer Hostname verwendet.
-Einen benutzerdefinierten Hostnamen können Sie in der [Endpoint](#endpoint) Einstellung angeben.
+Einen benutzerdefinierten Hostnamen können Sie in der [Services Endpoint](#endpoint) Einstellung angeben.
 
 Informationen zur Erneuerung eines Zertifikats, finden Sie in dem Knowledge Base Artikel [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
