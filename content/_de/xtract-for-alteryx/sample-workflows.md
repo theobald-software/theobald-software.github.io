@@ -19,8 +19,7 @@ Der folgende Abschnitt bietet Beispiel-Workflows und Vorlagen zum Download an.
 | Workflow | Quellsystem| Beschreibung Quellsystem|
 | :------ |:--- | :--- | :--- |
 | [BAPI-ERP-Dynamic-Read-With-Macro](/docs/alteryx-workflows/BAPI-ERP-DynamicReadWithMacro.yxzp){:download="BAPI-ERP-DynamicReadWithMacro.yxzp"}  |  SAP ERP  |Dieser Workflow zeigt die Verwendung von [Xtract BAPI](./bapi) mit dynamischen Importparametern zum Laden mehrerer Datensätze aus SAP. Dieser Workflow enthält eine Alteryx-Batch-Makrofunktion zur Parametrisierung. |
-| [BAPI-ERP-Dynamic-Write](/docs/alteryx-workflows/BAPI-ERP-DynamicWrite.yxmd){:download="BAPI-ERP-DynamicWrite.yxmd"}  | SAP ERP | 
-Dieser Workflow zeigt die Verwendung von [Xtract BAPI](./bapi) mit dynamischen Tabellenparametern zum Schreiben von Daten in SAP.|
+| [BAPI-ERP-Dynamic-Write](/docs/alteryx-workflows/BAPI-ERP-DynamicWrite.yxmd){:download="BAPI-ERP-DynamicWrite.yxmd"}  | SAP ERP | Dieser Workflow zeigt die Verwendung von [Xtract BAPI](./bapi) mit dynamischen Tabellenparametern zum Schreiben von Daten in SAP. |
 | [BAPI-ERP-Read-Write-With-Macro](/docs/alteryx-workflows/BAPI-ERP-ReadAndWriteWithMacro.yxzp){:download="BAPI-ERP-ReadAndWriteWithMacro.yxzp"}  | SAP ERP | Dieser Workflow zeigt die Verwendung von [Xtract BAPI](./bapi), um eine Bestellanforderung (purchase requisition) in SAP zu erstellen und die Daten der Bestellanforderung in Alteryx zu laden. |
 
 ### Xtract Cube
