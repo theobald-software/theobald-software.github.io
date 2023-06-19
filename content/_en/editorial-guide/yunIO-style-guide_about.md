@@ -1,7 +1,7 @@
 ---
 layout: page
-title: yunIO Style Guide
-description: yunIO Style Guide
+title: About
+description: About
 parent: editorial-guide
 parent: yunio-style-guide
 weight: 14
