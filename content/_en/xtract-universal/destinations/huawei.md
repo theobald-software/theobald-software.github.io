@@ -13,7 +13,7 @@ progressstate: 5
 The following section describes data extraction to a Huawei Cloud Object Storage Service (OBS).
 
 {: .box-warning }
-**Warning:** **Breaking changes possible**
+**Warning:** **Breaking changes possible** <br>
 The component is still in beta phase. Breaking changes can be released any time. 
 Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
 
