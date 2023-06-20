@@ -17,7 +17,7 @@ The following section shows how to use the integration type *Function Module / B
 **Warning!** **Missing Authorization**
 To use the integration type *Function Module / BAPI*, access to the designated authority objects (RFC) in SAP must be available. For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
 
-### Look up a Function Module / BAPI
+## Look up a Function Module / BAPI
 
 1. Create a new *Service* of type *Function Module / BAPI*.
 2. Click **[Save and edit]**. The *Search Function Module* menu opens.
@@ -98,7 +98,7 @@ In the tab **Tables** you can define table parameters for importing and exportin
 
 **Tables as output parameters**<br>
 - To add an item to the output of the Function Module / BAPI, mark the checkbox on the right.<br>
-Optional: you can change the name of the output parameter. Tables must use the following format: `[Table name].[column name]`.
+Optional: change the name of the output parameter. Table parameters use the following format: `[Table name].[column name]`.
 
 ![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 

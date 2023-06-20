@@ -17,7 +17,7 @@ Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *Function M
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen** Um den Integrationstyp *Function Module / BAPI* zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
 
-### Einen Funktionsbaustein / BAPI finden
+## Einen Funktionsbaustein / BAPI finden
 
 1. Legen Sie einen neuen *Service* vom Typ *Function Module / BAPI* an. 
 2. Klicken Sie auf **[Save and edit]**. Das *Search Function Module* Menü öffnet sich.
@@ -100,12 +100,12 @@ Im Tab **Tables** können Sie Tabellen-Parameter für den Import und Export zu u
 **Tabellen als Eingabeparameter:**<br>
 - Tabellenfelder, die auf *Supplied by Caller* stehen, sind im Request Body des Services als Parameter verfügbar und können zur Laufzeit gesetzt werden.
 - Tabellenelder, die auf *Default (defined in SAP)* stehen, verwenden die Standardwerte aus SAP.
-- Felder, die auf *Constant* stehen, verwenden den Wert, der unter **Value** eingetragen wird.
+- Tabellenelder, die auf *Constant* stehen, verwenden den Wert, der unter **Value** eingetragen wird.
 
 
 **Tabellen als Ausgabeparameter**<br>
 - Um ein Tabellenfeld zu der Ausgabe des Funktionsbausteins / BAPIs hinzuzufügen, markieren Sie die entsprechende Checkbox.<br>
-Optional: Sie können den Namen des Ausgabe-Parameters ändern. Bei Tabellen muss folgendes Format beibehalten werden: `[Tabellenname].[Spaltenname]`.
+Optional: Ändern Sie den Namen des Ausgabe-Parameters. Tabellen-Parameter verwenden folgendes Format: `[Tabellenname].[Spaltenname]`.
 
 ![BAPI table](/img/content/yunio/BAPI-table.png){:class="img-responsive"}
 

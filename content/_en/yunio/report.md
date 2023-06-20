@@ -38,12 +38,13 @@ The following graphic shows the general workflow of setting up report services w
 
 ## Look Up a Report
 
-1. Create a new [*Service*](./getting-started#creating-a-service) of type *Report*. The menu "Search SAP Reports" opens.
-2. Enter the name of a report or the TCODE of a report in the field **Search by a report name or an exact TCODE** (1). The use of wildcards ( * ) is only supported for report names.
+1. Create a new [*Service*](./getting-started#creating-a-service) of type *Report*. 
+2. Click **[Save and edit]**. The *Search SAP Reports* menu opens.
+3. Enter the name of a report or the TCODE of a report in the field **Search by a report name or an exact TCODE** (1). The use of wildcards ( * ) is only supported for report names.
 ![SAP-Table-or-Views](/img/content/yunio/report-lookup.png){:class="img-responsive" width="750px"}
-3. To look up report names, click **[Search]** (2).
+4. To look up report names, click **[Search]** (2).
 To look up TCODES, click **[By TCODE]**.
-4. Select a source file from the list of available search results (3). 
+5. Select a source file from the list of available search results (3). 
 The extraction settings of *Report* open automatically.<br>
 
 ## Settings
