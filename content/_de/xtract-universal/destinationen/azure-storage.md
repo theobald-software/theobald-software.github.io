@@ -77,7 +77,7 @@ Allgemeine Informationen über diese Art der Authentifizierung finden Sie in der
 **Hinweis:** Die Authentifizierung über Azure AD erfordert einen Mandanten (tenant). Die Einrichtung eines Azure AD-Mandanten ist in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant) beschrieben. 
 
 Bevor Sie die Authentifizierung über Azure AD verwenden, führen Sie die folgenden Schritte auf dem Azure-Portal durch:
-1. Öffnen Sie auf dem Azure-Portal den Dienst *Azure Active Directory*.
+1. Öffnen Sie auf dem Azure-Portal den Service *Azure Active Directory*.
 2. Registrieren Sie eine Anwendung auf Ihrem Azure AD-Mandanten, wie beschrieben in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). Registrieren Sie die Anwendung als *Public client/native (mobile & desktop)*.
 3. Fügen Sie der registrierten Anwendung *API-Berechtigungen* hinzu, um den Zugriff auf die Azure Storage-Web-API zu gewähren.<br> 
 Die folgenden Berechtigungen sind erforderlich: <br> 

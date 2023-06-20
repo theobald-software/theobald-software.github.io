@@ -17,7 +17,7 @@ Wählen Sie den *Manage service applications* Verweis aus der *Application Manag
 
 ![ECS-SP-Manage-Service-Applications](/img/content/ECS-SP-Manage-Service-Applications.png){:class="img-responsive"}
 
-Scrollen Sie die Liste der Dienste herunter und wählen den Eintrag *Secure Store Service*. Stellen Sie sicher, dass der Dienst gestartet ist. Betätigen Sie die *Manage* Schaltfläche auf dem Ribbon.
+Scrollen Sie die Liste der Dienste herunter und wählen den Eintrag *Secure Store Service*. Stellen Sie sicher, dass der Service gestartet ist. Betätigen Sie die *Manage* Schaltfläche auf dem Ribbon.
 
 ![ECS-SP-Manage-Secure-Store-Service-Application](/img/content/ECS-SP-Manage-Secure-Store-Service-Application.png){:class="img-responsive"}
 

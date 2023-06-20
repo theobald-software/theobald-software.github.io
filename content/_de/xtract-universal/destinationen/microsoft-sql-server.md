@@ -49,7 +49,7 @@ siehe auch [Aktivieren von verschlüsselten Verbindungen zur Datenbank-Engine](h
 Verwendet den Service Account, unter dem der XU Service läuft, um sich am SQL Server zu authentisieren.
 
 {: .box-note }
-**Hinweis:** Für eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung, stellen Sie sicher, dass [der XU-Dienst unter einem Windows AD-Benutzer ausgeführt wird](../fortgeschrittene-techniken/service-account), mit Zugriff auf die Datenbank.
+**Hinweis:** Für eine erfolgreiche Verbindung zur Datenbank mit Windows-Authentifizierung, stellen Sie sicher, dass [der XU-Service unter einem Windows AD-Benutzer ausgeführt wird](../fortgeschrittene-techniken/service-account), mit Zugriff auf die Datenbank.
 
 **Impersonate authenticated caller**<br>
 Verwendet den Windows AD Benuzer, der die Extraktion ausführt, um sich am SQL Server zu authentisieren [Kerberos Authentisierung.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)

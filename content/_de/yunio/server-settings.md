@@ -17,7 +17,7 @@ Dieser Abschnitt enthält Informationen über die yunIO Server-Einstellungen.<br
 Speichern Sie Änderungen der Einstellungen mit **[Save]**.
 
 {: .box-note }
-**Hinweis:** Starten Sie den yunIO-Dienst neu, um die Änderungen zu übernehmen.
+**Hinweis:** Starten Sie den yunIO-Service neu, um die Änderungen zu übernehmen.
 
 ![Server-Settings](/img/content/yunio/Server-settings.png){:class="img-responsive" }
 
@@ -42,7 +42,7 @@ Wenn eine Azure Relay Hybrid Verbindung eingerichtet ist, verwenden die Services
 ### Transport Layer Security
 
 Das *Transport Layer Security (TLS)*-Protokoll ermöglicht eine verschlüsselte Datenübertragung.
-Wenn TLS aktiviert ist, wird auf den jeweiligen Dienst über eine HTTPS-Verbindung zugegriffen.
+Wenn TLS aktiviert ist, wird auf den jeweiligen Service über eine HTTPS-Verbindung zugegriffen.
 Dafür muss ein X.509 Zertifikat installiert sein, siehe [Knowledge Base: Installing an X.509 Certificate](https://kb.theobald-software.com/yunio/x509-certificate). <br>
 Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
 

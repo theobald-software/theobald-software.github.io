@@ -80,7 +80,7 @@ Die folgenden Optionen sind nur verfügbar, wenn **Service Account** als Authent
 Das Dienstkonto wird über ein RSA Schlüsselpaar identifiziert.
 Wenn Sie die Schlüssel erstellen, erhalten Sie eine Dienstkontodatei von Google, die Informationen über das Konto enthält.
 Geben Sie das Verzeichnis an, in dem die Dienstkontodatei abgelegt ist.
-Stellen Sie sicher, dass der Xtract Universal Dienst Zugriff auf die Datei hat.
+Stellen Sie sicher, dass der Xtract Universal Service Zugriff auf die Datei hat.
 
 #### Bucket
 Wenn Sie die OAuth 2.0 Authentifizierung verwenden, kann der Unterabschnitt "Bucket" erst nach einer erfolgreichen Verbindung zum Google-Cloud-Storage-Konto ausgefüllt werden.<br>

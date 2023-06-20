@@ -27,7 +27,7 @@ Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation.
 
 {: .box-warning }
 **Warnung! Änderung der Standardports**<br>
-Nach der manuellen Anpassung der Standardports, startet der Board Connector Dienst nicht.<br>
+Nach der manuellen Anpassung der Standardports, startet der Board Connector Service nicht.<br>
 Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden.<br>
 `C:\Program Files\BOARDConnector\config\server\config\general.json`<br>
 `C:\Program Files\BOARDConnector\config\server\web\general.json`

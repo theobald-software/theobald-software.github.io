@@ -119,7 +119,7 @@ Für mehr Informationen, siehe [SAP Dokumentation: AS Java für das Ausstellen v
 
 **Impersonate caller when running extractions**<br>
 Wenn diese Option aktiv ist, wird die Verbindung in einem Windows Active Directory Benutzerkontext des Aufrufer geöffnet.
-Wenn diese Option inaktiv ist, wird die Verbindung im Kontext des Dienstkontos geöffnet, unter dem der Windows Dienst läuft.
+Wenn diese Option inaktiv ist, wird die Verbindung im Kontext des Dienstkontos geöffnet, unter dem der Windows Service läuft.
 Für mehr Informationen, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
 
 {: .box-tip }

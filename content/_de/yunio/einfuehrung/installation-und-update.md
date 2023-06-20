@@ -11,12 +11,12 @@ lang: de_DE
 progressstate: 5
 ---
 
-yunIO stellt einen Windows-Dienst für die Kommunikation mit dem SAP-System zur Verfügung und verfügt über eine eingebettete Web UI, den yunIO Designer. 
+yunIO stellt einen Windows-Service für die Kommunikation mit dem SAP-System zur Verfügung und verfügt über eine eingebettete Web UI, den yunIO Designer. 
 
 ### Setup
 
 {: .box-note }																   
-**Hinweis:** Administratorrechte sind notwendig, um den yunIO-Dienst zu installieren.
+**Hinweis:** Administratorrechte sind notwendig, um den yunIO-Service zu installieren.
 
 Die `yunIOSetup.exe` ist ein branchenübliches Setup.  Führen Sie die Datei `yunIOSetup.exe` aus und folgen Sie den Anweisungen des Setups.
 

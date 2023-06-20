@@ -69,7 +69,7 @@ Passwort des Datenbankbenutzers.
 
 **Wallet location** <br> 
 Geben Sie den Pfad zu Ihrem Wallet ein, z.B. `C:\Oracle\Wallet`.<br>
-Der Benutzer, unter dem der Xtract Universal Dienst ausgeführt wird, muss Zugriff auf den Ordner haben, in dem das Wallet liegt.
+Der Benutzer, unter dem der Xtract Universal Service ausgeführt wird, muss Zugriff auf den Ordner haben, in dem das Wallet liegt.
 
 **Test Connection**<br>
 Klicken Sie auf die Schaltfläche, um die Verbindung zu testen. 

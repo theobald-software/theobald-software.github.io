@@ -40,11 +40,11 @@ Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Q
 | Spaltennamen von Key Figures          | EnterpriseID                                              | Technischer Name <br>Wenn der techn. Name nicht vorhanden ist: Name des Basis-Messwerts. <br>Wenn Name des Basis-Messwerts nicht vorhanden ist: EnterpriseID<br>**Tipp:** Wenn Namen doppelt vorkommen, ändern Sie den techn. Namen im BEx Query Designer.|   
 | Maximale Zeichenlänge für Dimensionselemente | max. 60 Zeichen      | -      |
 
-{: .box-note }
-**Hinweis:** Die BICS-Komponente befindet sich noch in der Beta-Phase. 
-Das heißt, dass Breaking Changes veröffentlich werden können, die nicht rückwärtskompatibel sind. 
+{: .box-warning }
+**Warnung:** **Beta-Version - Grundlegende Änderungen möglich** 
+Die Komponente befindet sich in der Beta-Phase. Grundlegende und nicht rückwärtskompatible Änderungen sind jederzeit möglich. 
 Extraktionen, die BICS verwenden, müssen nach einem Softwareupdate ggf. komplett neu erstellt werden.
-Wir empfehlen, BICS nicht in der Produktivumgebung zu verwenden. 
+Verwenden Sie BICS möglichst nicht in der Produktivumgebung. 
 
 ### Auswählen von Messwerten ( Key Figures), Abmessungen und Eigenschaften
 Wenn ein Objekt ausgewählt ist, wird im Hauptfenster der Komponente auf der linken Seite eine Baumstruktur angezeigt. Die Baumstruktur stellt die Metadaten der Query (oder des InfoProviders) dar. <br>

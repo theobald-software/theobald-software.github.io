@@ -27,7 +27,7 @@ Der Configuration-Server kommuniziert mit dem Xtract Universal Designer über ei
 
 {: .box-warning }
 **Warnung! Änderung der Standardports**<br>
-Nach der manuellen Anpassung der Standardports, startet der Xtract Universal Dienst nicht.<br>
+Nach der manuellen Anpassung der Standardports, startet der Xtract Universal Service nicht.<br>
 Die hinterlegten Ports sind bereits vergeben und müssen in den nachfolgenden Config-Dateien angepasst werden.<br>
 `C:\Program Files\XtractUniversal\config\server\config\general.json`<br>
 `C:\Program Files\XtractUniversal\config\server\web\general.json`

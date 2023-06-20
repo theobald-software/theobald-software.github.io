@@ -17,13 +17,13 @@ Die hier beschriebenen Informationen sind eine Voraussetzung für alle nachfolge
 
 Um auf den yunIO Designer zuzugreifen, öffnen Sie die Designer URL in einem [Webbrower](https://help.theobald-software.com/de/yunio/einfuehrung/systemvoraussetzungen#unterst%C3%BCtzte-webbrowser)<br>
 Das URL-Pattern zum Aufruf des yunIO Designers lautet: `http://[host]:[port]`. Beispiel: `http://localhost:8077`.<br>
-- Wenn der yunIO-Dienst auf einem lokalen Server läuft, geben Sie *localhost* als `[host]` an.
-- Wenn der yunIO-Dienst nicht auf demselben Rechner wie Ihr Browser läuft, geben Sie als `[host]` den Hostnamen ein, auf dem der yunIO-Dienst läuft. <br>
+- Wenn der yunIO-Service auf einem lokalen Server läuft, geben Sie *localhost* als `[host]` an.
+- Wenn der yunIO-Service nicht auf demselben Rechner wie Ihr Browser läuft, geben Sie als `[host]` den Hostnamen ein, auf dem der yunIO-Service läuft. <br>
 - Nach der Installation ist der yunIO Designer unter dem Standard-Port 8077 erreichbar.<br>
 Sie können den Port im yunIO Designer unter *Settings* konfigurieren. <br>
 
 {: .box-note}
-**Hinweis:** Achten Sie darauf, dass der yunIO-Dienst läuft und dass der Standard-Port 8077 nicht von Ihrer Firewall geblockt wird.
+**Hinweis:** Achten Sie darauf, dass der yunIO-Service läuft und dass der Standard-Port 8077 nicht von Ihrer Firewall geblockt wird.
 
 ### Eine SAP-Verbindung herstellen
 

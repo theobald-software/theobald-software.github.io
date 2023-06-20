@@ -28,10 +28,10 @@ Wenn der Zugang zum Webserver eingeschränkt ist, müssen zum Ausführen einer E
 **Hinweis**: Für Informationen zu Extraktionsaufrufen mit Basic Authentication über die *xu.exe*, siehe [Basic Authentication via Kommandozeile](../extraktionen-ausfuehren-und-einplanen/call-via-commandline#basic-authentication-via-kommandozeile).
 
 
-### Xtract Universal Dienst unter einem Windows Dienstkonto ausführen
+### Xtract Universal Service unter einem Windows Dienstkonto ausführen
 
-Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der Xtract Universal Dienst unter einem entsprechenden Dienstkonto ausgeführt werden.
-Folgen Sie dafür den Schritten in [Xtract Universal Dienst unter einem Windows Dienstkonto ausführen](../fortgeschrittene-techniken/service-account).
+Wenn eine Zugriffsbeschränkung mit Windows AD Benutzern erfolgt, muss der Xtract Universal Service unter einem entsprechenden Dienstkonto ausgeführt werden.
+Folgen Sie dafür den Schritten in [Xtract Universal Service unter einem Windows Dienstkonto ausführen](../fortgeschrittene-techniken/service-account).
 
 
 *********

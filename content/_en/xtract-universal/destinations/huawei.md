@@ -13,13 +13,13 @@ progressstate: 5
 The following section describes data extraction to a Huawei Cloud Object Storage Service (OBS).
 
 {: .box-warning }
-**Warning:** **Breaking changes possible** <br>
-The component is still in beta phase. Breaking changes can be released any time. 
+**Warning:** **Beta-Version - Breaking changes possible** <br>
+The component is in beta phase. Breaking changes can be released anytime. 
 Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
 
 
 {: .box-warning }
-**Warning! File fragments in the cloud storage**<br>
+**Warning! File Fragments in the Cloud Storage**<br>
 Huawei Cloud OBS destination uses multipart upload. That means that data is uploaded in fragments that are merged into a single file at the end of the extraction. 
 When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. 
 In that case the uploaded fragments must be deleted manually, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 

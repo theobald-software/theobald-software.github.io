@@ -71,7 +71,7 @@ Um die Version Ihres Produkts zu überprüfen, öffnen Sie den Designer und navi
 3. Entscheiden Sie, ob Sie eine teilweise oder eine vollständige Migration benötigen. <br> 
 Für eine vollständige Migration kopieren Sie den gesamten `config`-Ordner in das Installationsverzeichnis auf der neuen Maschine.<br>
 Für eine teilweise Migration kopieren Sie nur Unterordner des `config`-Ordners auf die neue Maschine, siehe [Konfigurationsdateien](#konfigurationsdateien).
-4. Neustarten Sie den yunIO Windows Dienst auf der neuen Maschine.
+4. Neustarten Sie den yunIO Windows Service auf der neuen Maschine.
 
 
 ****

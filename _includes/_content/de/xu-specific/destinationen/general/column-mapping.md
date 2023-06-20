@@ -9,7 +9,7 @@ Wenn doppelte Spaltennamen detektiert werden, öffnet sich eine entsprechende Fe
 Die Spaltennamen müssen korrigiert werden, bevor mit der Spaltenzuweisung begonnen werden kann.
 
 1. Wenn Sie Daten in flache Dateien schreiben, muss folgendes gewährleistet sein:<br>
-a) der Server, auf dem der Xract Universal Dienst läuft und der Designer müssen beide Zugriff auf die Zieldatei haben.<br>
+a) der Server, auf dem der Xract Universal Service läuft und der Designer müssen beide Zugriff auf die Zieldatei haben.<br>
 b) der angegebene [Pfad](#destination-details---destinationsdetails) und [Dateiname](#file-name) muss mit dem Pfad und dem Namen der Zieldatei überein stimmen.<br>
 c) der [Column Name Style](#column-name-style) der Extraktion muss mit der Zieldatei überein stimmen.
 2. Wählen Sie im Abschnitt [Existing Files](#existing-files) die Option **Append results** aus.<br>

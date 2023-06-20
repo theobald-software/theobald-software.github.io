@@ -44,13 +44,10 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 | Character limit for dimension members | max. 60 characters      | -      |
 
 {: .box-warning }
-**Warning:** **Breaking changes possible**
-The component is still in beta phase. Breaking changes can be released anytime. 
-Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
-
- 
+**Warning:** **Beta-Version - Breaking changes possible**
+The component is in beta phase. Breaking changes can be released anytime.  
 Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update.
-Therefore we recommend to not use BICS in the production environment.
+Avoid using BICS in the production environment.
 
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 
