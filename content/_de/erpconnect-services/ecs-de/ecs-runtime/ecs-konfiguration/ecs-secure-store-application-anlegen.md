@@ -37,7 +37,7 @@ Auf der *Target Application Settings* Seite geben Sie die folgenden Parameter an
 - **Target Application ID**	Eindeutige ID (Name) für die Secure Store Target Application, z.B. 'ERPConnectServices'.
 - **Display Name**	Anzeigename für die Secure Store Target Application, z.B. 'ERPConnect Services Secure Store'.
 - **Contact E-mail**	E-Mail Adresse für den primären Kontakt.
-- **Target Application Type**	Wählen Sie 'Individual', um die SharePoint Anwenderkonten individuell mit den SAP Benutzerkonten zu verknüpfen. Wählen Sie 'Group', um alle Mitglieder einer oder mehrerer Gruppen mit einem einzelnen SAP Benutzerkonto zu verknüpfen.
+- **Target Application Type**	Wählen Sie 'Individual', um die SharePoint Anwenderkonten individuell mit den SAP Benutzerkonten zu verknüpfen. Wählen Sie 'Group', um alle Mitglieder einer oder mehrerer Gruppen mit einem einzelnen SAP Service-Account zu verknüpfen.
 - **Target Application Page URL** 	URL einer Internetseite, die den Benutzer auffordert, die Berechtigungsinformationen einzugeben, wenn diese nicht in der Target Application gefunden wird.
 
 ![ECS-SP-Secure-Store-New-Target-Application-02](/img/content/ECS-SP-Secure-Store-New-Target-Application-02.png){:class="img-responsive"}

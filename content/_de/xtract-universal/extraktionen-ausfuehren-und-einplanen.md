@@ -28,7 +28,7 @@ Diese Konfiguration kann dynamische Elemente enthalten, wie [Laufzeitparameter](
 Abhängig von der Zielumgebung kann die Ausführung einer Extraktion entweder interaktiv oder unbeaufsichtigt ausgelöst werden.
 
 #### Interaktive Ausführung
-Extraktionen werden typischerweise interaktiv ausgelöst, wenn ein Benutzer neue oder aktualisierte Daten von SAP benötigt und kein zusätzliches Datenspeichersystem (wie ein Data Warehouse) vorhanden ist.
+Extraktionen werden typischerweise interaktiv ausgelöst, wenn ein Benutzer neue oder aktualisierte Daten von SAP benötigt und kein zusätzliches Data-Storage (wie ein Data Warehouse) vorhanden ist.
 
 In diesen Szenarien wird die Ausführung einer Extraktion typischerweise durch eines der Plugins von Xtract Universal ausgelöst:
 - [Alteryx](./destinationen/alteryx-de)
@@ -40,7 +40,7 @@ Oder direkt über die Zielumgebung:
 
 #### Unbeaufsichtigte Ausführung
 
-Wenn ein zusätzliches Datenspeichersystem (Datenbank, Cloud-Speicher, Flat-Files) vorhanden ist, werden Extraktionen typischerweise als Teil eines ELT-Prozesses (Extract, Load, Transform) ausgelöst.
+Wenn ein zusätzliches Data-Storage (Datenbank, Cloud-Speicher, Flat-Files) vorhanden ist, werden Extraktionen typischerweise als Teil eines ELT-Prozesses (Extract, Load, Transform) ausgelöst.
 Dieser Prozess wird wiederum in regelmäßigen Abständen unbeaufsichtigt von einem Scheduler oder einer anderen Orchestrierungssoftware ausgeführt, die Extraktionen i.d.R. über das [XU-Kommandozeilen-Tool](./extraktionen-ausfuehren-und-einplanen/call-via-commandline) auslösen.
 
 Für fortgeschrittene Szenarien oder Umgebungen, die keine Kommandozeilen-Tools unterstützen, können die [HTTP-Webservices](./extraktionen-ausfuehren-und-einplanen/call-via-webservice) zum Auslösen und Überwachen einer Extraktion genutzt werden.

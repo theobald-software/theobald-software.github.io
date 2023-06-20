@@ -39,6 +39,6 @@ rfcServer.IsUnicode = true;
 ![RFCServer-Destination](/img/content/RFCServer-Destination.png){:class="img-responsive"}
 
 {: .box-note }
-**Hinweis**: Wenn SNC mit Kerberos und Active Directory verwendet wird, muss das für den RFC-Server verwendete Active Directory Konto den korrekten Service Principal Name haben.
+**Hinweis**: Wenn SNC mit Kerberos und Active Directory verwendet wird, muss das für den RFC-Server verwendete Active Directory Account den korrekten Service Principal Name haben.
 
 ![RFCServer-AD](/img/content/RFCServer-AD.png){:class="img-responsive"}

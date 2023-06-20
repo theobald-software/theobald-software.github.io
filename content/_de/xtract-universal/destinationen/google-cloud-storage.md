@@ -47,7 +47,7 @@ Um auf alle Einstellungen und Dienste zuzugreifen, verwenden Sie das Navigations
 
 Es werden zwei Authentisierungsverfahren unterstützt:
 - Wählen Sie **User Login**, um sich mit Ihrer OAuth Client ID einzuloggen, siehe [Connection Parameters](#connection-parameters).<br>
-- Wählen Sie **Service Account** um sich mit einem Dienstkonto einzuloggen, siehe [Service Acccount File Location](#service-acccount-file-location).
+- Wählen Sie **Service Account** um sich mit einem Service-Account einzuloggen, siehe [Service Acccount File Location](#service-acccount-file-location).
 
 #### Connection Parameters
 
@@ -77,9 +77,9 @@ Die folgenden Optionen sind nur verfügbar, wenn **Service Account** als Authent
 ![xu-google-cloud-req](/img/content/xu/googlecloudstorage/xu-google-cloud-con.png){:class="img-responsive"}
 
 **Key File**<br>
-Das Dienstkonto wird über ein RSA Schlüsselpaar identifiziert.
-Wenn Sie die Schlüssel erstellen, erhalten Sie eine Dienstkontodatei von Google, die Informationen über das Konto enthält.
-Geben Sie das Verzeichnis an, in dem die Dienstkontodatei abgelegt ist.
+Das Service-Account wird über ein RSA Schlüsselpaar identifiziert.
+Wenn Sie die Schlüssel erstellen, erhalten Sie eine Service-Accountdatei von Google, die Informationen über das Account enthält.
+Geben Sie das Verzeichnis an, in dem die Service-Accountdatei abgelegt ist.
 Stellen Sie sicher, dass der Xtract Universal Service Zugriff auf die Datei hat.
 
 #### Bucket

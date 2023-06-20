@@ -43,7 +43,7 @@ Geben Sie den Zugangsschlüssel für das Huawei Cloud OBS-Konto ein.  Weitere In
 Geben Sie den geheimen Zugangsschlüssel für das Huawei Cloud OBS-Konto ein. Weitere Informationen zum Erstellen von Zugangsschlüsseln finden Sie unter [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
 
 **Region**<br>
-Wählen Sie die Region des Datenspeichersystems.
+Wählen Sie die Region in der sich das Data-Storage befindet.
 
 **Connect** <br>
 Klicken Sie auf **[Connect]**, um eine Verbindung zum Storage-Account herzustellen. 

@@ -88,7 +88,7 @@ Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierun
 
 **SSO - Log in as caller via External ID** <br>
 Diese Einstellung aktiviert SSO via External ID.
-SSO via External ID verwendet Personal Security Environment (PSE), um ein Vertrauensverhältnis zwischen dem SAP Server und dem Dienstkonto herzustellen, unter dem {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector {% endif %} ausgeführt wird.
+SSO via External ID verwendet Personal Security Environment (PSE), um ein Vertrauensverhältnis zwischen dem SAP Server und dem Service-Account herzustellen, unter dem {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector {% endif %} ausgeführt wird.
 Das erlaubt {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector{% endif %} jeden SAP Benutzer zu imitieren.<br>
 Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id).
 
