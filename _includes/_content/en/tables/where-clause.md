@@ -1,25 +1,38 @@
 
-### Using WHERE Clause 
+A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
 
-The WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
+### Using a WHERE Clause 
 
-
-1. Select and double-click an extraction of type "Table" in the main window of the Designer.
-The window "Table" opens.
-2. Navigate to tab *WHERE Clause*.
-3. Enter a WHERE clause manually or use the editor.
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}1. Open a table extraktion. {% else %}1. Open an Xtract Table component.{% endif %}
+2. Navigate to the tab *WHERE Clause*.
+3. Enter a WHERE clause [manually](#where-clause-syntax) or use the [WHERE Clause Editor](#where-clause-editor).
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {: .box-note }
 **Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MARC~MATNR. This can be the case when extracting multiple tables.
 
-![Extraction Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}
+![Extraction-Settings-01](/img/content/xfa/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% elsif page.product == "xtract-is" %}
+![Extraction-Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% else %}
+![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% endif %}
+
 
 **[Text mode]** <br>
 Allows entering a WHERE clause directly into the text field. *Text mode* is the default method for defining a WHERE clause.
 
 **[Editor mode]** <br>
 Opens the WHERE clause editor. The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause, see [WHERE Clause Editor](#where-clause-editor).
+
+{% if page.product == "xtract-for-alteryx" %}
+**[Extraction Settings]** <br>
+Opens the extraction settings menu, see [Extraction Settings](./extraction-settings).
+
+**[Edit Parameters]** <br>
+Opens the runtime parameter menu, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).
+{% endif %}
 
 **[Load live preview]** <br>
 Allows a real-time preview of the extraction data without executing the extraction. <br>
@@ -171,39 +184,3 @@ The following components are available in the editor:
 #### Editing and Deleting Components
 - Click on a component to edit it. All areas that are marked green can be edited.<br>
 - To delete a component, click the (x) icon above the component.<br>
-
-### Using Runtime Parameters in the WHERE Clause Editor
-
-1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters.
-The window “Edit Runtime Parameters” opens.<br>
-![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for actual values.<br>
-{% if page.product == "xtract-for-alteryx" %}Click **[Add List]** to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”. <br>{% endif %} The placeholders need to be populated with actual values at extraction runtime.<br>
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.
-3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. <br>
-The data types can, but don’t need to correlate to SAP data types.
-- String: This data type can be used for any type of SAP selection field.
-- Number: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
-Click **[OK]** (3) to confirm.
-4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
-5. Add a new criteria and use **[Default with Parameter]** to add a parameter component.
-6. Click on the *Parameter* component. A drop-down-list that displays all available parameters opens. 
-Select a parameter from the list.<br>
-![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
-
-{% if page.product == "xtract-for-alteryx" %}
-For more information on how to use runtime parameters in Alteryx, see [Parameterizing](../parameterizing).
-{% else %}
-
-{: .box-note }
-**Note:** List parameters are not yet available. This feature will be available soon.
-
-{% endif %}
-
-
-**** 
-#### Related Links
-- [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
-- [Knowledge Base Article: Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
