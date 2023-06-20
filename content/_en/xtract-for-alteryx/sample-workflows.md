@@ -18,9 +18,7 @@ The following section offers Alteryx sample workflows and templates for download
 
 | Workflow | Source System | Description Source System |
 | :------ |:--- | :--- | :--- |
-| [BAPI-ERP-Dynamic-Read-With-Macro](/docs/alteryx-workflows/BAPI-ERP-DynamicReadWithMacro.yxzp){:download="BAPI-ERP-DynamicReadWithMacro.yxzp"}  |  SAP ERP  | This workflow demonstrates using [Xtract BAPI](./bapi) with dynamic import parameters to load multiple rows of data from SAP. This workflow includes an Alteryx batch macro for parameterization. |
-| [BAPI-ERP-Dynamic-Write](/docs/alteryx-workflows/BAPI-ERP-DynamicWrite.yxmd){:download="BAPI-ERP-DynamicWrite.yxmd"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) with dynamic table parameters to write data to SAP. |
-| [BAPI-ERP-Read-Write-With-Macro](/docs/alteryx-workflows/BAPI-ERP-ReadAndWriteWithMacro.yxzp){:download="BAPI-ERP-ReadAndWriteWithMacro.yxzp"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.|
+| [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxzp){:download="BAPI-ERP-ReadandWrite.yxzp"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.|
 
 ### Xtract Cube
 
