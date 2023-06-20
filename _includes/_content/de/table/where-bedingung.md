@@ -94,10 +94,11 @@ Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE]
 ### Skript-Ausdrücke
 
 Der **[Text-Modus]** der WHERE-Bedingung unterstützt die Verwendung von Skript-Ausdrücken.
-Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. 
-
+Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. <br>
 Um Skript-Ausdrücke in der WHERE-Bedingung zu verwenden, müssen sie in einfache Anführungszeichen gesetzt werden.<br>
+{% if page.product == "xtract-universal" %}
 Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
+{% endif %}
 
 **Syntax:**<br>
 ```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
@@ -167,7 +168,8 @@ Folgende Komponenten stehen im Editor zur Verfügung:
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
 
-Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.<br>
+{: .box-note }
+**Hinweis**: Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
 Beispiel: **Operator** ist nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
 
 #### Komponenten Bearbeiten und Löschen
@@ -183,7 +185,7 @@ Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
 2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für echte Werte verwendet werden können.<br>
 Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
-**Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
+**Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben.
 3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. <br>
 Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
 - String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
@@ -198,9 +200,14 @@ Wählen Sie einen der Laufzeitparameter aus.<br>
 7. Klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
 Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
 
+{% if page.product == "xtract-for-alteryx" %}
+Für mehr Informationen zur Parametrisierung in Alteryx, siehe [Parametrisierung](../parametrisierung).
+{% else %}
 
 {: .box-note }
 **Hinweis:** Listenparameter sind noch nicht verfügbar.
+
+{% endif %}
 
 **** 
 #### Weiterführende Links

@@ -91,10 +91,12 @@ Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](htt
 ### Script Expressions
 
 The **[Text Mode]** of the WHERE clause supports script expressions.
-They are usually used to determine a dynamic date based on the current date. 
-
-When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.<br>
+They are usually used to determine a dynamic date based on the current date. <br>
+When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.
+{% if page.product == "xtract-universal" %}
 For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
+{% endif %}
+
 
 **Syntax:**<br>
 ```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
@@ -163,7 +165,8 @@ The following components are available in the editor:
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
 
-When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
+{: .box-note }
+**Note**: When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
 
 #### Editing and Deleting Components
 - Click on a component to edit it. All areas that are marked green can be edited.<br>
@@ -175,8 +178,8 @@ When adding or editing a criteria only the relevant components are displayed e.g
 The window “Edit Runtime Parameters” opens.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
 2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for actual values.<br>
-The placeholders need to be populated with actual values at extraction runtime.<br>
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: “p_MATNR”).
+{% if page.product == "xtract-for-alteryx" %}Click **[Add List]** to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”. <br>{% endif %} The placeholders need to be populated with actual values at extraction runtime.<br>
+**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.
 3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. <br>
 The data types can, but don’t need to correlate to SAP data types.
 - String: This data type can be used for any type of SAP selection field.
@@ -190,8 +193,15 @@ Select a parameter from the list.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 7. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
 
+{% if page.product == "xtract-for-alteryx" %}
+For more information on how to use runtime parameters in Alteryx, see [Parameterizing](../parameterizing).
+{% else %}
+
 {: .box-note }
 **Note:** List parameters are not yet available. This feature will be available soon.
+
+{% endif %}
+
 
 **** 
 #### Related Links
