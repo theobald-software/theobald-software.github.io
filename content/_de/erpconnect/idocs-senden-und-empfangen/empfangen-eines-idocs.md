@@ -24,20 +24,20 @@ Nutzen Sie das Ereignis *IncomingIdoc*, um das eingehende IDoc zu verarbeiten.
 ```csharp
 static void Main(string[] args) 
 { 
-   // define server object and start 
-   RFCServer s = new RFCServer(); 
-   s.Logging = true; 
-   s.GatewayHost = "sap-erp-as05.example.com"; 
-   s.GatewayService = "sapgw11"; 
-   s.ProgramID = "ERPTEST"; 
-   s.CanReceiveIdocs = true; 
-   s.IncomingIdoc+= new ERPConnect.RFCServer.OnIncomingIdoc(s_IncomingIdoc); 
-   s.InternalException+= new ERPConnect.RFCServer.OnInternalException (s_InternalException); 
-   s.Start(); 
+	 // define server object and start 
+	 RFCServer s = new RFCServer(); 
+	 s.Logging = true; 
+	 s.GatewayHost = "sap-erp-as05.example.com"; 
+	 s.GatewayService = "sapgw11"; 
+	 s.ProgramID = "ERPTEST"; 
+	 s.CanReceiveIdocs = true; 
+	 s.IncomingIdoc+= new ERPConnect.RFCServer.OnIncomingIdoc(s_IncomingIdoc); 
+	 s.InternalException+= new ERPConnect.RFCServer.OnInternalException (s_InternalException); 
+	 s.Start(); 
   
-   Console.WriteLine("Server is running. Press any key to exit."); 
-   Console.ReadLine(); 
-   s.Stop(); 
+	 Console.WriteLine("Server is running. Press any key to exit."); 
+	 Console.ReadLine(); 
+	 s.Stop(); 
 }
 ```
 
@@ -55,16 +55,15 @@ Der Text befindet sich an der Stelle 4 und ist 40 Zeichen lang.<br>
 ```csharp
 private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
 { 
-   Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
-   IdocSegment e2maram = idoc.Segments["E2MARAM005",0]; 
-   for (int i=0; i < e2maram.ChildSegments.Count;i++) 
-   { 
-      if (e2maram.ChildSegments[i].SegmentName == "E2MAKTM001") 
-      { 
-         Console.WriteLine("Materialtext found: " + 
-            e1maram.ChildSegments[i].ReadDataBuffer(4,40)); 
-      } 
-   } 
+	 Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
+	 IdocSegment e2maram = idoc.Segments["E2MARAM005",0]; 
+	 for (int i=0; i < e2maram.ChildSegments.Count;i++) 
+	 { 
+		 if (e2maram.ChildSegments[i].SegmentName == "E2MAKTM001") 
+		 { 
+			 Console.WriteLine("Materialtext found: " + e1maram.ChildSegments[i].ReadDataBuffer(4,40)); 
+		 } 
+	 } 
 }
 ```
 2. Geben Sie alle Texte in der Konsole aus.

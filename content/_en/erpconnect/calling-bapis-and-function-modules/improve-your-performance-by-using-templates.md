@@ -31,17 +31,18 @@ The ERPConnect installation package includes the tool *Function-Template-Generat
 Now you can use the FRFCFunction-object instead of using the *CreateFunction/CreateBAPI* methods.
 
 ```csharp
-using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-    {
-        RFCFunction f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL");
-        f.Connection = con;
- 
-        StreamReader reader = new StreamReader(
-             System.Reflection.Assembly.GetExecutingAssembly().
-        GetManifestResourceStream
-             ("PocketGetCustomer.BAPI_CUSTOMER_GETDETAIL.xml"));
-        f.LoadFromXML(reader);
-    }
+using var con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800");
+var f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL")
+{
+    Connection = con
+};
+​
+var reader = new StreamReader(
+    System.Reflection.Assembly.GetExecutingAssembly().
+        GetManifestResourceStream(
+            "PocketGetCustomer.BAPI_CUSTOMER_GETDETAIL.xml"));
+​
+f.LoadFromXML(reader);
 ```
 
 <!---

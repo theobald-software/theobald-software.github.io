@@ -23,30 +23,32 @@ To create an SSO ticket the ParseConnectionString class provides the method *Get
 All logon data must be provided once to create the ticket as shown in the code below.
 
 ```csharp
-using(ERPConnect.ParseConnectionString cont = new ERPConnect.ParseConnectionString())
+using var conn = new R3Connection
 {
-    cont.Host = "sap-erp-as05.example.com";  
-    cont.SystemNumber = 7;  
-    cont.Client = "800";  
-    cont.Language = "DE";  
-    cont.UserName = "alice";  
-    cont.Password = "pw";  
-  
-    string ssoticket = cont.GetSSOTicket();
-}
+    Host = "sap-erp-as05.example.com",
+    SystemNumber = 7,
+    Client = "800",
+    Language = "DE",
+    UserName = "alice",
+    Password = "pw",
+};
+​
+string ticket = conn.GetSSOTicket();
 ```
+
 #### Logon
 If there is a ticket available, you can use *OpenSSO* to establish the connection without user credentials:
 
 ```csharp
-using(ERPConnect.ParseConnectionString conts = new ERPConnect.ParseConnectionString())
+using var conn = new R3Connection
 {
-    conts.Host = "sap-erp-as05.example.com"; 
-    conts.SystemNumber = 7; 
-    conts.Client = "800"; 
-	conts.Language = "EN"; 
-       
-    conts.OpenSSO(ssoticket);
-}
+    Host = "sap-erp-as05.example.com",
+    SystemNumber = 7,
+    Client = "800",
+    Language = "EN",
+    LogonTicket = ticket,
+};
+​
+conn.Open();
 ```
 

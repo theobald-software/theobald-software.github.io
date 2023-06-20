@@ -54,76 +54,50 @@ The following example codes show how to pass the necessary parameters for an SNC
 
 ****
 
-**Using the SNC Mechanism (ERP Connect version 4.1.1.0):**
+**Using the SNC Mechanism:**
 
 ```csharp
-using (ParseConnectionString con = new ParseConnectionString()) 
+using var conn = new R3Connection
 {
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCPartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCMechanism = SNCMechanism.NTLM;
-con.SNCEnabled = true;
-con.Open();
-// define your application
-}
+    Host = "sap-erp-as05.example.com",
+    SystemNumber = 7,
+    Client = "800",
+    Language = "DE",
+    SNCSettings = new SNCSettings
+    {
+        Enabled = true,
+        PartnerName = "p:SAPServiceNSP@THEOBALD",
+        Mechanism = SNCMechanism.NTLM,
+        QualityOfProtection = SNCQualityOfProtection.Maximum,
+    }
+};
+​
+conn.Open();
 ```
 
-**Using individual SNC DLL path (ERP Connect version 4.1.1.0):**
+**Using individual SNC DLL path:**
 ```csharp
-using (ParseConnectionString con = new ParseConnectionString())
+using var conn = new R3Connection
 {
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCPartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCLibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
-con.SNCEnabled = true;
-con.Open();
-// define your application
-}
-```
-
-**Using the SNC Mechanism (ERP Connect version 4.2.3):**
-```csharp
-using (ParseConnectionString con = new ParseConnectionString())
-{
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCSettings.Enabled = true;
-con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCSettings.Mechanism = SNCMechanism.NTLM;
-con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
-con.Open();
-// define your application
-}
-```
-
-
-**Using individual SNC DLL path(ERPConnect Version 4.2.3):**
-```csharp
-using (ParseConnectionString con = new ParseConnectionString())
-{
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCSettings.Enabled = true;
-con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
-con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
-con.Open();
-// define your application
+    Host = "sap-erp-as05.example.com",
+    SystemNumber = 7,
+    Client = "800",
+    Language = "DE",
+    SNCSettings = new SNCSettings
+    {
+        Enabled = true,
+        PartnerName = "p:SAPServiceNSP@THEOBALD",
+        LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll",
+        QualityOfProtection = SNCQualityOfProtection.Maximum,
+    },
+};
+​
+conn.Open();
 }
 ```
 
 {: .box-note }
-**Note**: You can set a security level with the new property *QualityOfProtection*. 
+**Note**: As of ERP Connect version 4.2.3 you can set a security level with the property *QualityOfProtection*. 
 
 ### NTLM 
 

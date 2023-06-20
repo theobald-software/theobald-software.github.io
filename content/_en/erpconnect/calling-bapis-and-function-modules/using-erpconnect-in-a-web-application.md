@@ -49,41 +49,39 @@ To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps bel
 ```csharp
 private void Button1_Click(object sender, System.EventArgs e) 
 { 
-    ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License. 
-    using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-	    {
-	        con.Open(false); 
-          
-	        // Create a RFC-Function object 
-	        RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
+	ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License.
+	using var con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800");
+	con.Open(false);
 
-	        // Fill header structure
-	        RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
-	        Header["DOC_TYPE"]= "NB";
-	        Header["PURCH_ORG"] = "1000";
-	        Header["PUR_GROUP"] = "010";
-	        Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
-	        Header["VENDOR"]= this.txtVendor.Text
+	// Create an RFC-Function object 
+	RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
+
+	// Fill header structure
+	RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
+	Header["DOC_TYPE"]= "NB";
+	Header["PURCH_ORG"] = "1000";
+	Header["PUR_GROUP"] = "010";
+	Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
+	Header["VENDOR"]= this.txtVendor.Text
 	
-	        // Create an Item
-	        RFCTable items = func.Tables["PO_ITEMS"];
-	        RFCStructure item = items.AddRow();
-	        item["PO_ITEM"] = "1";
-	        item["PUR_MAT"] = this.txtMaterial.Text;
-	        item["PLANT"] = this.txtPlant.Text;
+	// Create an Item
+	RFCTable items = func.Tables["PO_ITEMS"];
+	RFCStructure item = items.AddRow();
+	item["PO_ITEM"] = "1";
+	item["PUR_MAT"] = this.txtMaterial.Text;
+	item["PLANT"] = this.txtPlant.Text;
   
-	        // Create and fill shedules
-	        RFCTable shedules = func.Tables["PO_ITEM_SCHEDULES"];
-	        RFCStructure shedule = shedules.AddRow();
-	        shedule["PO_ITEM"] = "1";
-	        shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
-	        shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
+	// Create and fill shedules
+	RFCTable shedules = func.Tables["PO_ITEM_SCHEDULES"];
+	RFCStructure shedule = shedules.AddRow();
+	shedule["PO_ITEM"] = "1";
+	shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
+	shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
 
-	        // Exceute Bapi and process return messages
-	        func.Execut e();
-	        this.txtReturn.Text = "";
-	        this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
-	    }
+	// Exceute BAPI and process return messages
+	func.Execute();
+	this.txtReturn.Text = "";
+	this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
 }
 ```
 

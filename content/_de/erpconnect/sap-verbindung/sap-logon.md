@@ -40,44 +40,45 @@ Um sich über Load Balancing zu verbinden, verwenden Sie *Open(true)*. Um sich �
 Beispiel für einen Login mit einem SAP Application Server:
 
 ```csharp
-using(ParseConnectionString con = new ParseConnectionString())
+using var conn = new R3Connection
 {
-    con.UserName = "SAPUser";  
-    con.Password = "SAPPassword";  
-    con.Language = "EN";  
-    con.Client = "800";  
-    con.Host = "sap-erp-as05.example.com";  
-    con.SystemNumber = 00;  
-    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
-    
-    con.Open(false);
-}
+    UserName = "SAPUser",
+    Password = "SAPPassword",
+    Language = "EN",
+    Client = "800",
+    Host = "sap-erp-as05.example.com",
+    SystemNumber = 00,
+    Protocol = ClientProtocol.NWRFC,
+};
+​
+conn.Open();
 ```
 
 Beispiel für einen Login via Load Balancing:
 
 ```csharp
-using(ParseConnectionString con = new ParseConnectionString())
+using var conn = new R3Connection
 {
-    con.UserName = "SAPUser";  
-    con.Password = "SAPPassword"; 
-	con.Language = "DE";  
-    con.Client = "800"; 
-    con.MessageServer = "sap-erp-as05.example.com";  
-    con.LogonGroup = "PUBLIC";    
-    con.SID = "ECC";
-	con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.  	
-  
-    con.Open(true);
-}
+    UserName = "SAPUser",
+    Password = "SAPPassword",
+    Language = "DE",
+    Client = "800",
+    UsesLoadBalancing = true,
+    MessageServer = "sap-erp-as05.example.com",
+    LogonGroup = "PUBLIC",
+    SID = "ECC",
+    Protocol = ClientProtocol.NWRFC,
+};
+​
+conn.Open();
 ```
 
 Das Standard-Encoding für den Verbindungsaufbau zu SAP-Systemen ist SAP-Codepage 1100 (iso-8859-1).
 Wenn Sie das NW RFC Protokoll verwenden, können Sie explizit ein Encoding angeben. Das ist dann notwendig, wenn SAP Benutzerdaten Zeichen enthalten, die nicht Teil der SAP-Codepage 1100 sind. Beispiel:<br>
 
 ```csharp
-con.Protocol = ClientProtocol.NWRFC; 
-con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
+conn.Protocol = ClientProtocol.NWRFC; 
+conn.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 ```
 
 {: .box-note }
@@ -88,18 +89,18 @@ Wenn Sie auf das SAP-System über einen SAP-Router zugreifen, muss der Routerstr
 Für mehr Informationen zu *Route Strings*, siehe [SAP-Dokumentation - Eingabe von Route Strings für SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/de/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
 ```csharp
-using(ParseConnectionString con = new ParseConnectionString())
+using var conn = new R3Connection
 {
-    con.UserName = "SAPUser";  
-    con.Password = "SAPPassword"; 
-    con.Language = "EN"; 
-    con.Client = "400"; 
-    con.Host = "/H/SAPRouter/H/SAPServer"; 
-    con.SystemNumber = 00;  
-    con.Protocol = ClientProtocol.NWRFC;   // Optional: If the NW RFC libraries are used.
-
-    con.Open(false);
-}
+    UserName = "SAPUser",
+    Password = "SAPPassword",
+    Language = "EN",
+    Client = "800",
+    Host = "/H/SAPRouter/H/SAPServer",
+    SystemNumber = 00,
+    Protocol = ClientProtocol.NWRFC,
+};
+​
+conn.Open();
 ```
 
 ### Connection String
@@ -107,18 +108,20 @@ using(ParseConnectionString con = new ParseConnectionString())
 Sie können einen Connection String verwenden, um die Methode *ParseConnectionString.Open(string connectionString)* aufzurufen. Beispiel:
 
 ```csharp
-string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
-ParseConnectionString con = new ParseConnectionString(ConnectionString);
+const string connectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+using var conn = new R3Connection();
+​
+conn.ParseConnectionString(connectionString);
+conn.Open();
 ```
 
-Das Standard Client-Protokoll is das RFC-Protokoll.
-Um das neue NW RFC Protokoll zu verwenden, geben Sie folgende Codezeile ein: <br>
-`con.Protocol = ClientProtocol.NWRFC;`
-
+Das Standard Client-Protokoll is das NWRFC-Protokoll.
+Um das alte RFC-Protokoll zu verwenden, geben Sie folgende Codezeile ein: <br>
+`conn.Protocol = ClientProtocol.RFC;`
 
 {: .box-tip }
-**Tipp:** Wenn Sie den Konstruktor der *ParseConnectionString*-Klasse verwenden, um die Eigenschaften für die Anmeldung zu übergeben, spraren Sie Codezeilen. Beispiel: `ParseConnectionString con = new ParseConnectionString("SAPServer",00,"SAPUser","Password","EN","800");`. 
-
+**Tipp**: Wenn Sie den Konstruktor der R3Connection-Klasse verwenden, um die Eigenschaften für die Anmeldung zu übergeben, sparen Sie Codezeilen. <br>
+Beispiel: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`.
 
 ****
 #### Weiterführende Links
