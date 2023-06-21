@@ -14,13 +14,13 @@ The data types can, but don’t need to correlate to SAP data types.
 - String: This data type can be used for any type of SAP selection field.
 - Number: This data type can be used for numeric SAP selection fields.
 - Flag: This data type can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
-Click **[OK]** (3) to confirm.
-4. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
-5. Add a new criteria and use **[Default with Parameter]** to add a parameter component.
-6. Click on the *Parameter* component. A drop-down-list that displays all available parameters opens. 
+4. Click **[OK]** (3) to confirm.
+5. Click **[Editor mode]** in the WHERE clause tab of the main window to open the WHERE clause editor.
+6. Add a new criteria and use **[Default with Parameter]** to add a parameter component.
+7. Click on the *Parameter* component. A drop-down list that displays all available parameters opens. 
 Select a parameter from the list.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
+8. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
 
 {% if page.product == "xtract-for-alteryx" %}
 For more information on how to use runtime parameters in Alteryx, see [Parameterizing](../parameterizing).
