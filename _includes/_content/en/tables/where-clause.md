@@ -41,11 +41,12 @@ You can also preview the data with aggregation functions.
 **[Count rows]** <br>
 Returns the number of rows/data records of an extraction, considering the WHERE and HAVING clauses stored. 
 
+{% if page.product != "xtract-for-alteryx" %}
 **[Refresh metadata]** <br>
 A new lookup is performed on the selected table(s). Existing mappings and field selections are retained, which is not the case when the table is added again. <br>
 It may be necessary to renew the metadata, for example, if a table has been adjusted on the SAP side, another source system has been connected, or the source system has been updated. 
 In such cases, data inconsistencies can occur that are resolved by this function.   
-
+{% endif %}
 
 ### WHERE Clause Restrictions
 
@@ -101,15 +102,16 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 
 Get more details on the OpenSQL syntax on the [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}
+<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
+
 ### Script Expressions
 
 The **[Text Mode]** of the WHERE clause supports script expressions.
 They are usually used to determine a dynamic date based on the current date. <br>
 When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.
-{% if page.product == "xtract-universal" %}
-For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
-{% endif %}
 
+For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
 
 **Syntax:**<br>
 ```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
@@ -124,6 +126,8 @@ For more information on script expression, see [Script Expressions](../advanced-
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
 
+<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
+{% endif %}
 
 ### Using Subqueries
 

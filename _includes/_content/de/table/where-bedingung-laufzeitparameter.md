@@ -1,7 +1,9 @@
 
 ### Laufzeitparameter im WHERE Clause Editor
 
-1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameters**, um Laufzeitparameter anzulegen und zu bearbeiten. 
+Um Laufzeitparameter anzulegen und zuzuweisen, führen Sie die folgenden Schritte aus: 
+
+1. Klicken Sie im Hauptfenster der Komponente auf {% if page.product == "xtract-for-alteryx" %}**[Edit Parameters]**{% else %}**Edit Runtime Parameters**{% endif %}.
 Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
 2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für echte Werte verwendet werden können.<br>

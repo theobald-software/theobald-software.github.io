@@ -1,7 +1,9 @@
 
 ### Using Runtime Parameters in the WHERE Clause Editor
 
-1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters.
+To create and assign runtime parameters, follow the steps below:
+
+1. In the main window of the component click {% if page.product == "xtract-for-alteryx" %}**[Edit Parameters]**{% else %}**Edit Runtime Parameters**{% endif %}.
 The window “Edit Runtime Parameters” opens.<br>
 ![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
 2. Click **[Add Scalar]** to define scalar parameters that can be used as placeholders for actual values.<br>

@@ -39,10 +39,12 @@ Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen.
 **[Count rows]** <br>
 Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE- und HAVING-Bedingungen. 
 
+{% if page.product != "xtract-for-alteryx" %}
 **[Refresh Metadata]** <br>
 Durchführung eines erneuten Lookups auf die selektierte(n) Tabelle(n). Bestehende Mappings und Feldselektionen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.<br>
 Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
- 
+{% endif %}
+
 ### Einschränkungen bei WHERE-Bedingungen
 
 {: .box-note }
@@ -103,6 +105,8 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}
+<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
 
 ### Skript-Ausdrücke
 
@@ -126,6 +130,8 @@ Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fort
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Aktuelles Datum verkettet mit "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Aktuelles Datum verkettet mit "0101""           |
 
+<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
+{% endif %}
 
 ### Verwendung von Subqueries
 
