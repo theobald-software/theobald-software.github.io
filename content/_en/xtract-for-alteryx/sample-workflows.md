@@ -18,7 +18,7 @@ The following section offers Alteryx sample workflows and templates for download
 
 | Workflow | Source System | Description Source System |
 | :------ |:--- | :--- | :--- |
-| [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxzp){:download="BAPI-ERP-ReadandWrite.yxzp"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.|
+| [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxmd){:download="BAPI-ERP-ReadandWrite.yxmd"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.|
 
 ### Xtract Cube
 

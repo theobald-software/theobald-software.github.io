@@ -18,7 +18,7 @@ Der folgende Abschnitt bietet Beispiel-Workflows und Vorlagen zum Download an.
 
 | Workflow | Quellsystem| Beschreibung Quellsystem|
 | :------ |:--- | :--- | :--- |
-| [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxzp){:download="BAPI-ERP-ReadandWrite.yxzp"}  | SAP ERP | Dieser Workflow zeigt die Verwendung von [Xtract BAPI](./bapis-und-funktionsbausteine), um eine Bestellanforderung (purchase requisition) in SAP zu erstellen und die Daten der Bestellanforderung in Alteryx zu laden. |
+| [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxmd){:download="BAPI-ERP-ReadandWrite.yxmd"}  | SAP ERP | Dieser Workflow zeigt die Verwendung von [Xtract BAPI](./bapis-und-funktionsbausteine), um eine Bestellanforderung (purchase requisition) in SAP zu erstellen und die Daten der Bestellanforderung in Alteryx zu laden. |
 
 ### Xtract Cube
 
