@@ -41,17 +41,18 @@ Benutzer können Services ausführen.
 - **No access**: Benutzer haben keinen Zugriff auf den Designer. Services können nicht ausgeführt werden.
 Diese Option kann verwendet werden, um Benutzer zeitweise von der Benutzung von yunIO auszuschließen.
 
-### Zugriff auf Designer und Services einschränken
+### Zugriff auf Designer und Server einschränken
 
 1. Vergeben Sie den angelegten Benutzern Zugriffsrechte, siehe [Privileges](#privileges).
 2. Navigieren Sie zu *Settings* und aktivieren Sie Transport Layer Security, siehe [Server Settings: Transport Layer Security](./server-settings#transport-layer-security).<br>
 3. Starten Sie den yunIO-Service neu und verbinden Sie sich über eine sichere HTTPS-Verbindung mit dem Designer.
-4. Aktivieren Sie **Authenticated** unter [Server Access](#server-access) und starten Sie den yunIO-Service erneut.
-5. Wenn Sie sich auf den Designer verbinden, werden Sie aufgefordert, Ihre Zugangsdaten einzugeben:<br>
+4. Unter [Server Access](#server-access) aktivieren Sie **Authenticated**.
+5. Klicken Sie **[Save]** und starten Sie den yunIO-Service erneut.
+6. Wenn Sie sich auf den Designer verbinden, werden Sie aufgefordert, Ihre Zugangsdaten einzugeben:<br>
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
-6. Navigieren Sie zu *Services* und kopieren oder laden Sie eine Service-Definition herunter.<br>
+7. Navigieren Sie zu *Services* und kopieren oder laden Sie eine Service-Definition herunter.<br>
 ![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
-4. Rufen Sie den Service unter Verwendung von Basic Authentication auf. 
+8. Rufen Sie den Service unter Verwendung von Basic Authentication auf. 
 Verwenden Sie die Zugangsdaten eines Benutzers mit ausreichenden Zugriffsrechten, um einen Service auszuführen.
 
 {: .box-note }
