@@ -16,6 +16,7 @@ progressstate: 5
 - Visual Studio 2015
 - Visual Studio 2017
 - Visual Studio 2019
+- Visual Studio 2022
 
 {: .box-note }
 **Note:** To create SSIS packages in Visual Studio, SQL Server Data Tools (SSDT) are required. 
