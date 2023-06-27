@@ -22,7 +22,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 
 ### Sending a STATUS IDoc
 
-1. Open a client connection to the R/3 system using the *R3Connection* class. 
+1. Open a client connection to the R/3 system using the *ParseConnectionString* class. 
 2. Inquire the IDoc number of the IDoc to be manipulated and read the input.
 3. Use the *CreateIdoc* method to instance a valid *IDoc* object. 
 "SYSTAT01" is the IDoc type for the appropriate message type STATUS. <br> <br>
@@ -31,10 +31,10 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
      {  
         using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         {
-			con.Open(false);  
+			con.Open(false); 
         
 			Console.WriteLine("Which IDocnumber would you like to manipulate?");  
-			string IdocNo = Console.ReadLine();  
+			string IdocNo = Console.ReadLine(); 
         
 			Idoc i = con.CreateIdoc("SYSTAT01","");
      ```
@@ -78,29 +78,6 @@ The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 
 - [Resend IDocs which where set to CPICERR in SM58](https://kb.theobald-software.com/erpconnect-samples/resend-idocs-which-where-set-to-cpicerr-in-sm58)
 - [Setting Up an RFC-Destination](./prerequisites#setting-up-an-rfc-destination)
 
-<!---
-Valeries Test, um Code in Liste zu kollabieren -> fehlgeschlagen T_T
-1. Open a client connection to the R/3 system using the *R3Connection* class. 
-2. Use the *CreateIdoc* method to instance a valid *IDoc* object. 
-*SYSTAT01* is the IDoc type for the appropriate message type STATUS. 
-	<details> 
-	<summary>Click to open C# example.</summary> {% highlight visualbasic %}
-	Sub Main(ByVal args() As String)
-    Using con As R3Connection = New R3Connection("sapappserver", 00, "sapuser", "password", "DE", "800") 
-    con.Open(False) 
-  
-    Console.WriteLine( _ 
-       "Which Idocnumber would you like to manipulate?") 
-  
-    Dim IdocNo As String = Console.ReadLine() 
-  
-    Dim i As Idoc = con.CreateIdoc("SYSTAT01", "")
-  
-    (...) {% endhighlight %}
-    </details>
-3. Provide receiver and sender information for the header of the IDoc object as shown in the code below. <br>
-
--->
 
 
 <!---
@@ -108,7 +85,7 @@ Valeries Test, um Code in Liste zu kollabieren -> fehlgeschlagen T_T
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Sub Main(ByVal args() As String) 
-   Using con As R3Connection = New R3Connection("sapappserver", 00, "sapuser", "password", "DE", "800") 
+   Using con As ParseConnectionString = New ParseConnectionString("sapappserver", 00, "sapuser", "password", "DE", "800") 
    con.Open(False) 
   
    Console.WriteLine( _ 

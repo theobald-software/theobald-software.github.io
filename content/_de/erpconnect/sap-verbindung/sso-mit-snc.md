@@ -47,44 +47,12 @@ Wenn eine Kerberos Authentication nicht möglich ist, wird automatisch NTML verw
 Wenn Sie die voreingestellten Eigenschaften und die SNC Verbindung nicht nutzen wollen, können Sie diese über die Eigenschaft *SNCEnabled* = false deaktivieren, ohne die übrigen SNC Parameter zu ändern.
 
 ### Beispiele
-Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an ein R3Connection-Objekt übergibt.
+Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an ein ParseConnectionString-Objekt übergibt.
 
 ****
 
-**SNC Mechanismus (ERPConnect Version 4.1.1.0):**
+**SNC Mechanismus:**
 
-```csharp
-using (R3Connection con = new R3Connection()) 
-{
-	con.Host = "sap-erp-as05.example.com";
-	con.SystemNumber = 7;
-	con.Client = "800";
-	con.Language = "DE";
-	con.SNCPartnerName = "p:SAPServiceNSP@THEOBALD";
-	con.SNCMechanism = SNCMechanism.NTLM;
-	con.SNCEnabled = true;
-	con.Open();
-	// do something with con
-}
-```
-
-**Individueller Pfad zu einer SNC DLL (ERPConnect Version 4.1.1.0):**
-```csharp
-using (R3Connection con = new R3Connection())
-{
-	con.Host = "sap-erp-as05.example.com";
-	con.SystemNumber = 7;
-	con.Client = "800";
-	con.Language = "DE";
-	con.SNCPartnerName = "p:SAPServiceNSP@THEOBALD";
-	con.SNCLibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
-	con.SNCEnabled = true;
-	con.Open();
-	// do something with con
-}
-```
-
-**SNC Mechanismus (ERPConnect Version 4.2.3):**
 ```csharp
 using (R3Connection con = new R3Connection())
 {
@@ -96,12 +64,13 @@ using (R3Connection con = new R3Connection())
     con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
     con.SNCSettings.Mechanism = SNCMechanism.NTLM;
     con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+
     con.Open();
-    // do something with con
+    // define your application
 }
 ```
 
-**Individueller Pfad zu einer SNC DLL (ERPConnect Version 4.2.3):**
+**Individueller Pfad zu einer SNC DLL:**
 
 ```csharp
 using (R3Connection con = new R3Connection())
@@ -114,13 +83,14 @@ using (R3Connection con = new R3Connection())
     con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
     con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
     con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+
     con.Open();
-    // do something with con
+    // define your application
 }
 ```
 
 {: .box-note }
-**Hinweis**: Mit der neuen Eigenschaft *QualityOfProtection* können Sie die bevorzugte Sicherheitsstufe einstellen. 
+**Hinweis**: Ab ERP Connect Version 4.2.3 können Sie mit der Eigenschaft *QualityOfProtection* die bevorzugte Sicherheitsstufe einstellen. 
 
 ### NTLM
 

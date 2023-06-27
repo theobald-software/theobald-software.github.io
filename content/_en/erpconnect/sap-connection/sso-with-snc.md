@@ -36,7 +36,7 @@ When using Kerberos authentication, apply the Kerberos SNC settings as described
 
 ### About SNC in ERPConnect
 
-The R3Connection object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
+The ParseConnectionString object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
 With the *SNCLibraryPath* property you can specify the path to the SNC DLL manually. 
 In this case the automatic detection of the DLL is disabled and the setting for *SNCMechanism* are ignored.
 
@@ -48,80 +48,50 @@ It disables all settings without changing the other SNC parameter.
 
 
 ### Samples
-The following example codes show how to pass the necessary parameters for an SNC connection to an R3Connection object.
+The following example codes show how to pass the necessary parameters for an SNC connection to an ParseConnectionString object.
 
 ****
 
-**Using the SNC Mechanism (ERP Connect version 4.1.1.0):**
+**Using the SNC Mechanism:**
 
-```csharp
-using (R3Connection con = new R3Connection()) 
-{
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCPartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCMechanism = SNCMechanism.NTLM;
-con.SNCEnabled = true;
-con.Open();
-// define your application
-}
-```
-
-**Using individual SNC DLL path (ERP Connect version 4.1.1.0):**
 ```csharp
 using (R3Connection con = new R3Connection())
 {
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCPartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCLibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
-con.SNCEnabled = true;
-con.Open();
-// define your application
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 7;
+    con.Client = "800";
+    con.Language = "DE";
+    con.SNCSettings.Enabled = true;
+    con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
+    con.SNCSettings.Mechanism = SNCMechanism.NTLM;
+    con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+
+    con.Open();
+    // define your application
 }
 ```
 
-**Using the SNC Mechanism (ERP Connect version 4.2.3):**
+**Using individual SNC DLL path:**
+
 ```csharp
 using (R3Connection con = new R3Connection())
 {
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCSettings.Enabled = true;
-con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCSettings.Mechanism = SNCMechanism.NTLM;
-con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
-con.Open();
-// define your application
-}
-```
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 7;
+    con.Client = "800";
+    con.Language = "DE";
+    con.SNCSettings.Enabled = true;
+    con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
+    con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
+    con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
 
-
-**Using individual SNC DLL path(ERPConnect Version 4.2.3):**
-```csharp
-using (R3Connection con = new R3Connection())
-{
-con.Host = "sap-erp-as05.example.com";
-con.SystemNumber = 7;
-con.Client = "800";
-con.Language = "DE";
-con.SNCSettings.Enabled = true;
-con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
-con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
-con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
-con.Open();
-// define your application
+    con.Open();
+    // define your application
 }
 ```
 
 {: .box-note }
-**Note**: You can set a security level with the new property *QualityOfProtection*. 
+**Note**: As of ERP Connect version 4.2.3 you can set a security level with the property *QualityOfProtection*. 
 
 ### NTLM 
 

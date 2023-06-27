@@ -35,16 +35,16 @@ Danach können Sie das RFCFunction-Objekt anstatt der *CreateFunction/CreateBAPI
 
 ```csharp
 using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-    {
-        RFCFunction f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL");
-        f.Connection = con;
- 
-        StreamReader reader = new StreamReader(
-             System.Reflection.Assembly.GetExecutingAssembly().
-        GetManifestResourceStream
-             ("PocketGetCustomer.BAPI_CUSTOMER_GETDETAIL.xml"));
-        f.LoadFromXML(reader);
-    }
+{
+    RFCFunction f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL");
+    f.Connection = con;
+
+    StreamReader reader = new StreamReader(
+        System.Reflection.Assembly.GetExecutingAssembly().
+            GetManifestResourceStream
+                ("PocketGetCustomer.BAPI_CUSTOMER_GETDETAIL.xml"));
+    f.LoadFromXML(reader);
+}
 ```
 
 <!---

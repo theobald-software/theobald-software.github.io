@@ -63,9 +63,9 @@ private void button1_Click(object sender, System.EventArgs e)
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
-    Dim r3Connection1 As R3Connection = New R3Connection("SAPServer", 0, "SAPUser", "Password", "EN", "800")
+    Dim R3Connection1 As R3Connection = New R3Connection("SAPServer", 0, "SAPUser", "Password", "EN", "800")
     Dim transaction1 As Transaction = New Transaction()
-    transaction1.Connection = r3Connection1
+    transaction1.Connection = R3Connection1
     ' Reset the batch steps
     transaction1.BatchSteps.Clear()
     ' fill new steps
@@ -80,8 +80,8 @@ Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.Event
     ' connect to SAP
   
   
-    r3Connection1.UseGui = True
-    r3Connection1.Open(False)
+    R3Connection1.UseGui = True
+    R3Connection1.Open(False)
     ' Run
     transaction1.Execute()
   

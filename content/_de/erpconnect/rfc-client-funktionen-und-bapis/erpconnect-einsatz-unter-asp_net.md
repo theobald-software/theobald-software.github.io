@@ -60,6 +60,7 @@ private void Button1_Click(object sender, System.EventArgs e)
 	        // Create a RFC-Function object 
 	        RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
 
+
 	        // Fill header structure
 	        RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
 	        Header["DOC_TYPE"]= "NB";
@@ -83,7 +84,7 @@ private void Button1_Click(object sender, System.EventArgs e)
 	        shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
 
 	        // Exceute Bapi and process return messages
-	        func.Execut e();
+	        func.Execute();
 	        this.txtReturn.Text = "";
 	        this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
 	    }

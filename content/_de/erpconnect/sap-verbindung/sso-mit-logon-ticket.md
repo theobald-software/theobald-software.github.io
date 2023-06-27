@@ -19,19 +19,19 @@ Ab Version 1.6 unterstützt ERPConnect Single-Sign-On-Szenarien mit SSO-Tickets.
 ### Anmeldung mit SSO-Tickets
 
 #### SSO-Ticket erzeugen
-Um ein SSO-Ticket zu erzeugen bietet die *R3Connection*-Klasse die Methode *GetSSOTicket*. <br>
+Um ein SSO-Ticket zu erzeugen bietet die *ParseConnectionString*-Klasse die Methode *GetSSOTicket*. <br>
 Die Anmeldedaten müssen einmalig eingegeben werden, um ein Ticket bei SAP zu beantragen, siehe folgenden Beispielcode:
 
 ```csharp
 using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 {
-    cont.Host = "sap-erp-as05.example.com";  
-    cont.SystemNumber = 7;  
-    cont.Client = "800";  
-    cont.Language = "DE";  
-    cont.UserName = "alice";  
-    cont.Password = "pw";  
-  
+    cont.Host = "sap-erp-as05.example.com";
+    cont.SystemNumber = 7;
+    cont.Client = "800";
+    cont.Language = "DE";
+    cont.UserName = "alice";
+    cont.Password = "pw";
+
     string ssoticket = cont.GetSSOTicket();
 }
 ```
@@ -41,13 +41,14 @@ Wenn ein Ticket vorhanden ist, kann der Logon über die Funktion *OpenSSO* erfol
 Benutzername und Passwort müssen nicht übergeben werden, da der Account implizit durch das Ticket vorgegeben wird:
 
 ```csharp
-using(ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
+using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 {
-    conts.Host = "sap-erp-as05.example.com"; 
-    conts.SystemNumber = 7; 
-    conts.Client = "800"; 
-	conts.Language = "EN"; 
-       
-    conts.OpenSSO(ssoticket);
+    conts.Host = "sap-erp-as05.example.com";
+    conts.SystemNumber = 7;
+    conts.Client = "800";
+    conts.Language = "EN";
+    conts.LogonTicket = ssoticket;
+
+    conts.Open();
 }
 ```

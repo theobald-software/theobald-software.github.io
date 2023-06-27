@@ -31,10 +31,10 @@ Das *STATUS*-IDoc enthält nur einen Datensatz und ist somit sehr einfach aufgeb
      {  
         using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         {
-			con.Open(false);  
+			con.Open(false); 
         
 			Console.WriteLine("Which IDocnumber would you like to manipulate?");  
-			string IdocNo = Console.ReadLine();  
+			string IdocNo = Console.ReadLine(); 
         
 			Idoc i = con.CreateIdoc("SYSTAT01","");
      ```
@@ -84,7 +84,7 @@ Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worde
 <summary>[VB]</summary>
 {% highlight visualbasic %}
 Sub Main(ByVal args() As String) 
-   Using con As R3Connection = New R3Connection("hamlet", _ 
+   Using con As ParseConnectionString = New ParseConnectionString("hamlet", _ 
       11, "Theobald", "pw", "DE", "800") 
    con.Open(False) 
   
