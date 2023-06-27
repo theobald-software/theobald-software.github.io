@@ -20,7 +20,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen,
 
 ### Einen ABAP-Interpreter erstellen
 
-1. Bauen Sie mit der ParseConnectionString-Klasse eine Verbindung zum R/3 System auf.
+1. Bauen Sie mit der R3Connection-Klasse eine Verbindung zum R/3 System auf.
 2. Fügen Sie mit der Methode *AddCodeLine* eine neue Zeile ABAP-Code hinzu. 
 3. Ist der gewünschte Code vollständig übergeben, führen Sie ihn mit *Execute* aus. 
 4. Lesen und verwerten Sie die Ergebnismenge (die Listausgabe) mit der Methode *GetResultLine*.
@@ -28,7 +28,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen ABAP-Interpreter erstellen,
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
 {
-	using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+	using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
             {
                 ERPConnect.LIC.SetLic("LicenseNumber");
                 con.Open(false);
@@ -60,7 +60,7 @@ private void button1_Click(object sender, System.EventArgs e)
 Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
  
  
-    Using con As New ERPConnect.ParseConnectionString
+    Using con As New ERPConnect.R3Connection
         con.UserName = "erpconnect"
         con.Password = "pass"
         con.Language = "DE"

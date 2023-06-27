@@ -26,7 +26,7 @@ All parameter properties including the name are listed.
 
 ### Fetching Data 
 
-1. Open a client connection to the R/3 system using the ParseConnectionString class.
+1. Open a client connection to the R/3 system using the R3Connection class.
 2. Use the *CreateQuery* method to create a query object. 
 Each SAP query is defined by three descriptors: 
 - the user workspace (whether local or global)
@@ -45,7 +45,7 @@ The query output is an ADO.NET DataTable. It can be accessed using the *Result* 
 ```csharp
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
     {
-      using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+      using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         { 
            con.Open(false);
  
@@ -80,7 +80,7 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
-Using con As New ParseConnectionString
+Using con As New R3Connection
             con.UserName = "erpconnect"
             con.Password = "pass"
             con.Language = "DE"

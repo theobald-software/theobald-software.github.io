@@ -27,7 +27,7 @@ The dimension has a variable called *MAT01* that allows a limitation to the mate
 ![BW-002](/img/content/BW-002.png){:class="img-responsive" width="600px" }
 
 ### Executing Queries
-1. Open a client connection to the R/3 system using the *ParseConnectionString* class.
+1. Open a client connection to the R/3 system using the *R3Connection* class.
 2. Use the *CreateCube* function to create a BWCube object. 
 Its name is made up of the cube name and query name.
 3. The cube object offers a collection for all contained dimensions (Dimensions) and key figures (Measures). 
@@ -46,7 +46,7 @@ technical name. That means key figures are addressed by the ordinal number, not 
 ```csharp
 private void Go_Click(object sender, System.EventArgs e)
        {
-       using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+       using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
              { 
  
                  BWCube query = con.CreateBWCube("0D_DECU/ZSIMPLEQUERY");
@@ -67,7 +67,7 @@ private void Go_Click(object sender, System.EventArgs e)
 {% highlight visualbasic %}
 Private Sub Go_Click(ByVal sender As Object, ByVal e As System.EventArgs)
  
-    Using con As ParseConnectionString = New ParseConnectionString
+    Using con As R3Connection = New R3Connection
  
  
         con.UserName = "erpconnect"

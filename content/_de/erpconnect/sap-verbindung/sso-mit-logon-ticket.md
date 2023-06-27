@@ -23,17 +23,17 @@ Um ein SSO-Ticket zu erzeugen bietet die *ParseConnectionString*-Klasse die Meth
 Die Anmeldedaten müssen einmalig eingegeben werden, um ein Ticket bei SAP zu beantragen, siehe folgenden Beispielcode:
 
 ```csharp
-using var conn = new R3Connection
+using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 {
-    Host = "sap-erp-as05.example.com",
-    SystemNumber = 7,
-    Client = "800",
-    Language = "DE",
-    UserName = "alice",
-    Password = "pw",
-};
-​
-string ticket = conn.GetSSOTicket();
+    cont.Host = "sap-erp-as05.example.com";
+    cont.SystemNumber = 7;
+    cont.Client = "800";
+    cont.Language = "DE";
+    cont.UserName = "alice";
+    cont.Password = "pw";
+
+    string ssoticket = cont.GetSSOTicket();
+}
 ```
 
 #### Logon
@@ -41,14 +41,14 @@ Wenn ein Ticket vorhanden ist, kann der Logon über die Funktion *OpenSSO* erfol
 Benutzername und Passwort müssen nicht übergeben werden, da der Account implizit durch das Ticket vorgegeben wird:
 
 ```csharp
-using var conn = new R3Connection
+using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 {
-    Host = "sap-erp-as05.example.com",
-    SystemNumber = 7,
-    Client = "800",
-    Language = "EN",
-    LogonTicket = ticket,
-};
-​
-conn.Open();
+    conts.Host = "sap-erp-as05.example.com";
+    conts.SystemNumber = 7;
+    conts.Client = "800";
+    conts.Language = "EN";
+    conts.LogonTicket = ssoticket;
+
+    conts.Open();
+}
 ```

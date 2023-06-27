@@ -56,42 +56,39 @@ Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an
 **SNC Mechanismus:**
 
 ```csharp
-using var conn = new R3Connection
+using (R3Connection con = new R3Connection())
 {
-    Host = "sap-erp-as05.example.com",
-    SystemNumber = 7,
-    Client = "800",
-    Language = "DE",
-    SNCSettings = new SNCSettings
-    {
-        Enabled = true,
-        PartnerName = "p:SAPServiceNSP@THEOBALD",
-        Mechanism = SNCMechanism.NTLM,
-        QualityOfProtection = SNCQualityOfProtection.Maximum,
-    }
-};
-​
-conn.Open();
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 7;
+    con.Client = "800";
+    con.Language = "DE";
+    con.SNCSettings.Enabled = true;
+    con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
+    con.SNCSettings.Mechanism = SNCMechanism.NTLM;
+    con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+
+    con.Open();
+    // define your application
+}
 ```
 
 **Individueller Pfad zu einer SNC DLL:**
+
 ```csharp
-using var conn = new R3Connection
+using (R3Connection con = new R3Connection())
 {
-    Host = "sap-erp-as05.example.com",
-    SystemNumber = 7,
-    Client = "800",
-    Language = "DE",
-    SNCSettings = new SNCSettings
-    {
-        Enabled = true,
-        PartnerName = "p:SAPServiceNSP@THEOBALD",
-        LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll",
-        QualityOfProtection = SNCQualityOfProtection.Maximum,
-    },
-};
-​
-conn.Open();
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 7;
+    con.Client = "800";
+    con.Language = "DE";
+    con.SNCSettings.Enabled = true;
+    con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
+    con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
+    con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+
+    con.Open();
+    // define your application
+}
 ```
 
 {: .box-note }

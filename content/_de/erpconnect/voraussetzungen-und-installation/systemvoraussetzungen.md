@@ -53,10 +53,10 @@ Die Installation von kundenspezifischen Funktionsbausteinen / Transportaufträge
 #### Netweaver RFC-Bibliothek
 
 ERPConnect unterstützt die Netweaver RFC-Bibliothek ab Version 4.6.0.
-Um die Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *ParseConnectionString-Objekts* auf *ClientProtocol.NWRFC*. 
+Um die Bibliothek zu verwenden, setzen Sie die Eigenschaft *Protocol* des *R3Connection-Objekts* auf *ClientProtocol.NWRFC*. 
 
 ```
-ParseConnectionString.Protocol = ClientProtocol.NWRFC;
+R3Connection.Protocol = ClientProtocol.NWRFC;
 ```
 
 Für die 64-Bit Umgebung sind folgende DLLs nötig:

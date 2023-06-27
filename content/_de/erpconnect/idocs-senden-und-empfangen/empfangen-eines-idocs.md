@@ -22,6 +22,7 @@ Um Ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, folgen Sie der 
 3. Wenn ein IDoc von ERPConnect empfangen wird, wird das Ereignis *IncomingIdoc* getriggert und eine Referenz auf die Objekte *RFCServer* und *IDoc* transferriert.
 Nutzen Sie das Ereignis *IncomingIdoc*, um das eingehende IDoc zu verarbeiten. 
 ```csharp
+
 static void Main(string[] args) 
 { 
 	 // define server object and start 

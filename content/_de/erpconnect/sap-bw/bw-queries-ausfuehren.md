@@ -20,7 +20,7 @@ Die folgende Abbildung zeigt die Query im Designer. <br>
 ![BW-001](/img/content/BW-001.png){:class="img-responsive" }
 
 {: .box-note }
-**Hinweis**: Beachten Sie, dass in den Einstellungen der Query das Häkchen *Externen Zugriff zulassen* gesetzt sein muss.
+**Hinweis**: Beachten Sie, dass in den Einstellungen der Query das Häkchen **Externen Zugriff zulassen** gesetzt sein muss.
 
 Die Dimensionen *Material* und *Auftraggeber*, sowie die Kennzahlen *Fakturierte Menge* und *Kosten* werden in die Ergebnismenge übergeben, siehe Screenshot. 
 Die Dimension hat die Variable *MAT01*, die Einschränkungen auf die Materialnummer erlaubt. 
@@ -47,24 +47,6 @@ technischen Namen entspricht. Die Kennzahlen werden daher über die Ordinalzahl 
 ### Beispielcode
 
 ```csharp
-private void Go_Click(object sender, System.EventArgs e)
-       {
-       using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-             { 
- 
-                 BWCube query = con.CreateBWCube("0D_DECU/ZSIMPLEQUERY");
-                 query.Dimensions["0D_MATERIAL"].SelectForFlatMDX = true;
-                 query.Dimensions["0D_SOLD_TO"].SelectForFlatMDX = true;
-                 query.Measures[0].SelectForFlatMDX = true;
-                 query.Measures[1].SelectForFlatMDX = true;
- 
-                 query.Variables["MAT01"].SingleRange.LowValue = this.txtMatNr.Text;
-			 
-                 this.dataGrid1.DataSource = query.Execute();
-             }
-       }
-	   
-
 private void Go_Click(object sender, System.EventArgs e)
        {
 		using var con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800")             

@@ -26,7 +26,7 @@ For this the columns *MATNR* (material number) and *MAKTX* (material text) are n
 ```csharp
 static void Main(string[] args) 
 { 
-    using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
             {
                 ERPConnect.LIC.SetLic("LicenseNumber");
                 con.Open(false);
@@ -60,7 +60,7 @@ Module Module1
      
    Sub Main() 
      
-      Using con As New ParseConnectionString 
+      Using con As New R3Connection 
           con.Host = "Hamlet"
           con.SystemNumber = 00 
           con.UserName = "SAPUser"

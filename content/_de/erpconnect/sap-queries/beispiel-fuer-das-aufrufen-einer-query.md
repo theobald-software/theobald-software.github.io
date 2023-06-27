@@ -27,7 +27,7 @@ Alle Parametereigenschaften und Namen sind dort aufgelistet.
 
 ### Daten einer Query abrufen
 
-1. Bauen Sie mit der ParseConnectionString-Klasse eine Verbindung zum R/3 System auf.
+1. Bauen Sie mit der R3Connection-Klasse eine Verbindung zum R/3 System auf.
 2. Verwenden Sie die Methode *CreateQuery*, um ein Qery-Objekt zu erstellen. 
 Jede SAP Query ist durch drei Angaben eindeutig definiert: 
 - Der Workspace (lokal oder global)
@@ -49,7 +49,7 @@ Sie kann über die Eigenschaft *Result* des Query-Objekts abgerufen werden.
 ```csharp
 private void btnFetchQueryData_Click(object sender, System.EventArgs e)
     {
-      using (ParseConnectionString con = new ParseConnectionString("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
+      using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
         { 
            con.Open(false);
  
@@ -83,7 +83,7 @@ private void btnFetchQueryData_Click(object sender, System.EventArgs e)
 <details>
 <summary>[VB]</summary>
 {% highlight visualbasic %}
-Using con As New ParseConnectionString
+Using con As New R3Connection
   
 	con.UserName = "erpconnect"
     con.Password = "pass"

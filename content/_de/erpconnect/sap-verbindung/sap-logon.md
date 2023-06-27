@@ -40,37 +40,37 @@ Um sich über Load Balancing zu verbinden, verwenden Sie *Open(true)*. Um sich �
 Beispiel für einen Login mit einem SAP Application Server:
 
 ```csharp
-using var conn = new R3Connection
+using (R3Connection con = new R3Connection())
 {
-    UserName = "SAPUser",
-    Password = "SAPPassword",
-    Language = "EN",
-    Client = "800",
-    Host = "sap-erp-as05.example.com",
-    SystemNumber = 00,
-    Protocol = ClientProtocol.NWRFC,
-};
-​
-conn.Open();
+    con.UserName = "SAPUser";
+    con.Password = "SAPPassword";
+    con.Language = "EN";
+    con.Client = "800";
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 00;
+    con.Protocol = ClientProtocol.NWRFC;
+
+    con.Open();
+}
 ```
 
 Beispiel für einen Login via Load Balancing:
 
 ```csharp
-using var conn = new R3Connection
+using (R3Connection con = new R3Connection())
 {
-    UserName = "SAPUser",
-    Password = "SAPPassword",
-    Language = "DE",
-    Client = "800",
-    UsesLoadBalancing = true,
-    MessageServer = "sap-erp-as05.example.com",
-    LogonGroup = "PUBLIC",
-    SID = "ECC",
-    Protocol = ClientProtocol.NWRFC,
-};
-​
-conn.Open();
+    con.UserName = "SAPUser";
+    con.Password = "SAPPassword";
+    con.Language = "DE";
+    con.Client = "800";
+    con.MessageServer = "sap-erp-as05.example.com";
+    con.LogonGroup = "PUBLIC";
+    con.SID = "ECC";
+    con.Protocol = ClientProtocol.NWRFC;
+    con.UsesLoadBalancing = true;
+
+    con.Open();
+}
 ```
 
 Das Standard-Encoding für den Verbindungsaufbau zu SAP-Systemen ist SAP-Codepage 1100 (iso-8859-1).
@@ -89,30 +89,30 @@ Wenn Sie auf das SAP-System über einen SAP-Router zugreifen, muss der Routerstr
 Für mehr Informationen zu *Route Strings*, siehe [SAP-Dokumentation - Eingabe von Route Strings für SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/de/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
 ```csharp
-using var conn = new R3Connection
+using (R3Connection con = new R3Connection())
 {
-    UserName = "SAPUser",
-    Password = "SAPPassword",
-    Language = "EN",
-    Client = "800",
-    Host = "/H/SAPRouter/H/SAPServer",
-    SystemNumber = 00,
-    Protocol = ClientProtocol.NWRFC,
-};
-​
-conn.Open();
+    con.UserName = "SAPUser";
+    con.Password = "SAPPassword";
+    con.Language = "DE";
+    con.Client = "800";
+    con.Host = "/H/SAPRouter/H/SAPServer";
+    con.SystemNumber = 00;
+    con.Protocol = ClientProtocol.NWRFC;
+
+    con.Open();
+}
 ```
 
 ### Connection String
 
-Sie können einen Connection String verwenden, um die Methode *ParseConnectionString.Open(string connectionString)* aufzurufen. Beispiel:
+Sie können einen Connection String verwenden, um eine SAP-Verbindung zu öffnen. Beispiel:
 
 ```csharp
-const string connectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
-using var conn = new R3Connection();
-​
-conn.ParseConnectionString(connectionString);
-conn.Open();
+string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+R3Connection con = new R3Connection();
+
+con.ParseConnectionString(ConnectionString);
+con.Open();
 ```
 
 Das Standard Client-Protokoll is das NWRFC-Protokoll.
