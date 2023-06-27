@@ -84,7 +84,7 @@ Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worde
 <summary>[VB]</summary>
 {% highlight visualbasic %}
 Sub Main(ByVal args() As String) 
-   Using con As ParseConnectionString = New ParseConnectionString("hamlet", _ 
+   Using con As R3Connection = New R3Connection("hamlet", _ 
       11, "Theobald", "pw", "DE", "800") 
    con.Open(False) 
   

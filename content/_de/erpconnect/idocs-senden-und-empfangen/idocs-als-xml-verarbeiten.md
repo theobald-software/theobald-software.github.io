@@ -63,7 +63,7 @@ using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password
 <details>
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
-Using con As ParseConnectionString = New ParseConnectionString
+Using con As R3Connection = New R3Connection
   
     con.UserName = "erpconnect"
     con.Password = "pass"

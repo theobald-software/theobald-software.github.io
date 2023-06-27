@@ -30,7 +30,7 @@ Die Dimension hat die Variable *MAT01*, die Einschränkungen auf die Materialnum
 
 ### Queries ausführen
 
-1. Bauen Sie mit der *ParseConnectionString-Klasse* eine Verbindung zum R/3 System auf.
+1. Bauen Sie mit der *R3Connection-Klasse* eine Verbindung zum R/3 System auf.
 2. Erstellen Sie mit der *CreateCube*-Funktion ein BWCube-Objekt. 
 Der Name setzt sich dabei aus dem Cubenamen und dem Querynamen zusammen.
 3. Das Cube-Objekt bietet eine Sammlung für alle enthaltenen Dimensionen (*Dimensions*) und für alle enthaltenen Kennzahlen (*Measures*). 
@@ -69,7 +69,7 @@ private void Go_Click(object sender, System.EventArgs e)
 {% highlight visualbasic %}
 Private Sub Go_Click(ByVal sender As Object, ByVal e As System.EventArgs)
   
-    Using con As ParseConnectionString = New ParseConnectionString
+    Using con As R3Connection = New R3Connection
   
   
         con.UserName = "erpconnect"

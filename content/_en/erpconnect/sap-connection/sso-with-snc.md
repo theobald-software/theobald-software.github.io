@@ -36,7 +36,7 @@ When using Kerberos authentication, apply the Kerberos SNC settings as described
 
 ### About SNC in ERPConnect
 
-The ParseConnectionString object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
+The R3Connection object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
 With the *SNCLibraryPath* property you can specify the path to the SNC DLL manually. 
 In this case the automatic detection of the DLL is disabled and the setting for *SNCMechanism* are ignored.
 

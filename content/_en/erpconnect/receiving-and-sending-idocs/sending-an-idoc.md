@@ -22,7 +22,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 
 ### Sending a STATUS IDoc
 
-1. Open a client connection to the R/3 system using the *ParseConnectionString* class. 
+1. Open a client connection to the R/3 system using the *R3Connection* class. 
 2. Inquire the IDoc number of the IDoc to be manipulated and read the input.
 3. Use the *CreateIdoc* method to instance a valid *IDoc* object. 
 "SYSTAT01" is the IDoc type for the appropriate message type STATUS. <br> <br>
@@ -85,7 +85,7 @@ The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 
 <summary>Click to open VB example.</summary>
 {% highlight visualbasic %}
 Sub Main(ByVal args() As String) 
-   Using con As ParseConnectionString = New ParseConnectionString("sapappserver", 00, "sapuser", "password", "DE", "800") 
+   Using con As R3Connection = New R3Connection("sapappserver", 00, "sapuser", "password", "DE", "800") 
    con.Open(False) 
   
    Console.WriteLine( _ 
