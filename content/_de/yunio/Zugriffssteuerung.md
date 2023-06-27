@@ -53,7 +53,7 @@ Diese Option kann verwendet werden, um Benutzer zeitweise von der Benutzung von 
 4. Aktivieren Sie **Authenticated**, siehe [Server Access](#server-access).<br>
 ![Access_Control](/img/content/yunio/access-control2.png){:class="img-responsive"}
 5. Vergeben Sie den angelegten Benutzern Zugriffsrechte, siehe [Privileges (Global)](#privileges-global).
-6. Klicken Sie **[Save]** und starten Sie den yunIO-Service erneut.
+6. Klicken Sie auf **[Save]** und starten Sie den yunIO-Service erneut.
 7. Wenn Sie sich auf den Designer verbinden, werden Sie aufgefordert, Ihre Zugangsdaten einzugeben:<br>
 ![Login](/img/content/yunio/yunio-login.png){:class="img-responsive" }
 
@@ -80,37 +80,38 @@ Benutzerdefinierte Service-Einschränkungen betreffen nicht die Benutzer mit glo
 
 ### Privileges (Services)
 
-Assign restriction levels for the service access to users.
+Vergeben der Restriktions-Stufen von Service-Zugang an Benutzer.
 
-All users defined in [User management](./users) are listed in the subsection *Privileges*.
-Select a restriction level from the dropdown list next to the user name to assign a restriction level.
-The following restriction levels are available:
-- **Modify**: The user can read, run and modify the service.
-- **Read / Execute**: The user can read and run the service.
-- **No access**: The user can not access, modify, read or run the service.
+Alle Benutzer, die in der [Benutzerverwaltung](./benutzer) angelegt sind, werden im Unterabschnitt **Privileges** aufgelistet.
+Wählen Sie eine Beschränkungsstufe aus der Dropdown-Liste neben dem Benutzernamen aus, um die Beschränkungsstufe dem Benutzer zuzuweisen.
+Die folgenden Beschränkungsstufen sind verfügbar:
+- **Modify**:  Benutzer können Services anschauen, ausführen und bearbeiten.
+- **Read / Execute**: Benutzer können Services anschauen und ausführen.
+- **No access**: Benutzer können nicht auf die Services zugreifen, anschauen, bearbeiten oder ausführen.
 
-### Restrict Access to Services
 
-By default services inherit access restrictions from the server-level, see [Global Access Control](#global-access-control).
-Follow the steps below to set up custom access restrictions for specific services:
+### Zugriff auf Services einschränken
 
-1. Open the *Services* menu.
-2. Click (![Login](/img/content/yunio/key.png)) at the service you want to restrict access to. 
-The access control menu of the service opens.<br>
+Standardmäßig erben Services Zugriffsbeschränkungen von der Server-Ebene, siehe [Global Access Control](#global-access-control).
+Führen Sie die folgenden Schritte aus, um benutzerdefinierte Zugriffsbeschränkungen für bestimmte Services einzurichten:
+
+1. Öffnen Sie das Menu *Settings*.
+2. Klicken Sie auf (![Login](/img/content/yunio/key.png)) beim Service auf den Sie den Zugriff einschränken möchten. 
+Das *Menu Access Control* (Zugriffssteuerung) wird geöffnet.<br>
 ![service-access-control](/img/content/yunio/service-access-control.png){:class="img-responsive"}
-3. Activate **Custom**, see [Service Access](#service-access)<br>
+3. Aktivieren Sie die Option **Custom**, siehe [Service Access](#service-access)<br>
 ![service-access-control-settings](/img/content/yunio/service-access-control-settings.png){:class="img-responsive"}
-4. Assign user rights to existing users, see [Privileges (Services)](#privileges-services).
-5. Click **[Save]**.
-6. Open the *Services* menu and copy or download the service definition.<br>
+4. Vergeben Sie den angelegten Benutzern Zugriffsrechte, siehe [Privileges (Services)](#privileges-services).
+5. Klicken Sie auf **[Save]**.
+6. Öffnen Sie das Menü *Services*, kopieren Sie oder laden Sie die Service-Definition herunter. <br>
 ![Run-Service](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive"}
-7. Call the service using basic authentication. Enter the credentials of a user that is allowed to run services.
-
+7. Rufen Sie den Service mit einfacher Authentifizierung auf. Geben Sie die Anmeldedaten eines Benutzers ein, der berechtigt ist, Services auszuführen.
 
 {: .box-note }
-**Note:** When access rights from the server and service levels differ, the more restrictive access right applies, e.g., a user with *Read/Execute* privilege on the server level cannot be upgraded to *Modify* on the service level.
-The *Administrator* privilege is the only privilege on the server level that cannot be downgraded on the service level.
+**Hinweis:** Wenn sich die Zugriffsrechte von Server- und Service-Ebene unterscheiden, gilt das restriktivere Zugriffsrecht, z.B. der Benutzer mit *Read/Execute*- Rechten auf der Server-Ebene kann nicht auf der Service-Ebene auf *Modify* hochgestuft werden.
+
+Die *Administrator*-Rechte sind die einzigen Rechte auf der Server-Ebene, die auf der Service-Ebene nicht runtergestuft werden können. 
 
 {: .box-tip }
-**Tip:** Click **[Reset permissions]** to set all user rights to *No Access*.
+**Tipp:** Klicken Sie auf **[Reset permissions]**, um alle Benutzer auf *No Access* zu setzen.
 
