@@ -9,7 +9,7 @@ A WHERE clause can be used to filter table records, see [SAP ABAP Documentation:
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {: .box-note }
-**Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g. MARC~MATNR. This can be the case when extracting multiple tables.
+**Note:** When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g., MARC~MATNR. This can be the case when extracting multiple tables.
 
 {% if page.product == "xtract-for-alteryx" %}
 ![Extraction-Settings-01](/img/content/xfa/Table-Extraction-Where-Clause.png){:class="img-responsive"}
