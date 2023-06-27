@@ -1,23 +1,36 @@
-
-### Verwendung von WHERE-Bedingung
-
 Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abapwhere.htm).
 
+### Verwendung einer WHERE-Bedingung
 
-1. Navigieren Sie zum Tab **WHERE Clause**.
-2. Geben Sie die WHERE-Bedingung entweder über die manuelle Texteingabe oder über den Editor ein.
-3. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}1. Öffnen Sie eine Tabellen-Extraktion. {% else %}1. Öffnen Sie eine Xtract Table Komponente.{% endif %}
+2. Navigieren Sie zum Tab *WHERE Clause*.
+3. Geben Sie die WHERE-Bedingung entweder über die [manuelle Texteingabe](#syntax-der-where-bedingung) oder über den [WHERE Clause Editor](#where-clause-editor) ein.
+4. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 
 {: .box-note }
 **Hinweis:** Wenn der Feldname nicht eindeutig ist, muss der Tabellenname dem Feldnamen vorangestellt werden, z.B. MAKT~MATNR. Dies kann z.B. bei der Extraktion mehrerer Tabellen der Fall sein.
 
+{% if page.product == "xtract-for-alteryx" %}
+![Extraction-Settings-01](/img/content/xfa/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% elsif page.product == "xtract-is" %}
+![Extraction-Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% else %}
 ![Extraction-Settings-01](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% endif %}
 
 **[Text mode]** <br>
 Ermöglicht die direkte Eingabe einer WHERE-Bedingung. **[Text mode]** ist der Standart-Eingabemodus.
 
 **[Editor mode]** <br>
 Öffnet den WHERE Clause Editor. Der WHERE Clause Editor bietet ein Toolkit, um WHERE-Bedingungen zu erstellen, siehe [WHERE Clause Editor](#where-clause-editor).
+
+{% if page.product == "xtract-for-alteryx" %}
+**[Extraction Settings]** <br>
+Öffnet das Menü für die Extraktionseinstellungen, siehe [Extraktionseinstellungen](./extraktionseinstellungen).
+
+**[Edit Parameters]** <br>
+Öffnet das Menü für Laufzeitparameter, siehe [Laufzeitparameter im WHERE Clause Editor](##laufzeitparameter-im-where-clause-editor)
+{% endif %}
 
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
@@ -26,10 +39,12 @@ Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen.
 **[Count rows]** <br>
 Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE- und HAVING-Bedingungen. 
 
+{% if page.product != "xtract-for-alteryx" %}
 **[Refresh Metadata]** <br>
 Durchführung eines erneuten Lookups auf die selektierte(n) Tabelle(n). Bestehende Mappings und Feldselektionen bleiben dabei erhalten, anders als beim erneuten Hinzufügen.<br>
 Die *Refresh Metadata* Funktionalität kann z.B. notwendig sein, wenn eine Tabelle SAP-seitig angepasst, ein anderes Quellsystem angebunden, oder ein Update des Quellsystems durchgeführt wurde. In solchen Fällen kann es zu Datenschiefständen kommen, die durch diese Funktion bereinigt werden.   
- 
+{% endif %}
+
 ### Einschränkungen bei WHERE-Bedingungen
 
 {: .box-note }
@@ -63,7 +78,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
  **Korrekt:** *JAHR = '1999'* <br>
  **Falsch:** *JAHR= '1999 '*, *JAHR ='1999'* oder *JAHR='1999'*
 
-- Setzten Sie die Fließkommazahlen in einfache Anführungszeichen: <br>
+- Setzten Sie Fließkommazahlen in einfache Anführungszeichen: <br>
 **Korrekt:** *KMENG > '10.3'* <br>
 **Falsch** *KMENG > 10.3*
 
@@ -90,14 +105,17 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}
+<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
 
 ### Skript-Ausdrücke
 
 Der **[Text-Modus]** der WHERE-Bedingung unterstützt die Verwendung von Skript-Ausdrücken.
-Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. 
-
+Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des aktuellen Datums zu bestimmen. <br>
 Um Skript-Ausdrücke in der WHERE-Bedingung zu verwenden, müssen sie in einfache Anführungszeichen gesetzt werden.<br>
+{% if page.product == "xtract-universal" %}
 Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
+{% endif %}
 
 **Syntax:**<br>
 ```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
@@ -112,6 +130,8 @@ Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fort
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Aktuelles Datum verkettet mit "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Aktuelles Datum verkettet mit "0101""           |
 
+<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
+{% endif %}
 
 ### Verwendung von Subqueries
 
@@ -167,7 +187,8 @@ Folgende Komponenten stehen im Editor zur Verfügung:
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
 
-Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.<br>
+{: .box-note }
+**Hinweis**: Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
 Beispiel: **Operator** ist nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
 
 #### Komponenten Bearbeiten und Löschen
@@ -176,34 +197,3 @@ Beispiel: **Operator** ist nur verfügbar, wenn eine Spalte oder eine SQL-Anweis
 Alle grün markierten Flächen können bearbeitet werden.<br>
 - Klicken Sie auf das (x) Icon über einer Komponente, um die Komponente zu löschen.
 
-### Laufzeitparameter im WHERE Clause Editor
-
-1. Klicken Sie im Hauptfenster der Komponente auf **Edit Runtime Parameters**, um Laufzeitparameter anzulegen und zu bearbeiten. 
-Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
-![dd-parameters](/img/content/where-clause-parameter.png){:class="img-responsive"}
-2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für echte Werte verwendet werden können.<br>
-Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
-**Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben (siehe vorliegendes Beispiel: “p_MATNR”).
-3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. <br>
-Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
-- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
-- Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
-- Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen ‘X’ (true) oder eine leere Eingabe ‘‘ (false) als Eingabewert benötigen.
-Klicken Sie auf **[OK]** (3) zum Bestätigen.
-4. Klicken Sie im WHERE Clause Tab des Hauptfensters auf **[Editor mode]**, um den WHERE Clause Editor zu öffnen.
-5. Fügen Sie der WHERE-Bedingung über **[Add Criteria]** und **[Default with Parameter]** ein neues Kriterium hinzu.
-6. Klicken Sie auf die *Parameter* Komponente des Kriteriums. Eine Drop-Down-Liste öffnet sich und zeigt alle verfügbaren Laufzeitparameter an.
-Wählen Sie einen der Laufzeitparameter aus.<br>
-![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
-7. Klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
-Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
-
-
-{: .box-note }
-**Hinweis:** Listenparameter sind noch nicht verfügbar.
-
-**** 
-#### Weiterführende Links
-
-- [Knowledge Base Artikel: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
-- [Knowledge Base Artikel: Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
