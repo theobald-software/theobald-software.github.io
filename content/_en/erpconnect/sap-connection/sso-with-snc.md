@@ -48,7 +48,7 @@ It disables all settings without changing the other SNC parameter.
 
 
 ### Samples
-The following example codes show how to pass the necessary parameters for an SNC connection to an ParseConnectionString object.
+The following example codes show how to pass the necessary parameters for an SNC connection to an R3Connection object.
 
 ****
 

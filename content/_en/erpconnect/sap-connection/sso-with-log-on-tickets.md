@@ -19,7 +19,7 @@ As of ERPConnect version 1.6 SSO scenarios are supported.
 ### Logon with SSO-Tickets
 
 #### Creating SSO-Tickets
-To create an SSO ticket the ParseConnectionString class provides the method *GetSSOTicket*. 
+To create an SSO ticket the R3Connection class provides the method *GetSSOTicket*. 
 All logon data must be provided once to create the ticket as shown in the code below.
 
 ```csharp

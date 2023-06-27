@@ -47,7 +47,7 @@ Wenn eine Kerberos Authentication nicht möglich ist, wird automatisch NTML verw
 Wenn Sie die voreingestellten Eigenschaften und die SNC Verbindung nicht nutzen wollen, können Sie diese über die Eigenschaft *SNCEnabled* = false deaktivieren, ohne die übrigen SNC Parameter zu ändern.
 
 ### Beispiele
-Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an ein ParseConnectionString-Objekt übergibt.
+Die folgenden Beispielcodes zeigen wie man Parameter für eine SNC-Verbindung an ein R3Connection-Objekt übergibt.
 
 ****
 

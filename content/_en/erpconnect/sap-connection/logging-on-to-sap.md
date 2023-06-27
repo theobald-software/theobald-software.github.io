@@ -31,7 +31,7 @@ Both connection methods require the following input:
 
 ### How to Connect
 1. Add the ERPConnect.dll class library as a reference to the project.
-2. Create a new ParseConnectionString object and define all input parameters.
+2. Create a new R3Connection object and define all input parameters.
 3. Use the method *Open* to establish the connection. <br>
 To connect via Load Balancing, use *Open(true)*. For the single server approach, use *Open(false)*. 
 

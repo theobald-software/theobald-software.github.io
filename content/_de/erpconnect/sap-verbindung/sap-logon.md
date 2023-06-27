@@ -33,7 +33,7 @@ Beide Verbindungsmethoden benötigen folgende Angaben:
 ### Verbindung aufbauen
 
 1. Binden Sie die ERPConnect.dll als Referenz in das aktuelle Projekt ein. 
-2. Erstellen Sie ein neues ParseConnectionString-Object und definieren Sie alle Eingabeparameter.
+2. Erstellen Sie ein neues R3Connection-Object und definieren Sie alle Eingabeparameter.
 3. Verwenden Sie die Methode *Open*, um eine Verbindung herzustellen. <br>
 Um sich über Load Balancing zu verbinden, verwenden Sie *Open(true)*. Um sich über einen Application Server zu verbinden, verwenden Sie *Open(false)*.
 
