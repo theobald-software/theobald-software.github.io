@@ -71,10 +71,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 - **Merge only**:  Führt Daten zusammen, ohne Datensätze oder die Liste selbst zu löschen.
 - **Max. threads** (Expertenoption): Anzahl der Threads, die zur Kommunikation mit dem SharePoint-Server verwendet werden.
 
-Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern oder aber auch verschlechtern, abhängig von der Server- und Netzwerkumgebung.
-Das Setzen auf "1" verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
-   
- 
+
 {:.box-note}
 **Note:** Eine größere Zahl der Threads kann die Geschwindigkeit des Exports verbessern oder aber auch verschlechtern, abhängig von der Server- und Netzwerkumgebung.
  Das Setzen auf *1* verlangsamt Exporte signifikant, kann aber hilfreich sein, wenn Ihr SharePoint-Server stark ausgelastet ist oder Verbindungsprobleme auftreten. 
