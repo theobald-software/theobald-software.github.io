@@ -34,7 +34,7 @@ The main window of the Xtract Cube component consists of two subsections and sev
 ![Cube Extractor](/img/content/xfa/xfa-cube-query-overview.png){:class="img-responsive"}
 
 #### Cube or Query
-Within the subsection **Cube or Query** you can search for a BEx Query or an InfoProvider using **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon).
+Within the subsection **Cube or Query** you can search for a BEx Query or an InfoProvider using ![magnifying-glass](/img/content/icons/magnifying-glass.png).
 The *Key Figures*, *Dimensions* and *Properties* that can be selected for the output are displayed in this subsection. 
 
 

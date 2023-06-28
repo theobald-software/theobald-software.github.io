@@ -36,7 +36,7 @@ The window "Hierarchy Extractor" consists out of two subsections:
 ![Hierarchy Extractor](/img/content/xfa/xfa_hierarchy.png){:class="img-responsive"}
 
 #### Selected Hierarchy
-Within the subsection **Selected Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon).<br>
+Within the subsection **Selected Extraction** you can [search for SAP BW hierarchies](./bwhierarchy/bwhier-define) using ![magnifying-glass](/img/content/icons/magnifying-glass.png).<br>
 The default value for the field *Date To* is 99991231. 
 
 #### Preview

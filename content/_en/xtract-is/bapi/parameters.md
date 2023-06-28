@@ -29,10 +29,10 @@ To use the filtering function, enter text in the headers of the columns **Name**
 #### Add Scalar Parameters (1)
 
 Scalar fields for inputs are usually set using the following two options:
-- A static constant value ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon).
-- An SSIS variable / parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
+- A static constant value ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon.
+- An SSIS variable / parameter ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
 
-Click on the icon next to the input field to switch between static input values and SSIS variables / parameters.
+Click the icon next to the input field to switch between static input values and SSIS variables / parameters.
 When using variables, make sure the input matches the data type.<br>
 
 
@@ -47,7 +47,7 @@ Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
 1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Structures" opens.
-2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) or assign SSIS variables / parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon) under **Values**.
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) or assign SSIS variables / parameters ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) under **Values**.
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
