@@ -109,7 +109,6 @@ Das *Menu Access Control* (Zugriffssteuerung) wird geöffnet.<br>
 
 {: .box-note }
 **Hinweis:** Wenn sich die Zugriffsrechte von Server- und Service-Ebene unterscheiden, gilt das restriktivere Zugriffsrecht, z.B. der Benutzer mit *Read/Execute*- Rechten auf der Server-Ebene kann nicht auf der Service-Ebene auf *Modify* hochgestuft werden.
-
 Die *Administrator*-Rechte sind die einzigen Rechte auf der Server-Ebene, die auf der Service-Ebene nicht runtergestuft werden können. 
 
 {: .box-tip }
