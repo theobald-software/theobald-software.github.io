@@ -13,8 +13,8 @@ progressstate: 5
 ---
 
 Die Zugriffssteuerung von yunIO ermöglicht es Ihnen, die folgenden Zugriffsrechte zu definieren:
-- Zugriffsberechtigung für Server und yunIO Designer, siehe []()
-- Zugriffsberechtigung für bestimmte Services, siehe []()
+- Zugriffsberechtigung für Server und yunIO Designer, siehe [Global Access Control](#global-access-control-globale-zugriffssteuerung)
+- Zugriffsberechtigung für bestimmte Services, siehe [Service Access Control](#service-access-control-zugriffssteuerung-für-services)
 
 ## Global Access Control (Globale Zugriffssteuerung)
 Global Access Control --- Globale Zugriffssteuerung ermöglicht es Ihnen Zugriffsberechtigung für Server und yunIO Designer zu definieren.<br>
@@ -27,7 +27,7 @@ Aktivieren oder deaktivieren Sie die Zugriffsbeschränkungen für den Designer u
 - Wenn **Anonymous Access** aktiv ist, gibt es keine Zugangsbeschränkungen für den Designer und den Server.
 **Anonymous** ist die Standard-Einstellung.
 - Wenn **Authenticated** aktiv ist, haben nur angelegte Benutzer mit entsprechender Beschränkungsstufe Zugriff auf den Designer und den Server.<br>
-Diese Option ist verfügbar, wenn mindestens ein Benutzer angelegt und [Transport Layer Security](#transport-layer-security) aktiv ist. 
+Diese Option ist verfügbar, wenn mindestens ein Benutzer angelegt und [Transport Layer Security](./server-settings) aktiv ist. 
 
 
 ### Privileges (Global)
@@ -66,14 +66,14 @@ Starten Sie anschließend den Server neu.
 **Tipp:** Sie können auch SAP-Zugangsdaten für die Basic Authentication von Services verwenden, siehe [SAP-Verbindung: Authentifizierung](./sap-verbindungen-anlegen#authentifizierung).
 Die parallele Verwendung von SAP-Zugangsdaten und Zugangsdaten von angelegten Benutzern wird nicht unterstützt.
 
-### Service Access Control 
+## Service Access Control (Zugriffssteuerung für Services)
 Aktivieren oder deaktivieren Sie die Zugriffsbeschränkungen für bestimmte Services. <br>
 Um die Einstellungen für die Service-Zugriffssteuerung (Service Access Control) zu öffnen, klicken Sie auf (![Login](/img/content/yunio/key.png)) beim Service, derauf den Sie den Zugriff beschränken möchten. <br>
 ![service-access-control](/img/content/yunio/service-access-control-settings0.png){:class="img-responsive"}
 
 ### Service Access
-Aktivieren oder deaktivieren Sie die Zugriffsbeschränkungen für den ausgewählten Service.
-- Wenn die Option **Inherit** aktiviert ist, die globalen Zugriffsrechte gelten für den Service, siehe [Global Access Control](#global-access-control). 
+Aktivieren oder deaktivieren Sie benutzerdefinierte Zugriffsbeschränkungen für den ausgewählten Service.
+- Wenn die Option **Inherit** aktiviert ist, die globalen Zugriffsrechte gelten für den Service, siehe [Global Access Control](##global-access-control-globale-zugriffssteuerung). 
  **Inherit** ist die Standard-Einstellung.
 - Wenn die Option **Custom**  aktiviert ist, die im Unterabschnitt [*Privileges*](#privileges-services) definierten Zugriffsrechte gelten für den Service. <br>
 Benutzerdefinierte Service-Einschränkungen betreffen nicht die Benutzer mit globalen *Administrator*-Rechten.
@@ -92,7 +92,7 @@ Die folgenden Beschränkungsstufen sind verfügbar:
 
 ### Zugriff auf Services einschränken
 
-Standardmäßig erben Services Zugriffsbeschränkungen von der Server-Ebene, siehe [Global Access Control](#global-access-control).
+Standardmäßig erben Services Zugriffsbeschränkungen von der Server-Ebene, siehe [Global Access Control](#global-access-control-globale-zugriffssteuerung).
 Führen Sie die folgenden Schritte aus, um benutzerdefinierte Zugriffsbeschränkungen für bestimmte Services einzurichten:
 
 1. Öffnen Sie das Menu *Settings*.

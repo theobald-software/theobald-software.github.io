@@ -30,7 +30,7 @@ Activate or deactivate access control for the Designer and the server.
 - If **Anonymous Access** is active, anyone can access the Designer and execute services. 
 **Anonymous** is the default setting.
 - If **Authenticated** is active, only defined users with a designated restriction level have access to the Designer and the server.<br>
-This option is available, if at least one user is defined and [Transport Layer Security](#transport-layer-security) is enabled.
+This option is available, if at least one user is defined and [Transport Layer Security](./server-settings) is enabled.
 
 ### Privileges (Global)
 
@@ -78,7 +78,7 @@ To open the service access control settings, click (![Login](/img/content/yunio/
 
 ### Service Access
 
-Activate or deactivate access control for the selected service. 
+Activate or deactivate further restrictions of existing global access rights for the selected service. 
 
 - If **Inherit** is active, the global access rights apply to the service, see [Global Access Control](#global-access-control). 
 **Inherit** is the default setting.
