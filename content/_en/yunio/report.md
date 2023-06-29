@@ -20,6 +20,7 @@ A report extraction is possible if the report returns a table-like structure in 
 **Warning:** **Beta-Version - Breaking Changes possible**
  The integration type is in preview mode. Breaking changes can be released anytime. 
 Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
+
 <!---
 {: .box-note }
 **Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. 
