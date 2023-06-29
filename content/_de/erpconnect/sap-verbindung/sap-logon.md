@@ -105,11 +105,23 @@ using (R3Connection con = new R3Connection())
 
 ### Connection String
 
-Sie können einen Connection String verwenden, um eine SAP-Verbindung zu öffnen. Beispiel:
+Sie können einen Connection String verwenden, um eine SAP-Verbindung zu öffnen. 
+
+Beispiel für einen Login mit einem SAP Application Server:
 
 ```csharp
-string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
 R3Connection con = new R3Connection();
+string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+
+con.ParseConnectionString(ConnectionString);
+con.Open();
+```
+
+Beispiel für einen Login via Load Balancing:
+
+```csharp
+R3Connection con = new R3Connection();
+string ConnectionString = "R3NAME=con GROUP=ADAPTER MSHOST=MSSERVER CLIENT=800 LANG=EN USER=YourUserName PASSWD=YourPassword";
 
 con.ParseConnectionString(ConnectionString);
 con.Open();

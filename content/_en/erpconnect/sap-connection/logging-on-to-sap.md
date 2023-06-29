@@ -71,8 +71,9 @@ using (R3Connection con = new R3Connection())
 }
 ```
 
-The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). When using the NW RFC protocol you can explicitly set an encoding. This is necessary if your SAP credentials contain characters that are not part of SAP code page 1100.
-Example:
+The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). When using the NW RFC protocol you can explicitly set an encoding. 
+This is necessary if your SAP credentials contain characters that are not part of SAP code page 1100.
+
 
 ```csharp
 conn.Protocol = ClientProtocol.NWRFC; 
@@ -104,11 +105,23 @@ using (R3Connection con = new R3Connection())
 
 ### Connection String
 
-You can use a connection string to open an SAP connection. Example:
+You can use a connection string to open an SAP connection. 
+
+Example for single server login:
 
 ```csharp
-string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
 R3Connection con = new R3Connection();
+string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+
+con.ParseConnectionString(ConnectionString);
+con.Open();
+```
+
+Example for Load Balancing:
+
+```csharp
+R3Connection con = new R3Connection();
+string ConnectionString = "R3NAME=con GROUP=ADAPTER MSHOST=MSSERVER CLIENT=800 LANG=EN USER=YourUserName PASSWD=YourPassword";
 
 con.ParseConnectionString(ConnectionString);
 con.Open();
