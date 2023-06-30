@@ -27,7 +27,12 @@ Reihenfolge | Laufzeitumgebung | Entwicklungsumgebung(en)
 2 | [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 3 |Xtract IS| Xtract IS
 
+{: .box-note }
+**Hinweis:** Wenn Sie Visual Studio installieren, achten Sie darauf das Toolset "Data Storage & Processing" auszuwählen. 
+
+
 ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
+
 
 Der SQL-Server läuft auf der Laufzeitumgebung. Auf dieser Laufzeitumgebung werden die entwickleten SSIS-Pakete / Projekte in der SSISDB bereitgestellt und können mittels SQL Server Agent eingeplant und ausgeführt werden.
 
