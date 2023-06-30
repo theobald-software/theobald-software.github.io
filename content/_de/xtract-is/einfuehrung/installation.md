@@ -21,16 +21,16 @@ Xtract IS wird für die Entwicklung und Ausführung von SSIS-Paketen benötigt.
 
 Achten Sie darauf die notwendigen Tools in der richtigen Reihenfolge zu installieren:
 
-Laufzeitumgebung | Entwicklungsumgebung(en)
+Reihenfolge | Laufzeitumgebung | Entwicklungsumgebung(en)
 ------------ | -------------
-1. SQL Server | Visual Studio + SQL Sever Data Tools
-2. Visual Studio + SQL Sever Data Tools | SQL Server Integration Services
-3. Xtract IS| Xtract IS
+1 | SQL Server | [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)
+2 | [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+3 |Xtract IS| Xtract IS
 
 ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
- SQL-Server läuft auf der Laufzeitumgebung. Auf der Laufzeitumgebung werden die entwickelten SSIS Pakete bereitgestellt (SSISDB) und können
-mittels SQL Server Agent eingeplant. 
+Der SQL-Server läuft auf der Laufzeitumgebung. Auf dieser Laufzeitumgebung werden die entwickleten SSIS-Pakete / Projekte in der SSISDB bereitgestellt und können mittels SQL Server Agent eingeplant und ausgeführt werden.
+
 
 Um Xtract IS Dataflow Task verwenden zu können, muss die Datei  *XtractISSetup.exe* auf allen Instanzen mit einer gültigen Lizenz installiert werden. 
 Weitere Informationen dazu finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
@@ -100,13 +100,15 @@ Nach erfolgreicher Installation von Xtract IS erscheinen die Xtract IS Komponent
 
 ![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"}
 
-Sollten die Xtract IS Komponenten jedoch unsichtbar sein, kann das an der fehlenden Übereinstimmung der Versionen der Tools liegen. Die Target Server Version des verwendeten SSIS-Projektes muss mit der Version der installierten SQL Server Data Tools (SSDT) übereinstimmen.
+Sollten die Xtract IS Komponenten jedoch unsichtbar sein, kann das an der fehlenden Übereinstimmung der Versionen der Tools liegen. Die Deployment Target Version des verwendeten SSIS-Projektes muss mit der Version der installierten SQL Server Data Tools (SSDT) übereinstimmen.
 Sonst fehlen die notwendigen Xtract IS-Erweiterungen in der SQL Server-Installation (SSDT) und Laufzeitfehler können angezeigt werden. 
 
-Ändern Sie die Zielumgebung für das Deployment, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
+Ändern Sie die Target Server Version für das Deployment, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
 
 ![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 
-
-
+****
+## Weiterführende Links
+- [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)
+- [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 
