@@ -24,7 +24,7 @@ Achten Sie darauf die notwendigen Tools in der richtigen Reihenfolge zu installi
 Laufzeitumgebung | Entwicklungsumgebung(en)
 ------------ | -------------
 1. SQL Server | Visual Studio + SQL Sever Data Tools
-2. Visual Studio + SQL Sever Data Tools | SSIS
+2. Visual Studio + SQL Sever Data Tools | SQL Server Integration Services
 3. Xtract IS| Xtract IS
 
 ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
