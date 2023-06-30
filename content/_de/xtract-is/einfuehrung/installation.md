@@ -30,8 +30,7 @@ Reihenfolge | Laufzeitumgebung | Entwicklungsumgebung(en)
 {: .box-note }
 **Hinweis:** Wenn Sie Visual Studio installieren, achten Sie darauf das Toolset "Data Storage & Processing" auszuwählen. 
 
-
-![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
+<!--- ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"} --->
 
 
 Der SQL-Server läuft auf der Laufzeitumgebung. Auf dieser Laufzeitumgebung werden die entwickleten SSIS-Pakete / Projekte in der SSISDB bereitgestellt und können mittels SQL Server Agent eingeplant und ausgeführt werden.
@@ -80,7 +79,6 @@ Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-An
 
 Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)-Befehlt mit dem Switch `/wait`.
 
-
 {: .box-note }
 **Hinweis:** Achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
@@ -113,7 +111,7 @@ Sonst fehlen die notwendigen Xtract IS-Erweiterungen in der SQL Server-Installat
 ![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 
 ****
-## Weiterführende Links
+#### Weiterführende Links
 - [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)
 - [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 
