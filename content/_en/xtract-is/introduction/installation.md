@@ -24,8 +24,8 @@ Make sure to install the necessary tools in the correct order:
 
 Order | Runtime Environment | Development Environment(s)
 ------------ | -------------
-1 | SQL Server | [Visual Studio](https://visualstudio.microsoft.com/free-developer-offers/) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
-2 | [Visual Studio](https://visualstudio.microsoft.com/free-developer-offers/) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+1 | SQL Server | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
+2 | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 3 |Xtract IS| Xtract IS
 
 {: .box-note }
