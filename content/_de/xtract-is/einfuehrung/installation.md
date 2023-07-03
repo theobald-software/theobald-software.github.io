@@ -13,37 +13,39 @@ progressstate: 5
 ---
 
 Xtract IS wird für die Entwicklung und Ausführung von SSIS-Paketen benötigt. 
-Stellen Sie sicher, dass Sie Xtract IS auf beiden Maschinentypen installieren:
-- Auf der Entwicklungsmaschine, auf der Visual Studio / SQL Sever Data Tools läuft. Es können auch mehrere Maschinen sein.
-- Auf der Maschine, auf dem der SQL-Server läuft. Diese Maschine wird für das Deployment und den Betrieb der Pakete verwendet.
 
-{: .box-tip }
-**Empfehlung:** Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance. 
-Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-is-version-history) auf Updates. 
-Eine neuere Version kann über die ältere Version installiert werden. 
-
-![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
-
-
-### Voraussetzungen
-
-- SSIS / Visual Studio Extentions sind installiert
+### Voraussetzungen 
 
 {: .box-note }
 **Hinweis:** Administratorberechtigungen sind notwendig, um Xtract IS zu installieren.
 
-Um Xtract IS verwenden zu können, muss die Datei  *XtractISSetup.exe* in der lokalen Entwicklungsumgebung (Visual Studio oder SSDT)
-**und** auf dem  SSIS Server ausgeführt und installiert werden. Weitere Informationen finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
+Achten Sie darauf die notwendigen Tools in der richtigen Reihenfolge zu installieren:
 
-{% include _content/de/einfuehrung/produktversion.md %}	
+Reihenfolge | Laufzeitumgebung | Entwicklungsumgebung(en)
+------------ | -------------
+1 | SQL Server | [Visual Studio]((https://visualstudio.microsoft.com/free-developer-offers/)) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
+2 | [Visual Studio]((https://visualstudio.microsoft.com/free-developer-offers/)) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+3 |Xtract IS| Xtract IS
 
-### Interaktive Installation
+{: .box-note }
+**Hinweis:** Wenn Sie Visual Studio installieren, achten Sie darauf das Toolset "Data Storage & Processing" auszuwählen. 
 
-Interaktive Installation ist die Standardprozedur mit GUI. Führen Sie die Datei *XtractISSetup.exe* aus und folgen Sie den Anweisungen des Setup-Programms. 
+<!--- ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"} --->
+
+
+Der SQL-Server läuft auf der Laufzeitumgebung. Auf dieser Laufzeitumgebung werden die entwickleten SSIS-Pakete / Projekte in der SSISDB bereitgestellt und können mittels SQL Server Agent eingeplant und ausgeführt werden.
+
+
+Um Xtract IS Data Flow Tasks verwenden zu können, muss die Datei *XtractISSetup.exe* auf allen Instanzen mit einer gültigen Lizenz installiert werden. 
+Weitere Informationen dazu finden Sie im Abschnitt [Lizenzierung](./lizenz-einspielen).
+
+### Installation mittels Setup-Programm
+
+Führen Sie die Datei *XtractISSetup.exe* aus und folgen Sie den Anweisungen des Setup-Programms. 
 
 ![XIS_Setup](/img/content/xis/xis_setup-exe.png){:class="img-responsive"}
 
-Das Xtract IS Setup installiert Xtract IS als Plug-in in SSIS.
+Das Xtract IS Setup-Programm installiert Xtract IS als Plug-in in SSIS.
 
 Der Lizenzinstallationsvorgang ist im Abschnitt [Lizenz einspielen](./lizenz-einspielen#installation-der-xtract-is-lizenz---xtractislicensejson) beschrieben.
 
@@ -56,7 +58,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | ABAP Verzeichnis | Verzeichnis mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
 | XtractISSetup.exe | Anwendung zur Installation und Registrierung der Xtract IS-Komponenten innerhalb von SSIS.|
 | XtractISConversionPreparer.exe | Tool, das SSIS-Pakete (inkl. Xtract IS-Komponente), die für ältere Versionen von SSIS erstellt wurden, für die Migration auf neuere Versionen von SSIS vorbereitet. Weitere Informationen im Abschnitt [SSIS Migration](./ssis-migration).|
-|xis_version.bat | Versions-Batchdatei. Achten Sie beim Start von xis_version.bat darauf, die Datei XtractISVersionInfo.exe aus dem Installationsverzeichnis als Parameter zu übergeben.|
+| XtractISVersionInfo.exe | Starten Sie die XtractISVersionInfo.exe Datei über das Kommandozeilen-Tool aus, um die installierte installierte Xtract IS Version auszulesen udn anzuzeigen.|
 | XtractLicenseManager.exe | Anwendung zum Einspielen und Prüfen der aktuellen Lizenz. |
 |Uninstall Xtract IS.lnk| Tool zum Deinstallieren und Entfernen von Xtract IS mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | gac-uninstall.bat | Tool zum Leeren des GAC von allen Xtract IS-bezogenen Komponenten.|
@@ -66,42 +68,51 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 
 
 
-### Unbeaufsichtigte Installation 
+### Unattended Installation (Unbeaufsichtigte Installation) 
 
-Das Setup-Programm und der Lizenz-Manager können nichtinteraktiv und ohne die Anzeige der GUI gestartet werden. 
+Das Setup-Programm und der Lizenz-Manager können nicht interaktiv und ohne die Anzeige der GUI gestartet werden. 
 
-#### XtractISSetup.exe
-Um ein Setup im Silent-Modus auszuführen, verwenden Sie den Switch *--unattended* . <br>
+- Um `XtractISSetup.exe` im unbeaufsichtigten Modus auszuführen, verwenden Sie den Switch *--unattended*.
+- Um den `XtractLicenseManager.exe` (Lizenz-Manager)  im unbeaufsichtigten Modus auszuführen, übergeben Sie den Pfad zur Lizenzdatei als Argument.
 
-![XIS_Setup-unattended](/img/content/xis/cmd-unattended-switch.png){:class="img-responsive"}
+Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-Anwendungen sind, wartet die Windows Eingabeaufforderung nicht bis die Installation abgeschlossen ist. 
+Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)-Befehlt mit dem Switch `/wait`.
 
 {: .box-note }
 **Hinweis:** Achten Sie auf die Groß- und Kleinschreibung der Parameter. 
 
-#### XtractLicenseManager.exe
-Um den Lizenz-Manager im Silent-Modus auszuführen, übergeben Sie den Pfad zur Lizenzdatei als Argument.
-
-#### Warten bis die Installation abgeschlossen ist
-Da beide Programme `XtractISSetup.exe` und `XtractLicenseManager.exe` Windows-Anwendungen sind, wartet die Windows Eingabeaufforderung nicht bis die Installation abgeschlossen ist. 
-
-Um zu warten, bis die Installation abgeschlossen ist, verwenden Sie den [start](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/start)-Befehlt mit dem Switch `/wait`.
-
-**Beispiele:**
 ```
 start /wait XtractISSetup.exe --unattended
 start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```
+
+
+### Aktualisierung
+
+{: .box-tip }
+**Empfehlung:** Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance. 
+Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-is-version-history) auf Updates. 
+Eine neuere Version kann über die ältere Version installiert werden. 
+
+{% include _content/de/einfuehrung/produktversion.md %}	
+
 
 ### Xtract IS Komponenten in Visual Studio anzeigen
 Nach erfolgreicher Installation von Xtract IS erscheinen die Xtract IS Komponenten automatisch als Datenfluss-Komponenten in der SSIS-Toolbox Ihres Visual Studio Integration Services Projekts.
 
 ![XIS_SSIS_Toolbox](/img/content/XIS_SSIS_Toolbox.png){:class="img-responsive"}
 
-{: .box-warning }
-**Warnung! Xtract IS Komponenten nicht sichtbar.**<br> Mit der aktuellen Version der SSDT für VS 2015 ist der *SQL Server vNext* oder *SQL Server 2017* standardmäßig als Zielumgebung für das Deployment von SSIS Projekten ausgewählt. Mit dieser Einstellung sind die Xtract IS Komponenten in der SSIS Toolbox nicht sichtbar. <br> Ändern Sie die Zielumgebung für das Deployment auf SQL Server 2016, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
+Wenn die Xtract IS Komponenten nicht sichtbar sind, prüfen Sie die Übereinstimmung der Versionen der Tools. 
+
+Die Deployment Target Version des verwendeten SSIS-Projektes muss mit der Version der installierten SQL Server Data Tools (SSDT) übereinstimmen.
+Wenn die Versionen nicht übereinstimmen, fehlen die notwendigen Xtract IS-Erweiterungen in der SQL Server-Installation (SSDT) und Laufzeitfehler können angezeigt werden. 
+
+Ändern Sie die Target Server Version für das Deployment, um die Xtract IS Komponenten in der Toolbox anzuzeigen.
 
 ![XIS_deployment_target_version_vNext](/img/content/VS_Deployment_Target.png){:class="img-responsive"}
 
-
-
+****
+#### Weiterführende Links
+- [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)
+- [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 
