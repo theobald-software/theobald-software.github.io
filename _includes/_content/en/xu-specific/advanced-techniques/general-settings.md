@@ -34,7 +34,12 @@ This option needs to be active when using “Column Encryption”, see [Encrypti
 #### Keywords
 One or more keywords (Tags) can be set to an extraction. 
 Keywords can be entered directly in the keyword field.
-Within the Designer you can use these keywords to filter  extractions. 
+Within the Designer you can use these keywords to filter extractions. 
+
+{:.box-tip}
+**Tip:** To add keywords to multiple extractions at once, select the extractions in the main window of the Designer.
+Via right-click + **Add/Remove keywords** the window "Add/Remove Keywords To/From Multiple Extractions" opens.
+
 
 ### Primary Key Tab
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  

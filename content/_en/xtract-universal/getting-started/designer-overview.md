@@ -35,7 +35,7 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Delete an existing extraction | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone | Clone an existing extraction | -
-![designer-icon](/img/content/icons/designer/keyword.png) | Add/Remove Keywords | Open the keyword menu | -
+![designer-icon](/img/content/icons/designer/keyword.png) | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](./general-settings#misc-tab)
 ![designer-icon](/img/content/icons/designer/source.png)| Source | Select an existing SAP source system | [SAP Connection](../introduction/sap-connection)
 ![designer-icon](/img/content/icons/designer/destination.png)| Destination | Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)
 ![designer-icon](/img/content/icons/designer/log1.png) | Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
@@ -111,7 +111,7 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Delete an existing extraction | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone | Clone an existing extraction | -
-![designer-icon](/img/content/icons/designer/keyword.png) | Add/Remove Keywords | Define keywords of selected extractions | -
+![designer-icon](/img/content/icons/designer/keyword.png) | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](./general-settings#misc-tab)
 ![designer-icon](/img/content/icons/designer/log1.png) | Log | Open extraction log | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
 ![designer-icon](/img/content/icons/designer/source.png) | Source settings| Select an existing SAP source system | -
 ![designer-icon](/img/content/icons/designer/destination.png) | Destination settings | Select a destination | [Destinations](https://help.theobald-software.com/en/xtract-universal/destinations)

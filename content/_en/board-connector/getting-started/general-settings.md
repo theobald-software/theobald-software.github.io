@@ -31,15 +31,10 @@ The miscellaneous tab consists of two subsections:
 ![General-Settings](/img/content/General-SettingsBC.png){:class="img-responsive"}
 
 #### Options
-**Cache results** (1)
-
+**Cache results** 
 
 BOARD often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way BOARD pulls the data from cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. If this behavior is not wanted (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
-
-**Preview Mode** (2)
-
-If preview mode is activated, only a small portion of data is extracted from SAP or, if extraction is not possible, sample data is generated instead.
 
 
 #### Keywords
@@ -48,8 +43,9 @@ Keywords can be entered directly in the keyword field (3).
 Within the Designer you can use these keywords to filter  extractions. 
 
 {:.box-tip}
-**Tip:** to display filter options, navigate to **[Extractions] > [Filter]** or press **[CTRL]+[F]**.
- 
+**Tip:** To add keywords to multiple extractions at once, select the extractions in the main window of the Designer.
+Via right-click + **Add/Remove keywords** the window "Add/Remove Keywords To/From Multiple Extractions" opens.
+
 
 ### Security Tab
 The security tab is described in the section [access management](https://help.theobald-software.com/en/board-connector/security/access-management).
