@@ -19,7 +19,7 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 
 
 {: .box-note }
-**Hinweis:** Ansichten, Cluster- und Pool-Tabellen werden von der Table CDC Komponente nicht unterstützt.
+**Hinweis:** Views, Cluster- und Pool-Tabellen werden von der Table CDC Komponente nicht unterstützt.
 
 ### Voraussetzungen
 
