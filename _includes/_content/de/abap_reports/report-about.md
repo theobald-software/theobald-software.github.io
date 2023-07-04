@@ -1,5 +1,5 @@
 
-Die Report Komponente ermöglicht Datenextraktionen der meisten Standard und benutzerdefineirten ABAP Reports und SAP Transaktionen.<br>
+Die Report Komponente ermöglicht Datenextraktionen der meisten Standard und benutzerdefinierten ABAP Reports und SAP Transaktionen.<br>
 Prinzipiell ist eine Report Extraktion möglich wenn der Report in SAP eine tabellenartige Struktur zurückgibt.
 
 {: .box-note }
