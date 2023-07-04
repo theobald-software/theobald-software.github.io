@@ -1,4 +1,4 @@
-Mit der Komponente lassen sich Delta-Inhalte aus SAP Tabellen und Views abziehen. 
+Mit der Komponente lassen sich Delta-Inhalte aus SAP Tabellen abziehen. 
 Dafür wird in SAP eine Log-Tabelle erstellt, die alle Änderungen (Einfügen, Ändern, Löschen) einer ausgewählten Tabelle aufzeichnet.
 
 
