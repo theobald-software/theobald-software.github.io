@@ -9,7 +9,7 @@ The Custom function modules/ABAP framework are delivered as a part of Theobald S
 The following components require installation of a custom function module in SAP:
 
 - **Table**: For most tasks, the installation of an ABAP framework is recommended or required. Refer to [Custom function module for table extraction](./sap-customizing/custom-function-module-for-table-extraction). 
-{% if page.product == "xtract-universal" or page.product == "board-connector" %}- **TableCDC**: The installation of 2 custom function modules is required, refer to [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}- **TableCDC**: The installation of two custom function modules is required, refer to [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).{% endif %}
 - **Report**: The installation of a custom function module is required, refer to [Install Report Custom Function Module](./sap-customizing/install-report-custom-function-module).
 
 ### Transport Requests
