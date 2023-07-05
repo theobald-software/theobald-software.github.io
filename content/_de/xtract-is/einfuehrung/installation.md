@@ -23,15 +23,14 @@ Achten Sie darauf die notwendigen Tools in der richtigen Reihenfolge zu installi
 
 Reihenfolge | Laufzeitumgebung | Entwicklungsumgebung(en)
 ------------ | -------------
-1 | SQL Server | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
+1 | SQL Server (+ [Integration Services](https://learn.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services?view=sql-server-ver16#install-integration-services)) | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
 2 | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 3 |Xtract IS| Xtract IS
 
 {: .box-note }
 **Hinweis:** Wenn Sie Visual Studio installieren, achten Sie darauf das Toolset "Data Storage & Processing" auszuwählen. 
 
-<!--- ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"} --->
-
+[xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
 Der SQL-Server läuft auf der Laufzeitumgebung. Auf dieser Laufzeitumgebung werden die entwickleten SSIS-Pakete / Projekte in der SSISDB bereitgestellt und können mittels SQL Server Agent eingeplant und ausgeführt werden.
 
@@ -115,4 +114,6 @@ Wenn die Versionen nicht übereinstimmen, fehlen die notwendigen Xtract IS-Erwei
 #### Weiterführende Links
 - [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)
 - [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+- [Integration Services](https://learn.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services?view=sql-server-ver16#install-integration-services)
+
 

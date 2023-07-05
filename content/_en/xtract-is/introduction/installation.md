@@ -24,7 +24,7 @@ Make sure to install the necessary tools in the correct order:
 
 Order | Runtime Environment | Development Environment(s)
 ------------ | -------------
-1 | SQL Server | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
+1 | SQL Server (+ [Integration Services](https://learn.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services?view=sql-server-ver16#install-integration-services))| [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
 2 | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 3 |Xtract IS| Xtract IS
 
@@ -32,7 +32,7 @@ Order | Runtime Environment | Development Environment(s)
 **Note:**
 When you install Visual Studio, make sure to select the Data Storage & Processing toolset. 
 
-<!--- ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"} --->
+[xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
 SQL Server runs on the runtime environment. On the runtime environment, the developed SSIS packages are deployed (SSISDB) and can be
 scheduled by means of SQL Server Agent. 
@@ -115,6 +115,7 @@ Change the Target Server version for deployment to display the Xtract IS compone
 #### Related Links
 - [Visual Studio + SQL Server Data Tools](https://visualstudio.microsoft.com/free-developer-offers/)
 - [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+- [Integration Services](https://learn.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services?view=sql-server-ver16#install-integration-services)
 
 
 
