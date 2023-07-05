@@ -32,7 +32,7 @@ Order | Runtime Environment | Development Environment(s)
 **Note:**
 When you install Visual Studio, make sure to select the Data Storage & Processing toolset. 
 
-[xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
+![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
 SQL Server runs on the runtime environment. On the runtime environment, the developed SSIS packages are deployed (SSISDB) and can be
 scheduled by means of SQL Server Agent. 
