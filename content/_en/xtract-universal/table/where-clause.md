@@ -19,3 +19,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 #### Related Links
 - [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
 - [Knowledge Base Article: Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
+- [Knowledge Base Article: Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/xtract-universal/where-clause-editor-lists)
