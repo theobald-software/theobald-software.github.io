@@ -13,6 +13,6 @@ lang: de_DE
 {% include _content/de/einfuehrung/update.md %}
 
 ### Erstellen eines Backups
-Machen Sie sich eine Kopie aller SSIS-Pakete, welche Xtract IS verwenden.
+Kopieren Sie alle SSIS-Pakete, welche Xtract IS verwenden.
 Wir empfehlen in regelmäßigem Abstand ein Backup zu erstellen, damit Sie bei Bedarf auf die vorige Version wechseln können.
-Merken Sie sich ebenfalls die Produktversion, welche Sie gerade im Einsatz haben, damit Sie im Fehlerfall wieder auf dieselbe Version wechseln können.
+Achten Sie auf die Produktversion, welche Sie gerade im Einsatz haben, damit Sie im Fehlerfall wieder auf dieselbe Version wechseln können.

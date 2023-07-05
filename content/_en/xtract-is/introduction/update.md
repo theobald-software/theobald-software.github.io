@@ -13,7 +13,7 @@ lang: en_GB
 {% include _content/en/requirements/update.md %}
 
 ### How to create a backup?
-Create a copy of all SSIS packages that use Xtract IS.
+Copy all SSIS packages that use Xtract IS.
 Theobald Software recommends to create backups at regular intervals to easily switch back to the previous version, if necessary.
 
-Make sure to note the product version you are currently using to switch back to the same version in case of an error.
+Note the product version you are currently using to switch back to the same version in case of an error.
