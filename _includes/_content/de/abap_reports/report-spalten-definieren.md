@@ -47,7 +47,7 @@ Man definiert die Spalten eines Reports wie folgt:
 **Hinweis:** Sobald eine Spalte definiert ist und grün hinterlegt wurde, können Spaltenbreite und Offset nicht über den Graphik Editor geändert werden. Bearbeiten Sie die Spalten im Abschnitt *Columns*.
 
 
-#### Einstellungen für Zeilen
+### Einstellungen für Zeilen
 **Skip rows from top**<br>
 Geben Sie die Anzahl der Zeilen ein, die Sie zu Beginn des Reports überspringen möchten. 
 Einige Reports zeigen im Dateikopf Metainformationen an. Hiermit können Sie die Metainformationen überspringen.
