@@ -41,7 +41,7 @@ When automatic column detection is not possible, the report's column names, widt
 {: .box-note }
 **Note:** Once a column is set and highlighted with a green background, its width and offset can't be changed via the graphics editor. Change it using the *Columns* section.
 
-#### Row Settings
+### Row Settings
 **Skip rows from top**<br>
 Enter the number of rows you want to skip at the beginning of the report.
 Some reports display meta information in the header section of the report, before the actual report body. This setting allows skipping the meta information. 
