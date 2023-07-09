@@ -13,8 +13,12 @@ lang: en_GB
 progressstate: 5
 ---
 
-The following section shows how to create an SAP connection using the [Data Connection Manager](https://help.alteryx.com/20223/server/dcm-server) of Alteryx.<br>
+The following section shows how to create an SAP connection using the [Data Connection Manager](https://help.alteryx.com/20231/designer/dcm-designer) (DCM) of Alteryx.<br>
 An SAP connection is required to use any Xtract for Alteryx component.
+
+{: .box-note }
+**Note:** The Alteryx Data Connection Manager is available as of Alteryx Designer version 2021.4. 
+If you use an older version of the Alteryx Designer, refer to the knowledge base article []() to create SAP connections using the Xtract for Alteryx UI.
 
 ### Creating Credentials
 The SAP connection for Xtract for Alteryx uses existing credentials from the Data Connection Manager.<br>
@@ -37,11 +41,10 @@ The credentials is displayed in the list of credentials.
 
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
 2. Click **[New Data Source]**.<br>
-3. Select To connect to an SAP source system:<br>
-- Look up *SAP Application Server* to connect to SAP via a single application server.
-- Look up *SAP Load Balancing* to connect to SAP via a load balancing server.<br>
+3. Look Up and select one of the following technologies:<br>
+- *SAP Application Server* connects to SAP via a single application server.
+- *SAP Load Balancing* connects to SAP via a load balancing server.<br>
 ![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
-
 3. Fill out the data source details to establish an SAP connection, see [Data Source Settings](#data-source-settings). <br>
 4. In the subsection *Connection* The connection details consist of four subsections: 
 [Secure Network Communication](#authentication).<br>
@@ -108,7 +111,7 @@ Activate the debug logging only when necessary e.g., upon request of the support
 
 #### Expert Options
 
-**Use SAP GIU for specialized BAPIs**<br>
+**Use SAP GUI for specialized BAPIs**<br>
 
 ### Basic Authenthication
 
@@ -129,8 +132,6 @@ For more information on SNC, see the knowledge base article [Enabling Secure Net
 Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer**. <br>
 For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
 
-
 *****
 #### Related Links
 - [Alteryx Documentation: Data Connection Manager - Server](https://help.alteryx.com/20223/server/dcm-server)
-- [Alteryx Documentation: Data Connection Manager - Server UI](https://help.alteryx.com/20223/server/data-connection-manager-server-ui)
