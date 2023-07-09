@@ -80,7 +80,6 @@ NWF$(document).ready(function() {
 {% endhighlight %}
 
 Für weitere Informationen siehe [JavaScript Library for REST]().  
-Dieses Szenario können Sie auch mit ECS Core umsetzen, siehe [Developing with ECS Core]().
 
 **Schritt 3: Die Nintex Form ausführen**
 

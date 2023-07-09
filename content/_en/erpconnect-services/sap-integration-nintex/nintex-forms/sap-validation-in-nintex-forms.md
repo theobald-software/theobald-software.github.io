@@ -80,9 +80,6 @@ NWF$(document).ready(function() {
 ```
 
 
-For more information check [JavaScript Library for REST]().  <br>
-This scenario would work with ECS Core too, check [Developing with ECS Core]().
-
 **Step 3: Run the Nintex Form**
 
 Now run the form. Fill in an SAP customer number. The customer name will be fetched from SAP and written in the second field. 
