@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-04
+ref: xtract-for-alteryx-40
 layout: page
 title: SAP-Verbindung 
 description: SAP-Verbindung konfigurieren
@@ -19,13 +19,10 @@ Eine SAP-Verbindung ist notwendig, um Xtract for Alteryx-Komponenten zu verwende
 
 ### SAP-Verbindung erstellen
 1. Ziehen Sie aus der Alteryx-Designer-Toolbox eine Xtract for Alteryx-Komponente auf die Arbeitsfläche (1). Das Konfigurationsfenster geöffnet sich. 
-![Create-New-Table-Extraction](/img/content/xfa/xfa_create_table_extraction_02.png){:class="img-responsive"}
 2. Klicken Sie auf **[New]** (2) um eine neue Verbindung anzulegen. Das Fenster "SAP Connection Details" öffnet sich. 
 3. Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.<br>
 Die Verbindungsdetails bestehen aus vier Unterabschnitten: [System](#system), [Client and Language](#client-and-language), [Authentication](#authentifizierung) und [Miscallaneous](#miscellaneous).<br>
-![Connection details](/img/content/xfa/xfa_connection-det.png){:class="img-responsive"}
 4. Klicken Sie auf **[Test Connection]**, um die SAP-Verbindung zu testen. Ein Bestätigungsfenster öffnet sich.<br>
-![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
 5. Klicken Sie auf **[OK]**, um die SAP-Verbindung zu speichern.
 
 Die SAP-Verbindung kann nun im Konfigurationsfenster ausgewählt werden (2).<br>
@@ -69,7 +66,6 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 - **Plain** (2): SAP-Benutzername und Passwort (System- oder Dialog-Benutzer)
 - **SAP Log On Ticket** (3): verwendet SAP Logon-Tickets anstelle der Benutzerdaten. Diese Verbindung ist nicht verschlüsselt.
 
-![Connection details](/img/content/xfa/xfa_connection-auth.png){:class="img-responsive"}
 
 #### SNC (1)
 1. Überprüfen Sie den SAP parameter snc/gssapi_lib *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird. 
