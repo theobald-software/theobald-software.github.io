@@ -1,7 +1,7 @@
 ---
 ref: xi-requirements-and-installation-06
 layout: page
-title: Update oder neue Version Installieren
+title: Update
 description: Installation eines Updates
 product: xtract-is
 parent: einfuehrung
