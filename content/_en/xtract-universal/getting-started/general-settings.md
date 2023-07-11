@@ -13,7 +13,3 @@ progressstate: 5
 ---
 {% include _content/en/xu-specific/advanced-techniques/general-settings.md %}
 
-*******
-#### Related Links
-
-- [Filtering the Extractions](../advanced-techniques/regular-expressions)
