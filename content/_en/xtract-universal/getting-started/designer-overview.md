@@ -24,14 +24,14 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/reset-preferences.png) | Reset Preferences  | Reset connection settings to server | [Connecting Designer and Server](../getting-started/connect-designer-with-server)
 ![designer-icon](/img/content/icons/designer/disconnect.png) | Disconnect | Logging off the server | -
-![designer-icon](/img/content/icons/designer/exit.png) | Exit | Exits the Designer | -
+![designer-icon](/img/content/icons/designer/exit.png) | Exit | Close the Designer | -
 
 
 #### Extraction
 
 Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
-![designer-icon](/img/content/icons/designer/add.png) | New  | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
+![designer-icon](/img/content/icons/designer/add.png) | New  | Create a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Edit an existing extraction | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Delete an existing extraction | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone | Clone an existing extraction | -
@@ -42,7 +42,7 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![designer-icon](/img/content/icons/designer/run.png)| Run  | Run a selected extraction | [Running an Extraction](../getting-started/run-an-extraction)
 ![designer-icon](/img/content/icons/designer/abort.png) | Abort | Abort a selected extraction | -
 ![designer-icon](/img/content/icons/designer/clear-result-cache.png) | Clear Result Cache | Clear extraction cache | [Cache results](../getting-started/general-settings#misc-tab)
-![designer-icon](/img/content/icons/designer/refresh.png) | Refresh | Refreshing extraction status | -
+![designer-icon](/img/content/icons/designer/refresh.png) | Refresh | Refresh extraction status | -
 ![designer-icon](/img/content/icons/designer/filter.png) | Filter | Define filters or keywords |  [Define Keywords](../getting-started/general-settings#misc-tab)
 
 #### Server
@@ -77,7 +77,7 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 
 Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
-![designer-icon](/img/content/icons/designer/add.png) | New | Creating a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
+![designer-icon](/img/content/icons/designer/add.png) | New | Create a new extraction | [Defining a Table Extraction](../getting-started/define-a-table-extraction)
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit |  Edit existing extraction | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete |  Delete existing extraction  | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone |  Clone existing extraction  | - 
