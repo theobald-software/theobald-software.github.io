@@ -15,7 +15,7 @@ progressstate: 5
 ### Creating an Extraction
 The following example shows the creation of an extraction using "SAP Table or View" component.<br>
 1. In the main window of the Xtract Universal Designer click **[New]**.  
-![Create-New-Table-Extraction](/img/content/xu_extraction_anlegen.png){:class="img-responsive"}
+![Create-New-Table-Extraction](/img/content/xu/xu-intro.png){:class="img-responsive"}
 The window "Create Extraction" opens. <br>
 2. Field **Source** (1) states the SAP connection. Choose the SAP connection you created previously from the drop-down menu (1). 
 ![Table_or_View](/img/content/table/table_new_extraction.png){:class="img-responsive"}

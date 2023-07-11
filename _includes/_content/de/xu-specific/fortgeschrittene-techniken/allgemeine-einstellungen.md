@@ -41,8 +41,8 @@ Schlüsselwörter können direkt in das Schlüsselwortfeld eingegeben werden.
 Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extraktionen verwenden. 
 
 {:.box-tip}
-**Tipp:** zum Anzeigen der Filteroptionen, navigieren Sie zu **[Extractions] > [Filter]** oder drücken Sie **[CTRL]+[F]**.
-
+**Tipp:** Um mehreren Extraktionen Schlüsselwörter hinzuzufügen, markieren Sie die Extraktionen im Hauptfenster des Designers.
+Über Rechtklick + **Add/Remove keywords** öffnen Sie das Fenster "Add/Remove Keywords To/From Multiple Extractions".
 
 ### Primary Key Tab
 Tabellenextraktionen erben die Primärschlüssel von SAP. Andere Objekte wie z.B. SAP Query, BW Cube etc. erfordern eine manuelle Einstellung von Primärschlüsseln. 

@@ -32,26 +32,22 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 
 #### Options
 
-**Cache results** (1)
+**Cache results** 
 
-Board zieht die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
- so dass Board die Daten aus dem Cache und nicht aus dem SAP zieht.
-Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
- Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
-
-**Preview Mode** (2)
-
-Wenn der Preview-Modus aktiviert ist, wird nur ein kleiner Teil der Daten aus SAP extrahiert oder, falls eine Extraktion nicht möglich ist, werden stattdessen Beispieldaten erzeugt.
+Board zieht die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen, sodass Board die Daten aus dem Cache und nicht aus dem SAP zieht.
+Das erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
+Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
 
 
 #### Keywords (Schlüsselwörter)
 
 Ein oder mehrere Schlüsselwörter (Tags) können auf eine Extraktion gesetzt werden. 
-Schlüsselwörter können direkt in das Schlüsselwortfeld (3) eingegeben werden.
+Schlüsselwörter können direkt in das Schlüsselwortfeld eingegeben werden.
 Innerhalb des Designers können Sie diese Schlüsselwörter zum Filtern von Extraktionen verwenden. 
 
 {:.box-tip}
-**Tipp:** zum Anzeigen der Filteroptionen, navigieren Sie zu **[Extractions] > [Filter]** oder drücken Sie **[CTRL]+[F]**.
+**Tipp:** Um mehreren Extraktionen Schlüsselwörter hinzuzufügen, markieren Sie die Extraktionen im Hauptfenster des Designers.
+Über Rechtklick + **Add/Remove keywords** öffnen Sie das Fenster "Add/Remove Keywords To/From Multiple Extractions".
 
 
 ### Security Tab

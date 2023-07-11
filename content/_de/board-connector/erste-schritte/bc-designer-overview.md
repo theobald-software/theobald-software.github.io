@@ -35,6 +35,7 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Vorhandene Extraktion bearbeiten | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Vorhandene Extraktion bearbeiten | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone | Vorhandene Extraktion klonen | -
+![designer-icon](/img/content/icons/designer/keyword.png) | Add/Remove Keywords | Keywords (Schlüsselwörter) der markierten Extraktionen definieren | [Allgemeine Einstellungen](./allgemeine-einstellungen#misc-tab)
 ![designer-icon](/img/content/icons/designer/source.png)| Source | Vorhandenes SAP Quellsystem auswählen | -
 ![designer-icon](/img/content/icons/designer/log1.png)| Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
 ![designer-icon](/img/content/icons/designer/run.png)| Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
@@ -107,6 +108,7 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 ![designer-icon](/img/content/icons/designer/edit.png) | Edit | Vorhandene Extraktion bearbeiten | -
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Vorhandene Extraktion bearbeiten | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone | Vorhandene Extraktion klonen | -
+![designer-icon](/img/content/icons/designer/keyword.png) | Add/Remove Keywords | Keywords (Schlüsselwörter) der markierten Extraktionen definieren | [Allgemeine Einstellungen](./allgemeine-einstellungen#misc-tab)
 ![designer-icon](/img/content/icons/designer/log1.png) | Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
 ![designer-icon](/img/content/icons/designer/source.png) | Source settings | Vorhandenes SAP Quellsystem auswählen | -
 ![designer-icon](/img/content/icons/designer/run.png) | Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
