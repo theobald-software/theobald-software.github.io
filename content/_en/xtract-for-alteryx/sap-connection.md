@@ -20,93 +20,36 @@ An SAP connection is required to use any Xtract for Alteryx component.
 **Note:** The Alteryx Data Connection Manager is available as of Alteryx Designer version 2021.4. 
 If you use an older version of the Alteryx Designer, refer to the knowledge base article [Create an SAP Connection](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection) to create SAP connections using the Xtract for Alteryx UI.
 
-## Credentials & Authentication
+## Xtract Data Source
 
-You can combine SAP data sources with credentials to create an SAP connection. <br>
-The credentials in the DCM include the definition of the authentication method used to connect to SAP.
+You can combine Xtract data sources with credentials to create an SAP connection. <br>
+The installation of Xtract for Alteryx includes the Xtract data source technology that connects to SAP systems.
 
-### Creating Credentials
-
-<!---
-The SAP connection for Xtract for Alteryx uses existing credentials from the Data Connection Manager.<br>
-If no credentials exist, follow the steps below to add credentials for your SAP connection:
--->
+### Creating an Xtract Data Source
 
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
-2. In the tab *Credentials* click **[Add Credential]**.<br>
-![Credentials](/img/content/xfa/dcm/credentials.png){:class="img-responsive"}
-3. Enter a name for the credential.<br>
-![SNC-Credential](/img/content/xfa/dcm/snc.png){:class="img-responsive"}
-4. Select one of the following authentication methods: <br>
-- [*Plain*](#plain-authentication) uses the SAP username and password.
-- [*SAP SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
-- [*SAP Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
-5. Enter the authentication details of your SAP user.<br>
-6. Click **[Save]** to save the credential.
-
-The credential is displayed in the list of credentials.
-
-### Plain Authentication
-
-Enter your SAP username and password.
-
-### Secure Network Communication (SNC)
-
-Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract for Alteryx.
-
-1. Check the SAP parameter *snc/gssapi_lib* to determine which library is used for encryption in your SAP system.
-Your SAP basis has to import and configure the same library on the application server and on the machine that runs Xtract for Alteryx.
-2. When using SNC, make sure to enter the complete path of the library in the field **SNC library** e.g., ``C:\SNC\gx64krb5.dll``.
-3. Enter the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/do_not_care@THEOBALD.LOCAL``.
-
-For more information, see [SAP Help: Secure Network Communications (SNC)](https://help.sap.com/viewer/6f3e0bea6c4b101484fcf5305b4d624b/7.01.22/en-US/e656f466e99a11d1a5b00000e835363f.html) or refer to the knowledge base article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
-
-![SNC-Credential](/img/content/xfa/dcm/snc.png){:class="img-responsive"}
-
-### SAP Logon Ticket
-
-You can use Single-Sign-On (SSO) with SAP Logon-Tickets for authentication. This connection is not encrypted.
-
-Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer**. <br>
-For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
-
-![SAP-Logon-Ticket-Credential](/img/content/xfa/dcm/logon-tickets.png){:class="img-responsive"}
-
-## SAP Data Sources
-
-You can combine SAP data sources with credentials to create an SAP connection. <br>
-The installation of Xtract for Alteryx includes the installation of data source technologies that connect to SAP.
-
-### Creating an SAP Data Source
-
-1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
-2. Click **[New Data Source]**.<br>
-3. Look up and select one of the following Xtract technologies:<br>
-- *Xtract SAP Application Server* connects to SAP via a single application server.
-- *Xtract SAP Load Balancing* connects to SAP via a load balancing server.<br>
+2. In the tab *Data Sources* click **[New]** to create a new data source.<br>
+3. Select the **Xtract** technology to create an Xtract data source.
+4. Fill out the data source settings for your SAP system, see [Data Source Settings](#data-source-settings).<br>
 ![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
-3. Fill out the data source settings for your SAP system, see [Data Source Settings](#data-source-settings).
-...
 4. Click **[Save]** to save the SAP connection. The subsection *Connection* is displayed.
 5. In the subsection *Connection* select one of the following authentication methods: <br>
 - [*Plain*](#plain-authentication) uses the SAP username and password.
 - [*SAP SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
-- [*SAP Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
-6. Select an [existing credential](#creating-credentials) for your SAP system or click **+ Connect Credential** to create a new credential.<br>
-.gif animation of how to create new credential
-7. Click **[Save]** to save the SAP connection.
+- [*Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
+6. Select an [existing credential](#creating-credentials) for your SAP system or click **+ Connect Credential** to create a new credential.
+7. Click **[Link]** / **[Create and link]** to link the credential to the connection. Example:<br>
+![new-data-source](/img/content/xfa/dcm/new-data-source.gif){:class="img-responsive" style="border:1px solid black;"}
 
-The SAP connection is now available for selection in the Xtract for Alteryx components.
+The SAP connection is now available for selection in the Xtract for Alteryx components, see [Assigning an SAP Connection to an Xtract Component]().
+
 
 ### Data Source Settings
 
-An SAP data source consists of the following settings:<br>
 <!---
-![Data-Source-Settings](/img/content/xfa/dcm/data-source-settings.png){:class="img-responsive"}
+An SAP data source consists of the following settings:<br>
+![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
 -->
-
-**Data Source Name**<br>
-Name of the connection.
 
 **Technology**<br>
 There are two possibilities to connect to an SAP source system:
@@ -121,6 +64,9 @@ There are two possibilities to connect to an SAP source system:
 {: .box-tip }
 **Tip:** Values to fill out the data source settings can be found in the SAP Logon Pad in the *Properties* or acquired from SAP Basis team.
 	
+**Data Source Name**<br>
+Name of the connection.
+
 **Client**<br>
 A three-digit number of the SAP client between 000 and 999, e.g., 800.
 
@@ -149,9 +95,65 @@ Clear the **Trace Directory** field when it is not needed.
 A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
 Activate the debug logging only when necessary e.g., upon request of the support team.
 
-## Assigning an SAP Connection to an Xtract component
 
-1. Drag&drop an Xtract for Alteryx component from the Alteryx Designer tool box onto the canvas (1). The configuration window of the component opens.<br>
+## Credentials & Authentication
+
+You can combine SAP data sources with credentials to create an SAP connection. <br>
+The credentials in the DCM include the definition of the authentication method used to connect to SAP.
+
+### Creating Credentials
+
+<!---
+The SAP connection for Xtract for Alteryx uses existing credentials from the Data Connection Manager.<br>
+If no credentials exist, follow the steps below to add credentials for your SAP connection:
+-->
+
+1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
+2. In the tab *Credentials* click **[New]** to create a new credential.<br>
+![Credentials](/img/content/xfa/dcm/credentials.png){:class="img-responsive"}
+3. Enter a name for the credential and select one of the following authentication methods: <br>
+- [*Username and password*](#plain-authentication) uses the SAP username and password.
+- [*SAP SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
+- [*SAP Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
+4. Fill out the authentication details.
+5. Click **[Save]** to save the credential.
+
+The credential is displayed in the list of credentials.
+
+{: .box-tip }
+**Tip:** You can link credentials to multiple data sources.
+
+### Plain Authentication
+
+Enter your SAP username and password.
+
+![Plain-Credential](/img/content/xfa/dcm/plain.png){:class="img-responsive"}
+
+### Secure Network Communication (SNC)
+
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract for Alteryx.
+
+1. Check the SAP parameter *snc/gssapi_lib* to determine which library is used for encryption in your SAP system.
+Your SAP basis has to import and configure the same library on the application server and on the machine that runs Xtract for Alteryx.
+2. When using SNC, make sure to enter the complete path of the library in the field **SNC library** e.g., ``C:\SNC\gx64krb5.dll``.
+3. Enter the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/example@THEOBALD.LOCAL``.
+
+For more information, see [SAP Help: Secure Network Communications (SNC)](https://help.sap.com/viewer/6f3e0bea6c4b101484fcf5305b4d624b/7.01.22/en-US/e656f466e99a11d1a5b00000e835363f.html) or refer to the knowledge base article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+
+![SNC-Credential](/img/content/xfa/dcm/snc.png){:class="img-responsive"}
+
+### SAP Logon Ticket
+
+You can use Single-Sign-On (SSO) with SAP Logon-Tickets for authentication. This connection is not encrypted.
+
+Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer**. <br>
+For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
+
+![SAP-Logon-Ticket-Credential](/img/content/xfa/dcm/logon-tickets.png){:class="img-responsive"}
+
+## Assigning an SAP Connection to an Xtract Component
+
+1. Drag&drop an Xtract for Alteryx component from the Alteryx Designer toolbox onto the canvas (1). The configuration window of the component opens.<br>
 ![Create-New-Table-Extraction](/img/content/xfa//xfa_create_table_extraction_02.png){:class="img-responsive"}
 2. Select an SAP connection from the dropdown list (2).
 
