@@ -11,7 +11,8 @@ lang: de_DE
 ---
 
 {% include _content/de/table/where-bedingung.md %}
-
+{% include _content/de/table/where-bedingung-syntax.md  %}
+{% include _content/de/table/where-bedingung-editor.md  %}
 {% include _content/de/table/where-bedingung-laufzeitparameter.md %}
 
 **** 

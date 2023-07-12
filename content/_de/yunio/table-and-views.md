@@ -97,38 +97,9 @@ Standardmäßig sind alle Spalten für die Tabellenextraktion ausgewählt.
 Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.
 
 ### WHERE Clause
-Verwenden Sie eine WHERE-Bedingung, um Ihre Daten zu filtern.
+Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abapwhere.htm).
 
-#### Syntaxregeln
-
-- Geben Sie ein Leerzeichen vor und nach dem Gleichheitszeichen ein:<br>
- **Korrekt:** *JAHR = '1999'* <br>
- **Falsch:** *JAHR= '1999 '*, *JAHR ='1999'* oder *JAHR='1999'*
-
-- Setzten Sie die Fließkommazahlen in einfache Anführungszeichen: <br>
-**Korrekt:** *KMENG > '10.3'* <br>
-**Falsch** *KMENG > 10.3*
-
-{: .box-note }
-**Hinweis:** Die WHERE-Bedingung benötigt keinen Zeilenumbruch (Return-Taste).
-
-- Die Werte müssen der internen SAP-Darstellung entsprechen:<br>
-  - Das Datum 01.01.1999 hat die interne Darstellung 19990101 (JJJJMMTT) 
-  - Die Jahresperiode 001.1999 hat die interne Darstellung 1999001 (YYYYYPPP)
-  - Zahlen müssen führende Nullen enthalten, z.B. hat die Kundennummer 1000 die interne Darstellung 0000001000.
-
-| Operator   |      Bedeutung      |  
-|:---------|:------------- |
-|=, EQ |  Wahr, wenn der Inhalt von operand1 gleich dem Inhalt von operand2 ist|
-|<>, NE |Wahr, wenn der Inhalt von operand1 ungleich dem Inhalt von operand2 ist|
-|<, LT | Wahr, wenn der Inhalt von operand1 kleiner als der Inhalt von operand2 ist|
-|>, GT |  Wahr, wenn der Inhalt von operand1 größer als der Inhalt von operand2 ist|
-|<=, LE | Wahr, wenn der Inhalt von operand1 kleiner oder gleich dem Inhalt von operand2 ist|
-|>=, GE |  Wahr, wenn der Inhalt von operand1 größer oder gleich dem Inhalt von operand2 ist|
-| (NOT) LIKE | Wahr, wenn der Wert des Operanden operand1 mit dem Muster im Operanden operand2 übereinstimmt (nicht übereinstimmt). |
-| (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand (nicht) zwischen den Werten der Operanden operand1 und operand2 liegt. |
-
-Weitere Informationen über die OpenSQL-Syntax erhalten Sie auf der [SAP Helpseite - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
+{% include _content/de/table/where-bedingung-syntax.md%}
 
 #### Die WHERE Clause im Swagger Inspector verwenden
 
@@ -139,50 +110,7 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
-### WHERE Clause Editor
-
-Der WHERE Clause Editor stellt ein Toolkit zur Verfügung, mit dem WHERE-Bedingungen auch ohne nähere Kenntnisse über die Syntax erstellt werden können.
-Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
-- **[Add Criteria]** fügt ein einzelnes Kriterium hinzu. <br>
-Der Standardaufbau für ein Kriterium mit statischen Werten ist `[Spalte][Operator][Wert]`, z.B. *MARC~WERKS = 1000*.
-- **[Add Criteria Group]** fügt eine Gruppe hinzu, die mehrere Kriterien beinhaltet.<br>
-Der Standardaufbau für eine Kriteriengruppe ist `([Spalte1][Operator1][Wert1][Logik][Spalte2][Operator2][Wert2])`, z.B. *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
-
-{: .box-tip }
-**Tipp:** Kombinieren Sie einzelne Kriterien mit Kriteriengruppen, um komplexe Filter zu erstellen. <br>
-Beispiel:
-*MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extrahiert nur Daten, bei denen die Spalte WERKS einen Wert von 1000 hat und die Spalte PSTAT entweder den Wert 'L' oder 'LB' hat.
-
-
-#### Komponenten des WHERE Clause Editors
-
-![WHERE-Clause-Builder-Example](/img/content/yunio/where-clause-editor.png){:class="img-responsive"}
-
-Folgende Komponenten stehen im Editor zur Verfügung:
-
-| Symbol | Komponente    | Funktion          | 
-|-----|-------------- |-------------| 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png)| Delete row   | löscht ein Kriterium. | 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png)| Move row up       | ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach oben verschoben. <br>Die Reihenfolge der Kriterien kann auch per Drag&Drop bearbeitet werden.   |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png)| Move row down  | ändert die Reihenfolge der Kriterien. Das ausgewählte Kriterium wird um 1 nach unten verschoben. <br>Die Reihenfolge der Kriterien kann auch per Drag&Drop bearbeitet werden.|  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png)| Column    | fügt die Spalte einer Tabelle hinzu. Klicken Sie auf die Komponente, um eine Spalte aus den verfügbaren Tabellen auszuwählen. | 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       | fügt eine SQL-Anweisung hinzu.      |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | fügt einen Operator hinzu, z.B. =, <, >, etc. |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png)| Value | fügt einen statischen Wert vom Typ *String*, *Number*, *Flag* oder *List* hinzu. *List* bietet einen separaten Editor, um Listen vom Typ *String*, *Number* oder *Select* zu erstellen. *Select* ermöglicht die Eingabe einer SELECT-Anweisung.|
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
-
-Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.<br>
-Beispiel: **Operator** ist nur verfügbar, wenn eine Spalte oder eine SQL-Anweisung existiert, auf die ein Operator angewendet werden kann.
-
-#### Komponenten Bearbeiten und Löschen
-
-- Klicken Sie auf eine vorhandene Komponente, um sie zu bearbeiten.
-Alle grün markierten Flächen können bearbeitet werden.<br>
-- Klicken Sie auf das ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) Icon, das eingeblendet wird, wenn Sie über die Komponente hovern, um die Komponente zu löschen.
-
-{: .box-note }
-**Hinweis:** Die WHERE-Bedingung wird überschrieben, wenn eine WHERE-Bedingung manuell in das dafür vorgesehene Textfeld eingetragen wird, bzw. wenn beim Aufruf des Service' eine WHERE-Bedingung in dem Body der Service-Definition übergeben wird.
+{% include _content/de/table/where-bedingung-editor.md%}
 
 ## SAP Customizing
 
