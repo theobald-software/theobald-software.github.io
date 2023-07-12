@@ -14,7 +14,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 {% endif %}
 
 #### Syntaxregeln
-
+{% if page.parent != "table-cdc" %}
 - Geben Sie ein Leerzeichen vor und nach dem Gleichheitszeichen ein:<br>
  **Korrekt:** *JAHR = '1999'* <br>
  **Falsch:** *JAHR= '1999 '*, *JAHR ='1999'* oder *JAHR='1999'*
@@ -26,6 +26,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 {: .box-note }
 **Hinweis:** Die WHERE-Bedingung benötigt keinen Zeilenumbruch (Return-Taste).
+{% endif %}
 
 - Die Werte müssen der internen SAP-Darstellung entsprechen:<br>
   - Das Datum 01.01.1999 hat die interne Darstellung 19990101 (JJJJMMTT) 
@@ -46,6 +47,7 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 <!--- | (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand1 (nicht) zwischen den Werten der Operanden operand2 und operand3 liegt. | -->
 Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
 
+{% if page.parent != "table-cdc" %}
 {% if page.product == "xtract-universal" or page.product == "board-connector" %}
 <!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
 
@@ -89,3 +91,4 @@ Die folgende Anweisung gibt alle *aktiven* Kunden (Zeilen in der Tabelle KNA1) z
 
 ![WHERE Clause Subquery](/img/content/table/table_where_sub-select.png){:class="img-responsive"}
 {% endif %}
+{% endif %} 

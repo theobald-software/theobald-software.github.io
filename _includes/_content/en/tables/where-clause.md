@@ -3,9 +3,9 @@ A WHERE clause can be used to filter table records, see [SAP ABAP Documentation:
 
 ### Using a WHERE Clause 
 
-{% if page.product == "xtract-universal" or page.product == "board-connector" %}1. Open a table extraktion. {% else %}1. Open an Xtract Table component.{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector" %}1. Open a Table(CDC) extraction. {% else %}1. Open an Xtract Table component.{% endif %}
 2. Navigate to the tab *WHERE Clause*.
-{% if page.parent == "table-cdc" %}3. Enter a WHERE clause using the [WHERE Clause Editor](#where-clause-editor) {% else %}3. Enter a WHERE clause [manually](#where-clause-syntax) or use the [WHERE Clause Editor](#where-clause-editor).{% endif %}
+{% if page.parent == "table-cdc" %}3. Enter a WHERE clause using the [WHERE Clause Editor](#where-clause-editor). {% else %}3. Enter a WHERE clause [manually](#where-clause-syntax) or use the [WHERE Clause Editor](#where-clause-editor).{% endif %}
 4. To display the results in the **Preview** section, click **[Load live preview]**.
 
 {% if page.parent != "table-cdc" %}

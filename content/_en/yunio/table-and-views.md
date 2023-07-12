@@ -116,6 +116,9 @@ For more information on parameterizing services, refer to the following knowledg
 
 {% include _content/en/tables/where-clause-editor.md%}
 
+{: .box-note }
+**Note:** The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
+
 ## SAP Customizing
 
 {: .box-note }

@@ -112,6 +112,9 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 
 {% include _content/de/table/where-bedingung-editor.md%}
 
+{: .box-note }
+**Hinweis:** Die WHERE-Bedingung wird überschrieben, wenn eine WHERE-Bedingung manuell in das dafür vorgesehene Textfeld eingetragen wird, bzw. wenn beim Aufruf des Service’ eine WHERE-Bedingung in dem Body der Service-Definition übergeben wird.
+
 ## SAP Customizing
 
 {: .box-note }
