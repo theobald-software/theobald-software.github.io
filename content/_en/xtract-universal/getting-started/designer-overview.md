@@ -97,7 +97,7 @@ List of all extractions divided by name, type, modification and creation date et
 
 {: .box-tip }
 **Tip:** You can enter a filter value for the extraction name. Wildcards (*) are not supported. <br> 
-More extensive filter options are available via the [Filter](../advanced-techniques/regular-expressions) button in the [GUI Buttons](#gui-buttons) section.
+More extensive filter options are available via the ![designer-icon](/img/content/icons/designer/filter.png) button in the [GUI Buttons](#gui-buttons) section.
 
 {: .box-tip }
 **Tip:** To adjust the settings of multiple extractions at once, select multiple extractions using **[CTRL]+[left mouse button]**.<br>

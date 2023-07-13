@@ -94,7 +94,7 @@ Liste aller Extraktionen unterteilt nach Namen, Typ, Änderungs- und Erstellungs
 
 {: .box-tip }
 **Tipp:** Sie können einen Filterwert für den Extraktionsnamen eingeben, Platzhalterzeichen werden nicht unterstützt. <br> 
-Umfangreichere Filteroptionen sind über die Schaltfläche [Filter](../fortgeschrittene-techniken/regulaere-ausdruecke) im Bereich [GUI-Schaltflächen (2)](#gui-schaltflächen-2) verfügbar. 
+Umfangreichere Filteroptionen sind über die Schaltfläche ![designer-icon](/img/content/icons/designer/filter.png) im Bereich [GUI-Schaltflächen (2)](#gui-schaltflächen-2) verfügbar. 
 
 {: .box-tip }
 **Tipp:** Um mehrere Extraktionen gleichzeitig zu bearbeiten, selektieren Sie mit **[STRG]+[linke Maustaste]** die Extraktionen.<br>
