@@ -33,3 +33,7 @@ The following articles explain how to integrate yunIO services with Microsoft Po
 The following articles explain how to integrate yunIO services with Nintex Automation Cloud:
 - [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex)
 - [Employee Onboarding Scenario using Nintex and yunIO](https://kb.theobald-software.com/yunio/personell-actions-with-nintex-and-yunio)
+
+### Integration with Alteryx
+The following articles explain how to integrate yunIO services with Alteryx:
+- [Integrating a yunIO Service with Alteryx](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-alteryx)
