@@ -33,5 +33,5 @@ Installieren Sie zunächst die aktuelle Version der Software in der Testumgebung
 
 ##  Produktivumgebung
 ### Update oder neue Version installieren
-Nach einer erfolgreichen Installation und Test der Update-Version auf der Testumgebung, wiederholen Sie die entsprechenden Schritte für die Produktionsumgebung. 
+Nach einer erfolgreichen Installation und Test der Update-Version auf der Testumgebung, wiederholen Sie die Schritte [Update oder neue Version installieren](#testumgebung) für die Produktionsumgebung. 
 Achten Sie darauf, dass Sie vorher ein Backup erstellen und ggf. die notwendigen Vorbereitungen durchführen. 

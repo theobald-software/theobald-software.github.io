@@ -33,5 +33,6 @@ First install the current version of the software on the test environment and te
 
 ## Production Environment
 ### Installing an Update or a New Version
-After successful installation and test of the update version on the test environment, follow the corresponding steps described above for the production environment. Make sure to create a backup beforehand and conduct all the necessary preparations and changes. 
+After successful installation and test of the update version on the test environment, follow the steps described in [Installing an Update or a New Version](#test-environment) for the production environment. 
+Make sure to create a backup beforehand and conduct all the necessary preparations and changes. 
 
