@@ -31,7 +31,7 @@ Der folgende Abschnitt bietet Beispiel-Workflows und Vorlagen zum Download an.
 
 | Workflow | Quellsystem | Beschreibung Quellsystem|
 | :------ |:--- | :--- | :--- | :--- |
-| [Hierarchy-BW](/docs/alteryx-workflows/Hierarchy-BW.yxmd){:download="Hierarchy-BW.yxmd"}  | SAP BW | Dieser Workflow zeigt die Verwendung von [Xtract Hierarchy](./bw-hierarchien) to load data from an SAP BW CostCenter hierarchy. This workflow also showcases the different hierarchy representations "Parent-Child" and "Natural".  |
+| [Hierarchy-BW](/docs/alteryx-workflows/Hierarchy-BW.yxmd){:download="Hierarchy-BW.yxmd"}  | SAP BW | Dieser Workflow zeigt die Verwendung von [Xtract Hierarchy](./bw-hierarchien), um Daten aus eine SAP BW CostCenter Hierarchy zu laden. Dieser Workflow demonstiert die unterschiedlichen Hierarchy-Repräsentationen "Parent-Child" und "Natural".  |
 
 ### Xtract ODP
 
