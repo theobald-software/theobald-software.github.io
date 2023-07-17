@@ -27,7 +27,7 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 
 - [**BAPI**](./bapis-und-funktionsbausteine) greift auf BAPIs und RFC-Funktionsmodule zu.
 - [**BW Cube**](./bw-infocubes-und-bex-queries) extrahiert Daten aus SAP BW InfoCubes und BEx Queries.
-- [**BW Hierarchy**](./bw-hierarchien) extrahiert Hierarchien aus SAP BW / BI Systemen.
+- [**BW Hierarchy**](./bw-hierarchies) extrahiert Hierarchien aus SAP BW / BI Systemen.
 - [**DeltaQ**](./datasource-deltaq) extrahiert DataSources (OLTP) und Extraktoren aus dem ERP und ECC System.
 - [**ODP**](./odp) extrahiert Daten über das SAP Operational Data Provisioning (ODP) Framework.
 - [**Open Hub Services (OHS)**](./bw-open-hub-services) extrahiert InfoSpokes und OHS Destinationen. <!--Frage: kann man destinationen extrahieren?-->
