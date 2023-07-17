@@ -24,9 +24,9 @@ No additional installations are required to use the Snowflake destination.
 For more information, see [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables)
 - The Snowflake account used to upload data to Snowflake needs the corresponding access and role privileges, see [Snowflake Documentation: Overview of Access Control - Roles](https://docs.snowflake.com/en/user-guide/security-access-control-overview#roles).
 The following privileges are required:
- - PUT command
- - COPY command
- - TABLE 
+  - PUT command
+  - COPY command
+  - TABLE 
 
 ## Connection
 
