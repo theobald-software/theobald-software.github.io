@@ -4,7 +4,7 @@ layout: page
 title: Ausgabeformat
 description: Tabellenausgabe
 product: xtract-universal
-parent: bw-hierarchien
+parent: bw-hierarchies
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
