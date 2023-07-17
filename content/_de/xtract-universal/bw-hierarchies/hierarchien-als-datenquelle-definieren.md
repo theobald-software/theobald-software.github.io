@@ -4,7 +4,7 @@ layout: page
 title: Eine BW Hierarchie Extraktion definieren
 description: Eine BW Hierarchie Extraktion definieren
 product: xtract-universal
-parent: bw-hierarchien
+parent: bw-hierarchies
 permalink: /:collection/:path
 weight: 1
 lang: de_DE
