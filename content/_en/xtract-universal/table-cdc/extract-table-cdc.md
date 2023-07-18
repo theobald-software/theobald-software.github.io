@@ -24,13 +24,13 @@ Run the extraction for the first time to create a log table in SAP that records 
 3. Click **[Run]** (2). The window "Run Extraction" opens.
 4. Click **[Run]** (3) to run the extraction.<br>
 ![Table-CDC-Run](/img/content/tablecdc/table-cdc-run.png){:class="img-responsive"}
-5. If the extraction is successfull, the status in the *General Info* section of the window changes to "finished successfully".<br>
-If an error occured, you can find information on the error in the *Log* section of the window.
+5. If the extraction is successful, the status in the *General Info* section of the window changes to "finished successfully".<br>
+If an error occurred, you can find information on the error in the *Log* section of the window.
 
 The log table in SAP is now available for the Table CDC component.
 The extracted SAP table is now available in your destination.
 <!---
-Depending on whether the option **[Extract table on first run]** in the Table CDC component was activate or not, the table contains either the original SAP table or is empty.
+Depending on whether the option **[Extract table on first run]** in the Table CDC component was activated or not, the table contains either the original SAP table or is empty.
 -->
 
 {: .box-note }
