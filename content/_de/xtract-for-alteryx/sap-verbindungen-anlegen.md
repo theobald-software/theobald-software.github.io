@@ -114,4 +114,4 @@ Leeren Sie das Feld **Trace Directory**, wenn es nicht mehr gebraucht wird.
 **Warnung!: ****Erhöhter Verbrauch des Festplattenspeichers** <br>
 Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
 Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
----!>
+--->
