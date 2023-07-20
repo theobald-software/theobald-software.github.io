@@ -30,12 +30,12 @@ Sie können den Port im yunIO Designer unter *Settings* konfigurieren. <br>
 Unter *Connections* können Sie neue SAP-Verbindungen hinzufügen und bereits angelegte SAP-Verbindung bearbeiten oder löschen. 
 
 1. Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
-Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).<br>
+Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon).<br>
 ![web-ui](/img/content/yunio/web-ui.png){:class="img-responsive"}
-2. Geben Sie die Verbindungsinformationen zu Ihrem SAP-System unter *System* (3) ein.<br>
+2. Geben Sie die Verbindungsinformationen zu Ihrem SAP-System unter *System* (2) ein.<br>
 ![yunIO-connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
-3. Geben Sie SAP-Anmeldedaten unter *Authentication* (4) ein.
-4. Um die Verbindung zu prüfen, klicken Sie auf **[Test Connection]** (5).<br>
+3. Geben Sie SAP-Anmeldedaten unter *Authentication* (3) ein.
+4. Um die Verbindung zu prüfen, klicken Sie auf **[Test Connection]** (4).<br>
 Je nachdem ob der Verbindungsaufbau erfolgreich war oder nicht, öffnet sich ein Fenster mit einer entsprechenden Statusmeldung.
 5. Speichern Sie Ihre Eingaben über **[Save]**.
 
