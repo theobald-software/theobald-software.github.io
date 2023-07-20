@@ -14,6 +14,15 @@ lang: de_DE
 progressstate: 5
 ---
 
+Dieser Artikel wird kurzzeitig nur in englischer Sprache angeboten:
+[SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection)
+
+
+*****
+#### Weiterführende Links
+- [Alteryx Documentation: Data Connection Manager - Server](https://help.alteryx.com/20223/server/dcm-server)
+
+<!---
 Der folgende Abschnitt zeigt Ihnen, wie Sie eine SAP-Verbindung erstellen.<br>
 Eine SAP-Verbindung ist notwendig, um Xtract for Alteryx-Komponenten zu verwenden.
 
@@ -105,3 +114,4 @@ Leeren Sie das Feld **Trace Directory**, wenn es nicht mehr gebraucht wird.
 **Warnung!: ****Erhöhter Verbrauch des Festplattenspeichers** <br>
 Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
 Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
+---!>

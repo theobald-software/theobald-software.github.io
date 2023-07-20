@@ -56,7 +56,7 @@ There are two possibilities to connect to an SAP source system:
 - *SAP Application Server* uses a single application server.
 	- **Host**:  Host name or IP address of the application server (Property Host).
 	- **Sys. No.:**: A two-digit number between 00 und 99 (Property SystemNumber)
-- *SAP Load Balancing* uses a load balancing server.For more information, see [SAP Help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+- *SAP Load Balancing* uses a load balancing server. For more information, see [SAP Help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 	- **Message Server**: Name or IP address of the message server (Property MessageServer) 
 	- **Group**: Property LogonGroup, usually *PUBLIC*
 	- **SID**: Three-digit System ID (Property SID e.g., MSS) 
@@ -134,7 +134,7 @@ Enter your SAP username and password.
 Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract for Alteryx.
 
 1. Check the SAP parameter *snc/gssapi_lib* to determine which library is used for encryption in your SAP system.
-Your SAP basis has to import and configure the same library on the application server and on the machine that runs Xtract for Alteryx.
+Make sure your SAP basis imports and configures the same library on the application server and on the machine that runs Xtract for Alteryx.
 2. When using SNC, make sure to enter the complete path of the library in the field **SNC library** e.g., ``C:\SNC\gx64krb5.dll``.
 3. Enter the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/example@THEOBALD.LOCAL``.
 
