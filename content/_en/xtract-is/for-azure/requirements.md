@@ -26,6 +26,10 @@ Once the environment is running, develop a simple SSIS package (NOT containing a
 
 If running the SSIS package is successful, proceed to setting up Xtract IS for Azure on the Azure-SSIS IR. 
 
+{: .box-note }
+**Note:** By default Azure automatically updates the Microsoft integration runtime. To avoid possible compatibility issues with Xtract IS for Azure, disable automatic updates. 
+
+
 ### Supported SQL Server Integration Services (SSIS) Versions  	
 
 - SQL Server Integration Services (SSIS) 2014 SP3 (until 2024-07-09)
