@@ -17,12 +17,11 @@ Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werde
 4. Klicken Sie auf **[OK]** zum Bestätigen.
 
 #### Skalare Parameter Hinzufügen
-![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive" style="border:1px solid black;"}
-{% endif %}<br>
+![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive" style="border:1px solid black;"}<br>
 
 #### Listenparameter Hinzufügen
-![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive" style="border:1px solid black;"}
-{% endif %}
+![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive" style="border:1px solid black;"}<br>
+
 
 ### Laufzeitparameter zuweisen
 
