@@ -16,6 +16,12 @@ The placeholders need to be populated with actual values at extraction runtime. 
 - Flag: This data type can only be used for SAP fields that require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
 4. Click **[OK]** to confirm.
 
+#### Adding Scalar Parameters
+![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive"}<br>
+
+#### Adding List Parameters
+![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive"}<br>
+
 ### Define Runtime Parameters
 
 Assign the runtime parameters to variables or dimension filters.

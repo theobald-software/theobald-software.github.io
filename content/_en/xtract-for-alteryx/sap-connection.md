@@ -83,7 +83,7 @@ Select an RFC library. The following RFC libraries are supported:
 The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system. 
 For more information on SAP libraries, see [SAP Help: RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). 
 
-SAP does not [support the librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) anymore. 
+SAP stopped the support for the [library librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
 
 **Trace Directory**<br>
 You can log debug information and save it locally. In the field **Trace directory** enter a local path to a folder, where you want to save the debug information.

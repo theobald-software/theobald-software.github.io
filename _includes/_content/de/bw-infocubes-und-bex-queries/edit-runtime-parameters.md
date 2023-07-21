@@ -16,6 +16,11 @@ Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werde
 - Flag: dieser Datentyp kann nur für SAP-Felder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
 4. Klicken Sie auf **[OK]** zum Bestätigen.
 
+#### Skalare Parameter Hinzufügen
+![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive"}<br>
+
+#### Listenparameter Hinzufügen
+![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive"}<br>
 
 ### Laufzeitparameter zuweisen
 

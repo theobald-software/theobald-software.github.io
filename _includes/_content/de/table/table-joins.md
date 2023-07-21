@@ -7,7 +7,7 @@ Unterstützte Join-Typen:
 - Inner Join
 - Left Outer Join, auch als *Left Join* bezeichnet.
 
-Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Hilfe](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
+Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Help](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
 
 {: .box-note }
 **Hinweis**: Die Verwendung von Table Join ist mit dem Funktionsbaustein [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP möglich. 
