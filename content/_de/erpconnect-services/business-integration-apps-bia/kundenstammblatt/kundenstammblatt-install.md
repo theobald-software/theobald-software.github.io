@@ -26,7 +26,7 @@ Folgende Dateien werden ausgeliefert:
 **Systemvoraussetzungen** 
 
 ERPConnect Services muss auf dem SharePoint Server installiert sein.<br>
-Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer [Online-Hilfe](../../ecs-de/ecs-runtime/ecs-konfiguration/ecs-application-anlegen).   
+Eine ERPConnect Service Applikation muss angelegt werden. Nähere Informationen dazu finden Sie auf unserer [Online-Help](../../ecs-de/ecs-runtime/ecs-konfiguration/ecs-application-anlegen).   
 
 
 **Installation des SAP-Transportauftrags**

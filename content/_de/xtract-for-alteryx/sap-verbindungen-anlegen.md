@@ -110,57 +110,55 @@ If no credentials exist, follow the steps below to add credentials for your SAP 
 -->
 
 1. Navigieren Sie im Hauptmenü des Alteryx Designers zu **File > Manage Connections**. Das Fenster "Connection Manager" wird geöffnet.
-2. In the tab *Credentials* click **[New]** to create a new credential.<br>
+2. Im Tab *Credentials* klicken Sie **[New]** um einen neuen Benutzer zu erstellen.<br>
 ![Credentials](/img/content/xfa/dcm/credentials.png){:class="img-responsive"}
-3. Enter a name for the credential and select one of the following authentication methods: <br>
-- [*Username and password*](#plain-authentication) uses the SAP username and password.
-- [*SAP SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
-- [*SAP Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
-4. Fill out the authentication details.
-5. Click **[Save]** to save the credential.
+3. Geben Sie einen Namen für die Benutzerinformationen ein und wählen Sie eine der folgenden Authentifizierungsmethoden aus: <br>
+- [*Username and password*](#plain-authentication) verwendet den SAP-Benutzernamen und das Passwort.
+- [*SAP SNC*](#secure-network-communication-snc) nutzt eine verschlüsselte Verbindung zwischen Xtract for Alteryx und SAP mit Benutzername und Passwort.
+- [*SAP Ticket Issuer*](#sap-logon-ticket) verwendet SAP-Anmeldetickets anstelle von Benutzeranmeldeinformationen. Diese Verbindung ist nicht verschlüsselt.
+4. Füllen Sie die Authentifizierungsdetails aus.
+5. Klicken Sie auf **[Save]** um den Benutzer zu speichern.
 
-The credential is displayed in the list of credentials.
+Der Benutzer wird in der Liste der Benutzer angezeigt.
 
 {: .box-tip }
-**Tip:** You can link credentials to multiple data sources.
+**Tipp:** Sie können Benutzerinformationen mit mehreren Data Sources verknüpfen.
 
 ### Plain Authentication
 
-Enter your SAP username and password.
+Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.
 
 ![Plain-Credential](/img/content/xfa/dcm/plain.png){:class="img-responsive"}
 
 ### Secure Network Communication (SNC)
 
-Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract for Alteryx.
+Secure Network Connection (SNC) ermöglicht Authentifizierung und Transportverschlüsselung zwischen SAP-Systemen sowie zwischen SAP-Systemen und Drittanbieter-Tools wie Xtract für Alteryx.
 
-1. Check the SAP parameter *snc/gssapi_lib* to determine which library is used for encryption in your SAP system.
-Make sure your SAP basis imports and configures the same library on the application server and on the machine that runs Xtract for Alteryx.
-2. When using SNC, make sure to enter the complete path of the library in the field **SNC library** e.g., ``C:\SNC\gx64krb5.dll``.
-3. Enter the SAP **Partner Name** configured for the SAP application server e.g., ``p:SAPserviceERP/example@THEOBALD.LOCAL``.
+1. Überprüfen Sie den SAP-Parameter *snc/gssapi_lib*, um festzustellen, welche Bibliothek in Ihrem SAP-System für die Verschlüsselung verwendet wird.
+Stellen Sie sicher, dass Ihre SAP-Basis dieselbe Bibliothek auf dem Anwendungsserver und auf dem Computer importiert und konfiguriert, auf dem Xtract for Alteryx ausgeführt wird.
+2. Achten Sie bei Verwendung von SNC darauf, den vollständigen Pfad der Bibliothek in das Feld **SNC library** einzugeben, z. B. ``C:\SNC\gx64krb5.dll``.
+3. Geben Sie den SAP **Partnernamen** ein, der für den SAP-Application-Server konfiguriert ist, z. B.``p:SAPserviceERP/example@THEOBALD.LOCAL``.
 
-For more information, see [SAP Help: Secure Network Communications (SNC)](https://help.sap.com/viewer/6f3e0bea6c4b101484fcf5305b4d624b/7.01.22/en-US/e656f466e99a11d1a5b00000e835363f.html) or refer to the knowledge base article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+Weitere Informationen finden Sie unter [SAP Help: Secure Network Communications (SNC)](https://help.sap.com/viewer/6f3e0bea6c4b101484fcf5305b4d624b/7.01.22/en-US/e656f466e99a11d1a5b00000e835363f.html) oder in diesem Knowledge-Base-Article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
 
 ![SNC-Credential](/img/content/xfa/dcm/snc.png){:class="img-responsive"}
 
 ### SAP Logon Ticket
 
-You can use Single-Sign-On (SSO) with SAP Logon-Tickets for authentication. This connection is not encrypted.
-
-Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer**. <br>
-For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
+Zur Authentifizierung können Sie Single-Sign-On (SSO) mit SAP Logon-Tickets nutzen. Diese Verbindung ist nicht verschlüsselt.
+Geben Sie in das Feld **Ticket issuer** die URL eines Application Server Java (AS Java) ein, der für die Ausstellung von Logon-Tickets konfiguriert ist. <br>
+Weitere Informationen finden Sie unter [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
 
 ![SAP-Logon-Ticket-Credential](/img/content/xfa/dcm/logon-tickets.png){:class="img-responsive"}
 
-## Assigning an SAP Connection to an Xtract Component
+## Zuweisen einer SAP-Verbindung zu einer Xtract-Komponente
 
-1. Drag&drop an Xtract for Alteryx component from the Alteryx Designer toolbox onto the canvas (1). The configuration window of the component opens.<br>
+1. Ziehen Sie eine Xtract for Alteryx-Komponente per Drag&Drop aus der Alteryx Designer-Toolbox auf die Leinwand (1). Das Konfigurationsfenster der Komponente wird geöffnet.<br>
 ![Create-New-Table-Extraction](/img/content/xfa//xfa_create_table_extraction_02.png){:class="img-responsive"}
-2. Select an SAP connection from the dropdown list (2).
+2. Wählen Sie aus der Dropdown-Liste (2) eine SAP-Verbindung aus.
 
 {: .box-note }
-**Note:** If no SAP connections are available, create an SAP connection in the Alteryx Connection Manager, see [Creating an SAP Connection](#creating-an-sap-connection).
-
+**Hinweis:** Wenn keine SAP-Verbindungen verfügbar sind, erstellen Sie eine SAP-Verbindung im Alteryx Connection Manager, siehe [SAP-Verbindung konfigurieren](#sap-verbindung-konfigurieren).
 
 
 *****

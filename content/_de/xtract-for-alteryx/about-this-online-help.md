@@ -2,7 +2,7 @@
 ref: xtract-for-alteryx-02
 layout: page
 title: Über die Online-Help
-description:  Allgemeine Informationen zum Inhalt der Online-Hilfe
+description:  Allgemeine Informationen zum Inhalt der Online-Help
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
 permalink: /:collection/:path
