@@ -141,3 +141,8 @@ The following list shows all logs that are created in the `logs` folder of yunIO
 | | services| Contains listener, worker and transaction logs. The transaction logs are created when a transaction service is run.|
 | | websockets| Contains listener and worker logs of the websocket server that provides the yunIO Designer with data. |
 |ServiceLog.txt |- | Logs of the yunIO Windows service.|
+
+{: .box-tip }
+**Tip:** To redirect logs to another location, symlink the logs folder of yunIO's installation directory to a custom directory.
+Example for PowerShell:<br>
+`New-Item -ItemType SymbolicLink -Target "E:\yuniolog" -Path "C:\Program Files\Theobald Software\yunIO\logs"`
