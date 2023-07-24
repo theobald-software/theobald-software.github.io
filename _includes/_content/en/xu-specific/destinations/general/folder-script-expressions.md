@@ -17,6 +17,12 @@ The described scenario supports script expressions based on .NET and the followi
 |```#{Extraction.Context}# ```|  Only for ODP extractions: returns the context of the ODP object (*SAPI*, *ABAP_CDS*, etc). |
 |```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Only for ODP extractions: returns the input value of a defined selection / filter.| 
 |```#{TableExtraction.WhereClause}#``` | Only for Table extractions: returns the WHERE clause of the extraction.  |
+|```#{Extraction.Fields["[0D_NW_CODE]"].Selections[0].Value}#``` | Only for BWCube extractions (MDX mode): returns the input value of a defined selection.  |
+|```#{Extraction.Fields["[0D_NW_CHANN]"].RangeSelections[0].LowerValue}#``` | Only for BWCube extractions (MDX mode): returns the lower input value of a defined selection range.  |
+|```#{Extraction.Fields["[0D_NW_CHANN]"].RangeSelections[0].UpperValue}#``` | Only for BWCube extractions (MDX mode): returns the upper input value of a defined selection range.  |
+|```#{Extraction.Fields["0D_NW_CODE"].Selections[0].Value}#``` | Only for BWCube extractions (BICS mode): returns the input value of a defined selection. |
+|```#{Extraction.Fields["0D_NW_CHANN"].RangeSelections[0].LowerValue}#``` | Only for BWCube extractions (BICS mode): returns the lower input value of a defined selection range.  |
+|```#{Extraction.Fields["0D_NW_CHANN"].RangeSelections[0].UpperValue}#``` | Only for BWCube extractions (BICS mode): returns the upper input value of a defined selection range.  |
 
 For more information on script expressions, see [Script Expressions](../advanced-techniques/script-expressions).
 
