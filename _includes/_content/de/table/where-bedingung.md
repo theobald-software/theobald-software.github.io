@@ -4,7 +4,7 @@ Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP
 
 {% if page.product == "xtract-universal" or page.product == "board-connector" %}1. Öffnen Sie eine Table(CDC) Extraktion. {% else %}1. Öffnen Sie eine Xtract Table Komponente.{% endif %}
 2. Navigieren Sie zum Tab *WHERE Clause*.
-{% if page.parent == "table-cdc" %}3. Geben Sie über den [WHERE Clause Editor](#where-clause-editor)die WHERE-Bedingung ein {% else %}3. Geben Sie die WHERE-Bedingung entweder über die [manuelle Texteingabe](#syntax-der-where-bedingung) oder über den [WHERE Clause Editor](#where-clause-editor) ein.{% endif %}
+{% if page.parent == "table-cdc" %}3. Geben Sie über den [WHERE Clause Editor](#where-clause-editor) die WHERE-Bedingung ein {% else %}3. Geben Sie die WHERE-Bedingung entweder über die [manuelle Texteingabe](#syntax-der-where-bedingung) oder über den [WHERE Clause Editor](#where-clause-editor) ein.{% endif %}
 4. Um die Ergebnisse im Abschnitt **Preview** anzuzeigen, klicken Sie auf **[Load live preview]**.
 
 {% if page.parent != "table-cdc" %}

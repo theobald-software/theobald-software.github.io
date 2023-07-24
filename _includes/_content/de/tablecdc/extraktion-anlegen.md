@@ -23,10 +23,11 @@ Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren:
 3. In dem Feld **Log table row limit** geben Sie eine maximale Anzahl von Zeilen an, die aufgezeichnet werden. Der Standartwert sind 10000 Zeilen.<br>
 Wenn die maximale Zeilenanzahl erreicht ist, schlägt die Extraktion mit einem Ausnahmefehler fehl.
 Beachten Sie, dass die maximale Zeilenanzahl nicht mehr geändert werden kann, sobald die Log-Tabelle initialisiert ist.
-4. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
+4. Optional: Definieren Sie eine [WHERE-Bedingung](./where-clause), um Tabelleneinträge zu filtern.
+5. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
 Die Spalte IUUC_OPERAT_FLAG zeigt an, ob die Daten eingefügt (I), aktualisiert (U) oder gelöscht (D) wurden.
-5. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
-6. Führen Sie die Extraktion aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle nachverfolgt, siehe [Die Extraktion zum ersten Mal Ausführen](#die-extraktion-zum-ersten-mal-ausführen).
+6. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
+7. Führen Sie die Extraktion aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle nachverfolgt, siehe [Die Extraktion zum ersten Mal Ausführen](#die-extraktion-zum-ersten-mal-ausführen).
 
 {: .box-note }
 **Hinweis:** Bevor Sie eine Extraktion löschen, klicken Sie ind er Table CDC Komponente auf **[Delete CDC resources]**, um die Log-Tabelle und alle dazugehörigen Elemente aus Ihrem SAP-System zu löschen. 
