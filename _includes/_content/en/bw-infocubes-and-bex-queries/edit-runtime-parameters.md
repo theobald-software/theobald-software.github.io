@@ -17,16 +17,12 @@ The placeholders need to be populated with actual values at extraction runtime. 
 4. Click **[OK]** to confirm.
 
 #### Adding Scalar Parameters
-{% if page.product == "xtract-for-alteryx" %} ![Add Scalar](/img/content/xfa/xfa_scalar_2.gif){:class="img-responsive" style="border:1px solid black;"}
-{% else %} ![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive" style="border:1px solid black;"}
-{% endif %}<br>
+![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive" style="border:1px solid black;"}<br>
 
 
 #### Adding List Parameters
 
-{% if page.product == "xtract-for-alteryx" %} ![Add List](/img/content/xfa/xfa_list_param.gif){:class="img-responsive" style="border:1px solid black;"}
-{% else %} ![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive" style="border:1px solid black;"}
-{% endif %}<br>
+![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive" style="border:1px solid black;"}<br>
 
 
 ### Define Runtime Parameters
