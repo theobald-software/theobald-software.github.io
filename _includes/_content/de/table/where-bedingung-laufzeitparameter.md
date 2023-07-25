@@ -15,7 +15,7 @@ Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
 - Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
 - Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen ‘X’ (true) oder eine leere Eingabe ‘‘ (false) als Eingabewert benötigen.
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
-5. Navigieren Sie zum WHERE Clause Tab des Hauptfensters öffnen Sie den WHERE Clause Editor.
+5. Klicken Sie im WHERE Clause Tab des Hauptfensters auf **[Editor mode]**, um den WHERE Clause Editor zu öffnen.
 6. Fügen Sie der WHERE-Bedingung über **[Add Criteria]** und **[Default with Parameter]** ein neues Kriterium hinzu.
 7. Klicken Sie auf die *Parameter* Komponente des Kriteriums. Eine Drop-Down-Liste öffnet sich und zeigt alle verfügbaren Laufzeitparameter an.
 Wählen Sie einen der Laufzeitparameter aus.<br>

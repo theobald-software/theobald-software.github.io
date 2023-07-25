@@ -41,7 +41,7 @@ The installation of Xtract for Alteryx includes the Xtract data source technolog
 7. Click **[Link]** / **[Create and link]** to link the credential to the connection. Example:<br>
 ![new-data-source](/img/content/xfa/dcm/new-data-source.gif){:class="img-responsive" style="border:1px solid black;"}
 
-The SAP connection is now available for selection in the Xtract for Alteryx components, see [Assigning an SAP Connection to an Xtract Component](#assigning-an-sap-connection-to-an-xtract-component).
+The SAP connection is now available for selection in the Xtract for Alteryx components, see [Assigning an SAP Connection to an Xtract Component]().
 
 
 ### Data Source Settings

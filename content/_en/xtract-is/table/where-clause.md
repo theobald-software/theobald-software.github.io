@@ -12,8 +12,6 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=where-clause
 ---
 
 {% include _content/en/tables/where-clause.md %}
-{% include _content/en/tables/where-clause-syntax.md%}
-{% include _content/en/tables/where-clause-editor.md%}
 
 ### Using SSIS Variables in the WHERE Clause Editor
 

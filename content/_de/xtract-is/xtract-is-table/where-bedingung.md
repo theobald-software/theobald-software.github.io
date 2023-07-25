@@ -12,8 +12,6 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=where-bedingung
 ---
 
 {% include _content/de/table/where-bedingung.md  %}
-{% include _content/de/table/where-bedingung-syntax.md  %}
-{% include _content/de/table/where-bedingung-editor.md  %}
 
 ### SSIS-Variablen im WHERE Clause Editor
 
