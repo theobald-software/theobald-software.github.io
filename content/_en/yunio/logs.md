@@ -16,7 +16,7 @@ The following section contains information on the server and transaction logs cr
 
 ### Display Logs
 The logs are located in the *Logs* section of the yunIO Designer. <br>
-There are 3 types of logs:
+There are three types of logs:
 - **Service Runs:** Displays a list of the latest service runs, including the status of the service run.
 - **Service Workers:** Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
 It receives the HTTP request, executes the service, and sends the response to the caller.
@@ -141,8 +141,3 @@ The following list shows all logs that are created in the `logs` folder of yunIO
 | | services| Contains listener, worker and transaction logs. The transaction logs are created when a transaction service is run.|
 | | websockets| Contains listener and worker logs of the websocket server that provides the yunIO Designer with data. |
 |ServiceLog.txt |- | Logs of the yunIO Windows service.|
-
-{: .box-tip }
-**Tip:** To redirect logs to another location, symlink the logs folder of yunIO's installation directory to a custom directory.
-Example for PowerShell:<br>
-`New-Item -ItemType SymbolicLink -Target "E:\yuniolog" -Path "C:\Program Files\Theobald Software\yunIO\logs"`
