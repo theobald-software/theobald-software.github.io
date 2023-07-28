@@ -9,8 +9,6 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 {: .box-tip}
 **Tipp:** Um die Syntax der WHERE-Bedingung zu überprüfen, klicken Sie auf **[Load live preview]**. Auf diese Weise ist es nicht notwendig, eine Extraktion durchzuführen, um zu sehen, ob die Syntax korrekt ist.
 
-{: .box-tip}
-**Tipp:** Um die Leistung beim Extrahieren zu erhöhen, stellen Sie sicher, dass Sie die indizierten Felder als erste Auswahlfilteroperation in der WHERE-Bedingung platzieren.
 {% endif %}
 
 #### Syntaxregeln
@@ -46,6 +44,9 @@ Stellen Sie sicher, dass Sie die korrekte SAP OpenSQL-Syntax verwenden. Einige w
 
 <!--- | (NOT) BETWEEN | Wahr, wenn der Inhalt des Operanden operand1 (nicht) zwischen den Werten der Operanden operand2 und operand3 liegt. | -->
 Für mehr Informationen über die OpenSQL-Syntax, siehe [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-DE/abapwhere.htm?file=abapwhere.htm). 
+
+{: .box-tip}
+**Tipp:** Um die Leistung beim Extrahieren zu erhöhen, stellen Sie sicher, dass Sie die indizierten Felder als erste Auswahlfilteroperation in der WHERE-Bedingung platzieren.
 
 {% if page.parent != "table-cdc" %}
 {% if page.product == "xtract-universal" or page.product == "board-connector" %}
