@@ -21,7 +21,7 @@ Für die Nutzung einer beliebigen Xtract for Alteryx-Komponente ist eine SAP-Ver
 **Hinweis:** Der Alteryx Data Connection Manager ist ab Alteryx Designer Version 2021.4 verfügbar.
 Wenn Sie eine ältere Version des Alteryx Designers verwenden, lesen Sie den Knowledge-Base-Artikel[Creating an SAP Connecion](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection), um SAP-Verbindungen mithilfe der Xtract for Alteryx-Benutzeroberfläche zu erstellen.
 
-## Xtract Data Source
+## Data Sources
 
 Sie können Xtract Data Sources (Datenquellen) mit Anmeldeinformationen kombinieren, um eine SAP-Verbindung herzustellen. <br>
 Die Installation von Xtract für Alteryx beinhaltet die Xtract Data Source Technologie, die eine Verbindung zu SAP-Systemen herstellt.
@@ -31,7 +31,7 @@ Die Installation von Xtract für Alteryx beinhaltet die Xtract Data Source Techn
 1. Navigieren Sie im Hauptmenü des Alteryx Designers zu **File > Manage Connections**. Das Fenster „Connection Manager" wird geöffnet.
 2. Klicken Sie im Tab *Data Sources* auf **[New]**, um eine neue Data Source zu erstellen.<br>
 3. Wählen Sie die **Xtract**-Technologie aus, um eine Xtract-Data Source zu erstellen.
-4.Füllen Sie die Data Source Einstellungen für Ihr SAP-System aus, siehe [Data Source Settings](#data-source-settings).<br>
+4.Füllen Sie die Data Source Einstellungen für Ihr SAP-System aus, siehe [Xtract Data Source Settings](#data-source-settings).<br>
 ![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
 4. Klicken Sie auf **[Save]** um die SAP-Verbindung zu speichern. Der Unterabschnitt *Connection* wird angezeigt.
 5. Im Unterabschnitt *Connection* wählen Sie eine der folgenden Authentifizierungsmethoden:<br>
@@ -45,7 +45,7 @@ Die Installation von Xtract für Alteryx beinhaltet die Xtract Data Source Techn
 Die SAP-Verbindung steht nun in den Xtract für Alteryx-Komponenten zur Auswahl.
 
 
-### Data Source Einstellungen
+### Xtract Data Source Einstellungen
 
 <!---
 An SAP data source consists of the following settings:<br>

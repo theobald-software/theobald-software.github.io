@@ -20,7 +20,7 @@ An SAP connection is required to use any Xtract for Alteryx component.
 **Note:** The Alteryx Data Connection Manager is available as of Alteryx Designer version 2021.4. 
 If you use an older version of the Alteryx Designer, refer to the knowledge base article [Create an SAP Connection](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection) to create SAP connections using the Xtract for Alteryx UI.
 
-## Xtract Data Source
+## Data Sources
 
 You can combine Xtract data sources with credentials to create an SAP connection. <br>
 The installation of Xtract for Alteryx includes the Xtract data source technology that connects to SAP systems.
@@ -30,7 +30,7 @@ The installation of Xtract for Alteryx includes the Xtract data source technolog
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
 2. In the tab *Data Sources* click **[New]** to create a new data source.<br>
 3. Select the **Xtract** technology to create an Xtract data source.
-4. Fill out the data source settings for your SAP system, see [Data Source Settings](#data-source-settings).<br>
+4. Fill out the data source settings for your SAP system, see [Xtract Data Source Settings](#data-source-settings).<br>
 ![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
 4. Click **[Save]** to save the SAP connection. The subsection *Connection* is displayed.
 5. In the subsection *Connection* select one of the following authentication methods: <br>
@@ -44,7 +44,7 @@ The installation of Xtract for Alteryx includes the Xtract data source technolog
 The SAP connection is now available for selection in the Xtract for Alteryx components, see [Assigning an SAP Connection to an Xtract Component](#assigning-an-sap-connection-to-an-xtract-component).
 
 
-### Data Source Settings
+### Xtract Data Source Settings
 
 <!---
 An SAP data source consists of the following settings:<br>
