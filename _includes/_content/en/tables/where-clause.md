@@ -47,7 +47,12 @@ You can also preview the data with aggregation functions.
 
 {% if page.parent != "table-cdc" %}
 **[Count rows]** <br>
-Returns the number of rows/data records of an extraction, considering the WHERE and HAVING clauses stored. 
+Returns the number of rows/data records of an extraction, considering the WHERE and HAVING clauses. 
+{% endif %}
+
+{% if page.parent == "table-cdc" and page.product == "xtract-for-alteryx" %}
+**[Count rows]** <br>
+Returns the number of rows/data records of an extraction, considering the WHERE clause. 
 {% endif %}
 
 {% if page.product != "xtract-for-alteryx" %}

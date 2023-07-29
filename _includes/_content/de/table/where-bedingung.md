@@ -46,7 +46,12 @@ Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen.
 
 {% if page.parent != "table-cdc" %}
 **[Count rows]** <br>
-Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der hinterlegten WHERE- und HAVING-Bedingungen. 
+Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der WHERE- und HAVING-Bedingungen. 
+{% endif %}
+
+{% if page.parent == "table-cdc" and page.product == "xtract-for-alteryx" %}
+**[Count rows]** <br>
+Gibt die Anzahl der Zeilen/Datensätze einer Extraktion aus unter Berücksichtigung der WHERE-Bedingung. 
 {% endif %}
 
 {% if page.product != "xtract-for-alteryx" %}
