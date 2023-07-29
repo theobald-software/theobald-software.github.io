@@ -15,12 +15,28 @@ Dieser Abschnitt enthält Informationen über die Server-Logs und Transaktions-L
 
 ### Logs Anzeigen
 Die Logs befinden sich im Bereich *Logs* des yunIO Designers. <br>
-Es gbt 3 Arten von logs:
-- **Services:** Zeigt Logs der Service Worker-Prozesse an. Für jede TCP-Verbindung, wird ein Service Worker-Prozess gestartet.
-Der Service Worker empfängt die HTTP-Anfrage, führt Services aus und sendet die HTTP-Antwort and den Aufrufer.
-- **Transactions:** Zeigt Logs von [Transaktion-Services](./transactions) an.
-Wenn Sie einen Transaktion-Service ausführen, wird ein Worker-Prozess für Transaktionen gestartet.
-Der Worker-Prozess führt die Services aus und erstellt die HTTP-Antwort, die dann vom Service Worker an den Aufrufer weitergegeben wird.
+Es gibt drei Arten von logs:
+-  **Service Runs:** Zeigt eine Liste der letzten Service-Läufe an, einschließlich des Status der Status-Läufe.
+- **Service Workers:** Zeigt Logs von Service-Worker-Prozessen an. Für jede TCP-Verbindung wird ein Service-Worker-Prozess gestartet.
+Er empfängt die HTTP-Anfrage, führt den Service aus und sendet die Antwort an den Aufrufer.
+- **Transaction Workers:** Zeigt Logs von [Transaktion-Services](./transactions) an. 
+Beim Ausführen von Transaktion-Services wird ein Transaktion-Worker-Prozess gestartet.
+Es führt den Service aus und erzeugt die Antwort, welche dann vom Service-Worker an den Anrufer weitergeleitet wird.
+Der Service-Worker empfängt die HTTP-Anfrage, führt Services aus und sendet die HTTP-Antwort and den Aufrufer.
+
+### Service Runs
+
+Die Liste der Service-Läufe besteht aus den folgenden Spalten:
+- Name of the service (Name des Services)
+- Date of the log (Datum des Logs)
+- Duration of the service run (Dauer des Service-Laufs)
+- State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*) (Status des Serivce-Laufs)
+
+Klicken Sie auf einen Service-Lauf, um das entsprechende Extraktions-Log unten im Menü anzuzeigen (1).
+
+![yunIO-Logs](/img/content/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
+
+### Service Workers and Transaction Workers
 
 Das Log-Menü besteht aus zwei Abschnitten:
 - Zeitstempel der Logs (1)

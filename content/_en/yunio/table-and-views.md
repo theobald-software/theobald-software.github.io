@@ -101,37 +101,9 @@ Per default all columns are selected to be extracted.
 Deselect the columns you don’t want to extract.
 
 ### WHERE Clause
-Use a WHERE clause to filter your data.
+A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
 
-#### Syntax Rules
-- Enter a space before and after the equal sign:<br>
- **Correct:** *YEAR = '1999'* <br>
- **Wrong:** *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*
-
-- Set floating point numbers in single quotation mark: <br>
-**Correct:** *KMENG > '10.3'* <br>
-**Wrong:** *KMENG > 10.3*
-
-{: .box-note }
-**Note:** The WHERE clause doesn't need any line break (return key).
-
-- Values must have the internal SAP representation:<br>
-  - The date 01.01.1999 has the internal representation 19990101 (YYYYMMDD) 
-  - The year period 001.1999 has the internal representation 1999001 (YYYYPPP)
-  - Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
-  
-| Operator   |      Meaning      |  
-|:---------|:------------- |
-|=, EQ |  True if the content of operand1 is equal to the content of operand2|
-|<>, NE | True if the content of operand1 is not equal to the content of operand2|
-| <, LT | True if the content of operand1 is less than the content of operand2|
-|>, GT |  True if the content of operand1 is greater than the content of operand2|
-|<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
-|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
-| (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
-| (NOT) BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |
-
-For more information on the OpenSQL syntax see [SAP help site - Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm). 
+{% include _content/en/tables/where-clause-syntax.md%}
 
 #### How to use the WHERE Clause in Swagger Inspector
 
@@ -142,45 +114,7 @@ For more information on parameterizing services, refer to the following knowledg
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
-
-### WHERE Clause Editor
-
-The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
-There are 2 options for adding criteria to the WHERE clause:
-- **[Add Criteria]** adds single criteria. <br>
-The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., *MARC~WERKS = 1000*.
-- **[Add Criteria Group]** adds a group of criteria.<br>
-The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
-
-{: .box-tip }
-**Tip:** Combine multiple criteria and criteria groups to create complex filters e.g., 
-*MARC~WERKS = 1000 AND (MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')* extracts only data where the column WERKS equals 1000 and the column PSTAT equals either 'L' or 'LB'.
-
-
-#### Components of the WHERE Clause Editor
-
-![WHERE-Clause-Builder-Example](/img/content/yunio/where-clause-editor.png){:class="img-responsive"}
-
-The following components are available in the editor:
-
-| Icon  | Component   | Function    | 
-| ------|-------------|-------------| 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) | Delete row | deletes a criteria.|
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-up.png) | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with drag&drop. |
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-down.png) | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with drag&drop.| 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-column.png) | Column    | adds a column. Click on the component to select a column from the available tables. | 
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-sql.png)| SQL       |  adds an SQL statement.      |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-operator.png)| Operator  | adds an operator e.g., =, <, >, etc. |  
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png) | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. |
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | adds a new criteria after the selected criteria. |
-| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | adds a new group of criteria the selected criteria. | 
-
-When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
-
-#### Editing and Deleting Components
-
-- Click on a component to edit it. All areas that are marked green can be edited.<br>
-- To delete a component, click the ![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) icon that appears when hovering over the component.<br>
+{% include _content/en/tables/where-clause-editor.md%}
 
 {: .box-note }
 **Note:** The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.

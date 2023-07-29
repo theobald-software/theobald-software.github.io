@@ -16,6 +16,19 @@ The placeholders need to be populated with actual values at extraction runtime. 
 - Flag: This data type can only be used for SAP fields that require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
 4. Click **[OK]** to confirm.
 
+#### Adding Scalar Parameters
+{% if page.product == "xtract-for-alteryx" %} ![Add Scalar](/img/content/xfa/xfa_scalar_2.gif){:class="img-responsive" style="border:1px solid black;"}
+{% else %} ![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}<br>
+
+
+#### Adding List Parameters
+
+{% if page.product == "xtract-for-alteryx" %} ![Add List](/img/content/xfa/xfa_list_param.gif){:class="img-responsive" style="border:1px solid black;"}
+{% else %} ![Add List](/img/content/bwcube_list_param.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}<br>
+
+
 ### Define Runtime Parameters
 
 Assign the runtime parameters to variables or dimension filters.

@@ -16,16 +16,6 @@ Es gibt 2 Möglichkeiten, um zu verifizieren, ob ein SAP Benutzer einen Report e
 - Verwenden Sie Berechtigungsgruppen, siehe [Authorizing Access to Reports via Authorization Groups](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports){:target="_blank"}.
 - Verwenden Sie das benutzerdefinierte Berechtigungsobjekt Z_TS_PROG. 
 
-
-### SAP Standard Datentyp TAB512
-
-Anstatt den SAP Standard Datentyp *TAB512* für den LIST_OUTPUT Tabellen-Parameter zu verwenden, können Sie einen eigenen Z-Datentyp erstellen. <br> 
-Das ist notwendig, sofern die Ausgabelänge einer Report-Zeile mehr als 512 Zeichen beträgt. Die maximal mögliche Länge beträgt 1023 Zeichen.
-![SAPCust-Report-ListOutput](/img/content/report_list_output_ztag1024png.png){:class="img-responsive"}
-
-{: .box-note}
-**Hinweis:** Die Ausnahme `LIST_FROM_MEMORY_NOT_FOUND` wird geworfen, wenn der Report kein Ergebnis liefert.
-
 ***********
 #### Weiterführende Links
 - [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)

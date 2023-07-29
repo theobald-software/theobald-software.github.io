@@ -5,6 +5,10 @@ The Xtract ODP component can be used to extract data via the SAP Operational Dat
 To use the ODP component, access to the designated authority objects (RFC) in SAP must be available.
 For more information, refer to the knowledge base article [SAP User Rights: ODP](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#odp).
 
+{: .box-note }
+**Note:** Before creating ODP extractions, test the ODP source in SAP using the ABAP report RODPS_REPL_TEST to rule out and troubleshoot ODP problems in the ODP source.
+For more information, see [SAP Wiki: Replication test with RODPS_REPL_TEST](https://wiki.scn.sap.com/wiki/display/BI/Replication+test+with+RODPS_REPL_TEST).
+
 ### About ODP
 ODP is a framework in SAP ABAP applications for transferring data between systems.<br> 
 ODP provides a technical infrastructure for data extraction and replication from different SAP (ABAP) Systems e.g.:

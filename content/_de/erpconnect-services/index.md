@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /ERPConnect-Services-DE/
 ---
 
-Willkommen in der Online-Hilfe von ERPConnect Services. 
+Willkommen in der Online-Help von ERPConnect Services. 
 
 ERPConnect Services (ECS) besteht aus den Komponenten **ERPConnect Services Runtime (ECS Runtime), WebService Designer** und **BCS Connector**.
 

@@ -1,17 +1,19 @@
-### Über den Inhalt der Online-Hilfe von Theobald Software
-Die Online-Hilfe von Theobald Software soll den Lesern die Hauptfunktionen der Theobald Software-Produkte vorstellen.
-Zusätzlich zur Online-Hilfe beschreibt Theobald Software die fortgeschritteneren Techniken und Best Practices in der [Knowledge-Base](https://kb.theobald-software.com/).
+### Über den Inhalt der Online-Help von Theobald Software
+Die Online-Help von Theobald Software soll den Lesern die Hauptfunktionen der Theobald Software-Produkte vorstellen.
+Zusätzlich zur Online-Help beschreibt Theobald Software die fortgeschritteneren Techniken und Best Practices in der [Knowledge-Base](https://kb.theobald-software.com/).
 
-Der Anspruch von Theobald Software ist es, die Online-Hilfe entsprechend der neuesten Produktversion auf dem neuesten Stand zu halten. Informationen, die die ältere Version betreffen, werden schrittweise aus dem Inhalt der Online-Hilfe entfernt.  Es wird allgemein empfohlen, immer die neueste Version des Produkts zu installieren.
+Der Anspruch von Theobald Software ist es, die Online-Help entsprechend der neuesten Produktversion auf dem neuesten Stand zu halten. Informationen, die die ältere Version betreffen, werden schrittweise aus dem Inhalt der Online-Help entfernt.  Es wird allgemein empfohlen, immer die neueste Version des Produkts zu installieren.
+
+Zur besseren Lesbarkeit wird in der Online-Help das generische Maskulinum verwendet. 
 
 ©2023 Theobald Software GmbH. Alle Rechte vorbehalten.
 
 ### Zielgruppe und Kundenkreis
-Diese Online-Hilfe richtet sich an alle Benutzer von Produkten von Theobald Software. Die Online-Hilfe bietet Benutzern, die noch nie oder selten mit dem Produkt gearbeitet haben, einen Überblick über die Schnittstelle, die Navigation und die grundlegenden Informationen. 
-Erfahrene Benutzer können detailliertere Informationen zu komplexeren Themen finden und die Online-Hilfe als Referenz verwenden.
+Diese Online-Help richtet sich an alle Benutzer von Produkten von Theobald Software. Die Online-Help bietet Benutzern, die noch nie oder selten mit dem Produkt gearbeitet haben, einen Überblick über die Schnittstelle, die Navigation und die grundlegenden Informationen. 
+Erfahrene Benutzer können detailliertere Informationen zu komplexeren Themen finden und die Online-Help als Referenz verwenden.
 
 Das Lesen des Abschnitts "Erste Schritte" ist die Voraussetzung für die Arbeit mit dem Produkt. 
-Die Online-Hilfe kann auch während der Evaluierungsphase nützlich sein. 
+Die Online-Help kann auch während der Evaluierungsphase nützlich sein. 
 
 ### Typographische Konventionen
 

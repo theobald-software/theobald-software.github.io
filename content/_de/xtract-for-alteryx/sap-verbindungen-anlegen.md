@@ -1,5 +1,5 @@
 ---
-ref: xtract-for-alteryx-04
+ref: xtract-for-alteryx-40
 layout: page
 title: SAP-Verbindung 
 description: SAP-Verbindung konfigurieren
@@ -14,98 +14,154 @@ lang: de_DE
 progressstate: 5
 ---
 
-Der folgende Abschnitt zeigt Ihnen, wie Sie eine SAP-Verbindung erstellen.<br>
-Eine SAP-Verbindung ist notwendig, um Xtract for Alteryx-Komponenten zu verwenden.
-
-### SAP-Verbindung erstellen
-1. Ziehen Sie aus der Alteryx-Designer-Toolbox eine Xtract for Alteryx-Komponente auf die Arbeitsfläche (1). Das Konfigurationsfenster geöffnet sich. 
-![Create-New-Table-Extraction](/img/content/xfa/xfa_create_table_extraction_02.png){:class="img-responsive"}
-2. Klicken Sie auf **[New]** (2) um eine neue Verbindung anzulegen. Das Fenster "SAP Connection Details" öffnet sich. 
-3. Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.<br>
-Die Verbindungsdetails bestehen aus vier Unterabschnitten: [System](#system), [Client and Language](#client-and-language), [Authentication](#authentifizierung) und [Miscallaneous](#miscellaneous).<br>
-![Connection details](/img/content/xfa/xfa_connection-det.png){:class="img-responsive"}
-4. Klicken Sie auf **[Test Connection]**, um die SAP-Verbindung zu testen. Ein Bestätigungsfenster öffnet sich.<br>
-![Connection test](/img/content/xfa/xfa_test-con.png){:class="img-responsive"}
-5. Klicken Sie auf **[OK]**, um die SAP-Verbindung zu speichern.
-
-Die SAP-Verbindung kann nun im Konfigurationsfenster ausgewählt werden (2).<br>
-Um die SAP-Verbindung zu bearbeiten, wählen Sie die SAP-Verbindung aus der Dropdown-Liste (2) aus und klicken Sie auf **[Edit]**.
-
-{: .box-tip }
-**Tipp:** Die richtigen Werte finden Sie im SAP-Logon-Pad unter *Properties*. Alternativ können Sie sich an Ihre SAP-Basis wenden.
+Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](https://help.alteryx.com/20231/designer/dcm-designer) (DCM) von Alteryx eine SAP-Verbindung erstellen.<br>
+Für die Nutzung einer beliebigen Xtract for Alteryx-Komponente ist eine SAP-Verbindung erforderlich.
 
 {: .box-note }
-**Hinweis:** Die Verbindungsdetails einer SAP-Verbindung werden als JSON-Datei in folgendem Verzeichnis abgelegt:<br>
-`C:\Users\<UserName>\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections\<SAPSourceName>.json`
+**Hinweis:** Der Alteryx Data Connection Manager ist ab Alteryx Designer Version 2021.4 verfügbar.
+Wenn Sie eine ältere Version des Alteryx Designers verwenden, lesen Sie den Knowledge-Base-Artikel[Creating an SAP Connecion](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection), um SAP-Verbindungen mithilfe der Xtract for Alteryx-Benutzeroberfläche zu erstellen.
 
-### System
-Es gibt zwei Möglichkeiten eine Verbindung zu einem SAP-Quellsystem herzustellen:
+## Data Sources
 
-- Verwendung eines Single-Application-Servers (Anwendungsserver) (1)
-	- **Host**:  Hostname oder IP-Adresse des Anwendungsservers (Property Host) 
-	- **Sys. No.:**: eine zweistellige Zahl zwischen 00 und 99 (Property SystemNumber)
+Sie können Xtract Data Sources (Datenquellen) mit Anmeldeinformationen kombinieren, um eine SAP-Verbindung herzustellen. <br>
+Die Installation von Xtract für Alteryx beinhaltet die Xtract Data Source Technologie, die eine Verbindung zu SAP-Systemen herstellt.
 
-- Verwendung eines Load-Balancing-Servers (Message-Servers) (2)
+### Eine Xtract Data Source Erstellen
+
+1. Navigieren Sie im Hauptmenü des Alteryx Designers zu **File > Manage Connections**. Das Fenster „Connection Manager" wird geöffnet.
+2. Klicken Sie im Tab *Data Sources* auf **[New]**, um eine neue Data Source zu erstellen.<br>
+3. Wählen Sie die **Xtract**-Technologie aus, um eine Xtract-Data Source zu erstellen.
+4.Füllen Sie die Data Source Einstellungen für Ihr SAP-System aus, siehe [Xtract Data Source Settings](#data-source-settings).<br>
+![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
+4. Klicken Sie auf **[Save]** um die SAP-Verbindung zu speichern. Der Unterabschnitt *Connection* wird angezeigt.
+5. Im Unterabschnitt *Connection* wählen Sie eine der folgenden Authentifizierungsmethoden:<br>
+- [*Plain*](#plain-authentication) verwendet den SAP-Benutzernamen und das Passwort.
+- [*SNC*](#secure-network-communication-snc) nutzt eine verschlüsselte Verbindung zwischen Xtract for Alteryx und SAP mit Benutzername und Passwort.
+- [*Ticket Issuer*](#sap-logon-ticket) verwendet SAP Logon-Tickets anstelle von Benutzeranmeldeinformationen. Diese Verbindung ist nicht verschlüsselt.
+6. Wählen Sie einen [vorhandenen Benutzer](#benutzerinformationen-erstellen) für Ihr SAP-System aus oder klicken Sie auf **+ Connect Credentials**, um einen neuen Benutzer zu erstellen.
+7. Klicken Sie auf **[Link]** / **[Create and link]** um den Benutzer mit der Verbindung zu verknüpfen. Beispiel:<br>
+![new-data-source](/img/content/xfa/dcm/new-data-source.gif){:class="img-responsive" style="border:1px solid black;"}
+
+Die SAP-Verbindung steht nun in den Xtract für Alteryx-Komponenten zur Auswahl.
+
+
+### Xtract Data Source Einstellungen
+
+<!---
+An SAP data source consists of the following settings:<br>
+![Data-Connection-Manager](/img/content/xfa/dcm/data-connection-manager.png){:class="img-responsive"}
+-->
+
+**Technology**<br>
+Es gibt zwei Möglichkeiten, eine Verbindung zu einem SAP-Quellsystem herzustellen:
+- *SAP Application Server* verwendet einen Single-Application-Server.
+	- **Host**: Hostname oder IP-Adresse des Application-Servers (Property Host).
+	- **Sys. No.:**:Eine zweistellige Zahl zwischen 00 und 99 (Property SystemNumber)
+- *SAP Load Balancing* verwendet einen Load-Balancing-Server. Weitere Informationen finden Sie unter [SAP Help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 	- **Message Server**: Name oder IP-Adresse des Message-Servers (Property MessageServer) 
-	- **Group**: Einstellung LogonGroup, meistens *PUBLIC*
-	- **SID**: Dreistellinge System-ID (Property SID z.B. MSS) 
+	- **Group**:Eigenschaft LogonGroup, normalerweise *PUBLIC*
+	- **SID**: Dreistellige System-ID (Eigenschafts-SID, z. B. MSS)
 	
-Für mehr Informationen, siehe [SAP Dokumentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+{: .box-tip }
+**Tipp:** Werte zum Ausfüllen der Data-Source-Einstellungen finden Sie im SAP-Logon-Pad in den *Properties* (Einstellungen) oder über die Anfrage bei dem SAP-Basis-Team.
+	
+**Data Source Name**<br>
+Name der Verbindung.
 
-#### Zugriff über SAP-Router
+**Client**<br>
+Eine dreistellige Nummer des SAP-Mandanten zwischen 000 und 999, z. B. 800.
 
-Wenn Sie auf ein SAP-Quellsystem (Anwendungsserver oder Message-Server) mittels eines SAP-Routers zugreifen, müssen Sie den Router-String vor dem Hostnamen setzen. <br>
-Beispiel: Wenn der Hostname "hamlet" und der Router-String ``/H/lear.theobald-software.com/H/`` lauten, muss das Feld der Host-Einstellung folgendermaßen befüllt werden: ``/H/lear.theobald-software.com/H/hamlet``.
+**Language**<br> 
+Die Anmeldesprache für das SAP-System, z. B. EN für Englisch oder DE für Deutsch
 
-Für mehr Informationen, siehe [SAP Dokumentation: SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
+#### Advanced Options (Erweiterte Optionen)
 
-### Client and Language
-- **Client**: eine dreistellige Nummer des SAP-Mandats zwischen 000 und  999, z.B. 800.
-- **Language**: die Logon-Sprache des SAP-Systems z.B. *EN* für Englisch oder *DE* für Deutsch.
+**Client RFC Library**<br>
+Wählen Sie eine RFC-Bibliothek aus. Die folgenden RFC-Bibliotheken werden unterstützt:
+- NetWeaver RFC library (sapnwrfc.dll)
+- Classic RFC library (librfc32.dll)
 
-### Authentifizierung
-Die folgenden Authentifizierungsmethoden werden unterstützt:
-- **SNC** (1): verschlüsselte Verbindung zwischen Xtract for Alteryx und SAP with Benutzernamen und Passwort. Für mehr Informationen, siehe [SAP Dokumentation: Secure Network Communications (SNC)](https://help.sap.com/viewer/6f3e0bea6c4b101484fcf5305b4d624b/7.01.22/de-DE/e656f466e99a11d1a5b00000e835363f.html).
-- **Plain** (2): SAP-Benutzername und Passwort (System- oder Dialog-Benutzer)
-- **SAP Log On Ticket** (3): verwendet SAP Logon-Tickets anstelle der Benutzerdaten. Diese Verbindung ist nicht verschlüsselt.
+Die RFC API (Remote Function Call) ermöglicht den Aufbau einer RFC-Verbindung zu einem SAP-System von einem externen System, das als Client oder Server mit dem SAP-System kommuniziert.
+Weitere Informationen zu SAP-Bibliotheken finden Sie unter[SAP Help: RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). 
 
-![Connection details](/img/content/xfa/xfa_connection-auth.png){:class="img-responsive"}
-
-#### SNC (1)
-1. Überprüfen Sie den SAP parameter snc/gssapi_lib *snc/gssapi_lib* um zu bestimmen, welche Bibliothek für die Verschlüsselung in Ihrem SAP System verwendet wird. 
-Ihre SAP-Basis muss auf dem Anwendungsserver und auf dem Rechner, auf dem Xtract for Alteryx installiert ist, die gleiche Bibliothek importieren und konfigurieren.
-2. Wenn Sie SNC verwenden, achten Sie darauf den vollständigen Pfad zum Speicherort der SNC Bibliothek anzugeben, z.B. ``C:\SNC\gx64krb5.dll``.
-3. Geben Sie den SAP-Partnernamen (Partner Name) ein, der für den SAP-Anwendungsserver konfiguriert ist z.B. ``p:SAPserviceERP/do_not_care@THEOBALD.LOCAL``.
-
-Für mehr Informationen über SNC, siehe den Knowledge Base Artikel [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
-
-#### Plain (2)
-Geben Sie in den Feldern **User** und **Password** Ihren SAP-Benutzernamen und Ihr Passwort ein.
-
-#### SAP Log On Ticket (3)
-Geben Sie in dem Feld **Ticket issuer** die URL des Application Server Java (AS Java) ein, der die Anmeldetickets ausstellt. <br>
-Für mehr Informationen, siehe [SAP Dokumentation: AS Java für das Ausstellen von Anmeldetickets konfigurieren](https://help.sap.com/doc/saphelp_nw75/7.5.5/DE-DE/4a/412251343f2ab1e10000000a42189c/frameset.htm).
-
-### Miscellaneous
-Wählen Sie eine RFC Bibliothek aus. Die folgenden Bibliotheken werden untertsützt:
-- **RFC library (librfc32.dll)** - Klassische RFC Bibliothek
-- **NetWeaver RFC libraries** - NetWeaver RFC Bibliothek (sapnwrfc.dll)
-
-Die RFC API (Remote Function Call) erlaubt den Aufbau einer RFC-Verbindung zu einem ABAP basierten SAP-System von einem externen System, welches als Client oder Server mit dem SAP-System kommunizieren kann. 
-Für mehr Informationen, siehe [SAP Dokumentation: RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). 
-
-SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
-
-{: .box-note }
-**Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein. 
+SAP stoppte die Unterstützung für die [Bibliothek librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/). 
 
 **Trace Directory**<br>
-Sie können Debug-Informationen loggen und lokal ablegen. 
-Geben Sie im Feld **Trace directory** einen Pfad zu einem lokalen Verzeichnis ein, in dem die Debug-Informationen gespeichert werden sollen.
-Für mehr Informationen, siehe den Knowledge Base Artikel [How to activate tracing for Xtract Products](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products).<br>
-Leeren Sie das Feld **Trace Directory**, wenn es nicht mehr gebraucht wird.
+Sie können Debug-Informationen protokollieren und lokal speichern. Geben Sie im Feld **Trace Directory** einen lokalen Pfad zu einem Ordner ein, in dem Sie die Debug-Informationen speichern möchten.
+Weitere Informationen finden Sie im Knowledge-Base-Artikel [How to activate tracing for Xtract Products](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products).<br>
+Leeren Sie das Feld **Trace Directory**, wenn es nicht benötigt wird.
 
 {: .box-warning }
-**Warnung!: ****Erhöhter Verbrauch des Festplattenspeichers** <br>
-Bei der Aktivierung des Debug-Logging wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
-Aktivieren Sie das Debug-Logging nur bei Bedarf, z.B. auf Anfrage des Support-Teams.
+**Warnung!: Erhöhung des genutzten Festplattenspeichers** <br>
+Wenn die Debug-Logging aktiviert ist, wird eine große Menge an Informationen gesammelt. Dies kann die Kapazität Ihrer Festplatten drastisch verringern.
+Aktivieren Sie die Debug-Logging nur bei Bedarf, z. B. auf Anfrage des Support-Teams.
+
+
+## Benutzerinformationen und Authentifizierung
+
+Sie können SAP Data Sources mit Benutzerinformationen kombinieren, um eine SAP-Verbindung herzustellen. <br>
+Die Benutzerinformationen im DCM umfassen die Definition der Authentifizierungsmethode, die für die Verbindung mit SAP verwendet wird.
+
+### Benutzerinformationen Erstellen
+
+<!---
+The SAP connection for Xtract for Alteryx uses existing credentials from the Data Connection Manager.<br>
+If no credentials exist, follow the steps below to add credentials for your SAP connection:
+-->
+
+1. Navigieren Sie im Hauptmenü des Alteryx Designers zu **File > Manage Connections**. Das Fenster "Connection Manager" wird geöffnet.
+2. Im Tab *Credentials* klicken Sie **[New]** um einen neuen Benutzer zu erstellen.<br>
+![Credentials](/img/content/xfa/dcm/credentials.png){:class="img-responsive"}
+3. Geben Sie einen Namen für die Benutzerinformationen ein und wählen Sie eine der folgenden Authentifizierungsmethoden aus: <br>
+- [*Username and password*](#plain-authentication) verwendet den SAP-Benutzernamen und das Passwort.
+- [*SAP SNC*](#secure-network-communication-snc) nutzt eine verschlüsselte Verbindung zwischen Xtract for Alteryx und SAP mit Benutzername und Passwort.
+- [*SAP Ticket Issuer*](#sap-logon-ticket) verwendet SAP-Anmeldetickets anstelle von Benutzeranmeldeinformationen. Diese Verbindung ist nicht verschlüsselt.
+4. Füllen Sie die Authentifizierungsdetails aus.
+5. Klicken Sie auf **[Save]** um den Benutzer zu speichern.
+
+Der Benutzer wird in der Liste der Benutzer angezeigt.
+
+{: .box-tip }
+**Tipp:** Sie können Benutzerinformationen mit mehreren Data Sources verknüpfen.
+
+### Plain Authentication
+
+Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.
+
+![Plain-Credential](/img/content/xfa/dcm/plain.png){:class="img-responsive"}
+
+### Secure Network Communication (SNC)
+
+Secure Network Connection (SNC) ermöglicht Authentifizierung und Transportverschlüsselung zwischen SAP-Systemen sowie zwischen SAP-Systemen und Drittanbieter-Tools wie Xtract für Alteryx.
+
+1. Überprüfen Sie den SAP-Parameter *snc/gssapi_lib*, um festzustellen, welche Bibliothek in Ihrem SAP-System für die Verschlüsselung verwendet wird.
+Stellen Sie sicher, dass Ihre SAP-Basis dieselbe Bibliothek auf dem Anwendungsserver und auf dem Computer importiert und konfiguriert, auf dem Xtract for Alteryx ausgeführt wird.
+2. Achten Sie bei Verwendung von SNC darauf, den vollständigen Pfad der Bibliothek in das Feld **SNC library** einzugeben, z. B. ``C:\SNC\gx64krb5.dll``.
+3. Geben Sie den SAP **Partnernamen** ein, der für den SAP-Application-Server konfiguriert ist, z. B.``p:SAPserviceERP/example@THEOBALD.LOCAL``.
+
+Weitere Informationen finden Sie unter [SAP Help: Secure Network Communications (SNC)](https://help.sap.com/viewer/6f3e0bea6c4b101484fcf5305b4d624b/7.01.22/en-US/e656f466e99a11d1a5b00000e835363f.html) oder in diesem Knowledge-Base-Article [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+
+![SNC-Credential](/img/content/xfa/dcm/snc.png){:class="img-responsive"}
+
+### SAP Logon Ticket
+
+Zur Authentifizierung können Sie Single-Sign-On (SSO) mit SAP Logon-Tickets nutzen. Diese Verbindung ist nicht verschlüsselt.
+Geben Sie in das Feld **Ticket issuer** die URL eines Application Server Java (AS Java) ein, der für die Ausstellung von Logon-Tickets konfiguriert ist. <br>
+Weitere Informationen finden Sie unter [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
+
+![SAP-Logon-Ticket-Credential](/img/content/xfa/dcm/logon-tickets.png){:class="img-responsive"}
+
+## Zuweisen einer SAP-Verbindung zu einer Xtract-Komponente
+
+1. Ziehen Sie eine Xtract for Alteryx-Komponente per Drag&Drop aus der Alteryx Designer-Toolbox auf die Leinwand (1). Das Konfigurationsfenster der Komponente wird geöffnet.<br>
+![Create-New-Table-Extraction](/img/content/xfa//xfa_create_table_extraction_02.png){:class="img-responsive"}
+2. Wählen Sie aus der Dropdown-Liste (2) eine SAP-Verbindung aus.
+
+{: .box-note }
+**Hinweis:** Wenn keine SAP-Verbindungen verfügbar sind, erstellen Sie eine SAP-Verbindung im Alteryx Connection Manager, siehe [SAP-Verbindung konfigurieren](#sap-verbindung-konfigurieren).
+
+
+*****
+#### Weiterführende Links
+- [Alteryx Documentation: Data Connection Manager - Server](https://help.alteryx.com/20223/server/dcm-server)
+

@@ -16,7 +16,7 @@ The following section contains information on the server and transaction logs cr
 
 ### Display Logs
 The logs are located in the *Logs* section of the yunIO Designer. <br>
-There are 3 types of logs:
+There are three types of logs:
 - **Service Runs:** Displays a list of the latest service runs, including the status of the service run.
 - **Service Workers:** Displays logs of service worker processes. For each TCP connection, a service worker process is started. 
 It receives the HTTP request, executes the service, and sends the response to the caller.

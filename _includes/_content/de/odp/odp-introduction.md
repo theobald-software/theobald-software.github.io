@@ -5,6 +5,10 @@ Die ODP-Komponente wird verwendet, um Daten über das SAP Operational Data Provi
 Um die ODP Komponente zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: ODP](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#odp).
 
+{: .box-note }
+**Hinweis:** Bevor Sie ODP-Extraktionen erstellen, testen Sie die ODP-Quelle mit dem ABAP Report RODPS_REPL_TEST in SAP, um Probleme in der ODP-Quelle auszuschließen.
+Für mehr Informationen, siehe [SAP Wiki: Replication test with RODPS_REPL_TEST](https://wiki.scn.sap.com/wiki/display/BI/Replication+test+with+RODPS_REPL_TEST).
+
 ### Über ODP
 ODP ist ein Framework in ABAP-basierten SAP-Systemen für den Datentransfer zwischen verschiedenen Systemen.<br> 
 ODP stellt eine technische Infrastruktur für die Datenextraktion und -replikation aus verschiedenen SAP (ABAP)-Systemen zur Verfügung, z.B.:
@@ -34,7 +38,7 @@ DataSources/Extraktoren [[SAPI](./odp/odp-extractors)] | - DataSources und Extra
 {: .box-note }
 **Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
 
-Für mehr Information über SAP ODP, siehe [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
+Für mehr Informationen über SAP ODP, siehe [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
 
 ### Voraussetzungen
 
@@ -45,3 +49,6 @@ Implementieren Sie die folgenden SAP-Hinweise, um ODP zu verwenden:
 - [2196500 - ODP Paketgröße kann nicht auf einen Wert unter 50 MB reduziert](https://launchpad.support.sap.com/#/notes/2196500/D)
 - [2191995 - ODQ Paketgröße kann nicht unter 50 MByte reduziert werden](https://launchpad.support.sap.com/#/notes/2191995/D)
 
+{: .box-note }
+**Hinweis:** Die ODP API 1.0 hat im Vergleich zur ODP API 2.0 Einschränkungen, z.B. unterstützt ODP API 1.0 keine Extraktion von Hierarchy DataSources. 
+Für mehr Informationen, siehe [SAP Wiki: Limitation of ODP API 1.0](https://wiki.scn.sap.com/wiki/display/BI/Limitation+of+ODP+API+1.0). 

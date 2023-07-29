@@ -33,6 +33,7 @@ The following articles explain how to integrate yunIO services with Microsoft Po
 The following articles explain how to integrate yunIO services with Nintex Automation Cloud:
 - [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex)
 - [Employee Onboarding Scenario using Nintex and yunIO](https://kb.theobald-software.com/yunio/personell-actions-with-nintex-and-yunio)
+- [Sync Nintex Forms for Office 365 with SAP using JavaScript](https://kb.theobald-software.com/yunio/sync-nintex-forms-for-office365)
 
 ### Integration with Alteryx
 The following articles explain how to integrate yunIO services with Alteryx:

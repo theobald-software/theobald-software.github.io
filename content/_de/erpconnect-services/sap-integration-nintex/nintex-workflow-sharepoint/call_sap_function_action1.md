@@ -16,7 +16,7 @@ Mit der **Call SAP Function** Nintex Workflow Custom Action können Sie jeden re
 
 Dies ermöglicht die Erstellung von Szenarien für lesenden und schreibenden Zugriff auf SAP Daten. Die Custom Workflow Action wird ausgeliefert mit dem ERPConnect Services Installationspaket, zusammen mit den Workflow Actions **Read SAP Table** und **Query XQL**.  
 
-Als Anwendungsbeispiele für die *Call SAP Function* Action haben wir zwei Integrations-Szenarien umgesetzt, die wir in der Online-Hilfe in zwei gesonderten Abschnittn ausführlich erläutern:
+Als Anwendungsbeispiele für die *Call SAP Function* Action haben wir zwei Integrations-Szenarien umgesetzt, die wir in der Online-Help in zwei gesonderten Abschnittn ausführlich erläutern:
 
 1. Anlage einer Bestellanforderung (BANF) 
 2. Reiseantrag und Reisekostenabrechnung 

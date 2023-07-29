@@ -2,7 +2,7 @@
 ref: xtract-universal-02
 layout: page
 title: Über die Online-Help
-description:  Allgemeine Informationen zum Inhalt der Online-Hilfe
+description:  Allgemeine Informationen zum Inhalt der Online-Help
 product: xtract-universal
 parent: xtract-universal
 permalink: /:collection/:path

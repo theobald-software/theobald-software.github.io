@@ -15,15 +15,6 @@ There are 2 ways to verify that the SAP user is allowed to extract a report:
 - Use authentication groups, see [Authorizing Access to Reports via Authorization Groups](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports){:target="_blank"}.
 - Use the custom authorization object Z_TS_PROG. 
 
-### SAP Standard Data Type TAB512
-
-Instead of using the SAP standard data type *TAB512* for the LIST_OUTPUT table parameter, you can create your own Z data type. <br> 
-This is necessary if the output length of a report line is longer than 512 characters. The maximum possible length is 1023 characters.
-![SAPCust-Report-ListOutput](/img/content/report_list_output_ztag1024png.png){:class="img-responsive"}
-
-{: .box-note}
-**Note:** The exception `LIST_FROM_MEMORY_NOT_FOUND` is thrown if the report does not return a result.
-
 
 ***********
 #### Related Links

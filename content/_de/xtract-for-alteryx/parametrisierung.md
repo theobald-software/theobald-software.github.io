@@ -77,5 +77,4 @@ Beispiel: 000000000000000023 als Eingabe für *p_MATNR_low* und 0000000000000001
 ****
 #### Weiterführende Links
 - [Alteryx Help](https://help.alteryx.com/20212/designer)
-- [Batch Macros Tutorial Video](https://www.youtube.com/watch?v=YIAbQGQ_Hkg&t=3s)
 - [Alteryx Help: Batch Macros](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm)
