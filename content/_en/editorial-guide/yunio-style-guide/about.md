@@ -31,15 +31,6 @@ The UI Style Guide of Theobald Software addresses the following topics:
 - Layout including CSS definitions for headers and margins
 
 
-``` css
-<!-- css definition for H4 headers -->
-h4 { 
-	margin-bottom: 0;
-	color: var(--dark_blue); 
-},
-```
-![Capture](/img/content/help_concept/yunIO/new-h4-definition.png){:class="img-responsive"}
-
 ### How to use the UI Style Guide
 It is advisable to read the whole document at least once and then use it as a reference and search for an item, if needed. 
 Ideas, changes and extensions are welcome and should be added to the Style Guide in cooperation with a technical writer.
