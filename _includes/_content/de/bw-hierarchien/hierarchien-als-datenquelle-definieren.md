@@ -9,7 +9,7 @@
 
 
 ### Ausgabe Formatieren
-1. Klicken Sie auf **[Extraction Settings]** (3), um das Ausgabeformat der Hierarchie zu definieren, siehe [Extraktionseinstellungen](./hierarchie-extraktionseinstellungen).
+1. Klicken Sie auf **[Extraction Settings]** (3), um das Ausgabeformat der Hierarchie zu definieren, siehe [{% if page.product == "xtract-is" %}Einstellungen{% else %}Extraktionseinstellungen{% endif %}](./hierarchie-extraktionseinstellungen).
 {% if page.product == "xtract-for-alteryx" %}![Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Hierarchy](/img/content/xis/xis-hierarchy.png){:class="img-responsive"} {% else" %}![Hierarchy](/img/content/xu/hierarchy-settings.png){:class="img-responsive"} {% endif %}
 2. Klicken Sie auf **[Load live preview]** (4), um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
 {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}  {% else" %}3. Optional: Öffnen Sie die **General Settings**, um Primärschlüssel zu definieren, die Verschlüsselung von Daten und andere Einstellungen zu ändern, siehe [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen).
@@ -17,5 +17,5 @@
 
 ****
 #### Weiterführende Links
-- [Hierarchy Extraktionseinstellungen](./hierarchie-extraktionseinstellungen)
+- [Hierarchy {% if page.product == "xtract-is" %}Einstellungen{% else %}Extraktionseinstellungen{% endif %}](./hierarchie-extraktionseinstellungen)
 - [SAP Documentation: Uploading Hierarchies from Flat Files](https://help.sap.com/saphelp_scm700_ehp02/helpdata/en/fa/e92637c2cbf357e10000009b38f936/frameset.htm)
