@@ -14,5 +14,3 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-table-extraktion-definier
 {% include _content/de/table/where-bedingung.md%}
 {% include _content/de/table/where-bedingung-editor.md%}
 {% include _content/de/table/where-bedingung-syntax.md%}
-
-{% include _content/de/table/where-bedingung-laufzeitparameter.md%}
