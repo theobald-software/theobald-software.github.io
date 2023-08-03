@@ -1,7 +1,7 @@
 ---
 ref: xi-bw-cube-04
 layout: page
-title: Settings
+title: Einstellungen
 description: Settings
 product: xtract-is
 parent: bw-cube

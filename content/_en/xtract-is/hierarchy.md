@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-07
 layout: page
-title: Xtract BW Hierarchy
+title: Xtract Hierarchy
 description: Xtract IS Hierarchy
 product: xtract-is
 parent: xtract-is

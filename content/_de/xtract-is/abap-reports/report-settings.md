@@ -1,7 +1,7 @@
 ---
 ref: xi-report-05
 layout: page
-title: Settings
+title: Einstellungen
 description: Settings
 product: xtract-is
 parent: report

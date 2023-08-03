@@ -1,5 +1,5 @@
 
-Um die Extraktionseinstellungen zu öffnen, klicken Sie im Hauptfenster der Komponente auf **[Extraction Settings]**.
+Um die Extraktionseinstellungen zu öffnen, klicken Sie im Hauptfenster der Komponente auf {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %}.
 Das Fenster “Hierarchy Settings” öffnet sich.<br>
 ![Hierarchies-Settings](/img/content/extractors.bwhier/Hierarchy-settings.png){:class="img-responsive"}
 

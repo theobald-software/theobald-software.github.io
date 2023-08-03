@@ -1,4 +1,4 @@
-To access the extraction settings, click **[Extraction Settings]** in the main window of the component. The window “Hierarchy Settings” opens.<br>
+To access the extraction settings, click {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} in the main window of the component. The window “Hierarchy Settings” opens.<br>
 ![Hierarchies-Settings](/img/content/extractors.bwhier/Hierarchy-settings.png){:class="img-responsive"}
 
 ### Extraction Settings

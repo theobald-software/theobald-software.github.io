@@ -1,7 +1,7 @@
 ---
 ref: xis-odp-settings
 layout: page
-title: Settings
+title: Einstellungen
 description: ODP Settings
 product: xtract-is
 parent: odp

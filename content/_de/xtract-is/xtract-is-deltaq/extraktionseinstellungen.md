@@ -1,7 +1,7 @@
 ---
 ref: xi-q-delta-09
 layout: page
-title: Settings
+title: Einstellungen
 description: Settings
 product: xtract-is
 parent: xtract-is-deltaq
