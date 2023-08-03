@@ -57,5 +57,5 @@ Das Express Custom Setup installiert eine bestimmte Version von Xtract IS for Az
 ### Nutzung einer selbstgehosteten Integration Runtime (SHIR)
 Xtract IS for Azure unterstützt SHIR um den Zugriff von einer Azure SSIS-IR auf ein On-Premisess SAP-System zu ermöglichen. Allgemeine Informationen zu SHIR findet man in der [Microsoft Dokumentation](https://docs.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-proxy-ssis). 
 
-Für Xtract IS for Azure haben wir den Prozess in unserer [knowledgebase](https://kb.theobald-software.com/xtract-is/XIS-for-Azure-SHIR) dokumentiert.
+
 

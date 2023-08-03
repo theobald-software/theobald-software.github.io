@@ -61,4 +61,3 @@ After purchasing Xtract IS for Azure the [Cluster ID of the Azure SSIS-IR](https
 
 Xtract IS for Azure supports usage of SHIR for connecting to an on-prem SAP system from Azure SSIS-IR. See [Microsoft documentation - Configure a self-hosted IR as a proxy for an Azure-SSIS IR in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-proxy-ssis) to get general information about SHIR setup. 
 
-For information on the installation process of a self-hosted IR with Xtract IS for Azure, see the knowledge base article [Using a self-hosted IR with Xtract IS for Azure](https://kb.theobald-software.com/xtract-is/XIS-for-Azure-SHIR).
