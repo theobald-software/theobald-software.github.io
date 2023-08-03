@@ -20,7 +20,7 @@ There are standard delta extraction methods available for master data and transa
 Things that need to be considered when using Extractors:
 
 - DataSources have to be activated in SAP, see [Set Up and Activate DataSources](https://help.sap.com/viewer/7a60944343e543a1ab99e9b2904dab09/CLOUD/en-US/e5d447257a95416190d29638a64a5dfa.html).
-- When searching for BW InfoProviders, make sure to select the correct context, see [Look up Data Objects](./odp-define). <br>
+- When searching for DataSources or Extractors, make sure to select the correct context, see [Look up Data Objects](./odp-define). <br>
 ![ODP SAPI Search](/img/content/odp/odp-datasource-sapi.png){:class="img-responsive"}
 - If delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the ODP component. 
 - If the DataSource is a Hierarchy, there are additional settings, see [Hierarchies](#hierarchies).
