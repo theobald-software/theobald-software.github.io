@@ -11,12 +11,12 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=hierarchy
 ---
-The following section describes the functions of the Xtract BW Hierarchy component of Xtract IS.<br>
+The following section describes the functions of the Xtract Hierarchy component of Xtract IS.<br>
 The Xtract IS Hierarchy component is an SSIS data source that enables the extraction of hierarchies from an SAP BW / BI system.
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
-To use the BW Hierarchy component, access to the designated authority objects (RFC) in SAP must be available.
+To use the Hierarchy component, access to the designated authority objects (RFC) in SAP must be available.
 For more information, refer to the knowledge base article [SAP User Rights: BW Hierarchies](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-hierarchies).
 
 {% include _content/en/hierarchies-recommendation.md %}
@@ -25,10 +25,10 @@ For more information, refer to the knowledge base article [SAP User Rights: BW H
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
 
-### How to use the Xtract BW Hierarchy component
+### How to use the Xtract Hierarchy component
 {% include _content/en/xis-specific/define-extraction.md %}
 
-More information on working with the Xtract BW Hierarchy component is provided in the following sections.
+More information on working with the Xtract Hierarchy component is provided in the following sections.
 
 ---
 

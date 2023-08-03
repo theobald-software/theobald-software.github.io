@@ -28,7 +28,7 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 ### Xtract Hierarchy verwenden
 {% include _content/de/xis-specific/define-extraction.md %}
 
-Weitere Informationen zum Arbeiten mit der Xtract BW Hierarchy Komponente finden Sie in den folgenden Unterabschnitten.
+Weitere Informationen zum Arbeiten mit der Xtract Hierarchy Komponente finden Sie in den folgenden Unterabschnitten.
 
 ---
 
