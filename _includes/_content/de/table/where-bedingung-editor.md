@@ -11,7 +11,7 @@ Der WHERE Clause Editor stellt ein Toolkit zur Verfügung, mit dem WHERE-Bedingu
 Es gibt 2 Optionen, um der WHERE-Bedingung neue Kriterien hinzuzufügen:
 - **[Add Criteria]** fügt ein einzelnes Kriterium hinzu. <br>
 	- Der Standardaufbau für ein Kriterium mit statischen Werten ist `[Spalte][Operator][Wert]`, z.B. *MARC~WERKS = 1000*.
-	- Der Standardaufbau für ein Kriterium mit Parametern ist `[Spalte][Operator][Parameter]`, z.B. *MARC~WERKS = [p_WERKS]*.
+	{% if page.product != "yunio" or page.parent != "table-cdc" %}- Der Standardaufbau für ein Kriterium mit Parametern ist `[Spalte][Operator][Parameter]`, z.B. *MARC~WERKS = [p_WERKS]*. {% endif %} 
 - **[Add Criteria Group]** fügt eine Gruppe hinzu, die mehrere Kriterien beinhaltet.
 	- Der Standardaufbau für eine Kriteriengruppe ist `([Spalte1][Operator1][Wert1][Logik][Spalte2][Operator2][Wert2])`, z.B. *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
 
@@ -42,7 +42,7 @@ Folgende Komponenten stehen im Editor zur Verfügung:
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-literal.png)| Value | fügt einen statischen Wert vom Typ *String*, *Number*, *Flag* oder *List* hinzu. *List* bietet einen separaten Editor, um Listen vom Typ *String*, *Number* oder *Select* zu erstellen. *Select* ermöglicht die Eingabe einer SELECT-Anweisung. Mehr Informationen zu Listen, finden Sie im Knowledge Base Artikel [Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/xtract-universal/where-clause-editor-lists).|
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add.png) | Criteria | fügt der WHERE-Bedingung ein neues Kriterium hinzu. |
 | ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-group.png) | Group | fügt der WHERE-Bedingung eine neue Gruppe hinzu.| 
-{% if page.product != "yunio" %}| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-param.png)| Parameter | fügt einen zuvor definierten Laufzeitparameter hinzu, siehe [Laufzeitparameter im WHERE Clause Editor](#laufzeitparameter-im-where-clause-editor).|{% endif %} 
+{% if page.product != "yunio" or page.parent != "table-cdc" %}| ![WHERE-Clause-Builder-Example](/img/content/icons/where-clause-add-param.png)| Parameter | fügt einen zuvor definierten Laufzeitparameter hinzu, siehe [Laufzeitparameter im WHERE Clause Editor](#laufzeitparameter-im-where-clause-editor).|{% endif %} 
 
 {: .box-note }
 **Hinweis**: Wenn neue Kriterien hinzugefügt oder bearbeitet werden, werden nur relevante Komponenten angezeigt.
