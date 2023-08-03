@@ -12,7 +12,7 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=hierarchy
 ---
 Der folgende Abschnitt beschreibt die Funktion der Xtract Hierarchy Komponente.<br>
-Die Xtract IS Hierarchy Komponente ist eine SSIS-Datenquelle, um Hierarchien aus einem SAP BW / BI System zu extrahieren.
+Die Xtract Hierarchy Komponente ist eine SSIS-Datenquelle, um Hierarchien aus einem SAP BW / BI System zu extrahieren.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
