@@ -68,6 +68,7 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![designer-icon](/img/content/icons/designer/eng.png)| Online Help (EN) | Open the English Online Help| <!-----> - <!-----> 
 ![designer-icon](/img/content/icons/designer/de.png) | Online Help (DE) | Open the German Online Help | -
 ![designer-icon](/img/content/icons/designer/support.png) | Submit Support Ticket | Open the Ticket Portal | [Helpdesk](https://support.theobald-software.com/helpdesk/User/Register)
+![designer-icon](/img/content/icons/designer/refresh.png) | Download latest version | Link to My Theobald Software | [My Theobald Software](https://my.theobald-software.com/)
 ![designer-icon](/img/content/icons/designer/info.png) | Info | Product information | [Info window](../introduction/license#about-xtract-universal---info-window)
 ![designer-icon](/img/content/icons/designer/version-history.png) | Version History | List of recent software changes | [Version History](https://kb.theobald-software.com/version-history)
 
