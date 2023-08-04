@@ -11,7 +11,9 @@ weight: 65
 lang: en_GB
 progressstate: 5
 ---
+
 The following section describes the functions of the ODP component of Xtract Universal. <br>
+
 {% include _content/en/odp/odp-introduction.md %} 
 
 {: .box-tip }
