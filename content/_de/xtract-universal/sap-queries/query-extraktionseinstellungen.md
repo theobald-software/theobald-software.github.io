@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=Extraktionseinstellungen_1
 ---
 
-{% include _content/de/sap-queries/extraktionseinstellungen_1.md %}
+{% include _content/de/sap-queries/extraktionseinstellungen.md %}

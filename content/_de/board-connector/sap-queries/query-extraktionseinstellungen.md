@@ -11,4 +11,4 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=query-extraktionseinstellungen
 ---
 
-{% include _content/de/sap-queries/extraktionseinstellungen_1.md %}
+{% include _content/de/sap-queries/extraktionseinstellungen.md %}
