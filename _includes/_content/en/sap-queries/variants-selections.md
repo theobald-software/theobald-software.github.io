@@ -1,57 +1,61 @@
-### Variants and Selections
-Most queries allow entering selections before query execution.
-Selections limit the result set of the Query to extract only records that match the selection.<br>
 
-A selection variant can be created in SAP at the selection screen of a Query. The purpose of a variant is to save selection settings. 
-This minimizes the need to enter selections each time you run a query.
+Most queries allow entering selections before query execution.
+Selections limit the result set of the query to extract only records that match the selection.<br>
+A selection variant can be created in SAP, see [SAP Documentation: Query Variants](https://help.sap.com/docs/SAP_NETWEAVER_750/40d2cb3a4f9249d58e9bbc95f4dbaff8/4e535406a32c4f49e10000000a42189e.html?locale=en-US). 
+The purpose of a variant is to minimize the necessity to enter selections when running a query.
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
 
-
-
 ### Choose a Variant
+Choose a variant from the drop-down-list *Variant* (1). <br>
+If you create a new variant in SAP after creating the query extraction, click ![refresh](/img/content/icons/refresh.png) to load the new variant.
 
-1. Click the small **[binocular icon]** (1). The window "Look Up Variant" opens.
-![Query-Variants-Selection](/img/content/Query-Variants-Selections.png){:class="img-responsive"}
-2. Select a Variant from the list of available variants. <br>
-![Query-Variant-02](/img/content/Query-Variant-02.png){:class="img-responsive"}
-3. Confirm your input with **[OK]**.
+![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 
-To remove the variant, click the **[X]** button (2).<br>
+{: .box-note }
+**Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. 
+To see the definition of a variant, open the variant in SAP.
+
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}
 
 {: .box-tip }
-**Tip**: You can dynamize the variant by using a corresponding parameter in the extraction URL.
+**Tip**: You can define the variant at runtime by using a corresponding parameter in the extraction URL, see [Extraction Parameters](../execute-and-automate-extractions/extraction-parameters).
 
+{% endif %}
 
 ### Edit Selections
-This section corresponds to the query's selection screen in SAP. Some selection fields only have a technical name and no description. 
-To understand which field corresponds to a field in SAP, take a look at the query’s selection screen in SAP. 
-Click on a selection field and press function key F1. This displays the technical name of a selection field.
 
-In general, selection parameters overwrite the selected variant. 
-This ensures that there are possible combinations for the selection.
+The *Selection Screen* in the query window corresponds to the query's input screen in SAP.
 
-{% include _content/en/sap-data-format.md  %}
+![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}
 
-1. Click the **[Edit]** button next to the selection you want to edit (3). The window “Edit Range” opens.
-![Query-Selection-Parameters-02](/img/content/Selection-Options-Fill-02.png){:class="img-responsive"}
-2. Choose if the selection is to be included or excluded (4) from the extracted data under *Sign*.
-3. Select an operator (Equal, GreaterThan, etc.) from the drop-down list under *Option* (5).
-4. Enter the selection in the respective Low and High fields. The High field is active for input when the *between* ([]) or *not between*(][) operator was selected.
-5. Click **[OK]** to confirm the selections.
+{: .box-note }
+**Note:** Some selection fields only have a technical name and no description. 
+To understand which field corresponds to a field in SAP, open the query's input screen in SAP. 
+Click a selection field and press the function key **[F1]** to display the technical name of the selection field. 
 
-To delete a selection, click the button in the bottom left corner (6).
+Follow the steps below to edit selection fields:
+1. Click the **[Edit]** button next to the selection field you want to edit. The window “Edit Selection” opens.
+2. Click **[Add Selection]** to add a new filter criterion.
+3. Select *Include* in the **Sign** (1) column to only include the filtered data to the output. <br>
+Select *Exclude* in the **Sign** (1) column to exclude the filtered data from the output.<br>
+![ODP Fields](/img/content/query/query-plant-selection.png){:class="img-responsive"}
+4. Select an operator in the **Option** (2) column. The operator filters data according to the table below.
 
-| logical operator   | description   |
-|---------------|-------------------------|
-| "="     | equal      |
-| "!=" | not equal     |
-| "<"     | lower than   | 
-| "<="      | lower equal than   | 
-| ">"    | greater than   | 
-| ">="   | greater equal than | 
-| "[]" | between (interval) | 
-| "]["       | not between (Intervall) | 
-| " * "    | contains pattern (Like) | 
+   | Operator   |      Meaning      |  
+   |:---------|:------------- |
+   |(Not)ContainsPattern |  True if data values do (not)contain to the content of operand 1.|
+   |(Not)Equal |  True if data is (not)equal to the content of operand 1.|
+   |GreaterOrEqual |  True if data is greater than or equal to the content of operand 1.|
+   |GreaterThan |  True if data is greater than the content of operand 1.|
+   |LessOrEqual | True if data is less than or equal to the content of operand 1.|
+   |LessThan | True if data is less than the content of operand 1.|
+   |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
+5. Enter values directly into the **Low** and **High** input fields. 
+6. Click **[OK]** to confirm your input.
 
+Note that edited selection fields overwrite the selection fields in the variant. 
+
+{: .box-tip }
+**Tip:** If you use multiple selection parameters, create a variant in SAP. Use the variant instead of entering selections.

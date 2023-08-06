@@ -13,7 +13,6 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-query-extraction
 
 {% include _content/en/sap-queries/variants-selections.md %}
 
-To use variable as selection parameters, add an @-symbol before the variable name.
-For information on how to pass values to variable, see [Extraction Parameters](../execute-and-automate-extractions/extraction-parameters#custom).
+### Data Format
 
-![EditRange](/img/content/query_editrange.png){:class="img-responsive"}
+{% include _content/en/sap-data-format.md  %}

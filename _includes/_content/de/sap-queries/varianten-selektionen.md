@@ -1,59 +1,63 @@
 
-### Varianten und Selektionen
-
 Die meisten Queries erlauben die Eingabe von Selektionen vor Ausführung der Query.
-Selektionen limitieren die Ausgabe der Query, sodass nur Daten die der Selektion entsprechen ausgegeben werden.
-
-Eine Variante mit Selektionen kann in SAP im Selektionsbildschirm einer Query erstellt werden.
-Der Zweck einer Variante ist es, Selektionen zu speichern.
-Das minimiert die Eingabe von Selektionen, wenn Sie Queries ausführen.
+Selektionen limitieren die Ausgabe der Query, sodass nur Daten die der Selektion entsprechen ausgegeben werden.<br>
+Eine Variante mit Selektionen kann in SAP erstellt werden, siehe [SAP Documentation: Query Variants](https://help.sap.com/docs/SAP_NETWEAVER_750/40d2cb3a4f9249d58e9bbc95f4dbaff8/4e535406a32c4f49e10000000a42189e.html?locale=en-US). 
+Der Zweck einer Variante ist es, Selektionen zu speichern. Das minimiert die Eingabe von Selektionen, wenn Sie Queries ausführen.
 
 {: .box-note }
 **Hinweis:** Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
 
-
 ### Eine Variante wählen
+Wählen Sie eine Variante aus der Drop-Down-Liste *Variant* (1) aus. <br>
+Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen, klicken Sie ![refresh](/img/content/icons/refresh.png), um die neue Variante zu laden.
 
-1. Klicken Sie auf das kleine **[Fernglassymbol]** (1). Das Fenster "Look Up Variant" öffnet sich.
-![Query-Variants-Section](/img/content/Query-Variants-Selections.png){:class="img-responsive"}
-2. Wählen Sie eine Variante aus der Liste der verfügbaren Varianten aus.<br>
-![Query-Variant-02](/img/content/Query-Variant-02.png){:class="img-responsive"}
-3. Bestätigen Sie Ihre Eingabe mit **[OK]**.
+![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 
-Um eine Variante zu entfernen, klicken Sie **[X]** (2).
+{: .box-note }
+**Hinweis:** Die Selektionen der Variante werden in der *Selektionsansicht* des Fensters **nicht** angezeigt.
+Um die Definition einer Variante zu sehen, öffnen Sie die Variante in SAP.
+
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}
 
 {: .box-tip }
-**Tipp:** Sie können eine Variante über einen Parameter in der Extraktions-URL dynamisieren. 
+**Tipp:** Sie können eine Variante über einen Parameter in der Extraktions-URL dynamisieren, siehe [Extraktionsparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter). 
+
+{% endif %}
 
 ### Selektionen bearbeiten
 
-Dieser Abschnitt bezieht sich auf den Selektionsbildschirm von Queries in SAP.
-Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibungen.
-Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Selektionsbildschirm in SAP. <br>
-Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
+Die *Selektionsansicht* im Query-Fenster entspricht der Query-Eingabemaske in SAP.
 
-Manuelle Selektionen und Varianten können kombiniert werden. Manuelle Selektionen überschreiben Selektionen in Varianten.
+![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}
 
-{% include _content/de/sap-data-format.md  %}
+{: .box-note }
+**Hinweis:** Einige Selektionsfelder haben nur einen technischen Namen und keine Beschreibung.  
+Um zu verstehen, welches Feld einem Feld in SAP entspricht, öffnen Sie die Eingabemaske der Query in SAP. 
+Klicken Sie auf ein Selektionsfeld und drücken Sie die Funktionstaste **[F1]**, um den technischen Namen des Selektionsfeldes anzuzeigen. 
 
-1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]** (3). Das Fenster "Edit Range" öffnet sich.
-![Query-Selection-Parameters-02](/img/content/Selection-Options-Fill-02.png){:class="img-responsive"}
-2. Wählen Sie unter *Sign*, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (4).
-3. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste unter *Option* (5). 
-4. Geben Sie die Selektion in den *Low* und *High* Feldern ein. Das *High* Feld ist nur aktiv, wenn *zwischen* ([]) oder *nicht zwischen* (][) als Operator ausgewählt wurde.
-5. Klicken Sie auf **[OK]**, um die Selektion zu bestätigen.
+Führen Sie die folgenden Schritte aus:
+1. Klicken Sie auf **[Edit]** neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.
+2. Klicken Sie auf **[Add Selection]**, um ein neues Filterkriterium hinzuzufügen.
+3. Wählen Sie *Include* in der **Sign** (1) Spalte aus, um nur die gefilterten Daten in die Ausgabe aufzunehmen. <br>
+Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten von der Ausgabe auszuschließen.<br>
+![ODP Fields](/img/content/query/query-plant-selection.png){:class="img-responsive"}
+4. Wählen Sie einen Operator aus der Spalte **Option** (2) aus. Der Operator filtert die Daten gemäß der nachstehenden Tabelle.
 
-Um eine Selektion zu löschen, klicken Sie auf den Button in der linken unteren Ecke (6).
+   | Operator   |      Bedeutung      |  
+   |:---------|:------------- |
+   |(Not)ContainsPattern |  Wahr, wenn die Datenwerte den Inhalt von Operand 1 (nicht) enthalten.|
+   |(Not)Equal | Wahr, wenn Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
+   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1 sind..|
+   |GreaterThan | Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|.|
+   |LessOrEqual | Wahr, wenn die Daten kleiner als oder gleich dem Inhalt von Operand 1 sind.|
+   |LessThan | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
+   |(Not)Between | Wahr, wenn die Datenwerte (nicht) zwischen den Werten von Operand 1 und Operand 2 liegen. |
+5. Geben Sie die Werte direkt in die Eingabefelder **Low** und **High** ein. 
+6. Klicken Sie **[OK]**, um Ihre Eingabe zu bestätigen.
 
-| logischer Operator   | Beschreibung   |
-|---------------|------------------------------|
-| "="     | ist gleich        |
-| "!=" | ist ungleich     |
-| "<"     | kleiner als   | 
-| "<="      | kleiner oder gleich   | 
-| ">"    | größer als   | 
-| ">="   | größer oder gleich | 
-| "[]" | zwischen (Intervall) | 
-| "]["       | nicht zwischen (Intervall) | 
-| " * "    | enthält | 
+Beachten Sie, dass bearbeitete Selektionsfelder die Selektionsfelder in der Variante überschreiben. 
+
+{: .box-tip }
+**Tipp:** Wenn Sie mehrere Selektionsparameter verwenden, legen Sie in SAP eine Variante an. Verwenden Sie die Variante, anstatt Selektionsparameter einzugeben.
+
 
