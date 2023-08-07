@@ -2,7 +2,6 @@
 The Operational Data Provisioning (ODP) framework allows you to extract tables and simple views from SAP HANA systems via an SAP Landscape Transformation Replication Server (SLT).
 The SLT server is a trigger-based CDC solution that can replicate SAP tables and views and make them available as delta extracts.
 
-
 ### Available Tables
 
 - Regular SAP tables
@@ -11,7 +10,7 @@ The SLT server is a trigger-based CDC solution that can replicate SAP tables and
 
 ### Requirements
 
-To use the SLT server context requires an SAP Landscape Transformation Replication Server (SLT) that is set up for ODP, see [SAP Documentation: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US).
+The SLT server context requires an SAP Landscape Transformation Replication Server (SLT) that is set up for ODP, see [SAP Documentation: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US).
 
 The following requirements apply to the SLT server:
 - Minimum release version of the SLT server:
