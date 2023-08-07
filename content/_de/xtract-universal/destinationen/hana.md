@@ -19,7 +19,7 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine SAP 
 Für die Verbindung zur HANA-Datenbank und SAP Data Warehouse Cloud wird der *SAP HANA Data Provider for Microsoft ADO.NET*, Bestandteil des SAP HANA Client Setups, benötigt.
 
  {: .box-warning }
-**Warnung!** Für die Nutzung der HANA-Destination wird die Version **2.6.61** des SAP HANA Data Providers benötigt. Andere Versionen funktionieren nicht.
+**Warnung!** Für die Nutzung der HANA-Destination wird die Version **2.17.22** des SAP HANA Data Providers benötigt. Andere Versionen funktionieren nicht.
 
 ## Verbindung
 
