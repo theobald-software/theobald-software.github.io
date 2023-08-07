@@ -23,7 +23,7 @@ Weisen Sie Selektionen Laufzeitparameter zu:
 2. Klicken Sie auf **[Add Selection]** (4). Felder zum Setzen der Filteroptionen werden geöffnet.
 3. Klicken Sie auf das Symbol neben den Eingabefeldern **Low** und **High** (5). <br>
 Wenn Sie Laufzeitparameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
-Klicken Sie auf das Symbol, um zwischen der statischen Werten (![static-value](/img/content/icons/runtime-parameters-static.png) Symbol) und Laufzeitparametern (![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) zu wechseln.  <br>
+Klicken Sie auf das Symbol, um zwischen der statischen Werten ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol) und Laufzeitparametern ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) zu wechseln.  <br>
 ![Selection With Parameters](/img/content/edit-selections.png){:class="img-responsive"}<br>
 4. Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
 5. Klicken Sie **[OK]**, um die Eingabe zu speichern. Das Fenster "Edit Selections" wird geschlossen.
