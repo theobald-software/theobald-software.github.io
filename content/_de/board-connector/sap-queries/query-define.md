@@ -11,10 +11,4 @@ lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=definieren-einer-query
 ---
 
-Der folgende Abschnitt beschreibt die Anwendung der Query Komponente.
-
-
-{% include _content/de/sap-queries/einer-query.md %}
-
-
-
+{% include _content/de/sap-queries/query-define.md %}

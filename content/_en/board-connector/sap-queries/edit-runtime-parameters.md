@@ -1,14 +1,13 @@
 ---
-ref: bc-abap-reports-06
+ref: bc-query-06
 layout: page
 title: Runtime Parameters
 description: Runtime Parameters
 product: board-connector
-parent: abap-reports
+parent: sap-queries
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
 ---
-
 
 {% include _content/en/edit-runtime-parameters.md %}

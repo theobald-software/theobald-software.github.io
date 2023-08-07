@@ -1,10 +1,10 @@
 ---
-ref: bc-abap-reports-06
+ref: xu-query-06
 layout: page
 title: Runtime Parameters
 description: Runtime Parameters
-product: board-connector
-parent: abap-reports
+product: xtract-universal
+parent: sap-queries
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

@@ -8,9 +8,7 @@ parent: sap-queries
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
-old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-query-extraction
 ---
-The following section shows how to use the Query component.
 
 
 {% include _content/en/sap-queries/query-extraction-define.md %}

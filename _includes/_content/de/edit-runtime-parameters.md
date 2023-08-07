@@ -1,4 +1,4 @@
-
+Verwenden Sie Laufzeitparameter, um Selektionen dynamisch zur Laufzeit anzupassen.<br>
 
 ### Laufzeitparameter erstellen 
 
@@ -16,14 +16,17 @@ Dies ermöglicht ein dynamisches Setzen von Selektionsfiltern zur Laufzeit.<br>
 
 ### Laufzeitparameter zuweisen
 
-Weisen Sie Selektionen Laufzeitparameter zu.
+Weisen Sie Selektionen Laufzeitparameter zu:
 
-1. Um die erstellten Parameter für Selektionen zu verwenden, wählen Sie ein Element im Unterabschnitt **Fields** und klicken Sie auf **[Edit]**. Das Fenster "Edit Selections" wird geöffnet.<br> 
+1. Wählen Sie ein Element im Unterabschnitt *Selection Screen* und klicken Sie auf **[Edit]**. Das Fenster "Edit Selections" wird geöffnet.
+{% if page.parent == "sap-queries" %}![Selection](/img/content/query/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Klicken Sie auf **[Add Selection]** (4). Felder zum Setzen der Filteroptionen werden geöffnet.
-3. Klicken Sie auf das Symbol neben den Eingabefeldern **Low** und **High** (5).
-Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
-Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
+3. Klicken Sie auf das Symbol neben den Eingabefeldern **Low** und **High** (5). <br>
+Wenn Sie Laufzeitparameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt. <br>
+Klicken Sie auf das Symbol, um zwischen der statischen Werten (![static-value](/img/content/icons/runtime-parameters-static.png) Symbol) und Laufzeitparametern (![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) zu wechseln.  <br>
 ![Selection With Parameters](/img/content/edit-selections.png){:class="img-responsive"}<br>
-4. Prüfen Sie die Funktionalität der definierten Parameter, indem Sie auf **[Load live preview]** klicken. <br>
-Wenn Sie Parameter als Selektionsfilter definiert haben, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen.  <br>
+4. Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
+5. Klicken Sie **[OK]**, um die Eingabe zu speichern. Das Fenster "Edit Selections" wird geschlossen.
+6. Klicken Sie auf **[Load live preview]**, um die definierten Laufzeitparameter zu prüfen. <br>
+Wenn Selektionen Laufzeitparameter verwenden, werden Sie aufgefordert, die Laufzeitparameter mit echten Werten zu füllen.  <br>
 ![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}

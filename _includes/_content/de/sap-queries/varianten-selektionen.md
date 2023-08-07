@@ -11,7 +11,11 @@ Der Zweck einer Variante ist es, Selektionen zu speichern. Das minimiert die Ein
 Wählen Sie eine Variante aus der Drop-Down-Liste *Variant* (1) aus. <br>
 Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen, klicken Sie ![refresh](/img/content/icons/refresh.png), um die neue Variante zu laden.
 
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}
+![Variants-Section](/img/content/query/query-variant1.png){:class="img-responsive"}
+{% else %}
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
+{% endif %}
 
 {: .box-note }
 **Hinweis:** Die Selektionen der Variante werden in der *Selektionsansicht* des Fensters **nicht** angezeigt.
@@ -26,9 +30,7 @@ Um die Definition einer Variante zu sehen, öffnen Sie die Variante in SAP.
 
 ### Selektionen bearbeiten
 
-Die *Selektionsansicht* im Query-Fenster entspricht der Query-Eingabemaske in SAP.
-
-![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}
+Die *Selektionsansicht* in der Query-Fenster entspricht der Query-Eingabemaske in SAP.
 
 {: .box-note }
 **Hinweis:** Einige Selektionsfelder haben nur einen technischen Namen und keine Beschreibung.  
@@ -36,7 +38,8 @@ Um zu verstehen, welches Feld einem Feld in SAP entspricht, öffnen Sie die Eing
 Klicken Sie auf ein Selektionsfeld und drücken Sie die Funktionstaste **[F1]**, um den technischen Namen des Selektionsfeldes anzuzeigen. 
 
 Führen Sie die folgenden Schritte aus:
-1. Klicken Sie auf **[Edit]** neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.
+1. Klicken Sie auf **[Edit]** neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.<br>
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% else %} ![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Klicken Sie auf **[Add Selection]**, um ein neues Filterkriterium hinzuzufügen.
 3. Wählen Sie *Include* in der **Sign** (1) Spalte aus, um nur die gefilterten Daten in die Ausgabe aufzunehmen. <br>
 Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten von der Ausgabe auszuschließen.<br>
@@ -52,12 +55,12 @@ Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten v
    |LessOrEqual | Wahr, wenn die Daten kleiner als oder gleich dem Inhalt von Operand 1 sind.|
    |LessThan | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
    |(Not)Between | Wahr, wenn die Datenwerte (nicht) zwischen den Werten von Operand 1 und Operand 2 liegen. |
-5. Geben Sie die Werte direkt in die Eingabefelder **Low** und **High** ein. 
+5. Geben Sie die Werte direkt in die Eingabefelder **Low** und **High** ein{% if page.product == "xtract-universal" or page.product == "board-connector"%} oder weisen Sie der Selektion [Laufzeitparameter](./edit-runtime-parameters) zu{% endif %}. 
 6. Klicken Sie **[OK]**, um Ihre Eingabe zu bestätigen.
 
 Beachten Sie, dass bearbeitete Selektionsfelder die Selektionsfelder in der Variante überschreiben. 
 
 {: .box-tip }
-**Tipp:** Wenn Sie mehrere Selektionsparameter verwenden, legen Sie in SAP eine Variante an. Verwenden Sie die Variante, anstatt Selektionsparameter einzugeben.
+**Tipp:** Wenn Sie mehrere Selektionsparameter verwenden, ist es effizienter in SAP eine neue Variante anzulegen.
 
 

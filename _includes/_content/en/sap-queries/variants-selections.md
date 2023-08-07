@@ -11,7 +11,12 @@ The purpose of a variant is to minimize the necessity to enter selections when r
 Choose a variant from the drop-down-list *Variant* (1). <br>
 If you create a new variant in SAP after creating the query extraction, click ![refresh](/img/content/icons/refresh.png) to load the new variant.
 
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}
+![Variants-Section](/img/content/query/query-variant1.png){:class="img-responsive"}
+{% else %}
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
+{% endif %}
+
 
 {: .box-note }
 **Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. 
@@ -28,15 +33,14 @@ To see the definition of a variant, open the variant in SAP.
 
 The *Selection Screen* in the query window corresponds to the query's input screen in SAP.
 
-![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}
-
 {: .box-note }
 **Note:** Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, open the query's input screen in SAP. 
 Click a selection field and press the function key **[F1]** to display the technical name of the selection field. 
 
 Follow the steps below to edit selection fields:
-1. Click the **[Edit]** button next to the selection field you want to edit. The window “Edit Selection” opens.
+1. Click the **[Edit]** button next to the selection field you want to edit. The window “Edit selection” opens.<br>
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% else %} ![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Click **[Add Selection]** to add a new filter criterion.
 3. Select *Include* in the **Sign** (1) column to only include the filtered data to the output. <br>
 Select *Exclude* in the **Sign** (1) column to exclude the filtered data from the output.<br>
@@ -52,10 +56,10 @@ Select *Exclude* in the **Sign** (1) column to exclude the filtered data from th
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|
    |LessThan | True if data is less than the content of operand 1.|
    |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-5. Enter values directly into the **Low** and **High** input fields. 
+5. Enter values directly into the **Low** and **High** input fields{% if page.product == "xtract-universal" or page.product == "board-connector"%} or assign [runtime parameters](./edit-runtime-parameters) to the selection{% endif %}. 
 6. Click **[OK]** to confirm your input.
 
 Note that edited selection fields overwrite the selection fields in the variant. 
 
 {: .box-tip }
-**Tip:** If you use multiple selection parameters, create a variant in SAP. Use the variant instead of entering selections.
+**Tip:** If you use multiple selection parameters, it is more efficient to create a variant in SAP.
