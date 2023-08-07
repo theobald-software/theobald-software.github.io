@@ -22,7 +22,7 @@ The HANA destination supports loading SAP data to a SAP HANA database and to [SA
 For establishing a connection to the HANA database or SAP Data Warehouse Cloud the *SAP HANA Data Provider for Microsoft ADO.NET*, part of the SAP HANA Client setup, is required.
 
  {: .box-warning }
-**Warning!** The HANA destination only works with SAP HANA data provider version **2.6.61**.
+**Warning!** The HANA destination only works with SAP HANA data provider version **2.17.22**.
 
 ## Connection
 
