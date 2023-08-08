@@ -22,7 +22,7 @@ If you create a new variant in SAP after creating the query extraction, click ![
 **Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. 
 To see the definition of a variant, open the variant in SAP.
 
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}
+{% if page.product == "xtract-universal"%}
 
 {: .box-tip }
 **Tip**: You can define the variant at runtime by using a corresponding parameter in the extraction URL, see [Extraction Parameters](../execute-and-automate-extractions/extraction-parameters).

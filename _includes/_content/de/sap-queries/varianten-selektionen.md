@@ -21,7 +21,7 @@ Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen
 **Hinweis:** Die Selektionen der Variante werden in der *Selektionsansicht* des Fensters **nicht** angezeigt.
 Um die Definition einer Variante zu sehen, öffnen Sie die Variante in SAP.
 
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}
+{% if page.product == "xtract-universal"%}
 
 {: .box-tip }
 **Tipp:** Sie können eine Variante über einen Parameter in der Extraktions-URL dynamisieren, siehe [Extraktionsparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter). 
