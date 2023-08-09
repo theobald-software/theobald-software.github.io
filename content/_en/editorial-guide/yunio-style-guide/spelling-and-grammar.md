@@ -22,6 +22,20 @@ Use present tense for general statements about behavior that are not tied to a s
 |If parameters are selected for <b>Output</b>, the values are included in the response body of the service.| If parameters are selected for <b>Output</b>, their values will be included in the result of the service |
 |The service name is a unique identifier for the service and is included in the URL of the service.|The service name is the unique identifier of this service and will be part of the service's URL. |
 
+#### Should / Would / Have to
+
+Recommendation: avoid.
+
+["Should"](https://developers.google.com/style/word-list#should) is unclear and can be an issue. For instance, if you're guiding the reader, "should" suggests a recommended but optional action, creating uncertainty. Be clear: decide if actions are necessary or optional, outcomes expected or possible, and states actual or recommended.
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+| Select the columns to include in the output of the service. |Select the columns that should be included in the output of the service.|
+| The password has to be at least 8 characters long. | Password must consist 8 characters or more. |
+
+"Must" is acceptable, when something will not function otherwise.
+
+
 
 ### Active Voice
 When you're writing, it's usually better to use active voice instead of passive voice. Active voice makes it clear who is doing the action in a sentence. Passive voice can sometimes make it confusing to know who is supposed to do something. For example, it might be unclear if it's the reader, the computer, the server, a user, or a visitor to a website. So, it's generally a good idea to use active voice to make your writing clearer.
@@ -31,6 +45,12 @@ Tip: Here is an article on distinguishing active and passive voice: [Active vs. 
 | :------ |:--- |
 | Define the endpoint of yunIO web services. | Define how the yunIO web services can be reached. | 
 | Restart the yunIO service, when transitioning to this option or modifying the connection string.| Restarting the yunIO service is required when you are switching to this option or changing the connection string.|
+
+Avoid "need" and try to always use the active form of the verb.
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+|To disable anonymous access, set up functioning TLS in **Settings**. At least one user needs to exist. | To disable anonymous access, you need to set up TLS in Settings and make sure that it's working. Go to Users and make sure that at least one user exists.|
 
 #### Exceptions
 
