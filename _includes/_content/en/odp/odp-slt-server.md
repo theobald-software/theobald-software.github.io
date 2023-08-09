@@ -23,11 +23,14 @@ The following requirements apply to the SLT server:
 
 ### Using SLT Server
 
-Things that need to be considered when using an SLT server:
+Consider the following when using an SLT server:
 1. When [searching](./odp-define) for data via an SLT server, make sure to select the correct context. 
 ![ODP SLT-Server](/img/content/odp/odp-component-slt-server.png){:class="img-responsive"}
 2. A live preview of the data is not available in the SLT server context. 
 
+***
+### Related Links
+- [SAP Documentation: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US)
 <!---
 2. The **Delta Update** option is selected by default. The full data load is not available when using an SLT server.
 -->
