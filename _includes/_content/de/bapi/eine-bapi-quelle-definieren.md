@@ -23,9 +23,7 @@ Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgab
 {% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 3. Optional: Falls verfügbar können Sie Ein- und Ausgabeparameter in **Changings** hinzufügen, siehe [Changings Parametrisierung](./parameter#changings-parameter).
 4. Fügen Sie in **Tables** Tabellen zur Ein-/Ausgabe hinzu, siehe [Tabellen Parametrisierung](./parameter#tables-parameter).<br>
-Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Namen und Datentypen der Tabellenfelder zu prüfen (1).<br>
-Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.<br>
-Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um die Tabelle zu bearbeiten (3). <br>
+Sie können die Namen und Datentypen der Tabellenfelder prüfen (1), Elemente der Ausgabe hinzufügen (2) und Tabellen bearbeiten (3).<br>
 {% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 5. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 

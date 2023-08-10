@@ -20,7 +20,7 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 
 ### Import Parameters
 Import parameters represent the input values sent from the client to SAP. <br>
-In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
+In the tab **Imports** you can define import parameters that can be presented as scalar values (1) or structures (2). 
 
 ![BAPI import parameters](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"}
 
@@ -28,13 +28,14 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 #### Add Scalar Parameters (1)
 
-Scalar fields for inputs are usually set using the following two options:
-- A static constant value ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon.
-- An SSIS variable / parameter ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
+Use one of the following options to set scalar parameters:
+- A static constant value ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon).
+- An SSIS variable / parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon). This option is only available if the project contains SSIS variables.
 
 Click the icon next to the input field to switch between static input values and SSIS variables / parameters.
-When using variables, make sure the input matches the data type.<br>
+When using variables, make sure the input matches the data type. Example:
 
+![Assigning-SSIS-Variables](/img/content/xis/ssis-variables.gif){:class="img-responsive" style="border:1px solid black;"}
 
 {: .box-note }
 **Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
@@ -46,8 +47,8 @@ When using a structure, a value for each scalar field can be set similarly to a 
 Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
-1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Structures" opens.
-2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) or assign SSIS variables / parameters ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) under **Values**.
+1. Click ![pen](/img/content/icons/pen.png). The window "Edit Structures" opens.
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign SSIS variables / parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
@@ -75,6 +76,10 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
+
+- Click ![glasses](/img/content/icons/glasses.png) to check the names and data types of the table fields.
+- Activate the checkbox next to the items to add items to the output (2).
+- Click ![pen](/img/content/icons/pen.png) to edit tables (3).
 
 ![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 

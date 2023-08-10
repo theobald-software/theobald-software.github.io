@@ -36,9 +36,7 @@ Select output by activating the checkbox next to the items.<br>
 ![BAPI export parameters](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}
 3. Optional: If available you can define input and output parameters in **Changings**, see [Changings Parameters](./parameters#changings-parameters).
 4. Add tables to the output or add table parameters as input in **Tables**, see [Table Parameters](./parameters#table-parameters). <br>
-Click the ![glasses](/img/content/icons/glasses.png) icon to check the names and data types of the table fields (1).<br>
-Activate the checkbox next to the items to add items to the output (2).<br>
-Click the ![pen](/img/content/icons/pen.png) icon to edit tables (3).<br>
+You can check the names and data types of the table fields (1), add items to the output (2) and edit edit the tables (3).<br>
 ![BAPI table](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"}
 5. Click **[OK]** to confirm.
 

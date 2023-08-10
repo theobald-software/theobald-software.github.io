@@ -7,7 +7,7 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 ### Import-Parameter
 
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
-Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden.
+Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte (1) oder Strukturen (2) übergeben werden.
 
 {% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
@@ -15,9 +15,9 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 
 #### Skalarparameter hinzufügen (1)
 
-Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
+Übergeben Sie Skalarparameter über eine der folgenden Optionen: 
 - als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol).
-- als Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+- als Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol). Diese Option ist nur verfügbar, wenn Laufzeitparameter angelegt sind.
 
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und Laufzeitparametern zu wechseln.
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.
@@ -32,8 +32,8 @@ Wie bei Skalarfeldern werden jedem Skalarfeld, das zu einer Struktur gehört, We
 Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich. 
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
-1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
-2. Geben Sie unter **Values** statische Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) ein.
+1. Klicken Sie auf ![pen](/img/content/icons/pen.png). Das Fenster "Edit Structures" öffnet sich.
+2. Geben Sie unter **Values** statische Werte ein ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
 
 {% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
@@ -66,6 +66,10 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 
 {: .box-note }
 **Hinweis:** Nur **5** Tabellen stehen für einen parallelen Export zur Verfügung.
+
+- Klicken Sie auf ![glasses](/img/content/icons/glasses.png), um die Namen und Datentypen der Tabellenfelder zu prüfen (1).<br>
+- Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.<br>
+- Klicken Sie auf ![pen](/img/content/icons/pen.png), um die Tabelle zu bearbeiten (3).
 
 {% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 

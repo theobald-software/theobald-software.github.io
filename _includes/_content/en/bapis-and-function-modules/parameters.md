@@ -6,7 +6,7 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 
 ### Import Parameters
 Import parameters represent the input values sent from the client to SAP. <br>
-In the tab **Imports** you can define import parameters that can be presented as scalar values or structures. 
+In the tab **Imports** you can define import parameters that can be presented as scalar values (1) or structures (2). 
 
 {% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
@@ -14,9 +14,9 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 #### Add Scalar Parameters (1)
 
-Scalar fields for inputs are usually set using the following two options:
-- A static constant value ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon).
-- A dynamic value set at run-time ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon), see [Runtime Parameters](./edit-runtime-parameters).
+Use one of the following options to set scalar parameters:
+- A static constant value - ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon.
+- A dynamic value set at run-time - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon, see [Runtime Parameters](./edit-runtime-parameters).
 
 Click on the icon next to the input field to switch between static input values and runtime parameters.
 When using runtime parameters, make sure the input matches the data type.<br>
@@ -31,8 +31,8 @@ When using a structure, a value for each scalar field can be set similarly to a 
 Setting a single value or a parameter for the whole structure is not possible.
 
 When a structure is available, you can assign structure elements (i.e. fields).<br>
-1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Structures" opens.
-2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign runtime parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon) under **Values**.
+1. Click ![pen](/img/content/icons/pen.png). The window "Edit Structures" opens.
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign runtime parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
@@ -62,6 +62,10 @@ To use the filtering function, enter text in the headers of the columns **Name**
 
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
+
+- Click ![glasses](/img/content/icons/glasses.png) to check the names and data types of the table fields.
+- Activate the checkbox next to the items to add items to the output (2).
+- Click ![pen](/img/content/icons/pen.png) to edit tables (3).
 
 {% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
