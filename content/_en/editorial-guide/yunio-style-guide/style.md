@@ -14,31 +14,30 @@ When creating content style can be defined as “the way the author writes texts
 
 Keep in mind that readers have diverse cultural backgrounds and different English reading skills. As much as possible, avoid culturally specific references. Writing in a straightforward and uniform manner can also simplify the translation of documents into other languages.
 
-<!---
-Break up walls of text to aid in scannability. For example, separate paragraphs, create headings, and use lists.
+Make big chunks of text easier to scan. Split bigger paragraphs into smaller paragraphs, make headings, and use lists.
+
 Use shorter sentences. Try to use fewer than 26 words per sentence.
-Define acronyms and abbreviations on first usage and if they're used infrequently.
-Use parallel writing structures for similar things. For example, start each list in the same format.
-Place distinguishing and important information of a paragraph in the first sentence to aid in scannability.
-Use clear and direct language. Avoid the use of double negatives and exceptions for exceptions.
 
-Recommended: You can continue without a path.
+Define acronyms and abbreviations in the beginning.
 
-Not recommended: A missing path won't prevent you from continuing.
+Use same writing structures for similar things such as lists, procedures etc.
 
-Left-align text for readability. Don't center or full-justify text.
+| Recommended | Not recommended | 
+| :------ |:--- |
 
-shorter sentences, plus max 26 words, shorter words
---->
+Put the most important information in the first sentence of a paragraph so it's easy to spot when scanning.
+
+Use simple technical and direct language. Don't use double negatives or make things complicated with exceptions for exceptions.
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+
 
 ### Please - Level of Politeness
 Excessive politeness, such as using the word "please", can have negative impact. It makes the text longer, your brand seems unsure, and you miss chances to inspire action. 
 
 ### Comprehensibility 
 ...
-
-
-
 
 
 ### Simplicity – easy-to-read content
@@ -59,6 +58,3 @@ Writing in a simple, straightforward language does not mean writing in a childis
 ### Consistent Word Choice
 **Word list**...
 
-
-### Lists 
-Belongs to new page: Formatting
