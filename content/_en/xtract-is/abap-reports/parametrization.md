@@ -12,10 +12,10 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=report-settings
 ---
 ### Custom Properties
 
-Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
-Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
+The component properties are defined in the *Custom Properties*.
+When parametrizing the component using the SSIS variables the custom properties are overwritten. 
 
-Liste der relevanten *Custom Properties*:
+List of the relevant *Custom Properties*:
 
 
 |Property|Comment|
