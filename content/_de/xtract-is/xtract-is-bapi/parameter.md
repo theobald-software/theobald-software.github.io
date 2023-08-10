@@ -20,7 +20,7 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 ### Import-Parameter
 
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
-Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden.
+Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte (1) oder Strukturen (2) übergeben werden.
 
 ![BAPI import parameters](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}
 
@@ -28,12 +28,14 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 
 #### Skalarparameter hinzufügen (1)
 
-Es gibt zwei Möglichkeiten Skalarfelder einzustellen: 
+Übergeben Sie Skalarparameter über eine der folgenden Optionen: 
 - als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol).<br>
-- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).<br>
+- als SSIS-Variable / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol). Diese Option ist nur verfügbar, wenn SSIS-Variablen angelegt sind.<br>
 
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
-Wenn Sie dynamische SSIS-Variablen verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.
+Wenn Sie dynamische SSIS-Variablen verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat. Beispiel:
+
+![Assigning-SSIS-Variables](/img/content/xis/ssis-variables.gif){:class="img-responsive" style="border:1px solid black;"}
 
 {: .box-note }
 **Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt.
@@ -46,7 +48,7 @@ Wie bei Skalarfeldern werden jedem Skalarfeld, das zu einer Struktur gehört, We
 Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich. 
 
 Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
-1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol. Das Fenster "Edit Structures" öffnet sich.
+1. Klicken Sie auf ![pen](/img/content/icons/pen.png). Das Fenster "Edit Structures" öffnet sich.
 2. Geben Sie unter **Values** statische Werte ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder SSIS-Variablen / Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol) ein.
 Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.<br>
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
@@ -85,7 +87,7 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 ### Auf Metadaten der Tabelle zugreifen (1)
 
 Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
-Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **[Refresh metadata**.<br>
+Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **Refresh metadata**.<br>
 
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
 
@@ -97,7 +99,7 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuz
 
 ### Tabellen bearbeiten (3)
 
-1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um eine Tabelle zu bearbeiten. Das Fenster "Edit Table Contents" öffnet sich.
+1. Klicken Sie auf ![pen](/img/content/icons/pen.png), um eine Tabelle zu bearbeiten. Das Fenster "Edit Table Contents" öffnet sich.
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.
 3. Geben Sie Werte oder Parameter ein.<br>
 Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
