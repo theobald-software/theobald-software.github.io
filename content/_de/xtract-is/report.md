@@ -26,12 +26,11 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract IS](./erste-schritte) beschrieben.<br>
 
+{% include _content/de/abap_reports/report-workflow.md %}
+
 ### Xtract Report verwenden
 {% include _content/de/xis-specific/define-extraction.md %}
 
-### Allgemeiner Workflow
-
-![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
 
 ---

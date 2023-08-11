@@ -25,12 +25,11 @@ For more information, refer to the knowledge base article [SAP User Rights: Repo
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
+{% include _content/en/abap-reports/report-workflow.md %}
+
 ### How to use the Xtract Report component
 {% include _content/en/xis-specific/define-extraction.md %}
 
-### General Workflow 
-
-![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
 ---
 

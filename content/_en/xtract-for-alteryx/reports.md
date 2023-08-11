@@ -18,10 +18,11 @@ The following section describes the functions of the Report component of Xtract 
 {: .box-tip }
 **Tip:** To get information on the basics of Xtract for Alteryx, refer to [Getting Started with Xtract for Alteryx](./getting-started).
 
+{% include _content/en/abap-reports/report-workflow.md %}
+
 ### How to use the Xtract Report component
 {% include _content/en/alteryx-component-intro.md %}
 
-{% include _content/en/abap-reports/report-workflow.md %}
 
 More information on working with Report component is provided in the following sections:
 
