@@ -9,6 +9,8 @@ Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installiere
 Installieren Sie den Funktionsbaustein über den mitgelieferten Transportauftrag *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
 Der Transportauftrag befindet sich in folgendem Installationsverzeichnis: `C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.
 
+Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
+
 ### Berechtigungsobjekte für Z_XTRACT_IS_REMOTE_REPORT
 
 Ab Z_XTRACT_IS_REMOTE_REPORT Version 1.2 muss der Zugriff auf Reports explizit erteilt werden<br>

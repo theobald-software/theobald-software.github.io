@@ -7,6 +7,8 @@ If you cannot install the function mudules, turn to your SAP Basis team for help
 Install the custom function module Z_THEO_DELETE_LOG_ENTRIES using the transport request Z_THEO_DELETE_LOG_ENTRIES-transport.zip.<br>
 The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\Z_THEO_DELETE_LOG_ENTRIES-transport.zip`.
 
+The transport request needs to be imported into SAP by your SAP Basis team.
+
 {: .box-note}
 **Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\[XtractProduct]\ABAP\README.pdf`) before installing any custom function modules.
 

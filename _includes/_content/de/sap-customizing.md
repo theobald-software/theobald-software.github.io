@@ -14,7 +14,7 @@ Für die folgenden Komponenten ist die Installation eines kundenspezifischen Fun
 - **Report**: Die Installation eines Z-Funktionsbausteins ist notwendig, siehe [Report-Funktionsbaustein installieren](./sap-customizing/report-funktionsbaustein-installieren).
 
 ### Transportaufträge (Transport requests)
-Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in SAP importiert werden.
+Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in SAP importiert werden.<br>
 Die folgenden Transportaufträge finden Sie im ABAP-Unterordner des Installationsordners (z.B. `C:\Programme\XtractProduct\ABAP`):
 
 - `Z_XTRACT_IS_REMOTE_REPORT-transport.zip` - enthält den Z-Funktionsbaustein für die *Report Komponente*

@@ -6,7 +6,7 @@ Especially with older SAP releases you may encounter a few restrictions when usi
   It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
 - Poor extraction performance with larger tables.
 
-If the above-mentioned restrictions hinder your work, install the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
+When facing restrictions, install the Theobald Software custom function module *Z_THEO_READ_TABLE* on your SAP system. 
 
 {: .box-warning }
 **Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
@@ -15,13 +15,14 @@ Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
 ### Installation of Z_THEO_READ_TABLE 
 
-
 An SAP transport request for the installation of the function module is provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
-There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*).<br>
+Transport requests are imported into SAP by your SAP Basis team.
 
+There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*):
 - Z_THEO_READ_TABLE-transport.zip contains version 2.x of Z_THEO_READ_TABLE - the custom function module, a number of ABAP classes and other DDIC objects.  
 - Z_THEO_READ_TABLE-transport-before-740SP05.zip contains version 1.x (till 1.11) of Z_THEO_READ_TABLE - the custom function module.
 ![Z_THEO_READ_TABLE_SE80](/img/content/Z_THEO_READ_TABLE_SE80.png){:class="img-responsive" }
+
 
 {: .box-note}
 **Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.pdf`) before installing any custom function modules.

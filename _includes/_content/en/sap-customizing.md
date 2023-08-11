@@ -14,8 +14,7 @@ The following components require installation of a custom function module in SAP
 
 ### Transport Requests
 
-The Theobald Software transport requests need to be imported into SAP by your SAP Basis team.
-
+The Theobald Software transport requests need to be imported into SAP by your SAP Basis team.<br>
 The following transport requests can be found in the ABAP subfolder of the installation directory (e.g., `C:\Program Files\XtractProduct\ABAP\`):
 
 - `Z_XTRACT_IS_REMOTE_REPORT-transport.zip` - contains the custom function module for the *Report component*

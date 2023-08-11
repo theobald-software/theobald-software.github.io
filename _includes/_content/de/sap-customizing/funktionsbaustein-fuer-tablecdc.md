@@ -7,6 +7,8 @@ Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installiere
 Installieren Sie den Funktionsbaustein Z_THEO_DELETE_LOG_ENTRIES über den mitgelieferten Transportauftrag Z_THEO_DELETE_LOG_ENTRIES-transport.zip.<br>
 Der Transportauftrag befindet sich in folgendem Installationsverzeichnis: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\Z_THEO_DELETE_LOG_ENTRIES-transport.zip`.
 
+Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
+
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
 
