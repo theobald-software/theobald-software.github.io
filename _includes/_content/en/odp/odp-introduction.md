@@ -31,7 +31,7 @@ ABAP Core Data Services [[ABAP_CDS](./odp/odp-abap-cds-views)]|- CDS Views |
 SAP NetWeaver Business Warehouse [[BW](./odp/odp-bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query as InfoProvider<br> **BW systems:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
 SAP HANA Information Views [[HANA](./odp/odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 DataSources/Extractors [[SAPI](./odp/odp-extractors)] | - DataSources and Extractors |
-SAP LT Queue Alias [[SLT~your_queue_alias](./odp/odp-slt-server)] | - SAP Tables<br> - Views<br> - Cluster tables<br> - Pool tables |
+SAP LT Queue Alias [[SLT~your_queue_alias](./odp/odp-slt-server)] | - SAP Tables<br> - Cluster tables<br> - Pool tables |
 
 Depending on the connected SAP source system there are differences in available provider context.<br>
 For more information on SAP ODP, see [SAP Wiki: Operational Data Provisioning (ODP) and Delta Queue (ODQ)](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=449284646).
