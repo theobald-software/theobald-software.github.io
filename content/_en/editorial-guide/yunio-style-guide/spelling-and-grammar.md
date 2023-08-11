@@ -19,8 +19,9 @@ Use present tense for general statements about behavior that are not tied to a s
 
 | Recommended | Not recommended | 
 | :------ |:--- |
-|If parameters are selected for <b>Output</b>, the values are included in the response body of the service.| If parameters are selected for <b>Output</b>, their values will be included in the result of the service |
-|The service name is a unique identifier for the service and is included in the URL of the service.|The service name is the unique identifier of this service and will be part of the service's URL. |
+|If parameters are selected for Output, the values **are** included in the response body of the service.| If parameters are selected for Output, their values **will be** included in the result of the service |
+|The service name is a unique identifier for the service and **is** included in the URL of the service.|The service name is the unique identifier of this service and **will be** part of the service's URL. |
+|Report doesn't have any columns or columns **are** not yet detected.|The report doesn't have any columns or columns **were** not yet detected.|
 
 #### Should / Would / Have to
 
@@ -30,12 +31,10 @@ Recommendation: avoid.
 
 | Recommended | Not recommended | 
 | :------ |:--- |
-| Select the columns to include in the output of the service. |Select the columns that should be included in the output of the service.|
-| The password has to be at least 8 characters long. | Password must consist 8 characters or more. |
+| Select the columns to include in the output of the service. |Select the columns that **should be** included in the output of the service.|
+| Password must consist 8 characters or more. | The password has to be at least 8 characters long.|
 
 "Must" is acceptable, when something will not function otherwise.
-
-
 
 ### Active Voice
 When you're writing, it's usually better to use active voice instead of passive voice. Active voice makes it clear who is doing the action in a sentence. Passive voice can sometimes make it confusing to know who is supposed to do something. For example, it might be unclear if it's the reader, the computer, the server, a user, or a visitor to a website. So, it's generally a good idea to use active voice to make your writing clearer.
@@ -45,6 +44,14 @@ Tip: Here is an article on distinguishing active and passive voice: [Active vs. 
 | :------ |:--- |
 | Define the endpoint of yunIO web services. | Define how the yunIO web services can be reached. | 
 | Restart the yunIO service, when transitioning to this option or modifying the connection string.| Restarting the yunIO service is required when you are switching to this option or changing the connection string.|
+|Restart the yunIO service, when transitioning to this option or modifying the connection string.|Restarting the yunIO service is required when you are switching to this option or changing the connection string.|
+
+Appeal to the reader using active and direct language. 
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+|For a certificate to appear here, it must be added to the Local Computer certificates in the Personal store on the yunIO server, and must have subjectAltName set.|To display a certificate here, add it to the "Local Computer" certificates in the "Personal" store on the yunIO server. Make sure to set "subjectAltName".|
+|View current license details.|Here you can see details of the currently installed license.|
 
 Avoid "need" and try to always use the active form of the verb.
 
@@ -73,7 +80,6 @@ Use capital letters in the following ways:
 - The first words of a sentence
 - Trademarks
 
-### Clause Order
 
 ### Punctuation	
 Semicolon...

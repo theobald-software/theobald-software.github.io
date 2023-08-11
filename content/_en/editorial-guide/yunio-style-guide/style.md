@@ -16,7 +16,14 @@ Keep in mind that readers have diverse cultural backgrounds and different Englis
 
 Make big chunks of text easier to scan. Split bigger paragraphs into smaller paragraphs, make headings, and use lists.
 
-Use shorter sentences. Try to use fewer than 26 words per sentence.
+Use shorter words and shorter sentences. Try to use fewer than 26 words per sentence.
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+|Access to this yunIO server is restricted. Enter username and password to log in. |Access to this yunIO server is restricted. Please provide username and password to log in.|
+|If you cannot log in, delete the <code>config\servers\permission.json</code> file [...]. | If you get shut out and can't log in, delete the <code>config\servers\permission.json</code> [...]. |
+|The columns that are included in the output of the service.|Provide the constant values for the parameters that should be included for the execution of the report in SAP|
+
 
 Define acronyms and abbreviations in the beginning.
 
@@ -27,11 +34,14 @@ Use same writing structures for similar things such as lists, procedures etc.
 
 Put the most important information in the first sentence of a paragraph so it's easy to spot when scanning.
 
-Use simple technical and direct language. Don't use double negatives or make things complicated with exceptions for exceptions.
+Use simple technical and direct language, but don't get to colloquial. 
 
 | Recommended | Not recommended | 
 | :------ |:--- |
+|If Default option is not suitable, provide a custom base URL with protocol and port (e. g., https://yunio.example.com:8175). | If Default doesn't work for you, a custom base URL including protocol and port can be provided (e. g. https://yunio.example.com:8175).|
 
+
+Don't use double negatives or make things complicated with exceptions for exceptions.
 
 ### Please - Level of Politeness
 Excessive politeness, such as using the word "please", can have negative impact. It makes the text longer, your brand seems unsure, and you miss chances to inspire action. 
@@ -48,7 +58,11 @@ When writing information for users it is important to produce easy-to-read texts
 • Clear and logical structure  
 Writing in a simple, straightforward language does not mean writing in a childish or simplistic manner. The widest possible audience in terms of customers should be able to understand easy-to-read content. Even if you do feel comfortable with more complex vocabulary, use the simpler synonym if that has the same meaning.  
 
-neither nor - construction
+Try to use easier grammatical constructions, e.g., avoid "neither nor" - construction.
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+|Contact our support team for bug reports, feature requests, general feedback, and any questions not covered by our online help or knowledge base.|For bug reports, feature request, general feedback and all the questions that neither our online help nor knowledge base can answer, please contact our support team.|
 
 **Example** ...
 Writing in a simple, straightforward language does not mean writing in a childish or simplistic manner. The widest possible audience in terms of customers should be able to understand easy-to-read content. Even if you do feel comfortable with more complex vocabulary, use the simpler synonym if that has the same meaning.  

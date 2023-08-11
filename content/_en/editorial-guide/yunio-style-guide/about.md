@@ -28,7 +28,7 @@ The UI Style Guide of Theobald Software addresses the following topics:
 - Style and choice of words 
 - Spelling and grammar
 - Standard phrases
-- Layout including CSS definitions for headers and margins
+- Formatting and Layout including CSS definitions for headers and margins
 
 
 ### How to use the UI Style Guide
