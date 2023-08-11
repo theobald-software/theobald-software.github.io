@@ -12,7 +12,7 @@ Das Fenster "Operational Data Provider Lookup" wird geöffnet.
 	SAP NetWeaver Business Warehouse [[BW](./odp-bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query als InfoProvider<br> **BW Systeme:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
 	HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 	DataSources/Extraktoren [[SAPI](./odp-extractors)] | - DataSources und Extraktoren |
-	SAP LT Queue Alias [[SLT~your_queue_alias](./odp/odp-slt-server)] | - SAP Tables<br> - Cluster tables<br> - Pool tables |
+	SAP LT Queue Alias [[SLT~your_queue_alias](./odp-slt-server)] | - SAP Tables<br> - Cluster tables<br> - Pool tables |
 4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (4) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste(5).
 5. Klicken Sie auf **[OK]** (6), um Ihre Eingabe zu bestätigen.
 
