@@ -15,6 +15,9 @@ This section shows how to use the *ReadTable* class.<br>
 A recurrent task when working with SAP and .NET applications is to read directly from tables of the SAP system. 
 The *ReadTable* class enables access to that data.
 
+{: .box-note }
+**Note:** The *RFC_READ_TABLE* function module for table extractions is not suitable for mass data extraction, see [Table Restrictions](#table-restrictions).
+
 ### Reading Data From Tables
 
 The following sample shows how to use the *ReadTable* class to select data from the SAP table *MAKT* and how to process the ADO.NET result table object. 
@@ -110,7 +113,7 @@ When extracting tables from older SAP releases you may encounter several restric
 
 {: .box-warning }
 **Warning! Error while converting value '\*.0' of row 1530, column 3** <br>
-The SAP standard module *RFC_READ_TABLE* for table extraction  can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
+The SAP standard module *RFC_READ_TABLE* for table extraction can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
 
 ****
 #### Related Links

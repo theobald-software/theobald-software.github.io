@@ -15,6 +15,10 @@ Dieser Abschnitt beschreibt die Verwendung der *ReadTable*-Klasse.<br>
 Eine oft wiederkehrende Aufgabe bei der Arbeit mit .NET und SAP ist das direkte Lesen von Daten aus der SAP-Datenbank.
 Die Klasse *ReadTable* ermöglicht den Zugriff auf diese Daten.
 
+{: .box-note }
+**Hinweis:** Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion ist nicht für Massendatenextraktion geeignet, siehe [Einschränkungen beim Tabellenzugriff](#einschränkungen-beim-tabellenzugriff).
+
+
 ### Daten aus Tabellen auslesen
 
 Das folgende Beispiel zeigt, wie Sie die *ReadTable*-Klasse verwenden, um eine Selektion auf eine Tabelle zu erstellen und die zurückgegebenen Daten in Form einer 
