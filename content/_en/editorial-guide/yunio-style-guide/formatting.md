@@ -16,6 +16,7 @@ Avoid employing directional terminology like "above," "below," or "right-hand si
 |If TLS is enabled below, the first Subject Alternative Name of the certificate will be used. Without TLS, localhost will be used. The port will match the Services port set below.|If TLS is enabled, yunIO uses the first Subject Alternative Name of the certificate. Without TLS yunIO uses localhost. The service port settings are adopted and the URL contains http or https.|
 
 ### List
+
 | Recommended | Not recommended | 
 | :------ |:--- |
 |Select the connection to SAP and select a function:<br> &bull; Call a function module / BAPI<br> &bull; Get data from a table or view or report <br> &bull; Automate a transaction. <br> | Please select the connection to SAP and decide, if you want to call a function module / BAPI, get data from a table or view or report, or automate a transaction.|
