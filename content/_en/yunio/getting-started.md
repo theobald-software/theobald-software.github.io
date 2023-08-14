@@ -52,8 +52,8 @@ In the *Services* menu you can create new web services and edit, run or delete e
 ![yunIO-new-service](/img/content/yunio/create-table.png){:class="img-responsive" width="750px"}
 3. Optional: Add a short description for the service. 
 4. Choose an **Extraction Type** (3). yunIO offers the following options: *SAP Tables or Views*,*Function Modules* or *Transaction*. 
-5. Click **[Save and edit]**.
-To set up the service, see [SAP Table or View](./table-and-views), [Function Module / BAPI](./bapis-and-function-modules) or [Transactions](./transactions).
+5. Click **[Save and edit]**.<br>
+To set up the service, see [SAP Table or View](./table-and-views), [Function Module / BAPI](./bapis-and-function-modules), [Transactions](./transactions) or [Report](./report).
 
 To edit the name, description and source of an existing service, click the ![Edit](/img/content/yunio/edit-type-icon.png) icon.<br>
 To edit the extraction type settings of the service, click the ![Edit](/img/content/yunio/edit-cog-icon.png) icon. <br>
@@ -62,39 +62,12 @@ To edit the extraction type settings of the service, click the ![Edit](/img/cont
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
-- To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser. <br>
-- To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy the code or download the service definition (2).
+- To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser, see [Testing a Service](./run-services#testing-a-service). <br>
+- To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy or download the service definition (2), see [Integrating a Service](./run-services#integrating-a-service).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 
-{: .box-note}
-**Note:** Only services that do not require parameters supplied by a caller will display any SAP results in the browser. For parameterized services, use a tool
-that supports Swagger/OpenAPI definitions (e.g.[Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector), [Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)) . 
-
-#### POST vs GET
-yunIO services support the http methods `POST` and `GET`.
-
-|  | POST | GET |
-|--|-----|------|
-| Data Length | No restrictions. | Maximum URL length is 2048 characters. |
-| Parameters | Parameters are part of the http request body. | Supports query parameters in the URL. | 
-| Data Safety | Parameters are not stored in the browser history or in web server logs. | Parameters are visible in the service URL. Data is cached. | 
-| Data Types | No restrictions. | Only supports ASCII characters. |
-
-
-{: .box-tip}
-**Recommendation:** We recommend using the POST method with [Transport Layer Security](./server-settings) (HTTPS) to ensure data protection. Do not use the GET method to send sensible data, e.g. credentials.
-
-When using the OpenAPI/Swagger definition, `POST` and `GET` are both available. Select the method you want to use:<br>
-![yunIO-HTTP-POST-GET](/img/content/yunio/http-post-get.png){:class="img-responsive" }
-
-Example for using `POST` with an input parameter *NAME1*:<br>
-![yunIO-HTTP-POST](/img/content/yunio/http-post.png){:class="img-responsive" }
-
-Example for using `GET` with an input parameter *NAME1*:<br>
-![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
-
-
+For more information about running services and passing parameters, see [Run Services](./run-services).
 
 *****
 #### Related Links

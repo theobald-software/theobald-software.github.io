@@ -73,7 +73,7 @@ Using SAP credentials and custom user credentials for basic authentication in pa
 ## Service Access Control
 
 Service access control allows you to define user authorizations for specific services.<br>
-To open the service access control settings, click (![Login](/img/content/yunio/key.png)) at the service you want to restrict access to. <br>
+To open the service access control settings, click the ![Login](/img/content/yunio/key.png) icon of the service you want to restrict access to. <br>
 ![service-access-control](/img/content/yunio/service-access-control-settings0.png){:class="img-responsive"}
 
 ### Service Access
