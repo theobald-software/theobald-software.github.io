@@ -18,6 +18,7 @@ lang: de_DE
 **** 
 #### Weiterführende Links
 
-- [Knowledge Base Artikel: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
-- [Knowledge Base Artikel: Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
-- [Knowledge Base Artikel: Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/xtract-universal/where-clause-editor-lists)
+- [Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
+- [Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/xtract-universal/where-clause-editor-lists)
+- [LIKE Operand in WHERE Clauses](https://kb.theobald-software.com/general/working-with-like-operand-where-clause)

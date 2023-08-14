@@ -26,3 +26,10 @@ Wählen Sie eine der Variablen aus.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 6. Weisen Sie der Variablen einen Wert zu und klicken Sie auf **[Load live Preview]**, um die WHERE-Bedingung zu testen. 
 
+**** 
+#### Weiterführende Links
+
+- [Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
+- [Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/xtract-universal/where-clause-editor-lists)
+- [LIKE Operand in WHERE Clauses](https://kb.theobald-software.com/general/working-with-like-operand-where-clause)

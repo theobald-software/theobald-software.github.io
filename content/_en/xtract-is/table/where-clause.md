@@ -25,3 +25,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=where-clause
 Select a variable from the list.
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 6. To test the WHERE clause, assign a default value for the SSIS variable and click **[Load live Preview]**.
+
+
+**** 
+#### Related Links
+- [Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Change Data Capture with CDHDR](https://kb.theobald-software.com/xtract-universal/change-data-capture-with-cdhdr)
+- [Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/xtract-universal/where-clause-editor-lists)
+- [LIKE Operand in WHERE Clauses](https://kb.theobald-software.com/general/working-with-like-operand-where-clause)
