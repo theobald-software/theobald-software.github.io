@@ -11,14 +11,16 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sap-verbindungen-anlegen
 ---
 
-### Eine SAP-Verbindung herstellen
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
 Um eine Verbindung zu SAP herzustellen, muss der Zugriff auf allgemeine Berechtigungsobjekte verfügbar sein.
 Stellen Sie sicher, dass der Zugriff auf die erforderlichen Berechtigungsobjekte möglich ist. Weitere Informationen finden Sie im Knowledge-Base-Artikel zu [SAP Zugriffsrechten](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-Die Einstellungen für SAP-Verbindungen befinden sich im yunIO Designer unter dem Abschnitt *Connections*.<br>
+
+### Eine SAP-Verbindung herstellen
+
+SAP-Verbindungen befinden sich im yunIO Designer unter dem Abschnitt *Connections*.<br>
 - Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
 - Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).
 
