@@ -8,7 +8,7 @@ Look up the SAP table you want to track.
 ![Table-CDC](/img/content/tablecdc/table-cdc.png){:class="img-responsive"}
 2. In the field **Table Name** (1) enter the name of the SAP table you want to track. Use wildcards (*) if needed.<br>
 ![Look-Up-Report](/img/content/table/table_look-up.png){:class="img-responsive"}
-3. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (2).
+3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2).
 4. Select the desired table (3) and click **[OK]** (4).
 
 The application now returns to the main window of the component.

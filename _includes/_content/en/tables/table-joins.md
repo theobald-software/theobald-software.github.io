@@ -31,7 +31,7 @@ The following example shows, how tables KNA1 and KNVV can be joined.
 {: .box-note }
 **Note**: Be careful of [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
-In the *Joins* tab, click **[Edit]** ( ![pen](/img/content/icons/pen.png) icon) to display joining options. <br>
+In the *Joins* tab, click ( ![pen](/img/content/icons/pen.png) to display joining options. <br>
 In the depicted example a left outer join on tables KNA1 (left table) and KNVV (right table) on the field KUNNR is performed. A WHERE clause on *KNA1~LAND1 = 'DE'* is specified. 
 ![Table-Join-Connections](/img/content/join_verknüpfungen_01.png){:class="img-responsive"}
 

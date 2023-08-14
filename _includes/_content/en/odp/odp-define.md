@@ -1,5 +1,5 @@
 ### Look up Data Objects
-1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (1). <br>
+1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (1). <br>
 The window "Operational Data Provider Lookup" opens.
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 2. In the field **Name** (2) enter a name of an extractor using wildcards (*), if needed.
@@ -12,7 +12,7 @@ The window "Operational Data Provider Lookup" opens.
 	SAP HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 	DataSources/Extractors [[SAPI](./odp-extractors)] | - DataSources and Extractors |
 	SAP LT Queue Alias [[SLT~your_queue_alias](./odp-slt-server)] | - SAP Tables<br> - Views<br> - Cluster tables<br> - Pool tables |
-4. Click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (4) and select the extractor of your choice from the displayed list (5).
+4. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (4) and select the extractor of your choice from the displayed list (5).
 5. Click **[OK]** (6) to confirm your input.
 
 The application now returns to the main window of the component.

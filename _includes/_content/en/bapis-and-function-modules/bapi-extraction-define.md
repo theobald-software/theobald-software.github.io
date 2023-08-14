@@ -5,7 +5,7 @@
 2. Enter the name of a BAPI or function module in the **Function Name** field (1). You can use wildcards (*) if needed.<br>
 Alternatively you can search for function groups.
 ![Look-Up-Function-Module](/img/content/Look-Up-Function-Module.png){:class="img-responsive"}
-3. Click the **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon) (2) and select an item from the displayed list (3).
+3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2) and select an item from the displayed list (3).
 4. Click **[OK]** (4) to confirm.
 
 The application now returns to the main window of the component.

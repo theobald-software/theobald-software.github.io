@@ -23,7 +23,7 @@ Assign runtime parameters to selections:
 2. Click **[Add Selection]** (4). Filtering option fields open.
 3. Click the icon next to the input fields **Low** and **High** (5).<br>
 If runtime parameters are available, a parameter icon is displayed next to the input fields.
-Clicking the icon switches between static input values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon) and runtime parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).<br>
+Clicking the icon switches between static input values ![static-value](/img/content/icons/runtime-parameters-static.png) and runtime parameters ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).<br>
 ![Selection With Parameters](/img/content/edit-selections.png){:class="img-responsive"}<br>
 4. Select a runtime parameter from the dropdown-list.
 5. Click **[OK]** to save your input. The window "Edit Selections" closes.

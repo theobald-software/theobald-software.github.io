@@ -3,7 +3,7 @@
 1. Click **[Search]** (binoculars icon) in the main window of the component. The window “Look Up OLTP Source” opens.
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 2. Enter a name or description of a *DataSource* (1). Use wildcards ( * ), if needed.
-3. Click **[Search]** (magnifying glass icon) (2) and select the extractor of your choice from the displayed list (3).
+3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png)(2) and select the extractor of your choice from the displayed list (3).
 The following example shows the download of material master data from the DataSource *0MATERIAL_ATTR*.
 4. Click **[OK]** (4) to confirm your selection.
 
