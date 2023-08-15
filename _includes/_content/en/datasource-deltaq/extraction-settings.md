@@ -1,29 +1,31 @@
-Click the the main window "Extract SAP DataSources and Extractors" on **[Extraction Settings]**. The Dialog "DeltaQ Settings - [ExtractionName]" open.
-The window consists of two tabs:
-* Base
-* Hierarchy
+To access the extraction settings, click {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} in the main window of the component.
+The window “DeltaQ Settings” opens. The window has two tabs:
+- [Base](#base)
+- [Hierarchy](#hierarchy)
 
 ![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.png){:class="img-responsive"}
 
-### Base Tab
+## Base
 
-The base tab consists of two subsections:
-- Transfer Mode
-- Misc.
+### Transfer Mode
 
-#### Transfer Mode
+The raw data packages can be sent by SAP via *tRFC* call or *Data-IDoc*. *tRFC* is is the default setting. <br>
+Switch to *IDoc* to monitor the raw data packages in the transaction WE02 (IDoc-Monitoring) for debugging reasons. 
 
-The raw data packages can be sent by SAP via *tRFC* call or *Data-IDoc*. Normally the tRFC is optimal for the default setting. If it is necessary, e.g. to examine the raw data packages for debugging reasons, you can change the transfer mode to *IDoc*. Then you can examine the data packages in the transaction WE02 (IDoc-Monitoring).
+### Misc.
 
-#### Misc.
+**Automatic Synchronization**<br>
+Activate this option to avoid manual changes in the transactional system when switching from test environment to production environment. <br>
+Example: To use DeltaQ extractions in the production environment, the data source has to be enabled in the production environment. 
+If **Automatic Synchronization** is active, the activation is done automatically and the timestamp of the data source is changed to be consistent with the settings of the SAP system. <br>
 
-**Automatic Synchronisation**<br>
-Depending on the system landscape it could happen that developments only be performed in a test system. If SSIS packages should be used later in the production environment, the data source has to be enabled there. To avoid manual changes in the transactional system you can activate this option. In this case the activation will be automatically done and the timestamp of the data source will be changed that it will be consistent to the SAP system setting. <br>
-If the DataSource was modified in the SAP system, e.g. a field’s name, data type or length was changed or a field was excluded from data transfer, you will still have to manually activate the DataSource in the DeltaQ component, even if Automatic Synchronisation is switched on. Otherwise data load will fail. This behaviour is by SAP design and is described in [SAP help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
+{: .box-note }
+**Note** If the data source is modified in the SAP system, you have to manually activate the data source in the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component, even when **Automatic Synchronization** is active. 
+Otherwise data load will fail. This behaviour is by SAP design, see [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
 
 **Add Serialization Info to Output**<br>
-Adds the two columns *DataPackageID* and *RowCounter* to the output.<br>
-In this Case the following three columns which are a composite key of the records delivered by SAP, will be available in the output:
+Adds the columns *DataPackageID* and *RowCounter* to the output.<br>
+Example: the following columns that are a composite key of the SAP records are included in the output:
 - *RequestID*
 - *DataPackageID* 
 - *RowCounter*
@@ -32,61 +34,71 @@ In this Case the following three columns which are a composite key of the record
 **Note** Newer data have a higher PackageID. In the same package newer data have a higher RowCounter.
 
 **Accept Gaps in DataPackage Id**<br>
-The Delta Q component makes at the end of each extraction a consistency check. Only when all data packages have arrived correctly, the extraction is considered consistent. In the case that the customer has built a filter function in the user exit of an OLTP source that causes certain data packages to not be sent, the consistency check must be mitigated. 
-Otherwise the customer filter function would be seen as inconsistency. If this option is activated, gaps in the packet numbering will not be counted by the DeltaQ as inconsistency but as intentionally withheld information. The option should only be used if a corresponding filter function exists in the user exit.
+At the end of each extraction the{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component does a consistency check. 
+The extraction is considered consistent if all data packages arrive correctly. 
+Example: When using a filter function in the user exit of an OLTP source certain data packages are not sent. 
+In this case the filter function is an inconsistency. <br>
+If **Accept Gaps in DataPackage Id** is active, gaps in the package numbering are not considered inconsistencies. 
+Only use this option when a filter function exists in the user exit.
 
 **Timeout (sec)**<br>
-Defines a time period (in seconds) how long the Xtract Product will wait, after the extraction job on the SAP side is finished but not all tRFC calls have been received, yet.
+Enter a time period (in seconds). The timeout applies when an extraction finishes on the SAP side, but not all tRFC calls have been received. 
 
-#### Request Maintenance
 
-To show and delete the init requests of this DataSource (requests in RSA7).
+## Hierarchy
 
-![DeltaQ_Request_Maintenance](/img/content/DeltaQ_Request_Maintenance.png){:class="img-responsive"}
-
-- **Delete Request**<br>
-    Delete the init requests (requests in RSA7).
-- **Allow BW requests deletion**<br>
-  	Allow the deletion of the initialisation requests of the export datasources in BW. 
-
-### Hierarchy Tab
-
-The hierarchie tab consists of two subsections:
-- Extraction
-- Natural Representation
+The following settings only apply to hierarchy extractions.
 
 ![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
-#### Extraction
+### Extraction
 
 **Language**<br>
-Defines the Language, if a Hierarchy is extracted.
+Enter the language of the hierarchy, e.g., 'E' or 'D'.
 
 **Hierarchy Name**<br>
-Defines the Hierarchy Name.
+Enter the name of the hierarchy.
 
 **Hierarchy Class**<br>
-Defines the Hierarchy Class.
+Enter the class of the hierarchy.
 
-**Representation**<br>
-- **ParentChild**: The hierarchy has the SAP parent-child format.
-![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
-- **Natural**: The section **Natural Representation** is activated. The parent child hierarchy will be transformed in a regular hierarchy.
+**Representation:** 
+- *ParentChild*: The hierarchy is represented in the SAP parent-child format. Example:<br>
+![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+- *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy. Example:<br>
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
+- *ParentChildWithNodeNames*: The hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent. Example:<br>
+![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
-#### Natural Representation
+### Natural Representation
 
-**Level Count**
-Defines the maximum number of levels if the representation natural is selected. In the following screenshot you see the hierarchie shown in the previous screenshot with five levels in the representation *Natural*.
+{: .box-note}
+**Note:** the subsection *Natural Settings* is only active, when the **Representation** is set to *Natural*.
 
-![Deltaq-Hierarchies-Parent-Child-Natural](/img/content/Deltaq-Hierarchies-Parent-Child-Natural.png){:class="img-responsive"}
+**Level Count:** <br>
+Defines the maximum number of levels. The following example shows a hierarchy with four levels. <br>
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
-**Fill empty levels** <br>
-If the representation *Natural* is selected, the bottom element of the hierarchy will be copied until the last level. In the following screenshot you will see the hierarchy from above with the option *Repeat Leaves* activated.
+**Leaves only:**<br>
+Returns only the leaves as data records.<br>
+![Hierarchy-Leaves-Only](/img/content/extractors.bwhier/Hierarchy-leaves-only.png){:class="img-responsive"}
 
-![Deltaq-Hierarchies-Parent-Child-Repeat](/img/content/Deltaq-Hierarchies-Parent-Child-Repeat.png){:class="img-responsive"}
+**Fill empty levels:**  <br>
+Copies the bottom element of the hierarchy until the last level.
+The following example depicts the previously shown hierarchy with the activated *Repeat Leaves* option.<br>
+![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
 
-**Description texts for levels**<br>
-Means, that the output has a field *LevelTextN* for each field *LevelN*, that contains the text based on the system language settings.
+**Description texts for levels:**<br>
+Sets the output field *LevelTextN* for each field *LevelN* containing the text based on the system language settings.<br>
+![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
 
-**Leaves only**<br>
-Delivers only the leaves as data records. 
+
+## Maintenance
+
+Click **[Maintenance]** to open a list of init requests of the data source (SAP transaction RSA7).
+
+**Delete Request**<br>
+Deletes the selected init request.
+
+**Allow BW requests deletion**<br>
+Allows the deletion of the initialization requests of the export data sources in BW. 

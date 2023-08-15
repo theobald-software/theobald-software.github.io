@@ -31,10 +31,10 @@ For more information, refer to the knowledge base article [SAP User Rights: Delt
 {: .box-note }
 **Note:** To use the DeltaQ component, you need to adjust settings in your SAP system, see [SAP Customizing](./sap-customizing/customizing-for-deltaq).
 
-
-More information on working with the DeltaQ Connector component is provided in the following sections.
+{% include _content/en/datasource-deltaq/misc-deltaq.md %}
 
 ---
 
+More information on working with the DeltaQ Connector component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

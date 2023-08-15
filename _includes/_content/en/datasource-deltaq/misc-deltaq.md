@@ -1,4 +1,4 @@
-### Helpful Transactions in the SAP System for Working with DataSources
+### SAP Transactions for Working with DataSources
 
 #### Initial Setup
 * SBIW - SAP DataSources start page
@@ -22,13 +22,12 @@
 * WE02 - IDoc list
 * WE20 - Partner profiles
 
-### Execute DeltaQ in Parallel
+### Executing DeltaQ in Parallel
 
-{: .box-tip }
-**Recommendation:** Parallel execution of several DataSources with the identical RFC destination is possible. <br> However, the recommendation for parallel DeltaQ extractions is to use a separate RFC destination, e.g. XTRACT01, XTRACT02, etc. 
+When extracting multiple DataSources in parallel it is recommended to use separate RFC destinations, e.g. XTRACT01, XTRACT02, etc.<br>
+Parallel execution of DataSources with an identical RFC destination is possible, but not recommended.
 
-*****
-### Releated Links
+### Related Links
 - [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
 - [How to activate activate the BI Content DataSource (SAP Help)](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
 - [How to create Generic DataSource using Function Module and Timestamps](https://kb.theobald-software.com/sap/create-generic-datasource-using-function-module-and-timestamps)
