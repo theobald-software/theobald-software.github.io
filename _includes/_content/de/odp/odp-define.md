@@ -1,6 +1,6 @@
 ### Ein Objekt (Data Object) finden
 
-1. Innerhalb des Hauptfensters "Xtract ODP" navigieren Sie zu **Operational Data Provider** und klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (1). <br>
+1. Innerhalb des Hauptfensters "Xtract ODP" navigieren Sie zu **Operational Data Provider** und klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (1).
 Das Fenster "Operational Data Provider Lookup" wird geöffnet.
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 2. Geben Sie einen Namen im Feld **Name** (2) ein. Verwendung von Wildcards (*) ist möglich.
@@ -26,7 +26,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 1. Optional: Erstellen Sie Selektionen, indem Sie Felder aktivieren oder deaktivieren (7). <br>
 Um [Filter](#selektion-und-filter) hinzuzufügen, klicken Sie auf die **[Edit]** Option neben den Feldern. 
 Wenn es sich bei Ihrer Datenquelle um eine Hierarchy handelt, siehe [Select Hierarchy](./odp-extractors#select-hierarchy) für Filteroptionen.
-2. Optional: Um eine Delta-Extraktion durchzuführen, wählen Sie das entsprechende [Load-Verfahren](#load-verfahren-update-mode) aus.
+2. Wählen Sie ein [Load-Verfahren](#load-verfahren-update-mode), z.B. um eine Delta-Extraktion durchzuführen.
 3. Klicken Sie auf **[Load live preview]** (8) , um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
 4. Bevor Sie eine Extraktion ausführen, prüfen Sie die [Extraktionseinstellungen](./odp-settings).

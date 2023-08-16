@@ -10,5 +10,6 @@ weight: 7
 lang: de_DE
 progressstate: 3
 ---
+
 {% include _content/de/datasource-deltaq/update_mode.md %}
 

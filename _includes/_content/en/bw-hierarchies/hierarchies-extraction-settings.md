@@ -3,11 +3,11 @@ To access the extraction settings, click {% if page.product == "xtract-is" %}**S
 
 ### Extraction Settings
 **Representation:** 
-- *ParentChild*: The hierarchy is represented in the SAP parent-child format, see [Output Formats: ParentChild](./table-output#parentchild-format). Example:<br>
+- *ParentChild*: The Hierarchy is represented in the SAP parent-child format, see [Output Formats: ParentChild](./table-output#parentchild-format). Example:<br>
 ![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
-- *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](./table-output#natural-format). Example:<br>
+- *Natural*: The SAP parent-child Hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](./table-output#natural-format). Example:<br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
-- *ParentChildWithNodeNames*: The hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Example:<br>
+- *ParentChildWithNodeNames*: The Hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](./table-output#parentchildwithnodenames-format). Example:<br>
 ![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 **Remove Leading Zeros:**<br>
@@ -25,7 +25,7 @@ Sets the node text in the column *NodeText* based on the system language setting
 **Note:** the subsection *Natural Settings* is only active, when the **Representation** is set to *Natural*.
 
 **Level Count:** <br>
-Defines the maximum number of levels. The following example shows a hierarchy with four levels. <br>
+Defines the maximum number of levels. The following example shows a Hierarchy with four levels. <br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Leaves only:**<br>
@@ -33,8 +33,8 @@ Returns only the leaves as data records.<br>
 ![Hierarchy-Leaves-Only](/img/content/extractors.bwhier/Hierarchy-leaves-only.png){:class="img-responsive"}
 
 **Fill empty levels:**  <br>
-Copies the bottom element of the hierarchy until the last level.
-The following example depicts the previously shown hierarchy with the activated *Repeat Leaves* option.<br>
+Copies the bottom element of the Hierarchy until the last level.
+The following example depicts the previously shown Hierarchy with the activated *Repeat Leaves* option.<br>
 ![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
 
 **Description texts for levels:**<br>
@@ -44,7 +44,7 @@ Sets the output field *LevelTextN* for each field *LevelN* containing the text b
 ### Debug
 
 **Enable Debug Logging:**<br>
-Adds more detailed logs for the Hierarchy component to the extraction logs. Activate **Enable Debug Logging** only when necessary e.g., upon request of the support team.
+Adds more detailed logs for the{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%} Xtract{% endif %} Hierarchy component to the extraction logs. Activate **Enable Debug Logging** only when necessary e.g., upon request of the support team.
 
 *****
 #### Related Links

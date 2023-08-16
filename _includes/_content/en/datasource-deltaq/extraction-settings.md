@@ -21,7 +21,7 @@ If **Automatic Synchronization** is active, the activation is done automatically
 
 {: .box-note }
 **Note** If the data source is modified in the SAP system, you have to manually activate the data source in the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component, even when **Automatic Synchronization** is active. 
-Otherwise data load will fail. This behaviour is by SAP design, see [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
+Otherwise data load will fail. This behavior is by SAP design, see [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
 
 **Add Serialization Info to Output**<br>
 Adds the columns *DataPackageID* and *RowCounter* to the output.<br>
@@ -47,27 +47,27 @@ Enter a time period (in seconds). The timeout applies when an extraction finishe
 
 ## Hierarchy
 
-The following settings only apply to hierarchy extractions.
+The following settings only apply to Hierarchy extractions.
 
 ![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
 ### Extraction
 
 **Language**<br>
-Enter the language of the hierarchy, e.g., 'E' or 'D'.
+Enter the language of the Hierarchy, e.g., 'E' or 'D'.
 
 **Hierarchy Name**<br>
-Enter the name of the hierarchy.
+Enter the name of the Hierarchy.
 
 **Hierarchy Class**<br>
-Enter the class of the hierarchy.
+Enter the class of the Hierarchy.
 
 **Representation:** 
-- *ParentChild*: The hierarchy is represented in the SAP parent-child format. Example:<br>
+- *ParentChild*: The Hierarchy is represented in the SAP parent-child format. Example:<br>
 ![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
-- *Natural*: The SAP parent-child hierarchy is transformed into a regular hierarchy. Example:<br>
+- *Natural*: The SAP parent-child Hierarchy is transformed into a regular hierarchy. Example:<br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
-- *ParentChildWithNodeNames*: The hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent. Example:<br>
+- *ParentChildWithNodeNames*: The Hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent. Example:<br>
 ![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 ### Natural Representation
@@ -76,7 +76,7 @@ Enter the class of the hierarchy.
 **Note:** the subsection *Natural Settings* is only active, when the **Representation** is set to *Natural*.
 
 **Level Count:** <br>
-Defines the maximum number of levels. The following example shows a hierarchy with four levels. <br>
+Defines the maximum number of levels. The following example shows a Hierarchy with four levels. <br>
 ![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Leaves only:**<br>
@@ -84,8 +84,8 @@ Returns only the leaves as data records.<br>
 ![Hierarchy-Leaves-Only](/img/content/extractors.bwhier/Hierarchy-leaves-only.png){:class="img-responsive"}
 
 **Fill empty levels:**  <br>
-Copies the bottom element of the hierarchy until the last level.
-The following example depicts the previously shown hierarchy with the activated *Repeat Leaves* option.<br>
+Copies the bottom element of the Hierarchy until the last level.
+The following example depicts the previously shown Hierarchy with the activated *Repeat Leaves* option.<br>
 ![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
 
 **Description texts for levels:**<br>
@@ -95,10 +95,6 @@ Sets the output field *LevelTextN* for each field *LevelN* containing the text b
 
 ## Maintenance
 
-Click **[Maintenance]** to open a list of init requests of the data source (SAP transaction RSA7).
-
-**Delete Request**<br>
-Deletes the selected init request.
-
-**Allow BW requests deletion**<br>
-Allows the deletion of the initialization requests of the export data sources in BW. 
+1. Click **[Maintenance]** to open a list of init requests of the DataSource (SAP transaction RSA7).<br>
+![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
+2. Click ![bin](/img/content/icons/trashbin.png) to delete an init request. This is necessary when re-initializing a delta process.
