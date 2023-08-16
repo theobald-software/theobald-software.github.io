@@ -13,7 +13,7 @@ When creating content style can be defined as “the way the author writes texts
 
 Keep in mind that readers have diverse cultural backgrounds and different English reading skills. As much as possible, avoid culturally specific references. Writing in a straightforward and uniform manner can also simplify the translation of documents into other languages.
 
-Make big chunks of text easier to scan. Split bigger paragraphs into smaller paragraphs, make headings, and use lists.
+Make big chunks of text easier to scan. Split bigger paragraphs into smaller paragraphs, make headings, and use [lists]().
 
 Use shorter words and shorter sentences. Try to use fewer than 26 words per sentence.
 

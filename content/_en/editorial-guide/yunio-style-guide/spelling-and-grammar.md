@@ -9,8 +9,10 @@ permalink: /:collection/:path
 lang: en_GB
 ---
 
-Write English and foreign-language words using US and not UK spelling. For reference you can use the spelling dictionary [Merriam Webster](https://www.merriam-webster.com). 
-The online help Style Guide of Theobald Software also deals with cases that require a more detailed explanation than in the spelling dictionary. 
+Spelling refers to the correct arrangement of letters in a word, while grammar refers to the rules and structure of a language, including the correct arrangement of words in a sentence and the proper use of punctuation. Spelling and grammar are important for effective communication and understanding in written language.
+
+For reference you can use the spelling dictionary [Merriam Webster](https://www.merriam-webster.com). The preferable English for Theobald Software products is US English.
+The yunIO Style Guide of Theobald Software also deals with cases that require a more detailed explanation than one can find in a spelling dictionary.
 
 ### Present Tense
 
