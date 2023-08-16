@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Formatting Sentences
-description: Formatting
+title: Text Constructing
+description: Formatting, forming and constructing sentences
 parent: editorial-guide
 parent: yunio-style-guide
 weight: 14
 permalink: /:collection/:path
 lang: en_GB
 ---
+Text constructing refers to the process of creating or composing a written piece of text. It involves organizing ideas, selecting appropriate words and phrases, and structuring sentences and paragraphs to effectively convey a message or information.
 
 Avoid employing directional terminology like "above," "below," or "right-hand side" to guide the reader's orientation. Such language is not effective for accessibility or localization purposes.
 
@@ -30,3 +31,5 @@ Introduce a list with a complete sentence, not a partial one that's completed by
 
 ### Procedures / Instructions
 
+If you want to tell the reader to do something, try to mention the circumstance, conditions, or goal before you provide the instruction. Mentioning the circumstance first lets the reader skip the instruction if it doesn't apply. 
+[Procedures](https://developers.google.com/style/procedures#summary-of-guidelines-for-writing-procedures).

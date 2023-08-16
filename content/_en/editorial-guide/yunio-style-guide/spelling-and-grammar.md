@@ -9,7 +9,6 @@ permalink: /:collection/:path
 lang: en_GB
 ---
 
-## Spelling and Grammar
 Write English and foreign-language words using US and not UK spelling. For reference you can use the spelling dictionary [Merriam Webster](https://www.merriam-webster.com). 
 The online help Style Guide of Theobald Software also deals with cases that require a more detailed explanation than in the spelling dictionary. 
 

@@ -21,13 +21,17 @@ This style guide should be used as a reference containing the most important rec
 ### Scope
 The yunIO Style Guide of Theobald Software applies to the creation of content for the UIs especially for the Theobald Software product yunIO. 
 The yunIO Style Guide addresses the following topics: 
-- Style and choice of words 
-- Spelling and grammar
-- Standard phrases
-- Formatting and Layout including CSS definitions for headers and margins
+- [Layout](./yunio-style-guide/layout) including CSS definitions for headers and margins 
+- [Style](./yunio-style-guide/style) and choice of words 
+- [Text constructing](./yunio-style-guide/text-constructing)
+- [Spelling and grammar](./yunio-style-guide/spelling-and-grammar)
 
 
 ### How to use the UI Style Guide
 It is advisable to read all the information presented in the guide at least once and then use it as a reference and search for an item, if needed. 
 If you have any questions or improvement ideas, feel free to contact the technical writing team. 
 
+***
+### Related Links
+- [Merriam Webster](https://www.merriam-webster.com)
+- Google DEV Stlye Guide
