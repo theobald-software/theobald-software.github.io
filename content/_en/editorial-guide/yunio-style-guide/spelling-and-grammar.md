@@ -75,12 +75,36 @@ Recommended: The service port settings are adopted.
 |If TLS is enabled, yunIO uses the first Subject Alternative Name of the certificate.|If TLS is enabled below, the first Subject Alternative Name of the certificate will be used.|
 
 ### Capitalization
-Avoid unnecessary capitalization. Only capitalize words when necessary and consider why it needs to be capitalized. Do not rely on capitalization to convey meaning, as it can be confusing for readers. Avoid using camel case ([CamelCase](https://en.wikipedia.org/wiki/Camel_case)), unless it is an official name or referencing code that uses camel case.
+Avoid unnecessary capitalization. Only capitalize words when necessary and consider why it needs to be capitalized. Do not rely on capitalization to convey meaning, as it can be confusing for readers. Avoid using camel case ([CamelCase](https://en.wikipedia.org/wiki/Camel_case)), unless it is an official name or referencing code that uses camel case e.g., WebSockets.
 
 Use capital letters in the following ways:
+- Trademarks (Microsoft, Swagger)
 - The first words of a sentence
-- Trademarks
+- Nouns in headings
 
+
+| Recommended | Not recommended | 
+| :------ |:--- |
+|Select a license file to upload.| Choose a License file to upload.|
+|Edit general settings | Edit General settings|
+|Transport Layer Security (Heading) | transport layer security |
 
 ### Punctuation	
-Semicolon...
+#### Periods
+End complete sentences with a period. Phrases that are not full sentences don't need periods. 
+Don't end headings with periods.
+
+#### Periods in Lists
+End each list item with a period or other appropriate sentence-ending punctuation, except in the following cases:
+
+If the item consists of a single word, don't add end punctuation.
+If the item doesn't include a verb, don't add end punctuation.
+If the item is entirely in code font, don't add end punctuation.
+If the item is entirely link text or a document title, don't add end punctuation.
+
+#### Commas
+
+
+#### Semicolons
+If possible, avoid using semicolons. When joining two closely related independent clauses where a period or a comma is not as effective.
+
