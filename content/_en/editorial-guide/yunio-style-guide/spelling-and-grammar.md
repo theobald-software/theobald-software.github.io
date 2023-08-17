@@ -95,15 +95,22 @@ End complete sentences with a period. Phrases that are not full sentences don't 
 Don't end headings with periods.
 
 #### Periods in Lists
-End each list item with a period or other appropriate sentence-ending punctuation, except in the following cases:
+End each [list](./yunio-style-guide/text-constructing#list) item with a period or other appropriate sentence-ending punctuation, except in the following cases:
 
-If the item consists of a single word, don't add end punctuation.
-If the item doesn't include a verb, don't add end punctuation.
-If the item is entirely in code font, don't add end punctuation.
-If the item is entirely link text or a document title, don't add end punctuation.
+No end punctuation:
+
+- If the item consists of a single word
+- If the item doesn't include a verb
+- If the item is entirely in code font
+- If the item is entirely link text or a document title
 
 #### Commas
+Use commas to separate items in a series, and use commas to separate certain kinds of clauses.
+In a series of three or more items, use a comma before the final and or or to avoid potentially changing the meaning of the sentence. This comma is called a serial comma or an Oxford comma.
 
+| Recommended | Not recommended | 
+| :------ |:--- |
+|yunIO is a no-code application for designing, automating, and integrating SAP processes in the cloud.| yunIO is a no-code application for designing, automating and integrating SAP processes in the cloud.|
 
 #### Semicolons
 If possible, avoid using semicolons. When joining two closely related independent clauses where a period or a comma is not as effective.

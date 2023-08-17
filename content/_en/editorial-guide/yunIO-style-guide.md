@@ -34,4 +34,4 @@ If you have any questions or improvement ideas, feel free to contact the technic
 ***
 ### Related Links
 - [Merriam Webster](https://www.merriam-webster.com)
-- [Google DEV Stlye Guide](https://developers.google.com/style)
+- [Google DEV Style Guide](https://developers.google.com/style)
