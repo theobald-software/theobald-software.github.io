@@ -95,6 +95,8 @@ Sets the output field *LevelTextN* for each field *LevelN* containing the text b
 
 ## Maintenance
 
-1. Click **[Maintenance]** to open a list of init requests of the DataSource (SAP transaction RSA7).<br>
-![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
-2. Click ![bin](/img/content/icons/trashbin.png) to delete an init request. This is necessary when re-initializing a delta process.
+Click **[Maintenance]** to open a list of Init requests of the DataSource (SAP transaction RSA7).
+
+![Hierarchy-Description-Texts](/img/content/DeltaQ_Request_Maintenance.png){:class="img-responsive"}
+
+Click ![bin](/img/content/icons/trashbin.png) to delete an Init request. This is necessary when re-initializing a delta process.

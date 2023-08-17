@@ -21,7 +21,7 @@ The node’s (technical) name.
 - **NodeText:** 
 The description text of the node. This column is only created when the [extraction setting](./hierarchies-extraction-settings) **Fetch description texts** is active.
 - **DateFrom:** 
-Date from which the node is valid
+Date from which the node is valid.
 - **DateTo:**
 Date the node is valid to.
 - **Link:** 

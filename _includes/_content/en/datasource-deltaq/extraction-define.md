@@ -1,6 +1,6 @@
 ### Look Up Extractors
 
-Follow the steps below to look up a DataSource. For information on ho to look up Hierarchies, see [Hierarchies](./hierarchies).
+Follow the steps below to look up a DataSource. For information on how to look up Hierarchies, see [Hierarchies](./hierarchies).
 
 1. In the main window of the component navigate to **OLTP** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png). The window “Look Up OLTP Source” opens.<br>
 ![DeltaQ](/img/content/DeltaQ.png){:class="img-responsive"}
@@ -19,12 +19,19 @@ The application now returns to the main window of the component.
 
 After looking up an extractor, follow the steps below:
 
-1. Select an [Update Mode](#update-mode), e.g., to create delta extractions.
-2. Select the elements you want to extract for output.<br>
+1. Navigate to **Gateway** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (1) to look up an RFC destination. 
+For more information, see [DeltaQ Customizing](./deltaq-customizing).<br>
+![DeltaQ2](/img/content/DeltaQ2.png){:class="img-responsive"}
+2. Navigate to **Logical Destination** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2) to look up a logical RFC target system. For more information, see [DeltaQ Customizing](./deltaq-customizing).
+3. Click **Customizing Check** (3) to validate the DeltaQ Customizing on the SAP system.
+Make sure that all checks are green. For more information, see [DeltaQ Customizing](./deltaq-customizing).<br>
+![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
+4. Select an [Update Mode](#update-mode), e.g., to initialize delta extractions.
+5. Select the items you want to add to the output.<br>
 ![DeltaQ-output](/img/content/DeltaQ-output.png){:class="img-responsive"}
-3. Optional: click the **[Edit]** option next to an element to add [DataSource Parameters](./datasource-parameters).
-4. Click **[Run]** to testrun the extraction and validate your settings.
-5. Click **[Activate]** to activate the extraction in SAP. After successful activation, a corresponding status message opens:<br>
+6. Optional: click the **[Edit]** option next to an item to add [filters](./datasource-parameters).
+7. Click **[Run]** to testrun the extraction and validate your settings.
+8. Click **[Activate]** to activate the extraction in SAP. After successful activation, a corresponding status message opens:<br>
 ![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
 
 {: .box-note } 

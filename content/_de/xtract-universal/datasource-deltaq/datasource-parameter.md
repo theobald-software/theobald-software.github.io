@@ -6,7 +6,7 @@ description: Datasource-Parameter
 product: xtract-universal
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 progressstate: 5
 ---

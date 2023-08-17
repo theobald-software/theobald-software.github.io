@@ -1,32 +1,32 @@
-### Edit Parameters 
+Selections filter the data that is extracted.
+Not all elements of a DataSource support selections.
+
+### Edit Selections
 
 {: .box-note } 
-**Note:** Do not define parameters when using the **Delta Update** mode, because the parameters of the **Init** mode will be automatically applied.
+**Note:** Do not define selections when using the update mode *Delta Update*, because the selections of the *Init* mode are automatically applied.
 
-Parameters can have *single values*, *intervals* and *complex selections*. <br>
+1. Choose an item in the section **OLTP Fields** and click *Edit*.
+The window "Edit Selections" opens.<br>
+![DeltaQ-Edit](/img/content/DeltaQ-Edit.png){:class="img-responsive"}
+2. Click **[Add]** to add a new filter criterion.<br>
+![DeltaQ-Edit](/img/content/DeltaQ-edit-selections.png){:class="img-responsive"}
+3. Select *Include* in the **Sign** column to only include the filtered data to the output. <br>
+Select *Exclude* in the **Sign** column to exclude the filtered data from the output.
+4. Select an operator in the **Option** column. The operator filters data according to the table below.
 
+   | Operator   |      Meaning      |  
+   |:---------|:------------- |
+   |(Not)ContainsPattern |  True if data matches (does not match) the pattern in operand 1. |
+   |(Not)Equal |  True if data is (not)equal to the content of operand 1.|
+   |GreaterOrEqual |  True if data is greater than or equal to the content of operand 1.|
+   |GreaterThan |  True if data is greater than the content of operand 1.|
+   |LessOrEqual | True if data is less than or equal to the content of operand 1.|
+   |LessThan | True if data is less than the content of operand 1.|
+   |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
+5. Enter values directly into the **Low** and **High** input fields. 
+6. Click **[OK]** to save your input.
 
-1. Click on **[Edit]** (1) and open the editor to change the parameters. The window "Edit Range" opens.<br>
-![Edit-Parameters](/img/content/Parameters_edit.png){:class="img-responsive"}
-2. Set values for **Sign** (2), **Option** (3), **Low Value** (4) and if needed, for **High Value** (5).<br>
-![Parameters-2](/img/content/Parameters-2.png){:class="img-responsive"}
-**Sign**  determines for every row whether the result of the condition is included or excluded in the result. Select either *Include* or *Exclude*.<br>
-**Option** contains the selection option for the condition of the row in form of logical operators.<br>
-**Low Value** designates the comparison value or the lower interval limit.<br>
-**High Value** designates the upper interval limitation.
-3. You can apply multiple filters or delete filters by clicking the **[Delete]** button at the bottom left corner of the window.
-4. Click **[OK]** to save your input.
+You can apply multiple filters or delete filters by clicking ![trashbin](/img/content/icons/trashbin.png).<br>
+The number of defined filters is displayed in square brackets next to the *Edit* option.
 
-
-### Operators
-
-| Operator   |      Meaning      |  
-|:---------|:------------- |
-|=, EQ |  True if the content of operand1 is equal to the content of operand2|
-|<>, NE | True if the content of operand1 is not equal to the content of operand2|
-| <, LT | True if the content of operand1 is less than the content of operand2|
-|>, GT |  True if the content of operand1 is greater than the content of operand2|
-|<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
-|>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2|
-|*,  LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
-|[], BETWEEN | True if the content of the operand operand (not) lies between the values of the operands operand1 and operand2. |

@@ -37,7 +37,7 @@ The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure
 |>, GT |  True if the content of operand1 is greater than the content of operand2.|
 |<=, LE | True if the content of operand1 is less than or equal to the content of operand2.|
 |>=, GE |  True if the content of operand1 is greater than or equal to the content of operand2.|
-| (NOT) LIKE | True if the value of the operand operand1 matches (does not match) the pattern in the operand operand2.|
+| (NOT) LIKE | True if the value of operand1 matches (does not match) the pattern in operand2.|
 | (NOT) IN | True if the content of operand1 is (not) part of the content of operand2. Operand2 must be of type LIST or SQL.|
 
 <!--- | (NOT) BETWEEN | True if the content of the operand1 lies (not) between the values of the operands operand2 and operand3. |-->

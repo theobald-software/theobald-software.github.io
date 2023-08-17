@@ -6,7 +6,7 @@ description: Datasource Parameters
 product: xtract-is
 parent: deltaq
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=datasource_parameters
 ---

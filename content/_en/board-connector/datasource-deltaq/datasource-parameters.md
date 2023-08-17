@@ -1,7 +1,7 @@
 ---
 ref: bc-datasource-deltaq-06
 layout: page
-title: Datasource parameters
+title: Selections
 description: Datasource parameters
 product: board-connector
 parent: datasource-deltaq
@@ -12,14 +12,15 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=datasource_parameters
 ---
 {% include _content/en/datasource-deltaq/datasource-parameters.md %}
 
-### Variables
-Variables are supported. <br>
-Add an *@* symbol right before the value to mark it as a variable.
+### Runtime Parameters
+Runtime parameters are supported. 
+Add an *@* symbol right before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.
+
+The marked value can be overwritten at runtime, see [Extraction Parameters - Custom](../advanced-techniques/extraction-parameters#custom)
 
 ### Script Expressions
 Script expressions are supported. <br>
-Script expressions can be used as selection parameters. 
-They are usually used to determine a dynamic date based on the current date. 
+Script expressions are usually used to determine a dynamic date based on the current date. 
 
 **Examples:**
 
@@ -30,4 +31,3 @@ They are usually used to determine a dynamic date based on the current date.
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
 
-For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
