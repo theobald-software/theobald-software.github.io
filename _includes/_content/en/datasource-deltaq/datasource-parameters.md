@@ -10,7 +10,7 @@ Not all elements of a DataSource support selections.
 The window "Edit Selections" opens.<br>
 ![DeltaQ-Edit](/img/content/DeltaQ-Edit.png){:class="img-responsive"}
 2. Click **[Add]** to add a new filter criterion.<br>
-![DeltaQ-Edit](/img/content/DeltaQ-edit-selections.png){:class="img-responsive"}
+![DeltaQ-Edit](/img/content/DeltaQ-edit selections.png){:class="img-responsive"}
 3. Select *Include* in the **Sign** column to only include the filtered data to the output. <br>
 Select *Exclude* in the **Sign** column to exclude the filtered data from the output.
 4. Select an operator in the **Option** column. The operator filters data according to the table below.

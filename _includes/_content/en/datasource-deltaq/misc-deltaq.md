@@ -27,8 +27,3 @@
 When extracting multiple DataSources in parallel it is recommended to use separate RFC destinations, e.g. XTRACT01, XTRACT02, etc.<br>
 Parallel execution of DataSources with an identical RFC destination is possible, but not recommended.
 
-### Related Links
-- [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
-- [How to activate activate the BI Content DataSource (SAP Help)](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
-- [How to create Generic DataSource using Function Module and Timestamps](https://kb.theobald-software.com/sap/create-generic-datasource-using-function-module-and-timestamps)
-- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide)

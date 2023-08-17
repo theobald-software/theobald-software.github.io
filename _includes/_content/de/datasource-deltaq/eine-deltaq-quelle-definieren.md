@@ -33,17 +33,11 @@ Nach erfolgreicher Aktivierung erscheinen im Laufe einiger Sekunden die entsprec
 Bevor Sie eine neue Aktivierung starten, löschen Sie die alte Aktivierung.
 
 
-### Variablen
-
-**Variablen** können für die folgenden Einstellungen verwendet werden:
-* **Log. Destination**, 
-* **Gateway Host**,
-* **Gateway Service**,
-* **Program ID**.  
-
-Der **Update Mode** und **Selection**-Filter können ebenfalls über Variablen gesteuert werden, siehe [Update Mode](./update-modus) und [Datasource Parameters](./datasource-parameter).
-
 
 ******
 #### Weiterführende Links
 - [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide).
+- [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
+- [How to activate activate the BI Content DataSource (SAP Help)](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
+- [How to create Generic DataSource using Function Module and Timestamps](https://kb.theobald-software.com/sap/create-generic-datasource-using-function-module-and-timestamps)
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide) (in Englisch)

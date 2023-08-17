@@ -19,7 +19,7 @@ Add an *@* symbol right before the value to mark it as a runtime parameter, e.g.
 The marked value can be overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom)
 
 ### Script Expressions
-Script expressions are supported. <br>
+Script expressions are supported. 
 Script expressions are usually used to determine a dynamic date based on the current date. 
 
 **Examples:**
