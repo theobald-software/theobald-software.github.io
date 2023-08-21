@@ -12,6 +12,9 @@
 
 The application now returns to the main window of the component.
 
+<!---
+The following subsection is new and correlates to the section on page "Defining a deltaQ Extraction". 
+-->
 
 ### Defining the DeltaQ Extraction
 
@@ -37,6 +40,10 @@ Make sure that all checks are green. For more information, see [DeltaQ Customizi
 
 The output of a Hierarchy is defined by the selected **Representation** in the [{% if page.product != "xtract-is" %}Extraction {% endif %}Settings](./extraction-settings).<br>
 The output of a Hierarchy can contain the following columns:
+
+<!---
+The following list is copied from the Hierarchy component. 
+-->
 
 - **NodeID:**
 Unique node key.

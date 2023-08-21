@@ -29,6 +29,11 @@ In the main window of the component select an **Update Mode** from the drop-down
 
 For more information about when to use which update mode, see [Initializing a Delta Process](#initializing-a-delta-process)
 
+
+<!---
+The following content was moved here from the page "Delta". 
+-->
+
 ### Initializing a Delta Process
 
 To start a delta process, delta must be initialized first. 

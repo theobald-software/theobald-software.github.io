@@ -62,6 +62,10 @@ Enter the name of the Hierarchy.
 **Hierarchy Class**<br>
 Enter the class of the Hierarchy.
 
+<!---
+representation in copied from the Hierarchy component
+-->
+
 **Representation:** 
 - *ParentChild*: The Hierarchy is represented in the SAP parent-child format. Example:<br>
 ![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
@@ -71,6 +75,11 @@ Enter the class of the Hierarchy.
 ![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 ### Natural Representation
+
+<!---
+The following section in copied from the Hierarchy component
+-->
+
 
 {: .box-note}
 **Note:** the subsection *Natural Settings* is only active, when the **Representation** is set to *Natural*.

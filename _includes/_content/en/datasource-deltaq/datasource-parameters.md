@@ -3,6 +3,10 @@ Not all elements of a DataSource support selections.
 
 ### Edit Selections
 
+<!---
+The table about operators is copied from the WHERE Clause syntax, but with ContainsPattern instead of LIKE and without IN.
+-->
+
 {: .box-note } 
 **Note:** Do not define selections when using the update mode *Delta Update*, because the selections of the *Init* mode are automatically applied.
 
