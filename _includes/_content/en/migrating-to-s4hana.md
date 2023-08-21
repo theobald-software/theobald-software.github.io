@@ -1,9 +1,9 @@
 The following section contains information on how to test and adjust {% if page.product == "xtract-is" %}Xtract IS{% elsif page.product == "xtract-for-alteryx" %}Xtract for Alteryx{% elsif page.product == "xtract-universal" %}Xtract Universal{% elsif page.product == "board-connector" %}Board Connector{% endif %} when migrating from SAP R3 or SAP ERP (SAP ECC) to SAP S/4HANA.
 
-### Migration of SAP Sources
-
 {: .box-tip }
-**Recommendation:** Use a test environment to test the migration to the new SAP system. 
+**Recommendation:** Use a test environment to test the migration to a new SAP system. 
+
+### Migration of SAP Sources
 
 1. Migrate the SAP system on your test environment to SAP S/4HANA.
 2. Edit all SAP connections that connect to the original SAP system to use the new SAP system, see {% if page.product == "xtract-universal" or page.product == "board-connector" %}[Create an SAP Connection](../getting-started/sap-connection){% else %}[SAP Connection](../sap-connection){% endif %}.
