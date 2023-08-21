@@ -20,12 +20,10 @@ Make sure to gain access to the general authority objects. For more information,
 
 ### Creating an SAP connection
 
-1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. 
+1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
 ![BC-Create-Connection-1](/img/content/bc_server_manage_sources.png){:class="img-responsive"}
-The window "Manage Sources" opens.  
+2. Click **[Add]** to add a new SAP connection or click ![pen](/img/content/icons/pen.png) to edit an existing connection. The window "Change Source" opens. <br>
 ![BC-Create-Connection-2](/img/content/bc_manage_sources.png){:class="img-responsive"}
-
-2. Click **[Add]**. The window "SAP Source Details" opens. <br>
 3. Enter a name of your added connection.
 
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}

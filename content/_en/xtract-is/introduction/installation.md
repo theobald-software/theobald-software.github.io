@@ -84,12 +84,6 @@ start /wait XtractISSetup.exe --unattended
 start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```
 
-### Update
-
-{: .box-tip }
-**Recommendation:** A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
-updates. Check the [Version History](https://kb.theobald-software.com/version-history/xtract-is-version-history) for updates. A newer version
-can be installed over the older version. 
 
 {% include _content/en/requirements/productversion.md %}	
 

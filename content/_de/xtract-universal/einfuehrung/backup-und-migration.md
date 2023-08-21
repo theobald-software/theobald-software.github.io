@@ -1,12 +1,12 @@
 ---
-ref: xu-advanced-techniques-12
+ref: xu-introduction-backup
 layout: page
 title: Backup und Migration
-description: Backup und Migratio
+description: Backup und Migration
 product: xtract-universal
-parent: fortgeschrittene-techniken
+parent: einfuehrung
 permalink: /:collection/:path
-weight: 12
+weight: 6
 lang: de_DE
 progressstate: 5
 ---
@@ -27,7 +27,7 @@ Verwenden Sie das `config` Verzeichnis für [Versionskontrolle](#versionskontrol
 
 |Dateiname | Beschreibung |
 |:----|:---|
-|`destinationen`| Verzeichnis mit den [Destinationen](../destinationen). Jede `.json`-Datei enthält eine gleichnamige Destination.|
+|`destinations`| Verzeichnis mit den [Destinationen](../destinationen). Jede `.json`-Datei enthält eine gleichnamige Destination.|
 | `extractions` | Verzeichnis mit den [Extraktionen](../erste-schritte/eine-neue-extraktion-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Extraktion. |
 |`servers`  | Verzeichnis mit den [Servereinstellungen](../server/server_einstellungen).|
 | `sources` | Verzeichnis mit den [SAP-Verbindungen](../einfuehrung/sap-verbindungen-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Quelle (Source). |

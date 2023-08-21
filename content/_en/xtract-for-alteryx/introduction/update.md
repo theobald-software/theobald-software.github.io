@@ -1,7 +1,7 @@
 ---
 ref: xfa-introduction-04
 layout: page
-title: Update Installation
+title: Update
 description: Update Installation
 product: xtract-for-alteryx
 parent: introduction

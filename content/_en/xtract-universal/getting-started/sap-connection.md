@@ -27,10 +27,9 @@ The source settings open automatically.
 
 If extractions are already available:
 
-1. Navigate to the menu bar of the main window of the Designer and select **Server > Manage Sources**. 
+1. Navigate to the menu bar of the main window of the Designer and select **Server > Manage Sources**. The window "Manage Sources" opens.  
 ![XU-Create-Connection-1](/img/content/server_manage_sources.png){:class="img-responsive"}
-The window "Manage Sources" opens.  
+2. Click **[Add]** to add a new SAP connection or click ![pen](/img/content/icons/pen.png) to edit an existing connection. The window "Change Source" opens. <br>
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}
-2. Click **[Add]**. The window "Change Source" opens. <br>
 
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}

@@ -1,18 +1,17 @@
 ---
-ref: xu-advanced-techniques-12
+ref: xu-introduction-backup
 layout: page
 title: Backup and Migration
 description: Backup and Migration
 product: xtract-universal
-parent: advanced-techniques
+parent: introduction
 permalink: /:collection/:path
-weight: 12
+weight: 7
 lang: en_GB
 progressstate: 5
 ---
 
 <!-- TOOD Better structure needed for explaining versions, backward compatibility, etc. -->
-
 
 ### Version Control
 

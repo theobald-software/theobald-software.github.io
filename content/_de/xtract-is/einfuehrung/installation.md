@@ -86,13 +86,6 @@ start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.
 ```
 
 
-### Aktualisierung
-
-{: .box-tip }
-**Empfehlung:** Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabile Performance. 
-Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history/xtract-is-version-history) auf Updates. 
-Eine neuere Version kann über die ältere Version installiert werden. 
-
 {% include _content/de/einfuehrung/produktversion.md %}	
 
 

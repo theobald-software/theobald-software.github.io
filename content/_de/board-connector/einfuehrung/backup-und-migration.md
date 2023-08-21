@@ -1,12 +1,12 @@
 ---
-ref: bc-advanced-techniques-12
+ref: bc-introduction-backup
 layout: page
 title: Backup und Migration
 description: Backup und Migratio
 product: board-connector
-parent: fortgeschrittene-techniken
+parent: einfuehrung
 permalink: /:collection/:path
-weight: 12
+weight: 7
 lang: de_DE
 progressstate: 5
 ---
