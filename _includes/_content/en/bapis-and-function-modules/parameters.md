@@ -116,6 +116,7 @@ Exceptions refer to ABAP exceptions / functional errors messages of an SAP BAPI.
 If an exception occurs during runtime, the BAPI is not executed and a corresponding error message is returned.
 
 - By default, all exceptions cause errors when running the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract {% endif %}BAPI component.
-- To ignore exceptions during runtime, deselect the exceptions in the **Exceptions** tab.<br>
+- To ignore exceptions during runtime, deselect the exceptions in the **Exceptions** tab.
+
 ![BAPI edit table](/img/content/extractors.bapi/XU-BAPI-Exceptions.png){:class="img-responsive"}
 

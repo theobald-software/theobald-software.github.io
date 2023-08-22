@@ -16,7 +16,6 @@ Das Fenster “Xtract BAPI” zeigt die Parameter des ausgewählten BAPI.
 
 1. Geben Sie in **Imports** Eingabeparameter an, die an SAP gesendet werden, siehe [Import-Parameter](./parameter#import-parameter). <br>
 Sie können Skalarwerte (1) oder Strukturen (2) übergeben.
-Parameter, die in SAP als Muss-Parameter ausgewiesen sind, sind mit einem roten * markiert.
 {% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 2. Definieren Sie die Ausgabe von SAP-Werten in **Exports**, siehe [Export-Parameter](./parameter#export-parameter).<br>
 Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgabe hinzuzufügen.<br>

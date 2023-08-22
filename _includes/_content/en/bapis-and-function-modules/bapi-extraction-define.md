@@ -15,7 +15,7 @@ The application now returns to the main window of the component.
 The main window of the {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}Xtract {% endif %}BAPI component shows all parameters of the selected BAPI. 
 
 1. Add input parameters to send to SAP in **Imports**, see [Import Parameters](./parameters#import-parameters). <br>
-You can enter scalar values (1) or structures (2). Mandatory parameters are marked with a red *. 
+You can enter scalar values (1) or structures (2).
 {% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 2. Define the output to receive from SAP in **Exports**, see [Export Parameters](./parameters#export-parameters). <br>
 Select output by activating the checkbox next to the items.
