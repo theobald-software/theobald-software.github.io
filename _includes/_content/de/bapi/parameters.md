@@ -9,18 +9,21 @@ Jeder Import, Export und Changings-Parameter kann einen der folgenden Darstellun
 **Imports** repräsentiert die Eingabewerte, die vom Client an SAP gesendet werden. 
 Im Tab **Imports** können Sie Eingabeparameter definieren, die entweder als Skalarwerte (1) oder Strukturen (2) übergeben werden.
 
-{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"} {% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
 
 #### Skalarparameter hinzufügen (1)
 
 Übergeben Sie Skalarparameter über eine der folgenden Optionen: 
-- als statischer Wert ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol).
-- als Laufzeitparameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol). Diese Option ist nur verfügbar, wenn Laufzeitparameter angelegt sind.
+- als statischer Wert - ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol.
+- {% if page.product == "xtract-is" %}als SSIS-Variable / Parameter - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol. Diese Option ist nur verfügbar, wenn SSIS-Variablen angelegt sind.{% else %} als Laufzeitparameter - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol, siehe [Laufzeitparameter](./edit-runtime-parameters).{% endif %}
 
-Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und Laufzeitparametern zu wechseln.
-Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.
+Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und {% if page.product == "xtract-is" %} SSIS-Variablen{% else %} Laufzeitparametern{% endif %} zu wechseln.
+Wenn Sie {% if page.product == "xtract-is" %} SSIS-Variablen{% else %} Laufzeitparameter{% endif %} verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat. {% if page.product == "xtract-is" %}Beispiel:
+
+![Assigning-SSIS-Variables](/img/content/xis/ssis-variables.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}
 
 {: .box-note }
 **Note:** Parameter, die von SAP vorausgefüllt sind, werden in einer grauen Schrift angezeigt. <br>
@@ -28,25 +31,21 @@ Um diese Parameter zu deaktivieren, haken Sie die Checkbox neben dem Parameter a
 
 #### Strukturen als Parameter hinzufügen (2)
 
-Wie bei Skalarfeldern werden jedem Skalarfeld, das zu einer Struktur gehört, Werte zugewiesen. 
+Wenn eine Struktur verfügbar ist, können Sie ihr einzelne Elemente hinzufügen wie bei Skalarfeldern. 
 Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich. 
 
-Wenn eine Struktur verfügbar ist, können Sie ihr Elemente hinzuzufügen.
 1. Klicken Sie auf ![pen](/img/content/icons/pen.png). Das Fenster "Edit Structures" öffnet sich.
-2. Geben Sie unter **Values** statische Werte ein ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder Parameter ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
-Klicken Sie auf das Symbol neben dem Eingabefeld, um zwischen statischen Werten und SSIS-Variablen / Parametern zu wechseln.
-
-{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
+2. Geben Sie unter **Values** statische Werte ein ( ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol oder kein Symbol) oder weisen Sie den Feldern {% if page.product == "xtract-is" %}SSIS-Variablen / Parameter{% else %} Laufzeitparameter{% endif %} zu ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).<br>
+![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export-Parameter
-**Exports** repräsentiert die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.
-
+**Exports** repräsentiert die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.<br>
 Im Tab **Exports** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden.
 
 #### Der Ausgabe Elemente hinzufügen
 Aktivieren Sie die Checkbox in der Ausgabespalte, um ein Element der Ausgabe hinzuzufügen.
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}{% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
 
@@ -71,13 +70,13 @@ Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Nam
 - Aktivieren Sie die Checkbox (2) neben den aufgelisteten Tabellen, um sie der Ausgabe hinzuzufügen.<br>
 - Klicken Sie auf ![pen](/img/content/icons/pen.png), um die Tabelle zu bearbeiten (3).
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Auf Metadaten der Tabelle zugreifen (1)
 
-Klicken Sie auf das ![glasses](/img/content/icons/glasses.png) Symbol, um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
+Klicken Sie auf ![glasses](/img/content/icons/glasses.png), um die Metadaten der ausgewählten Tabelle anzuzeigen, inklusive der Namen und Datentypen aller Felder.
 {% if page.product != "xtract-for-alteryx" %}
-Wenn der Funktionsbaustein in SAP bearbeitet wird, aktualisieren Sie die Daten über **Refresh metadata**.<br>
+Wenn der Funktionsbaustein in SAP bearbeitet wurde, aktualisieren Sie die Daten über **Refresh metadata**.<br>
 ![BAPI table metadata](/img/content/BAPI-Table-Metadata.png){:class="img-responsive"}
 {% endif %}
 
@@ -90,7 +89,26 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um Tabellen der Ausgabe hinzuz
 
 1. Klicken Sie auf das ![pen](/img/content/icons/pen.png) Symbol, um eine Tabelle zu bearbeiten. Das Fenster "Edit Table Contents" öffnet sich.
 2. Klicken Sie auf **[Add]**, um neue Parameter hinzuzufügen.
-3. Geben Sie Werte oder Parameter ein.<br>
-Wenn Sie dynamische Laufzeitparameter verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
+3. Geben Sie Werte oder {% if page.product == "xtract-is" %} SSIS-Variablen{% else %} Laufzeitparameter{% endif %} an.<br>
+Wenn Sie {% if page.product == "xtract-is" %} SSIS-Variablen{% else %} Laufzeitparameter{% endif %} verwenden, stellen Sie sicher, dass die Eingabe den passenden Datentyp hat.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Klicken Sie auf **[Remove]**, um die Eingabezeile zu entfernen.
+
+{% if page.product == "xtract-is" %}
+### Tabellen Mappen
+
+Wenn Sie Tabellen an die Xtract BAPI Komponente übergeben, wird automatisch ein Datenmapping durchgeführt.
+
+![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
+
+Damit die Tabellenfelder korrekt zugewiesen werden, müssen folgende Voraussetzungen erfüllt sein:
+
+- Die Spaltennamen der Eingangstabelle müssen mit denen in der Xtract BAPI Komponente überein stimmen.
+- Die Datentypen in der Eingangstabelle müssen mit denen in der Xtract BAPI Komponente übereinstimmen
+
+Klicken Sie auf das ![glasses-icon](/img/content/icons/glasses.png) Symbol neben einer Tabelle, um die Spaltennamen und Datentypen in der Tabelle einzusehen.
+
+{: .box-tip }
+**Tipp:** Wenn die Spaltennamen und / oder die Datentypen der Eingangstabelle nicht mit der Xtract BAPI Tabelle übereinstimmt, fügen Sie eine *Derived Column* Komponente hinzu, um die Eingangsdaten zu konvertieren.
+
+{% endif %}

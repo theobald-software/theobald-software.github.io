@@ -8,31 +8,32 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 Import parameters represent the input values sent from the client to SAP. <br>
 In the tab **Imports** you can define import parameters that can be presented as scalar values (1) or structures (2). 
 
-{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"} {% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
 #### Add Scalar Parameters (1)
 
 Use one of the following options to set scalar parameters:
-- A static constant value - ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon.
-- A dynamic value set at run-time - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon, see [Runtime Parameters](./edit-runtime-parameters).
+- A static constant value - ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon. 
+- {% if page.product == "xtract-is" %}An SSIS variable / parameter - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon. This option is only available if the project contains SSIS variables.{% else %}A dynamic value set at runtime - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon, see [Runtime Parameters](./edit-runtime-parameters).{% endif %}
 
-Click on the icon next to the input field to switch between static input values and runtime parameters.
-When using runtime parameters, make sure the input matches the data type.<br>
+Click on the icon next to the input field to switch between static input values and {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}.
+When using {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}, make sure the input matches the data type. {% if page.product == "xtract-is" %}Example:
+
+![Assigning-SSIS-Variables](/img/content/xis/ssis-variables.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}
 
 {: .box-note }
-**Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
+**Note:** Parameters that are predefined by SAP are displayed in a light gray font. <br>
 To disable these parameters, activate the checkbox next to the parameter and leave the field empty. <br>
 
 #### Add Structures as Parameters (2)
 
-When using a structure, a value for each scalar field can be set similarly to a scalar field. 
-Setting a single value or a parameter for the whole structure is not possible.
-
-When a structure is available, you can assign structure elements (i.e. fields).<br>
+When a structure is available, you can assign structure elements (i.e. fields) similarly to single scalar fields. 
+Setting a single value or a parameter for the whole structure is not possible.<br>
 1. Click ![pen](/img/content/icons/pen.png). The window "Edit Structures" opens.
-2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign runtime parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign {% if page.product == "xtract-is" %} SSIS variables / parameters{% else %} runtime parameters{% endif %} ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
@@ -42,7 +43,7 @@ In the tab **Exports** you can define export parameters that can be presented as
 #### Add Items to Output
 Mark the checkbox in the output column to add an item to the output.
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}{% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -63,11 +64,11 @@ To use the filtering function, enter text in the headers of the columns **Name**
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
 
-- Click ![glasses](/img/content/icons/glasses.png) to check the names and data types of the table fields.
+- Click ![glasses](/img/content/icons/glasses.png) to check the names and data types of the table fields (1).
 - Activate the checkbox next to the items to add items to the output (2).
 - Click ![pen](/img/content/icons/pen.png) to edit tables (3).
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Access Metadata of Tables (1)
 Click the ![glasses](/img/content/icons/glasses.png) icon to display the metadata of the selected table including the name and the data type of all fields. 
@@ -83,15 +84,38 @@ Mark the checkbox in the output column to add a table to the output.<br>
 
 ### Edit Tables (3)
 
-When using a structure, a value for each scalar field can be set similarly to a scalar field. 
-Setting a single value or a parameter for the whole structure is not possible.
-
-When a structure is available, you can assign structure elements (i.e. fields).<br>
-
- 1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Table Contents" opens.
- 2. Click **[Add]** to add new set of parameters.<br>
- 3. Enter values or parameters.<br>
-When using runtime parameters, make sure the input matches the data type.<br>
+1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Table Contents" opens.
+2. Click **[Add]** to add new set of parameters.<br>
+3. Enter values or {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}.<br>
+When using {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}, make sure the input matches the data type.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Click **[Remove]** to delete a row.
+
+{% if page.product == "xtract-is" %}
+### Mapping Input Tables
+
+When connecting tables to the Xtract BAPI component, a data mapping is executed automatically. 
+
+![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
+
+To correctly map the data, the following requirements must be met:
+
+- The column names of the input table must be the same as in the Xtract BAPI component.
+- The data types in the input table must be the same as in the Xtract BAPI component.
+
+Click on the ![glasses-icon](/img/content/icons/glasses.png) icon next to a table to look up column names and data types in the Xtract BAPI component.
+
+{: .box-tip }
+**Tip:** If the column names and / or datatypes of the input table and the Xtract BAPI table do not match, add a *Derived Column* component to convert the input data.
+
+{% endif %}
+
+### Exceptions
+
+Exceptions refer to ABAP exceptions / functional errors messages of an SAP BAPI. Exceptions are thrown before a BAPI is executed.<br>
+If an exception occurs during runtime, the BAPI is not executed and a corresponding error message is returned.
+
+- By default, all exceptions cause errors when running the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract {% endif %}BAPI component.
+- To ignore exceptions during runtime, deselect the exceptions in the **Exceptions** tab.<br>
+![BAPI edit table](/img/content/extractors.bapi/XU-BAPI-Exceptions.png){:class="img-responsive"}
 
