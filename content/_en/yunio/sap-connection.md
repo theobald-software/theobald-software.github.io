@@ -12,14 +12,14 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 progressstate: 5
 ---
 
-### Creating an SAP connection
-
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To establish a connection to SAP, the access to general authority objects must be available.
 For more information, refer to the knowledge base article [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
 
-The SAP connection settings are located in the *Connection* section of the yunIO Designer.
+### Creating an SAP Connection
+
+SAP connections are located in the *Connection* section of the yunIO Designer.
 - To add a new SAP connection, click **[Add Connection]** (1).<br>
 - To edit an existing connection, click the edit icon (![Edit](/img/content/yunio/edit.png))of the connection you want to edit (2).
 
