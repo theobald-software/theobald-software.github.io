@@ -11,7 +11,6 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=scalar-parameters
 ---
 
-
 {% include _content/en/bapis-and-function-modules/parameters.md %}
 
 *****

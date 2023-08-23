@@ -112,3 +112,14 @@ Klicken Sie auf das ![glasses-icon](/img/content/icons/glasses.png) Symbol neben
 **Tipp:** Wenn die Spaltennamen und / oder die Datentypen der Eingangstabelle nicht mit der Xtract BAPI Tabelle übereinstimmt, fügen Sie eine *Derived Column* Komponente hinzu, um die Eingangsdaten zu konvertieren.
 
 {% endif %}
+
+### Exceptions - Ausnahmen
+
+**Exceptions** bezieht sich auf die ABAP Exceptions / Fehlermeldungen eines BAPIs. 
+Wenn zur Laufzeit eine Ausnahme auftritt, gibt {% if page.product == "xtract-is" %}Xtract IS{% elsif page.product == "xtract-for-alteryx" %}Xtract for Alteryx{% elsif page.product == "xtract-universal" %}Xtract Universal{% elsif page.product == "board-connector" %}Board Connector{% endif %} eine entsprechende Fehlermeldung zurück.
+
+- Standardmäßig resultieren alle Ausnahmen in Fehlern, wenn die {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract {% endif %}BAPI Komponente ausgeführt wird.
+- Um Ausnahmen zur Laufzeit zu ignorieren, deaktivieren Sie die Ausnahmen im Tab **Extractions**.
+
+![BAPI edit table](/img/content/extractors.bapi/XU-BAPI-Exceptions.png){:class="img-responsive"}
+
