@@ -15,85 +15,84 @@ Der folgende Abschnitt zeigt, wie Sie in yunIO erstellte Services testen, integr
 
 ### Service Testen
 
-Before integrating a yunIO service, it is recommended to test the service directly in yunIO or in a REST client, e.g., Swagger Inspector or Postman.
-
-- Click ![copy](/img/content/yunio/icons/copyURL.png) to copy the URL of the service endpoint to your clipboard. The URL can be used to trigger a service run.
-- Click ![copy](/img/content/yunio/icons/run.png) to open the *Run Service* menu, where you can define parameters and run the service directly in yunIO.<br>
+Vor der Integration eines yunIO-Services empfiehlt es sich, den Service direkt in yunIO oder in einem REST-Client, z. B. Swagger Inspector oder Postman, zu testen.
+- Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png) um die URL des Service-Eendpunkts in Ihre Zwischenablage zu kopieren. Die URL kann zum Triggern eines Service-Laufs verwendet werden.
+- Klicken Sie auf ![copy](/img/content/yunio/icons/run.png), um *Run Service* Menu zu öffnen. Hier können Sie Parameter definieren und den Service direkt in yunIO ausführen.<br>
 ![yunIO-Services](/img/content/yunio/yunio-run-services1.png){:class="img-responsive" }
 
-#### Run Service Menu
+#### Service Menü Ausführen
 
-Follow the steps below to testrun a service:
-1. If [Global Access Control](./access-control#global-access-control) and/or [Service Access Control](./access-control#service-access-control) is enabled, enter valid credentials (1).
-2. If the service requires input parameters, enter values for the parameters listed under *Service parameters* (2).
-The depicted example uses an input parameter *NAME1*.<br>
+Führen Sie die folgenden Schritte aus, um einen Service zu testen:
+1. Wenn [Globale Zugriffskontrolle - Global Access Control](./access-control#global-access-control) und / oder [Service-Zugangskontrolle - Service Access Control](./access-control#service-access-control) aktiviert ist, geben Sie gültige Anmeldeinformationen ein (1).
+2. Wenn der Service Eingabeparameter erfordert, geben Sie Werte für die unter *Service parameters* (2) aufgeführten Parameter ein.
+Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*.<br>
 ![Run-Service](/img/content/yunio/run-service.png){:class="img-responsive" }
-3. Click **[Run]**. The response body of the service is displayed at the bottom of the menu (3).
-4. If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
-5. Click **[Close]** to close the *Run Service* menu.
+3. Klicken Sie auf **[Run]**. Das Response-Body des Service wird im unteren Abschnitt des Menüs angezeigt (3).
+4. Wenn das Response-Body eine Fehlermeldung zurückgibt, klicken Sie auf **[Logs]**, um die [Logs](./logs) des Service-Laufs anzeigen zu lassen.
+5. Klicken Sie auf **[Close]**, um das *Run Service* Menü zu schließen.
 
 {: .box-tip}
-**Tip:** Click **[Edit]** to edit the service or add parameters.
+**Tipp:** Klicken Sie auf **[Edit]**, um den Service zu bearbeiten oder Parameter hinzuzufügen.
 
-### Integrating a Service
+### Integration eines Services
 
-Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
+Mit yunIO erstellte Webservices können in alle Cloud-Anwendungen integriert werden, die REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex usw.
 
-- Click ![copy](/img/content/yunio/icons/copyURL.png) to copy the URL of the service definition to your clipboard.
-The service definition URL can be used by third-party-tools to load the meta data of the service.
-- Click ![download](/img/content/yunio/icons/download.png) to download the service definition.
+- Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png), um die URL der Service-Definition in Ihre Zwischenablage zu kopieren.
+Die Servicedefinitions-URL kann von Drittanbieter-Tools verwendet werden, um die Metadaten des Service zu laden.
+- Klicken Sie auf ![download](/img/content/yunio/icons/download.png) um die Service-Definition herunterzuladen.
 The service definition is saved as a JSON file that defines how to run the service. 
 The JSON file can be imported into third-party tools.<br>
 ![yunIO-Services](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
 
-Examples for integrating yunIO services in third-party-tools:
-- [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
-- [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex)
-- [Integrating a yunIO Service with Alteryx](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-alteryx)
+Beispiele für die Integration von yunIO-Services in Drittanbieter-Tools:
+- [yunIO Service mit Power Automate intergrieren](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)
+- [yunIO Service mit Nintex integrieren](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex)
+- [yunIO Service mit Alteryx integrieren](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-alteryx)
 
-For more integration scenarios and examples, see [Integration Scenarios](./integration). 
+Für mehr Integrationszenarien und Beispiele, siehe [Integrationszenarien](./integration). 
 
 <!---
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
 - [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
 -->
 
-### Passing Parameters
+### Übergabe von Parametern
 
-How parameters are passed to a yunIO service, depends on the http method that is used to call the service.<br>
-yunIO supports the http methods `POST` and `GET`, see [POST vs GET](#post-vs-get).
+Welche Parameter an einen YunIO-Service übergeben werden, hängt von der http-Methode ab, die zum Aufrufen des Services verwendet wird.<br>
+yunIO unterstützt die http-Methoden `POST` und `GET`, siehe [POST vs GET](#post-vs-get).
 
 #### POST Method
-Parameters are listed in the request body of a service. <br>
-Edit the request body to assign values to the parameters. The depicted example uses an input parameter *NAME1*:<br>
+Parameter werden im Anforderungstext eines Services aufgelistet. <br>
+Bearbeiten Sie den Anforderungstext, um den Parametern Werte zuzuweisen. Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*:<br>
 ![yunIO-HTTP-POST](/img/content/yunio/http-post.png){:class="img-responsive" }
 
 #### GET Method
-Parameters are available as query parameters in the service URL. <br>
-Use query parameters to assign values or add the values directly in the service URL. The depicted example uses an input parameter *NAME1*:<br>
+Parameter stehen als Abfrageparameter in der Service-URL zur Verfügung. <br>
+Verwenden Sie Abfrageparameter, um Werte zuzuweisen, oder fügen Sie die Werte direkt in der Service-URL hinzu. Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*:<br>
 ![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
 
 
 ### POST vs GET
-yunIO services support the http methods `POST` and `GET`.
+yunIO-Services unterstützen die http-Methoden „POST“ und „GET“.
 
 |  | POST | GET |
 |--|-----|------|
-| Data Length | No restrictions. | Maximum URL length is 2048 characters. |
-| Parameters | Parameters are part of the http request body. | Supports query parameters in the URL. | 
-| Data Safety | Parameters are not stored in the browser history or in web server logs. | Parameters are visible in the service URL. Data is cached. | 
-| Data Types | No restrictions. | Only supports ASCII characters. |
+| Datenlänge | Keine Einschränkungen. | Die maximale URL-Länge beträgt 2048 Zeichen. |
+| Parameter | Parameter sind Teil des HTTP-Anfragetexts. | Unterstützt Abfrageparameter in der URL. |
+| Datensicherheit | Parameter werden nicht im Browserverlauf oder in Webserverprotokollen gespeichert. | Parameter sind in der Service-URL sichtbar. Daten werden zwischengespeichert. |
+| Datentypen | Keine Einschränkungen. | Unterstützt nur ASCII-Zeichen. |
 
 {: .box-tip}
-**Recommendation:** We recommend using the POST method with [Transport Layer Security](./server-settings) (HTTPS) to ensure data protection. 
-Do not use the GET method to send sensible data, e.g. credentials.
+**Empfehlung:** Wir empfehlen die Verwendung der POST-Methode mit [Transport Layer Security](./server-settings) (HTTPS), um den Datenschutz zu gewährleisten.
+Verwenden Sie die GET-Methode nicht zum Senden sensibler Daten, z. B. Referenzen.
 
-When using the OpenAPI/Swagger definition, `POST` and `GET` are both available. Select the method you want to use:<br>
+Bei Verwendung der OpenAPI/Swagger-Definition sind sowohl „POST“ als auch „GET“ verfügbar. Wählen Sie die Methode aus, die Sie verwenden möchten:<br>
 ![yunIO-HTTP-POST-GET](/img/content/yunio/http-post-get.png){:class="img-responsive" }
 
 
 *****
-#### Related Links
+#### Weiterführende Links
 - [SAP Table or Views](./table-and-views)
 - [Function Module / BAPI](./bapis-and-function-modules)
 - [Transactions](./transactions)
