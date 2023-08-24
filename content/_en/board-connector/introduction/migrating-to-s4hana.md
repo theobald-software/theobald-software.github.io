@@ -6,7 +6,7 @@ description: Migrating to S/4HANA
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 8
+weight: 12
 lang: en_GB
 progressstate: 5
 ---

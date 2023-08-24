@@ -6,7 +6,7 @@ description: Migrating from ECC to S/4HANA
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 8
+weight: 12
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 progressstate: 5

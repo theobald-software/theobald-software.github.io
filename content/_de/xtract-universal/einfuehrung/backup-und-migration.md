@@ -6,7 +6,7 @@ description: Backup und Migration
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 6
+weight: 11
 lang: de_DE
 progressstate: 5
 ---

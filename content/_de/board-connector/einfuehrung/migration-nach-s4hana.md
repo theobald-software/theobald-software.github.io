@@ -6,7 +6,7 @@ description: Migration nach SAP S/4HANA
 product: board-connector
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 6
+weight: 12
 lang: de_DE
 progressstate: 5
 ---

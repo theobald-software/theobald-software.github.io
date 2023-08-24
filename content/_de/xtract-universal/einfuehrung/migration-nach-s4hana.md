@@ -6,7 +6,7 @@ description: Migration nach SAP S/4HANA
 product: xtract-universal
 parent: einfuehrung
 permalink: /:collection/:path
-weight: 7
+weight: 12
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=installation
 progressstate: 5

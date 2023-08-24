@@ -6,7 +6,7 @@ description: Backup and Migration
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 7
+weight: 11
 lang: en_GB
 progressstate: 5
 ---

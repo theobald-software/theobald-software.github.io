@@ -6,7 +6,7 @@ description: Migrating to S/4HANA
 product: xtract-for-alteryx
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 12
 lang: en_GB
 ---
 
