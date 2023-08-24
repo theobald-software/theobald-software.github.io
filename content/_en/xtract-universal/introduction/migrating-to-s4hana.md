@@ -1,7 +1,7 @@
 ---
 ref: xu-introduction-s4
 layout: page
-title: Migrating to SAP S/4HANA
+title: Migration to SAP S/4HANA
 description: Migrating from ECC to S/4HANA
 product: xtract-universal
 parent: introduction
