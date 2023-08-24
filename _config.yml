@@ -39,6 +39,7 @@ algolia:
   application_id: '4C27F1P1UC'
   index_name: theobald-software-online-help
   search_only_api_key: 753c17f35b161aa1a325b82e05d048a1
+  nodes_to_index: 'p,li,h2,h3,h4'
   settings:
     attributesForFaceting: ['title','searchable(collection)', 'searchable(title)', 'searchable(product)', 'searchable(lang)', 'searchable(old_url)']
     searchableAttributes: ['title','unordered(content)','collection','description','lang','old_url']
