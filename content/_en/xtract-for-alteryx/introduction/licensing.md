@@ -6,7 +6,7 @@ description: About licensing of Xtract for Alteryx
 product: xtract-for-alteryx
 parent: introduction
 permalink: /:collection/:path
-weight: 5
+weight: 10
 lang: en_GB
 ---
 

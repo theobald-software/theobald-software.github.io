@@ -1,12 +1,12 @@
 ---
-ref: bc-introduction-05
+ref: bc-introduction-10
 layout: page
 title: License
 description: License
 product: board-connector
 parent: introduction
 permalink: /:collection/:path
-weight: 8
+weight: 10
 lang: en_GB
 progressstate: 5
 ---
