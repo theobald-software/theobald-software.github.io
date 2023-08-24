@@ -1,19 +1,18 @@
-Use runtime parameters to set selection values at runtime.
 
 ### Create Runtime Parameters 
 
 1. In the main window of the component click {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}**Edit parameters**{% else %}**Edit Runtime Parameters**{% endif %}. 
 The window “Edit Runtime Parameters” opens.<br>
 {% if page.product == "xtract-for-alteryx" %}![Edit runtime parameters](/img/content/xfa/odp-edit-runtime-params.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Edit runtime parameters](/img/content/xis/odp-edit-runtime-params.png){:class="img-responsive"}{% else %}![Edit runtime parameters](/img/content/xu/odp-edit-runtime-params.png){:class="img-responsive"}{% endif %}
-2. Click **[Add Scalar]** (1) to define scalar parameters that can be used as placeholders.<br>
-If available, click **[Add List]** (1) to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”.
-The placeholders need to be populated with actual values at extraction runtime. <br>
+2. Click **[Add Scalar]** or **[Add List]** (1) to create a scalar or list parameter that can be used a placeholder for values.
+List parameters can contain multiple values separated by commas e.g., 1,10 or “1”, “10”.
+The placeholders need to be populated with actual values at runtime. <br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.<br>
 ![ODP Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}
-3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. The data types can, but don't have to correlate to SAP data types. 
-- String: This data type can be used for any type of SAP selection field.
-- Integer / Number: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.
+3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. The data types can, but don't have to correlate to SAP data types. <br>
+*String*: This data type can be used for any type of SAP selection field.<br>
+*Integer / Number*: This data type can be used for numeric SAP selection fields.<br>
+*Flag*: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.
 4. Click **[OK]** (3) to confirm.
 
 The runtime parameters are now available in the component.
