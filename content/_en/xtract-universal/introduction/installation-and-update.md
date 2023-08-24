@@ -6,7 +6,7 @@ description: Installation and Update
 product: xtract-universal
 parent: introduction
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=installation
 progressstate: 5
