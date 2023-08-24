@@ -24,3 +24,4 @@ Clicking the icons switches between entering actual input values and entering pa
 {% if page.product == "xtract-for-alteryx" %}![Assign parameters](/img/content/xfa/XfA-BAPI-Runtime-Parameters.png){:class="img-responsive"}{% else %}![Assign parameters](/img/content/BAPI-Runtime-Parameters.png){:class="img-responsive"} {% endif %}
 
 ### Pass Parameters at Runtime
+

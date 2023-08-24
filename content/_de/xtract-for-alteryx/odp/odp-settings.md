@@ -17,6 +17,4 @@ Der folgende Abschnitt beschreibt die Einstellungen der ODP-Komponente, die übe
 
 {% include _content/de/odp/odp-settings-subscriptions.md %}
 
-{% include _content/de/odp/odp-settings-parameters.md %}
-
 {% include _content/de/odp/odp-settings-advanced.md %}
