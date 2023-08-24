@@ -24,7 +24,6 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 ### Voraussetzungen
 
 - SAP Version 7.40 SP05 oder höher.
-- Table CDC untertsützt ausschließlich die SAP HANA Datenbank.
 - Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE Version 2.10 oder höher. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
 `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 - Benötigte Funktionsbausteine und ihre Pakethierarchie:
@@ -39,6 +38,9 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 	| IUUC_DELETE_ADBC_TRIGGER | *CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
 	| Z_THEO_READ_TABLE | *Z_THEO_READ_TABLE* |
 	| Z_THEO_DELETE_LOG_ENTRIES | *Z_THEO_CDC* |
+
+{: .box-note }
+**Hinweis:** IBM Datenbanken aktuell nicht von Table CDC unterstützt. Die Unterstützung von IBM Datenbanken werden in Q4 2023 veröffentlicht.
 
 <!---
 
