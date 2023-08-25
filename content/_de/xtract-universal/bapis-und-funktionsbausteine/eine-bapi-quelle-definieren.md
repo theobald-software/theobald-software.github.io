@@ -11,6 +11,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-bapi-quelle-definieren
 ---
 
-Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.
+Der folgende Abschnitt beschreibt die Anwendung der BAPI Komponente.
 
 {% include _content/de/bapi/eine-bapi-quelle-definieren.md %}
