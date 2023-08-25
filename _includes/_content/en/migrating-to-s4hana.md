@@ -13,5 +13,5 @@ After the migration to SAP S/4HANA, check the following {% if page.product == "x
 It is possible that the issue is resolved in newer releases.
 - Download the latest product version in the Theobald Software [Customer Portal](https://my.theobald-software.com/). 
 - Update the product, see {% if page.product == "xtract-universal" or page.product == "board-connector" %}[Installation and Update](./installation-and-update){% elsif page.product == "xtract-for-alteryx" or page.product == "xtract-is"%}[Update](./update){% endif %}.<br>
-- If the software update does not solve the issue, contact the Theobald Software [support](support@theobald-software.com).
+- If the software update does not solve the issue, contact the Theobald Software [support](https://support.theobald-software.com/helpdesk).
 4. Deploy the upgrade to your production environment.

@@ -12,7 +12,7 @@ Nach der Migration nach SAP S/4HANA, prüfen Sie die folgenden {% if page.produc
 **Tipp:** Wenn sich die Metadaten einer SAP Datenquelle nach der Migration geändert haben, aktualisieren Sie die Metadaten in {% if page.product == "xtract-is" %}Xtract IS{% elsif page.product == "xtract-for-alteryx" %}Xtract for Alteryx{% elsif page.product == "xtract-universal" %}Xtract Universal{% elsif page.product == "board-connector" %}Board Connector{% endif %}.
 3. Wenn Fehler auftreten, empfehlen wir das Produkt zu aktualisieren. Die Fehlerursache kann in einer neueren Softwareversion bereits behoben sein.
 - Laden Sie die neueste Softwareversion im Theobald Software [Kundenportal](https://my.theobald-software.com/) herunter.
-- Aktualisieren Sie das Produkt, siehe {% if page.product == "xtract-universal" or page.product == "board-connector" %}[Installation und Update](./einfuehrung/installation-und-update){% elsif page.product == "xtract-for-alteryx" or page.product == "xtract-is"%}[Update](./update){% endif %}.
-- Wenn das Softwareupdate die Fehler nicht behebt, kontaktieren Sie den Theobald Software [Support](support@theobald-software.com).
+- Aktualisieren Sie das Produkt, siehe {% if page.product == "xtract-universal" or page.product == "board-connector" %}[Installation und Update](./installation-und-update){% elsif page.product == "xtract-for-alteryx" or page.product == "xtract-is"%}[Update](./update){% endif %}.
+- Wenn das Softwareupdate die Fehler nicht behebt, kontaktieren Sie den Theobald Software [Support](https://support.theobald-software.com/helpdesk).
 4. Stellen Sie das Upgrade für die Produktivumgebung bereit.
 

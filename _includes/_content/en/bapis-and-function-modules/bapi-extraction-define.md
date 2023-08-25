@@ -26,7 +26,7 @@ Click the ![glasses](/img/content/icons/glasses.png) icon to check the names and
 Activate the checkbox next to the items to add items to the output (2).<br>
 Click the ![pen](/img/content/icons/pen.png) icon to edit tables (3).
 {% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
-5. Optional: If available, define which exceptions thrown by the BAPI are ignored during runtime, see [Exceptions](parameters#exceptions).
+5. Optional: If available, define which exceptions thrown by the BAPI are ignored during runtime, see [Exceptions](./parameters#exceptions).
 6. Click **[OK]** to confirm.
 
 {: .box-note }

@@ -24,7 +24,7 @@ Aktivieren Sie die Checkbox neben den aufgelisteten Elementen, um sie der Ausgab
 4. Fügen Sie in **Tables** Tabellen zur Ein-/Ausgabe hinzu, siehe [Tabellen Parametrisierung](./parameter#tables-parameter).<br>
 Sie können die Namen und Datentypen der Tabellenfelder prüfen (1), Elemente der Ausgabe hinzufügen (2) und Tabellen bearbeiten (3).<br>
 {% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
-5. Optional: Falls verfügbar, können Sie definieren, welche von der BAPI zurückgegebenen Ausnahmen während der Laufzeit ignoriert werden, siehe [Exceptions](parameters#exceptions).
+5. Optional: Falls verfügbar, können Sie definieren, welche von der BAPI zurückgegebenen Ausnahmen während der Laufzeit ignoriert werden, siehe [Exceptions](./parameter#exceptions).
 6. Bestätigen Sie Ihre Eingabe mit **[OK]**.
 
 {: .box-note }
