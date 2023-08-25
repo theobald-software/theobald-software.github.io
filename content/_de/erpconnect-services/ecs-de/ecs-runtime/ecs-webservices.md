@@ -110,11 +110,6 @@ public class ExecuteTableQuerySettings
 </details>
 
 
-Siehe folgende Beispiele in unserer Knowledge-Base:<br> 
-[Consume ERPConnect Services REST/JSON Webservice from .NET](https://kb.theobald-software.com/erpconnect-services/consume-erpconnect-services-restjson-webservice-from-net) <br>
-[Consume ERPConnect Services REST/JSON Webservice from Java](https://kb.theobald-software.com/erpconnect-services/consume-erpconnect-services-restjson-webservice-from-java)<br>
-[Showing SAP Data in a Grid within SharePoint with 50 lines of JavaScript](https://kb.theobald-software.com/erpconnect-services/showing-sap-data-in-a-grid)<br>
-
 **JavaScript-Bibliothek JSON2.js**<br>
 Die JavaScript-Bibliothek JSON2.js ist beim Umwandeln von JavaScript-Objekten in eine JSON-Zeichenkette sehr hilfreich. Die Datei kann auf der Internetseite [www.json.org](http://www.json.org) kostenlos heruntergeladen werden. In den hier gezeigten Programmbeispielen kommt die Funktion JSON.stringify zum Einsatz.    
 
