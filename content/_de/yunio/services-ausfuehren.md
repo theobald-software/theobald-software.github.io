@@ -72,6 +72,10 @@ Parameter stehen als Abfrageparameter in der Service-URL zur Verfügung. <br>
 Verwenden Sie Abfrageparameter, um Werte zuzuweisen, oder fügen Sie die Werte direkt in der Service-URL hinzu. Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*:<br>
 ![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
 
+{: .box-note}
+**Hinweis:** Wenn URL-Parameter andere Zeichen enthalten als `A–Z a–z 0–9 - _ . ! ~ * ' ( )`, verwenden Sie für diese Zeichen eine Escape-Sequenz. 
+Nicht zulässige Zeichen sind z.B. `# % &`.
+
 
 ### POST vs GET
 yunIO-Services unterstützen die http-Methoden „POST“ und „GET“.

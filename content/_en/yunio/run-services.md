@@ -72,6 +72,8 @@ Parameters are available as query parameters in the service URL. <br>
 Use query parameters to assign values or add the values directly in the service URL. The depicted example uses an input parameter *NAME1*:<br>
 ![yunIO-HTTP-GET](/img/content/yunio/http-get.png){:class="img-responsive" }
 
+{: .box-note}
+**Note:** If URL parameters contain characters other than `A–Z a–z 0–9 - _ . ! ~ * ' ( )` use an escape sequence for the characters. Some characters can break the URL, e.g., `# % &`.
 
 ### POST vs GET
 yunIO services support the http methods `POST` and `GET`.
