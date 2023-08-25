@@ -43,7 +43,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 |:----|:---|
 | ABAP Ordner | Ordner mit eigenentwickelten Z-Funktionsbausteinen (.txt) und den dazugehörigen Transportaufträgen (.zip).|
 | logs Ordner| Ordner mit Server- und Extraktionsprotokollen etc. Siehe auch Abschnitt [Logging](../logging). |
-| config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. <!-----Siehe auch Abschnitt [Backup](../fortgeschrittene-techniken/backup-und-migration). ----> |
+| config Ordner | Ordner, der bei der ersten Extraktion automatisch erstellt wird und alle Extraktionen und die entsprechenden Protokolldateien enthält. <!-----Siehe auch Abschnitt [Backup](./backup-und-migration). ----> |
 | result-cache Ordner | Ordner mit Extraktions-Cache-Dateien.  |
 | BCDesigner.exe | Anwendung zum Starten von Board Connector Designer, der das Erstellen, Testen und Überwachen von Extraktionen ermöglicht.|
 | BCService.exe | Anwendung, die den Board Connector Server als einen Windows Service startet.  Diese Anwendung startet in der Regel automatisch und läuft im Hintergrund. |
@@ -53,7 +53,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server_einstellungen) definiert. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von Board Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
-| BOARDConnectorSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
+| BOARDConnectorSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](./backup-und-migration#migration-auf-eine-andere-maschine).|
 | Eula_Board Connector.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Board Connector.|
 | BOARDConnectorLicense.json |  Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
@@ -76,7 +76,7 @@ Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabil
  Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
 
 Alle Einstellungen und angelegten Objekte bleiben erhalten.
-Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration).
+Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](./backup-und-migration).
 
 #### Update-Vorbereitung
 
@@ -87,7 +87,7 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 2. Stellen Sie sicher, dass die Testumgebung eine Kopie der aktuellen Produktivumgebung ist.
 3. Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) und die Veröffentlichungshinweise (Release Notes) in der Knowledge-Base, um eine Update-Notwendigkeit auszuschließen. 
 
-4. Erstellen Sie ein [Backup](../fortgeschrittene-techniken/backup-und-migration) der aktuellen Installation.
+4. Erstellen Sie ein [Backup](./backup-und-migration) der aktuellen Installation.
 5. Führen Sie alle notwendigen Vorbereitungen und Änderungen durch, die in den Veröffentlichungshinweisen (Release Notes) / Versionshistorie  beschrieben sind. Bei größeren Änderungen verwenden Sie den ConfigConverter.
 
 ### Aktualisieren von Hauptversionen (Major Releases) - ConfigConverter
@@ -116,4 +116,4 @@ Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, k
 
 ****
 #### Weiterführende Links
-- [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration)
+- [Backup und Migration](./backup-und-migration)

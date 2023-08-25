@@ -49,7 +49,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | ABAP Verzeichnis | Verzeichnis mit den SAP-Funktionsbausteinen. Die readme.txt innerhalb des Verzeichnisses beinhaltet weitere Informationen. Mehr Details dazu finden Sie auch in [SAP Customizing](../sap-customizing).|
 | Alteryx Verzeichnis| Verzeichnis mit dem Plugin-Setup für die [Alteryx Destination](../destinationen/alteryx-de#voraussetzungen).|
 | logs Verzeichnis| Verzeichnis mit Server- und Extraktionsprotokollen etc. Mehr Details dazu finden Sie in [Logging](../logging). |
-| config Verzeichnis | Verzeichnis mit allen SAP-Verbindungen, Extraktionen, Destinationen und anderen Einstellungen. Mehr Details dazu finden Sie auch [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration).|
+| config Verzeichnis | Verzeichnis mit allen SAP-Verbindungen, Extraktionen, Destinationen und anderen Einstellungen. Mehr Details dazu finden Sie auch [Backup und Migration](./backup-und-migration).|
 | powerbi Verzeichnis| Verzeichnis mit Dateien, die mit der [Power BI Connector Destination](../destinationen/Power-BI-Connector) in Zusammenhang stehen.|
 | result-cache Verzeichnis | Verzeichnis mit Extraktions-Cache-Dateien, anwendbar nur für Pull-Destinationen. Mehr Details dazu finden Sie auch in Abschnitten [Pull-Destinationen](../destinationen#pull--und-push-destinationen) und [Allgemeine Einstellungen: General Settings > Misc. Tab > Cache Result Setting](../erste-schritte/allgemeine-einstellungen#misc-tab).|
 | xu.exe | Kommandozeilentool zum Ausführen von Extraktionen. Mehr Details dazu finden Sie auch im Abschnitt [Extraktion einplanen](../extraktionen-ausfuehren-und-einplanen). |
@@ -58,7 +58,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | XtractDesigner.exe | [Xtract Universal Designer](../erste-schritte/designer-overview) Anwendung zum Erstellen, Testen und Überwachen von Extraktionen.|
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Quellen (Sources), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von Xtract Universal mit allen dazugehörigen Komponenten von Ihrer Maschine. |
-|XtractUniversalSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).|
+|XtractUniversalSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](./backup-und-migration#migration-auf-eine-andere-maschine).|
 | Eula_XtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract Universal.|
 | XtractUniversalLicense.json | Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
@@ -106,7 +106,7 @@ Eine regelmäßige Aktualisierung der Software ist entscheidend für eine stabil
 Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) auf Updates. Eine neuere Version kann über die ältere Version installiert werden. 
 
 Alle Einstellungen und angelegten Objekte bleiben erhalten.
-Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration).
+Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie den Anweisungen, die im Abschnitt  [Backup und Migration](./backup-und-migration).
 
 #### Update-Vorbereitung
 
@@ -116,7 +116,7 @@ Beim Migrieren von Daten und Einstellungen auf einen anderen Server, folgen Sie 
 1. Prüfen Sie, ob Sie über eine funktionierende Testumgebung mit einer gültigen Lizenz und Wartung verfügen.
 2. Stellen Sie sicher, dass die Testumgebung eine Kopie der aktuellen Produktivumgebung ist.
 3. Prüfen Sie die [Versionshistorie](https://kb.theobald-software.com/version-history) und die Veröffentlichungshinweise (Release Notes) in der Knowledge-Base, um eine Update-Notwendigkeit auszuschließen. 
-4. Erstellen Sie ein [Backup](../fortgeschrittene-techniken/backup-und-migration) der aktuellen Installation.
+4. Erstellen Sie ein [Backup](./backup-und-migration) der aktuellen Installation.
 5. Führen Sie alle notwendigen Vorbereitungen und Änderungen durch, die in den Veröffentlichungshinweisen (Release Notes) / Versionshistorie  beschrieben sind. Bei größeren Änderungen verwenden Sie den ConfigConverter.
 
 {: .box-note }																   
@@ -153,5 +153,5 @@ Wird der *ConfigConverter* nicht automatisch bei der Installation ausgeführt, k
 
 ****
 #### Weiterführende Links
-- [Backup und Migration](../fortgeschrittene-techniken/backup-und-migration)
+- [Backup und Migration](./backup-und-migration)
 - [Xtract Universal Version History](https://kb.theobald-software.com/version-history/xtract-universal-version-history)

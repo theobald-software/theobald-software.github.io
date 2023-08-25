@@ -45,7 +45,7 @@ The list below shows several most important files that are placed into the defau
 |:----|:---|
 | ABAP directory | Directory with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
 | logs directory| Directory with server and extraction logs. See also section [Logging](../logging). |
-| config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files. See also section [Backup](../advanced-techniques/backup-and-migration). |
+| config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files. See also section [Backup](./backup-and-migration). |
 | result-cache directory | Directory with extraction cache files. |
 | BCDesigner.exe | Application that launches Board Connector Designer to create, test and monitor extractions.|
 | BCService.exe | Application that launches Board Connector Server as Windows Service.  Usually boots automatically and runs in the background. |
@@ -56,7 +56,7 @@ The list below shows several most important files that are placed into the defau
 | BCConfigServer.exe| Listener process waits for new connection requests from the Designer. |
 | ConfigConverter.exe| Application that converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Board Connector with all its components from your machine. |
-| BOARDConnectorSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).|
+| BOARDConnectorSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](./backup-and-migration#migration-to-a-different-machine).|
 | Eula_Board Connector.rtf | Document containing the license agreement for the use of the software Board Connector.|
 | BOARDConnectorLicense.json |  License file with information about the server, the component and runtime. |
 
@@ -78,7 +78,7 @@ Create a backup of the directory: `C:\Program Files\BOARDConnector\config` at re
 A regular update of the software is crucial for stable performance, especially major changes and high ([H]) priority
 updates. Check the [Version history](https://kb.theobald-software.com/version-history) for updates. A newer version
 can be installed over the older version. All settings and created objects are preserved. When migrating data and
-settings to another server, follow the instructions described in section [Backup and Migration](../advanced-techniques/backup-and-migration).
+settings to another server, follow the instructions described in section [Backup and Migration](./backup-and-migration).
 
 {: .box-tip }
 **Tip:** Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
@@ -88,7 +88,7 @@ informs about changes in the version history and release notes.
 2. Make sure that the test environment is a copy of the current production environment.
 3. Check the [Version History](https://kb.theobald-software.com/version-history) and release notes in the
 knowledge base to check, if update is needed.
-4. Create a [backup](../advanced-techniques/backup-and-migration) of the current installation.
+4. Create a [backup](./backup-and-migration) of the current installation.
 5. Conduct any necessary preparations and changes as described in the Release Note / Version History. In case of major changes, use the ConfigConverter.
 
 ### Upgrading Major Releases - ConfigConverter
@@ -117,4 +117,4 @@ If the *ConfigConverter* is not executed automatically during installation, the 
 
 ****
 #### Related Links
-- [Backup and Migration](../advanced-techniques/backup-and-migration)
+- [Backup and Migration](./backup-and-migration)

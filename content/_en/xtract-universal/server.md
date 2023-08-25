@@ -16,8 +16,8 @@ The follwing section contains an overview of the Xtract Universal server.
 
 The server performs two main tasks:
 
-- Run extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory. 
-- Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the Designer.
+- Run extractions stored in the [Config](./introduction/backup-and-migration#configuration-files) directory. 
+- Make extractions stored in the [Config](./introduction/backup-and-migration#configuration-files) directory available to the Designer.
 
 ### Run Extraction on the Server
 
@@ -41,9 +41,9 @@ The logs can also be displayed in the Designer under **[Server]>[Logs (Web Worke
 
 1. Theobald.Xu.Rpc.Worker.exe checks the authentication and authorization of the request.
 2. Designer requests a certain setting, e.g., list of all extractions. 
-3. Theobald.Xu.Rpc.Worker.exe reads the requested settings from the [Config directory](./advanced-techniques/backup-and-migration#configuration-files) and sends these settings to the Designer.
+3. Theobald.Xu.Rpc.Worker.exe reads the requested settings from the [Config directory](./introduction/backup-and-migration#configuration-files) and sends these settings to the Designer.
 4. The user changes the settings in the Designer (e.g., destination settings).
-5. Designer sends the changed settings back to Theobald.Xu.Rpc.Worker.exe. Theobald.Xu.Rpc.Worker.exe saves the changed settings in the [Config directory](./advanced-techniques/backup-and-migration#configuration-files).
+5. Designer sends the changed settings back to Theobald.Xu.Rpc.Worker.exe. Theobald.Xu.Rpc.Worker.exe saves the changed settings in the [Config directory](./introduction/backup-and-migration#configuration-files).
 
 {: .box-tip }
 **Tip**: The Theobald.Xu.Rpc.Worker.exe logs its actions in log files.

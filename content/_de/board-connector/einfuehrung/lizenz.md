@@ -38,7 +38,7 @@ Der *About* Tab des Infofensters enthält nützliche Links zum Kundenportal, der
 Da Lizenzen servergebunden sind, brauchen Sie bei einem Umzug auf einen neuen Server auch eine neue Lizenz.
 Kontaktieren Sie unseren Vertrieb unter [sales@theobald-software.com](mailto:sales@theobald-software.com) und teilen Sie uns den Namen des neuen Servers mit. 
 
-Für weitere Informationen zum Thema Migration, siehe [Migration auf eine andere Maschine](../fortgeschrittene-techniken/backup-und-migration#migration-auf-eine-andere-maschine).
+Für weitere Informationen zum Thema Migration, siehe [Migration auf eine andere Maschine](./backup-und-migration#migration-auf-eine-andere-maschine).
 
 
 ### Wartung

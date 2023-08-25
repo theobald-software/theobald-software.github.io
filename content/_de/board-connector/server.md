@@ -16,8 +16,8 @@ Dieser Abschnitt beinhaltet Informationen zum Thema Server und Servereinstellung
 
 Der Server übernimmt zwei Hauptaufgaben:
 
-1. Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Extraktionen ausführen 
-2. Im [Config](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Einstellungen dem Designer zur Verfügung stellen
+1. Im [Config](./einfuehrung/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Extraktionen ausführen 
+2. Im [Config](./einfuehrung/backup-und-migration#konfigurationsdateien)-Verzeichnis gespeicherte Einstellungen dem Designer zur Verfügung stellen
 
 ### Extraktion auf dem Server ausführen
 
@@ -39,9 +39,9 @@ Ausführung wird durch eine HTTP-Anfrage (Request) ausgelöst. Die HTTP-Anfrage 
 
 1. BCConfigServer.exe prüft die Authentisierung und Autorisierung der Anfrage.
 2. Designer fragt eine bestimmte Einstellung an, z.B. Liste aller Extraktionen. 
-3. BCConfigServer.exe liest die angefragten Einstellungen aus dem [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien) und sendet diese Einstellungen an den Designer.
+3. BCConfigServer.exe liest die angefragten Einstellungen aus dem [Config-Verzeichnis](./einfuehrung/backup-und-migration#konfigurationsdateien) und sendet diese Einstellungen an den Designer.
 4. Der Benutzer ändert die die Einstellungen im Designer.
-5. Der Designer sendet die geänderten Einstellungen an BCConfigServer.exe zurück. BCConfigServer.exe speichert die geänderten Einstellungen im [Config-Verzeichnis](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien).
+5. Der Designer sendet die geänderten Einstellungen an BCConfigServer.exe zurück. BCConfigServer.exe speichert die geänderten Einstellungen im [Config-Verzeichnis](./einfuehrung/backup-und-migration#konfigurationsdateien).
 
 
 ### Serverarchitektur

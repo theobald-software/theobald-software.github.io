@@ -65,7 +65,7 @@ More information can be found under the *Requirements* section of each destinati
 - [Flat File - Parquet](./destinations/parquet)
  
 {: .box-note }
-**Note**: The [configuration files](./advanced-techniques/backup-and-migration#configuration-files) of destinations are stored in `C:\Program Files\XtractUniversal\config\destinations`.
+**Note**: The [configuration files](./introduction/backup-and-migration#configuration-files) of destinations are stored in `C:\Program Files\XtractUniversal\config\destinations`.
  
 ### Pull and Push Destinations
 

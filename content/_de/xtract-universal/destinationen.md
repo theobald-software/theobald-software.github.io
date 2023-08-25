@@ -65,7 +65,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 
 
 {: .box-note }
-**Hinweis**: Die [Konfigurationsdateien](./fortgeschrittene-techniken/backup-und-migration#konfigurationsdateien) einer Destination werden unter `C:\Program Files\XtractUniversal\config\destinations` abgelegt.
+**Hinweis**: Die [Konfigurationsdateien](./einfuehrung/backup-und-migration#konfigurationsdateien) einer Destination werden unter `C:\Program Files\XtractUniversal\config\destinations` abgelegt.
 
 ### Pull- und Push-Destinationen
 

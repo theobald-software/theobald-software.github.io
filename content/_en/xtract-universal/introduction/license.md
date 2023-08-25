@@ -62,7 +62,7 @@ To inspect your current license data, go to the main menu bar of the Xtract Univ
 When moving your setup to a new server, a new license file must be issued for that server.
 Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com) to let us know the name of the new server.
 
-For more information on the migration process, see [Migration to a Different Machine](../advanced-techniques/backup-and-migration#migration-to-a-different-machine).
+For more information on the migration process, see [Migration to a Different Machine](./backup-and-migration#migration-to-a-different-machine).
 
 
 ****

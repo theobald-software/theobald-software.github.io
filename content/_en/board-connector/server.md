@@ -16,8 +16,8 @@ The follwing section contains an overview of the Board Connector server.
 
 The server performs two main tasks:
 
-- Run extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory. 
-- Make extractions stored in the [Config](./advanced-techniques/backup-and-migration#configuration-files) directory available to the Designer.
+- Run extractions stored in the [Config](./introduction/backup-and-migration#configuration-files) directory. 
+- Make extractions stored in the [Config](./introduction/backup-and-migration#configuration-files) directory available to the Designer.
 
 ### Run Extraction on the Server
 
@@ -38,9 +38,9 @@ Execution is triggered by an HTTP request. The HTTP request is triggered from th
 
 1. BCConfigServer.exe checks the authentication and authorization of the request.
 2. Designer requests a certain setting, e.g., list of all extractions. 
-3. BCConfigServer.exe reads the requested settings from the [Config directory](./advanced-techniques/backup-and-migration#configuration-files) and sends these settings to the Designer.
+3. BCConfigServer.exe reads the requested settings from the [Config directory](./introduction/backup-and-migration#configuration-files) and sends these settings to the Designer.
 4. The user changes the settings in the Designer.
-5. Designer sends the changed settings back to BCConfigServer.exe. BCConfigServer.exe saves the changed settings in the [Config directory](./advanced-techniques/backup-and-migration#configuration-files).
+5. Designer sends the changed settings back to BCConfigServer.exe. BCConfigServer.exe saves the changed settings in the [Config directory](./introduction/backup-and-migration#configuration-files).
 
 ### Server Architecture
 
