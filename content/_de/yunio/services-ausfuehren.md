@@ -23,7 +23,7 @@ Vor der Integration eines yunIO-Services empfiehlt es sich, den Service direkt i
 #### Service Menü Ausführen
 
 Führen Sie die folgenden Schritte aus, um einen Service zu testen:
-1. Wenn [Globale Zugriffskontrolle - Global Access Control](./access-control#global-access-control) und / oder [Service-Zugangskontrolle - Service Access Control](./Zugriffssteuerung#service-access-control-zugriffssteuerung-für-services) aktiviert ist, geben Sie gültige Anmeldeinformationen ein (1).
+1. Wenn [Globale Zugriffskontrolle - Global Access Control](./Zugriffssteuerung#global-access-control-globale-zugriffssteuerung) und / oder [Service-Zugriffskontrolle - Service Access Control](./Zugriffssteuerung#service-access-control-zugriffssteuerung-für-services) aktiviert ist, geben Sie gültige Anmeldeinformationen ein (1).
 2. Wenn der Service Eingabeparameter erfordert, geben Sie Werte für die unter *Service parameters* (2) aufgeführten Parameter ein.
 Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*.<br>
 ![Run-Service](/img/content/yunio/run-service.png){:class="img-responsive" }
