@@ -18,7 +18,7 @@ Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](h
 Für die Nutzung einer beliebigen Xtract for Alteryx-Komponente ist eine SAP-Verbindung erforderlich.
 
 {: .box-note }
-**Hinweis:** Der Alteryx Data Connection Manager ist ab Alteryx Designer Version 2021.4 verfügbar.
+**Hinweis:** Xtract for Alteryx unterstützt die Verwendung des Alteryx Data Connection Manager ab Alteryx Designer Version 2022.3.
 Wenn Sie eine ältere Version des Alteryx Designers verwenden, lesen Sie den Knowledge-Base-Artikel[Creating an SAP Connecion](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection), um SAP-Verbindungen mithilfe der Xtract for Alteryx-Benutzeroberfläche zu erstellen.
 
 ## Data Sources
