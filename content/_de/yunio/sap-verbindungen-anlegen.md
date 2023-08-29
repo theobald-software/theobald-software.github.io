@@ -22,19 +22,19 @@ Stellen Sie sicher, dass der Zugriff auf die erforderlichen Berechtigungsobjekte
 
 SAP-Verbindungen befinden sich im yunIO Designer unter dem Abschnitt *Connections*.<br>
 - Um eine neue Verbindung anzulegen, klicken Sie auf **[Add Connection]** (1). <br>
-- Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf *Edit* (![Edit](/img/content/yunio/edit.png) Icon) (2).
+- Um eine bereits vorhandene Verbindung zu bearbeiten, klicken Sie auf ![Edit](/img/content/yunio/edit.png).
 
 ![yunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
 ### Verbindungsdetails
 
 Das Menü zum Erstellen und Bearbeiten von SAP-Verbindungen ist in drei Unterabschnitte unterteilt:
-- [System](#system) (3)
-- [Authentication](#authentifizierung) (Authentifizierung) (4)
-- [Test Connection](#angelegte-sap-verbindung-überprüfen) (5)
+- [System](#system) (2)
+- [Authentication](#authentifizierung) (Authentifizierung) (3)
+- [Test Connection](#angelegte-sap-verbindung-überprüfen) (4)
 
 Ergänzen Sie die Verbindungsdetails und klicken Sie auf **[Save]**, um eine SAP-Verbindung herzustellen.<br>
-![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" }
 
 {: .box-tip }
 **Tipp:** Werte zum Ausfüllen der Felder können Sie die Logon Pad unter *Properties* einsehen oder Sie wenden sich an Ihr SAP-Basis-Team.
