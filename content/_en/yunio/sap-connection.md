@@ -39,7 +39,7 @@ Fill out the connection details and click **[Save]** to establish an SAP connect
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
 	- **Host**:  host name or IP address of the application server (Property Host). 
-	- **Instance No**: a two-digit number between 00 und 99 (Property SystemNumber).
+	- **Instance No**: a two-digit number between 00 and 99 (Property SystemNumber).
 	- **Client**: a three-digit number of the SAP client between 000 and 999, e.g., 800.
 	- **Language**: the logon language for the SAP system, e.g., EN for English or DE for German.
 
@@ -65,8 +65,10 @@ For more information on SAP routers, see [SAP online help: SAP-Router](https://h
 
 The following authentication methods are supported:
 - Plain - SAP username and password (system or dialogue user).
-- SNC (Secure Network Communication) - username and password via basic authentication.
+- Secure Network Communication (SNC) - username and password via basic authentication.
 <!----- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3) --->
+
+#### Plain
 
 **User**<br>
 SAP username. 
