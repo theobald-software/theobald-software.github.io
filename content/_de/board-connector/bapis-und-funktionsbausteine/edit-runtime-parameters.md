@@ -9,6 +9,7 @@ permalink: /:collection/:path
 weight: 6
 lang: de_DE
 ---
+{% include _content/de/edit-runtime-parameters.md %}
 
 {% include _content/de/bapi/edit-runtime-parameters.md %}
 

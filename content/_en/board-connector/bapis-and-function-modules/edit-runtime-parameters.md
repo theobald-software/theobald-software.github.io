@@ -11,7 +11,9 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bapi-extraction-settings
 ---
 
+{% include _content/en/edit-runtime-parameters.md %}
 
 {% include _content/en/bapis-and-function-modules/edit-runtime-parameters.md %}
+
 {: .box-note }
 **Note:** For information on how to run an extraction with runtime parameters, see [User-Defined Variables](../advanced-techniques/user-defined-variables).

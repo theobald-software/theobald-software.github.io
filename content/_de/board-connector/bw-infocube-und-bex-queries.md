@@ -5,7 +5,7 @@ title: BW Cube
 description: BW InfoCubes und BEx Queries
 product: board-connector
 parent: board-connector
-childidentifier: bw-infocube-und-bex-queries
+childidentifier: bw-infocubes-und-bex-queries
 permalink: /:collection/:path
 weight: 11
 lang: de_DE

@@ -5,7 +5,7 @@ title: ODP (Operational Data Provisioning)
 description: Operational Data Provisioning (ODP)
 product: xtract-universal
 parent: xtract-universal
-childidentifier: Operational Data Provisioning (ODP)
+childidentifier: odp
 permalink: /:collection/:path
 weight: 65
 lang: en_GB

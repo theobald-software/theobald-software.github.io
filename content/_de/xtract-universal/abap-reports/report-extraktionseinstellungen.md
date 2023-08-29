@@ -4,7 +4,7 @@ layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
 product: xtract-universal
-parent: report-abap-reports-ansteuern
+parent: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 5
 lang: de_DE

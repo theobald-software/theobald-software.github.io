@@ -4,7 +4,7 @@ layout: page
 title: Runtime Parameters
 description: Runtime Parameters
 product: xtract-universal
-parent: Operational Data Provisioning (ODP)
+parent: odp
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

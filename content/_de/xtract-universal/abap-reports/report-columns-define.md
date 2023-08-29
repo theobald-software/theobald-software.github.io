@@ -4,7 +4,7 @@ layout: page
 title: Spalten definieren
 description: Spalten definieren
 product: xtract-universal
-parent: report-abap-reports-ansteuern
+parent: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

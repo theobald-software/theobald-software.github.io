@@ -4,7 +4,7 @@ layout: page
 title: Einstellungen
 description: ODP Settings
 product: xtract-universal
-parent: Operational Data Provisioning (ODP)
+parent: odp
 permalink: /:collection/:path
 weight: 3
 lang: de_DE

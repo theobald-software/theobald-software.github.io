@@ -4,7 +4,7 @@ layout: page
 title: Eine Report Extraktion definieren
 description: Eine Report-Extraktion definieren
 product: xtract-universal
-parent: report-abap-reports-ansteuern
+parent: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

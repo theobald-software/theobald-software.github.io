@@ -15,3 +15,4 @@ Verwenden Sie Laufzeitparameter für dynamische [Selektionen und Filter](./odp-d
 
 {% include _content/de/edit-runtime-parameters.md %}
 
+{% include _content/de/alteryx-parameters.md %}

@@ -4,7 +4,7 @@ layout: page
 title: Variablen
 description: Variablen
 product: board-connector
-parent: bw-infocube-und-bex-queries
+parent: bw-infocubes-und-bex-queries
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
