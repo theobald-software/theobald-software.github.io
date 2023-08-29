@@ -9,4 +9,9 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
+
+{% include _content/en/edit-runtime-parameters.md %}
+
 {% include _content/en/bw-infocubes-and-bex-queries/edit-runtime-parameters.md %}
+
+{% include _content/en/alteryx-parameters.md %}

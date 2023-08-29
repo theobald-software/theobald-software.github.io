@@ -1,17 +1,17 @@
 ---
-ref: xfa-odp-params
+ref: xfa-abap-reports-06
 layout: page
 title: Runtime Parameters
 description: Runtime Parameters
 product: xtract-for-alteryx
-parent: odp
+parent: reports
 permalink: /:collection/:path
-weight: 4
+weight: 6
 lang: en_GB
 progressstate: 5
 ---
 
-Use runtime parameters for dynamic [Selections and Filters](./odp-define#selections-and-filters).
+Use runtime parameters for dynamic [Selections and Filters](./variants-and-selections#edit-selections).
 
 {% include _content/en/edit-runtime-parameters.md %}
 

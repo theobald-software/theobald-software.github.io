@@ -10,7 +10,12 @@ weight: 6
 lang: en_GB
 ---
 
+
+{% include _content/en/edit-runtime-parameters.md %}
+
 {% include _content/en/bapis-and-function-modules/edit-runtime-parameters.md %}
+
+
 
 *****
 #### Related Links
