@@ -17,3 +17,4 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=skalare-parameter
 #### Weiterführende Links
 - [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/xtract-is/how-to-post-data-in-sap)
 - [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/xtract-is/uploading-cats-data-by-using-xtract-is-bapi)
+- [Using T-SQL Query Values To Parameterize SAP Extractions](https://kb.theobald-software.com/xtract-is/Using-T-SQL-query-values-to-parameterize-SAP-extractions)
