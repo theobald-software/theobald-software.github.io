@@ -1,16 +1,16 @@
 ---
-ref: xfa-abap-reports-06
+ref: xfa-table-07
 layout: page
 title: Laufzeitparameter
 description: Laufzeitparameter
 product: xtract-for-alteryx
-parent: reports
+parent: table
 permalink: /:collection/:path
-weight: 6
+weight: 7
 lang: de_DE
 ---
 
-Verwenden Sie Laufzeitparameter, um [Selektionen](./report-variants-and-selections#selektionen-bearbeiten) dynamisch zur Laufzeit anzupassen.
+Verwenden Sie Laufzeitparameter für dynamische [WHERE Bedingungen](./where-bedingung).
 
 {% include _content/de/edit-runtime-parameters.md %}
 
