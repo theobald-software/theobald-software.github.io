@@ -144,3 +144,8 @@ Die folgende Liste enthält alle Logs, die im `logs`-Ordner des yunIO installati
 | | services| Enthält Listener-Logs, Worker-Logs und Transaktions-Logs. Die Transaktions-Logs werden erstellt, wenn ein Service vom Typ Transaktion ausgeführt wird.|
 | | websockets| Enthält Listener-Logs und Worker-Logs des Websocket-Servers, der die Daten für den yunIO Designer liefert. |
 |ServiceLog.txt |- | Logs des yunIO Windows-Services.|
+
+{: .box-tip }
+**Tipp:** Um Logs in einem anderen Verzeichnis zu speichern, verwenden Sie eine symbolische Verknüpfung (Symlink) zum logs-Ordner des yunIO-Installationsverzeichnisses.
+Beispiel für PowerShell:<br>
+`New-Item -ItemType SymbolicLink -Target "E:\yuniolog" -Path "C:\Program Files\Theobald Software\yunIO\logs"`
