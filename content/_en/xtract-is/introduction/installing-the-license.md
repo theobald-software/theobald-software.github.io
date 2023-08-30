@@ -52,7 +52,7 @@ The license manager opens.
 ![XIS_License_Manager](/img/content/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
 2. Click **[Install]**. The window "Install Xtract License" opens.
 3. Locate and select the provided "XtractISLicense.json" file you downloaded from the [Customer Portal - My Theobald Software](https://my.theobald-software.com).
-4. Close and restart the license manager to view the properly installed license.  
+
 ![XIS_License_Info](/img/content/XIS_License_Info.png){:class="img-responsive"}
 
 {: .box-tip }
