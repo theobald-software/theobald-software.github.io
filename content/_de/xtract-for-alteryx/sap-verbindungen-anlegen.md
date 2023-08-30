@@ -14,12 +14,15 @@ lang: de_DE
 progressstate: 5
 ---
 
-Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](https://help.alteryx.com/20231/designer/dcm-designer) (DCM) von Alteryx eine SAP-Verbindung erstellen.<br>
+Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](https://help.alteryx.de/20231/designer/dcm-designer) (DCM) von Alteryx eine SAP-Verbindung erstellen.<br>
 Für die Nutzung einer beliebigen Xtract for Alteryx-Komponente ist eine SAP-Verbindung erforderlich.
 
 {: .box-note }
 **Hinweis:** Xtract for Alteryx unterstützt die Verwendung des Alteryx Data Connection Manager ab Alteryx Designer Version 2022.3.
 Wenn Sie eine ältere Version des Alteryx Designers verwenden, lesen Sie den Knowledge-Base-Artikel[Creating an SAP Connecion](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection), um SAP-Verbindungen mithilfe der Xtract for Alteryx-Benutzeroberfläche zu erstellen.
+
+{: .box-note }
+**Hinweis:** Um den DCM zu verwenden, muss er für Ihr Unternehmen aktiviert sein, siehe [Alteryx Dokumentation: Data Connection Manager](https://help.alteryx.com/de/20231/designer/dcm-designer).
 
 ## Data Sources
 
