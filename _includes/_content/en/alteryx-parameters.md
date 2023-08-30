@@ -1,5 +1,5 @@
 
-### How to Pass Values to Runtime Parameters
+### How to Pass Values at Runtime
 
 Follow the steps below to replace runtime parameters with actual values at runtime:
 

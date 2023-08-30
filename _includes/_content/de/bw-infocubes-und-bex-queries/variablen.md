@@ -8,7 +8,7 @@ Sie können BEx-Variablen mit Werten definieren, die zur Laufzeit dynamisch gese
 ### Variablen anpassen
 1. Führen Sie eine [Query-Suche](./eine-bw-cube-quelle-definieren#nach-bw-cube-oder-query-suchen) durch und wählen Sie ein Query mit definierten Variablen aus (1).
 2. Laden Sie eine Echtzeitvorschau über **[Load Live Preview]** (2). 
-![Edit-Variables-Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}{% else %}![Edit Variables Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}{% endif %}
 3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" öffnet sich und die Felder mit verfügbaren Variablen werden aktiviert.
 ![Edit-Variables](/img/content/Edit-Variables.png){:class="img-responsive"}
 4. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Spalten **Sign** und **Option**. <br>

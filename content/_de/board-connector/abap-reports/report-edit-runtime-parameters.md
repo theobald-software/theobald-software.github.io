@@ -10,6 +10,6 @@ weight: 6
 lang: de_DE
 ---
 
-Verwenden Sie Laufzeitparameter, um Selektionen dynamisch zur Laufzeit anzupassen.<br>
+Verwenden Sie Laufzeitparameter, um [Selektionen](./report-variants-and-selections#selektionen-bearbeiten) dynamisch zur Laufzeit anzupassen.<br>
 
 {% include _content/de/edit-runtime-parameters.md %}

@@ -64,8 +64,9 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (4). Die folgenden Ve
 2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" öffnet sich. Sie können *Einzelne Werte (Single Values)* setzen, *Wertebereiche (Value Ranges)* definieren oder *Listenparameter* selektieren.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
 3. Wählen Sie einen einzelnen Wert (6) oder klicken Sie auf **[Add]** (7), um Wertebereiche hinzuzufügen. 
-4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). Um eine Liste von Werten zu verwenden, die zur Laufzeit gesetzt wird, wählen Sie einen Listenparameter aus der Dropdown-Liste *List Parameter* (8).
-Wenn nötig, löschen Sie Filter über **[Remove]** ( ![dustbin](/img/content/icons/trashbin.png) Symbol).
+4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). <br>
+Um eine Liste von dynamischen Werten zu verwenden, wählen Sie einen Listenparameter aus der Dropdown-Liste *List Parameter* (8).
+Wenn nötig, löschen Sie Filter über ![dustbin](/img/content/icons/trashbin.png).
 5. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen. Das Fenster "Member Filter" schließt sich.
 
 Wenn ein Filter definiert ist, erscheint ein Filtersymbol in der Metadatenstruktur.

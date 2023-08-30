@@ -10,7 +10,7 @@ weight: 6
 lang: de_DE
 ---
 
-Verwenden Sie Laufzeitparameter für dynamische [Selektionen und Filter](./report-extraction-define#varianten-und-selektionen).
+Use runtime parameters for dynamic [selections](./variants-and-selections#edit-selections).<br>
 
 {% include _content/de/edit-runtime-parameters.md %}
 

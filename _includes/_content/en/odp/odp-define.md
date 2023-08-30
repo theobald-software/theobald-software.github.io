@@ -21,7 +21,7 @@ The application now returns to the main window of the component.
 **Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
 
 
-### Set Up an ODP Extraction
+### Define an ODP Extraction
 1. Optional: Create selections by activating or deactivating fields (4). <br>
 To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
 If your data source is a Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
