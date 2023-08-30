@@ -21,25 +21,25 @@ For more information, refer to the knowledge base article [SAP User Rights](http
 
 SAP connections are located in the *Connection* section of the yunIO Designer.
 - To add a new SAP connection, click **[Add Connection]** (1).<br>
-- To edit an existing connection, click the edit icon (![Edit](/img/content/yunio/edit.png))of the connection you want to edit (2).
+- To edit an existing connection, click ![Edit](/img/content/yunio/edit.png).
 
 ![yunIO-Create-Connection](/img/content/yunio/web-ui.png){:class="img-responsive" }
 
 ### Connection Details
 
 The menu to create and edit SAP connections is divided into 3 sections:
-- [System](#system) (3)
-- [Authentication](#authentication) (4)
-- [Test Connection](#test-the-sap-connection) (5)
+- [System](#system) (2)
+- [Authentication](#authentication) (3)
+- [Test Connection](#test-the-sap-connection) (4)
 
 Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
-![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
+![yunIO-Create-Connection](/img/content/yunio/yunio-connections.png){:class="img-responsive" }
 
 ### System
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
 	- **Host**:  host name or IP address of the application server (Property Host). 
-	- **Instance No**: a two-digit number between 00 und 99 (Property SystemNumber).
+	- **Instance No**: a two-digit number between 00 and 99 (Property SystemNumber).
 	- **Client**: a three-digit number of the SAP client between 000 and 999, e.g., 800.
 	- **Language**: the logon language for the SAP system, e.g., EN for English or DE for German.
 
@@ -62,16 +62,18 @@ For more information on SAP routers, see [SAP online help: SAP-Router](https://h
 
 
 ### Authentication
-<!----- The following authentication methods are supported:
--  Plain - SAP username and password (system or dialogue user).
--  HTTP Basic Authentication - Basic authentication when executing the extraction. --->
-<!----- SNC (Secure Network Communication) (2) with username and password --->
+
+The following authentication methods are supported:
+- Plain - SAP username and password (system or dialogue user).
+- Secure Network Communication (SNC) - username and password via basic authentication.
 <!----- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3) --->
+
+#### Plain
 
 **User**<br>
 SAP username. 
 
-**Passwort**<br>
+**Password**<br>
 Password of the SAP user.
 
 **Request credentials from callers when running services**<br>
@@ -80,6 +82,15 @@ Any valid SAP credentials can be passed via Basic Authentication to allow access
 
 {: .box-note }
 **Note:** To use *Request credentials from callers when running services* the [*Anonymous Access*](./server-settings#anonymous-access) option must be activated.
+
+#### SNC
+
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and third-party tools like yunIO.
+
+1. Check the SAP parameter *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system. 
+Your SAP Basis has to import and configure the same library on the application server and on the machine that runs yunIO.
+2. Enter the complete path to the library location in the field **SNC library path**, e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.
+3. Enter the SAP partner name configured for the SAP application server in the field **SNC partner name**, e.g., `p:SAPserviceERP/Alice@THEOBALD.LOCAL.
 
 ### Test the SAP Connection
 
