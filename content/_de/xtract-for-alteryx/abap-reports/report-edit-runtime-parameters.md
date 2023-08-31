@@ -14,6 +14,6 @@ Verwenden Sie Laufzeitparameter, um [Selektionen](./report-variants-and-selectio
 
 {% include _content/de/edit-runtime-parameters.md %}
 
-{% include _content/de/abap_reports/report-assign-parameters.md %}
+{% include _content/de/alteryx-assign-parameters.md %}
 
 {% include _content/de/alteryx-parameters.md %}

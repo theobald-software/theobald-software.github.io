@@ -15,7 +15,7 @@ Verwenden Sie Parameter für dynamische [Selektionen und Filter](./odp-define#se
 
 {% include _content/de/edit-runtime-parameters.md %}
 
-{% include _content/de/odp/odp-assign-parameters.md %}
+{% include _content/de/alteryx-assign-parameters.md %}
 
 
 Die Laufzeitparameter sind als Eigenschaften (*Properties*) der Xtract ODP Komponente verfügbar. 

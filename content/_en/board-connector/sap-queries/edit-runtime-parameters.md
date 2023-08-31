@@ -12,4 +12,4 @@ lang: en_GB
 
 {% include _content/en/edit-runtime-parameters.md %}
 
-{% include _content/en/sap-queries/assign-parameters.md %}
+{% include _content/en/alteryx-assign-parameters.md %}

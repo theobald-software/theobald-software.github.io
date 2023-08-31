@@ -15,6 +15,6 @@ Use runtime parameters for dynamic [Selections](./variants-and-selections#edit-s
 
 {% include _content/en/edit-runtime-parameters.md %}
 
-{% include _content/en/abap-reports/report-assign-parameters.md %}
+{% include _content/en/alteryx-assign-parameters.md %}
 
 {% include _content/en/alteryx-parameters.md %}

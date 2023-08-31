@@ -13,4 +13,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 
 {% include _content/en/edit-runtime-parameters.md %}
 
-{% include _content/en/abap-reports/report-assign-parameters.md %}
+{% include _content/en/alteryx-assign-parameters.md %}
