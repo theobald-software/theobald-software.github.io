@@ -60,7 +60,7 @@ Check the database connection.
 
 **TNS Name** <br> 
 Enter the TNS name of the connection as it is stored in the `tnsnames.ora` file in your wallet.<br>
-For more information, see [Oracle Documentation: Download Client Credentials (Wallets)]([https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connect-download-credentials.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1](https://docs.oracle.com/en-us/iaas/autonomous-database/doc/download-client-credentials.html).
+For more information, see [Oracle Documentation: Download Client Credentials (Wallets)](https://docs.oracle.com/en-us/iaas/autonomous-database/doc/download-client-credentials.html).
 
 **Username** <br> 
 Enter the user name.
@@ -80,8 +80,8 @@ Check the database connection.
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_3.png){:class="img-responsive"}
 
 **Connect Descriptor** <br>
-Enter a connect descriptor (connection string), see [Oracle Documentation: View TNS Names and Connection Strings for an Autonomous Database Instance]([https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connection-strings-view.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/connect-download-wallet.html?#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).<br>
-A connect descriptor has the following format:<br>
+Enter a connect descriptor (connection string), see [Oracle Documentation: View TNS Names and Connection Strings for an Autonomous Database Instance](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/connect-download-wallet.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).
+A Connect Descriptor uses the following format:<br>
 ```
 (DESCRIPTION =
 (ADDRESS = (PROTOCOL = TCP)

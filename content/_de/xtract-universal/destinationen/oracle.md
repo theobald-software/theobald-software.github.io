@@ -59,7 +59,7 @@ Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 
 **TNS Name**<br>
 Geben Sie den TNS-Namen der Verbindung ein. Der TNS-Name ist in der Datei `tnsnames.ora` in Ihrem Wallet abgelegt.<br>
-Für mehr Informationen, siehe [Oracle Documentation: Download Client Credentials (Wallets)](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connect-download-credentials.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1).
+Für mehr Informationen, siehe [Oracle Dokumentation: Download Client Credentials (Wallets)](https://docs.oracle.com/en-us/iaas/autonomous-database/doc/download-client-credentials.html).
 
 **Username** <br>
 Name des Datenbankbenutzers.
@@ -79,7 +79,7 @@ Klicken Sie auf die Schaltfläche, um die Verbindung zu testen.
 ![XU_oracle_connection_test_1](/img/content/XU_oracle_connection_test_3.png){:class="img-responsive"}
 
 **Connect Descriptor** <br>
-Geben Sie einen gültigen Connect Descriptor (connection string) ein, siehe [Oracle Documentation: View TNS Names and Connection Strings for an Autonomous Database Instance](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connection-strings-view.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).<br>
+Geben Sie einen gültigen Connect Descriptor (connection string) ein, siehe [Oracle Dokumentation: View TNS Names and Connection Strings for an Autonomous Database Instance](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/connect-download-wallet.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).
 Ein Connect Descriptor verwendet folgendes Format:<br>
 ```
 (DESCRIPTION =
