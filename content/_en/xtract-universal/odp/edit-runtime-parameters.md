@@ -14,3 +14,5 @@ progressstate: 5
 Use runtime parameters for dynamic [Selections and Filters](./odp-define#selections-and-filters).
 
 {% include _content/en/edit-runtime-parameters.md %}
+
+{% include _content/en/odp/odp-assign-parameters.md %}

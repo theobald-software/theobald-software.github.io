@@ -15,4 +15,6 @@ Use runtime parameters for dynamic [Selections and Filters](./odp-define#selecti
 
 {% include _content/en/edit-runtime-parameters.md %}
 
+{% include _content/en/odp/odp-assign-parameters.md %}
+
 {% include _content/en/alteryx-parameters.md %}

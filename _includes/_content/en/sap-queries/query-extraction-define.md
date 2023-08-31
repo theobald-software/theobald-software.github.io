@@ -14,7 +14,7 @@ The window “Query Lookup” opens.<br>
 
 The application now returns to the main window of the component.
 
-### Set Up a Query Extraction
+### Define a Query Extraction
 <!--- ### Eine Query Extraktion Einrichten -->
 
 [Look up a query](#look-up-a-query) and follow the steps below to set up a query extraction:

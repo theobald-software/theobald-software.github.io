@@ -13,3 +13,5 @@ lang: de_DE
 Verwenden Sie Laufzeitparameter, um [Selektionen](./report-variants-and-selections#selektionen-bearbeiten) dynamisch zur Laufzeit anzupassen.<br>
 
 {% include _content/de/edit-runtime-parameters.md %}
+
+{% include _content/de/abap_reports/report-assign-parameters.md %}

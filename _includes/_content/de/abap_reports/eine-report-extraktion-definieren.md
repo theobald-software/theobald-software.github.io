@@ -20,13 +20,13 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 4. Wählen Sie, ob die Selektion in der Extraktion inkludiert oder exkludiert werden soll (3).
 5. Wählen Sie einen Operator (*Equal*, *GreaterThan*, etc.) von der Dropdown-Liste *Option* (4).<br>
 **Tipp:** Verwenden Sie den *In* Operator, um ein Mapping von Listenparameter auf eine Auswahl durchzuführen. 
-6. Geben Sie die Selektion in den *Low* und *High* Feldern ein. Das *High* Feld ist nur aktiv, wenn *between* oder *not between* als Operator ausgewählt wurde.
+6. Geben Sie statische Werte in den *Low* und *High* Feldern ein oder weisen Sie den Feldern {% if page.product == "xtract-is" %}SSIS Variablen{% else %}[Laufzeitparameter](./report-edit-runtime-parameters){% endif %} zu. 
+Das Feld *High* ist nur aktiv, wenn *between* oder *not between* als Operator ausgewählt ist.
 7. Optional: Klicken Sie auf **[Add Selection]** (5), um weitere Bedingungen hinzuzufügen.
 8. Klicken Sie auf **[OK]** (6), um die Selektion zu bestätigen.
 
 {: .box-note }
-**Hinweis:** Für detaillierte Informationen zu Varianten und Selektionen, siehe [Varianten und Selektionen](./report-variants-and-selections).<br>
-Für detaillierte Informationen zur Verwendung von Selektionen mit Laufzeitparametern, siehe [Laufzeitparameter](./report-edit-runtime-parameters).
+**Hinweis:** Für detaillierte Informationen zu Varianten und Selektionen, siehe [Varianten und Selektionen](./report-variants-and-selections).
 
 ### Spalten definieren
 

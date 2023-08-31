@@ -15,5 +15,8 @@ Verwenden Sie Parameter für dynamische [Selektionen und Filter](./odp-define#se
 
 {% include _content/de/edit-runtime-parameters.md %}
 
-{: .box-note }
-**Hinweis:** Verwenden Sie die *Properties* der Komponente in Kombination mit *Expressions*, um die Parameter in SSIS zu übergeben, siehe [Parametriesierung mit Properties](./odp-parametrisierung). 
+{% include _content/de/odp/odp-assign-parameters.md %}
+
+
+Die Laufzeitparameter sind als Eigenschaften (*Properties*) der Xtract ODP Komponente verfügbar. 
+Verwenden Sie *Expressions*, um Werte an die Laufzeitparameter zu übergeben, siehe [Parametriesierung mit Properties](./odp-parametrisierung). 

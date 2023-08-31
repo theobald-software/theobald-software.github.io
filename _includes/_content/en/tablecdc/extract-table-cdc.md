@@ -15,7 +15,7 @@ The application now returns to the main window of the component.
 All relevant metadata information of the table is retrieved from SAP.
 
 
-### Set Up a Table CDC Extraction
+### Define a Table CDC Extraction
 
 Set up the Table CDC component to extract data:
 

@@ -20,13 +20,13 @@ The application now returns to the main window of the component.
 4. Choose if the selection is to be included or excluded (3) from the extracted data.
 5. Select an operator (*Equal*, *GreaterThan*, etc.) from the *Option* drop-down list (4). <br>
 **Tip:** Use the *In* operator when mapping list parameters to selections.
-6. Enter the selection in the respective *Low* and *High* fields. The *High* field is active for input when the *between* or *not between* operator was selected.
+6. Enter static values in the respective *Low* and *High* fields or assign {% if page.product == "xtract-is" %}SSIS variables{% else %}[runtime parameters](./report-edit-runtime-parameters){% endif %}. 
+The *High* field is active for input when the *between* or *not between* operator is selected.
 7. Optional: click **[Add Selection]** (5) to add conditions.
 8. Click **[OK]** (6) to confirm the selections.
 
 {: .box-note }
-**Note:** For more information on variants and selections, see [Variants and Selections](./variants-and-selections).<br>
-For more information on how to use selections with parameters, see [Runtime Parameters](./report-edit-runtime-parameters).
+**Note:** For more information on variants and selections, see [Variants and Selections](./variants-and-selections).
 
 ### Define Report Columns
 

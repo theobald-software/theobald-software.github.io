@@ -15,6 +15,6 @@ Use runtime parameters for dynamic [Selections and Filters](./odp-define#selecti
 
 {% include _content/en/edit-runtime-parameters.md %}
 
-{: .box-note }
-**Note:** Use the component's *Properties* in combination with *Expressions* to set parameters in SSIS, see [Parameterization using Properties](./odp-parametrization). 
+{% include _content/en/odp/odp-assign-parameters.md %}
 
+The runtime parameters are available as *Properties* of the Xtract ODP component. Use *Expressions* to pass values to the runtime parameters, see [Parameterizing](./odp-parametrization#parameterizing-using-expression-properties).

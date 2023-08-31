@@ -13,3 +13,5 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=report-extraktionseinstellunge
 
 
 {% include _content/de/edit-runtime-parameters.md %}
+
+{% include _content/de/sap-queries/assign-parameters.md %}

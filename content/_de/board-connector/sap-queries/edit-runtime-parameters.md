@@ -12,3 +12,5 @@ lang: de_DE
 
 
 {% include _content/de/edit-runtime-parameters.md %}
+
+{% include _content/de/sap-queries/assign-parameters.md %}
