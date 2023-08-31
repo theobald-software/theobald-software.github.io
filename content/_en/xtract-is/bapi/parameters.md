@@ -113,7 +113,7 @@ When connecting tables to the Xtract BAPI component, a data mapping is executed 
 
 ![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
 
-To correctly map the data, the following requirements must be met:
+To correctly map the data, the following requirements apply:
 
 - The column names of the input table must be the same as in the Xtract BAPI component.
 - The data types in the input table must be the same as in the Xtract BAPI component.

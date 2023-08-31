@@ -83,15 +83,12 @@ Mark the checkbox in the output column to add a table to the output.<br>
 
 ### Edit Tables (3)
 
-When using a structure, a value for each scalar field can be set similarly to a scalar field. 
-Setting a single value or a parameter for the whole structure is not possible.
+When using structures, a value for each scalar field can be set similarly to a scalar field. 
+Setting a single value or {% if page.product == "xtract-is" %}an SSIS variable{% else %}a runtime parameter{% endif %} for the whole structure is not possible.
 
-When a structure is available, you can assign structure elements (i.e. fields).<br>
-
- 1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Table Contents" opens.
- 2. Click **[Add]** to add new set of parameters.<br>
- 3. Enter values or parameters.<br>
+1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Table Contents" opens.
+2. Click **[Add]** to add new set of parameters.<br>
+3. Enter values or parameters.<br>
 When using runtime parameters, make sure the input matches the data type.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Click **[Remove]** to delete a row.
-

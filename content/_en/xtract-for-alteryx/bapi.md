@@ -24,8 +24,19 @@ For more information, refer to the knowledge base article [SAP User Rights: BAPI
 ### How to use the Xtract BAPI component
 {% include _content/en/alteryx-component-intro.md %}
 
-More information on working with the Xtract BAPI component is provided in the following sections.
+### Input and Output Anchors of Xtract BAPI
+
+The Xtract BAPI has the following input and output options:
+- Input anchor "I" - input for runtime parameters (1).
+- Input anchor "P" - input for tables (2).
+- Output anchor "1" to "5" - custom output (3).
+- Output anchor "E" - output for status and error messages (4).
+
+![bapi-input](/img/content/xfa/bapi-input.png){:class="img-responsive" }
+
 
 ****
+
+More information on working with the Xtract BAPI component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}
