@@ -68,9 +68,9 @@ Definition in `index.css`:
 The following rules apply to descriptions:
 - descriptions are displayed on the left side of a container (1).<br>
 Do not add buttons or other input options underneath the descriptions.
-![Descriptions](/img/content/help_concept/yunIO/descriptions1.png){:class="img-responsive"}
+![Descriptions](/img/content/help_concept/yunIO/descriptions01.png){:class="img-responsive"}
 - when a container is too small to divide descriptions and input to the left and right side, the descriptions are added at the top of the container (2).<br>
-![Descriptions](/img/content/help_concept/yunIO/descriptions2.png){:class="img-responsive"}
+![Descriptions](/img/content/help_concept/yunIO/descriptions02.png){:class="img-responsive"}
 
 Color: `--text_help_gray`<br>
 Text size: `13px`
