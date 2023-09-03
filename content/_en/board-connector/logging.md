@@ -27,6 +27,12 @@ Different types of log files are created.
 
 For more information on the server processes, see [Server](./server).
 
+{: .box-tip }
+**Tip:** To redirect logs to another location, symlink the logs folder of the installation directory to a custom directory.
+Example for PowerShell:<br>
+`New-Item -ItemType SymbolicLink -Target "E:\yuniolog" -Path "C:\Program Files\XtractProduct\logs"`
+
+
 ### Log Levels
 Each log entry is assigned to a so-called log level. There are the following log levels:
 

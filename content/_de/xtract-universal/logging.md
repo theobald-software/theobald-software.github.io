@@ -28,6 +28,12 @@ Folgende Log-Dateien werden erstellt:
 
 Für mehr Informationen zu den Server-Prozessen, siehe [Server](./server).
 
+{: .box-tip }
+**Tipp:** Um Logs in einem anderen Verzeichnis zu speichern, verwenden Sie eine symbolische Verknüpfung (Symlink) zum logs-Ordner des Installationsverzeichnisses.
+Beispiel für PowerShell:<br>
+`New-Item -ItemType SymbolicLink -Target "E:\yuniolog" -Path "C:\Program Files\XtractProduct\logs"`
+
+
 ### Log Levels
 Jeder Log-Eintrag ist einem der folgenden Log-Levels zugewiesen:
 
