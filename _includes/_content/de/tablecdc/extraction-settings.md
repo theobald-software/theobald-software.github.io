@@ -3,6 +3,15 @@
 
 ### Initial Load
 
+#### Package size 
+Die extrahierten Daten werden in Pakete mit der angegebenen Größe aufgeteilt. Der Standardwert ist 50000 Zeilen.
+Eine Paketgröße (Package Size) zwischen 20000 und 50000 ist sinnvoll für große Datenmengen.
+0 bedeutet, es findet keine Parkettierung statt. Keine Parkettierung kann bei Extraktionen großer Datenmengen zu einem RFC-Timeout führen.
+
+{: .box-warning }
+**Warnung! RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table:** <br>  
+Um einen Speicherüberlauf auf dem SAP-Quellsystem und einen großen Overhead zu vermeiden, wählen Sie eine für Ihre Speichergröße angemessene Paketgröße.
+
 #### Extract data in background job
 Wenn diese Option aktiv ist, wird der erste Ladeprozess als Hintergrund-Job in SAP ausgeführt. 
 Aktivieren Sie diese Einstellung für langlaufende Extraktionen mit großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen. <br>

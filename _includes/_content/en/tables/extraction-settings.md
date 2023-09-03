@@ -11,7 +11,7 @@ After confirming the warning, the user can **still** adjust the extraction setti
 
 #### Package Size
 
-The extracted data will be split into packages of the defined size. The default value is 50000 lines. <br>
+The extracted data is split into packages of the defined size. The default value is 50000 lines. <br>
 A package size between 20000 and 50000 is advisable for large amounts of data. 
 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extracts.
 
