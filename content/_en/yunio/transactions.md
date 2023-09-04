@@ -63,7 +63,7 @@ The input parameter `SkipPopups` defines how to handle unexpected popup messages
 
 When `SkipPopups` is set to *true*, the following actions apply:
 
-| Popup in Recording | Popup during service run | Action |
+| Popup in Recording | Popup during a service run | Action |
 | :------: |:---: | :--- |
 | x | x | The popup is handled like a regular screen. |
 | x |  | The service ignores the recorded screen and continues to the next screen. |
