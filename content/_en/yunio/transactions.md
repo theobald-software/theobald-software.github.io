@@ -54,10 +54,20 @@ All fields that can be parameterized are highlighted in green when hovering over
 
 Input parameters are now accessible in the request body of the service.<br>
 Ouput parameters are now accessible in the response body of the service.<br>
-
-Example: <br>
-The following screenshot shows where to edit the input parameter *Input_Order* and where to access the output parameter *Output_Weight* in Swagger Inspector.<br>
 ![transaction-copy-download](/img/content/yunio/transaction-swagger-inspector.png){:class="img-responsive"}
+
+#### Skip Popups
+When recording a transaction workflow, dynamic popup screens can be displayed by SAP. The popup screens can vary depending on input values.<br>
+The input parameter `SkipPopups` defines how to handle unexpected popup messages that show up at runtime.<br>
+
+
+When `SkipPopups` is set to *true*, the following actions apply:
+
+| Popup in Recording | Popup during service run | Action |
+| :------: |:---: | :--- |
+| x | x | The popup is handled like a regular screen. |
+| x |  | The service ignores the recorded screen and continues to the next screen. |
+|  | x | The popup is skipped/confirmed. |
 
 
 ****

@@ -56,10 +56,7 @@ Alle Felder, die parametrisiert werden können, werden grün markiert, wenn Sie 
 8. Klicken Sie auf **[Save]**, um Ihre Änderungen zu speichern.
 
 Die Eingabeparameter sind im Request Body des Services verfügbar.<br>
-Die Ausgabeparameter sind im Response Body des Services verfügbar.
-
-Beispiel<br>
-Der folgende Screenshot vom Swagger Inspector zeigt, wo Sie den Eingabeparameter *Input_Order* bearbeiten können und wo der Ausgabeparameter *Output_Weight* verfügbar ist.<br>
+Die Ausgabeparameter sind im Response Body des Services verfügbar.<br>
 ![transaction-copy-download](/img/content/yunio/transaction-swagger-inspector.png){:class="img-responsive"}
 
 
