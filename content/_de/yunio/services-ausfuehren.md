@@ -16,8 +16,10 @@ Der folgende Abschnitt zeigt, wie Sie in yunIO erstellte Services testen, integr
 ### Service Testen
 
 Vor der Integration eines yunIO-Services empfiehlt es sich, den Service direkt in yunIO oder in einem REST-Client, z. B. Swagger Inspector oder Postman, zu testen.
-- Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png) um die URL des Service-Eendpunkts in Ihre Zwischenablage zu kopieren. Die URL kann zum Triggern eines Service-Laufs verwendet werden.
-- Klicken Sie auf ![copy](/img/content/yunio/icons/run.png), um *Run Service* Menu zu öffnen. Hier können Sie Parameter definieren und den Service direkt in yunIO ausführen.<br>
+- Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png) um die URL des Service-Eendpunkts in Ihre Zwischenablage zu kopieren. <br>
+Die URL kann zum Triggern eines Service-Laufs verwendet werden.
+- Klicken Sie auf ![copy](/img/content/yunio/icons/run.png), um *Run Service* Menu zu öffnen. <br>
+Hier können Sie Parameter definieren und den Service direkt in yunIO ausführen.<br>
 ![yunIO-Services](/img/content/yunio/yunio-run-services1.png){:class="img-responsive" }
 
 #### Service Menü Ausführen
@@ -38,11 +40,11 @@ Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*.<br>
 
 Mit yunIO erstellte Webservices können in alle Cloud-Anwendungen integriert werden, die REST API/Swagger (OpenAPI) unterstützen, z.B. Power Automate, Nintex usw.
 
-- Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png), um die URL der Service-Definition in Ihre Zwischenablage zu kopieren.
+- Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png), um die URL der Service-Definition in Ihre Zwischenablage zu kopieren.<br>
 Die Servicedefinitions-URL kann von Drittanbieter-Tools verwendet werden, um die Metadaten des Service zu laden.
-- Klicken Sie auf ![download](/img/content/yunio/icons/download.png) um die Service-Definition herunterzuladen.
-The service definition is saved as a JSON file that defines how to run the service. 
-The JSON file can be imported into third-party tools.<br>
+- Klicken Sie auf ![download](/img/content/yunio/icons/download.png) um die Service-Definition herunterzuladen.<br>
+Die Service-Definition wird als JSON-Datei gespeichert, die definiert wie der Service ausgeführt wird. 
+Die JSON-Datei kann in Drittanbieter-Tools impotiert werden.<br>
 ![yunIO-Services](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }
 
 Beispiele für die Integration von yunIO-Services in Drittanbieter-Tools:

@@ -38,9 +38,9 @@ The depicted example uses an input parameter *NAME1*.<br>
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
-- Click ![copy](/img/content/yunio/icons/copyURL.png) to copy the URL of the service definition to your clipboard.
+- Click ![copy](/img/content/yunio/icons/copyURL.png) to copy the URL of the service definition to your clipboard.<br>
 The service definition URL can be used by third-party-tools to load the meta data of the service.
-- Click ![download](/img/content/yunio/icons/download.png) to download the service definition.
+- Click ![download](/img/content/yunio/icons/download.png) to download the service definition.<br>
 The service definition is saved as a JSON file that defines how to run the service. 
 The JSON file can be imported into third-party tools.<br>
 ![yunIO-Services](/img/content/yunio/yunio-run-services-https.png){:class="img-responsive" }

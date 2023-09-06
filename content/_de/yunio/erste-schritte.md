@@ -61,9 +61,8 @@ Um die Extraktionseinstellungen eines Service zu bearbeiten, klicken Sie auf das
 
 Mit yunIO erstellte Webservices sind in alle Cloud-Anwendungen integrierbar, die REST und Swagger/OpenAPI unterstützen, z.B. Power Automate, Nintex, uvm.
 
-- Um einen Service zu testen, können Sie den Service unter **Service** (1) triggern.
-Der Service wird dann direkt im Browser ausgeführt, siehe [Einen Service im Browser Testen](./services-ausfuehren#einen-service-im-browser-testen).<br>
-- Um einen yunIO Webservice in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren oder laden Sie die Definition des Services herunter (2), siehe [Services Integrieren](./services-ausfuehren#services-integrieren).
+- Um einen yunIO Webservice zu testen, triggern Sie die URL des Services oder führen Sie den Service direkt in yunIO aus (1), siehe [Service Testen](./services-ausfuehren#service-testen).<br>
+- Um einen yunIO Webservice in ein Prozessautomatisierungstool zu integrieren, das Swagger/OpenAPI unterstützt, kopieren oder laden Sie die Definition des Services herunter (2), siehe [Service Integrieren](./services-ausfuehren#integration-eines-services).
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
 
 Für mehr Informationen zum Testen und Ausführen von Services, siehe [Services Ausführen](./services-ausfuehren).

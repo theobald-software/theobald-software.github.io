@@ -62,7 +62,7 @@ To edit the extraction type settings of the service, click the ![Edit](/img/cont
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
-- To test a service after creation, trigger the URL of the service endpoint under **Service** (1). The service is then executed in your web browser, see [Testing a Service](./run-services#testing-a-service). <br>
+- To test a service, trigger the URL of the service endpoint or run the service directly in yunIO (1), see [Testing a Service](./run-services#testing-a-service). 
 - To integrate a yunIO web service into a tool that supports Swagger/OpenAPI, copy or download the service definition (2), see [Integrating a Service](./run-services#integrating-a-service).
 
 ![yunIO-Services](/img/content/yunio/yunio-run-services.png){:class="img-responsive" }
