@@ -9,6 +9,7 @@
 {% elsif page.childidentifier == "query" %}![Toolbox](/img/content/xis/query-toolbox.png){:class="img-responsive"}
 {% elsif page.childidentifier == "report" %}![Toolbox](/img/content/xis/query-toolbox.png){:class="img-responsive"}
 {% elsif page.childidentifier == "xtract-is-deltaq" %}![Toolbox](/img/content/xis/deltaq-toolbox.png){:class="img-responsive"}
-{% elsif page.childidentifier == "xtract-is-table" %}![Toolbox](/img/content/xis/table-toolbox.png){:class="img-responsive"} {% endif %}
+{% elsif page.childidentifier == "xtract-is-table" %}![Toolbox](/img/content/xis/table-toolbox.png){:class="img-responsive"} 
+{% elsif page.childidentifier == "table-cdc" %}![Toolbox](/img/content/xis/tablecdc-toolbox.png){:class="img-responsive"}{% endif %}
 3. Doppelklicken Sie auf die Komponente. Das Hauptfenster der Komponente öffnet sich.
 Die meisten Funktionen der Komponente sind über das Hauptfenster verfügbar.<br>

@@ -16,8 +16,10 @@ A WHERE clause can be used to filter table records, see [SAP ABAP Documentation:
 
 {% if page.product == "xtract-for-alteryx" %}
 ![Extraction-Settings-01](/img/content/xfa/Table-Extraction-Where-Clause.png){:class="img-responsive"}
-{% elsif page.product == "xtract-is" %}
+{% elsif page.product == "xtract-is" and page.parent == "table" %}
 ![Extraction-Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% elsif page.product == "xtract-is" and page.parent == "table-cdc" %}
+![Extraction-Settings-01](/img/content/tablecdc/xis-Table-Extraction-Where-Clause.png){:class="img-responsive"}
 {% else %}
 {% if page.parent == "table-cdc" %}
 ![Extraction-Settings-01](/img/content/tablecdc/Table-Extraction-Where-Clause.png){:class="img-responsive"}
