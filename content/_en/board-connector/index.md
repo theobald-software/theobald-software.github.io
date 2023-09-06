@@ -18,7 +18,7 @@ The Board Connector is a SAP Connector that makes various SAP objects available 
 ### Available Components
 
 The following overview shows, which components are available to extract data from SAP systems. 
-![Board Connector-architecture](/img/content/board/Board.png)
+![Board Connector-architecture](/img/content/board/Board.png){:class="img-responsive" width="700px"}
 
 ### Extraction Types
 
