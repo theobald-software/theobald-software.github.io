@@ -19,7 +19,7 @@ Der Board Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfa
 
 
 In der folgenen Übersicht finden Sie, welche Komponente für die Datenextraktion aus einem SAP-System verwendet werden können. 
-![Board Connector-architecture](/img/content/board/Board.png)
+![Board Connector-architecture](/img/content/board/Board.png){:class="img-responsive" width="700px"}
 
 ### Extraktionstypen
 Board Connector bietet einen Satz von neun Extraktionstypen, um eine Reihe von Anforderungen der SAP-Datenextraktion abzudecken.
