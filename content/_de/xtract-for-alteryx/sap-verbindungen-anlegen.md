@@ -14,7 +14,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](https://help.alteryx.de/20231/designer/dcm-designer) (DCM) von Alteryx eine SAP-Verbindung erstellen.<br>
+Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](https://help.alteryx.com/de/20231/designer/dcm-designer) (DCM) von Alteryx eine SAP-Verbindung erstellen.<br>
 Für die Nutzung einer beliebigen Xtract for Alteryx-Komponente ist eine SAP-Verbindung erforderlich.
 
 {: .box-note }
