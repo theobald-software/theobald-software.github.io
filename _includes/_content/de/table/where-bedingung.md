@@ -15,8 +15,10 @@ Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP
 
 {% if page.product == "xtract-for-alteryx" %}
 ![Extraction-Settings-01](/img/content/xfa/Table-Extraction-Where-Clause.png){:class="img-responsive"}
-{% elsif page.product == "xtract-is" %}
+{% elsif page.product == "xtract-is" and page.parent == "xtract-is-table"%}
 ![Extraction-Settings-01](/img/content/xis/Table-Extraction-Where-Clause.png){:class="img-responsive"}
+{% elsif page.product == "xtract-is" and page.parent == "table-cdc" %}
+![Extraction-Settings-01](/img/content/tablecdc/xis-Table-Extraction-Where-Clause.png){:class="img-responsive"}
 {% else %}
 {% if page.parent == "table-cdc" %}
 ![Extraction-Settings-01](/img/content/tablecdc/Table-Extraction-Where-Clause.png){:class="img-responsive"}

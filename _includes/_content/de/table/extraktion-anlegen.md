@@ -6,8 +6,8 @@ Das Fenster "Table Lookup" öffnet sich.<br>
 ![Table-Lookup](/img/content/table/table_main-window_add.png){:class="img-responsive" }
 2. Im Fenster "Table lookup" geben Sie den Namen der zu extrahierenden Tabelle ein (1). Die Verwendung von Wildcards (*) wird unterstützt.<br>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"} 
-3. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (2).
-Die Suchergebnisse werden im Vorschaufenster angezeigt.<br>
+3. Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2).
+Die Suchergebnisse werden angezeigt.<br>
 4. Wählen Sie eine Tabelle (3) aus und klicken Sie auf **[OK]** (4). <br>
 
 Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.

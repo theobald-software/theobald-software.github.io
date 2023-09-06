@@ -5,8 +5,7 @@
 ![table_main-window_add](/img/content/table/table_main-window_add.png){:class="img-responsive"}
 2. In the window "Table Lookup" enter the name of the table to extract (1). Use wildcards (*) if needed.<br>
 ![Look-Up-Table](/img/content/table/table_look-up.png){:class="img-responsive"}
-3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2).
-Search results appear in the preview window.
+3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2). Search results are displayed.
 4. Select a table (3) and click **[OK]** (4). <br>
 
 All relevant metadata information of the table is retrieved from SAP.
