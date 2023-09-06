@@ -21,8 +21,8 @@ Run the extraction for the first time to create a log table in SAP that records 
 - If the option **[Extract table on first run]** in the Xtract Table CDC component is not active, the extracted table is empty.
 
 {: .box-note }
-**Note:** When running the extraction regularly the content of the log table in SAP is extracted and written to the destination.
-The content of the log table in SAP is cleared after every successful run of the extraction. Data that was not extracted is not cleared.
+**Note:** When running the extraction regularly the content of the SAP log table is extracted.
+The content of the SAP log table is cleared after every successful run of the extraction. Data that was not extracted is not cleared.
 
 
 <!---
