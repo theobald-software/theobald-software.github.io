@@ -20,4 +20,4 @@ Enter the data of your gateway host. It is often the same host as the SAP applic
 Enter the data of your gateway service (*sapgwXX*, where XX is the system number).
 
 #### Program ID 
-Enter the program ID from the [RFC destination](https://kb.theobald-software.com/general/maintaining-rfc-destinations).
+Enter the program ID of the SAP RFC destination.

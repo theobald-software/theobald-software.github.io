@@ -15,4 +15,4 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
 
 #### Related Links
 
-- [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Knowledge Base Article: Delta Table Extraction](https://kb.theobald-software.com/tables/delta-table-extraction)

@@ -48,7 +48,7 @@ This library is used to open the SAP connection.
 - The BC service must run under a Windows AD Service account, see [Run an Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account) for reference.
 - Set up access restrictions for the Board Connector Designer and the BC server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 
-For more information on how to set up SSO and SNC with client certificates, see [Knowledge Base Article: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
+For more information on how to set up SSO and SNC with client certificates, see [Knowledge Base Article: SSO with Client Certificates](https://kb.theobald-software.com/sap-connection/sso-with-client-certificates).
 
 
 ### SSO and SNC with Kerberos Wrapper Library
@@ -69,7 +69,7 @@ The ABAP application server has to run on a Windows OS and SNC with Kerberos enc
 **Note:** Only one SNC solution can be set up on an SAP system at a time - for example, SAP's Common Crypto Library **or** gsskrb5, but not both at the same time.
 The described procedure only works with the gsskrb5. 
 
-For more information on how to set up SSO and SNC with Kerberos Wrapper Library, see [Knowledge Base Artile: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
+For more information on how to set up SSO and SNC with Kerberos Wrapper Library, see [Knowledge Base Artile: SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
 
 ### SSO via SAP Logon Ticket
 
@@ -85,4 +85,4 @@ The following scenario enables an SAP connection via Single-Sign-On:
 - Your AS ABAP instance (the SAP the system Xtract products extract data from) trusts the SAP logon tickets issued by the AS Java instance.
 
 {: .box-note }
-**Note:** For more detailed information on the process of calling extraction using SSO with SAP Logon Tickets, refer to the knowledge base article [SSO with Logon-Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+**Note:** For more detailed information on the process of calling extraction using SSO with SAP Logon Tickets, refer to the knowledge base article [SSO with Logon-Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).

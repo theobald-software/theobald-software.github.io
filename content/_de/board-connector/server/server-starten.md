@@ -53,5 +53,5 @@ Demzufolge ist der Zugriff auf ein gemeinsames Board Connector Repository `C:\Pr
 *****
 #### Weiterführende Links
 - [Installation](../einfuehrung/installation-und-update)
-- [Board Connector Server Troubleshooting](https://kb.theobald-software.com/board-connector/bc_windows_service_not_running)
+- [Board Connector Server Troubleshooting](https://support.theobald-software.com/helpdesk/KB/View/20074-board-connector-server-troubleshooting)
 

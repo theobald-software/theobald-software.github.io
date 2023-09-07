@@ -93,7 +93,7 @@ The property **UseLegacyDateConversion** is used for migration of table extracti
 * SAP dates that contain the year '0000' are replaced with *NULL*. The value entered in the **MinDateReplacement** property is *not* considered.
 
 **WhereClause**<br>
-Corresponds to the tab *WHERE clause* in the Table component. This property allows parameterization of the complete WHERE clause, see [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+Corresponds to the tab *WHERE clause* in the Table component. This property allows parameterization of the complete WHERE clause, see [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
 
 ****
 #### Related Links

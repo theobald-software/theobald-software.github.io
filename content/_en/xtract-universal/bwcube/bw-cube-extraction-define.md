@@ -20,5 +20,5 @@ The following section shows how to use the BW Cube component. <br>
  
 *****
 #### Related Links
-- [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
+- [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries).
 - [Query Variables](./variables)

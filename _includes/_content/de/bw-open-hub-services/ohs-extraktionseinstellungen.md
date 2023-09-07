@@ -20,4 +20,4 @@ Geben Sie die Daten Ihres Gateway Hosts eins. Oft handelt es sich um denselben H
 Geben Sie die Daten Ihres Gateway Dienstes ein (*sapgwXX*, wobei XX die Systemnummer ist).
 
 #### Program ID 
-Geben Sie die Program ID der [RFC-Destination](https://kb.theobald-software.com/general/maintaining-rfc-destinations) ein.
+Geben Sie die Program ID der SAP RFC-Destination ein.

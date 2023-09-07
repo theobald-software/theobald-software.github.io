@@ -21,8 +21,8 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/de-de/power-bi/connect-data/refresh-scheduled-refresh)
 
 ### Integration mittels Webservice
-- [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http)
-- [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
+- [Talend Integration via HTTP](https://kb.theobald-software.com/archive/xtractuniversal-talend-integration-http)
+- [Pentaho Integration via HTTP](https://kb.theobald-software.com/archive/xtractuniversal-pentaho-di-http)
 - [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
 - [Qlik Datenladeskript generieren](../destinationen/qlik#datenladeskript-generieren)
@@ -30,7 +30,7 @@ Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extr
 - [SAP Integration with Matillion Data Loader and Xtract Universal](https://kb.theobald-software.com/xtract-universal/creating-a-custom-cennector-in-matillion-data-loader)
 
 ### Integration mittels Kommandozeile
-- [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
+- [Pentaho Integration](https://kb.theobald-software.com/archive/xtractuniversal-pentaho-di-cmd).
 - [Azure Data Factory (ADF) Integration using Command Line](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
 
 ### Integration mittels Azure Data Factory

@@ -15,5 +15,5 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=report-extraction-settings
 
 #### Related Links
 - [Regular Expressions in the Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx)
-- [Knowledge Base Article: Skipping Sum Rows in Reports](https://kb.theobald-software.com/xtract-universal/skip-rows-in-reports)Skipping 
+- [Knowledge Base Article: Skipping Sum Rows in Reports](https://kb.theobald-software.com/reports/skip-rows-in-reports)Skipping 
 - [Install Report Custom Fuction Module](../sap-customizing/install-report-custom-function-module)

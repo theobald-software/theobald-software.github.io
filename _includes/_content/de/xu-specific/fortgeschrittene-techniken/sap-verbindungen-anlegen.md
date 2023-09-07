@@ -46,7 +46,7 @@ Für mehr Informationen, siehe [SAP Dokumentation: SAP-Router](https://help.sap.
 Die folgenden Authentifizierungsmethoden werden unterstützt:
 - *Plain*: SAP-Benutzername und Passwort (System- oder Dialogbenutzer).
 - *Secure Network Communication (SNC)*: Benutzername und Passwort, Basic Authentifizierung, SSO mit Kerberos, SSO mit Zertifikaten.
-- *SAP Log On Ticket*: siehe [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+- *SAP Log On Ticket*: siehe [SAP Log On Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
@@ -90,25 +90,25 @@ Stattdessen müssen die SAP-Anmeldeinformationen über die Basisauthentifizierun
 Diese Einstellung aktiviert SSO via External ID.
 SSO via External ID verwendet Personal Security Environment (PSE), um ein Vertrauensverhältnis zwischen dem SAP Server und dem Service-Account herzustellen, unter dem {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector {% endif %} ausgeführt wird.
 Das erlaubt {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector{% endif %} jeden SAP Benutzer zu imitieren.<br>
-Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id).
+Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with External ID](https://kb.theobald-software.com/sap-connection/sso-with-external-id).
 
 **SSO - Impersonate caller via Kerberos** <br>
 Diese Einstellung aktiviert Kerberos SSO.  
 Die Authentifizierung erfolgt über den Windows Active Directory Benutzer des Aufrufers. 
 Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.<br>
-Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
+Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
 
 **SSO - Enroll certificate on behalf of caller** <br>
 Diese Einstellung aktiviert Certifcate SSO. 
 Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services für den Windows AD Benutzer des Aufrufers.
 Dafür muss "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server_einstellungen#web-server) eingestellt sein.<br>
-Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
+Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/sap-connection/sso-with-client-certificates).
 
 ### SAP Logon Ticket
 
 Sie können für die Authentifizierung Single-Sign-On (SSO) mit SAP Logon-Tickets verwenden.
 Diese Verbindung ist nicht verschlüsselt.<br>
-Für mehr Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+Für mehr Informationen zur Authentifizierung mit SAP Logon Tickets, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 ![SAP-Logon-Ticket](/img/content/sap-logon-ticket.png){:class="img-responsive"}
 
@@ -120,7 +120,7 @@ Für mehr Informationen, siehe [SAP Dokumentation: AS Java für das Ausstellen v
 **Impersonate caller when running extractions**<br>
 Wenn diese Option aktiv ist, wird die Verbindung in einem Windows Active Directory Benutzerkontext des Aufrufer geöffnet.
 Wenn diese Option inaktiv ist, wird die Verbindung im Kontext des Dienstkontos geöffnet, unter dem der Windows Service läuft.
-Für mehr Informationen, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+Für mehr Informationen, siehe [Knowledge Base Artikel: SAP Log On Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 {: .box-tip }
 **Tipp:** Deaktivieren Sie die Option **Impersonate caller when running extractions**, um die Kerberos Authentifizierung gegen den AS Java direkt zu testen.

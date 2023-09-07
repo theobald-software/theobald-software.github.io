@@ -23,7 +23,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 |Property|Beschreibung|
 |:----|:----|
-| *[Xtract Table].[WhereClause]*| Entspricht dem Tab *WHERE clause* in der Table Komponente. Erlaubt die PArametrisierung der kompletten WHERE-Bedingung, siehe [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
+| *[Xtract Table].[WhereClause]*| Entspricht dem Tab *WHERE clause* in der Table Komponente. Erlaubt die PArametrisierung der kompletten WHERE-Bedingung, siehe [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components).|
 | *[Xtract Table].[ConvertsDates]*|Aktiviert oder deaktiviert die Umwandlung von SAP Daten, siehe [Benutzerdefinierte Eigenschaften](./eigenschaften-properties). |
 | *[Xtract Table].[CustomFunctionName]*| Entspricht dem Drop-down-Menü *Function Module* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
 | *[Xtract Table].[MaxRows]*| Entspricht dem Feld *Row Limit* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
@@ -43,4 +43,4 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 ****
 #### Weiterführende Links
 - [Extractionseinstellungen](./extraktionseinstellungen) <br>
-- [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+- [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

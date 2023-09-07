@@ -25,10 +25,10 @@ On the way to SAP or on the SAP side, the Windows user and its SAP credentials a
 
 Single Sign-On (SSO) with an Xtract product can be realized via different procedures:
 
-- [Secure Network Communication (SNC) with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates)
-- [Secure Network Communication (SNC) with PSE and External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id)
-- [Secure Network Communication (SNC) with SAP's Kerberos Wrapper Library](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) (deprecated)
-- [SAP Logon Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket)
+- [Secure Network Communication (SNC) with Client Certificates](https://kb.theobald-software.com/sap-connection/sso-with-client-certificates)
+- [Secure Network Communication (SNC) with PSE and External ID](https://kb.theobald-software.com/sap-connection/sso-with-external-id)
+- [Secure Network Communication (SNC) with SAP's Kerberos Wrapper Library](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc) (deprecated)
+- [SAP Logon Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket)
 
 The authentication method can be selected in the SAP connection settings, see [SAP Connection - Authentication](../getting-started/sap-connection#authentication).
 

@@ -71,7 +71,7 @@ Im Tab *Source* können Sie die Werte überschreiben, die in den [SAP-Source-Ein
 Parametername | Beschreibung |
 ------------ | ------------- | 
 lang | ändert dynamisch die SAP-Anmeldesprache des SAP-Quellsystems  
-logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket) für mehr Details.
+logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket) für mehr Details.
 
 {: .box-note }
 **Hinweis:** Der Parameter **logonTicket** kann nur gesetzt werden, wenn "SAP logon ticket"

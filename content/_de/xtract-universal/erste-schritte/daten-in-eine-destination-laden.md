@@ -128,4 +128,3 @@ Wenn die [Extraktion ausgeführt](./eine-extraktion-ausfuehren) wird, werden die
 
 #### Weiterführende Links
 - [Destinationen verwalten](../destinationen/ziele-verwalten)
-- [Knowledge Base Artikel: Write extracted Data into a Microsoft SQL Server Database](https://kb.theobald-software.com/xtract-universal/load-an-extraction-into_database)

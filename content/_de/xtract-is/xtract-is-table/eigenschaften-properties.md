@@ -98,7 +98,7 @@ Die Eigenschaft **UseLegacyDateConversion** wird für die Migration von Tabellen
 * SAP-Datumswerte, die das Jahr '0000' enthalten, werden durch *NULL* ersetzt.  Der in der Eigenschaft **MinDateReplacement** eingegebene Wert wird *nicht* berücksichtigt. 
 
 **WhereClause**<br>
-Entspricht dem Tab *WHERE clause* in der Table Komponente. Erlaubt die PArametrisierung der kompletten WHERE-Bedingung, siehe [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
+Entspricht dem Tab *WHERE clause* in der Table Komponente. Erlaubt die PArametrisierung der kompletten WHERE-Bedingung, siehe [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
 
 ****
 #### Weiterführende Links

@@ -18,7 +18,7 @@ The window "Operational Data Provider Lookup" opens.
 The application now returns to the main window of the component.
 
 {: .box-note }
-**Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+**Note:** To find DataSources, they have to be activated in SAP, see [SAP Documentation: Activating DataSources in the SAP OLTP System](https://help.sap.com/docs/SLH_advanced_compliance_reporting_service/7a60944343e543a1ab99e9b2904dab09/e5d447257a95416190d29638a64a5dfa.html).
 
 
 ### Set Up an ODP Extraction

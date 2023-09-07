@@ -16,5 +16,5 @@ Der folgende Abschnitt beschreibt die Anwendung der Xtract BAPI Komponente.
 
 ****
 #### Weiterführende Links
-- [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/xtract-is/how-to-post-data-in-sap)
-- [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/xtract-is/uploading-cats-data-by-using-xtract-is-bapi)
+- [How to Post Data in SAP with Xtract BAPI](https://kb.theobald-software.com/bapis/xtract-is-how-to-post-data-in-sap)
+- [Uploading CATS data by using Xtract IS BAPI](https://kb.theobald-software.com/bapis/xtract-is-uploading-cats-data)

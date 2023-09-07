@@ -4,8 +4,8 @@ In den folgenden Szenarien muss der Service stattdessen unter einem Windows Serv
 
 - [Kerberos Authentifizierung](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung) für den {% if page.product == "xtract-universal" %}Xtract Universal{% else %}Board Connector{% endif %} Webserver verwenden.
 - Windows Authentizizierung für eine {% if page.product == "xtract-universal" %}Xtract Universal{% else %}Board Connector{% endif %} Destination verwenden, die Windows-Anmeldedaten erlauben (z.B. SQL Server Destination, PostgreSQL Destination).
-- [SSO mit Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) verwenden.
-- [SSO mit SAP Logon Tickets](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+- [SSO mit Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc) verwenden.
+- [SSO mit SAP Logon Tickets](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 Dieser Abschnitt enthält Informationen darüber, wie man den Xtract Universal Service unter einem Service-Account ausführt.
 
@@ -35,7 +35,7 @@ Mit dem ```setspn``` Befehl können die SPNs eines Service-Accounts eingesehen w
 
 ### Einstellungen für SSO mit Kerberos SNC
 
-Wenn Sie [SSO mit Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) verwenden, sind zusätzliche Schritte nötig:<br>
+Wenn Sie [SSO mit Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc) verwenden, sind zusätzliche Schritte nötig:<br>
 
 1. Konfigurieren Sie für den Windows Service-Account, unter dem der {% if page.product == "xtract-universal" %}Xtract Universal{% else %}Board Connector{% endif %} Service ausgeführt wird, eine eingeschränkte Delegierung.
 ![xu_service_account_constr_deleg](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}

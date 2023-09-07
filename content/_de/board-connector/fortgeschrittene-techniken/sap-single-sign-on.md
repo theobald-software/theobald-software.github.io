@@ -47,7 +47,7 @@ Die Bibliothek wird mit dem Secure Login Client geliefert und wird beim Öffnen 
 - Der BC-Service muss unter einem Windows AD Service Account ausgeführt werden, siehe auch [Xtract Universal Service unter einem Windows Service-Account ausführen](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/service-account).
 - Richten Sie für Ihre AD Benutzer eine Zugriffsbeschränkung auf den Board Connector Designer und den Server ein, siehe [Zugriffsbeschränkung auf Windows AD Benutzer (Kerberos Authentifizierung)](../sicherheit/serversicherheit#zugriffsbeschränkung-auf-windows-ad-benutzer-kerberos-authentifizierung).<br>
 
-Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit Client-Zertifikaten, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
+Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit Client-Zertifikaten, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/sap-connection/sso-with-client-certificates).
 
 
 ### SSO und SNC mit Kerberos Wrapper Library
@@ -69,7 +69,7 @@ Der ABAP-Applikationsserver muss auf einem Windows-Betriebssystem laufen. SNC mi
 **Hinweis:** Es kann auf einem SAP-System immer nur genau eine SNC-Lösung eingerichtet werden - z.B. SAPs Common Crypto Library **oder** gsskrb5, aber nicht beides gleichzeitig.
 SSO und SNC mit Kerberos Wrapper Library funktioniert ausschließlich mit der gsskrb5 Bibliothek. 
 
-Für Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
+Für Informationen über die Einrichtung von SSO und SNC mit Kerberos Wrapper Library, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
 
 ### SSO via SAP Logon Ticket
 
@@ -84,4 +84,4 @@ Eine SAP-Verbindung ist über Single-Sign-On (SSO) mit SAP Logon Ticket möglich
 - Auf der AS Java Instanz besteht ein Mapping von Windows AD-Benutzern auf SAP-Benutzer (== Ticket Issuer).
 - Die AS ABAP Instanzen (mit denen sich Xtract-Produkte verbinden) vertrauen den SAP Logon Tickets dieser AS Java Instanz.
 
-Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit SAP Logon Ticket, siehe [Knowledge Base Artikel: SSO with Logon-Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+Für detailiertere Informationen über den Ablauf und die Einrichtung zum Aufrufen einer Extraktion über SSO mit SAP Logon Ticket, siehe [Knowledge Base Artikel: SSO with Logon-Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).

@@ -62,7 +62,7 @@ In the *Source* tab you can override the values that are defined in [SAP source 
 Parameter name | Parameter description 
 ------------ | ------------- 
 lang | to dynamically change the logon language of the source SAP system  
-logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket)
+logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket)
 
 {: .box-note }
 **Note:** The parameter **logonTicket** can only be set if SAP logon ticket is selected as the authentication method in [SAP source details](../introduction/sap-connection).

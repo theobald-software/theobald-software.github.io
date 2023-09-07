@@ -6,8 +6,8 @@ In the following scenarios the service must run under a dedicated Windows domain
 
 - Enabling [Kerberos authentication](../security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication) for the {% if page.product == "xtract-universal" %}Xtract Universal{% else %}Board Connector{% endif %} web server.
 - Enabling Windows authentication for a{% if page.product == "xtract-universal" %}n Xtract Universal{% else %} Board Connector{% endif %} destination that allows Windows credentials for log on (e.g., SQL Server destination, PostgreSQL destination).
-- [Enabling SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
-- [Enabling SSO with SAP Logon Tickets](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+- [Enabling SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
+- [Enabling SSO with SAP Logon Tickets](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 This section describes how to run the {% if page.product == "xtract-universal" %}Xtract Universal{% else %}Board Connector{% endif %} service under a service account.
 
@@ -37,7 +37,7 @@ Using the ```setspn``` command the SPNs of a user account can be checked.
 
 ### Settings for SSO with Kerberos SNC
 
-When using [SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc) additional steps are necessary:<br>
+When using [SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc) additional steps are necessary:<br>
 
 1. Set *constrained delegation* for the Windows domain account under which the {% if page.product == "xtract-universal" %}Xtract Universal{% else %}Board Connector{% endif %} service runs.
 ![xu_service_account_constr_deleg](/img/content/XU_SSO_WinAD_Delegation.png){:class="img-responsive"}

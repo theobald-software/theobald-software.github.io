@@ -22,8 +22,8 @@ All ETL tools offer the following options for running extractions:
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
 
 ### Integration via Webservice
-- [Talend Integration via HTTP](https://kb.theobald-software.com/xtract-universal/talend-integration-http)
-- [Pentaho Integration via HTTP](https://kb.theobald-software.com/xtract-universal/pentaho-di-http)
+- [Talend Integration via HTTP](https://kb.theobald-software.com/archive/xtractuniversal-talend-integration-http)
+- [Pentaho Integration via HTTP](https://kb.theobald-software.com/archive/xtractuniversal-pentaho-di-http)
 - [GCS Integration with Google Scheduler](https://cloud.google.com/scheduler/docs/creating)
 - [Schedule AWS Lambda Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html)
 - [Generate Qlik data load script](../destinations/qliksense-qlikview#generating-a-data-load-script)
@@ -32,7 +32,7 @@ All ETL tools offer the following options for running extractions:
 
 
 ### Integration via Command Line
-- [Pentaho Integration](https://kb.theobald-software.com/xtract-universal/pentaho-di-cmd).
+- [Pentaho Integration](https://kb.theobald-software.com/archive/xtractuniversal-pentaho-di-cmd).
 - [Azure Data Factory (ADF) Integration using Command Line](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
 
 ### Integration via Azure Data Factory

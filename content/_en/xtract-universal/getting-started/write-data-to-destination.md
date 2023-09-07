@@ -137,4 +137,3 @@ When [running the extraction](./run-an-extraction), the extracted SAP data is no
 
 #### Related Links
 - [Manage Destinations](../destinations/managing-destinations)
-- [Knowledge Base Article: Write extracted Data into a Microsoft SQL Server Database](https://kb.theobald-software.com/xtract-universal/load-an-extraction-into_database)

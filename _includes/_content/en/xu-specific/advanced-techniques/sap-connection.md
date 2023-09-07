@@ -45,7 +45,7 @@ For more information, see [SAP Documentation: SAP-Router](https://help.sap.com/v
 The following authentication methods are supported:
 - *Plain*: SAP username and password (system or dialogue user).
 - *Secure Network Communication (SNC)*: username and password, basic authentication, SSO with Kerberos, SSO with digital certificates.
-- *SAP Log On Ticket*: see [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+- *SAP Log On Ticket*: see [SAP Log On Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 ![XU-Authentication](/img/content/xu/sap_source-auth.png){:class="img-responsive"} 
 
@@ -91,25 +91,25 @@ Instead, SAP credentials need to be provided via basic authentication when runni
 This option activates SSO with External ID.
 SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs {% if page.product == "xtract-universal" %}Xtract Universal. {% elsif page.product == "board-connector" %}Board Connector.{% endif %}
 This allows {% if page.product == "xtract-universal" %}Xtract Universal {% elsif page.product == "board-connector" %}Board Connector{% endif %} to impersonate any SAP user.<br>
-For more information, see the knowledge base article [SSO with External ID](https://kb.theobald-software.com/xtract-universal/sso-with-external-id).
+For more information, see the knowledge base article [SSO with External ID](https://kb.theobald-software.com/sap-connection/sso-with-external-id).
 
 
 **SSO - Impersonate caller via Kerberos** <br>
 This option activates Kerberos SSO.
 The Windows Active Directory user is used for authentication.
 For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).<br>
-For more information, see the knowledge base article [SSO with Kerberos SNC](https://kb.theobald-software.com/xtract-universal/sso-with-kerberos-snc).
+For more information, see the knowledge base article [SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
 
 **SSO - Enroll certificate on behalf of caller** <br>
 This option activates Certificate SSO.
 The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user who calls the extraction.
 For this scenario "HTTPS - Restricted to AD users with Designer read access" must be configured in the [Server Settings](../server/server-settings#web-server).<br>
-For more information, see the knowledge base article [SSO with Client Certificates](https://kb.theobald-software.com/xtract-universal/sso-with-client-certificates).
+For more information, see the knowledge base article [SSO with Client Certificates](https://kb.theobald-software.com/sap-connection/sso-with-client-certificates).
 
 ### SAP Logon Ticket
 
 You can use Single-Sign-On (SSO) with SAP Logon-Tickets for authentication. This connection is not encrypted. <br>
-For information on how to use an authentication with SAP Logon Tickets, refer to the knowledge base article [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+For information on how to use an authentication with SAP Logon Tickets, refer to the knowledge base article [SAP Log On Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 ![SAP-Logon-Ticket](/img/content/sap-logon-ticket.png){:class="img-responsive"}
 
@@ -120,7 +120,7 @@ For more information, see [SAP Documentation: Configuring the AS Java to Issue L
 **Impersonate caller when running extractions**<br>
 If this option is active, the connection is opened in the Windows Active Directory user context of the caller. 
 Otherwise the connection is opened in the context of the service account under which the Windows service runs.
-For more information, see [SAP Log On Ticket](https://kb.theobald-software.com/xtract-universal/sso-with-logon-ticket).
+For more information, see [SAP Log On Ticket](https://kb.theobald-software.com/sap-connection/sso-with-logon-ticket).
 
 {: .box-tip }
 **Tip:** Uncheck the option **Impersonate caller when running extractions** to test the Kerberos authentication against the AS Java directly. 

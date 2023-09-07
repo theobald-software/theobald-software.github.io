@@ -27,7 +27,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 {: .box-warning }
 **Warning! Invalid action**<br>
 Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. 
-Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries).
+Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries).
 
 #### MDX und BICS (beta)
 
@@ -35,7 +35,7 @@ Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Q
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Syntax bei der Suche von BEx-Queries   | `[tech. Name des InfoPoviders]/[tech. Name der BEx-Query]` <br /> Beispiel: 0SD_C03/0SD_C03_Q0018        | `[tech. Name der BEx-Query]` <br /> Beispiel: 0SD_C03_Q0018   |
 | Syntax bei der Suche von InfoProivders | `$[tech. Name des InfoProvoiders]`  <br /> Beispiel: $0SD_C03                                            | `[tech. Name des InfoProviders]` <br /> Beispiel: 0SD_C03      |
-| Wildcards bei der Suche                | Die BEx-Query Einstellung "Allow External Access to this Query" muss aktiv sein, siehe [Allow External Access to BW Queries](https://kb.theobald-software.com/general/allow-external-access-to-bw-queries). <br /> Beispiel: *0SD_C03_Q0018 anstatt 0SD_C03/0SD_C03_Q0018                          | nicht unterstützt          |
+| Wildcards bei der Suche                | Die BEx-Query Einstellung "Allow External Access to this Query" muss aktiv sein, siehe [Allow External Access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries). <br /> Beispiel: *0SD_C03_Q0018 anstatt 0SD_C03/0SD_C03_Q0018                          | nicht unterstützt          |
 | Unterstützte InfoProviders            | InfoCubes, Multiproviders, Composite Providers                                              | InfoCubes, MuliProviders, Composite Providers, DSOs |   
 | Spaltennamen von Key Figures          | EnterpriseID                                              | Technischer Name <br>Wenn der techn. Name nicht vorhanden ist: Name des Basis-Messwerts. <br>Wenn Name des Basis-Messwerts nicht vorhanden ist: EnterpriseID<br>**Tipp:** Wenn Namen doppelt vorkommen, ändern Sie den techn. Namen im BEx Query Designer.|   
 | Maximale Zeichenlänge für Dimensionselemente | max. 60 Zeichen      | -      |

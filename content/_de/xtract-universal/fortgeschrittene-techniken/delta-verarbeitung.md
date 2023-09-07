@@ -14,4 +14,4 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=skript-ausdruecke
 
 #### Weierführende Links
 
-- [Knowledge Base Artikel: Delta Table Extraction](https://kb.theobald-software.com/xtract-universal/delta-table-extraction)
+- [Knowledge Base Artikel: Delta Table Extraction](https://kb.theobald-software.com/tables/delta-table-extraction)
