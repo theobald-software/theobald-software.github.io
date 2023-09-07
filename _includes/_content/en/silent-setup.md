@@ -6,7 +6,7 @@ Use the [start](https://docs.microsoft.com/en-us/windows-server/administration/w
 
 **Example:**
 ```
-start /wait XtractSetup.exe --unattended
+start /wait XtractUniversalSetup.exe --unattended
 ```
 
 {: .box-note }
