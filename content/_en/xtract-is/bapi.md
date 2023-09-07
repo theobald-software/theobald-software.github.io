@@ -24,6 +24,8 @@ For more information, refer to the knowledge base article [SAP User Rights: BAPI
 {: .box-tip }
 **Tip:** To get information on the basics, refer to [Getting Started with Xtract IS](./getting-started). <br>
 
+{% include _content/en/bapis-and-function-modules/support-disclaimer.md %}
+
 ### How to use the Xtract BAPI component
 {% include _content/en/xis-specific/define-extraction.md %}
 

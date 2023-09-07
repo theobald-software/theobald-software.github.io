@@ -22,6 +22,8 @@ The following section describes the functions of the Report Component of Board C
 The following graphic shows the general workflow of using the Report component:<br>
 ![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
+{% include _content/en/abap-reports/support-disclaimer.md %}
+
 ### How to use the Report component
 {% include _content/en/xu-specific/define-extraction.md %}
 

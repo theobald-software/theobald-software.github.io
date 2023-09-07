@@ -20,6 +20,8 @@ The following section describes the functions of the Report component of Xtract 
 
 {% include _content/en/abap-reports/report-workflow.md %}
 
+{% include _content/en/abap-reports/support-disclaimer.md %}
+
 ### How to use the Xtract Report component
 {% include _content/en/alteryx-component-intro.md %}
 

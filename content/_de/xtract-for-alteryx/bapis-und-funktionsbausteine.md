@@ -23,6 +23,8 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
+{% include _content/de/bapi/support-disclaimer.md %}
+
 ### Xtract Cube verwenden
 {% include _content/de/alteryx-component-intro.md %}
 
