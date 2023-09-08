@@ -2,4 +2,6 @@
 ### Benutzerdefinierte BAPIs
 
 Die Verwendung von benutzerdefinierten BAPIs (Z-Funktionsbausteine) ist möglich.<br>
-Probleme bei der Verwendung benutzerdefinierter BAPIs sind von den Supportdienstleistungen von Theobald Software ausgeschlossen.
+
+{: .box-note }
+**Hinweis:** Probleme bei der Verwendung von Z-Funktionsbausteine sind von den Supportdienstleistungen von Theobald Software ausgeschlossen.
