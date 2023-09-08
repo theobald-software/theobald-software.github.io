@@ -21,6 +21,8 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract Universal](./erste-schritte) beschrieben.
 
+{% include _content/de/bapi/support-disclaimer.md %}
+
 ### BAPI verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
 

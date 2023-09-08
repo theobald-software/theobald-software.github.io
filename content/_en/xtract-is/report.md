@@ -27,6 +27,8 @@ For more information, refer to the knowledge base article [SAP User Rights: Repo
 
 {% include _content/en/abap-reports/report-workflow.md %}
 
+{% include _content/en/abap-reports/support-disclaimer.md %}
+
 ### How to use the Xtract Report component
 {% include _content/en/xis-specific/define-extraction.md %}
 

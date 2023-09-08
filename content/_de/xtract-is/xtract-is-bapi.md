@@ -24,6 +24,8 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract IS](./erste-schritte) beschrieben.<br>
 
+{% include _content/de/bapi/support-disclaimer.md %}
+
 ### Xtract BAPI verwenden
 {% include _content/de/xis-specific/define-extraction.md %}
 

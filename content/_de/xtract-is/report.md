@@ -28,6 +28,8 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 
 {% include _content/de/abap_reports/report-workflow.md %}
 
+{% include _content/de/abap_reports/support-disclaimer.md %}
+
 ### Xtract Report verwenden
 {% include _content/de/xis-specific/define-extraction.md %}
 

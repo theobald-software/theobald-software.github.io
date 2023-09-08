@@ -22,6 +22,8 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Report Kompo
 Die folgende Grafik zeigt den allgemeinen Workflow zur Verwendung der Report-Komponente:<br>
 ![Report-Workflow](/img/content/report-general-workflow.png){:class="img-responsive" width="400px"}
 
+{% include _content/de/abap_reports/support-disclaimer.md %}
+
 ### Report verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
 
