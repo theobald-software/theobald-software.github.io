@@ -58,6 +58,7 @@ Der folgende Abschnitt bietet Beispiel-Workflows und Vorlagen zum Download an.
 | [Table-ERP](/docs/alteryx-workflows/Table-ERP.yxmd){:download="Table-ERP.yxmd"}  | SAP ERP | Dieser Workflow zeigt die Verwendung von [Xtract Table](./table), um Kundenstammdaten zu laden und die Daten für weitere Analysen in Excel oder einer BI-Lösung eines Drittanbieters vorzubereiten. |
 | [Table-ERP-Join](/docs/alteryx-workflows/Table-ERP-Join.yxmd){:download="Table-ERP-Join.yxmd"}  | SAP ERP | Dieser Workflow zeigt die Verwendung von [Xtract Table](./table), um einen Tabellen-Join der SAP-Tabellen KNA1 (Kundenstammdaten) und KNVV (Kundenstamm-Verkaufsdaten) durchzuführen und die Daten für weitere Analysen in Excel oder einer BI-Lösung eines Drittanbieters vorzubereiten. |
 | [Table-S4](/docs/alteryx-workflows/Table-S4.yxmd){:download="Table-S4.yxmd"}  | SAP S/4HANA | Dieser Workflow zeigt die Verwendung von [Xtract Table](./table), um Daten aus dem Universal Journal von SAP S/4HANA zu laden und die Daten für die weitere Analyse in Excel oder einer BI-Lösung eines Drittanbieters vorzubereiten. |
+| [Table-S4-Dynamic-Parameters.yxmd](/docs/alteryx-workflows/Table-Dynamic-Parameters.yxmd){:download="Table-Dynamic-Parameters.yxmd"}  | SAP S/4HANA | Dieser Workflow zeigt die Verwendung von Skalar- und Listenparameter mit der [Xtract Table](./table) Komponente. |
 
 ******
 #### Weiterführende Links
