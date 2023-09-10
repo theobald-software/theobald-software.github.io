@@ -29,8 +29,6 @@ Make sure to use the correct protocol:
 **Hinweis:** Make sure to use the correct ports, see [Server Ports](../server/ports). 
 
 Web calls can be used to:
-- [Query all Logs](#query-all-logs)
-- [Query Logs at Specific Timestamps](#query-logs-at-specific-timestamps)
 - [Query all Server Logs](#query-all-server-logs)
 - [Query Server Logs at Specific Timestamps](#query-server-logs-at-specific-timestamps)
 - [Query a List of all Defined Extractions](#query-a-list-of-all-defined-extractions)
@@ -39,208 +37,18 @@ Web calls can be used to:
 - Query metadata of extractions, see [Metadata access via HTTP-JSON](../advanced-techniques/metadata-access-via-http-json)
 - Run extractions, see [Execute and Automate - Call via Webservice](../execute-and-automate-extractions/call-via-webservice)
 
-<!---
-
-The following web calls are available for log scenarios:
-
-| URL       | Description  | 
-|-----------|--------------|
-| ```http(s)://[host]:[port]```  |   Returns a list of all defined extractions, see [Query all Defined Extractions](#query-all-defined-extractions).|
-| ```http(s)://[host]:[port]/config/extractions/```  |   Returns a list of all defined extractions in JSON format, see [Query all Defined Extractions](#query-all-defined-extractions). |
-| ```http(s)://[host]:[port]/destinations```  |   Returns a list of all defined destinations, see [Query all Defined Destinations](#query-all-defined-destinations). |
-| ```http(s)://[host]:[port]/log/?req_type=all```  |   Returns a list of all logs, see [Query all Server & Extraction Logs](#query-all-server--extraction-logs). |
-| ```http(s)://[host]:[port]/log/?req_type=server```  |   Returns a list of timestamps that correspond to server logs, see [Query all Server & Extraction Logs](#query-all-server--extraction-logs). |
-| ```http(s)://[host]:[port]/log/?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server logs of the specified timestamp. |
-| ```http(s)://[host]:[port]/log/?req_type=all&past_days=[number_of_days]```  |   Returns all logs since n days. |
-| ```http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
-| ```http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
-| ```http(s)://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
-| ```http(s)://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
-| ```http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]&max=[yyyy-MM-dd]```  |   Returns a list of all logs between two timestamps. |
-| ```http(s)://[host]:[port]/log/?req_type=extraction&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
-| ```http(s)://[host]:[port]/log/?req_type=extraction&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
-| ```http(s)://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result file for a specific timestamp. |
-| ```http(s)://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
-
-For more web calls, see [Execute and Automate - Call via Webservice](../execute-and-automate-extractions/call-via-webservice).
-
--->
 
 
-<!---
-### Query all Defined Destinations
+### Query All Server Logs
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/destinations` | Returns a list of all defined destinations. |
-
-#### Response
-The web call returns the following information:
-- **Name**: name of the destination.
-- **Type**: connection type.
-- **Host**: host name, if applicable.
-- **Port**: port name, if applicable.
-- **Database**: database name, if applicable. 
-- **User**: user name in the connection, if applicable.
-- **Schema**: schema name, if applicable.
-- **Directory**: directory name, if applicable.
-
-#### Example
-
-<table>
-<tr><th>Example URL</th><th>Example Response</th></tr>
-<tr><td><code>https://todd.theobald.local:8165/destinations</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-Name,Type,Host,Port,Database,User,Schema,Directory
-csv,FileCSV,,,,,,"C:\Users\alice\Documents\csv\"
-sql-server,SQLServer,sqlserver.example.local,1337,directoryname,,,
-http-csv,CSV,,,,,, <br>http-json,HTTPJSON,,,,,, 
-json,FileJSON,,,,,,"C:\Users\alice\Documents\json"
-powerbiconnector,PowerBIConnector,,,,,,  
-</pre></div></td></tr>
-</table>
--->
-
-### Query all Logs
-
-| URL       | Description  | 
-|-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=all` | Returns all extraction and server logs. |
-
-{: .box-note }
-**Note:** Server logs files are deleted after a defined period of days, see [Server Setting - Web Server](../server/server-settings#web-server).
-
-#### Response
-
-The web call returns the following information:
-
-- **LineCount**: row number of the log entry.
-- **Name**:  name of the extraction / name of the server.
-- **Timestamp**: timestamp of the extraction or server log.
-- **State**: returns a number between 2 and 4 for a server extraction or the number 5 for a server log, see table below.
-- **StateDescr**: description of the state, see table below.
-- **LogLevel**: type of the log ("Error", "Info" "Warning" or "Debug").
-- **Source** technical name of the component that generates the log info. 
-- **Message**: content of the log.
-
-| State | StateDescr       | Description                                                                    |
-|-------|------------------|------------------------------------------------------------------------------|
-| 2     | Running          | The extraction is running.                                                 |
-| 3     | FinishedNoErrors | Extraction succeeded without errors.                                     |
-| 4     | FinishedErrors   | Extraction is finished with at least one error. |
-| 5     | NotAvailable     | The status for a server log.                                              |
-
-
-For information on how to read extractions logs, see [Extraction Logs](../logging#reading-logs---extraction-log).
-
-
-#### Example
-
-<table>
-<thead><tr><th>Example URL</th><th>Example Response</th></tr></thead>
-<tbody><tr><td><code>https://todd.theobald.local:8165/log/?req_type=all</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
-1,MAKT,2023-02-20_09:49:23.941,3,FinishedNoErrors,Info,LiveDataExtraction,Product version 5.21.10.14
-2,MAKT,2023-02-20_09:49:23.942,3,FinishedNoErrors,Info,LiveDataExtraction,Using Theobald.Extractors Interface
-3,MAKT,2023-02-20_09:49:23.999,3,FinishedNoErrors,Info,LiveDataExtraction,Theobald.Extractors version 1.39.3.13
-4,MAKT,2023-02-20_09:49:23.999,3,FinishedNoErrors,Info,LiveDataExtraction,Executing Table extraction
-...
-1,[server],2023-02-20_09:49:10.208,5,NotAvailable,Warning,VersionStore,Configuration was created by a development build. This can lead to unexpected behaviour.
-2,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Trying to listen on [::]:8065...
-3,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Listening on [::]:8065
-4,[server],2023-02-20_09:49:23.353,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51531 connected
-...
-</pre></div></td></tr></tbody>
-</table>
-
-
-### Query Logs at Specific Timestamps
-
-| URL       | Description  | 
-|-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=all&timestamp=[yyyy-MM-dd]`  |   Returns all logs of the specified date. |
-| `http(s)://[host]:[port]/log/?req_type=all&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Returns all logs of the specified timestamp. |
-| `http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]`  |   Returns all logs after the specified date. |
-| `http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Returns all logs after the specified timestamp. |
-| `http(s)://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd]`  |   Returns all logs before the specified date. |
-| `http(s)://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Returns all logs before the specified timestamp. |
-| `http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]&max=[yyyy-MM-dd]`| Returns all logs between two dates.|
-| `http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd_HH:mm:ss.SSS]&max=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Returns all logs between two timestamps. |
-| `http(s)://[host]:[port]/log/?req_type=all&past_days=[number_of_days]`  |   Returns all logs since n days. |
-
-<!---
-{: .box-note }
-**Note:** When the parameter `?req_type` is set to `server` instead of `all`, the web call returns timestamps of server logs, see [Query all Server Logs](#query-all-server-logs).
--->
-
-#### Response
-
-The web call returns the following information:
-
-- **LineCount**: row number of the log entry.
-- **Name**:  name of the extraction / name of the server.
-- **Timestamp**: timestamp of the extraction or server log.
-- **State**: returns a number between 2 and 4 for a server extraction or the number 5 for a server log, see table below.
-- **StateDescr**: description of the state, see table below.
-- **LogLevel**: type of the log ("Error", "Info" "Warning" or "Debug").
-- **Source** technical name of the component that generates the log info. 
-- **Message**: content of the log.
-
-| State | StateDescr       | Description                                                                    |
-|-------|------------------|------------------------------------------------------------------------------|
-| 2     | Running          | The extraction is running.                                                 |
-| 3     | FinishedNoErrors | Extraction succeeded without errors.                                     |
-| 4     | FinishedErrors   | Extraction is finished with at least one error. |
-| 5     | NotAvailable     | The status for a server log.                                              |
-
-For information on how to read extractions logs, see [Reading Extraction Logs](../logging#reading-logs---extraction-log).
-
-#### Example
-
-<table>
-<tr><th>Example URL</th><th>Example Response</th></tr>
-<tr><td><code>https://todd.theobald.local:8165/log/?req_type=all&past_days=2</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
-1,MAKT,2023-02-20_09:49:23.941,3,FinishedNoErrors,Info,LiveDataExtraction,Product version 5.21.10.14
-2,MAKT,2023-02-20_09:49:23.942,3,FinishedNoErrors,Info,LiveDataExtraction,Using Theobald.Extractors Interface
-3,MAKT,2023-02-20_09:49:23.999,3,FinishedNoErrors,Info,LiveDataExtraction,Theobald.Extractors version 1.39.3.13
-4,MAKT,2023-02-20_09:49:23.999,3,FinishedNoErrors,Info,LiveDataExtraction,Executing Table extraction
-...
-1,[server],2023-02-20_09:49:10.208,5,NotAvailable,Warning,VersionStore,Configuration was created by a development build. This can lead to unexpected behaviour.
-2,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Trying to listen on [::]:8065...
-3,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Listening on [::]:8065
-4,[server],2023-02-20_09:49:23.353,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51531 connected
-...
-</pre></div></td></tr>
-<tr><td><code>https://todd.theobald.local:8165/log/?req_type=all&min=2023-02-20_09:49:24.500&max=2023-02-20_09:50:00.000</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
-22,MAKT,2023-02-20_09:49:24.500,3,FinishedNoErrors,Debug,TheoReadTableExtractor,Data will be extracted in dialog work process
-23,MAKT,2023-02-20_09:49:24.501,3,FinishedNoErrors,Debug,TheoReadTableExtractor,"Fetching packages (50,000 rows per package)"
-24,MAKT,2023-02-20_09:49:24.653,3,FinishedNoErrors,Debug,TheoReadTableExtractor,Z_THEO_READ_TABLE version 1.x
-25,MAKT,2023-02-20_09:49:24.653,3,FinishedNoErrors,Debug,TheoReadTableExtractor,Received package #1 (1 rows)
-26,MAKT,2023-02-20_09:49:24.657,3,FinishedNoErrors,Info,LiveDataExtraction,Starting to write 1 rows to destination...
-27,MAKT,2023-02-20_09:49:24.668,3,FinishedNoErrors,Info,LiveDataExtraction,Finished writing rows to destination
-28,MAKT,2023-02-20_09:49:24.712,3,FinishedNoErrors,Info,TheoReadTableExtractor,Extraction finished - received 1 rows in total
-29,MAKT,2023-02-20_09:49:24.714,3,FinishedNoErrors,Debug,LiveDataExtraction,Writing results to destination completed
-6,[server],2023-02-20_09:49:24.802,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16240) exited with 0x0 - The operation completed successfully
-7,[server],2023-02-20_09:49:36.257,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51533 connected
-8,[server],2023-02-20_09:49:36.262,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16368) started
-</pre></div></td></tr>
-</table>
-
-### Query all Server Logs
-
-| URL       | Description  | 
-|-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=server` | Returns a list of timestamps that correspond to server logs. |
+| `http(s)://[host]:[port]/log?req_type=server` | Returns a list of timestamps that correspond to server logs. |
 
 #### Response
 
 The web call returns timestamps in the format `[yyyy-MM-dd_HH:mm:ss.SSS]`.<br>
-Use the timestamps to query the content of the logs, see [Query Server Logs at a Specific Timestamp](#query-server-logs-at-specific-timestamps).
+Use the timestamps to query the content of the server logs, see [Query Server Logs at Specific Timestamps](#query-server-logs-at-specific-timestamps).
 
 {: .box-note }
 **Note:** Server log files are deleted after a defined period of days, see [Server Setting - Web Server](../server/server-settings#web-server).
@@ -249,7 +57,7 @@ Use the timestamps to query the content of the logs, see [Query Server Logs at a
 
 <table>
 <tr><th>Example URL</th><th>Example Response</th></tr>
-<tr><td><code>https://todd.theobald.local:8165/log/?req_type=server</code></td>
+<tr><td><code>https://todd.theobald.local:8165/log?req_type=server</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 Timestamp
 2023-02-20_09:49:10.055
@@ -260,13 +68,14 @@ Timestamp
 
 ### Query Server Logs at Specific Timestamps
 
+
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]` | Returns the server logs of the specified timestamp. |
+| `http(s)://[host]:[port]/log?req_type=server&timestamp=[serverTimestamp]` | Returns the server logs of the specified timestamp. |
+
 
 {: .box-tip }
-**Tip:** Query timestamps that correspond to server logs, see [Query all Server Logs](#query-all-server-logs).<br>
-To query server logs before, after or between timestamps, see [Query Logs at Specific Timestamps](#query-logs-at-specific-timestamps).
+**Tip:** Query timestamps that correspond to server logs, see [Query All Server Logs](#query-all-server-logs).
 
 {: .box-note }
 **Note:** Server log files are deleted after a defined period of days, see [Server Setting - Web Server](../server/server-settings#web-server).
@@ -288,16 +97,19 @@ The web call returns the following information:
 
 <table>
 <thead><tr><th>Example URL</th><th>Example Response</th></tr></thead>
-<tbody><tr><td><code>https://todd.theobald.local:8165/?req_type=server&timestamp=2023-02-20_09:49:10.228</code></td>
+<tbody><tr><td><code>https://todd.theobald.local:8165/log?req_type=server&timestamp=2023-09-08_10:21:46.390</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
-LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message 
-1,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Trying to listen on [::]:8065... 
-2,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Listening on [::]:8065 
-3,[server],2023-02-20_09:49:23.353,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51531 connected 
-4,[server],2023-02-20_09:49:23.372,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16240) started 
-5,[server],2023-02-20_09:49:24.802,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16240) exited with 0x0 - The operation completed successfully 
-6,[server],2023-02-20_09:49:36.257,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51533 connected 
-7,[server],2023-02-20_09:49:36.262,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16368) started
+LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
+1,[server],2023-09-08_10:21:46.550,5,NotAvailable,Info,WebServerHandler,Client [fe80::b853:b27e:ecdc:54c5%63]:57795
+2,[server],2023-09-08_10:21:46.662,5,NotAvailable,Debug,HttpServer,Reading...
+3,[server],2023-09-08_10:21:46.709,5,NotAvailable,Info,HttpServer,Processing /log/.
+4,[server],2023-09-08_10:21:46.806,5,NotAvailable,Info,WebServer,Attempting to load server permissions.
+5,[server],2023-09-08_10:21:46.811,5,NotAvailable,Debug,WebServer,No server level permissions configured. Using default.
+6,[server],2023-09-08_10:21:46.813,5,NotAvailable,Info,WebServer,Server does not require authentication. Setting anonymous user context.
+7,[server],2023-09-08_10:21:46.842,5,NotAvailable,Info,HttpServer,Responding to /log/ with OK
+8,[server],2023-09-08_10:21:46.842,5,NotAvailable,Info,HttpServer,Body is 61 bytes of type TextPlainUtf8
+9,[server],2023-09-08_10:21:46.895,5,NotAvailable,Debug,HttpServer,Closing connection: False
+...
 </pre></div></td></tr></tbody>
 </table>
 
@@ -305,7 +117,6 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/extractions` | Returns a list of all defined extractions. |
 | `http(s)://[host]:[port]/config/extractions/` | Returns a list of all defined extractions with more details and in JSON format. |
 
 #### Response
@@ -365,52 +176,45 @@ RLT10010,Report,ec5,csv,2023-01-12_11:11:48.975,21,2022-12-13_11:07:36.437,2022-
 </pre></div></td></tr>
 </table>
 
-<!---
-### Query a Specific Extraction
+
+### Query ... Extractions
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=extraction&name=[extraction_name]`  |   Returns the logs of the specified extraction. |
+| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]` | Returns ... that correspond to the extraction runs of the specified extraction.|
 
 #### Response
+
+The web call returns timestamps in the format `[yyyy-MM-dd_HH:mm:ss.SSS]`.<br>
+Use the timestamps to query the content of the extraction logs, see [Query Extraction Logs at Specific Timestamps](#query-extraction-logs-at-specific-timestamps).
 
 The web call returns the following information:
 
 - **Timestamp**: timestamp of the extraction.
-- **State**: returns a number between 2 and 4 for a server extraction, see table below.
+- **State**: returns a number between 2 and 4 for a server extraction or the number 5 for a server log, see table below.
 - **StateDescr**: description of the state, see table below.
 - **RequestID**: ...
-- **RowCount**: number of extracted rows.
-
-| State | StateDescr       | Description                                                                    |
-|-------|------------------|------------------------------------------------------------------------------|
-| 2     | Running          | The extraction is running.                                                 |
-| 3     | FinishedNoErrors | Extraction succeeded without errors.                                     |
-| 4     | FinishedErrors   | Extraction is finished with at least one error. |
-
-{: .box-tip }
-**Tip:** To query more detailed logs of an extraction at a specific timestamp, see [Query a Specific Extraction at a Specific Timestamp](#query-a-specific-extraction-at-a-specific-timestamp).<br>
+- **RowCount** number of the last extracted data records. 
+- **WebLog**: timestamp of the corresponding server log.
 
 #### Example
 
 <table>
 <thead><tr><th>Example URL</th><th>Example Response</th></tr></thead>
-<tbody><tr><td><code>https://todd.theobald.local:8165/log/?req_type=extraction&name=makt</code></td>
+<tbody><tr><td><code>https://todd.theobald.local:8165/log?req_type=extraction&name=KNA1</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
-Timestamp,State,StateDescr,RequestID,RowCount
-2023-02-20_09:49:23.807,3,FinishedNoErrors,,1
-2023-02-20_09:53:46.882,3,FinishedNoErrors,,17806
-2023-02-20_11:45:35.656,3,FinishedNoErrors,,1
-2023-02-21_07:40:29.888,3,FinishedNoErrors,,1
+Timestamp,State,StateDescr,RequestID,RowCount,WebLog
+2023-09-08_10:43:38.288,3,FinishedNoErrors,,9895,2023-09-08_10:43:37.832
+2023-09-08_10:53:27.074,3,FinishedNoErrors,,9895,2023-09-08_10:53:26.616
 </pre></div></td></tr></tbody>
 </table>
--->
+
 
 ### Query a Specific Extraction at a Specific Timestamp
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=extraction&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Returns detailed logs of the specified extraction at the specified timestamp. |
+| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]&timestamp=[extractionTimestamp]` | Returns extraction logs of the specified extraction at the specified timestamp. |
 
 {: .box-tip }
 **Tip:** Query the timestamp of the last run of an extraction as described in [Query a List of all Defined Extractions](#query-a-list-of-all-defined-extractions) or query timestamps using the logs as described in [Query all Logs](#query-all-logs).<br>
@@ -418,9 +222,10 @@ Timestamp,State,StateDescr,RequestID,RowCount
 #### Response
 
 The web call returns the following information:
+
 - **LineCount**: row number of the log entry.
-- **Name**:  name of the extraction.
-- **Timestamp**: timestamp of the extraction.
+- **Name**:  name of the extraction / name of the server.
+- **Timestamp**: timestamp of the extraction or server log.
 - **State**: returns a number between 2 and 4 for a server extraction, see table below.
 - **StateDescr**: description of the state, see table below.
 - **LogLevel**: type of the log ("Error", "Info" "Warning" or "Debug").
@@ -433,30 +238,23 @@ The web call returns the following information:
 | 3     | FinishedNoErrors | Extraction succeeded without errors.                                     |
 | 4     | FinishedErrors   | Extraction is finished with at least one error. |
 
-
-For information on how to read extractions logs, see [Extraction Logs](../logging#reading-logs---extraction-log).
+For information on how to read extractions logs, see [Reading Extraction Logs](../logging#reading-logs---extraction-log).
 
 #### Example
 
 <table>
-<thead><tr><th>Example URL</th><th>Example Response</th></tr></thead>
-<tbody><tr><td><code>https://todd.theobald.local:8165/log/?req_type=extraction&name=makt&timestamp=2023-02-20_09:49:23.807</code></td>
+<tr><th>Example URL</th><th>Example Response</th></tr>
+<tr><td><code>https://todd.theobald.local:8165/log?req_type=extraction&name=KNA1&timestamp=2023-09-08_10:43:13.234</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
-1,makt,2023-02-21_11:04:33.765,3,FinishedNoErrors,Info,LiveDataExtraction,Product version 5.21.10.14
-2,makt,2023-02-21_11:04:33.766,3,FinishedNoErrors,Info,LiveDataExtraction,Using Theobald.Extractors Interface
-3,makt,2023-02-21_11:04:33.817,3,FinishedNoErrors,Info,LiveDataExtraction,Theobald.Extractors version 1.39.3.13
-4,makt,2023-02-21_11:04:33.817,3,FinishedNoErrors,Info,LiveDataExtraction,Executing Table extraction
-5,makt,2023-02-21_11:04:33.882,3,FinishedNoErrors,Info,LiveDataExtraction,Found license.
-6,makt,2023-02-21_11:04:33.930,3,FinishedNoErrors,Debug,R3ConnectorServerWindows,'Use SAPGUI' expert option is disabled
-7,makt,2023-02-21_11:04:33.931,3,FinishedNoErrors,Debug,R3ConnectorServerWindows,"Connecting to SAP application server, using Classic RFC SDK"
-8,makt,2023-02-21_11:04:33.931,3,FinishedNoErrors,Debug,R3ConnectorServerWindows,"Client '800',  language 'EN'"
-9,makt,2023-02-21_11:04:33.931,3,FinishedNoErrors,Debug,R3ConnectorServerWindows,"User ALICE, Password has been provided"
-10,makt,2023-02-21_11:04:33.931,3,FinishedNoErrors,Debug,R3ConnectorServerWindows,Using plain authentication
-11,makt,2023-02-21_11:04:34.291,3,FinishedNoErrors,Info,R3ConnectorServerWindows,"Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 740, codepage 4103, user 'ALICE'"
+1,KNA1,2023-09-08_10:43:13.241,3,FinishedNoErrors,Debug,Table,Attempting to load Theobald.Extractors.Table.TableExtractionDefinition information for extraction KNA1
+2,KNA1,2023-09-08_10:43:13.465,3,FinishedNoErrors,Info,Table,Starting extraction without cache.
+3,KNA1,2023-09-08_10:43:13.465,3,FinishedNoErrors,Info,TheoReadTableExtractor,Starting extraction - using function module Z_THEO_READ_TABLE
+4,KNA1,2023-09-08_10:43:13.465,3,FinishedNoErrors,Info,TheoReadTableExtractor,Extracting table KNA1
 ...
-</pre></div></td></tr></tbody>
+</pre></div></td></tr>
 </table>
+
 
 ### Query the Extraction Status
 
@@ -481,7 +279,12 @@ Query the status of the extraction in a loop to trigger follow-up actions once t
 
 #### Response
 
-The web call returns one of the following statuses:
+The web call returns the following information:
+
+- **Duration**: duration of the extraction run.
+- **rowCount**:  number of extracted rows.
+- **State**: returns the status of the extraction run.
+- **WebLog Timestamp**: timestamp of the corresponding server log.
 
 | State      | Description                                                                    |
 |------------------|------------------------------------------------------------------------------|
@@ -493,13 +296,14 @@ The web call returns one of the following statuses:
 
 <table>
 <thead><tr><th>Example URL</th><th>Example Response</th></tr></thead>
-<tbody><tr><td><code>https://todd.theobald.local:8165/status/?name=makt&timestamp=2023-02-21_11:06:16.314</code></td>
+<tbody><tr><td><code>https://todd.theobald.local:8165/status/?name=KNA1&timestamp=2023-09-08_10:43:13.234</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
-FinishedNoErrors
-</pre></div></td></tr></tbody>
-<tbody><tr><td><code>https://todd.theobald.local:8165/status/?name=mara&timestamp=2023-02-21_13:11:27.327</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-FinishedErrors
+{
+    "duration": "PT00H00M01.177S",
+    "rowsCount": 9895,
+    "state": "FinishedNoErrors",
+    "webLogTimestamp": "2023-09-08_10:43:02.361"
+}
 </pre></div></td></tr></tbody>
 </table>
 
