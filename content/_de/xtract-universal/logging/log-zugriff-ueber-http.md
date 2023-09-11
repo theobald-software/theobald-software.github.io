@@ -33,6 +33,7 @@ Folgende Aktionen können über Web-Aufrufe ausgeführt werden:
 - [Alle Server-Logs abrufen](#alle-server-logs-abrufen)
 - [Server-Logs zu einem bestimmten Zeitstempel abrufen](#server-logs-zu-einem-bestimmten-zeitstempel-abrufen)
 - [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen)
+- [Informationen zu Ausführungen einer bestimmten Extraktion abrufen](#informationen-zu-ausführungen-einer-bestimmten-extraktion-abrufen)
 - [Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen](#eine-bestimmte-extraktion-zu-einem-bestimmten-zeitstempel-abrufen)
 - [Den Status einer Extraktion abrufen](#den-status-einer-extraktion-abrufen)
 - Metadaten von Extraktionen abrufen, siehe [Metadaten-Zugriff über HTTP-JSON](../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json)
@@ -61,8 +62,8 @@ Verwenden Sie die Zeitstempel, um den Inhalt von Logs abzurufen, siehe [Server-L
 <tr><td><code>https://todd.theobald.local:8165/log/?req_type=server</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 Timestamp
-2023-02-20_09:49:10.055
-2023-02-15_13:49:38.401
+2023-09-08_09:49:10.055
+2023-09-08_13:49:38.401
 </pre></div></td></tr>
 </table>
 
@@ -70,7 +71,7 @@ Timestamp
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log/?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]` | Gibt die Server-Logs von einem definierten Zeitstempel zurück. |
+| `http(s)://[host]:[port]/log?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]` | Gibt die Server-Logs von einem definierten Zeitstempel zurück. |
 
 {: .box-tip }
 **Tipp:** Rufen Sie zurvor die Zeitstempel ab, die zu Server-Logs gehören, siehe [Alle Server-Logs abrufen](#alle-server-logs-abrufen).<br>
@@ -98,14 +99,11 @@ Der Web-Aufruf gibt folgende Informationen zurück:
 <thead><tr><th>Beispiel-URL</th><th>Beispiel-Antwort</th></tr></thead>
 <tbody><tr><td><code>https://todd.theobald.local:8165/?req_type=server&timestamp=2023-02-20_09:49:10.228</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
-LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message 
-1,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Trying to listen on [::]:8065... 
-2,[server],2023-02-20_09:49:10.258,5,NotAvailable,Info,AsyncTcpServer,Listening on [::]:8065 
-3,[server],2023-02-20_09:49:23.353,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51531 connected 
-4,[server],2023-02-20_09:49:23.372,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16240) started 
-5,[server],2023-02-20_09:49:24.802,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16240) exited with 0x0 - The operation completed successfully 
-6,[server],2023-02-20_09:49:36.257,5,NotAvailable,Info,AsyncTcpServer,Client [::1]:51533 connected 
-7,[server],2023-02-20_09:49:36.262,5,NotAvailable,Debug,ProcessAsync,Theobald.Xu.Web.Worker.exe (16368) started
+LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
+1,[server],2023-09-06_08:38:12.519,5,NotAvailable,Info,XtractWebServer,Client [fe80::d3ac:77ba:ce0f:83b1%8]:54421
+2,[server],2023-09-06_08:38:12.823,5,NotAvailable,Info,XtractWebServer,Request URI: http://sherri.theobald.local:8065/?name=MARA&quiet-push=true
+3,[server],2023-09-06_08:38:17.458,5,NotAvailable,Info,RunParameter,Parameter 'quiet-push' overriden (new value: 'true')
+4,[server],2023-09-06_08:38:17.553,5,NotAvailable,Info,XtractWebServer,Running Table extraction 'MARA'...
 </pre></div></td></tr></tbody>
 </table>
 
@@ -132,14 +130,6 @@ Der Web-Aufruf gibt folgende Informationen zurück:
 
 <table width="900px">
 <tr><th>Beispiel-URL</th><th>Beispiel-Antwort</th></tr>
-<tr><td><code>https://todd.theobald.local:8165/extractions</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-Name,Type,Source,Destination,LastRun,RowCount,LastChange,Created
-MAKT,Table,ec5,csv,2022-12-15_13:30:08.921,177318,2023-02-15_13:49:38.401,2022-12-12_08:39:27.407
-2LIS,ODP,ec5,AzureStorageAD,2022-08-18_10:55:00.189,59058,2023-01-20_11:26:05.641,2022-08-18_10:46:50.721
-COUNTRY,Hierarchy,bw2,http-csv,2022-12-01_12:53:57.098,8,2022-12-01_12:53:53.599,2022-10-05_10:41:43.848
-RLT10010,Report,ec5,csv,2023-01-12_11:11:48.975,21,2022-12-13_11:07:36.437,2022-06-30_08:24:47.755
-</pre></div></td></tr>
 <tr><td><code>https://todd.theobald.local:8165/config/extractions/</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 {
@@ -172,16 +162,34 @@ RLT10010,Report,ec5,csv,2023-01-12_11:11:48.975,21,2022-12-13_11:07:36.437,2022-
 </pre></div></td></tr>
 </table>
 
+### Informationen zu Ausführungen einer bestimmten Extraktion abrufen
+
+<!---
+Bitte übersetzen - wenn dir ein besserer Titel einfällt, bitt oben in der Auflistung der Überschriften mit anpassen 
+und in dem Tipp unter ### Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen :D
+-->
+
+#### Beispiel
+
+<table>
+<thead><tr><th>Beispiel URL</th><th>Beispiel Antwort</th></tr></thead>
+<tbody><tr><td><code>https://todd.theobald.local:8165/log?req_type=extraction&name=KNA1</code></td>
+<td><div style="width:600px;overflow:auto"><pre>
+Timestamp,State,StateDescr,RequestID,RowCount,WebLog
+2023-09-08_10:43:38.288,3,FinishedNoErrors,,9895,2023-09-08_10:43:37.832
+2023-09-08_10:53:27.074,3,FinishedNoErrors,,9895,2023-09-08_10:53:26.616
+</pre></div></td></tr></tbody>
+</table>
 
 ### Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]&timestamp=[extractionTimestamp]`  |   Gibt detailierte Logs der definierten Extraktion an dem definierten Zeitstempel zurück. |
+| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Gibt detailierte Logs der definierten Extraktion an dem definierten Zeitstempel zurück. |
 
 {: .box-tip }
-**Tipp:** Rufen Sie den Zeitstempel ab, an dem die Extraktion das letzte Mal ausgeführt wurde, siehe  [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen) oder rufen Sie Zeitstempel ab über [Alle Logs abrufen](#alle-logs-abrufen).<br>
-
+**Tipp:** Rufen Sie alle Zeitstempel einer bestimmten Extraktion ab, siehe [Informationen zu Ausführungen einer bestimmten Extraktion abrufen](#informationen-zu-ausführungen-einer-bestimmten-extraktion-abrufen).<br>
+Rufen Sie den Zeitstempel ab, an dem die Extraktion das letzte Mal ausgeführt wurde, siehe [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen). 
 
 #### Antwort
 
@@ -223,7 +231,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
-| ```http(s)://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Gibt den Status einer definierten Extraktion an einem definierten Zeitstempel zurück. |
+| ```http(s)://[host]:[port]/status/?name=[extractionname]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Gibt den Status einer definierten Extraktion an einem definierten Zeitstempel zurück. |
 
 Führen Sie die folgenden Schritte aus, um eine Routine für einen Status-Check zu erstellen:
 

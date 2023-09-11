@@ -32,6 +32,7 @@ Web calls can be used to:
 - [Query all Server Logs](#query-all-server-logs)
 - [Query Server Logs at Specific Timestamps](#query-server-logs-at-specific-timestamps)
 - [Query a List of all Defined Extractions](#query-a-list-of-all-defined-extractions)
+- [Query Extraction Runs of a Specific Extraction](#query-extraction-runs-of-a-specific-extraction)
 - [Query a Specific Extraction at a Specific Timestamp](#query-a-specific-extraction-at-a-specific-timestamp)
 - [Query the Extraction Status](#query-the-extraction-status)
 - Query metadata of extractions, see [Metadata access via HTTP-JSON](../advanced-techniques/metadata-access-via-http-json)
@@ -60,8 +61,8 @@ Use the timestamps to query the content of the server logs, see [Query Server Lo
 <tr><td><code>https://todd.theobald.local:8165/log?req_type=server</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 Timestamp
-2023-02-20_09:49:10.055
-2023-02-15_13:49:38.401
+2023-09-08_09:49:10.055
+2023-09-08_13:49:38.401
 </pre></div></td></tr>
 </table>
 
@@ -71,11 +72,11 @@ Timestamp
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log?req_type=server&timestamp=[serverTimestamp]` | Returns the server logs of the specified timestamp. |
+| `http(s)://[host]:[port]/log?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]` | Returns the server logs of the specified timestamp. |
 
 
 {: .box-tip }
-**Tip:** Query timestamps that correspond to server logs, see [Query All Server Logs](#query-all-server-logs).
+**Tip:** Query timestamps of all server logs, see [Query All Server Logs](#query-all-server-logs) or query timestamps that correspond to an extraction run, see [Query Extraction Runs of a Specific Extraction](#query-extraction-runs-of-a-specific-extraction).
 
 {: .box-note }
 **Note:** Server log files are deleted after a defined period of days, see [Server Setting - Web Server](../server/server-settings#web-server).
@@ -100,16 +101,10 @@ The web call returns the following information:
 <tbody><tr><td><code>https://todd.theobald.local:8165/log?req_type=server&timestamp=2023-09-08_10:21:46.390</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
-1,[server],2023-09-08_10:21:46.550,5,NotAvailable,Info,WebServerHandler,Client [fe80::b853:b27e:ecdc:54c5%63]:57795
-2,[server],2023-09-08_10:21:46.662,5,NotAvailable,Debug,HttpServer,Reading...
-3,[server],2023-09-08_10:21:46.709,5,NotAvailable,Info,HttpServer,Processing /log/.
-4,[server],2023-09-08_10:21:46.806,5,NotAvailable,Info,WebServer,Attempting to load server permissions.
-5,[server],2023-09-08_10:21:46.811,5,NotAvailable,Debug,WebServer,No server level permissions configured. Using default.
-6,[server],2023-09-08_10:21:46.813,5,NotAvailable,Info,WebServer,Server does not require authentication. Setting anonymous user context.
-7,[server],2023-09-08_10:21:46.842,5,NotAvailable,Info,HttpServer,Responding to /log/ with OK
-8,[server],2023-09-08_10:21:46.842,5,NotAvailable,Info,HttpServer,Body is 61 bytes of type TextPlainUtf8
-9,[server],2023-09-08_10:21:46.895,5,NotAvailable,Debug,HttpServer,Closing connection: False
-...
+1,[server],2023-09-06_08:38:12.519,5,NotAvailable,Info,XtractWebServer,Client [fe80::d3ac:77ba:ce0f:83b1%8]:54421
+2,[server],2023-09-06_08:38:12.823,5,NotAvailable,Info,XtractWebServer,Request URI: http://sherri.theobald.local:8065/?name=MARA&quiet-push=true
+3,[server],2023-09-06_08:38:17.458,5,NotAvailable,Info,RunParameter,Parameter 'quiet-push' overriden (new value: 'true')
+4,[server],2023-09-06_08:38:17.553,5,NotAvailable,Info,XtractWebServer,Running Table extraction 'MARA'...
 </pre></div></td></tr></tbody>
 </table>
 
@@ -136,14 +131,6 @@ The web calls return the following information:
 
 <table width="900px">
 <tr><th>Example URL</th><th>Example Response</th></tr>
-<tr><td><code>https://todd.theobald.local:8165/extractions</code></td>
-<td><div style="width:600px;overflow:auto"><pre>
-Name,Type,Source,Destination,LastRun,RowCount,LastChange,Created
-MAKT,Table,ec5,csv,2022-12-15_13:30:08.921,177318,2023-02-15_13:49:38.401,2022-12-12_08:39:27.407
-2LIS,ODP,ec5,AzureStorageAD,2022-08-18_10:55:00.189,59058,2023-01-20_11:26:05.641,2022-08-18_10:46:50.721
-COUNTRY,Hierarchy,bw2,http-csv,2022-12-01_12:53:57.098,8,2022-12-01_12:53:53.599,2022-10-05_10:41:43.848
-RLT10010,Report,ec5,csv,2023-01-12_11:11:48.975,21,2022-12-13_11:07:36.437,2022-06-30_08:24:47.755
-</pre></div></td></tr>
 <tr><td><code>https://todd.theobald.local:8165/config/extractions/</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
 {
@@ -177,11 +164,12 @@ RLT10010,Report,ec5,csv,2023-01-12_11:11:48.975,21,2022-12-13_11:07:36.437,2022-
 </table>
 
 
-### Query ... Extractions
+### Query Extraction Runs of a Specific Extraction
+
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]` | Returns ... that correspond to the extraction runs of the specified extraction.|
+| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]` | Returns information and timestamps of extractions runs of the specified extraction.|
 
 #### Response
 
@@ -193,7 +181,7 @@ The web call returns the following information:
 - **Timestamp**: timestamp of the extraction.
 - **State**: returns a number between 2 and 4 for a server extraction or the number 5 for a server log, see table below.
 - **StateDescr**: description of the state, see table below.
-- **RequestID**: ...
+- **RequestID**: ID that is specific to ODP extractions.
 - **RowCount** number of the last extracted data records. 
 - **WebLog**: timestamp of the corresponding server log.
 
@@ -214,10 +202,11 @@ Timestamp,State,StateDescr,RequestID,RowCount,WebLog
 
 | URL       | Description  | 
 |-----------|--------------|
-| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]&timestamp=[extractionTimestamp]` | Returns extraction logs of the specified extraction at the specified timestamp. |
+| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]` | Returns extraction logs of the specified extraction at the specified timestamp. |
 
 {: .box-tip }
-**Tip:** Query the timestamp of the last run of an extraction as described in [Query a List of all Defined Extractions](#query-a-list-of-all-defined-extractions) or query timestamps using the logs as described in [Query all Logs](#query-all-logs).<br>
+**Tip:** Query the timestamp of extraction runs of a specific extraction, see [Query Extraction Runs of a Specific Extraction](#query-extraction-runs-of-a-specific-extraction).<br>
+Query the timestamp of the last extraction run, see [Query a List of all Defined Extractions](#query-a-list-of-all-defined-extractions).
 
 #### Response
 
@@ -260,7 +249,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 
 | URL       | Description  | 
 |-----------|--------------|
-| ```http(s)://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
+| ```http(s)://[host]:[port]/status/?name=[extractionname]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
 
 Follow the steps below to create a status check routine:
 
