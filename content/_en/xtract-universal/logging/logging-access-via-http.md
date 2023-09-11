@@ -14,6 +14,10 @@ progressstate: 3
 
 The Xtract Universal server allows accessing meta data and logging information through web calls. 
 
+{: .box-note }
+**Note:** The following section applies to Xtract Universal version 6.0.0 or higher.<br>
+For information on log access via web service in earlier Xtract Universal versions, refer to the knowledge base article [Log Access via Web Service](https://kb.theobald-software.com/xtract-universal/logging-access-via-http).
+
 ### Basic URL
 
 The basic URL for web calls uses the following format: `[protocol]://[host or IP address]:[port]/`.<br>
@@ -26,7 +30,7 @@ Make sure to use the correct protocol:
 | HTTPS  | `https://[host].[domain]:[port]` | `https://todd.theobald.local:8165`<br> Requires a dedicated host name and X.509 certificate, see [web server settings](../server/server-settings#web-server). |
 
 {: .box-note }
-**Hinweis:** Make sure to use the correct ports, see [Server Ports](../server/ports). 
+**Note:** Make sure to use the correct ports, see [Server Ports](../server/ports). 
 
 Web calls can be used to:
 - [Query all Server Logs](#query-all-server-logs)

@@ -13,6 +13,7 @@ progressstate: 3
 
 Der Xtract Universal Server bietet Zugriff auf verschiedene Metadaten- und Logging-Informationen via Web-Aufrufe. 
 
+
 ### Basis-URL
 
 Die Basis-URL für Web-Aufrufe verwendet folgendes Format:
