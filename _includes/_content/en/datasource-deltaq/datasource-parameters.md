@@ -22,7 +22,7 @@ Select *Exclude* in the **Sign** column to exclude the filtered data from the ou
    | Operator   |      Meaning      |  
    |:---------|:------------- |
    |(Not)ContainsPattern |  True if data matches (does not match) the pattern in operand 1. |
-   |(Not)Equal |  True if data is (not)equal to the content of operand 1.|
+   |(Not)Equal |  True if data is (not) equal to the content of operand 1.|
    |GreaterOrEqual |  True if data is greater than or equal to the content of operand 1.|
    |GreaterThan |  True if data is greater than the content of operand 1.|
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|

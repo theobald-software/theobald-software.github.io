@@ -6,7 +6,7 @@ Using the{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ component 
 
 ### Settings in the{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ Component
 
-When an RFC Destination is set up in SAP, the RFC destination and the RFC target system must be 
+When an RFC Destination is set up in SAP, the RFC destination and the RFC target system must be entered.
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 
@@ -29,6 +29,6 @@ Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) to look up a 
 ### Customizing Check
 
 In the main window of the component click **Customizing Check** to validate the DeltaQ customizing on the SAP system.
-Make sure that all checks are green. 
+Make sure that all check makrs are green. 
 
 ![customizing-check-successful](/img/content/customizing-check-successfull.png){:class="img-responsive"}

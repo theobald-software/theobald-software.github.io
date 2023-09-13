@@ -1,6 +1,5 @@
 ### SAP Transaktionen für der Arbeit mit DataSources
 
-
 #### Initiales Setup
 * SBIW - SAP DataSources Startseite
 * RSA3 - Extraktor Checker 
