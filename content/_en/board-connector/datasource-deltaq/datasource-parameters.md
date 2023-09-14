@@ -10,11 +10,12 @@ weight: 6
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=datasource_parameters
 ---
+
 {% include _content/en/datasource-deltaq/datasource-parameters.md %}
 
 ### Runtime Parameters
 Runtime parameters are supported. 
-Add an *@* symbol right before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.
+Add an *@* symbol before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.
 
 The marked value can be overwritten at runtime, see [Extraction Parameters - Custom](../advanced-techniques/extraction-parameters#custom)
 

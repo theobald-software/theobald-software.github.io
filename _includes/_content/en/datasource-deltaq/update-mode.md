@@ -73,10 +73,10 @@ A **Repeat** can be started several times.
 Many DataSources have the field ROCANCEL. This field defines if records are added or overwritten depending on the delta process type of the DataSource. 
 It defines how a record is updated in the delta process.<br>
 In an ABR mode: <br>
-* *blank* returns an after image,<br>
-* *'X'*  returns a before image,<br>
-* *'D'* deletes the record and<br>
-* *'R'* returns a reverse image.
+* *blank* returns an after image<br>
+* *'X'*  returns a before image<br>
+* *'D'* deletes the record<br>
+* *'R'* returns a reverse image
 
 
 #### Optional: Delta Queue - RSA7
@@ -88,6 +88,6 @@ If there is no new data to be transferred, a corresponding protocol message is d
 
 
 *****
-#### Releated Links
+#### Related Links
 - [Delta Transfer to BI](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-US/37/4f3ca8b672a34082ab3085d3c22145/content.htm?no_cache=true)
 - [Delta Process](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.23/en-US/4f18f6aa3fca410ae10000000a42189d.html)

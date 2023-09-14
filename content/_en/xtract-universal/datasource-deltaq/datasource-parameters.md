@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=datasource-parameters
 
 ### Runtime Parameters
 Runtime parameters are supported. 
-Add an *@* symbol right before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.
+Add an *@* symbol before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.
 
 The marked value can be overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom)
 

@@ -1,5 +1,5 @@
 To access the extraction settings, click {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} in the main window of the component.
-The window “DeltaQ Settings” opens. The window has two tabs:
+The window “DeltaQ Settings” opens. The window contains two tabs:
 - [Base](#base)
 - [Hierarchy](#hierarchy)
 
@@ -15,13 +15,13 @@ Switch to *IDoc* to monitor the raw data packages in the transaction WE02 (IDoc-
 ### Misc.
 
 **Automatic Synchronization**<br>
-Activate this option to avoid manual changes in the transactional system when switching from test environment to production environment. <br>
+Option to prevent manual changes in the transactional system when switching from test environment to production environment. <br>
 Example: To use DeltaQ extractions in the production environment, the data source has to be enabled in the production environment. 
-If **Automatic Synchronization** is active, the activation is done automatically and the timestamp of the data source is changed to be consistent with the settings of the SAP system. <br>
+If **Automatic Synchronization** is active, the activation is performed automatically and the timestamp of the data source is changed to be consistent with the settings of the SAP system. <br>
 
 {: .box-note }
-**Note** If the data source is modified in the SAP system, you have to manually activate the data source in the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component, even when **Automatic Synchronization** is active. 
-Otherwise data load will fail. This behavior is by SAP design, see [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
+**Note** If the data source is modified in the SAP system, manually activate the data source in the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component, even when **Automatic Synchronization** is active. 
+Otherwise data load will fail. This behavior belongs to the SAP design, see [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
 
 **Add Serialization Info to Output**<br>
 Adds the columns *DataPackageID* and *RowCounter* to the output.<br>
@@ -31,12 +31,12 @@ Example: the following columns that are a composite key of the SAP records are i
 - *RowCounter*
 
 {: .box-note }
-**Note** Newer data have a higher PackageID. In the same package newer data have a higher RowCounter.
+**Note** Newer data has a higher PackageID. In the same package newer data has a higher RowCounter.
 
 **Accept Gaps in DataPackage Id**<br>
-At the end of each extraction the{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component does a consistency check. 
+At the end of each extraction the{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component performs a consistency check. 
 The extraction is considered consistent if all data packages arrive correctly. 
-Example: When using a filter function in the user exit of an OLTP source certain data packages are not sent. 
+Example: When using a filter function in the user exit of an OLTP source, certain data packages are not sent. 
 In this case the filter function is an inconsistency. <br>
 If **Accept Gaps in DataPackage Id** is active, gaps in the package numbering are not considered inconsistencies. 
 Only use this option when a filter function exists in the user exit.

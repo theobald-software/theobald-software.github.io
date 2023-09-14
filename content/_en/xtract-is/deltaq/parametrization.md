@@ -14,7 +14,7 @@ progressstate: 5
 ### Custom Properties
 
 The *Custom Properties* define the properties unique to the component.
-When parameterizing the component using SSIS variables or Expression Properties, the *Custom Porperties* are overwritten.
+When parameterizing the component using SSIS variables or Expression Properties, the *Custom Properties* are overwritten.
 
 List of relevant *Custom Properties*:
 
