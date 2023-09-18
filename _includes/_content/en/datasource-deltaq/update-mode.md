@@ -24,7 +24,7 @@ In the main window of the component select an **Update Mode** from the drop-down
 **Update mode** can be set dynamically at runtime using the **updateType** extraction parameter, see [Run an Extraction](../execute-and-automate-extractions/extraction-parameters#run-an-extraction).<br>
 ![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
 {% elsif page.product == "xtract-is" %}
-**Update mode** can be set dynamically at runtime using SSIS variables, see
+**Update mode** can be set dynamically at runtime using SSIS variables.
 {% endif %}
 
 For more information about when to use which update mode, see [Initializing a Delta Process](#initializing-a-delta-process)
