@@ -13,23 +13,23 @@ Wählen Sie im Hauptfenster der Komponente ein **Update Mode** aus einem Dropdow
 | Bruchstabe| Bezeichnung | Beschreibung |
 | :------: |:--- | :--- |
 | F | Full | Extrahiert alle Daten, die den festgelegten Auswahlkriterien entsprechen.
-| D | Delta Update | Extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden. Initialisieren Sie das Deltaverfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Deltalaufs zu vermeiden, führen Sie die nächste Extraktion im Updatemodus **Repeat** durch. |
-| C | Delta Initialisation | Initialisiert das Delta-Verfahren und extrahiert gleichzeitig alle Daten im Vollmodus. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
-| R | Repeat | Wiederholt den letzten Deltalauf und aktualisiert alle seit dem letzten Lauf angesammelten Deltadaten. Löscht alle Daten des letzten (erfolglosen) Delta-Updates, bevor eine Wiederholung ausgeführt wird. Sie können eine Wiederholung mehrmals ausführen.
-| S | Delta Init (ohne Daten) | Initiliaziert das Deltaverfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis des **Delta-Inits** ist ein sogenannter **[Request Maintenance]** auf der SAP-Seite. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
+| D | Delta Update | Extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden. [Initialisieren](#initialisierung-des-delta-prozesses) Sie das Delta-Verfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Deltalaufs zu vermeiden, führen Sie die nächste Extraktion im Updatemodus **Repeat** durch. |
+| C | Delta Initialisation | Initialisiert das Delta-Verfahren und extrahiert gleichzeitig alle Daten im *Full Load*. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen](./extraktionseinstellungen) auf **[Maintenance]** klicken.
+| R | Repeat | Wiederholt den letzten Delta-Lauf und aktualisiert alle seit dem letzten Lauf angesammelten Deltadaten. Löscht alle Daten des letzten (erfolglosen) Delta-Updates, bevor eine Wiederholung ausgeführt wird. Sie können eine Wiederholung mehrmals ausführen.
+| S | Delta Init (without data) | Initiliaziert das Delta-Verfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis der *Delta Init* ist eine **[Maintenance]** (Wartung) auf der SAP-Seite.Wenn Sie einen Deltaprozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen] (./extraktionseinstellungen) auf **[Maintenance]** klicken.|
 | I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
 | A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
-| V | **[Nur Xtract IS]** SSIS-Variable; veraltet, siehe [Variablen](../bwcube/variablen) | Wenn **V** ausgewählt ist, muss in den [DeltaQ Settings](./extraktionseinstellungen) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
+| V | **[Xtract IS only]** SSIS-Variable; veraltet, siehe [Variablen](../bwcube/variablen) | Wenn **V** ausgewählt ist, muss in den [Extraktionseinstellungen](./extraktionseinstellungen) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
 
-{: .box-note }
-**Hinweis:** Der **Update-Modus** kann ebenfalls dynamisch als Laufzeitparameter **updateType** im "Run Extraction"-Dialog gesetzt werden.
-
+{% if page.product == "xtract-universal" %}
+**Update mode** kann zur Laufzeit mithilfe des Extraktionsparameters **updateType** dynamisch festgelegt werden, siehe [Extraktion ausführen](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#extraktion-ausführen).<br>
 ![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
+{% elsif page.product == "xtract-is" %}
+**Update mode** kann zur Laufzeit mithilfe von SSIS-Variablen dynamisch festgelegt werden.
+{% endif %}
 
+Für weitere Informationen darüber, wann welcher Update-Modus verwendet werden soll, siehe [Initialisierung des Delta-Prozesses](#Initialisierung-des-delta-prozesses).
 
-<!---
-bis hier, unten geprüft
--->
 
 ### Initialisierung des Delta-Prozesses
 
