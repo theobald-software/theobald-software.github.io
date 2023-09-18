@@ -1,43 +1,47 @@
-### Einen Extraktor finden
+### Einen Extraktor suchen
 
-1. Klicken Sie auf den **[Suchen]** Button (Vergrößerungsglas) im Hauptfenster der DeltaQ-Komponente. Das Fenster “Look Up OLTP Source” öffnet sich.<br>
+Führen Sie die folgenden Schritte aus, um eine DataSource zu suchen. Mehr Informationen über die Suche nach Hierarchien finden Sie unter [Hierarchien](./hierarchien).
+
+1. Navigieren Sie im Hauptfenster der Komponente zu **OLTP** und klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png). Das Fenster “Look Up OLTP Source” wird geöffnet.<br>
+![DeltaQ](/img/content/DeltaQ.png){:class="img-responsive"}
+2. Geben Sie den Namen einer DataSource in das Feld **Name**ein (1). Verwenden Sie Wildcards ( * ), wenn nötig.<br>
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
-2. Geben Sie den Namen oder die Beschreibung einer Datenquelle ein (1). Verwenden Sie Wildcards (*), falls nötig.
-3. Klicken Sie auf **[Suchen]** (2) und wählen Sie den Report Ihrer Wahl aus der angezeigten Liste aus (3).<br>
-Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSource *0MATERIAL_ATTR*.
-4. Bestätigen Sie die Auswahl mit **[OK]** (4).
+3. Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) und wählen Sie aus der angezeigten Liste (2) den gewünschten Extraktor aus.
+4. Klicken Sie auf **[OK]**, um Ihre Auswahl zu Bestätigen.
 
-Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
+Die Anwendung kehrt nun zum Hauptfenster der Komponente zurück.
 
 {: .box-note }
-**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+**Hinweis:** Um DataSources zu suchen und zu finden, stellen Sie sicher, dass die DataSources in SAP aktiviert sind, siehe auch [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
 
-### Eine DeltaQ-Extraktion definieren
-Nachdem Sie einen Extraktor gefunden haben, führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie einen *Update Mode* aus (5). <br>
-Das **Full** Update fordert alle Daten an, die den von Ihnen eingestellten Auswahlkriterien entsprechen. 
-Um eine echte **Delta**-Prozedur zum Laufen zu bringen, muss das Delta zunächst initialisiert werden, siehe [Delta](./datasource-delta).<br>
-Für mehr Informationen zu den verfügbaren Aktualisierungsmodi, siehe [Update Mode](./update-modus).
-2. Setzen Sie die Häkchen neben den Spalten, die Sie extrahieren möchten (6).<br>
-![Deltaq-Define-Data-Source-Filled](/img/content/Deltaq-Define-Data-Source-Filled.png){:class="img-responsive"}
-3. Optional: Fügen Sie falls nötig unter **Selection** Auswahlfilter hinzu (7), um Ihre Daten zu filtern. Für mehr Informationen zu Filtern, siehe [Datasource Parameters](./datasource-parameter).<br>
-4. Validieren Sie Ihre Einstellungen, indem Sie eine Testextraktion ausführen.
-5. Wenn die Validierung ohne Fehler abgeschlossen wurde, klicken Sie auf **[Activate]**, um die Extraktion in SAP zu aktivieren.<br> 
-Nach erfolgreicher Aktivierung erscheinen im Laufe einiger Sekunden die entsprechenden Statusmeldungen:<br>
-![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}<br>
-![Deltaq-Generation-Successfull-Info](/img/content/Deltaq-Generation-Successfull-Info.png){:class="img-responsive"}
+### Definieren einer DeltaQ-Extraktion
+
+Führen Sie nach der Extraktorensuche die folgenden Schritte aus:
+
+1. Navigieren Sie zu **Gateway** und klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) (1), um ein RFC-Destination zu suchen. 
+Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).<br>
+![DeltaQ2](/img/content/DeltaQ2.png){:class="img-responsive"}
+2. Navigieren Sie zu **Logical Destination** und klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2) um eine logische RFC-Destination zu suchen.Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).
+3. Klicken Sie auf **Customizing Check** (3) zur Validierung des DeltaQ-Customizings auf dem SAP-System.
+Stellen Sie sicher, dass alle Häkchen grün sind. Weitere Informationen finden Sie unterv[DeltaQ Customizing](./deltaq-customizing).<br>
+![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
+4.Wählen Sie ein [Update Mode](#update-mode) aus, um z.B. eine Delta-Extraktion zu initialisieren.
+5. Wählen Sie die Elemente aus, die der Ausgabe hinzugefügt werden sollen.<br>
+![DeltaQ-output](/img/content/DeltaQ-output.png){:class="img-responsive"}
+6. Optional: klicken Sie auf die **[Edit]**-Option neben dem Element, um [Filter](./datasource-parameter) hinzuzufügen.
+7. Klicken Sie auf **[Run]**, um die Extraktion zu testen und Ihre Einstellungen zu validieren.
+8. Klicken Sie auf **[Activate]**, um um die Extraktion in SAP zu aktivieren. Nach erfolgreicher Aktivierung öffnet sich eine entsprechende Statusmeldung:<br>
+![Deltaq-System-Parameters-Info](/img/content/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
 
 {: .box-note } 
-**Hinweis:** Die Aktivierung muss nur für die Modi **Delta**, **Full** oder **Init** durchgeführt werden. Nehmen Sie keine Aktivierung für den Modus **Delta Update** vor. 
-Bevor Sie eine neue Aktivierung starten, löschen Sie die alte Aktivierung.
+**Hinweis:** Die Aktivierung ist nur für die Update-Modi *Delta*, *Full*oder *Init* erforderlich.
+Aktivieren Sie die Extraktion nicht für den *Delta Update*-Modus.
 
-
-
-******
+*****
 #### Weiterführende Links
-- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide).
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide). 
 - [How to activate DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System)
 - [How to activate activate the BI Content DataSource (SAP Help)](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
 - [How to create Generic DataSource using Function Module and Timestamps](https://kb.theobald-software.com/sap/create-generic-datasource-using-function-module-and-timestamps)
-- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide) (in Englisch)
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide)

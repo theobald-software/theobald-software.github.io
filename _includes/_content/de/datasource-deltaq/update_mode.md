@@ -1,11 +1,14 @@
+Die DeltaQ-Komponente wird hauptsächlich für Delta-Extraktionen verwendet.Dies bedeutet, dass nur kürzlich hinzugefügte oder geänderte Daten extrahiert werden, anstatt sie vollständig zu laden.
+Die extrahierten Daten werden durch die Einstellung **Update Mode** der DeltaQ-Komponente definiert.
 
-Der Update Mode ermöglicht ein Delta-Update, d. h. es werden nur hinzugefügte oder geänderte Daten extrahiert, anstelle eines vollständigen Ladevorgangs.
+### Update-Modi
 
-### Einstellungen
-
-Wählen Sie im Hauptfenster "SAP DataSources und Extraktoren extrahieren" den **Update-Mode** aus dem Dropdown-Menü aus.
+Wählen Sie im Hauptfenster der Komponente ein **Update Mode** aus einem Dropdown-Menü aus.
 ![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
+**Update Mode** bietet die folgenden Optionen:
+
+<!---    ab hier überprüfen -->
 
 | Bruchstabe| Bezeichnung | Beschreibung |
 | :------: |:--- | :--- |
@@ -23,9 +26,14 @@ Wählen Sie im Hauptfenster "SAP DataSources und Extraktoren extrahieren" den **
 
 ![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
 
+
+<!---
+bis hier, unten geprüft
+-->
+
 ### Initialisierung des Delta-Prozesses
 
-Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update-modus).
+Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update_mode).
 
 #### Schritt 1: Delta Initialisierung [C]
 In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.
@@ -34,14 +42,15 @@ Stellen Sie den **Update-Modus** auf *Delta-Initialisierung* und führen Sie ihn
 Die Initialisierungsselektionen werden kopiert, um die Deltasätze zu laden. Sie können das Delta-Update verwenden.
 
 {: .box-note } 
-**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
+**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Maintenance]** klicken.
 
-#### Alternativer Schritt 1: Delta Init (ohne Daten) [S]
-Sie entspricht der **Delta-Initialisierung**, ohne Daten aus der SAP-Datenquelle zu extrahieren.
-Nach der Ausführung der **Delta Init** können Sie das **Delta Update** verwenden.
+#### Alternativer Schritt 1: Delta Init (without data) [S]
+Delta Init (without data) ähnelt einer **Delta-Initialisierung**, es werden jedoch keine Daten aus der SAP-Datenquelle extrahiert.
+Stellen Sie den **Update Mode** auf *Delta Init (without data)* ein und führen Sie die Extraktion aus.<br>
+Sie können jetzt *Delta Update* verwenden.
 
 {: .box-note } 
-**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Request Maintenance]** klicken.
+**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den [Extraktionseinstellungen](./extraktionseinstellungen) auf **[Maintenance]** klicken.
 
 #### Schritt 2: Delta-Update [D]
 Das Delta-Update extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden.
@@ -52,16 +61,16 @@ Es werden nur die Änderungen extrahiert, die seit der letzten Übertragung vorg
 {: .box-note } 
 **Hinweis:** Um Fehler, Abbrüche und Lücken zu vermeiden, führen Sie die nächste Extraktion im Update-Modus *Wiederholen* durch.
 
-#### Optional: Wiederholen [R]
+#### Optional: Repeat [R]
 Wiederholt den letzten Deltalauf und aktualisiert alle Daten, die seit dem letzten Lauf aufgelaufen sind. Wenn der letzte Lauf nicht erfolgreich war, werden alle Daten des letzten Delta-Updates gelöscht, bevor ein neuer Lauf gestartet wird.<br>
-Ein **Wiederholungslauf** kann mehrmals gestartet werden.
+Ein **Repeat** kann mehrmals gestartet werden.
 
 Viele Datenquellen liefern das Feld ROCANCEL. Dieses Feld legt fest, ob die Datensätze in Abhängigkeit von der Delta-Verfahrensart der Datenquelle ergänzt oder überschrieben werden. Es definiert, wie ein Datensatz im Delta-Verfahren aktualisiert wird.<br>
 In einem ABR-Modus: <br>
-* *'Blank'* gibt ein Nachbild zurück,<br>
-* *'X'* gibt ein Vorher-Bild zurück,<br>
-* *'D'* löscht den Datensatz und<br>
-* *'R'* gibt ein umgekehrtes Bild zurück.
+* *'Blank'* gibt ein Nachbild zurück<br>
+* *'X'* gibt ein Vorher-Bild zurück<br>
+* *'D'* löscht den Datensatz<br>
+* *'R'* gibt ein umgekehrtes Bild zurück
 
 #### Optional: Delta-Queue - RSA7
 Sobald Delta aktiviert ist, können Sie in der SAP-Transaktion RSA7 die in der Delta-Queue anstehenden Datensätze einsehen.

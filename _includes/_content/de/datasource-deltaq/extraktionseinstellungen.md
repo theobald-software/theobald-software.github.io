@@ -1,22 +1,18 @@
-Klicken Sie im Hauptfenster "Extract SAP DataSources and Extractors" auf **[Extraction Settings]**. Der Dialog "DeltaQ Settings - [Extraktionsname]" wird geöffnet.
-Das Fenster besteht aus zwei Registerkarten:
-* Base
-* Hierarchy
+Um auf die Extraktionseinstellungen zuzugreifen, klicken Sie auf {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} im Hauptfenster der Komponente.
+Das Fenster “DeltaQ Settings” wird geöffnet. Das Fenster besteht aus zwei Tabs:
+- [Base](#base)
+- [Hierarchy](#hierarchy)
 
 ![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.png){:class="img-responsive"}
 
-### Registerkarte Base
+## Base
 
-Die Registerkarte "Base" besteht aus zwei Unterabschnitten:
-- Transfer Mode
-- Misc.
-
-#### Transfer Mode
+### Transfer Mode
 
 Die Rohdatenpakete können von SAP über einen *tRFC*-Aufruf oder ein *Data-IDoc* gesendet werden. Normalerweise ist der tRFC für die Standardeinstellung optimal. Wenn es notwendig ist, z. B. die Rohdatenpakete zu Debugging-Zwecken zu untersuchen, können Sie den Übertragungsmodus auf *IDoc* ändern. Dann können Sie die Datenpakete in der Transaktion WE02 (IDoc-Monitoring) untersuchen.
 
-#### Misc.
-
+### Misc.
+<!-- ab hier wieder übersetzen--->
 **Automatic Synchronisation**<br>
 Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen nur in einem Testsystem durchgeführt werden. Sollen DeltaQ-Extraktionen später in der Produktionsumgebung eingesetzt werden, muss die Datenquelle dort freigeschaltet werden. Um manuelle Änderungen im transaktionalen System zu vermeiden, können Sie diese Option aktivieren. In diesem Fall wird die Aktivierung automatisch durchgeführt und der Zeitstempel der Datenquelle wird so geändert, dass er mit der Einstellung des SAP-Systems übereinstimmt. <br>
 Wenn die DataSource im SAP-System modifiziert wurde, z.B. der Name, der Datentyp, die Länge eines Feldes geändert wurde oder ein Feld von der Datenübertragung ausgeschlossen wurde, müssen Sie die DataSource in der DeltaQ-Extraktion manuell aktivieren, auch wenn die automatische Synchronisation eingeschaltet ist. Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten ist von SAP so vorgesehen und wird in der [SAP-Help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html) beschrieben (in Englisch).

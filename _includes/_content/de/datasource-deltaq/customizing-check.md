@@ -1,30 +1,31 @@
-### Einstellungen
+### DeltaQ Customizing in SAP
 
-1. Öffnen Sie die DeltaQ Extraktion.
-2. Füllen Sie die Felder oben rechts aus. Zur Suche nach den hinterlegten Einstellungen, klicken Sie auf **Suchen** (Lupensymbol). Die Einstellungen sind definiert in [DeltaQ Customizing](../sap-customizing/customizing-fuer-deltaq).
+Für die Verwendung der{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ-Komponente ist ein Customizing in SAP erforderlich, siehe [Customizing for DeltaQ](../sap-customizing/customizing-for-deltaq).
+
+### Einstellungen in der{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ Komponente
+
+Wenn eine RFC-Destination in SAP eingerichtet wird, müssen die RFC-Destination und das RFC-Zielsystem eingegeben werden.
 
 ![deltaq-tech-settings](/img/content/deltaq-tech-settings.png){:class="img-responsive"}
 
-**Log. Destination** <br>Name des logischen RFC-Zielsystems.
+#### Gateway
 
-**Gateway Host** <br>Name (oder IP-Adresse) Ihres SAP-Systems. <br>
-Stellen Sie sicher, dass der Gateway-Host derselbe ist wie in Ihrer SAP-Verbindung. 
+Klicken auf ![magnifying-glass](/img/content/icons/magnifying-glass.png), um nach einer [RFC Destination](../sap-customizing/customizing-for-deltaq) zu suchen oder geben Sie die Daten Ihrer RFC-Destination manuell ein:
 
-**Gateway Service** <br>In der Regel geben Sie den Gateway Service in der Form *sapgwNN* an, wobei *NN* die Instanz-Nummer ihres SAP-Systems ist, z. B. eine Zahl zwischen *00* und *99*. <br>
-*NN* muss dem Feld *System No* in der SAP-Verbindung bzw. dem Feld Instanz-Nummer im SAP-Logon entsprechen. 
+**Host**<br>Der Name (oder die IP-Adresse) Ihres SAP-Systems. <br>
+Stellen Sie sicher, dass der Gateway-Host mit dem in Ihrer [SAP-Verbindung](../getting-started/sap-connection) identisch ist.
 
-**Program ID** <br>Das registrierte RFC-Serverprogramm.
-Stellen Sie sicher, dass sich die Registrierung der Program ID (z.B. XTRACT01) und des Hosts auf der Whitelist der reginfo ACL auf dem SAP Gateway befindet. 
-Für nähere Informationen bzgl. der refinfoACL, siehe [SAP Blog: RFC Gateway Security](https://blogs.sap.com/2021/01/26/rfc-gateway-security-part-1-basic-understanding/).
+**Service**<br>Der Gateway-Service ist im Allgemeinen *sapgwNN*, wobei *NN* die Instanznummer Ihres SAP-Systems ist, z. B. eine Zahl zwischen *00*und *99*.
 
 
-Die Werte **Gateway Host** und **Gateway Service** entsprechen den Werten in der SAP-Verbindung:
+**Program ID**<br>Der Name des registrierten RFC-Servers.
+Stellen Sie sicher, dass die Registrierung der Programm-ID und des Hosts in der reginfo-ACL auf dem SAP Gateway auf der Whitelist steht, siehe [SAP Blog: RFC Gateway Security](https://blogs.sap.com/2021/01/26/rfc-gateway-security-part-1-basic-understanding/).
 
-![sap-conn-app-ecc](/img/content/sap-conn-app-ecc.png){:class="img-responsive"}
+#### Log. Destination
+Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png), um ein logisches RFC-Zielsystem zu suchen oder den Namen des RFC-Zielsystems manuell einzugeben.
 
-### Überprüfen der Eingaben
+### Customizing Check
+Klicken Sie im Hauptfenster der Komponente auf **Customizing Check** zur Validierung des DeltaQ-Customizings auf dem SAP-System.
+Stellen Sie sicher, dass alle Häkchen grün sind.
 
-Klicken Sie auf **[Customizing Check]**, um das DeltaQ-Customizing auf dem SAP-System zu validieren.
-Stellen Sie sicher, dass alle Zeilen im Bericht grün sind.
-
-![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
+![customizing-check-successful](/img/content/customizing-check-successfull.png){:class="img-responsive"}
