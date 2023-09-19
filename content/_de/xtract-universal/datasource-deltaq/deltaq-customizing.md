@@ -10,4 +10,5 @@ weight: 4
 lang: de_DE
 progressstate: 5
 ---
+
 {% include _content/de/datasource-deltaq/customizing-check.md %}

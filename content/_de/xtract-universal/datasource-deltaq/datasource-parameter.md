@@ -12,9 +12,13 @@ progressstate: 5
 ---
 {% include _content/de/datasource-deltaq/datasource-parameter.md %}
 
-### Variablen 
-Variablen werden unterstützt. <br>
-Fügen Sie *@* direkt vor einem Wert ein, um ihn als Variable zu kennzeichnen.
+### Laufzeitparameter
+
+Laufzeitparameter werden unterstützt. 
+Fügen Sie vor dem Wert ein *@*-Symbol hinzu, um ihn als Laufzeitparameter zu kennzeichnen. Beispielsweise geben Sie `@myParameter` anstatt des Wertes ein.
+
+Der markierte Wert kann zur Laufzeit überschrieben werden, siehe [Extraktionsparameter - Custom](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)
+
 
 ### Skript Ausdrücke
 

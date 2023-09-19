@@ -13,9 +13,12 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource_parameter
 {% include _content/de/datasource-deltaq/datasource-parameter.md %}
  
 
-### Variablen 
-Variablen werden unterstützt. <br>
-Fügen Sie *@* direkt vor einem Wert ein, um ihn als Variable zu kennzeichnen.
+### Laufzeitparameter
+
+Laufzeitparameter werden unterstützt. 
+Fügen Sie vor dem Wert ein *@*-Symbol hinzu, um ihn als Laufzeitparameter zu kennzeichnen. Beispielsweise geben Sie `@myParameter` anstatt des Wertes ein.
+
+Der markierte Wert kann zur Laufzeit überschrieben werden, siehe [Extraktionsparameter - Custom](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)
 
 ### Skript Ausdrücke
 
@@ -32,4 +35,4 @@ Sie werden normalerweise verwendet, um ein dynamisches Datum auf der Basis des a
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Aktuelles Datum verkettet mit "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Aktuelles Datum verkettet mit "0101""           |
 
-Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
+
