@@ -33,7 +33,7 @@ Für weitere Informationen darüber, wann welcher Update-Modus verwendet werden 
 
 ### Initialisierung des Delta-Prozesses
 
-Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update_mode).
+Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update-modus).
 
 #### Schritt 1: Delta Initialisierung [C]
 In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.

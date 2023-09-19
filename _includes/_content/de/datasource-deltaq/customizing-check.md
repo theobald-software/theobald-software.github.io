@@ -10,10 +10,10 @@ Wenn eine RFC-Destination in SAP eingerichtet wird, müssen die RFC-Destination 
 
 #### Gateway
 
-Klicken auf ![magnifying-glass](/img/content/icons/magnifying-glass.png), um nach einer [RFC Destination](../sap-customizing/customizing-for-deltaq) zu suchen oder geben Sie die Daten Ihrer RFC-Destination manuell ein:
+Klicken auf ![magnifying-glass](/img/content/icons/magnifying-glass.png), um nach einer [RFC Destination](../sap-customizing/customizing-fuer-deltaq) zu suchen oder geben Sie die Daten Ihrer RFC-Destination manuell ein:
 
 **Host**<br>Der Name (oder die IP-Adresse) Ihres SAP-Systems. <br>
-Stellen Sie sicher, dass der Gateway-Host mit dem in Ihrer [SAP-Verbindung](../getting-started/sap-connection) identisch ist.
+Stellen Sie sicher, dass der Gateway-Host mit dem in Ihrer [SAP-Verbindung](../erste-schritte/sap-verbindungen-anlegen) identisch ist.
 
 **Service**<br>Der Gateway-Service ist im Allgemeinen *sapgwNN*, wobei *NN* die Instanznummer Ihres SAP-Systems ist, z. B. eine Zahl zwischen *00*und *99*.
 
