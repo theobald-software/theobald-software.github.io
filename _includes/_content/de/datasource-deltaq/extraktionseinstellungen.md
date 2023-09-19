@@ -20,7 +20,7 @@ Beispiel: Um DeltaQ-Extraktionen in der Produktionsumgebung verwenden zu können
 Wenn **Automatic Synchronization** aktiviert ist, erfolgt die Aktivierung automatisch und der Zeitstempel der Datenquelle wird so geändert, dass er mit den Einstellungen des SAP-Systems übereinstimmt. <br>
 
 {: .box-note }
-**Note** Wenn die Datenquelle im SAP-System geändert wird, aktivieren Sie die Datenquelle manuell in der {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ Komponente. Auch dann, wenn die Option **Automatic Synchronization** aktiviert ist. 
+**Hinweis:** Wenn die Datenquelle im SAP-System geändert wird, aktivieren Sie die Datenquelle manuell in der {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ Komponente. Auch dann, wenn die Option **Automatic Synchronization** aktiviert ist. 
 Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten gehört zum SAP-Design, siehe [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
 
 **Add Serialization Info to Output**<br>
@@ -31,7 +31,7 @@ Beispiel: Die folgenden Spalten, die einen zusammengesetzten Schlüssel der SAP-
 - *RowCounter*
 
 {: .box-note }
-**Hinweis** Neuere Daten haben eine höhere PackageID. Im gleichen Paket haben neuere Daten einen höheren RowCounter.
+**Hinweis:** Neuere Daten haben eine höhere PackageID. Im gleichen Paket haben neuere Daten einen höheren RowCounter.
 
 **Accept Gaps in DataPackage Id**<br>
 Am Ende jeder Extraktion führt die{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ Komponente eine Konsistenzprüfung durch. 
