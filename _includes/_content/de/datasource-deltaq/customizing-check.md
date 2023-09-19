@@ -1,6 +1,6 @@
 ### DeltaQ Customizing in SAP
 
-Für die Verwendung der{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ-Komponente ist ein Customizing in SAP erforderlich, siehe [Customizing for DeltaQ](../sap-customizing/customizing-for-deltaq).
+Für die Verwendung der{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ-Komponente ist ein Customizing in SAP erforderlich, siehe [Customizing für DeltaQ](../sap-customizing/customizing-fuer-deltaq).
 
 ### Einstellungen in der{% if page.product == "xtract-is"%} Xtract{% endif %} DeltaQ Komponente
 
