@@ -24,7 +24,7 @@ Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing
 ![DeltaQ2](/img/content/DeltaQ2.png){:class="img-responsive"}
 2. Navigieren Sie zu **Logical Destination** und klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2) um eine logische RFC-Destination zu suchen.Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).
 3. Klicken Sie auf **Customizing Check** (3) zur Validierung des DeltaQ-Customizings auf dem SAP-System.
-Stellen Sie sicher, dass alle Häkchen grün sind. Weitere Informationen finden Sie unterv[DeltaQ Customizing](./deltaq-customizing).<br>
+Stellen Sie sicher, dass alle Häkchen grün sind. Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).<br>
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
 4.Wählen Sie ein [Update Mode](#update-mode) aus, um z.B. eine Delta-Extraktion zu initialisieren.
 5. Wählen Sie die Elemente aus, die der Ausgabe hinzugefügt werden sollen.<br>

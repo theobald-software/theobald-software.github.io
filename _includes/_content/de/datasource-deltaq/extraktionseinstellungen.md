@@ -12,14 +12,20 @@ Das Fenster “DeltaQ Settings” wird geöffnet. Das Fenster besteht aus zwei T
 Die Rohdatenpakete können von SAP über einen *tRFC*-Aufruf oder ein *Data-IDoc* gesendet werden. Normalerweise ist der tRFC für die Standardeinstellung optimal. Wenn es notwendig ist, z. B. die Rohdatenpakete zu Debugging-Zwecken zu untersuchen, können Sie den Übertragungsmodus auf *IDoc* ändern. Dann können Sie die Datenpakete in der Transaktion WE02 (IDoc-Monitoring) untersuchen.
 
 ### Misc.
-<!-- ab hier wieder übersetzen--->
-**Automatic Synchronisation**<br>
-Je nach Systemlandschaft kann es vorkommen, dass Entwicklungen nur in einem Testsystem durchgeführt werden. Sollen DeltaQ-Extraktionen später in der Produktionsumgebung eingesetzt werden, muss die Datenquelle dort freigeschaltet werden. Um manuelle Änderungen im transaktionalen System zu vermeiden, können Sie diese Option aktivieren. In diesem Fall wird die Aktivierung automatisch durchgeführt und der Zeitstempel der Datenquelle wird so geändert, dass er mit der Einstellung des SAP-Systems übereinstimmt. <br>
-Wenn die DataSource im SAP-System modifiziert wurde, z.B. der Name, der Datentyp, die Länge eines Feldes geändert wurde oder ein Feld von der Datenübertragung ausgeschlossen wurde, müssen Sie die DataSource in der DeltaQ-Extraktion manuell aktivieren, auch wenn die automatische Synchronisation eingeschaltet ist. Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten ist von SAP so vorgesehen und wird in der [SAP-Help](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html) beschrieben (in Englisch).
+
+
+**Automatic Synchronization**<br>
+Option zur Verhinderung manueller Änderungen im Transaktionssystem beim Wechsel von der Testumgebung zur Produktionsumgebung. <br>
+Beispiel: Um DeltaQ-Extraktionen in der Produktionsumgebung verwenden zu können, muss die Datenquelle in der Produktionsumgebung aktiviert werden. 
+Wenn **Automatic Synchronization** aktiviert ist, erfolgt die Aktivierung automatisch und der Zeitstempel der Datenquelle wird so geändert, dass er mit den Einstellungen des SAP-Systems übereinstimmt. <br>
+
+{: .box-note }
+**Note** Wenn die Datenquelle im SAP-System geändert wird, aktivieren Sie die Datenquelle manuell in der {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ Komponente. Auch dann, wenn die Option **Automatic Synchronization** aktiviert ist. 
+Andernfalls wird das Laden der Daten fehlschlagen. Dieses Verhalten gehört zum SAP-Design, siehe [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
 
 **Add Serialization Info to Output**<br>
-Fügt der Ausgabe die beiden Spalten *DataPackageID* und *RowCounter* hinzu.<br>
-In diesem Fall werden die folgenden drei Spalten, die ein zusammengesetzter Schlüssel der von SAP gelieferten Datensätze sind, in der Ausgabe vorhanden sein:
+Fügt der Ausgabe die Spalten *DataPackageID*und *RowCounter* hinzu.<br>
+Beispiel: Die folgenden Spalten, die einen zusammengesetzten Schlüssel der SAP-Datensätze darstellen, sind in der Ausgabe enthalten:
 - *RequestID*
 - *DataPackageID* 
 - *RowCounter*
@@ -28,61 +34,72 @@ In diesem Fall werden die folgenden drei Spalten, die ein zusammengesetzter Schl
 **Hinweis** Neuere Daten haben eine höhere PackageID. Im gleichen Paket haben neuere Daten einen höheren RowCounter.
 
 **Accept Gaps in DataPackage Id**<br>
-Die DeltaQ-Extraktionstyp führt am Ende jeder Extraktion eine Konsistenzprüfung durch. Nur wenn alle Datenpakete korrekt angekommen sind, wird die Extraktion als konsistent angesehen. Für den Fall, dass der Kunde im User-Exit einer OLTP-Quelle eine Filterfunktion eingebaut hat, die bewirkt, dass bestimmte Datenpakete nicht gesendet werden, muss die Konsistenzprüfung entschärft werden. 
-Ansonsten würde die Filterfunktion des Kunden als Inkonsistenz gewertet werden. Wenn diese Option aktiviert ist, werden Lücken in der Paketnummerierung vom DeltaQ nicht als Inkonsistenz, sondern als absichtlich zurückgehaltene Information gewertet. Die Option sollte nur verwendet werden, wenn eine entsprechende Filterfunktion im User-Exit vorhanden ist.
+Am Ende jeder Extraktion führt die{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ Komponente eine Konsistenzprüfung durch. 
+Die Extraktion gilt als konsistent, wenn alle Datenpakete korrekt ankommen. 
+Beispiel: Bei Verwendung einer Filterfunktion im User-Exit einer OLTP-Quelle werden bestimmte Datenpakete nicht versendet.
+In diesem Fall ist die Filterfunktion inkonsistent. <br>
+Wenn die Option **Accept Gaps in DataPackage Id** aktiviert ist, gelten die Lücken in der Paketnummerierung nicht als Inkonsistenz. 
+Verwenden Sie diese Option nur, wenn im User-Exit eine Filterfunktion vorhanden ist.
 
 **Timeout (sec)**<br>
-Definiert eine Zeitspanne (in Sekunden), wie lange das Xtract-Produkt wartet, nachdem der Extraktionsauftrag auf SAP-Seite beendet ist, aber noch nicht alle tRFC-Aufrufe empfangen wurden.
+Geben Sie einen Zeitraum (in Sekunden) ein. Die Zeitüberschreitung gilt, wenn eine Extraktion auf der SAP-Seite abgeschlossen ist, aber nicht alle tRFC-Aufrufe empfangen wurden. 
 
-#### Request Maintenance
 
-Zum Anzeigen und Löschen der Init-Requests dieser DataSource (Requests in RSA7).
+## Hierarchy
 
-![DeltaQ_Request_Maintenance](/img/content/DeltaQ_Request_Maintenance.png){:class="img-responsive"}
+Die folgenden Einstellungen gelten nur für Hierarchieextraktionen.
 
-- **Delete Request**<br>
-    Löscht die Init-Requests (Requests in RSA7).
-- **Allow BW requests deletion**<br>
-  	Erlauben Sie das Löschen der Initialisierungsrequests der Exportdatenquellen im BW. 
+![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
 
-### Registerkarte Hierarchy
-
-Die Registerkarte Hierarchie besteht aus zwei Unterabschnitten:
-- Extraction
-- Natural Representation
-
-![Deltaq-Präferenzen-Hierarchie](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
-
-#### Extraction
+### Extraction
 
 **Language**<br>
-Definiert die Sprache, wenn eine Hierarchie extrahiert wird.
+Geben Sie die Sprache der Hierarchie ein, z. B. 'E' oder 'D'.
 
 **Hierarchy Name**<br>
-Definiert den Hierarchienamen.
+Geben Sie den Namen der Hierarchie ein.
 
 **Hierarchy Class**<br>
-Legt die Hierarchieklasse fest.
+Geben Sie die Klasse der Hierarchie ein.
 
-**Representation**<br>
-- **ParentChild**: Die Hierarchie hat das SAP-Parent-Child-Format.
-![Deltaq-Hierarchies-Parent-Child](/img/content/Deltaq-Hierarchies-Parent-Child.png){:class="img-responsive"}
-- **Natural**: Aktivierung des **Natural Representation** Abschnitts. Die Parent-Child-Hierarchie wird dann in eine reguläre Hierarchie umgewandelt.
+**Representation:** 
+- *ParentChild*: Die Hierarchie wird im SAP-Parent-Child-Format repräsentiert. Beispiel:<br>
+![Hierarchies-Parent-Child](/img/content/extractors.bwhier/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
+- *Natural*: Die SAP Parent-Child-Hierarchie wird in eine reguläre Hierarchie transformiert. Beispiel:<br>
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
+- *ParentChildWithNodeNames*: Die Hierarchie ist in einem reduzierten Parent-Child-Format repräsentiert, das nur den Knoten und den Vaterknoten beinhaltet. Beispiel:<br>
+![Hierarchy-Parent-Child-With-Node-Names](/img/content/extractors.bwhier/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
-#### Natural Representation
+### Natural Representation
 
-**Level Count**
-Legt die maximale Anzahl der Ebenen fest, wenn die natürliche Darstellung ausgewählt ist. Im folgenden Screenshot sehen Sie die im vorherigen Screenshot gezeigte Hierarchie mit fünf Ebenen in der Darstellung *Natural*.
+{: .box-note}
+**Hinweis:** Der Unterabschnitt *Natural Settings* ist nur dann aktiv, wenn das Feld **Representation** den Wert *Natural* hat.
 
-![Deltaq-Hierarchies-Parent-Child-Natural](/img/content/Deltaq-Hierarchies-Parent-Child-Natural.png){:class="img-responsive"}
-
-**Fill empty levels** <br>
-Wenn die Darstellung *Natural* ausgewählt ist, wird das unterste Element der Hierarchie bis zur letzten Ebene kopiert. Im folgenden Screenshot sehen Sie die Hierarchie von oben mit aktivierter Option *Repeat Leaves*.
-
-![Deltaq-Hierarchies-Parent-Child-Repeat](/img/content/Deltaq-Hierarchies-Parent-Child-Repeat.png){:class="img-responsive"}
-
-**Description texts for levels**<br>
-Bedeutet, dass die Ausgabe für jedes Feld *LevelN* ein Feld *LevelTextN* hat, das den Text basierend auf den System-Spracheinstellungen enthält.
+**Level Count** <br>
+Definiert die maximale Anzahl von Ebenen. 
+Das folgende Beispiel demonstriert die zuvor gezeigte Hierarchie mit fünf Ebenen und in der Darstellung gesetzt auf *Natural*.
+![Hierarchy-Parent-Child-Natural](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
 
 **Leaves only**<br>
-Liefert nur die Leaves als Datensätze. 
+Liefert nur Leaves als Datensätze.<br>
+![Hierarchy-Leaves-Only](/img/content/extractors.bwhier/Hierarchy-leaves-only.png){:class="img-responsive"}
+
+**Fill empty levels**  <br>
+Kopiert das unterste Element der Hierarchie bis zur letzten Ebene.
+Das folgende Beispiel demonstriert die zuvor gezeigte Hierarchie mit der aktivierten Option *Repeat Leaves*.<br>
+![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
+
+**Description texts for levels**<br>
+Setzt das Output-Feld *LevelTextN* für jedes Feld *LevelN* , welches den Text beinhaltet, der auf den Einstellungen der Systemsprache basiert.<br>
+![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
+
+
+## Maintenance
+
+Klicken Sie auf **[Maintenance]**, um eine Liste der Init-Requests der DataSource zu öffnen (SAP-Transaktion RSA7).
+
+![Hierarchy-Description-Texts](/img/content/DeltaQ_Request_Maintenance.png){:class="img-responsive"}
+
+Klicken Sie auf ![bin](/img/content/icons/trashbin.png), um eine Init-Anfrage zu löschen. Dies ist bei der Neuinitialisierung eines Delta-Prozesses erforderlich.
+
+
