@@ -1,18 +1,19 @@
 ---
-ref: xi-q-delta-05
+ref: xi-q-delta
 layout: page
 title: Delta
-description: Delta
+description: Customizing Check
 product: xtract-is
 parent: xtract-is-deltaq
 permalink: /:collection/:path
-weight: 5
+weight: 4
 lang: de_DE
-old_url: /Xtract-IS-DE/default.aspx?pageid=delta
+progressstate: 5
 ---
-Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](./update-modus).
 
-### Step 1: Delta Initialisierung [C]
+Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update-modus).
+
+### Schritt 1: Delta Initialisierung [C]
 In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.
 
 Stellen Sie den **Update-Modus** auf *Delta-Initialisierung* und führen Sie ihn aus.<br>
@@ -35,11 +36,11 @@ Führen Sie Ihr Paket zunächst einmal aus und setzen Sie dann den **Update-Modu
 Es werden nur die Änderungen extrahiert, die seit der letzten Übertragung vorgenommen wurden.
 
 {: .box-note } 
-**Hinweis:** Um Fehler, Abbrüche und Lücken zu vermeiden, führen Sie die nächste Extraktion im Update-Modus *Repeat* (R) durch.
+**Hinweis:** Um Fehler, Abbrüche und Lücken zu vermeiden, führen Sie die nächste Extraktion im Update-Modus *Wiederholen* durch.
 
-### Optional: Repeat [R]
+### Optional: Wiederholen [R]
 Wiederholt den letzten Deltalauf und aktualisiert alle Daten, die seit dem letzten Lauf aufgelaufen sind. Wenn der letzte Lauf nicht erfolgreich war, werden alle Daten des letzten Delta-Updates gelöscht, bevor ein neuer Lauf gestartet wird.<br>
-Ein **Repeat** kann mehrmals gestartet werden.
+Ein **Wiederholungslauf** kann mehrmals gestartet werden.
 
 Viele Datenquellen liefern das Feld ROCANCEL. Dieses Feld legt fest, ob die Datensätze in Abhängigkeit von der Delta-Verfahrensart der Datenquelle ergänzt oder überschrieben werden. Es definiert, wie ein Datensatz im Delta-Verfahren aktualisiert wird.<br>
 In einem ABR-Modus: <br>
@@ -60,7 +61,7 @@ Wenn im Moment keine neuen Daten zu übertragen sind, wird eine entsprechende Pr
 
 
 *****
-#### Weiterführende Links
+#### Freigegebene Links
 - [Delta Transfer to BI](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-US/37/4f3ca8b672a34082ab3085d3c22145/content.htm?no_cache=true)
 - [Delta Process](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.23/en-US/4f18f6aa3fca410ae10000000a42189d.html)
 - [Delta Verfahren](http://help.sap.com/saphelp_nw73/helpdata/de/4f/18f6aa3fca410ae10000000a42189d/content.htm).

@@ -10,5 +10,6 @@ weight: 8
 lang: en_GB
 progressstate: 3
 ---
+
 {% include _content/en/datasource-deltaq/extraction-settings.md %}
 

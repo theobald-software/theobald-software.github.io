@@ -24,7 +24,7 @@ Setzt das *NodeText* auf den Knotentext basierend auf den Einstellungen der Syst
 ### Natural Settings - Darstellungseinstellungen
 
 {: .box-note}
-**Hinweis:** Der Unterabschnitt **Natural Settings** ist nur dann aktiv, wenn das Feld **Representation** den Wert *Natural* hat.
+**Hinweis:** Der Unterabschnitt *Natural Settings* ist nur dann aktiv, wenn das Feld **Representation** den Wert *Natural* hat.
 
 **Level Count** <br>
 Definiert die maximale Anzahl von Ebenen. 

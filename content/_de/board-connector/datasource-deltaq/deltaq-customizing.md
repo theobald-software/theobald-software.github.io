@@ -1,12 +1,12 @@
 ---
 ref: bc-datasource-deltaq-02
 layout: page
-title: Customizing Check
+title: DeltaQ Customizing
 description: Customizing Check
 product: board-connector
 parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: de_DE
 old_url: /BOARD-Connector-DE/default.aspx?pageid=customizing-check
 ---

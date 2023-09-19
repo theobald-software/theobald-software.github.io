@@ -1,13 +1,13 @@
 ---
-ref: xi-q-delta-02
+ref: bc-datasource-deltaq-02
 layout: page
-title: Customizing Check
+title: DeltaQ Customizing
 description: Customizing Check
-product: xtract-is
-parent: deltaq
+product: board-connector
+parent: datasource-deltaq
 permalink: /:collection/:path
-weight: 2
+weight: 4
 lang: en_GB
-old_url: /Xtract-IS-EN/default.aspx?pageid=customizing-check
 ---
+
 {% include _content/en/datasource-deltaq/customizing-check.md %}

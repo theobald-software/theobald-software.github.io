@@ -30,8 +30,10 @@ For more information, refer to the knowledge base article [SAP User Rights: Delt
 ### How to use the Xtract DeltaQ component
 {% include _content/en/xis-specific/define-extraction.md %}
 
-More information on working with the Xtract DeltaQ component is provided in the following sections.
+{% include _content/en/datasource-deltaq/misc-deltaq.md %}
 
 ---
+
+More information on working with the Xtract DeltaQ component is provided in the following sections.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

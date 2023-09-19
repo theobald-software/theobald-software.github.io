@@ -10,4 +10,5 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=hierarchies
 ---
+
 {% include _content/en/datasource-deltaq/hierarchies.md %}

@@ -15,7 +15,7 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=data-and-protocol-output
 A DeltaQ source has two outputs:
 
 - **DeltaQDataOutput:**<br>
-The data output correlates with the checkmarked columns including the RequestID.
+The data output correlates with the marked columns including the RequestID.
 - **DeltaQRequestLog:**<br>
 The protocol output has the following columns:
 	- DataSource
@@ -26,6 +26,6 @@ The protocol output has the following columns:
 	- Message
 
 {: .box-tip }
-**Recommendation:** For Delta mechanisms in particular, a detailed protocol is very helpful when troubleshooting.
+**Tip:** For Delta mechanisms in particular, a detailed protocol may be helpful when troubleshooting.
 
 ![DeltaQ-DataOutput-01](/img/content/DeltaQ-DataOutput-01.png){:class="img-responsive"}

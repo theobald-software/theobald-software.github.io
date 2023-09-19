@@ -1,5 +1,5 @@
 ### Look up Data Objects
-1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (1). <br>
+1. Within the main window of the component "Xtract ODP" navigate to **Operational Data Provider** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (1). 
 The window "Operational Data Provider Lookup" opens.
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
 2. In the field **Name** (2) enter a name of an extractor using wildcards (*), if needed.
@@ -25,7 +25,7 @@ The application now returns to the main window of the component.
 1. Optional: Create selections by activating or deactivating fields (7). <br>
 To add [filters](#selections-and-filters) click the **[Edit]** option next to the fields. 
 If your data source is a Hierarchy, see [Select Hierarchy](./odp-extractors#hierarchies) for filter options.
-2. Optional: To create delta extractions, select the corresponding [Update Mode](#update-mode).
+2. Select an [Update Mode](#update-mode), e.g., to create delta extractions.
 3. Click **[Load live preview]** (8) to display a live preview of the data without executing an extraction.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
 4. Before executing an extraction, check the [extraction settings](./odp-settings).

@@ -33,8 +33,10 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-note }
 **Hinweis:** Um die DeltaQ-Komponente nutzen zu können, sind Einstellungen im SAP ERP vorzunehmen, siehe [SAP Customizing](./sap-customizing/customizing-fuer-deltaq).
 
-Weitere Informationen zum Arbeiten mit der DeltaQ Komponente finden Sie in den folgenden Unterabschnitten.
+{% include _content/de/datasource-deltaq/verschiedenes.md %}
 
 ---
+
+Weitere Informationen zum Arbeiten mit der DeltaQ Komponente finden Sie in den folgenden Unterabschnitten.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
