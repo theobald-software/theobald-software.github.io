@@ -58,7 +58,7 @@ Name of InfoObject behind the corresponding node.
 - **NodeName:**
 The node’s (technical) name.
 - **NodeText:** 
-The description text of the node. This column is only created when the [extraction setting](./hierarchies-extraction-settings) **Fetch description texts** is active.
+The description text of the node. This column is only created when the extraction setting **Fetch description texts** is active.
 - **DateFrom:** 
 Date from which the node is valid.
 - **DateTo:**

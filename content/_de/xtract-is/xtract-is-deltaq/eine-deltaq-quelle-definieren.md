@@ -22,9 +22,6 @@ Das folgende Beispiel zeigt den Download von Materialstammdaten aus der DataSour
 
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
-{: .box-note }
-**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
-
 ### Eine DeltaQ-Extraktion definieren
 Nachdem Sie einen Extraktor gefunden haben, führen Sie die folgenden Schritte aus:
 

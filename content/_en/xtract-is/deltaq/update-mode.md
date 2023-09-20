@@ -30,6 +30,6 @@ In the main window "Extract SAP DataSources and Extractors" select the **Update-
 | S | Delta Init (without data)   | Initiliazies the delta process without extracting any data from the SAP Datasource. The result of the **Delta inits** is a so called **[Request Maintenance]** on the SAP side. When re-initilizeing a delta process, first delete any exsiting Inits by clicking **[Request Maintenance]** in the DeltaQ extraction settings.|
 | I | Non-cumulative Init    |  Relevant for DataSources such as *2LIS_03_BX*.  |
 | A | Activate (don't extract)  | Activates a DataSource similar to clicking **[Activate]**, but is more practical when activating all DataSources in batch. **[Activate]** is an alternative to **[Automatic Synchronization]**.  No data is extracted. |
-| V | **[Xtract IS only]** SSIS Variable; Deprecated, see [Variables](../bwcube/variables) |  If **V** is selected, a variable name needs to be entered in the [DeltaQ settings](https://help.theobald-software.com/en/xtract-is/deltaq/settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
+| V | **[Xtract IS only]** SSIS Variable; Deprecated, see [Variables](../bw-cube/variables) |  If **V** is selected, a variable name needs to be entered in the [DeltaQ settings](https://help.theobald-software.com/en/xtract-is/deltaq/settings). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
 
 

@@ -46,7 +46,7 @@ Set **Update Mode** to *Delta Initialization* and run the extraction.<br>
 The initialization selections are copied to load the delta records. You can now use *Delta Update*.
 
 {: .box-note } 
-**Note:** When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](./extraction-Settings).
+**Note:** When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).
 
 #### Alternative Step 1: Delta Init (without data) [S]
 This mode is similar to *Delta Initialisation*, but no data is extracted from the SAP DataSource.
@@ -55,7 +55,7 @@ Set **Update Mode** to *Delta Init (without data)* and run the extraction.<br>
 You can now use *Delta Update*.
 
 {: .box-note } 
-**Note:** When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](./extraction-Settings).
+**Note:** When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).
 
 #### Step 2: Delta Update [D]
 *Delta Update* only extracts data added or changed on the SAP system since the last delta request.

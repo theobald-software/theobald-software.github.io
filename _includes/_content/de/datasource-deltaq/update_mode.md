@@ -42,7 +42,7 @@ Stellen Sie den **Update-Modus** auf *Delta-Initialisierung* und führen Sie ihn
 Die Initialisierungsselektionen werden kopiert, um die Deltasätze zu laden. Sie können das Delta-Update verwenden.
 
 {: .box-note } 
-**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den DeltaQ-Extraktionseinstellungen auf **[Maintenance]** klicken.
+**Hinweis:** Wenn Sie einen Delta-Prozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits (Initialisierungsanforderungen), indem Sie in den [Extraktionseinstellungen](./extraktionseinstellungen) auf **[Maintenance]** klicken.
 
 #### Alternativer Schritt 1: Delta Init (without data) [S]
 Delta Init (without data) ähnelt einer **Delta-Initialisierung**, es werden jedoch keine Daten aus der SAP-Datenquelle extrahiert.

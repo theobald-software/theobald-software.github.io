@@ -20,18 +20,18 @@ Liste der relevanten *Custom Properties*:
 
 |Property|Beschreibung|
 |:----|:----|
-| *GatewayHost* | Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *GatewayService* | Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
+| *GatewayHost* | Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *GatewayService* | Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *HierClass* | Entspricht dem Feld *Hierarchy Class* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings).|
 | *HierName* | Entspricht dem Feld *Hierarchy Name* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings). |
 | *Language* | Entspricht dem Feld *Language* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings).|
 | *NewTimeStampFormatInRequestLog* | Wenn dieser Wert auf *true* (X) gesetzt wird, wird das Format des Zeitstempels im Request Protokoll geändert.|
 | *OLTPSourceName* | Name der zu extrahierenden OLTP-Quelle.|
 | *OLTPSourceType* | Typ der zu extrahierenden OLTP-Quelle.|
-| *ProgramID* | Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
+| *ProgramID* | Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *RequestID* | Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
 | *StringConversion* | Siehe [Settings - String Conversion](./extraktionseinstellungen#string-conversion).|
-| *TargetSystem* | Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
+| *TargetSystem* | Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *Timeout* | Setzen Sie einen Timeout für die Extraktion.|
 | *TransferMethod* | Sie können zwischen Transfer via tRTF (T) oder IDoc (I) wählen.|
 | *TransferStructure* | Transferstruktur der zu extrahierenden Quelle.|
@@ -44,10 +44,10 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 |Property|Beschreibung|
 |:----|:----|
-| *[Xtract DeltaQ].[GatewayHost]*|Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *[Xtract DeltaQ].[GatewayService]*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *[Xtract DeltaQ].[ProgramID]*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *[Xtract DeltaQ].[TargetSystem]*|Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
+| *[Xtract DeltaQ].[GatewayHost]*|Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *[Xtract DeltaQ].[GatewayService]*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *[Xtract DeltaQ].[ProgramID]*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *[Xtract DeltaQ].[TargetSystem]*|Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *[Xtract DeltaQ].[RequestID]*|Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
 | *[Xtract DeltaQ].[UpdateType]*|Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.  |
 
@@ -60,10 +60,10 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 
 |Feldname|Beschreibung|
 |:----|:----|
-| *Log. Destination*| Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *Gateway Host*| Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *Gateway Service*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
-| *Program ID*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./customizing-check).|
+| *Log. Destination*| Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *Gateway Host*| Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *Gateway Service*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
+| *Program ID*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *Update Mode Variable*| Verwende dieses Feld in Kombination mit dem Update Mode 'V'.|
 | *RequestID*|Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
 | *Edit*| Geben Sie eine SSIS-Variable als Auswahlkriterium ein.|
@@ -73,5 +73,5 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 #### Weiterführende Links
 - [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
 - [DeltaQ Datasource Parameters](./datasource-parameter) 
-- [Customizing Check](./customizing-check) 
+- [Customizing Check](./deltaq-customizing) 
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components)

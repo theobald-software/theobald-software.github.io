@@ -21,8 +21,6 @@ The following example shows the download of material master data from the DataSo
 
 The application now returns to the main window of the component.
 
-{: .box-note }
-**Note:** To find DataSources, they have to be activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
 
 ### Defining a DeltaQ Extraction
 
