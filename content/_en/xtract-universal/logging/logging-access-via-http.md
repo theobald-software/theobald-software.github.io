@@ -8,8 +8,7 @@ parent: logging
 permalink: /:collection/:path
 weight: 3
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=logging-access-via-http
-progressstate: 3
+progressstate: 5
 ---
 
 The Xtract Universal server allows accessing meta data and logging information through web calls. 

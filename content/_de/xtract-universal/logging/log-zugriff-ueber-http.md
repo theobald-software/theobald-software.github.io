@@ -8,7 +8,7 @@ parent: logging
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
-progressstate: 3
+progressstate: 5
 ---
 
 Der Xtract Universal Server bietet Zugriff auf verschiedene Metadaten- und Logging-Informationen via Web-Aufrufe. 
@@ -31,18 +31,17 @@ Achten Sie darauf, das korrekte Protokoll zu verwenden:.
 **Hinweis:** Achten Sie auf die korrekten Standardports, siehe [Server Ports](../server/ports). 
 
 Folgende Aktionen können über Web-Aufrufe ausgeführt werden:
-- [Alle Server-Logs abrufen](#alle-server-logs-abrufen)
-- [Server-Logs zu einem bestimmten Zeitstempel abrufen](#server-logs-zu-einem-bestimmten-zeitstempel-abrufen)
-- [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen)
-- [Informationen zu Ausführungen einer bestimmten Extraktion abrufen](#informationen-zu-ausführungen-einer-bestimmten-extraktion-abrufen)
-- [Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen](#eine-bestimmte-extraktion-zu-einem-bestimmten-zeitstempel-abrufen)
-- [Den Status einer Extraktion abrufen](#den-status-einer-extraktion-abrufen)
+- [Abfrage aller Server-Logs](#abfrage-aller-server-logs)
+- [Abfrage der Server-Logs zu einem bestimmten Zeitstempel](#abfrage-der- server-logs-zu-einem-bestimmten-zeitstempel)
+- [Abfrage einer Liste aller definierten Extraktionen](#abfrage-einer-liste-aller-definierten-extraktionen)
+- [Abfrage der Extraktionsläufe einer bestimmten Extraktion](#abfrage-der-extraktionsläufe-einer-bestimmten-extraktion)
+- [Abfrage einer bestimmten Extraktion zu einem bestimmten Zeitstempel](#abfrage-einer-bestimmten-extraktion-zu-einem-bestimmten-zeitstempel)
+- [Abfrage des Extraktionsstatus](#abfrage-des-extraktionsstatus)
 - Metadaten von Extraktionen abrufen, siehe [Metadaten-Zugriff über HTTP-JSON](../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json)
 - Extraktionen ausführen, siehe [Extraktionen Ausführen und Einplanen - Aufruf via Webservice](../extraktionen-ausfuehren-und-einplanen/call-via-webservice)
 
 
-
-### Alle Server-Logs Abrufen
+### Abfrage aller Server-Logs
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
@@ -68,7 +67,7 @@ Timestamp
 </pre></div></td></tr>
 </table>
 
-### Server-Logs zu einem bestimmten Zeitstempel abrufen
+### Abfrage der Server-Logs zu einem bestimmten Zeitstempel 
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
@@ -108,7 +107,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 </pre></div></td></tr></tbody>
 </table>
 
-### Eine Liste aller definierten Extraktionen abrufen
+### Abfrage einer Liste aller definierten Extraktionen
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
@@ -163,12 +162,25 @@ Der Web-Aufruf gibt folgende Informationen zurück:
 </pre></div></td></tr>
 </table>
 
-### Informationen zu Ausführungen einer bestimmten Extraktion abrufen
+### Abfrage der Extraktionsläufe einer bestimmten Extraktion
 
-<!---
-Bitte übersetzen - wenn dir ein besserer Titel einfällt, bitt oben in der Auflistung der Überschriften mit anpassen 
-und in dem Tipp unter ### Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen :D
--->
+| URL       | Beschreibung  | 
+|-----------|--------------|
+| `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]` | Gibt Informationen und Zeitstempel der Extraktionsläufe der angegebenen Extraktion zurück.|
+
+#### Antwort
+
+Der Webaufruf gibt Zeitstempel im Format `[yyyy-MM-dd_HH:mm:ss.SSS]` zurück.<br>
+Verwenden Sie die Zeitstempel, um den Inhalt der Extraktionslogs abzufragen, siehe [Abfrage einer bestimmten Extraktion zu einem bestimmten Zeitstempel](#abfrage-einer-bestimmten-extraktion-zu-einem-bestimmten-zeitstempel).
+
+Der Webaufruf gibt die folgenden Informationen zurück:
+
+- **Timestamp**: Zeitstempel der Extraktion.
+- **State**: gibt eine Zahl zwischen 2 und 4 für eine Serverextraktion oder die Zahl 5 für ein Serverprotokoll zurück, siehe Tabelle unten.
+- **StateDescr**: Beschreibung des Zustands, siehe Tabelle unten.
+- **RequestID**: ID, spezifisch für ODP-Extraktionen.
+- **RowCount** Anzahl der zuletzt extrahierten Datensätze. 
+- **WebLog**: Zeitstempel des entsprechenden Serverprotokolls.
 
 #### Beispiel
 
@@ -182,14 +194,14 @@ Timestamp,State,StateDescr,RequestID,RowCount,WebLog
 </pre></div></td></tr></tbody>
 </table>
 
-### Eine bestimmte Extraktion zu einem bestimmten Zeitstempel abrufen
+### Abfrage einer bestimmten Extraktion zu einem bestimmten Zeitstempel
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
 | `http(s)://[host]:[port]/log?req_type=extraction&name=[extractionname]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Gibt detailierte Logs der definierten Extraktion an dem definierten Zeitstempel zurück. |
 
 {: .box-tip }
-**Tipp:** Rufen Sie alle Zeitstempel einer bestimmten Extraktion ab, siehe [Informationen zu Ausführungen einer bestimmten Extraktion abrufen](#informationen-zu-ausführungen-einer-bestimmten-extraktion-abrufen).<br>
+**Tipp:** Rufen Sie alle Zeitstempel einer bestimmten Extraktion ab, siehe [Abfrage der Extraktionsläufe einer bestimmten Extraktion](#abfrage-der-extraktionsläufe-einer-bestimmten-extraktion).<br>
 Rufen Sie den Zeitstempel ab, an dem die Extraktion das letzte Mal ausgeführt wurde, siehe [Eine Liste aller definierten Extraktionen abrufen](#eine-liste-aller-definierten-extraktionen-abrufen). 
 
 #### Antwort
@@ -197,7 +209,7 @@ Rufen Sie den Zeitstempel ab, an dem die Extraktion das letzte Mal ausgeführt w
 Der Web-Aufruf gibt folgende Informationen zurück:
 
 - **LineCount**: Zeilennummer des Log-Eintrags.
-- **Name**:  Name der Extraction.
+- **Name**:  Name der Extraktion.
 - **Timestamp**: Zeitstempel der Extraktion.
 - **State**: Gibt eine Zahl zwischen 2 und 4 für eine Extraktion zurück.
 - **StateDescr**: Beschreibung des Status', siehe untenstehende Tabelle.
@@ -228,7 +240,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 </pre></div></td></tr>
 </table>
 
-### Den Status einer Extraktion abrufen
+### Abfrage des Extraktionsstatus
 
 | URL       | Beschreibung  | 
 |-----------|--------------|
