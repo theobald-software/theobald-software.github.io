@@ -12,7 +12,7 @@ Follow the steps below to look up a DataSource. For information on how to look u
 The application now returns to the main window of the component.
 
 {: .box-note }
-**Note:** To search and find DataSources, make sure the DataSources are activated in SAP, see [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+**Note:** To search and find DataSources, make sure the DataSources are activated in SAP.
 
 
 ### Defining the DeltaQ Extraction

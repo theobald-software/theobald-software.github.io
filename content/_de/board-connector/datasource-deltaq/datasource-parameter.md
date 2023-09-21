@@ -18,7 +18,7 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=datasource_parameter
 Laufzeitparameter werden unterstützt. 
 Fügen Sie vor dem Wert ein *@*-Symbol hinzu, um ihn als Laufzeitparameter zu kennzeichnen. Beispielsweise geben Sie `@myParameter` anstatt des Wertes ein.
 
-Der markierte Wert kann zur Laufzeit überschrieben werden, siehe [Extraktionsparameter - Custom](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom)
+Der markierte Wert kann zur Laufzeit überschrieben werden, siehe [Extraktionsparameter - Custom](../fortgeschrittene-techniken/extraktionsparameter#custom)
 
 ### Skript Ausdrücke
 

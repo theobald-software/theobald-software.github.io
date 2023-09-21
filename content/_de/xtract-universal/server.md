@@ -82,7 +82,7 @@ Die folgenden HTTP-Anfragen sind möglich:
 - Ausführen einer Extraktion
 - Leeren des Result-Caches einer Extraktion
 - Abbrechen aller Läufe einer Extraktion
-- REST API-Anfragen z.B. [Logs](./logging/log-zugriff-ueber-http), [Metadaten](./fortgeschrittene-techniken/metadaten-zugriff-ueber-http) etc.
+- REST API-Anfragen z.B. [Logs](./logging/log-zugriff-ueber-http), [Metadaten](./fortgeschrittene-techniken/metadata-zugriff-ueber-http-json) etc.
 
 {: .box-tip }
 **Tipp:** Die Theobald.Xu.Web.Listener.exe protokolliert ihre Aktionen in Log-Dateien. 

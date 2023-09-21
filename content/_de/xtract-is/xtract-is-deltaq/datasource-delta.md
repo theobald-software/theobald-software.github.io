@@ -11,7 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update-modus).
+Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](./update-modus).
 
 ### Schritt 1: Delta Initialisierung [C]
 In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.

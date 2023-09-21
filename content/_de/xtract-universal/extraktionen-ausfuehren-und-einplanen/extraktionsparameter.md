@@ -45,7 +45,7 @@ dateTo | Gültigkeitsdatum der zu extrahierenden Hierarchie im Format YYYYMMDD |
 variant | Name einer Variante | verfügbar in [Report](../abap-reports/report-variants-and-selections) & [SAP Query](../sap-queries/variant-selections)
 batchJobName | Name des Batch Jobs| verfügbar in [Report](../abap-reports/report-extraktionseinstellungen)
 gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
-gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#einstellungen)
+gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 programID | Program ID | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 logicalDestination | Logische Destination | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 requestID | Request ID (nur für Repair Request) | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)

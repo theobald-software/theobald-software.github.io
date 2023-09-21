@@ -27,8 +27,8 @@ For more information, see [DeltaQ Customizing](./deltaq-customizing).<br>
 3. Click **Customizing Check** (3) to validate the DeltaQ Customizing on the SAP system.
 Make sure that all check marks are green. For more information, see [DeltaQ Customizing](./deltaq-customizing).<br>
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
-4. Select an [Update Mode](#update-mode), e.g., to initialize delta extractions.
-5. Optional: Click the **[Edit]** option next to an item to add [filters](./datasource-parameters). 
+4. Select an [Update Mode](./update-mode), e.g., to initialize delta extractions.
+5. Optional: Click the **[Edit]** option next to an item to add [filters](./datasource-parameter). 
 6. Optional: Click **[Extraction Settings]** to set the language of the Hierarchy, see [{% if page.product != "xtract-is" %}Extraction {% endif %} Settings](./extraction-settings). 
 7. Click **[Run]** to testrun the extraction and validate your settings.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}

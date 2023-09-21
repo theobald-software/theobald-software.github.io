@@ -51,7 +51,7 @@ batchJobName | Name of the Batch Job| available in [Report](../abap-reports/repo
 gatwewayHost | Gateway Host | available in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 gatewayService | Gateway Service | available in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 programID | Program ID | available in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
-logicalDestination | Logical Destination | available in [DeltaQ](../deltaq-customizing#customizing-check)
+logicalDestination | Logical Destination | available in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 requestID | Request ID (for Repair Request only) | available in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| available in [DeltaQ](../datasource-deltaq/update-mode)
 decimalSeparator | to set a symbol between integer and fractional part | available in CSV destinations

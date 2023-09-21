@@ -43,11 +43,11 @@ representation | The representation / output format of the hierarchy to extract:
 dateTo | The valid-to-date of the hierarchy to extract in the format YYYYMMDD | available in [Hierarchy](../bw-hierarchies/hierarchy-extraction-define#format-the-output)
 variant | Name of a variant | verfügbar in [Report](../abap-reports/variants-and-selections) & [SAP Query](../sap-queries/variant-selections)
 batchJobName | Name of the Batch Job| verfügbar in [Report](../abap-reports/report-extraction-settings)
-gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
-gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
-programID | Program ID | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
-logicalDestination | Logical Destination | verfügbar in [DeltaQ](../datasource-deltaq/customizing-check#settings)
-requestID | Request ID (for Repair Request only) | verfügbar in [DeltaQ](../datasource-deltaq/extraction-settings#base-tab)
+gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
+gatewayService | Gateway Service | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
+programID | Program ID | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
+logicalDestination | Logical Destination | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
+requestID | Request ID (for Repair Request only) | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| verfügbar in [DeltaQ](../datasource-deltaq/update-mode)
 decimalSeparator | to set a symbol between integer and fractional part | available in CSV destinations
 columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV destinations
