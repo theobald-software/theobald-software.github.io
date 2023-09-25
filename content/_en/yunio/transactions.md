@@ -58,16 +58,16 @@ Ouput parameters are now accessible in the response body of the service.<br>
 
 #### Skip Popups
 When recording a transaction workflow, dynamic popup screens can be displayed by SAP. The popup screens can vary depending on input values.<br>
-The input parameter `SkipPopups` defines how to handle unexpected popup messages that show up at runtime.<br>
+The input parameter `skipPopups` defines how to handle unexpected popup messages that show up at runtime.<br>
 
 
-When `SkipPopups` is set to *true*, the following actions apply:
+When `skipPopups` is set to *true*, the following actions apply:
 
 | Popup in Recording | Popup during a service run | Action |
 | :------: |:---: | :--- |
 | x | x | The popup is handled like a regular screen. |
 | x |  | The service ignores the recorded screen and continues to the next screen. |
-|  | x | The popup is skipped/confirmed. |
+|  | x | The popup is confirmed (Return/Enter key). |
 
 
 ****
