@@ -28,7 +28,7 @@ Für mehr Informationen, siehe [DeltaQ Customizing](./deltaq-customizing).<br>
 Stellen Sie sicher, dass alle Häkchen grün sind. Für mehr Informationen, siehe [DeltaQ Customizing](./deltaq-customizing).<br>
 ![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
 4. Wählen Sie ein [Update Mode](#update-mode) aus, um z.B. Delta-Extraktionen zu initialisieren.
-5. Optional: Klicken Sie auf **[Edit]** Option neben dem Element, um [Filter](./datasource-parameters) hinzuzufügen. 
+5. Optional: Klicken Sie auf **[Edit]** Option neben dem Element, um [Filter](./datasource-parameter) hinzuzufügen. 
 6. Optional: Klicken Sie auf **[Extraction Settings]**, um die Sprache der Hierarchie festzulegen, siehe [{% if page.product != "xtract-is" %}Extraktions {% endif %} einstellungen](./extraktionseinstellungen). 
 7. Klicken Sie auf **[Run]**, um die Extraktion zu testen und Ihre Einstellungen zu validieren.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
