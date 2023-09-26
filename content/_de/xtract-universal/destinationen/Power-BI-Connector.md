@@ -158,40 +158,46 @@ Befolgen Sie die folgenden Schritte, um das On-Premisess Data Gateway mittels Po
 
 
 ### Xtract Universal als Datenquelle hinzufügen
-Das konfigurierte On-Premises Data Gateway wird nachfolgend in die Power BI Service Umgebung eingebunden. Anschließend muss eine DataSource zum Xtract Universal Server eingerichtet werden.
-
-1. Öffnen Sie im Power BI Service **Settings > Manage Gateways**.
-2. Öffnen Sie das *GATEWAY CLUSTERS* Menü über **[...]**.
-3. Erstellen Sie eine Datenquelle über **[ADD DATA SOURCE]** (1).
-![ADD DATA SOURCE](/img/content/xu/add-data-source.png){:class="img-responsive"}
-4. Wählen Sie den Data Source Type *Xtract Universal Extraction* aus. 
-![NEW DATA SOURCE](/img/content/xu/new-data-source.png){:class="img-responsive"}
-5. Tragen Sie die URL des Xtract Universal Servers in der Form `<Protokoll>://<HOST oder IP-Adresse>:<Port>/` ein, z.B. `https://todd.theobald.local:8165/`.
-6. Wählen Sie die Authentication Method, z.B. *Basic*, *Windows* oder *Anonymous*.
-7. Bestätigen Sie die Eingaben mit **[ADD]** (2).
-![Configure DATA SOURCE](/img/content/xu/configure-data-source.png){:class="img-responsive"}
-
-**Data Source Name**<br> Tragen Sie einen beliebigen Namen für die Xtract Universal Power BI Datenquelle ein.
-
-**Data Source Type**<br> Wählen Sie den Eintrag *Xtract Universal Extraction* aus dem Dropdown-Menü. 
 
 {: .box-note }
-**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-on-premisess-data-gateway).
+**Hinweis:** Stellen Sie sicher, dass die [Aktivierung und Verwendung von benutzerdefinierten Connectors in Power BI](https://learn.microsoft.com/de-de/power-bi/connect-data/service-gateway-custom-connectors#enable-and-use-custom-connectors) freigeschaltet ist.
 
-**Xtract Universal Server**<br> Geben Sie die Xract Universal Server URL an, siehe [Web Server](../server/server_einstellungen#web-server).
+Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-on-premisess-data-gateway).   
 
-**Authentication Method**<br> 
-Auswahl einer Authentisierungsmethode, siehe [Single Sign On und SAP-Authentifizierung](#einrichtung-On-Premisess-data-gateway):
+Das konfigurierte On-Premises Data Gateway wird nachfolgend in die Power BI Service Umgebung eingebunden. Anschließend muss eine DataSource zum Xtract Universal Server eingerichtet werden.
+
+1. Im Power BI Service, navigieren Sie zu **Settings > Manage connections and gateways** und klicken Sie auf **[+ New]**. Das Fenster *New Connection* wird geöffnet. 
+![connection-gateway](/img/content/xu/pbi-settings-connections-gateways.png){:class="img-responsive"}
+2. Wählen Sie den Verbindungstyp *On-premises* (Default-Einstellung). Füllen Sie die notwendigen Felder aus:
+![connection-settings](/img/content/xu/pbi-gateways-settings.png){:class="img-responsive"}
+3. Wählen Sie den zuvor angelegten "Data Gateway" aus dem Drop-Down-Menü **Gateway cluster name** aus. 
+![gateway-cluster](/img/content/xu/pbi_gateway-cluster.png){:class="img-responsive"}
+4. Vergeben Sie der Verbindung einen Namen unter **Connection name**.
+5.  Wählen Sie "Xtract Universal Extraction" unter **Connection type** aus. 
+
+{: .box-note }
+**Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-on-premisess-data-gateway).   
+
+6.  Geben Sie die Xract Universal Server URL unter **Server** an, siehe [Web Server](../server/server_einstellungen#web-server).
+7.  Entscheiden Sie sich für die angemessene Authentisierungsmethode unter **Authentication Method**, siehe [Single Sign On und SAP-Authentifizierung](#einrichtung-On-Premisess-data-gateway):<br> 
+Entscheiden Sie sich für eine passende Option: 
 - Basic
 - Windows
 - Anonymous
-
-**Advanced settings**<br> Bei Default-Einstellungen belassen.
+8. Klicken Sie auf **[Create]**, eine Verbindung wird erstellt und ein automatischer Verbindungstest wird durchgeführt.
 
 ### Data Source Status
-Überprüfen Sie den Data Source Status und weiterere Einstellungen, z.B. **Schedules Refresh**.  
-![DATA SOURCE Settings](/img/content/xu/data-source-settings.png){:class="img-responsive"}
+1. Überprüfen Sie den Data Source Status und weitere Einstellungen, z.B. **Schedules Refresh**. 
 
+2. Unter **[Workspace settings]** navigieren Sie zu den Einstellungen vom Dataset **[...]**.
+![workflow](/img/content/xu/pbi_workflow.png){:class="img-responsive"}
+
+3. Klappen Sie den Eintrag **Gateway and cloud connections** auf.
+![gateways cloud connections](/img/content/xu/pbi_gateway-cloud-connections.png){:class="img-responsive"}
+
+4. Konfigurieren die Verbindung des hochgeladenen Power BI Datasets. 
+5. Markieren Sie das definierte Gateway und wählen Sie unter der Option **Extention** den Namen der Verbindung (hier XtractUniversal) aus dem Drop-Down-Menü aus. <br>
+Der Status der Verbindung wird geprüft und im Feld **Status** zurückgemeldet.
 
 ## Single Sign On und SAP-Authentifizierung
 
