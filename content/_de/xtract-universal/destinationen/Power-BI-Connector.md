@@ -179,7 +179,7 @@ Das konfigurierte On-Premises Data Gateway wird nachfolgend in die Power BI Serv
 **Hinweis:** Wenn der Eintrag Xtract Universal nicht in dem Dropdown-Menü verfügbar ist, überprüfen Sie die Konfiguration im Abschnitt [Einrichtung On-Premisess Data Gateway](#einrichtung-on-premisess-data-gateway).   
 
 6.  Geben Sie die Xract Universal Server URL unter **Server** an, siehe [Web Server](../server/server_einstellungen#web-server).
-7.  Entscheiden Sie sich für die angemessene Authentisierungsmethode unter **Authentication Method**, siehe [Single Sign On und SAP-Authentifizierung](#einrichtung-On-Premisess-data-gateway):<br> 
+7.  Entscheiden Sie sich für die angemessene Authentisierungsmethode unter **Authentication Method**, siehe [Single Sign On und SAP-Authentifizierung](#single-sign-on-und-sap-authentifizierung):<br> 
 Entscheiden Sie sich für eine passende Option: 
 - Basic
 - Windows
