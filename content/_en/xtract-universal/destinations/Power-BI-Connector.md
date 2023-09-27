@@ -174,11 +174,7 @@ The configured on-premises data gateway is then integrated into the Power BI ser
 3. Select the previously created "Data Gateway" from the **Gateway cluster name** drop-down menu.
 ![gateway-cluster](/img/content/xu/pbi_gateway-cluster.png){:class="img-responsive"}
 4. Assign a name to the connection under **Connection name**.
-5. Select "Xtract Universal Extraction" under **Connection type**.
-
-{: .box-note }
-**Note:** If the Xtract Universal entry is not available in the drop-down menu, check the configuration in the [Setup On-Premisess Data Gateway](#setup-on-premisess-data-gateway) section.   
-
+5. Select "Xtract Universal Extraction" under **Connection type**. If the Xtract Universal entry is not available in the drop-down menu, check the configuration in the [Setup On-Premisess Data Gateway](#setup-on-premisess-data-gateway) section.   
 6.  Specify the Xract Universal Server URL under **Server**, see [Web Server](../server/server-settings#web-server).
 7.  Decide on the appropriate authentication method under **Authentication Method**, see [Single Sign On and SAP Authentication](#single-sign-on-and-sap-authentication):<br> 
 Decide on a suitable option:
