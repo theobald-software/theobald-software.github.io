@@ -81,7 +81,7 @@ Calling the metadata of extraction *BSEG* using the URL ```http://localhost:8065
 
 #### Data Types
 
-Mapping the types of the deprecated [API metadata method](./metadata-access-via-http#metadata-of-an-extraction):
+Mapping the types of the deprecated API metadata method:
 
 | Old Type (ABAP datatype)             | Type              |  Details  |
 |--------------------------------------|---------------------|-----------|

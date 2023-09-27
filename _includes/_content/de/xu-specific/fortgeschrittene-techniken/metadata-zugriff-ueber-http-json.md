@@ -81,7 +81,7 @@ Falls *Date Conversion* inaktiv ist, wird der Datentyp zu *StringLengthMax*, bzw
 
 #### Datentypen
 
-Mapping von Datentypen der veralteten [API Metadaten-Methode](./metadata-zugriff-ueber-http-json#ergebnisspalten-einer-extraktion):
+Mapping von Datentypen der veralteten API Metadaten-Methode:
 
 | Alter Typ (ABAP Datentyp)             | Typ              |  Details  |
 |--------------------------------------|---------------------|-----------|
