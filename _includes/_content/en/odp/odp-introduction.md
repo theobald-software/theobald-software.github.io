@@ -52,3 +52,6 @@ Implement the following SAP notes to use ODP:
 {: .box-note }
 **Note:** The ODP API 1.0 has limitations compared to ODP API 2.0, e.g., ODP API 1.0 does not support the extraction of Hierarchy DataSources. 
 For more information, see [SAP Wiki: Limitation of ODP API 1.0](https://wiki.scn.sap.com/wiki/display/BI/Limitation+of+ODP+API+1.0). 
+
+{: .box-tip }
+**Recommendation:** Select and run the ODP source in SAP in the Report RODPS_REPL_TEST.
