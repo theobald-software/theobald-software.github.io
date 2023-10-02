@@ -52,7 +52,6 @@ Prozess während der Extraktion:
 Dieser Prozess (gzip + PUT command) wiederholt sich solange, bis die Extraktion abgeschlossen ist.<br>
 Das lokale Verzeichnis und der Staging-Bereich werden im Verlauf der Extraktion geleert, d.h., die erzeugten csv-Dateien werden wieder gelöscht.
 
-
 **Account Name**<br>
 Geben Sie den Kontonamen ein.
 Der Kontoname kann aus der Verbindungs-URL abgeleitet werden.<br>
@@ -64,6 +63,10 @@ Geben Sie den Namen der Datenbank ein.
 
 **Schema**<br>
 Geben Sie das Schema der Datenbank ein.
+
+**Role**<br>
+Geben Sie eine Benutzerrolle ein. 
+Wenn keine Benutzerrolle angegeben ist, wird die Standard-Benutzerrolle für die Verbindung zu Snowflake verwendet.
 
 #### Acount Identifier
 

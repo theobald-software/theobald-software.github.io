@@ -62,6 +62,9 @@ Enter the name of the Snowflake database.
 **Schema**<br>
 Enter the schema of the Snowflake database.
 
+**Role**<br>
+Enter a Snowflake user role. If no user role is entered, the default user role is used for the connection.
+
 
 #### Acount Identifier
 
