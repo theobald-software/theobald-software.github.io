@@ -92,7 +92,7 @@ It is possible to use scalar parameters (single row / value) or list parameters 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Additional Explanations
+          <Text><![CDATA[Additional Explanations
 
 Mapping:
 The mapping of the incoming data to the Xtract for Alteryx runtime parameters is done by comparing the column names. The input column for a runtime parameter needs to have the same name as the runtime parameter.
@@ -108,8 +108,7 @@ Scalar parameters are available as String, Number or Flag parameters and only wo
 Date values:
 Date values should be formatted in the SAP date style "yyyymmdd" in order to be used as runtime parameter filters for SAP date fields.
 
-BW Queries:
-Runtime parameters can be applied as filters in two ways: in a query variable or as a dimension filter. See the provided examples for how that can be achieved.</Text>
+]]></Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -196,7 +195,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Connection>S4H</Connection>
+              <Connection>S4I</Connection>
               <Definition>{
     "functionName": "RFC_READ_TABLE",
     "runInBackgroundJob": false,
@@ -4685,7 +4684,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
         "invalidDateReplacement": null
     }
 }</DestinationSettings>
-              <ExtractorsVersion>1.47.0.2</ExtractorsVersion>
+              <ExtractorsVersion>1.48.1.1</ExtractorsVersion>
               <RuntimeParameters />
               <WhereClause>
               </WhereClause>
@@ -4753,6 +4752,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
           </GuiSettings>
           <Properties>
             <Configuration>
+              <Connection>S4I</Connection>
               <Definition>{
     "functionName": "RFC_READ_TABLE",
     "runInBackgroundJob": false,
@@ -9241,7 +9241,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
         "invalidDateReplacement": null
     }
 }</DestinationSettings>
-              <ExtractorsVersion>1.48.0.0</ExtractorsVersion>
+              <ExtractorsVersion>1.48.1.1</ExtractorsVersion>
               <RuntimeParameters>
                 <PARAM>
                 </PARAM>
@@ -9356,7 +9356,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Connection>S4H</Connection>
+              <Connection>S4I</Connection>
               <Definition>{
     "functionName": "RFC_READ_TABLE",
     "runInBackgroundJob": false,
@@ -13864,7 +13864,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
         "invalidDateReplacement": null
     }
 }</DestinationSettings>
-              <ExtractorsVersion>1.47.0.2</ExtractorsVersion>
+              <ExtractorsVersion>1.48.1.1</ExtractorsVersion>
               <RuntimeParameters />
               <WhereClause>
               </WhereClause>
@@ -14017,7 +14017,7 @@ Runtime parameters can be applied as filters in two ways: in a query variable or
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Dynamic Parameter Test</Name>
+      <Name>Table-Dynamic-Parameters</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
