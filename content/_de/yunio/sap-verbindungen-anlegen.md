@@ -69,11 +69,11 @@ Nähere Informationen zu SAP-Routern finden Sie in der [SAP Online-Help: SAP-Rou
 
 ### Authentifizierung
 
-<!----- Die folgenden Authentifizierungsmethoden werden unterstützt:
+Die folgenden Authentifizierungsmethoden werden unterstützt:
 - Plain - SAP-Benutzername und Passwort (System- oder Dialogbenutzer).
-- HTTP Basic Authentication - Basisauthentifizierung bei Ausführung der Extraktion.--->
-<!---- - SNC (Secure Network Communication) (2) mit einem Benutzernamen und einem Passwort--->
-<!----- [SNC with SSO](../fortgeschrittene-techniken/sap-single-sign-on) (Single Sign On) --->
+- Secure Network Communication (SNC) - Benutzername und Passwort über Basisauthentifizierung.
+
+#### Plain
 
 **User**<br>
 SAP-Benutzername.
@@ -88,8 +88,16 @@ Gültige SAP-Zugangsdaten können beim Aufruf von yunIO-Services via Basic Authe
 {: .box-note }
 **Hinweis:** Um *Request credentials from callers when running services* zu verwenden, muss [*Anonymous Access*](./server-settings#anonymous-access) aktiviert sein.
 
+#### SNC
 
-### Angelegte SAP-Verbindung überprüfen
+Secure Network Connection (SNC) ermöglicht Authentifizierung und Transportverschlüsselung zwischen SAP-Systemen und Drittanbieter-Tools wie yunIO.
+
+1. Überprüfen Sie den SAP-Parameter *snc/gssapi_lib*, um festzustellen, welche Bibliothek in Ihrem SAP-System für die Verschlüsselung verwendet wird.
+Ihre SAP-Basis muss dieselbe Bibliothek auf dem Anwendungsserver und auf der Maschine, auf der yunIO ausgeführt wird, importieren und konfigurieren.
+2. Geben Sie den vollständigen Pfad zum Bibliotheksspeicherort im Feld **SNC library path** ein, z. B. „C:\Programme\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll“.
+3. Geben Sie den für den SAP-Anwendungsserver konfigurierten SAP-Partnernamen in das Feld **SNC partner name** ein, z. B. „p:SAPserviceERP/Alice@THEOBALD.LOCAL“.
+
+### Angelegte SAP-Verbindung testen
 
 Klicken Sie auf **[Test Connection]**, um die Verbindungsparameter zu prüfen. <br>
 Je nachdem ob der Verbindungsaufbau zu SAP erfolgreich war oder nicht, öffnet sich in der unteren rechten Ecke des Fensters eine entsprechende Statusmeldung.
