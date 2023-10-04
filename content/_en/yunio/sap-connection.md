@@ -85,7 +85,7 @@ Any valid SAP credentials can be passed via Basic Authentication to allow access
 
 #### SNC
 
-Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and third-party tools like yunIO.
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO.
 
 1. Check the SAP parameter *snc/gssapi_lib* to determine, which library is used for encryption in your SAP system. 
 Your SAP Basis has to import and configure the same library on the application server and on the machine that runs yunIO.
