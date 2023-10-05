@@ -174,7 +174,7 @@ Text color: `--table_gray`
 ### Checkboxes
 
 The following rules apply to checkboxes and radios:
-- labels are left of the checkbox
+- labels are right of the checkbox
 - labels align to the center of the checkbox
 - the space between checkbox and label is `5px`
 
