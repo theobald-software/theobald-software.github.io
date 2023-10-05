@@ -1,7 +1,7 @@
 ---
 ref: bc-abap-reports-03
 layout: page
-title: Spalten definieren
+title: Spalten und Zeilen definieren
 description: Spalten definieren
 product: board-connector
 parent: abap-reports-ansteuern

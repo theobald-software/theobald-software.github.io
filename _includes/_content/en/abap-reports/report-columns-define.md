@@ -51,10 +51,11 @@ Similar to *skip rows from top*. Enter the number of rows you want to skip in th
 
 
 **Report rows per data row**<br>
-Use this setting for ABAP reports, that return two or more "physical" rows to display a single "semantic" data row. This concatenates the physical rows into a single data row. <br>
+Use this setting for ABAP reports, that return two or more "physical" rows to display a single "semantic" data row. Enter the number of physical rows that represent a single data row. <br>
 Example: Report RIEQUI20 
 
 ![Report_new_rows_per_data_row](/img/content/Report_new_rows_per_data_row.png){:class="img-responsive"}
 
 **Report width**<br>
-Use this setting in combination with **Report rows per data row**. Defines the length of each physical row.
+Use this setting in combination with **Report rows per data row**. **Report width** defines the length of each physical row. <br>
+The maximum width of extracted reports is limited to 1024 characters per row.

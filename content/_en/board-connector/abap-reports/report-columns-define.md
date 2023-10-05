@@ -1,7 +1,7 @@
 ---
 ref: bc-abap-reports-03
 layout: page
-title: Define Columns
+title: Define Columns and Rows
 description: Define a Report Extraction
 product: board-connector
 parent: abap-reports

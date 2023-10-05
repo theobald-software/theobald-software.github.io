@@ -1,7 +1,7 @@
 ---
 ref: xi-report-04
 layout: page
-title: Report-Spalten definieren
+title: Spalten und Zeilen definieren
 description: Report-Spalten definieren
 product: xtract-is
 parent: report

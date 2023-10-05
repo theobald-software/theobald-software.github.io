@@ -1,7 +1,7 @@
 ---
 ref: xi-report-04
 layout: page
-title: Defining Report Columns
+title: Define Columns and Rows
 description: Defining Report Columns
 product: xtract-is
 parent: report

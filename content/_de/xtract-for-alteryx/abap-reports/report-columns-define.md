@@ -1,7 +1,7 @@
 ---
 ref: xfa-abap-reports-03
 layout: page
-title: Spalten definieren
+title: Spalten und Zeilen definieren
 description: Spalten definieren
 product: xtract-for-alteryx
 parent: reports

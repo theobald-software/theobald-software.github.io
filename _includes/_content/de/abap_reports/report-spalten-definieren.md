@@ -59,11 +59,12 @@ Geben Sie die Anzahl der Zeilen an, die Sie zum Ende des Reports überspringen m
 
 **Report rows per data row**<br>
 Verwenden Sie diese Einstellung für ABAP-Reports, die zwei oder mehr "physische" Zeilen als einzelne "semantische" Datenzeile zurückgeben.
-Hiermit werden aus physischen Zeilen einzelne Datenzeilen. <br>
+Geben Sie die Anzahl der physischen Zeilen an, die eine Datenzeilen bilden. <br>
 Beispiel: Report RIEQUI20 
 
 ![Report_new_rows_per_data_row](/img/content/Report_new_rows_per_data_row.png){:class="img-responsive"}
 
 **Report width**<br>
 Verwenden Sie diese Einstellung in Kombination mit **Report rows per data row**. 
-Hier definieren Sie die Länge jeder physischen Zeile.
+**Report width** definiert die Länge jeder physischen Zeile. <br>
+Die maximale Breite von extrahierten Reports beträgt 1024 Zeichen pro Zeile.

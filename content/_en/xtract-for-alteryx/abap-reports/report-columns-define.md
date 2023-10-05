@@ -1,7 +1,7 @@
 ---
 ref: xfa-abap-reports-03
 layout: page
-title: Define Columns
+title: Define Columns and Rows
 description: Define a Report Extraction
 product: xtract-for-alteryx
 parent: reports
