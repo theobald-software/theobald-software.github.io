@@ -9,7 +9,6 @@ childidentifier: bapis-und-funktionsbausteine
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-old_url: /Xtract-Universal-DE/default.aspx?pageid=bapis-und-funktionsbausteine
 ---
 Der folgende Abschnitt beschreibt die Anwendung der Xtract BAPI-Komponente in Xtract for Alteryx.<br> 
 Die Xtract BAPI-Komponente führt via RFC-Berbindung SAP BAPIs oder Funktionsbausteine aus.
@@ -23,11 +22,21 @@ Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: 
 {: .box-tip }
 **Tipp:** Grundlagen zum Produkt sind im Abschnitt [Erste Schritte mit Xtract for Alteryx](./erste-schritte) beschrieben.
 
-### Xtract Cube verwenden
+### Xtract BAPI-Komponente verwenden
 {% include _content/de/alteryx-component-intro.md %}
 
-Weitere Informationen zum Arbeiten mit der Xtract BAPI Komponente finden Sie in den folgenden Unterabschnitten.
+### Eingabe-und Ausgabeanker des Xtract BAPI
 
----
+Das Xtract BAPI verfügt über folgende Ein-und Ausgabemöglichkeiten:
+- Eingabeanker "I" - Eingabe für Laufzeitparameter (1).
+- Eingabeanker "P" - Eingabe für Tabellen (2).
+- Ausgabeanker "1" bis "5" - benutzerdefinierte Ausgabe (3).
+- Ausgabeanker "E" - Ausgabe für Status-und Fehlermeldungen (4).
+
+![bapi-input](/img/content/xfa/bapi-input.png){:class="img-responsive" }
+
+****
+
+Weitere Informationen zum Arbeiten mit der Xtract BAPI Komponente finden Sie in den folgenden Unterabschnitten.
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.de %}
