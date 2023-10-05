@@ -4,7 +4,7 @@ layout: page
 title: Einstellungen
 description: ODP Settings
 product: xtract-universal
-parent: Operational Data Provisioning (ODP)
+parent: odp
 permalink: /:collection/:path
 weight: 3
 lang: de_DE
@@ -16,5 +16,4 @@ Der folgende Abschnitt beschreibt die Einstellungen der ODP-Komponente, die übe
 ![ODP Component](/img/content/odp/odp-settings.png){:class="img-responsive"}
 
 {% include _content/de/odp/odp-settings-subscriptions.md %}
-{% include _content/de/odp/odp-settings-parameters.md %}
 {% include _content/de/odp/odp-settings-advanced.md %}

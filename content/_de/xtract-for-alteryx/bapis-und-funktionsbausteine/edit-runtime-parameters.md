@@ -11,7 +11,12 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=skalare-parameter
 ---
 
+{% include _content/de/edit-runtime-parameters.md %}
+
 {% include _content/de/bapi/edit-runtime-parameters.md %}
+
+### Werte zur Laufzeit übergeben
+
 
 *****
 #### Weiterführende Links

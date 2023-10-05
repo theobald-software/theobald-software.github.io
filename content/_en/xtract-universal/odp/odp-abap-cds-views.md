@@ -4,7 +4,7 @@ layout: page
 title: ABAP CDS Views
 description: ABAP CDS Views
 product: xtract-universal
-parent: Operational Data Provisioning (ODP)
+parent: odp
 permalink: /:collection/:path
 weight: 4
 lang: en_GB

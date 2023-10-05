@@ -4,7 +4,7 @@ layout: page
 title: Functions Overview
 description: ODP Functions Overview
 product: xtract-universal
-parent: Operational Data Provisioning (ODP)
+parent: odp
 permalink: /:collection/:path
 weight: 1
 lang: en_GB

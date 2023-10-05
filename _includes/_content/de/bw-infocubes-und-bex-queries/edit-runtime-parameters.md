@@ -1,4 +1,6 @@
 
+<!---
+
 Verwenden Sie Laufzeitparameter, um Dimensionsfilter und Variablen dynamisch zur Laufzeit anzupassen.<br>
 
 ### Laufzeitparameter erstellen 
@@ -15,6 +17,8 @@ Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werde
 - Number: dieser Datentyp kann nur für numerische SAP-Felder verwendet werden.
 - Flag: dieser Datentyp kann nur für SAP-Felder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
 4. Klicken Sie auf **[OK]** zum Bestätigen.
+-->
+
 
 #### Skalare Parameter Hinzufügen
 {% if page.product == "xtract-for-alteryx" %} ![Add Scalar](/img/content/xfa/xfa_scalar_2.gif){:class="img-responsive" style="border:1px solid black;"}
@@ -30,12 +34,12 @@ Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werde
 
 ### Laufzeitparameter zuweisen
 
-Weisen Sie Variablen oder Dimensionsfiltern Laufzeitparameter zu.
+Führen Sie die folgenden Schritte aus, um Laufzeitparameter Variablen oder Dimensionsfiltern zuzuweisen.
 
 1. Um die erstellten Laufzeitparameter für Variablen zu verwenden, klicken Sie im Hauptfenster der Komponente auf **[Edit Variables]**. Das Fenster "Edit variables..." öffnet sich, siehe [Variablen](./variablen).<br> 
- Um die erstellten Laufzeitparameter direkt für Dimensionsfilter zu verwenden, rechtsklicken Sie im Hauptfenster der Komponente auf eine Dimension und klicken Sie dann auf **Edit Filter**. Das Fenster "Member Filter" öffnet sich, siehe [Einstellen eines Dimensionsfilters](./eine-bw-cube-quelle-definieren#einstellen-eines-dimensionsfilters).
-2. Wenn Sie Parameter angelegt haben, wird neben den Eingabefeldern ein Parametersymbol angezeigt (4). <br>
-Klicken Sie auf die Icons, um zwischen der Eingabe fester Werte und der Eingabe von Parametern zu wechseln.  <br>
+Um die erstellten Laufzeitparameter für Dimensionsfilter zu verwenden, rechtsklicken Sie im Hauptfenster der Komponente auf eine Dimension und klicken Sie dann auf **Edit Filter**. Das Fenster "Member Filter" öffnet sich, siehe [Einstellen eines Dimensionsfilters](./eine-bw-cube-quelle-definieren#einstellen-eines-dimensionsfilters).
+2. Klicken Sie auf das Symbol neben dem Eingabefeld (4), um von statischen Eingabewerten ( ![Assign parameters](/img/content/icons/runtime-parameters-static.png)) zu Laufzeitparametern ( ![Assign parameters](/img/content/icons/runtime-parameters-dynamic.png)) zu wechseln.
+Wenn kein Symbol angezeigt wird, [erstellen Sie mindestens einen Laufzeitparameter](#laufzeitparameter-erstellen).
 ![Selection With Parameters](/img/content/bwcube-parameters.png){:class="img-responsive"}
-3. Wenn Sie auf Parametereingabe umgeschaltet haben, können einen Parameter aus der Drop-Down-Liste (5) auswählen.
+3. Wählen Sie einen Laufzeitparameter aus der Drop-Down-Liste aus (5).
 

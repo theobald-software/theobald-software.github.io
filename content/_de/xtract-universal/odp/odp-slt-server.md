@@ -4,7 +4,7 @@ layout: page
 title: SLT-Server
 description: SLT-Server
 product: xtract-universal
-parent: Operational Data Provisioning (ODP)
+parent: odp
 permalink: /:collection/:path
 weight: 8
 lang: de_DE

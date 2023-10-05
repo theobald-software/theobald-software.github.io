@@ -5,7 +5,7 @@ title: Report
 description: Report - ABAP-Reports ansteuern
 product: xtract-universal
 parent: xtract-universal
-childidentifier: report-abap-reports-ansteuern
+childidentifier: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 80
 lang: de_DE

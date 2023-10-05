@@ -11,5 +11,6 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-extraktionseinstellungen
 ---
 
-
 {% include _content/de/edit-runtime-parameters.md %}
+
+{% include _content/de/alteryx-assign-parameters.md %}

@@ -68,7 +68,8 @@ The following directories correspond to dimensions and often contain additional 
 2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set *Single Values*, define *Value Ranges* or select a *List Parameter*.
 ![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
 3. Select a single value (6) or click **[Add]** (7) to add value ranges.
-4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). To use a dynamic list of values, select a *List Parameter* from the drop-down-menu (8). If needed, delete filters using the **[Remove]** button ( ![dustbin](/img/content/icons/trashbin.png) symbol).
+4. Define values for filtering. Dynamic parameters are supported, see [Runtime Parameters](./edit-runtime-parameters). <br>
+To use a dynamic list of values, select a *List Parameter* from the drop-down-menu (8). If needed, delete filters using the ![dustbin](/img/content/icons/trashbin.png) button.
 5. Click **[OK]** to confirm. The "Member Filter" window closes.
 
 When filters are applied, a filter symbol appears in the metadata structure.

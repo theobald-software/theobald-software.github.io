@@ -4,7 +4,7 @@ layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
 product: board-connector
-parent: bw-infocube-und-bex-queries
+parent: bw-infocubes-und-bex-queries
 permalink: /:collection/:path
 weight: 4
 lang: de_DE

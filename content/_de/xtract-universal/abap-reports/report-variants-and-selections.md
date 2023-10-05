@@ -4,7 +4,7 @@ layout: page
 title: Varianten und Selektionen
 description: Varianten und Selektionen
 product: xtract-universal
-parent: report-abap-reports-ansteuern
+parent: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 2
 lang: de_DE

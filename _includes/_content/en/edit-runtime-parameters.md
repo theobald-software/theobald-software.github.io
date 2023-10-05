@@ -1,32 +1,21 @@
-Use runtime parameters to set selection values at runtime.
 
 ### Create Runtime Parameters 
 
-1. Click **Edit Runtime Parameters** in the main window of the component to create or edit dynamic runtime parameters. 
-The window “Edit Runtime Parameters” opens.
-2. Click **[Add Scalar]** (1) to define parameters which can be used as placeholders for data selections. These placeholders need to be populated with actual values at extraction runtime.
-This allows you to dynamically set filters at runtime.<br> 
-![Add parameters](/img/content/odp/odp-settings-add-parameters.png){:class="img-responsive"}<br> 
-**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice (see the given example: *"p_MATNR"*).
-3. Open the drop-down menu (2) and assign one of the following data types to the parameter. The data types can, but don't need to correlate to SAP data types. 
-- String: This data type can be used for any type of SAP selection field.
-- Integer: This data type can be used for numeric SAP selection fields.
-- Flag: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
+Follow the steps below to create runtime parameters:
+
+1. In the main window of the component click {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}**Edit parameters**{% else %}**Edit Runtime Parameters**{% endif %}. 
+The window “Edit Runtime Parameters” opens.<br>
+{% if page.product == "xtract-for-alteryx" and page.parent == "odp"%}![Edit runtime parameters](/img/content/xfa/odp-edit-runtime-params.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx" and page.parent == "reports"%}![Edit runtime parameters](/img/content/xfa/report-edit-runtime-params.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx" and page.parent == "bw-cube"%}![Edit runtime parameters](/img/content/xfa/cube-edit-runtime-params.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx" and page.parent == "queries"%}![Edit runtime parameters](/img/content/xfa/query-edit-runtime-params.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx" and page.parent == "table"%}![Edit runtime parameters](/img/content/xfa/table-edit-runtime-params.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx" and page.parent == "bapi"%}![Edit runtime parameters](/img/content/xfa/BAPI-Edit-Parameters.png){:class="img-responsive"}{% elsif page.product == "xtract-universal" or page.product == "board-connector"%}{% if page.parent == "odp"%}![Edit runtime parameters](/img/content/xu/odp-edit-runtime-params.png){:class="img-responsive"}{% elsif page.parent == "bw-infocubes-and-bex-queries"%}![Edit runtime parameters](/img/content/xu/cube-edit-runtime-params.png){:class="img-responsive"}{% elsif page.parent == "sap-queries"%}![Edit runtime parameters](/img/content/xu/queries-edit-runtime-params.png){:class="img-responsive"}{% elsif page.parent == "bapis-and-function-modules"%}![Edit runtime parameters](/img/content/xu/bapi-edit-runtime-params.png){:class="img-responsive"}{% elsif page.parent == "abap-reports"%}![Edit runtime parameters](/img/content/xu/report-edit-runtime-params.png){:class="img-responsive"}{% endif %}{% else %}![Edit runtime parameters](/img/content/xis/odp-edit-runtime-params.png){:class="img-responsive"}{% endif %}
+2. Click **[Add Scalar]** or **[Add List]** (1) to create a scalar or list parameter that can be used a placeholder for values.
+List parameters can contain multiple values separated by commas e.g., 1,10 or “1”, “10”.
+The placeholders need to be populated with actual values at runtime. <br>
+**Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.<br>
+![ODP Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}
+3. Click on the drop-down menu (2) and assign one of the following data types to a parameter. The data types can, but don't have to correlate to SAP data types. <br>
+*String*: This data type can be used for any type of SAP selection field.<br>
+*Integer / Number*: This data type can be used for numeric SAP selection fields.<br>
+*Flag*: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.
 4. Click **[OK]** (3) to confirm.
 
-### Assign Runtime Parameters
+The runtime parameters are now available in the component, e.g., for filters and selections.
 
-Assign runtime parameters to selections:
-
-1. Choose an item in the subsection *Selection Screen* and click **[Edit]**. The window "Edit Selections" opens.
-{% if page.parent == "sap-queries" %}![Selection](/img/content/query/query-variant2.png){:class="img-responsive"}{% endif %}
-2. Click **[Add Selection]** (4). Filtering option fields open.
-3. Click the icon next to the input fields **Low** and **High** (5).<br>
-If runtime parameters are available, a parameter icon is displayed next to the input fields.
-Clicking the icon switches between static input values ![static-value](/img/content/icons/runtime-parameters-static.png) and runtime parameters ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).<br>
-![Selection With Parameters](/img/content/edit-selections.png){:class="img-responsive"}<br>
-4. Select a runtime parameter from the dropdown-list.
-5. Click **[OK]** to save your input. The window "Edit Selections" closes.
-6. Click **[Load live preview]** to check the defined runtime parameters. <br>
-If runtime parameters are assigned to selections, you are prompted to populate the runtime parameters with actual values. <br>
-![provide values](/img/content/odp/odp-provide-parameter-values.png){:class="img-responsive"}

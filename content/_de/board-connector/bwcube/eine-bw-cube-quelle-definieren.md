@@ -4,7 +4,7 @@ layout: page
 title: Eine BW Cube-Quelle definieren
 description: Eine BW Cube-Quelle definieren
 product: board-connector
-parent: bw-infocube-und-bex-queries
+parent: bw-infocubes-und-bex-queries
 permalink: /:collection/:path
 weight: 1
 lang: de_DE

@@ -7,7 +7,7 @@ Instead of hard coding values for BEx variables, you can define variables that c
 ### To Edit Variables
 1. Perform a Query [search](./bw-cube-extraction-define#look-up-a-bw-cube-or-query) and select a Query with defined variables (1).
 2. Load a live preview via **[Load Live Preview]** (2). 
-![Edit Variables Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}
+{% if page.product == "xtract-for-alteryx" %}![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}{% else %}![Edit Variables Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}{% endif %}
 3. Click **[Edit Variables]** (3). The window "Edit variables for [name of the query]" opens and the fields with available variables are activated. 
 ![Edit-Variables](/img/content/Edit-Variables.png){:class="img-responsive"}
 4. Define the variables using the drop-down list options in the columns **Sign** and **Option**. <br>

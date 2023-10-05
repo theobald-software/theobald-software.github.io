@@ -1,10 +1,10 @@
 ### Ein Objekt (Data Object) finden
 
-1. Innerhalb des Hauptfensters "Xtract ODP" navigieren Sie zu **Operational Data Provider** und klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (1).
-Das Fenster "Operational Data Provider Lookup" wird geöffnet.
+1. Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png). Das Fenster "Operational Data Provider Lookup" wird geöffnet.<br>
+{% if page.product == "xtract-for-alteryx" %}![Lookup](/img/content/xfa/odp-lookup.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Lookup](/img/content/xis/odp-lookup.png){:class="img-responsive"}{% else %}![Lookup](/img/content/xu/odp-lookup.png){:class="img-responsive"}{% endif %}
+2. Geben Sie den Namen eines Extraktors im Feld **Name** (1) ein. Verwenden Sie Wildcards (*), falls nötig.
 ![Datasource Sales Document Item Data (2LIS_11_VAITM)](/img/content/odp/odp-datasource-2lis-11-vaitm-01.png){:class="img-responsive"}
-2. Geben Sie einen Namen im Feld **Name** (2) ein. Verwendung von Wildcards (*) ist möglich.
-3. Wählen Sie einen *Context* (3). Abhängig vom angeschlossenen SAP-Quellsystem sind verschiedene Provider-Kontexte (Provider-Contexts) verfügbar.
+3. Wählen Sie einen *Context* (2). Abhängig vom angeschlossenen SAP-Quellsystem sind verschiedene Provider-Kontexte (Provider-Contexts) verfügbar.
 	
 	ODP-Kontext | SAP-Quellobjekte |
 	------------ |------------ |
@@ -13,21 +13,21 @@ Das Fenster "Operational Data Provider Lookup" wird geöffnet.
 	HANA Information Views [[HANA](./odp-hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 	DataSources/Extraktoren [[SAPI](./odp-extractors)] | - DataSources und Extraktoren |
 	SAP LT Queue Alias [[SLT~your_queue_alias](./odp-slt-server)] | - SAP Tables<br> - Cluster tables<br> - Pool tables |
-4. Klicken Sie auf **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol) (4) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste(5).
-5. Klicken Sie auf **[OK]** (6), um Ihre Eingabe zu bestätigen.
+4. Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) und wählen Sie den gewünschten Extraktor aus der angezeigten Liste (3).
+5. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.
 
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 {: .box-note }
-**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [SAP Documentation: Activating DataSources in the SAP OLTP System](https://help.sap.com/docs/SLH_advanced_compliance_reporting_service/7a60944343e543a1ab99e9b2904dab09/e5d447257a95416190d29638a64a5dfa.html).
+**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
 
 ### Eine ODP Extraktion Einrichten
 
-1. Optional: Erstellen Sie Selektionen, indem Sie Felder aktivieren oder deaktivieren (7). <br>
+1. Optional: Erstellen Sie Selektionen, indem Sie Felder aktivieren oder deaktivieren (4). <br>
 Um [Filter](#selektion-und-filter) hinzuzufügen, klicken Sie auf die **[Edit]** Option neben den Feldern. 
 Wenn es sich bei Ihrer Datenquelle um eine Hierarchy handelt, siehe [Select Hierarchy](./odp-extractors#select-hierarchy) für Filteroptionen.
-2. Wählen Sie ein [Load-Verfahren](#load-verfahren-update-mode), z.B. um eine Delta-Extraktion durchzuführen.
-3. Klicken Sie auf **[Load live preview]** (8) , um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
+2. Optional: Um eine Delta-Extraktion durchzuführen, wählen Sie das entsprechende [Load-Verfahren](#load-verfahren-update-mode) aus.
+3. Klicken Sie auf **[Load live preview]** (5) , um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
 ![Datasource Preview](/img/content/odp/odp-datasource-2lis-11-vaitm-02-preview.png){:class="img-responsive"}
 4. Bevor Sie eine Extraktion ausführen, prüfen Sie die [Extraktionseinstellungen](./odp-settings).
 

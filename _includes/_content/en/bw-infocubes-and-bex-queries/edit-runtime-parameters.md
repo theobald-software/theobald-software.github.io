@@ -1,3 +1,4 @@
+<!---
 
 Use runtime parameters to change dimension filters and variables dynamically during runtime.<br>
 
@@ -16,6 +17,9 @@ The placeholders need to be populated with actual values at extraction runtime. 
 - Flag: This data type can only be used for SAP fields that require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.<br>
 4. Click **[OK]** to confirm.
 
+-->
+
+
 #### Adding Scalar Parameters
 {% if page.product == "xtract-for-alteryx" %} ![Add Scalar](/img/content/xfa/xfa_scalar_2.gif){:class="img-responsive" style="border:1px solid black;"}
 {% else %} ![Add Scalar](/img/content/bwcube_scalar_param_bw.gif){:class="img-responsive" style="border:1px solid black;"}
@@ -29,13 +33,14 @@ The placeholders need to be populated with actual values at extraction runtime. 
 {% endif %}<br>
 
 
-### Define Runtime Parameters
+### Assign Runtime Parameters
 
-Assign the runtime parameters to variables or dimension filters.
+Follow the steps below to assign the runtime parameters to variables or dimension filters.
 
 1. To use the runtime parameters as variables, click **[Edit Variables]** in the main window of the component. The window "Edit variables..." opens, see [Variables](./variables).<br> 
 To use the runtime parameters as dimension filters, right-click a dimension in the main window of the component, then click **Edit Filters**. The window "Member Filter" opens, see [Setting a Dimension Filter](./bw-cube-extraction-define#setting-a-dimension-filter).<br> 
-2. If there are runtime parameters available, a parameter icon is displayed next to the input fields (4). <br>
-Clicking the icons switches between entering actual input values and entering parameters.<br>
+2. Click the icon next to the input field to switch from static values ( ![Assign parameters](/img/content/icons/runtime-parameters-static.png)) to runtime parameters ( ![Assign parameters](/img/content/icons/runtime-parameters-dynamic.png)).
+If no icon is available, [create a runtime parameter](#create-runtime-parameters).<br>
 ![Selection With Parameters](/img/content/bwcube-parameters.png){:class="img-responsive"}
-3. When the input is set to parameters, you can select a runtime parameter from the drop-down-list (5).
+3. Select a runtime parameter from the dropdown-list (5).
+4. Click **[OK]** to confirm the input.

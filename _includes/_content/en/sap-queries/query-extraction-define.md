@@ -14,13 +14,13 @@ The window “Query Lookup” opens.<br>
 
 The application now returns to the main window of the component.
 
-### Set Up a Query Extraction
+### Define a Query Extraction
 <!--- ### Eine Query Extraktion Einrichten -->
 
 [Look up a query](#look-up-a-query) and follow the steps below to set up a query extraction:
 
 1. If the query has variants, select a variant in the *Variant* section of the main window.
 For more information, see [Variants and Selections: Choose a Variant](./variant-selections#choose-a-variant).<br>
-2. Optional: Edit selections in the *Selection Screen* section of the main window. For more information, see [Variants and Selections: Edit Selections](./variant-selections#edit-selections).<br>
+2. Optional: Edit selections in the *Selection Screen* section of the main window. For more information, see [Variants and Selections: Edit Selections](./variants-and-selections#edit-selections).<br>
 3. Optional: Change the [Extraction Settings](./extraction-settings).
 4. Click **[OK]** to save the extraction.

@@ -10,5 +10,8 @@ weight: 6
 lang: en_GB
 ---
 
+Use runtime parameters for dynamic [Selections](./variants-and-selections#edit-selections).
 
 {% include _content/en/edit-runtime-parameters.md %}
+
+{% include _content/en/alteryx-assign-parameters.md %}

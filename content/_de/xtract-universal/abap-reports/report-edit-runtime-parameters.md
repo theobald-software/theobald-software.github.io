@@ -4,7 +4,7 @@ layout: page
 title: Laufzeitparameter
 description: Laufzeitparameter
 product: xtract-universal
-parent: report-abap-reports-ansteuern
+parent: abap-reports-ansteuern
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
@@ -12,6 +12,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=report-extraktionseinstellunge
 ---
 
 
-Verwenden Sie Laufzeitparameter, um Selektionen dynamisch zur Laufzeit anzupassen.<br>
+Verwenden Sie Laufzeitparameter, um [Selektionen](./report-variants-and-selections#selektionen-bearbeiten) dynamisch zur Laufzeit anzupassen.<br>
+
 
 {% include _content/de/edit-runtime-parameters.md %}
+
+{% include _content/de/alteryx-assign-parameters.md %}
