@@ -14,4 +14,4 @@ Follow the steps below to replace runtime parameters with actual values at runti
 
 {: .box-note }
 **Note:** Parameterization via input anchors is supported as of Xtract for Alteryx version 1.19. 
-When using an older version of Xtract for Alteryx, parameterize Xtract components using batch macros, see [Parameterizing via Batch Macros](../parameterizing).
+When using an older version of Xtract for Alteryx, parameterize Xtract components using batch macros, see [Parameterizing via Batch Macros](https://kb.theobald-software.com/xtract-for-alteryxparameterizing).
