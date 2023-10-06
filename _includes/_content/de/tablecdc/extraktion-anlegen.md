@@ -22,8 +22,8 @@ Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren:
 {% if page.product == "xtract-universal" or page.product == "board-connector" %}![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}{% else %}![Table-CDC-Setup](/img/content/tablecdc/xis-table-cdc-kna1.png){:class="img-responsive"}{% endif %}
 2. Optional: Wenn Sie bei der ersten Ausführung der Extraktion nicht die komplette SAP-Tabelle extrahieren möchten, deaktivieren Sie die Option **[Extract table on first run]**.
 3. In dem Feld **Log table row limit** geben Sie eine maximale Anzahl von Zeilen an, die aufgezeichnet werden. Der Standartwert sind 10000 Zeilen.<br>
-Wenn die maximale Zeilenanzahl erreicht ist, schlägt die Extraktion mit einem Ausnahmefehler fehl.
-Beachten Sie, dass die maximale Zeilenanzahl nicht mehr geändert werden kann, sobald die Log-Tabelle initialisiert ist.
+Wenn die Zeilenanzahl erreicht ist, schlägt die Extraktion mit einem Ausnahmefehler fehl. Die maximale Zeilenanzahl in einer Log-Tabelle beträgt 200000.
+Beachten Sie, dass die Zeilenanzahl nicht mehr geändert werden kann, sobald die Log-Tabelle initialisiert ist. 
 4. Optional: Definieren Sie eine [WHERE-Bedingung](./where-clause), um Tabelleneinträge zu filtern.
 5. Klicken Sie auf **[Load Preview]**, um die ersten 1000 Datensätze der SAP Tabelle anzuzeigen.<br>
 Die Spalte IUUC_OPERAT_FLAG zeigt an, ob die Daten eingefügt (I), aktualisiert (U) oder gelöscht (D) wurden.
