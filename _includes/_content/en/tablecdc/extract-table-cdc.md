@@ -23,7 +23,7 @@ Set up the Table CDC component to extract data:
 ![Table-CDC-Setup](/img/content/tablecdc/table-cdc-kna1.png){:class="img-responsive"}
 2. Optional: If you do not want to extract the whole table when first running the extraction, deactivate **[Extract table on first run]**.
 3. Set a maximum number of rows that can be tracked. The default is 10000 rows.<br>
-If the row limit is reached, the extraction fails with an exception.
+If the row limit is reached, the extraction fails with an exception. The maximum row limit of a log table is 200000.
 Note that once a log table is initialized, you cannot change the size limit anymore.
 4. Optional: Define a [WHERE Clause](./where-clause) to filter table records.
 5. Click **[Load Preview]** to load 1000 records for the preview.<br>
