@@ -1,7 +1,5 @@
 ---
-ref: xu-sap-queries-01
-layout: page
-title: Eine Query Extraktion definieren
+ref: xu-sap-queries-01/variants-and-selectionsion definieren
 description: Definieren einer Query
 product: xtract-universal
 parent: sap-queries

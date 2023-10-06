@@ -42,7 +42,7 @@ extractDataOnDeltaInit | Datenextraktion bei delta init | verfügbar in [ODP](..
 hierarchyName | Name der zu extrahierenden Hierarchie| verfügbar in ODP, DeltaQ & Hierarchy
 representation | Name der Repräsentation / des Ausgabeformats der zu extrahierenden Hierarchie: "ParentChild", "Natural" oder "ParentChildWithNodeNames"  | verfügbar in [Hierarchy](../bw-hierarchien/tabellenausgabe)
 dateTo | Gültigkeitsdatum der zu extrahierenden Hierarchie im Format YYYYMMDD | verfügbar in [Hierarchy](../bw-hierarchien/hierarchien-als-datenquelle-definieren#ausgabe-formatieren)
-variant | Name einer Variante | verfügbar in [Report](../abap-reports/report-variants-and-selections) & [SAP Query](../sap-queries/variant-selections)
+variant | Name einer Variante | verfügbar in [Report](../abap-reports/report-variants-and-selections) & [SAP Query](../sap-queries/variants-and-selections)
 batchJobName | Name des Batch Jobs| verfügbar in [Report](../abap-reports/report-extraktionseinstellungen)
 gatwewayHost | Gateway Host | verfügbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 gatewayService | Gateway Service | verfügbar in [[DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)

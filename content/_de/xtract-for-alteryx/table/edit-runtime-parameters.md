@@ -15,3 +15,7 @@ Verwenden Sie Laufzeitparameter für dynamische [WHERE Bedingungen](./where-bedi
 {% include _content/de/edit-runtime-parameters.md %}
 
 {% include _content/de/alteryx-parameters.md %}
+
+#### Weiterführende Links
+- [Knowledge Base Artikel: Dynamic Table Extractions](https://kb.theobald-software.com/xtract-for-alteryx/dynamic-table-extractions)
+- [Knowledge Base Artikel: Parameterizing via Batch Macros](https://kb.theobald-software.com/xtract-for-alteryx/parameterizing)

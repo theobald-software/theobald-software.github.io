@@ -19,7 +19,7 @@
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 {: .box-note }
-**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein, siehe [Activating DataSources in the SAP OLTP System](https://kb.theobald-software.com/sap/activating-datasource-in-the-SAP-OLTP-System).
+**Hinweis:** Um DataSources finden zu können, müssen sie in SAP aktiviert sein.
 
 ### Eine ODP Extraktion Einrichten
 

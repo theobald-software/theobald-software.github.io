@@ -1,7 +1,5 @@
 ---
-ref: bc-sap-queries-01
-layout: page
-title: Eine Query Extraktion definieren
+ref: bc-sap-queries-01/variants-and-selectionsion definieren
 description: Definieren einer Query
 product: board-connector
 parent: sap-queries

@@ -1,7 +1,5 @@
 ---
-ref: xi-query-01
-layout: page
-title: Eine Query Extraktion definieren
+ref: xi-query-01/variants-and-selectionsion definieren
 description: Queries suchen und zuweisen
 product: xtract-is
 parent: query

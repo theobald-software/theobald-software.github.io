@@ -41,7 +41,7 @@ extractDataOnDeltaInit | Whether to extract data if request is delta init| verf�
 hierarchyName | The name of the hierarchy to extract | available in ODP, DeltaQ & Hierarchy
 representation | The representation / output format of the hierarchy to extract: "ParentChild", "Natural" or "ParentChildWithNodeNames"  | available in [Hierarchy](../bw-hierarchies/table-output)
 dateTo | The valid-to-date of the hierarchy to extract in the format YYYYMMDD | available in [Hierarchy](../bw-hierarchies/hierarchy-extraction-define#format-the-output)
-variant | Name of a variant | verf체gbar in [Report](../abap-reports/variants-and-selections) & [SAP Query](../sap-queries/variant-selections)
+variant | Name of a variant | verf체gbar in [Report](../abap-reports/variants-and-selections) & [SAP Query](../sap-queries/variants-and-selections)
 batchJobName | Name of the Batch Job| verf체gbar in [Report](../abap-reports/report-extraction-settings)
 gatwewayHost | Gateway Host | verf체gbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)
 gatewayService | Gateway Service | verf체gbar in [DeltaQ](../datasource-deltaq/deltaq-customizing#customizing-check)

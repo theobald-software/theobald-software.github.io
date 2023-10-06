@@ -1,7 +1,5 @@
 ---
-ref: xfa-queries-01
-layout: page
-title: Eine Query Extraktion definieren
+ref: xfa-queries-01/variants-and-selectionsion definieren
 description: Definieren einer Query
 product: xtract-for-alteryx
 parent: queries

@@ -19,7 +19,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 [Suchen Sie nach einer Query](#eine-query-finden) und führen Sie die folgenden Schritte aus, um eine Query-Extraktion einzurichten:
 
 1. Sollte eine Query Varianten varianten haben, wählen Sie die Variante in der *Variantenansicht* des Hauptfensters.
-Mehr Informationen finden Sie unter [Varianten und Selektionen: Eine Variante wählen](./variant-selections#choose-a-variant).<br>
-2. Optional: Bearbeiten Sie die Selektionen in der *Selektionsansicht* des Hauptfensters. Mehr Informationen finden Sie unter [Varianten und Selektionen: Selektionen bearbeiten](./variant-selections#edit-selections).<br>
+Mehr Informationen finden Sie unter [Varianten und Selektionen: Eine Variante wählen](./variants-and-selections#choose-a-variant).<br>
+2. Optional: Bearbeiten Sie die Selektionen in der *Selektionsansicht* des Hauptfensters. Mehr Informationen finden Sie unter [Varianten und Selektionen: Selektionen bearbeiten](./variants-and-selections#edit-selections).<br>
 3. Optional: Ändern Sie die [Extraktionseinstellungen](./extraction-settings).
 4. Klicken Sie **[OK]** im Hauptfenster, um die Extraktion zu speichern.
