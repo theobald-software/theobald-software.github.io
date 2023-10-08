@@ -92,3 +92,48 @@ Setting a single value or {% if page.product == "xtract-is" %}an SSIS variable{%
 When using runtime parameters, make sure the input matches the data type.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Click **[Remove]** to delete a row.
+
+{% if page.product == "xtract-is" %}
+
+### Mapping Input Tables
+
+When connecting tables to the Xtract BAPI component, a data mapping is executed automatically. 
+
+![BAPI table mapping](/img/content/ssis-write-xtractis-fuba-02.png){:class="img-responsive"}
+
+To correctly map the data, the following requirements apply:
+
+- The column names of the input table must be the same as in the Xtract BAPI component.
+- The data types in the input table must be the same as in the Xtract BAPI component.
+
+Click on the ![glasses-icon](/img/content/icons/glasses.png) icon next to a table to look up column names and data types in the Xtract BAPI component.
+
+{: .box-tip }
+**Tip:** If the column names and / or datatypes of the input table and the Xtract BAPI table do not match, add a *Derived Column* component to convert the input data.
+
+{% endif %}
+{% if page.product == "xtract-for-alteryx" %}
+
+### Mapping Input Tables
+
+To correctly map the data of an input table, the following requirements apply:
+
+- The column names of the input table must be the same as in the Xtract BAPI component.
+- The data types in the input table must be the same as in the Xtract BAPI component.
+
+{: .box-tip }
+**Tipp:** Click ![glasses-icon](/img/content/icons/glasses.png) next to a table to look up column names and data types in the Xtract BAPI component.<br>
+
+Follow the steps below to pass tables to Xtract BAPI at runtime:
+1. Define or load the input tables into your workflow. 
+2. Connect the input tables to the Xtract BAPI component using the input anchor "I". <br>
+The number that is displayed in the connection arrow is used to identify tables in the Xtract BAPI component.<br>
+![bapi-input-table2](/img/content/xfa/bapi-input-table2.png){:class="img-responsive" }
+3. Open the Xtract BAPI component and navigate to the table you want to parameterize.
+4. Select an input table from the dropdown list. <br>
+![bapi-input-table](/img/content/xfa/bapi-input-table.png){:class="img-responsive" }
+
+To remove an input table from a structure, click ![x-icon](/img/content/icons/x.png).
+
+{% endif %}
+

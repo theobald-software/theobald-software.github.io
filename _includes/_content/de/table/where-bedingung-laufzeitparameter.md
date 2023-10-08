@@ -24,7 +24,7 @@ Wählen Sie einen der Laufzeitparameter aus.<br>
 Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
 
 {% if page.product == "xtract-for-alteryx" %}
-Für mehr Informationen zur Parametrisierung in Alteryx, siehe [Parametrisierung](../parametrisierung).
+Für mehr Informationen zur Parametrisierung in Alteryx, siehe [Laufzeitparameter](./edit-runtime-parameters).
 {% else %}
 
 {: .box-note }
