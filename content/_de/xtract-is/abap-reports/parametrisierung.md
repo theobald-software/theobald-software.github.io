@@ -29,7 +29,7 @@ Liste der relevanten *Custom Properties*:
 | *SkipBottomRows* | Entspricht dem Feld *Skip Rows Bottom* in der Report Komponente, siehe [Report-Spalten definieren](./report-columns-define). |
 | *SkipTopRows* | Entspricht dem Feld *Skip Rows Top* in der Report Komponente, siehe [Report-Spalten definieren](./report-columns-define). |
 | *UseBatch* | Entspricht dem Feld *Use Batch* in der Report Komponente, siehe [Settings - Use Batch](./report-settings). |
-| *Variant* | Siehe [Varianten und Selektionen](./report-variants-and-selections). |
+| *Variant* | Siehe [Varianten und Selektionen](./variants-and-selections). |
 
 
 {% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}
@@ -39,7 +39,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 
 |Property|Beschreibung|
 |:----|:----|
-| *[Xtract Report].[Variant]*| Siehe [Varianten und Selektionen](./report-variants-and-selections).|
+| *[Xtract Report].[Variant]*| Siehe [Varianten und Selektionen](./variants-and-selections).|
 | *[Xtract Report].[BatchJobDestination]* | Entspricht dem Feld *Spool Destination* in der Report Komponente, siehe [Settings - Spool Destination / BatchJobDestination](./report-settings).|
 | *[Xtract Report].[BatchJobName]*        |Entspricht dem Feld *Batch Job Name* in der Report Komponente, siehe [Settings - BatchJobName](./report-settings).|
 | *[Xtract Report].[BatchJobTimeout]*     |Entspricht dem Feld *Batch Timeout* in der Report Komponente, siehe [Settings - BatchJobTimeout](./report-settings).|
@@ -47,7 +47,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 ### Parametrierung mit SSIS Variablen
 
 SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.<br>
-Verfügbare SSIS Variablen werden direkt in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./report-variants-and-selections#selektionen-bearbeiten).<br>
+Verfügbare SSIS Variablen werden direkt in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./variants-and-selections#selektionen-bearbeiten).<br>
 ![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
 
 {: .box-note }

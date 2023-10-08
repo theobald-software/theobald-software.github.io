@@ -33,7 +33,7 @@ Alternativ können Sie nach SAP Transaktion Codes suchen, indem Sie die Checkbox
 8. Klicken Sie auf **[OK]** (6), um die Selektion zu bestätigen.
 
 {: .box-note }
-**Hinweis:** Für detaillierte Informationen zu Varianten und Selektionen, siehe [Varianten und Selektionen](./report-variants-and-selections).
+**Hinweis:** Für detaillierte Informationen zu Varianten und Selektionen, siehe [Varianten und Selektionen](./variants-and-selections).
 
 ### Spalten definieren
 
