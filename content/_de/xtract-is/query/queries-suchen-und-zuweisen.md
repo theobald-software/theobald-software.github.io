@@ -17,4 +17,4 @@ Das Fenster "Look Up Query" öffnet sich.
 ![Query-Search](/img/content/Query-Search.png){:class="img-responsive" }
 3. Wählen Sie ein Element aus der Liste aus. 
 4. Klicken Sie auf **[OK]**, um die Auswahl zu bestätigen.
-5. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](./variant-selections) oder geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).
+5. Optional: Wenn die Query Varianten hat oder Sie neue Selektionen für die Extraktion erstellen möchten, siehe [Varianten und Selektionen](./variants-and-selections) oder geben Sie einen Wert für die maximale Anzahl der zu extrahierenden Zeilen an, siehe [Extraktionseinstellungen](./query-settings).

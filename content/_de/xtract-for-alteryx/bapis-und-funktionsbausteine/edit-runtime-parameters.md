@@ -20,5 +20,4 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=skalare-parameter
 
 *****
 #### Weiterführende Links
-- [Parametrisierung](../parametrisierung)
 - [Beispiel-Workflows](../sample-workflows)

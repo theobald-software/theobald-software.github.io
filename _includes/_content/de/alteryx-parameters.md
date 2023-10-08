@@ -14,4 +14,4 @@ Führen Sie die folgenden Schritte aus, um Laufzeitparameter zur Laufzeit durch 
 
 {: .box-note }
 **Hinweis:** Die Parametrisierung über Eingabeanker wird unterstützt ab der Xtract for Alteryx Version 1.19. 
-Wenn Sie eine ältere Version von Xtract for Alteryx verwenden, parametrisieren Sie Xtract-Komponenten mithilfe von Batch-Makros, siehe [Parameterizing via Batch Macros](https://kb.theobald-software.com/xtract-for-alteryxparameterizing).
+Wenn Sie eine ältere Version von Xtract for Alteryx verwenden, parametrisieren Sie Xtract-Komponenten mithilfe von Batch-Makros, siehe [Parameterizing via Batch Macros](https://kb.theobald-software.com/xtract-for-alteryx/parameterizing).
