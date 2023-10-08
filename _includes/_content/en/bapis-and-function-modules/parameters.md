@@ -137,3 +137,12 @@ To remove an input table from a structure, click ![x-icon](/img/content/icons/x.
 
 {% endif %}
 
+### Exceptions
+
+**Exceptions** refer to ABAP exceptions / errors messages of an SAP BAPI.
+If an exception occurs during runtime, {% if page.product == "xtract-is" %}Xtract IS{% elsif page.product == "xtract-for-alteryx" %}Xtract for Alteryx{% elsif page.product == "xtract-universal" %}Xtract Universal{% elsif page.product == "board-connector" %}Board Connector{% endif %} returns a corresponding error message.
+
+- By default, all exceptions result in errors when running the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract {% endif %}BAPI component.
+- To ignore exceptions during runtime, deselect the exceptions in the **Exceptions** tab.
+
+![BAPI edit table](/img/content/extractors.bapi/XU-BAPI-Exceptions.png){:class="img-responsive"}
