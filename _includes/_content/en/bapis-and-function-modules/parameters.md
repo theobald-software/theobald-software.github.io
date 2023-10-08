@@ -121,8 +121,7 @@ To correctly map the data of an input table, the following requirements apply:
 - The column names of the input table must be the same as in the Xtract BAPI component.
 - The data types in the input table must be the same as in the Xtract BAPI component.
 
-{: .box-tip }
-**Tipp:** Click ![glasses-icon](/img/content/icons/glasses.png) next to a table to look up column names and data types in the Xtract BAPI component.<br>
+Click ![glasses-icon](/img/content/icons/glasses.png) next to a table to look up column names and data types in the Xtract BAPI component.<br>
 
 Follow the steps below to pass tables to Xtract BAPI at runtime:
 1. Define or load the input tables into your workflow. 

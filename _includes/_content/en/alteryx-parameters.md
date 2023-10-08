@@ -9,7 +9,7 @@ Follow the steps below to replace runtime parameters with actual values at runti
 {% if page.parent == "odp" %}![odp-input](/img/content/odp/odp-input.png){:class="img-responsive" }{% elsif page.parent == "queries" %}![queries-input](/img/content/xfa/query-input.png){:class="img-responsive" }{% elsif page.parent == "bapi" %}![bapi-input](/img/content/xfa/bapi-input-single.png){:class="img-responsive" }{% elsif page.parent == "bw-cube" %}![bw-cube-input](/img/content/xfa/cube-input.png){:class="img-responsive" }{% elsif page.parent == "reports" %}![report-input](/img/content/xfa/report-input.png){:class="img-responsive" }{% elsif page.parent == "table" %}![table-input](/img/content/xfa/table-input.png){:class="img-responsive" }{% endif %}
 4. Make sure that the data type of the input values match the data type of the corresponding runtime parameter.
 5. Make sure that the name of the input matches the name of the corresponding runtime parameter, e.g, the values of the input *Parameter0* is automatically assigned to a runtime parameter by the same name.
-6. Connect the input to the Xtract component using the input anchor "P" (2).<br>
+6. Connect the input to the Xtract component using the input anchor "P" (2).{% if page.parent == "bapi" %}<br>To pass input tables, use the input anchor "I", see [Mapping Input Tables](./parameters#mapping-input-tables).{% endif %}
 7. Run the workflow to test if the parameters are assigned correctly.
 
 {: .box-note }

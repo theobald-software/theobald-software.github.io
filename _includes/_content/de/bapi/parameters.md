@@ -121,8 +121,7 @@ Um die Daten einer Eingabetabelle korrekt zu mappen, gelten folgende Voraussetzu
 - Die Spaltennamen der Eingabetabelle müssen mit denen in der Xtract BAPI-Komponente übereinstimmen.
 - Die Datentypen in der Eingabetabelle müssen mit denen in der Xtract BAPI-Komponente übereinstimmen.
 
-{: .box-tip }
-**Tip:** Klicken Sie auf ![glasses-icon](/img/content/icons/glasses.png) neben einer Tabelle, um Spaltennamen und Datentypen in der Xtract BAPI-Komponente nachzuschlagen.<br>
+Klicken Sie auf ![glasses-icon](/img/content/icons/glasses.png) neben einer Tabelle, um Spaltennamen und Datentypen in der Xtract BAPI-Komponente nachzuschlagen.<br>
 
 Führen Sie die folgenden Schritte aus, um Tabellen zur Laufzeit an Xtract BAPI zu übergeben:
 1. Definieren bzw. laden Sie die Eingabetabellen in Ihrem Workflow.
