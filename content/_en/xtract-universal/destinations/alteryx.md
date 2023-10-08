@@ -149,5 +149,4 @@ If the connection to the specified Xtract Universal server is not established an
 ![alteryx-full-workflow](/img/content/alteryx-full-workflow.PNG){:class="img-responsive"}
 
 ## Related Links
-- [Xtract for Alteryx: Parameterizing](../../xtract-for-alteryx/parameterizing)
 - [User-Defined Variables](../advanced-techniques/user-defined-variables)

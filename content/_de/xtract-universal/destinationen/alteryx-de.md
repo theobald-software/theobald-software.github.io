@@ -150,5 +150,4 @@ Sind bei der Verbindung zu Ihrem Xtract Universal Server keine Fehler aufgetrete
 ![alteryx-full-workflow](/img/content/alteryx-full-workflow.PNG){:class="img-responsive"}
 
 ## Related Links
-- [Xtract for Alteryx: Parameterizing](../../xtract-for-alteryx/parametrisierung)
 - [Benutzerdefinierte Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen)
