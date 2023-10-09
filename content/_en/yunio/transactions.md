@@ -57,7 +57,7 @@ Ouput parameters are now accessible in the response body of the service.<br>
 ![transaction-copy-download](/img/content/yunio/transaction-swagger-inspector.png){:class="img-responsive"}
 
 #### Skip Popups
-When recording a transaction workflow, dynamic popup screens can be displayed by SAP. The popup screens can vary depending on input values.<br>
+When recording a transaction workflow, SAP can display dynamic popup screens. The popup screens can vary depending on input values.<br>
 The input parameter `skipPopups` defines how to handle unexpected popup messages that show up at runtime.<br>
 
 

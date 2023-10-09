@@ -59,6 +59,18 @@ Die Eingabeparameter sind im Request Body des Services verfügbar.<br>
 Die Ausgabeparameter sind im Response Body des Services verfügbar.<br>
 ![transaction-copy-download](/img/content/yunio/transaction-swagger-inspector.png){:class="img-responsive"}
 
+#### Skip Popups
+Bei der Aufzeichnung eines Transaktionsworkflows kann SAP dynamische Popup-Screens anzeigen. Die Popup-Screens können je nach Eingabewerten variieren.<br>
+Der Eingabeparameter „skipPopups“ definiert, wie mit unerwarteten Popup-Meldungen umgegangen wird, die zur Laufzeit angezeigt werden.<br>
+
+Wenn „skipPopups“ auf *true* gesetzt ist, gelten die folgenden Aktionen:
+
+| Popup in der Aufnahme| Popup während eines Servicelaufs | Aktion |
+| :------: |:---: | :--- |
+| x | x | Das Popup wird wie ein normaler Screen behandelt. |
+| x |  | Der Service ignoriert den aufgezeichneten Screen und fährt mit dem nächsten Screen fort. |
+|  | x | Das Popup wird bestätigt (Return/Enter-Taste). |
+
 
 ****
 #### Weiterführende Links
