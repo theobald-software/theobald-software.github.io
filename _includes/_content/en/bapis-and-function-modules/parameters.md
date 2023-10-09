@@ -15,14 +15,17 @@ To use the filtering function, enter text in the headers of the columns **Name**
 #### Add Scalar Parameters (1)
 
 Use one of the following options to set scalar parameters:
-- A static constant value - ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon.
-- A dynamic value set at run-time - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon, see [Runtime Parameters](./edit-runtime-parameters).
+- A static constant value - ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon. 
+- {% if page.product == "xtract-is" %}An SSIS variable / parameter - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon. This option is only available if the project contains SSIS variables.{% else %}A dynamic value set at runtime - ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon, see [Runtime Parameters](./edit-runtime-parameters).{% endif %}
 
-Click on the icon next to the input field to switch between static input values and runtime parameters.
-When using runtime parameters, make sure the input matches the data type.<br>
+Click on the icon next to the input field to switch between static input values and {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}.
+When using {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}, make sure the input matches the data type. {% if page.product == "xtract-is" %}Example:
+
+![Assigning-SSIS-Variables](/img/content/xis/ssis-variables.gif){:class="img-responsive" style="border:1px solid black;"}
+{% endif %}
 
 {: .box-note }
-**Note:** Parameters that are predefined by SAP are displayed in a light grey font. <br>
+**Note:** Parameters that are predefined by SAP are displayed in a light gray font. <br>
 To disable these parameters, activate the checkbox next to the parameter and leave the field empty. <br>
 
 #### Add Structures as Parameters (2)
