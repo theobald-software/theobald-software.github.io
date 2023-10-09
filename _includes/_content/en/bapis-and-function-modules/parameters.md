@@ -30,12 +30,10 @@ To disable these parameters, activate the checkbox next to the parameter and lea
 
 #### Add Structures as Parameters (2)
 
-When using a structure, a value for each scalar field can be set similarly to a scalar field. 
-Setting a single value or a parameter for the whole structure is not possible.
-
-When a structure is available, you can assign structure elements (i.e. fields).<br>
+When a structure is available, you can assign structure elements (i.e. fields) similarly to single scalar fields. 
+Setting a single value or a parameter for the whole structure is not possible.<br>
 1. Click ![pen](/img/content/icons/pen.png). The window "Edit Structures" opens.
-2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign runtime parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
+2. Enter constant values ( ![static-value](/img/content/icons/runtime-parameters-static.png) icon or no icon) or assign {% if page.product == "xtract-is" %} SSIS variables / parameters{% else %} runtime parameters{% endif %} ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
 ![BAPI import parameters](/img/content/BAPI-Edit-Structure.png){:class="img-responsive"}
 
 ### Export Parameters
@@ -45,7 +43,7 @@ In the tab **Exports** you can define export parameters that can be presented as
 #### Add Items to Output
 Mark the checkbox in the output column to add an item to the output.
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}{% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -66,11 +64,11 @@ To use the filtering function, enter text in the headers of the columns **Name**
 {: .box-note }
 **Note:** Only **5** tables are available for parallel exporting.
 
-- Click ![glasses](/img/content/icons/glasses.png) to check the names and data types of the table fields.
+- Click ![glasses](/img/content/icons/glasses.png) to check the names and data types of the table fields (1).
 - Activate the checkbox next to the items to add items to the output (2).
 - Click ![pen](/img/content/icons/pen.png) to edit tables (3).
 
-{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
+{% if page.product == "xtract-for-alteryx" %}![BAPI table](/img/content/xfa/XfA-Bapi-Table-Type.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_TableParams.png){:class="img-responsive"} {% else %}![BAPI table](/img/content/Bapi-Table-Type.png){:class="img-responsive"} {% endif %}
 
 ### Access Metadata of Tables (1)
 Click the ![glasses](/img/content/icons/glasses.png) icon to display the metadata of the selected table including the name and the data type of all fields. 
@@ -86,13 +84,10 @@ Mark the checkbox in the output column to add a table to the output.<br>
 
 ### Edit Tables (3)
 
-When using structures, a value for each scalar field can be set similarly to a scalar field. 
-Setting a single value or {% if page.product == "xtract-is" %}an SSIS variable{% else %}a runtime parameter{% endif %} for the whole structure is not possible.
-
 1. Click the ![pen](/img/content/icons/pen.png) icon. The window "Edit Table Contents" opens.
 2. Click **[Add]** to add new set of parameters.<br>
-3. Enter values or parameters.<br>
-When using runtime parameters, make sure the input matches the data type.<br>
+3. Enter values or {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}.<br>
+When using {% if page.product == "xtract-is" %} SSIS variables{% else %} runtime parameters{% endif %}, make sure the input matches the data type.<br>
 ![BAPI edit table](/img/content/BAPI-Edit-Table-Contents.png){:class="img-responsive"}
 4. Click **[Remove]** to delete a row.
 
