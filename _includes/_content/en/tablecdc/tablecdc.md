@@ -39,7 +39,7 @@ The SAP transport requests for the installation are provided in the installation
 	| Z_THEO_DELETE_LOG_ENTRIES | *Z_THEO_CDC* |
 
 {: .box-note }
-**Note:** Support for IBM databases will be available in Q4 2023.
+**Note:** IBM databases are currently not supported for Table CDC. Support for IBM databases is planned for Q4 2023.
 
 <!---
 - Access to the SAP authority object `S_TABU_NAM ACTVT=02` must be granted.

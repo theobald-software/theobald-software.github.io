@@ -40,7 +40,7 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 	| Z_THEO_DELETE_LOG_ENTRIES | *Z_THEO_CDC* |
 
 {: .box-note }
-**Hinweis:** IBM Datenbanken aktuell nicht von Table CDC unterstützt. Die Unterstützung von IBM Datenbanken werden in Q4 2023 veröffentlicht.
+**Hinweis:** IBM Datenbanken aktuell nicht von Table CDC unterstützt. Die Unterstützung von IBM Datenbanken ist geplant für Q4 2023.
 
 <!---
 
