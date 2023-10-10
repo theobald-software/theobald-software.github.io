@@ -13,6 +13,8 @@ If you create a new variant in SAP after creating the query extraction, click ![
 
 {% if page.product == "xtract-universal" or page.product == "board-connector"%}
 ![Variants-Section](/img/content/query/query-variant1.png){:class="img-responsive"}
+{% elsif page.product == "xtract-for-alteryx"%}
+![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 {% else %}
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 {% endif %}
@@ -40,7 +42,7 @@ Click a selection field and press the function key **[F1]** to display the techn
 
 Follow the steps below to edit selection fields:
 1. Click the **[Edit]** button next to the selection field you want to edit. The window “Edit selection” opens.<br>
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% else %} ![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% else %}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Click **[Add Selection]** to add a new filter criterion.
 3. Select *Include* in the **Sign** (1) column to only include the filtered data to the output. <br>
 Select *Exclude* in the **Sign** (1) column to exclude the filtered data from the output.<br>

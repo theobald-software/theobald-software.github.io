@@ -13,6 +13,8 @@ Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen
 
 {% if page.product == "xtract-universal" or page.product == "board-connector"%}
 ![Variants-Section](/img/content/query/query-variant1.png){:class="img-responsive"}
+{% elsif page.product == "xtract-for-alteryx"%}
+![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 {% else %}
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 {% endif %}
@@ -39,7 +41,7 @@ Klicken Sie auf ein Selektionsfeld und drücken Sie die Funktionstaste **[F1]**,
 
 Führen Sie die folgenden Schritte aus:
 1. Klicken Sie auf **[Edit]** neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.<br>
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% else %} ![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% else %}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Klicken Sie auf **[Add Selection]**, um ein neues Filterkriterium hinzuzufügen.
 3. Wählen Sie *Include* in der **Sign** (1) Spalte aus, um nur die gefilterten Daten in die Ausgabe aufzunehmen. <br>
 Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten von der Ausgabe auszuschließen.<br>
