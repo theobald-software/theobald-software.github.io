@@ -58,7 +58,12 @@ Select *Exclude* in the **Sign** (1) column to exclude the filtered data from th
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|
    |LessThan | True if data is less than the content of operand 1.|
    |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-5. Enter values directly into the **Low** and **High** input fields or assign {% if page.product == "xtract-is"%}[SSIS-Variables](./parametrization#parameterization-using-ssis-variables){% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection. 
+5. Enter values directly into the **Low** and **High** input fields or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection. 
+- Static values: Enter values directly into the **Low** and **High** input fields. 
+If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
+Clicking on the icon switches between static and dynamic input values.
+- {% if page.product == "xtract-is"%}SSIS variables:{% else %}Runtime parameters:{% endif %} Click ![static-value](/img/content/icons/runtime-parameters-static.png) to change the input type to dynamic values ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
+Select an existing {% if page.product == "xtract-is"%}SSIS variable{% else %}runtime parameter{% endif %} from the drop-down list.
 6. Click **[OK]** to confirm your input.
 
 Note that edited selection fields overwrite the selection fields in the variant. 

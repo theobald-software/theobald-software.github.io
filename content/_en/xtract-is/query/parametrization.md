@@ -41,7 +41,6 @@ Available SSIS variables are listed in the selection settings when parameter inp
 **Note**: The Xtract Report component does not support variables of the data types *DateTime* and *DBNull*. 
 For more information on the data types of system variables, see [Microsoft Help: System Variables](https://docs.microsoft.com/en-us/sql/integration-services/system-variables?view=sql-server-ver15).
 
-
 ****
 #### Related Links
 - [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components).
