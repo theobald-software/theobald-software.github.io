@@ -16,7 +16,7 @@ If you create a new variant in SAP after creating the query extraction, click ![
 {% elsif page.product == "xtract-for-alteryx"%}
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
 {% else %}
-![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
+![Variants-Section](/img/content/xis/query-variant1.png){:class="img-responsive"}
 {% endif %}
 
 
@@ -42,7 +42,7 @@ Click a selection field and press the function key **[F1]** to display the techn
 
 Follow the steps below to edit selection fields:
 1. Click the **[Edit]** button next to the selection field you want to edit. The window “Edit selection” opens.<br>
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% else %}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% else %}![Variants-Section](/img/content/xis/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Click **[Add Selection]** to add a new filter criterion.
 3. Select *Include* in the **Sign** (1) column to only include the filtered data to the output. <br>
 Select *Exclude* in the **Sign** (1) column to exclude the filtered data from the output.<br>
@@ -58,7 +58,7 @@ Select *Exclude* in the **Sign** (1) column to exclude the filtered data from th
    |LessOrEqual | True if data is less than or equal to the content of operand 1.|
    |LessThan | True if data is less than the content of operand 1.|
    |(Not)Between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-5. Enter values directly into the **Low** and **High** input fields{% if page.product == "xtract-universal" or page.product == "board-connector"%} or assign [runtime parameters](./edit-runtime-parameters) to the selection{% endif %}. 
+5. Enter values directly into the **Low** and **High** input fields or assign {% if page.product == "xtract-is"%}[SSIS-Variables](./parametrization#parameterization-using-ssis-variables){% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection. 
 6. Click **[OK]** to confirm your input.
 
 Note that edited selection fields overwrite the selection fields in the variant. 

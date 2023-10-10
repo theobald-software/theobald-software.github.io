@@ -46,7 +46,7 @@ Clicking on the icon switches between static input values and runtime parameters
 If no icons are displayed, open the [Edit Runtime Parameters](./report-edit-runtime-parameters) menu and create runtime parameters.
 Select a runtime parameter from the drop-down list.
 6. Click **[OK]** to confirm your input.
-7. Click **[Load Preview]** in the main widnow of the component to check the result of your selection. <br>
+7. Click **[Load Preview]** in the main window of the component to check the result of your selection. <br>
 If runtime parameters are defined, you are prompted to populate the parameters with actual values.
 
 
