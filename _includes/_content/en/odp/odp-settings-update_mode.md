@@ -9,9 +9,9 @@ Extracts the data in full mode <br/>
 **Delta update**:<br/>
 Runs a delta initialization, if no delta initialization is available for selected subscriber. Runs a delta update, if there is a delta initialization for the selected subscriber. <br/>
 
-- **On delta initialization** <br/>
-Checking the *Extract data* checkbox, allows extracting data when running a delta initialization. 
-Leaving the checkbox unchecked runs a delta initialization without extracting data. <br/>
+- **Extract data** <br/>
+Allows extracting data when running a delta initialization. 
+Leaving this checkbox unchecked runs a delta initialization without extracting data. <br/>
 - **Auto-sync subscription**<br/>
 Allows deletion of the existing subscription and creates a new subscription, if required.
 Each extraction has an internal ID, which is part of the subscriber. 
