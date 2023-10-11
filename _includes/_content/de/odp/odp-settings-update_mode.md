@@ -9,11 +9,11 @@ extrahiert die Daten im Full-Update-Modus.<br/>
 **Delta update**:<br/>
 Führt eine Delta-Initialisierung aus, wenn für den ausgewählten Abonnenten keine Delta-Initialisierung verfügbar ist. Führt ein Delta-Update aus, wenn eine Delta-Initialisierung für den ausgewählten Abonnenten vorhanden ist. <br/>
 
-- **On delta initialization** <br/>
-Aktivieren der Checkbox *Extract data* ermöglicht eine Datenextraktion während einer laufenden Delta-Initialisierung.
-Bei einer nicht angekreuzten Checkbox würde keine Datenextraktion während einer Delta-Initialisierung stattfinden.<br/>
+- **Extract data** <br/>
+Ermöglicht eine Datenextraktion während einer laufenden Delta-Initialisierung.
+Wenn diese Checkbox nicht aktiv ist, wird keine Datenextraktion während einer Delta-Initialisierung durchgeführt.<br/>
 - **Auto-sync subscription**<br/>
-ermöglicht das Löschen des bestehenden Abonnements und erstellt bei Bedarf ein neues.
+Ermöglicht das Löschen des bestehenden Abonnements und erstellt bei Bedarf ein neues.
 Jede Extraktion hat eine interne ID, die Teil des Abonnenten ist. 
 Wenn Sie dann nach der Delta-Initialisierung den Filter einer Extraktion ändern, löscht die Option *Auto-sync subscription* automatisch das bestehende Abonnement und legt ein neues an. 
 Ein Abonnement wird gelöscht, wenn die Fehlermeldung "Illegale Änderung der Selektionsparameter" seitens SAP-System erscheint. <br/>
