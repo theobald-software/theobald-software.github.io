@@ -15,7 +15,8 @@ Use the function module from Theobald Software *Z_THEO_READ_TABLE*.
 
 ### Installation of Z_THEO_READ_TABLE 
 
-An SAP transport request for the installation of the function module is provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
+An SAP transport request for the installation of the function module is provided in the installation directory: 
+{% if page.product == "yunio" %}`C:\Program Files\Theobald Software\yunIO\ABAP\`.{% else %}`C:\Program Files\[XtractProduct]\ABAP\`.{% endif %}<br>
 Transport requests are imported into SAP by your SAP Basis team.
 
 There are two transports, one for SAP systems >= 7.40 SP5 (*Z_THEO_READ_TABLE.zip*), and one for systems with a lower version (*Z_THEO_READ_TABLE-before_740SP05.zip*):

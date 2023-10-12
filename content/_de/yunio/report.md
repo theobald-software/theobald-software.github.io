@@ -21,22 +21,21 @@ Eine Report-Extraktion ist möglich, wenn der Report in SAP eine tabellenartige 
 Der Integrationstyp im Preview-Modus. Grundlegende Änderungen können jederzeit veröffentlicht werden. 
 Erstellen Sie regelmäßige Backups der Konfigurationsdateien, um bei Bedarf auf die vorige Version zu wechseln.
 
-<!---
+
 {: .box-note }
 **Hinweis:** Die Report Komponente setzt die Installation des benutzerdefinierten Funktionsbausteins in Ihrem SAP-System voraus. `Z_XTRACT_IS_REMOTE_REPORT`
 Nähere Informationen finden Sie unter [Report Funktionsbaustein installieren ](#sap-customizing).
--->
+
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**
 Um den Integrationstyp in yunIO zu verwenden, muss der Zugriff auf die entsprechenden Berechtigungsobjekte (RFC) in SAP verfügbar sein. 
-
 Weitere Informationen finden Sie im Knowledge-Base-Artikel [SAP Zugriffsrechte: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
+
 
 ## Allgemeiner Workflow
 Die folgende Grafik zeigt den allgemeinen Workflow der Einrichtung von Report Services mit yunIO:<br>
 ![Report-Workflow](/img/content/report-general-workflow-yunIO.png){:class="img-responsive" width="400px"}
-
 
 ## Einen Report finden
 
@@ -131,16 +130,10 @@ Das folgende Beispiel zeigt, wie man einen yunIO-Service einrichtet, der den SAP
 ![SAP-Table-or-Views](/img/content/yunio/report-sap3.png){:class="img-responsive"}
 5. Klicken Sie auf **[Detect Columns]**, um die Spalten des Reports automatisch zu ermitteln. Die ermittelten Spalten werden im Abschnitt *Output Columns* angezeigt.
 6. Klicken Sie auf **[Save]**, um den Service zu speichern.
-7. Um die Ausgabe des Service zu testen, führen Sie den Service in Ihrem Browser aus, siehe [Erste Schritte: Einen Service anlegen](./erste-schritte#einen-service-anlegen).<br>
+7. Testen Sie den Service, siehe [Service testen](./services-ausfuehren#service-testen).<br>
 ![report-response.png](/img/content/yunio/report-response.png){:class="img-responsive"}
-
-<!---
-****
- #### Weiterführende Links
--
-
 
 ## SAP Customizing
 
 {% include _content/en/sap-customizing/install-report-custom-function-module.md  %}
--->
+

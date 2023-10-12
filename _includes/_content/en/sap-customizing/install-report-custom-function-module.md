@@ -6,7 +6,8 @@ If you cannot install the function module, turn to your SAP Basis team for help.
 
 ### Installation of Z_XTRACT_IS_REMOTE_REPORT
 Install the function module using the transport request *Z_XTRACT_IS_REMOTE_REPORT-transport.zip*. <br> 
-The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.
+The transport request is located in the following installation directory: 
+{% if page.product == "yunio" %}`C:\Program Files\Theobald Software\yunIO\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.{% else %}`C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip`.{% endif %}
 
 The transport request needs to be imported into SAP by your SAP Basis team.
 

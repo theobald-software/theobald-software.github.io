@@ -15,7 +15,8 @@ Verwenden Sie den Funktionsbaustein von Theobald Software *Z_THEO_READ_TABLE*.
 
 ### Installation von Z_THEO_READ_TABLE
 
-Ein SAP-Transportauftrag für die Installation des Funktionsbausteins wird im Installationsverzeichnis der Software mitgeliefert: `C:\ProgramFiles\[XtractProduct]\ABAP\`.<br>
+Ein SAP-Transportauftrag für die Installation des Funktionsbausteins wird im Installationsverzeichnis der Software mitgeliefert: 
+{% if page.product == "yunio" %}`C:\Program Files\Theobald Software\yunIO\ABAP\`.{% else %}`C:\Program Files\[XtractProduct]\ABAP\`.{% endif %}<br>
 Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
 
 Es gibt zwei Transportaufträge, einen für SAP-Systeme ab Version 7.40 SP05 (* Z_THEO_READ_TABLE-transport.zip*), und einen für Systeme mit einer niedrigeren Version (* Z_THEO_READ_TABLE-transport-before-740SP05.zip*):

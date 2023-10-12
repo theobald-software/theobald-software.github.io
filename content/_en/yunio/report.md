@@ -21,22 +21,21 @@ A report extraction is possible if the report returns a table-like structure in 
  The integration type is in preview mode. Breaking changes can be released anytime. 
 Make sure to create backups of the configuration files regularly to switch back to the previous product version, if needed.
 
-<!---
+
 {: .box-note }
 **Note:** The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system. 
 For more information, see [Installation of Z_XTRACT_IS_REMOTE_REPORT](#sap-customizing).
--->
+
 
 {: .box-warning}
 **Warning!** **Missing Authorization**
 To use Reports in yunIO, access to the designated authority objects (RFC) in SAP must be available.
-
 For more information, refer to the knowledge base article [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
+
 
 ## General Workflow
 The following graphic shows the general workflow of setting up report services with yunIO:<br>
 ![Report-Workflow](/img/content/report-general-workflow-yunIO.png){:class="img-responsive" width="400px"}
-
 
 ## Look Up a Report
 
@@ -131,16 +130,10 @@ The following example shows how to set up a yunIO service that extracts the SAP 
 ![SAP-Table-or-Views](/img/content/yunio/report-sap3.png){:class="img-responsive"}
 5. Click **[Detect Columns]** to automatically detect the columns of the report. The detected columns are displayed in the section *Output Columns*.
 6. Click **[Save]** to save the service.
-7. To test the output of the service, run the service in your browser, see [Getting Started: How to Run a Service](./getting-started#how-to-run-a-service).<br>
+7. Test the output of the service, see [Testing a Service](./run-services#testing-a-service).<br>
 ![report-response.png](/img/content/yunio/report-response.png){:class="img-responsive"}
-
-<!---
-****
- #### Related Links
--
 
 
 ## SAP Customizing
 
 {% include _content/en/sap-customizing/install-report-custom-function-module.md  %}
--->
