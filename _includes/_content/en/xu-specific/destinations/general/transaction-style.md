@@ -16,7 +16,7 @@ Disadvantage: No rollback of previous step possible (error in *Row Processing* o
 
 **RowProcessingOnly**<br>
 Only *Row Processing* is executed in a transaction. *Preparation* and *Finalization* without an explicit transaction (implicit commits).<br>
-Advantage: DDL in 'Preparation* and *Finalization* for DMBS that do not allow DDL in explicit transactions (e.g. AzureDWH)<br>
+Advantage: DDL in 'Preparation* and *Finalization* for DBMS that do not allow DDL in explicit transactions (e.g. AzureDWH)<br>
 Disadvantage: No rollback of *Preparation/Finalization*.
 
 **No Transaction**<br>
