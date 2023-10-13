@@ -105,13 +105,13 @@ A WHERE clause can be used to filter table records, see [SAP ABAP Documentation:
 
 {% include _content/en/tables/where-clause-syntax.md%}
 
-#### How to use the WHERE Clause in Swagger Inspector
+#### How to use the WHERE Clause in SwaggerHub
 
 The WHERE-Clause can be parameterized in the request body of the service. Example:<br>
-![WHERE-Clause in Swagger Inspector](/img/content/yunio/swagger-inspector.png){:class="img-responsive"}
+![WHERE-Clause in SwaggerHub](/img/content/yunio/swagger-inspector.png){:class="img-responsive"}
 
 For more information on parameterizing services, refer to the following knowledge base articles: 
-- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in SwaggerHub](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-hub) 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
 {% include _content/en/tables/where-clause-editor.md%}

@@ -15,7 +15,7 @@ Der folgende Abschnitt zeigt, wie Sie in yunIO erstellte Services testen, integr
 
 ### Service Testen
 
-Vor der Integration eines yunIO-Services empfiehlt es sich, den Service direkt in yunIO oder in einem REST-Client, z. B. Swagger Inspector oder Postman, zu testen.
+Vor der Integration eines yunIO-Services empfiehlt es sich, den Service direkt in yunIO oder in einem REST-Client Ihrer Wahl zu testen.
 - Klicken Sie auf ![copy](/img/content/yunio/icons/copyURL.png) um die URL des Service-Eendpunkts in Ihre Zwischenablage zu kopieren. <br>
 Die URL kann zum Triggern eines Service-Laufs verwendet werden.
 - Klicken Sie auf ![copy](/img/content/yunio/icons/run.png), um *Run Service* Menu zu öffnen. <br>
@@ -56,7 +56,7 @@ Für mehr Integrationszenarien und Beispiele, siehe [Integrationszenarien](./int
 
 <!---
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
-- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [Running a yunIO Service in SwaggerHub](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-hub)
 -->
 
 ### Übergabe von Parametern

@@ -16,7 +16,7 @@ Detaillierte Informationen zu Integrationsszenarien und weitere nützliche Artik
 
 ### Einen Service testen
 Die folgenden Artikel zeigen Ihnen, wie Sie einen yunIO-Service in einem Standard REST-Client testen können:
-- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [Running a yunIO Service in SwaggerHub](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-hub)
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
 
 ### Integration mit Microsoft Power Automate

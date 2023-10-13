@@ -1,7 +1,7 @@
 ---
 ref: yunio-11
 layout: page
-title: Running Services
+title: Execute Services
 description: Run Sevrices
 product: yunio
 parent: yunio
@@ -14,7 +14,7 @@ The following section shows how to test, integrate and pass parameters to servic
 
 ### Testing a Service
 
-Test a service directly in yunIO or in a REST client, e.g., Swagger Inspector or Postman, before integrating.
+Before integrating a service, test the service directly in yunIO or a REST client of your choice.
 
 - Click ![copy](/img/content/yunio/icons/copyURL.png) to copy the URL of the service endpoint to your clipboard. The URL can be used to trigger a service run.
 - Click ![copy](/img/content/yunio/icons/run.png) to open the *Run Service* menu, where you can define parameters and run the service directly in yunIO.<br>
@@ -54,7 +54,7 @@ For more integration scenarios and examples, see [Integration Scenarios](./integ
 
 <!---
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman)
-- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector)
+- [Running a yunIO Service in SwaggerHub](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-hub)
 -->
 
 ### Passing Parameters

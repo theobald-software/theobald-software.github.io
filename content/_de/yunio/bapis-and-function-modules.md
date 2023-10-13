@@ -67,13 +67,13 @@ Wählen Sie Ihre Eingabeparameter über die entsprechende Drop-down-Liste aus:
 {: .box-note }
 **Hinweis:** Achten Sie beim Parametrieren darauf, den passenden Datentyp für Ihre Eingabewerte zu verwenden.<br>
 
-#### Import Parameter im Swagger Inspector verwenden
+#### Import Parameter im SwaggerHub verwenden
 
 Beispiel: Der Import-Parameter MAXROWS der BAPI BAPI_CUSTOMER_GETLIST steht auf *Supplied by Caller* und kann somit über den Request Body des Services parametrisiert werden:<br>
 ![BAPI export parameters](/img/content/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
 
 Für mehr Informationen über die Parametrisierung von Services, siehe folgende Knowledge Base Artikel: 
-- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in SwaggerHub](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-hub) 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
 

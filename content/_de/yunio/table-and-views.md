@@ -101,13 +101,13 @@ Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP
 
 {% include _content/de/table/where-bedingung-syntax.md%}
 
-#### Die WHERE Clause im Swagger Inspector verwenden
+#### Die WHERE Clause im SwaggerHub verwenden
 
 Die WHERE-Clause kann im Request Body des Services parametrisiert werden. Beispiel:<br>
-![WHERE-Clause in Swagger Inspector](/img/content/yunio/swagger-inspector.png){:class="img-responsive"}
+![WHERE-Clause in SwaggerHub](/img/content/yunio/swagger-inspector.png){:class="img-responsive"}
 
 Für mehr Informationen über die Parametrisierung von Services, siehe folgende Knowledge Base Artikel: 
-- [Running a yunIO Service in Swagger Inspector](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-inspector) 
+- [Running a yunIO Service in SwaggerHub](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-swagger-hub) 
 - [Running a yunIO Service in Postman](https://kb.theobald-software.com/yunio/running-a-yunio-service-in-postman).
 
 {% include _content/de/table/where-bedingung-editor.md%}
