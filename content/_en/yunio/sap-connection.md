@@ -68,6 +68,9 @@ The following authentication methods are supported:
 - Secure Network Communication (SNC) - username and password via basic authentication.
 <!----- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3) --->
 
+![yunIO-Authentication](/img/content/yunio/yunio-authentication.png){:class="img-responsive" }
+
+
 #### Plain
 
 **User**<br>

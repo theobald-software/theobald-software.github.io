@@ -73,6 +73,8 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 - Plain - SAP-Benutzername und Passwort (System- oder Dialogbenutzer).
 - Secure Network Communication (SNC) - Benutzername und Passwort über Basisauthentifizierung.
 
+![yunIO-Authentication](/img/content/yunio/yunio-authentication.png){:class="img-responsive" }
+
 #### Plain
 
 **User**<br>
