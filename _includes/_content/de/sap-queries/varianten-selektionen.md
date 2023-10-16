@@ -13,8 +13,10 @@ Wenn Sie nach dem Anlegen der Query-Extraktion eine neue Variante in SAP anlegen
 
 {% if page.product == "xtract-universal" or page.product == "board-connector"%}
 ![Variants-Section](/img/content/query/query-variant1.png){:class="img-responsive"}
-{% else %}
+{% elsif page.product == "xtract-for-alteryx"%}
 ![Variants-Section](/img/content/xfa/query-variant1.png){:class="img-responsive"}
+{% else %}
+![Variants-Section](/img/content/xis/query-variant1.png){:class="img-responsive"}
 {% endif %}
 
 {: .box-note }
@@ -39,7 +41,7 @@ Klicken Sie auf ein Selektionsfeld und drücken Sie die Funktionstaste **[F1]**,
 
 Führen Sie die folgenden Schritte aus:
 1. Klicken Sie auf **[Edit]** neben dem zu bearbeitenden Selektionsfeld. Das Fenster “Edit Selection” wird geöffnet.<br>
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% else %} ![Selections-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% else %}![Variants-Section](/img/content/xis/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Klicken Sie auf **[Add Selection]**, um ein neues Filterkriterium hinzuzufügen.
 3. Wählen Sie *Include* in der **Sign** (1) Spalte aus, um nur die gefilterten Daten in die Ausgabe aufzunehmen. <br>
 Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten von der Ausgabe auszuschließen.<br>
@@ -50,12 +52,17 @@ Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten v
    |:---------|:------------- |
    |(Not)ContainsPattern |  Wahr, wenn die Datenwerte den Inhalt von Operand 1 (nicht) enthalten.|
    |(Not)Equal | Wahr, wenn Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
-   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1 sind..|
-   |GreaterThan | Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|.|
+   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1 sind.|
+   |GreaterThan | Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
    |LessOrEqual | Wahr, wenn die Daten kleiner als oder gleich dem Inhalt von Operand 1 sind.|
    |LessThan | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
    |(Not)Between | Wahr, wenn die Datenwerte (nicht) zwischen den Werten von Operand 1 und Operand 2 liegen. |
-5. Geben Sie die Werte direkt in die Eingabefelder **Low** und **High** ein{% if page.product == "xtract-universal" or page.product == "board-connector"%} oder weisen Sie der Selektion [Laufzeitparameter](./edit-runtime-parameters) zu{% endif %}. 
+5. Geben Sie die Werte direkt in die Eingabefelder **Low** und **High** ein oder weisen Sie der Selektion {% if page.product == "xtract-is"%}[SSIS-Variablen](./parametrisierung#parametrierung-mit-ssis-variablen){% else %}[Laufzeitparameter](./edit-runtime-parameters){% endif %} zu. 
+- Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
+Wenn {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
+Mit einem Klick auf das Symbol wechseln Sie zwischen statischen und dynamischen Eingabewerten.
+- {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %}: Klicken Sie auf ![static-value](/img/content/icons/runtime-parameters-static.png), um auf die definierten {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} zuzugreifen ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
+Wählen Sie {% if page.product == "xtract-is"%}eine SSIS-Variable{% else %}einen Laufzeitparameter{% endif %} aus der Dropdown-Liste aus.
 6. Klicken Sie **[OK]**, um Ihre Eingabe zu bestätigen.
 
 Beachten Sie, dass bearbeitete Selektionsfelder die Selektionsfelder in der Variante überschreiben. 

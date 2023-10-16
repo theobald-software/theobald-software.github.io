@@ -14,28 +14,32 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=query-settings
 ### Custom Properties
 
 The *Custom Properties* define the properties unique to the component.
-When parameterizing the component using SSIS variables, the *Custom Porperties* are overwritten.
 
 List of relevant *Custom Properties*:
 
 |Property|Comment|
 |:----|:----|
 | *MaxRows* | Corresponds to the field *MaxRows* in [Settings](./settings) of the Query component.|
-| *QueryDescription* | Description of the Query to be extracted.|
-| *QueryName* | Name of the Query to be extracted.|
-| *StringConversion* | Corresponds to the [Settings](./settings) of the Query component.|
-| *UserGroup* | Name of the User Group where the Query is located.|
 | *Variant* | Corresponds to the field *Use Variant Variable* in the [Settings](./settings) of the Query component. |
-| *VariantDescription* | Description of the Variant.|
 
-{% include _content/en/xis-specific/parameterization/parametrization-via-variables.md  %}
+{% include _content/en/xis-specific/parameterization/parameterization-prop.md  %}
 
-#### Available Parameters for SSIS Variables
-List of input fields that allow entry of an SSIS variable:
+#### Available Data Flow Properties
+List of *Data Flow Properties* that can be parameterized:
 
-|Field Name|Comment|
+|Property|Comment|
 |:----|:----|
-| *Variant* | In the Xtract Query component, go to [Settings](./settings) and activate the check box *Use Variant Variable*. <br>This allows using an SSIS variable for the field *Variant*. |
+| *[Xtract Report].[Variant]*|See [Variants and Selections](./variants-and-selections).|
+
+### Parameterization using SSIS Variables
+
+You can use SSIS variables for selections.<br>
+Available SSIS variables are listed in the selection settings when parameter input is active (1), see [Edit Selections](./variants-and-selections#edit-selections).<br> 
+![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+
+{: .box-note }
+**Note**: The Xtract Report component does not support variables of the data types *DateTime* and *DBNull*. 
+For more information on the data types of system variables, see [Microsoft Help: System Variables](https://docs.microsoft.com/en-us/sql/integration-services/system-variables?view=sql-server-ver15).
 
 ****
 #### Related Links

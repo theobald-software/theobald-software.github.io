@@ -19,10 +19,10 @@ Choose a variant from the drop-down-list *Variant* (1). If you create a new vari
 ### Edit Selections
 
 This section corresponds to the report's input screen in SAP. Some selection fields only have a technical name and no description. 
-To understand which field corresponds to a field in SAP, take a look at the report's input screen in SAP. Click on a selection field and press function key F1. 
+To understand which field corresponds to a field in SAP, compare it to report's input screen in SAP. Click on a selection field and press function key F1. 
 This displays the technical name of a selection field.
 
-1. Click the **[Edit]** button next to the selection you want to edit (2). The window “Edit Selection” opens.<br> 
+1. Click **[Edit]** next to the selection you want to edit (2). The window “Edit Selection” opens.<br> 
 2. Click **[Add Selection]** to add a new filter criterion.<br>
 ![ODP Fields](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
 3. Select *Include* in the **Sign** (3) column to only include the filtered data to the output. <br>
@@ -42,11 +42,11 @@ Select *Exclude* in the **Sign** (3) column to exclude the filtered data from th
 - Static values: Enter values directly into the **Low** and **High** input fields. 
 If runtime parameters are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
 Clicking on the icon switches between static input values and runtime parameters.
-- Runtime Parameters: Click on the ![static-value](/img/content/icons/runtime-parameters-static.png) icon to change the input type to parameters ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) icon).
+- Runtime Parameters: Click ![static-value](/img/content/icons/runtime-parameters-static.png) to change the input type to parameters ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
 If no icons are displayed, open the [Edit Runtime Parameters](./report-edit-runtime-parameters) menu and create runtime parameters.
 Select a runtime parameter from the drop-down list.
 6. Click **[OK]** to confirm your input.
-7. Click **[Load Preview]** in the main widnow of the component to check the result of your selection. <br>
+7. Click **[Load Preview]** in the main window of the component to check the result of your selection. <br>
 If runtime parameters are defined, you are prompted to populate the parameters with actual values.
 
 

@@ -4,7 +4,7 @@ Der folgende Abschnitt beschreibt die Anwendung der {% if page.product == "xtrac
 ### Eine Query finden
 
 1. Klicken Sie im Hauptfenster der Komponente auf ![magnifying-glass](/img/content/icons/magnifying-glass.png). Das Fenster “Look Up Query” öffnet sich.<br>
-{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/xu/empty-Query.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Query](/img/content/xfa/empty-Query.png){:class="img-responsive"}{% endif %}
+{% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/xu/empty-Query.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Query](/img/content/xfa/empty-Query.png){:class="img-responsive"}{% else %}![Query](/img/content/xis/empty-Query.png){:class="img-responsive"}{% endif %}
 2. Geben Sie den Namen des Query im Feld **Query Name** ein, oder den Namen der Benutzergruppe im Feld **User group** (1) ein. Sie können bei Bedarf Platzhalter (*) verwenden. <br>
 ![Ein Query finden](/img/content/query/query-lookup.png){:class="img-responsive"}
 3. Wählen Sie den Arbeitsbereich, der einen Query-Objekt beinhaltet. (2). Für mehr Informationen, siehe [SAP Dokumentation: Query Areas](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/4e/3bdad0b8503b0fe10000000a42189e/frameset.htm).
@@ -21,5 +21,5 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 1. Sollte eine Query Varianten varianten haben, wählen Sie die Variante in der *Variantenansicht* des Hauptfensters.
 Mehr Informationen finden Sie unter [Varianten und Selektionen: Eine Variante wählen](./variants-and-selections#choose-a-variant).<br>
 2. Optional: Bearbeiten Sie die Selektionen in der *Selektionsansicht* des Hauptfensters. Mehr Informationen finden Sie unter [Varianten und Selektionen: Selektionen bearbeiten](./variants-and-selections#edit-selections).<br>
-3. Optional: Ändern Sie die [Extraktionseinstellungen](./extraction-settings).
+3. Optional: Ändern Sie die {% if page.product == "xtract-is"%}[Einstellungen](./query-settings){% else %}[Extraktionseinstellungen](./extraction-settings){% endif %}.
 4. Klicken Sie **[OK]** im Hauptfenster, um die Extraktion zu speichern.
