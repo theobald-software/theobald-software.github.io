@@ -61,7 +61,7 @@ Wählen Sie *Exclude* in der **Sign** (1) Spalte aus, um die gefilterten Daten v
 - Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
 Wenn {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
 Mit einem Klick auf das Symbol wechseln Sie zwischen statischen und dynamischen Eingabewerten.
-- {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %}: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+- {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %}: Klicken Sie auf ![static-value](/img/content/icons/runtime-parameters-static.png), um auf die definierten {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} zuzugreifen ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
 Wählen Sie {% if page.product == "xtract-is"%}eine SSIS-Variable{% else %}einen Laufzeitparameter{% endif %} aus der Dropdown-Liste aus.
 6. Klicken Sie **[OK]**, um Ihre Eingabe zu bestätigen.
 
