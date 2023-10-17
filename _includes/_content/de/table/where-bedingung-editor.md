@@ -3,8 +3,8 @@
 
 {% if page.parent != "table-cdc" %}
 Der WHERE Clause Editor stellt ein Toolkit zur Verfügung, mit dem WHERE-Bedingungen auch ohne nähere Kenntnisse über die Syntax erstellt werden können.
-{% if page.product != "yunio" %}Klicken Sie auf **[Editor mode]**, um das Toolit zu öffnen.
-
+{% if page.product == "yunio" %}Wechseln Sie zum *Editor mode*, um den WHERE Clause Editor zu öffnen. <br>
+![WHERE-Clause-Builder-01](/img/content/yunio/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Klicken Sie auf **[Editor mode]**, um das Toolit zu öffnen.<br>
 ![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
 {% endif %} {% endif %}
 
