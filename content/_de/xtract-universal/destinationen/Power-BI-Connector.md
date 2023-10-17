@@ -20,7 +20,7 @@ Die Zielumgebung *Power BI Connector* bietet zwei Wege zum Verbinden von Power B
 - Power BI Custom Connector
 - Generic Power Query M-script
 
-![Power-BI-Connector-](/img/content/xu/PowerBI_Connector_Architecture_SSO.png){:class="img-responsive"}
+![Power-BI-Connector-](/img/content/xu/PowerBI_Connector_Architecture_SSO.svg){:class="img-responsive"}
 
 ### Unterstützte Power BI Umgebungen
 
