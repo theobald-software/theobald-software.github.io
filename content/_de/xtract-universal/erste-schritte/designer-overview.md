@@ -14,6 +14,9 @@ progressstate: 5
 
 Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion.
 
+{: .box-tip }
+**Tipp:** Drücken Sie **[F1]**, um die Online-Hilfeartikel für bestimmte Fenster zu öffnen.
+
 ### Hauptmenüleiste 
 
 ![main-window-menubar](/img/content/xu/main-window-menubar.png){:class="img-responsive"}
