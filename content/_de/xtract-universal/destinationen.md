@@ -47,7 +47,6 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 - [Amazon S3](./destinationen/amazon_aws_s3)
 - [Azure Storage](./destinationen/azure-storage) 
 - [Google Cloud Storage](./destinationen/google-cloud-storage)
-- [Hadoop](./destinationen/hadoop)
 - [Huawei Cloud OBS](./destinationen/huawei)
 
 ### Business Systeme

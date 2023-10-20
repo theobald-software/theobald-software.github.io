@@ -53,7 +53,6 @@ More information can be found under the *Requirements* section of each destinati
 - [Amazon S3](./destinations/amazon-aws-s3)
 - [Azure Storage](./destinations/azure-storage) 
 - [Google Cloud Storage](./destinations/google-cloud-storage)
-- [Hadoop](./destinations/hadoop)
 - [Huawei Cloud OBS](./destinations/huawei)
 
 ### Generic Destinations
