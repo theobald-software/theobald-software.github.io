@@ -21,7 +21,7 @@ An SAP connection is required to use any Xtract for Alteryx component.
 If you use an older version of the Alteryx Designer, refer to the knowledge base article [Create an SAP Connection](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection) to create SAP connections using the Xtract for Alteryx UI.
 
 {: .box-note }
-**Note:** To use the DCM it needs to be enabled for your organization, see [Alteryx Documentation: Data Connection Manager](https://help.alteryx.com/20231/designer/dcm-designer).
+**Note:** To use the DCM it needs to be enabled for your organization, see [Alteryx Documentation: Data Connection Manager](https://help.alteryx.com/current/en/designer/tools/dcm---designer.html).
 
 ## Data Sources
 
