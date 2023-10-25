@@ -16,7 +16,7 @@ The extraction "Plants" extracts the table *T001W* from SAP.
 
 1. In Board, select **[+ DATA READER]**  to create a new Data Reader. Enter a name (here: "Plants") and a group (here: "Main Group"). Select the source type "SAP". <br>
 ![Load-Extraction-01](/img/content/board/Load-Extraction-01.png)
-2. Create a new connection for the Board Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the Board Connector server (e.g., localhost:8098).<br>
+2. Create a new connection for the Board Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the Board Connector server (e.g., localhost:8197).<br>
 3. Click the "Connect" icon (1) to pull a list of extractions from the Board Connector.
 4. Select an extraction (here: T001W)  from the EXTRACTOR box on the right hand-side. The extraction's metadata (field names, data types) is listed in the window below.
 ![Load-Extraction-02](/img/content/board/Load-Extraction-02.png)
