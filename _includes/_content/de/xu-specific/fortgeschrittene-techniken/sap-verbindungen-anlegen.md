@@ -142,6 +142,8 @@ Es gibt zwei Möglichkeiten die RFC-Bibliotheken zu nutzen:
 Für mehr Informationen über SAP-Bibliotheken, siehe [SAP Dokumentation: RFC API - Classical & SAP NetWeaver](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/48/a994a77e28674be10000000a421937/frameset.htm).<br>
 SAP hat den [Support für die librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) eingestellt. 
 
+Für ältere SAP-Systeme wie R/3 4.6C ist es notwendig, den Benutzernamen in Großbuchstaben anzugeben, wenn die NetWeaver-RFC-Bibliothek verwendet wird.
+
 {: .box-note }
 **Hinweis:** Wenn Sie die NetWeaver RFC-Bibliothek bei DeltaQ oder OHS-Extraktionen nutzen, muss die RFC-Destination in der SM59 auf Unicode eingestellt sein.
 
