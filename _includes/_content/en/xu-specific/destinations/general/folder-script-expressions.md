@@ -7,7 +7,7 @@ The described scenario supports script expressions based on .NET and the followi
 
 | Input                                                   | Description|
 |:--------------------------------------------------------|:-----------|
-|```#{Source}# ```|  Name of the extraction's SAP source.|
+|```#{Source.Name}# ```|  Name of the extraction's SAP source.|
 |```#{Extraction.ExtractionName}# ```| Name of the extraction. |
 |```#{Extraction.Type}# ```|  Extraction type (*Table*, *ODP*, *BAPI*, etc.). |
 |```#{Extraction.SapObjectName}# ```|  Name of the SAP object the extraction is extracting data from. |

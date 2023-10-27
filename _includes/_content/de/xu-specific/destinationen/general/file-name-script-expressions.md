@@ -7,7 +7,7 @@ Unterstützt werden Skript-Ausdrücke, die auf .NET basieren, sowie folgende XU-
 
 | Eingabe                                                  | Beschreibung|
 |:--------------------------------------------------------|:-----------|
-|```#{Source}# ```|  Name der SAP Quelle. |
+|```#{Source.Name}# ```|  Name der SAP Quelle. |
 |```#{Extraction.ExtractionName}# ```| Name der Extraktion. |
 |```#{Extraction.Type}# ```|  Extraktionstyp (*Table*, *ODP*, *DeltaQ*, etc.). |
 |```#{Extraction.SapObjectName}# ```|  Name des SAP Objekts, von dem die Extraktion Daten extrahiert. |
