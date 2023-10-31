@@ -58,12 +58,13 @@ Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden
 - /BODS/RFC_READ_TABLE2
 - /SAPDS/RFC_READ_TABLE2
 - Z_THEO_READ_TABLE
+- THEO/READ_TABLE
 
 {: .box-warning }
 **Warnung! Duplikate in der Zielumgebung!** <br>
 Die SAP-Standardbausteine für Tabellenextraktion besitzen keine Pointer-Logik in Tabellenfeldern. 
 Das führt bei großen Tabellen zu schlechter Performance und ggf. zu Duplikaten.
-Wir empfehlen daher die Verwendung des Funktionsbausteins [Z_THEO_READ_TABLE](#installation-von-z_theo_read_table) von Theobald Software. 
+Wir empfehlen daher die Verwendung des Funktionsbausteins [THEO/READ_TABLE](#installation-von-theoread_table) von Theobald Software. 
 
 Berücksichtigen Sie die notwendige [Berechtigung der SAP-Tabelle](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```
@@ -84,7 +85,7 @@ Um einen Speicherüberlauf auf dem SAP-Quellsystem und einen großen Overhead zu
 
 #### Run in background job
 Durch das Ankreuzen der Checkbox wird die Tabellenextraktion als Hintergrund-Job in SAP ausgeführt. 
-Diese Einstellung ist optional und wird in Kombination mit dem Baustein Z_THEO_READ_TABLE ab Version 2.0 unterstützt.
+Diese Einstellung ist optional und wird in Kombination mit dem Baustein THEO/READ_TABLE oder Z_THEO_READ_TABLE Version 2.0 unterstützt.
 Aktivieren Sie diese Einstellung für zeitintensive Extraktionen mit großen Datenmengen, die im Vordergrundmodus in einen Timeout-Fehler ("Time limit exceeded") laufen können. <br>
 
 {: .box-tip }
@@ -118,7 +119,7 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 ## SAP Customizing
 
 {: .box-note }
-**Hinweis:** Anpassungen im SAP-System sind optional. Die Installation des Funktionsbausteins `Z_THEO_READ_TABLE` ist empfohlen.
+**Hinweis:** Anpassungen im SAP-System sind optional. Die Installation des Funktionsbausteins `/THEO/READ_TABLE` ist empfohlen.
 
 {% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}
 

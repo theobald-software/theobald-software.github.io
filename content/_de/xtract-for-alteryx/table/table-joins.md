@@ -11,7 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Voraussetzung für die Nutzung der Join-Funktionalität ist die Installation des Funktionsbausteins [Z_THEO_READ_TABLE](../sap-customizing) in SAP.
+Voraussetzung für die Nutzung der Join-Funktionalität ist die Installation des Funktionsbausteins [/THEO/READ_TABLE](../sap-customizing) in SAP.
 
 ### Join-Funktionalität
 In the *Joins* tab you can define table joins for the table component.

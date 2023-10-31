@@ -1,5 +1,5 @@
 
-Die Report Komponente benötigt die Installation der Z-Funktionsbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE auf Ihrem SAP-System.<br>
+Die Report Komponente benötigt die Installation der Z-Funktionsbausteine Z_THEO_DELETE_LOG_ENTRIES und THEO/READ_TABLE auf Ihrem SAP-System.<br>
 Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installieren, wenden Sie sich an Ihre SAP-Basis-Abteilung.
 
 ### Installation von Z_THEO_DELETE_LOG_ENTRIES
@@ -12,9 +12,9 @@ Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
 
-### Installation von Z_THEO_READ_TABLE
+### Installation von /THEO/READ_TABLE
 
-Installieren Sie den Funktionsbaustein Z_THEO_READ_TABLE Version 2.10 oder höher, siehe [Funktionsbaustein für Table](./funktionsbaustein-fuer-table-extraktion).
+Installieren Sie den Funktionsbaustein /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version >= 2.10, siehe [Funktionsbaustein für Table](./funktionsbaustein-fuer-table-extraktion).
 
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.

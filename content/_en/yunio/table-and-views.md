@@ -62,12 +62,13 @@ The following function modules can be used to extract tables:
 - /BODS/RFC_READ_TABLE2
 - /SAPDS/RFC_READ_TABLE2
 - Z_THEO_READ_TABLE
+- THEO/READ_TABLE
 
 {: .box-warning }
 **Warning! Duplicates in the target environment!**<br>
 The SAP standard modules for table extraction do not have pointers for table fields. 
 In larger tables this may cause low performance and duplicates in the target environment. 
-Use the function module [Z_THEO_READ_TABLE](#installation-of-z_theo_read_table) from Theobald Software to ensure smooth extractions.
+Use the function module [THEO/READ_TABLE](#installation-of-theoread_table) from Theobald Software to ensure smooth extractions.
 
 Note the necessary [authorization for SAP tables](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table):
 ```
@@ -88,7 +89,7 @@ To avoid a memory overflow on the SAP source system and to avoid huge overheads,
 
 #### Run in background
 If this checkbox is checked, the table extraction is executed as a background job in SAP. 
-This setting is optional and is supported in combination with function module Z_THEO_READ_TABLE as of version 2.0. 
+This setting is optional and is supported in combination with function module THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.0. 
 Activate the setting **Run in background** for long-running extractions with a large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
 
 {: .box-tip }
@@ -122,7 +123,7 @@ For more information on parameterizing services, refer to the following knowledg
 ## SAP Customizing
 
 {: .box-note }
-**Note:** SAP customizing is optional. The installation of the custom function module `Z_THEO_READ_TABLE` is recommended.
+**Note:** SAP customizing is optional. The installation of the custom function module `/THEO/READ_TABLE` is recommended.
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 

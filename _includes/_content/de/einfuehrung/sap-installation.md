@@ -3,7 +3,7 @@
 
 |Komponente             | SAP Release           | Anforderungen an das SAP-System                                                |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
-|Table                 | Rel. > 4.0B       | Die Installation des Funktionsbausteins [Z_THEO_READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion#installation-von-z_theo_read_table) ist empfohlen, aber nicht notwendig. |
+|Table                 | Rel. > 4.0B       | Die Installation des Funktionsbausteins [/THEO/READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion#installation-von-theoread_table) ist empfohlen, aber nicht notwendig. |
 |BAPI & Function Module| Rel. > 4.0B       | keine Anforderungen - nur remote-enabled functions werden unterstützt.                            |
 |Query                 | Rel. > 4.0B       | keine Anforderungen.                                                                        |
 |Report                | Rel. > 4.0B       | Die Installation des Funktionsbausteins [Z_XTRACT_IS_REMOTE_REPORT](../sap-customizing/report-funktionsbaustein-installieren)ist erforderlich.                        |

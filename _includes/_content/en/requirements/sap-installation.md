@@ -3,7 +3,7 @@
 
 |Component             | SAP Release           | Requirements on the SAP system        |
 |----------------------|-----------------------|-------------------------------------------------------------------------------|
-|Table                 | Rel. > 4.6C       | Installation of a custom function module [Z_THEO_READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction#installation-of-z_theo_read_table) is recommended.    |
+|Table                 | Rel. > 4.6C       | Installation of a custom function module [/THEO/READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction#installation-of-theoread_table) is recommended.    |
 |BAPI & Function Module| Rel. > 4.6C       | No requirements. **Note:** Only remote-enabled functions are supported.                            |
 |Query                 | Rel. > 4.6C       | No requirements.      |
 |Report                | Rel. > 4.6C       | Installation of a custom function module [Z_XTRACT_IS_REMOTE_REPORT](../sap-customizing/install-report-custom-function-module) is necessary.   |

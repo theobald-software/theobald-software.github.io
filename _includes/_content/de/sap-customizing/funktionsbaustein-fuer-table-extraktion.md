@@ -6,21 +6,21 @@ Insbesondere bei älteren SAP Releases bestehen einige Einschränkungen bei der 
   Fehler können auftreten bei der Extraktion von Tabellen, die eine oder mehrere Spalten vom Typ f (FLTP, floating point), DEC (Decimal und Prozentzahl z.B.) oder x (RAW, LRAW) haben.
 - Schlechte Extraktionsperformance bei Extraktion großer Tabellen.
 
-Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein *Z_THEO_READ_TABLE* von Theobald Software auf Ihrem SAP-System.
+Um die o.g. Einschränkungen zu umgehen, installieren Sie den Z-Funktionsbaustein */THEO/READ_TABLE* von Theobald Software auf Ihrem SAP-System.
 
 {: .box-warning }
 **Warnung! Error while converting value '\*.0' of row 1530, column 3** <br>
 Der SAP-Standardbaustein *RFC_READ_TABLE* zur Tabellenextraktion kann den ABAP-Datentyp DEC nur bedingt extrahieren. Dies führt zu dem genannten Beispielfehler bei der Extraktion.
-Verwenden Sie den Funktionsbaustein von Theobald Software *THEO/READ_TABLE*. 
+Verwenden Sie den Funktionsbaustein von Theobald Software */THEO/READ_TABLE*. 
 
-### Installation von THEO/READ_TABLE
+### Installation von /THEO/READ_TABLE
 
 Ein SAP-Transportauftrag für die Installation des Funktionsbausteins wird im Installationsverzeichnis der Software mitgeliefert: 
 {% if page.product == "yunio" %}`C:\Program Files\Theobald Software\yunIO\ABAP\`.{% else %}`C:\Program Files\[XtractProduct]\ABAP\`.{% endif %}<br>
 Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
 
 Es gibt zwei Funktionsbausteine für Tabellen-Extraktionen:
-- THEO/READ_TABLE
+- /THEO/READ_TABLE
 - Z_THEO_READ_TABLE
 
 Wir empfehlen die Installation des aktuellen Funktionsbausteins THEO/READ_TABLE:

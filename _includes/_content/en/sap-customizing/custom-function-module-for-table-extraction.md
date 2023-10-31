@@ -23,7 +23,7 @@ Transport requests are imported into SAP by your SAP Basis team.
 **Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\XtractProduct\ABAP\README.pdf`) before installing any custom function modules.
 
 There are two custom function modules available for Table extractions: 
-- THEO/READ_TABLE
+- /THEO/READ_TABLE
 - Z_THEO_READ_TABLE
 
 We recommend installing the latest custom function module THEO/READ_TABLE:
