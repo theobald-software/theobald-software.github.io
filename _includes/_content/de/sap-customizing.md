@@ -18,10 +18,13 @@ Die Transportaufträge von Theobald Software müssen von Ihrem SAP-Basis-Team in
 Die folgenden Transportaufträge finden Sie im ABAP-Unterordner des Installationsordners (z.B. `C:\Programme\XtractProduct\ABAP`):
 
 - `Z_XTRACT_IS_REMOTE_REPORT-transport.zip` - enthält den Z-Funktionsbaustein für die *Report Komponente*
+- `THEO_READ_TABLE_740SP05.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
+- `THEO_READ_TABLE_640.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Versionen von 6.40 bis 7.40 SP04
+- `THEO_READ_TABLE_46C.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Versionen von 4.6C bis 6.40
 - `Z_THEO_READ_TABLE-transport.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
 - `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br> kompatibel mit ABAP Version 640 - 740 SP04 
 {% if page.product == "xtract-universal" or page.product == "board-connector" %}- `Z_THEO_DELETE_LOG_ENTRIES-transport.zip` - enthält den Z-Funktionsbaustein für die *TableCDC Komponente*{% endif %}
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im Knowledge Base-Artikel [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). <br>
 
-Um die o.g. Komponenten zu deinstallieren, importieren Sie den Transportauftrag Z_THEO_READ_TABLE-deletion_request.zip.
+Um die o.g. Komponenten zu deinstallieren, importieren Sie den Transportauftrag `Z_THEO_READ_TABLE-deletion_request.zip`.
