@@ -1,7 +1,7 @@
 ---
 ref: xu-datasource-deltaq-04
 layout: page
-title: Datasource-Parameter
+title: Selektionen
 description: Datasource-Parameter
 product: xtract-universal
 parent: datasource-deltaq

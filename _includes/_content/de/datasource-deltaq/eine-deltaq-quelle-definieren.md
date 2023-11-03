@@ -3,7 +3,7 @@
 Führen Sie die folgenden Schritte aus, um eine DataSource zu suchen. Mehr Informationen über die Suche nach Hierarchien finden Sie unter [Hierarchien](./hierarchien).
 
 1. Navigieren Sie im Hauptfenster der Komponente zu **OLTP** und klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png). Das Fenster “Look Up OLTP Source” wird geöffnet.<br>
-![DeltaQ](/img/content/DeltaQ.png){:class="img-responsive"}
+{% if page.product == "xtract-is" %}![DeltaQ](/img/content/xis/DeltaQ.png){:class="img-responsive"}{% else %}![DeltaQ](/img/content/DeltaQ.png){:class="img-responsive"}{% endif %}
 2. Geben Sie den Namen einer DataSource in das Feld **Name**ein (1). Verwenden Sie Wildcards ( * ), wenn nötig.<br>
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 3. Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) und wählen Sie aus der angezeigten Liste (2) den gewünschten Extraktor aus.
@@ -25,8 +25,8 @@ Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing
 2. Navigieren Sie zu **Logical Destination** und klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2) um eine logische RFC-Destination zu suchen.Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).
 3. Klicken Sie auf **Customizing Check** (3) zur Validierung des DeltaQ-Customizings auf dem SAP-System.
 Stellen Sie sicher, dass alle Häkchen grün sind. Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).<br>
-![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
-4.Wählen Sie ein [Update Mode](#update-mode) aus, um z.B. eine Delta-Extraktion zu initialisieren.
+![customizing-check-successful](/img/content/customizing-check-successfull.png){:class="img-responsive"}
+4. Wählen Sie einen [Update Mode](./update-mode) aus, um z.B. eine Delta-Extraktion zu initialisieren.
 5. Wählen Sie die Elemente aus, die der Ausgabe hinzugefügt werden sollen.<br>
 ![DeltaQ-output](/img/content/DeltaQ-output.png){:class="img-responsive"}
 6. Optional: klicken Sie auf die **[Edit]**-Option neben dem Element, um [Filter](./datasource-parameter) hinzuzufügen.

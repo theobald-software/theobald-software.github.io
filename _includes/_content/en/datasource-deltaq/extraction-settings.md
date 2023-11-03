@@ -1,9 +1,20 @@
 To access the extraction settings, click {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} in the main window of the component.
 The window “DeltaQ Settings” opens. The window contains two tabs:
+
+{% if page.product == "xtract-is" %}
+- [Base](#base)
+- [Misc](#misc) 
+- [Hierarchy](#hierarchy)
+{% else %}
 - [Base](#base)
 - [Hierarchy](#hierarchy)
+{% endif %}
 
+{% if page.product == "xtract-is" %}
+![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings.png){:class="img-responsive"}
+{% else %}
 ![XU_DeltaQ_Settings_thumb](/img/content/XU_DeltaQ_Settings_thumb.png){:class="img-responsive"}
+{% endif %}
 
 ## Base
 
@@ -12,7 +23,32 @@ The window “DeltaQ Settings” opens. The window contains two tabs:
 The raw data packages can be sent by SAP via *tRFC* call or *Data-IDoc*. *tRFC* is is the default setting. <br>
 Switch to *IDoc* to monitor the raw data packages in the transaction WE02 (IDoc-Monitoring) for debugging reasons. 
 
+{% if page.product == "xtract-is" %}
+
+### Convert Dates
+
+**Replace year 0 with**<br>
+Converts the SAP date 00000000 to the entered value. NULL is supported as a value.
+
+**Replace year 9999 with**<br>
+Converts the SAP date 9999XXXX to the entered value. NULL is supported as a value.
+
+**Replace invalid year with**<br>
+In case of no convertable date values you have to enter a default date value into the textbox. Every invalid value is converted into this value.
+
+## Misc.
+![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings2.png){:class="img-responsive"}
+
+**Update Mode Variable**<br>
+Defines a variable for the update mode. Set the value of **Update Mode** to *V - SSIS Variable* and define an SSIS Variable for the update mode. 
+The SSIS Variable can process the following values: F, C, D, S, I and R, as it is listed in [Update Mode](./update-mode).
+
+**Request ID**<br>
+This field is optional. If a value (e.g., XtractDatasource) is set, it will be used as suffix in the SAP job name (e.g., BIXtractDatasource), otherwise a combination of process ID and timestamp will be used (e.g. REQU_pppppppp_yyyyMMddHHmmss), with process ID being the ID of the Windows process, the XtractDeltaQServerPool.exe is running under.
+
+{% else %}
 ### Misc.
+{% endif %}
 
 **Automatic Synchronization**<br>
 Option to prevent manual changes in the transactional system when switching from test environment to production environment. <br>
@@ -33,8 +69,10 @@ Example: the following columns that are a composite key of the SAP records are i
 {: .box-note }
 **Note** Newer data has a higher PackageID. In the same package newer data has a higher RowCounter.
 
+{% if page.product != "xtract-is" %}
+
 **Accept Gaps in DataPackage Id**<br>
-At the end of each extraction the{% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component performs a consistency check. 
+At the end of each extraction the DeltaQ component performs a consistency check. 
 The extraction is considered consistent if all data packages arrive correctly. 
 Example: When using a filter function in the user exit of an OLTP source, certain data packages are not sent. 
 In this case the filter function is an inconsistency. <br>
@@ -44,6 +82,7 @@ Only use this option when a filter function exists in the user exit.
 **Timeout (sec)**<br>
 Enter a time period (in seconds). The timeout applies when an extraction finishes on the SAP side, but not all tRFC calls have been received. 
 
+{% endif %}
 
 ## Hierarchy
 
