@@ -39,7 +39,7 @@ Falls keine konvertierbaren Datumswerte vorhanden sind, müssen Sie einen Standa
 ![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings2.png){:class="img-responsive"}
 
 **Update Mode Variable**<br>
-Definiert eine Variable für den Aktualisierungsmodus. Setzen Sie den Wert von [Update Mode](./update-mode) auf *V - SSIS Variable* und definieren Sie eine SSIS Variable für den Update Mode. 
+Definiert eine Variable für den Aktualisierungsmodus. Setzen Sie den Wert von [Update Mode](./update-modus) auf *V - SSIS Variable* und definieren Sie eine SSIS Variable für den Update Mode. 
 Die SSIS-Variable kann die folgenden Werte verarbeiten: F, C, D, S, I und R, wie sie in den Werten des Aktualisierungsmodus aufgeführt sind.
 
 **Request ID**<br>
