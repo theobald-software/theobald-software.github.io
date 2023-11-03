@@ -11,7 +11,7 @@ Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben.
 3. Klicken Sie auf das Drop-Down-Menü (2) und weisen Sie einen der folgenden Datentypen einem Parameter zu. <br>
 Die Datentypen müssen mit den SAP-Datentypen übereinstimmen.
-- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.
+- String: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden. {% if page.product == "xtract-for-alteryx" %} Listemparameter sind immer vom Typ *String*.{% endif %}
 - Number: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.
 - Flag: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen ‘X’ (true) oder eine leere Eingabe ‘‘ (false) als Eingabewert benötigen.
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
