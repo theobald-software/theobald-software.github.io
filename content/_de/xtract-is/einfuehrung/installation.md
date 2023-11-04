@@ -63,7 +63,6 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | gac-uninstall.bat | Tool zum Leeren des GAC von allen Xtract IS-bezogenen Komponenten.|
 | Eula_XtractIS.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract IS.|
 |XtractISLicense.json| Lizenzdatei mit Server-, Komponenten-  und Laufzeitinformationen|
-| UninstallDllLicense.bat| **Für ältere Lizenzdateien**. Mehr Details dazu finden Sie unter [Aktualisierung der Xtract.License.dll auf XtractISLicense.json](./lizenz-einspielen#aktualisierung-der-xtractlicensedll-auf-xtractislicensejson)|
 
 
 
