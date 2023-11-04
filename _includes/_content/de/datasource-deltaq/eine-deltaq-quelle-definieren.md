@@ -26,7 +26,7 @@ Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing
 3. Klicken Sie auf **Customizing Check** (3) zur Validierung des DeltaQ-Customizings auf dem SAP-System.
 Stellen Sie sicher, dass alle Häkchen grün sind. Weitere Informationen finden Sie unter [DeltaQ Customizing](./deltaq-customizing).<br>
 ![customizing-check-successful](/img/content/customizing-check-successfull.png){:class="img-responsive"}
-4. Wählen Sie einen [Update Mode](./update-mode) aus, um z.B. eine Delta-Extraktion zu initialisieren.
+4. Wählen Sie einen [Update Mode](./update-modus) aus, um z.B. eine Delta-Extraktion zu initialisieren.
 5. Wählen Sie die Elemente aus, die der Ausgabe hinzugefügt werden sollen.<br>
 ![DeltaQ-output](/img/content/DeltaQ-output.png){:class="img-responsive"}
 6. Optional: klicken Sie auf die **[Edit]**-Option neben dem Element, um [Filter](./datasource-parameter) hinzuzufügen.
