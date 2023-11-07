@@ -1,4 +1,4 @@
-Um auf die Extraktionseinstellungen zuzugreifen, klicken Sie auf {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} im Hauptfenster der Komponente.
+Um auf die Extraktionseinstellungen zuzugreifen, klicken Sie auf **Extraction Settings** im Hauptfenster der Komponente.
 Das Fenster “DeltaQ Settings” wird geöffnet. Das Fenster besteht aus zwei Tabs:
 
 {% if page.product == "xtract-is" %}
@@ -39,7 +39,8 @@ Falls keine konvertierbaren Datumswerte vorhanden sind, müssen Sie einen Standa
 ![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings2.png){:class="img-responsive"}
 
 **Update Mode Variable**<br>
-Definiert eine Variable für den Aktualisierungsmodus. Setzen Sie den Wert von [Update Mode](./update-modus) auf *V - SSIS Variable* und definieren Sie eine SSIS Variable für den Update Mode. 
+Definiert eine Variable für den Aktualisierungsmodus. 
+Geben Sie den Namen einer SSIS Variable im Format `@variable_name` und setzen Sie das Custom Property *UseLegacyVarUpdate* der Komponente auf *true*, um den Aktualisierungsmodus zu überschreiben.
 Die SSIS-Variable kann die folgenden Werte verarbeiten: F, C, D, S, I und R, wie sie in den Werten des Aktualisierungsmodus aufgeführt sind.
 
 **Request ID**<br>
@@ -87,9 +88,12 @@ Geben Sie einen Zeitraum (in Sekunden) ein. Die Zeitüberschreitung gilt, wenn e
 
 Die folgenden Einstellungen gelten nur für Hierarchieextraktionen.
 
+{% if page.product == "xtract-is" %}
+![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings3.png){:class="img-responsive"}
+{% else %}
 ![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
-
 ### Extraction
+{% endif %}
 
 **Language**<br>
 Geben Sie die Sprache der Hierarchie ein, z. B. 'E' oder 'D'.
@@ -99,6 +103,8 @@ Geben Sie den Namen der Hierarchie ein.
 
 **Hierarchy Class**<br>
 Geben Sie die Klasse der Hierarchie ein.
+
+{% if page.product != "xtract-is" %}
 
 **Representation:** 
 - *ParentChild*: Die Hierarchie wird im SAP-Parent-Child-Format repräsentiert. Beispiel:<br>
@@ -128,9 +134,10 @@ Das folgende Beispiel demonstriert die zuvor gezeigte Hierarchie mit der aktivie
 ![Hierarchy-Parent-Child-Repeat](/img/content/extractors.bwhier/Hierarchy-Parent-Child-Repeat.png){:class="img-responsive"}
 
 **Description texts for levels**<br>
-Setzt das Output-Feld *LevelTextN* für jedes Feld *LevelN* , welches den Text beinhaltet, der auf den Einstellungen der Systemsprache basiert.<br>
+Setzt das Output-Feld *LevelTextN* für jedes Feld *LevelN*, welches den Text beinhaltet, der auf den Einstellungen der Systemsprache basiert.<br>
 ![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
 
+{% endif %}
 
 ## Maintenance
 

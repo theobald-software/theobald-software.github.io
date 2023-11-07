@@ -19,8 +19,7 @@ Wählen Sie im Hauptfenster der Komponente ein **Update Mode** aus einem Dropdow
 | S | Delta Init (without data) | Initiliaziert das Delta-Verfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis der *Delta Init* ist eine **[Maintenance]** (Wartung) auf der SAP-Seite.Wenn Sie einen Deltaprozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen] (./extraktionseinstellungen) auf **[Maintenance]** klicken.|
 | I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
 | A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
-{% if page.product == "xtract-is"%}| V | SSIS-Variable | Wenn **V** ausgewählt ist, muss in den [Extraktionseinstellungen](./extraktionseinstellungen#misc) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
-{% endif"%}
+
 
 {% if page.product == "xtract-universal" %}
 **Update mode** kann zur Laufzeit mithilfe des Extraktionsparameters **updateType** dynamisch festgelegt werden, siehe [Extraktion ausführen](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#extraktion-ausführen).<br>

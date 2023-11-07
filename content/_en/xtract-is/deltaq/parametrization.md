@@ -35,7 +35,9 @@ List of relevant *Custom Properties*:
 | *TransferMethod* | Choose transfer via tRTF (T) or IDoc (I).|
 | *TransferStructure* | The transfer structure of the source.|
 | *UpdateType* | Corresponds to the drop-down menu *Update Mode* in the DeltaQ component. Permitted values are: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
+| *UseLegacyVarUpdate* | Set to *True* for backward compatibility with extractions that use the deprecated update mode (V)Variable, see [Settings](./extraction-settings#misc).|
 | *UseWideString* | Defines whether DT_WSTR / DT_NTEXT (true) or DT_STR / DT_TEXT (false) is used as the data type for string columns.|
+
 
 {% include _content/en/xis-specific/parameterization/parameterization-prop.md  %}
 

@@ -35,6 +35,7 @@ Liste der relevanten *Custom Properties*:
 | *TransferMethod* | Sie können zwischen Transfer via tRTF (T) oder IDoc (I) wählen.|
 | *TransferStructure* | Transferstruktur der zu extrahierenden Quelle.|
 | *UpdateType* | Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
+| *UseLegacyVarUpdate* | Wenn dieser Wert auf *True* gesetzt wird, wird der veralteten Update-Modus (V)Variable unterstützt, siehe [Settings](./extraktionseinstellungen#misc).|
 | *UseWideString* | Definiert, ob DT_WSTR / DT_NTEXT (true) oder DT_STR / DT_TEXT (false) als Datentyp für String-Spalten verwendet wird. |
 
 {% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}

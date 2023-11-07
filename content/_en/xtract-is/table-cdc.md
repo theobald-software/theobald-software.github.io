@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-15
 layout: page
-title: Table CDC
+title: Xtract Table CDC
 description: Table
 product: xtract-is
 parent: xtract-is

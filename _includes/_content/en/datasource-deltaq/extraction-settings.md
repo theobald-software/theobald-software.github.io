@@ -1,4 +1,4 @@
-To access the extraction settings, click {% if page.product == "xtract-is" %}**Settings** {% else %} **[Extraction Settings]**{% endif %} in the main window of the component.
+To access the extraction settings, click }**Extraction Settings** in the main window of the component.
 The window “DeltaQ Settings” opens. The window contains two tabs:
 
 {% if page.product == "xtract-is" %}
@@ -40,8 +40,9 @@ In case of no convertable date values you have to enter a default date value int
 ![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings2.png){:class="img-responsive"}
 
 **Update Mode Variable**<br>
-Defines a variable for the update mode. Set the value of **Update Mode** to *V - SSIS Variable* and define an SSIS Variable for the update mode. 
-The SSIS Variable can process the following values: F, C, D, S, I and R, as it is listed in [Update Mode](./update-mode).
+Defines a variable for the update mode. 
+Enter the name of an SSIS variable in the format `@variable_name` and set the component's custom property *UseLegacyVarUpdate* to *true* to overwrite the Update Mode. 
+The SSIS variable can process the following values: F, C, D, S, I and R, as it is listed in [Update Mode](./update-mode).
 
 **Request ID**<br>
 This field is optional. If a value (e.g., XtractDatasource) is set, it will be used as suffix in the SAP job name (e.g., BIXtractDatasource), otherwise a combination of process ID and timestamp will be used (e.g. REQU_pppppppp_yyyyMMddHHmmss), with process ID being the ID of the Windows process, the XtractDeltaQServerPool.exe is running under.
@@ -88,9 +89,12 @@ Enter a time period (in seconds). The timeout applies when an extraction finishe
 
 The following settings only apply to Hierarchy extractions.
 
+{% if page.product == "xtract-is" %}
+![XU_DeltaQ_Settings_thumb](/img/content/xis/DeltaQ-Settings3.png){:class="img-responsive"}
+{% else %}
 ![Deltaq-Preferences-Hierarchy](/img/content/Deltaq-Preferences-Hierarchy.png){:class="img-responsive"}
-
 ### Extraction
+{% endif %}
 
 **Language**<br>
 Enter the language of the Hierarchy, e.g., 'E' or 'D'.
@@ -104,6 +108,8 @@ Enter the class of the Hierarchy.
 <!---
 representation in copied from the Hierarchy component
 -->
+
+{% if page.product != "xtract-is" %}
 
 **Representation:** 
 - *ParentChild*: The Hierarchy is represented in the SAP parent-child format. Example:<br>
@@ -140,6 +146,7 @@ The following example depicts the previously shown Hierarchy with the activated 
 Sets the output field *LevelTextN* for each field *LevelN* containing the text based on the system language settings.<br>
 ![Hierarchy-Description-Texts](/img/content/Hierarchy-description-texts.png){:class="img-responsive"}
 
+{% endif %}
 
 ## Maintenance
 

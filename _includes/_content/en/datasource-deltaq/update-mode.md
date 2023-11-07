@@ -18,8 +18,6 @@ In the main window of the component select an **Update Mode** from the drop-down
 | S | Delta Init (without data)   | Initializes the delta process without extracting any data from the SAP DataSources. The result of the *Delta Init* is a **[Maintenance]** on the SAP side. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
 | I | Non-cumulative Init    |  Relevant for DataSources like *2LIS_03_BX*.  |
 | A | Activate (don't extract)  | Activates a DataSource similar to clicking **[Activate]**, but it is more practical when activating DataSources in a batch. No data is extracted. |
-{% if page.product == "xtract-is" %}| V | SSIS Variable |  If *V* is selected, a variable name needs to be entered in the [DeltaQ settings](./extraction-settings#misc). The same SSIS variable needs to be created in SSIS and assigned a value. The following values are possible: F, D, C, R, S, I and A. |
-{% endif" %}
 
 {% if page.product == "xtract-universal" %}
 **Update mode** can be set dynamically at runtime using the **updateType** extraction parameter, see [Run an Extraction](../execute-and-automate-extractions/extraction-parameters#run-an-extraction).<br>
