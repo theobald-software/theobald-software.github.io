@@ -48,4 +48,4 @@ List of input fields that allow entry of an SSIS variable:
 ****
 #### Related Links
 - [Table Extraction Settings](./extraction-settings) <br>
-- [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+- [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
