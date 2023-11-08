@@ -49,4 +49,4 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 ****
 #### Weiterführende Links
 - [Extraktionseinstellungen](./extraction-settings) <br>
-- [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+- [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
