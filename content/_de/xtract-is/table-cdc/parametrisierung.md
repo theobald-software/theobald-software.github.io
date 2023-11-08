@@ -44,9 +44,9 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 
 |Feldname|Beschreibung|
 |:----|:----|
-| *WHERE clause* tab| Erlaubt die Parametrisierung der kompletten WHERE-Bedingung oder Teile der WHERE-Bedingung. Für mehr Informationen, siehe [SSIS-Variablen im WHERE Clause Editor](where-bedingung#ssis-variablen-im-where-clause-editor).|
+| *WHERE clause* tab| Erlaubt die Parametrisierung der kompletten WHERE-Bedingung oder Teile der WHERE-Bedingung. Für mehr Informationen, siehe [SSIS-Variablen im WHERE Clause Editor](where-clause#ssis-variablen-im-where-clause-editor).|
 
 ****
 #### Weiterführende Links
-- [Extraktionseinstellungen](./extraktionseinstellungen) <br>
+- [Extraktionseinstellungen](./extraction-settings) <br>
 - [Dynamization of WHERE conditions of the XIS table component](https://kb.theobald-software.com/xtract-is/Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
