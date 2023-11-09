@@ -37,14 +37,6 @@ List of *Data Flow Properties* that can be parameterized:
 | *[Xtract Table CDC].[MaxDateReplacement]*|Converts the SAP date 9999XXXX to the entered value, see [Custom Properties](#custom-properties).|
 
 
-### Parameterization using SSIS Variables
-
-List of input fields that allow entry of an SSIS variable:
-
-|Field Name|Comment|
-|:----|:----|
-| *WHERE clause* tab| Allows parameterization of the complete WHERE clause or only parts of the WHERE clause. For more information, see [Using SSIS Variables in the WHERE Clause Editor](where-clause#using-ssis-variables-in-the-where-clause-editor). |
-
 ****
 #### Related Links
 - [Table Extraction Settings](./extraction-settings) <br>

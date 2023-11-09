@@ -38,13 +38,6 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 | *[Xtract Table CDC].[MaxDateReplacement]*|Verwendet den eingegebenen Wert anstelle des SAP Datums 9999XXXX, siehe [Benutzerdefinierte Eigenschaften](#custom-properties).|
 | *[Xtract Table CDC].[InvalidDateReplacement]*|Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen, siehe [Benutzerdefinierte Eigenschaften](#custom-properties).|
 
-### Parametrierung mit SSIS Variablen
-
-Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
-
-|Feldname|Beschreibung|
-|:----|:----|
-| *WHERE clause* tab| Erlaubt die Parametrisierung der kompletten WHERE-Bedingung oder Teile der WHERE-Bedingung. Für mehr Informationen, siehe [SSIS-Variablen im WHERE Clause Editor](where-clause#ssis-variablen-im-where-clause-editor).|
 
 ****
 #### Weiterführende Links
