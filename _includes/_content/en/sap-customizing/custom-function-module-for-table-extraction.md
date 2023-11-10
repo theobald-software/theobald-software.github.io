@@ -28,7 +28,8 @@ There are two custom function modules available for Table extractions:
 
 We recommend installing the latest custom function module THEO/READ_TABLE:
 - `THEO_READ_TABLE_740SP05.zip` - compatible with ABAP version 7.40 SP05 and higher
-- `THEO_READ_TABLE_640.zip` - compatible with ABAP versions from 6.40 until 7.40 SP04
+- `THEO_READ_TABLE_710.zip` - compatible with ABAP version 7.10 and higher
+- `THEO_READ_TABLE_640.zip` - compatible with ABAP versions from 6.40 until 7.03
 - `THEO_READ_TABLE_46C.zip` - compatible with ABAP versions from 4.6C until 6.40
 
 

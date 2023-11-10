@@ -19,7 +19,8 @@ Die folgenden Transportaufträge finden Sie im ABAP-Unterordner des Installation
 
 - `Z_XTRACT_IS_REMOTE_REPORT-transport.zip` - enthält den Z-Funktionsbaustein für die *Report Komponente*
 - `THEO_READ_TABLE_740SP05.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
-- `THEO_READ_TABLE_640.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Versionen von 6.40 bis 7.40 SP04
+- `THEO_READ_TABLE_710.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.10 und höher
+- `THEO_READ_TABLE_640.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Versionen von 6.40 bis 7.03
 - `THEO_READ_TABLE_46C.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Versionen von 4.6C bis 6.40
 - `Z_THEO_READ_TABLE-transport.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
 - `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br> kompatibel mit ABAP Version 640 - 740 SP04 

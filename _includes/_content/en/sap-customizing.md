@@ -19,7 +19,8 @@ The following transport requests can be found in the ABAP subfolder of the insta
 
 - `Z_XTRACT_IS_REMOTE_REPORT-transport.zip` - contains the custom function module for the *Report component*
 - `THEO_READ_TABLE_740SP05.zip` - contains the latest custom function module for the *Table component*; <br> compatible with ABAP version 7.40 SP05 and higher
-- `THEO_READ_TABLE_640.zip` - contains the latest custom function module for the *Table component*; <br> compatible with ABAP versions from 6.40 until 7.40 SP04
+- `THEO_READ_TABLE_710.zip` - contains the latest custom function module for the *Table component*; <br> compatible with ABAP version 7.10 and higher
+- `THEO_READ_TABLE_640.zip` - contains the latest custom function module for the *Table component*; <br> compatible with ABAP versions from 6.40 until 7.03
 - `THEO_READ_TABLE_46C.zip` - contains the latest custom function module for the *Table component*; <br> compatible with ABAP versions from 4.6C until 6.40
 - `Z_THEO_READ_TABLE-transport.zip` - contains the custom function module for the *Table component*; <br> compatible with ABAP version 7.40 SP05 and higher
 - `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - contains the custom function module for the *Table component*; <br>compatible with ABAP versions 6.40 to 7.40 SP04
