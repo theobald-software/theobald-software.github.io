@@ -11,6 +11,13 @@ lang: de_DE
 progressstate: 5
 ---
 
+
+{: .box-note }
+**Hinweis:** Wenn Sie Board SaaS mit Board Connector verwenden, müssen Sie im Rahmen eines kürzlichen Softwareupdates Ihre Board Version aktualisieren und die Verbindungs-URL im Data Reader anpassen.
+Setzen Sie die Verbindungs-URL von TCP auf HTTP (Port 8097) oder auf HTTPS (Port 8197).
+Für mehr Information, siehe [Board Release Notes Summer 2023](https://www.boardmanual.com/2021/summer/whats-new-release-notes/2023-summer-release/other-enhancements.htm?rhsearch=sap%20connector&rhhlterm=sap%20connector)
+
+
 Extraktionen können mit dem Data Reader in Board geladen werden. Im folgenden Beispiel wird eine Extraktion "Plants" im Board Designer erstellt. 
 Die Extraktion "Plants" extrahiert die Tabelle Plants *T001W* aus SAP.  
 
