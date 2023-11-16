@@ -19,6 +19,8 @@ The following section offers Alteryx sample workflows and templates for download
 | Workflow | Source System | Description Source System |
 | :------ |:--- | :--- | :--- |
 | [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxmd){:download="BAPI-ERP-ReadandWrite.yxmd"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.|
+| [SAP-Read-Long-Texts](/docs/alteryx-workflows/SAP-Read-Long-Texts.yxmd){:download="SAP-Read-Long-Texts.yxmd"} | SAP ERP | This workflow demonstrates reading SAP long texts in different languages.|
+| [SAP-Read-Attachment-Files](/docs/alteryx-workflows/SAP-Read-Attachment-Files.yxmd){:download="SAP-Read-Attachment-Files.yxmd"}  | | SAP ERP | This workflow demonstrates extracting attachments of all formats from an SAP systems, e.g., .pdf files of purchase orders.|
 
 ### Xtract Cube
 
