@@ -11,4 +11,5 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=SAPCustomizing-DE:funktionsbaustein-fuer-table-komprimierung	
 ---
 
+
 {% include _content/de/sap-customizing/funktionsbaustein-fuer-table-extraktion.md  %}

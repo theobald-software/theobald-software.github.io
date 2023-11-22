@@ -13,7 +13,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-The following section shows how to create an SAP connection using the [Data Connection Manager](https://help.alteryx.com/20231/designer/dcm-designer) (DCM) of Alteryx.<br>
+The following section shows how to create an SAP connection using the [Data Connection Manager](https://help.alteryx.com/current/en/designer/tools/dcm---designer.html) (DCM) of Alteryx.<br>
 An SAP connection is required to use any Xtract for Alteryx component.
 
 {: .box-note }
@@ -21,7 +21,7 @@ An SAP connection is required to use any Xtract for Alteryx component.
 If you use an older version of the Alteryx Designer, refer to the knowledge base article [Create an SAP Connection](https://kb.theobald-software.com/xtract-for-alteryx/xtract-sap-connection) to create SAP connections using the Xtract for Alteryx UI.
 
 {: .box-note }
-**Note:** To use the DCM it needs to be enabled for your organization, see [Alteryx Documentation: Data Connection Manager](https://help.alteryx.com/20231/designer/dcm-designer).
+**Note:** To use the DCM it needs to be enabled for your organization, see [Alteryx Documentation: Data Connection Manager](https://help.alteryx.com/current/en/designer/tools/dcm---designer.html).
 
 ## Data Sources
 
@@ -166,4 +166,4 @@ For more information, see [SAP Documentation: Configuring the AS Java to Issue L
 
 *****
 #### Related Links
-- [Alteryx Documentation: Data Connection Manager - Server](https://help.alteryx.com/20223/server/dcm-server)
+- [Alteryx Documentation: Data Connection Manager - Server](https://help.alteryx.com/current/en/server/use-alteryx-server-ui/data-connection-manager--server-ui.html)

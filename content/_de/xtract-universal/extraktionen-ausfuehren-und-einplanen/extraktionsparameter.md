@@ -105,7 +105,7 @@ packageSize | setzt die Paketgröße | verfügbar bei Table-Extraktionen
 ### Custom
 
 {: .box-note }
-**Hinweis:** Der Tab *Custom* ist nur dann aktiv, wenn eine [benutzerdefinierte Variable](../fortgeschrittene-techniken/benutzerdefinierte-variablen) angelegt ist.
+**Hinweis:** Der Tab *Custom* ist nur dann aktiv, wenn mindestens ein Laufzeitparameter angelegt ist.
 
 Aktivieren Sie die Checkbox und geben Sie einen neuen Wert ein, um den Parameter zu überschreiben.
  

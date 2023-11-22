@@ -47,7 +47,7 @@ Activating the tri-state checkbox defines whether the conversion routines stored
 |:-----:|-----|
 |(1) | no conversion routines selected | | 
 |(2)| conversion routines enabled;<br> only avaiable with function module Z_XTRACT_IS_TABLE_COMPRESSION | no data type safety |
-|(3)  | conversion routines enabled;<br> only avaiable with function module Z_THEO_READ_TABLE | assured data type safety |
+|(3)  | conversion routines enabled;<br> only avaiable with function module /THEO/READ_TABLE or Z_THEO_READ_TABLE | assured data type safety |
 
 ![Conversion routine](/img/content/table/table_fields_filter3.png){:class="img-responsive"}
 

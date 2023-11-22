@@ -95,7 +95,7 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 ### Custom
 
 {: .box-note }
-**Note:** The tab *Custom* is only active when a [User-Defined Variable](../advanced-techniques/user-defined-variables) was created. 
+**Note:** The tab *Custom* is only active when a runtime parameter is available. 
 
 Check the checkbox and enter a new value to set the user defined parameter.
 

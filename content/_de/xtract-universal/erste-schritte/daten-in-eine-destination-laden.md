@@ -50,7 +50,6 @@ Für mehr Informationen über die Details von Destinationen, geben Sie Ihre Dest
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
-	<option value="hadoop">Hadoop</option>
 	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM DB2</option>
 	<option value="knime">KNIME</option>
@@ -105,7 +104,6 @@ Für mehr Informationen über Destinationseinstellungen, geben Sie Ihre Destinat
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
-	<option value="hadoop">Hadoop</option>
 	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM DB2</option>
 	<option value="knime">KNIME</option>

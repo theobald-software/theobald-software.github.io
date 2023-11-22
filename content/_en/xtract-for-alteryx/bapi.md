@@ -32,7 +32,7 @@ The Xtract BAPI has the following input and output options:
 - Input anchor "I" - input for runtime parameters (1).
 - Input anchor "P" - input for tables (2).
 - Output anchor "1" to "5" - custom output (3).
-- Output anchor "E" - output for status and error messages (4).
+- Output anchor "E" - output for export parameters (4).
 
 ![bapi-input](/img/content/xfa/bapi-input.png){:class="img-responsive" }
 

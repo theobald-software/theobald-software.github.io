@@ -3,7 +3,7 @@
 Follow the steps below to look up a DataSource. For information on how to look up Hierarchies, see [Hierarchies](./hierarchies).
 
 1. In the main window of the component navigate to **OLTP** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png). The window “Look Up OLTP Source” opens.<br>
-![DeltaQ](/img/content/DeltaQ.png){:class="img-responsive"}
+{% if page.product == "xtract-is" %}![DeltaQ](/img/content/xis/DeltaQ.png){:class="img-responsive"}{% else %}![DeltaQ](/img/content/DeltaQ.png){:class="img-responsive"}{% endif %}
 2. Enter the name of a DataSource in the field **Name** (1). Use wildcards ( * ), if needed.<br>
 ![search-ds-mat-attr](/img/content/search-ds-mat-attr2.png){:class="img-responsive"}
 3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png) and select the extractor of your choice from the displayed list (2).
@@ -25,8 +25,8 @@ For more information, see [DeltaQ Customizing](./deltaq-customizing).<br>
 2. Navigate to **Logical Destination** and click ![magnifying-glass](/img/content/icons/magnifying-glass.png) (2) to look up a logical RFC target system. For more information, see [DeltaQ Customizing](./deltaq-customizing).
 3. Click **Customizing Check** (3) to validate the DeltaQ Customizing on the SAP system.
 Make sure that all check marks are green. For more information, see [DeltaQ Customizing](./deltaq-customizing).<br>
-![customizing-check-successfull](/img/content/customizing-check-successfull.png){:class="img-responsive"}
-4. Select an [Update Mode](#update-mode), e.g., to initialize delta extractions.
+![customizing-check-successful](/img/content/customizing-check-successfull.png){:class="img-responsive"}
+4. Select an [Update Mode](./update-mode), e.g., to initialize delta extractions.
 5. Select the items to add to the output.<br>
 ![DeltaQ-output](/img/content/DeltaQ-output.png){:class="img-responsive"}
 6. Optional: click the **[Edit]** option next to an item to add [filters](./datasource-parameters).

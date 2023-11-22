@@ -9,7 +9,7 @@ permalink: /:collection/:path
 weight: 3
 lang: en_GB
 ---
-The prerequisite for using the join functionality is the installation of the function module [Z_THEO_READ_TABLE](../sap-customizing) in SAP.
+The prerequisite for using the join functionality is the installation of the function module [/THEO/READ_TABLE](../sap-customizing) in SAP.
 
 ### Join Functionality
 

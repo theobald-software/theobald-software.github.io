@@ -23,19 +23,20 @@ Liste der relevanten *Custom Properties*:
 | *GatewayHost* | Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *GatewayService* | Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *HierClass* | Entspricht dem Feld *Hierarchy Class* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings).|
-| *HierName* | Entspricht dem Feld *Hierarchy Name* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings). |
-| *Language* | Entspricht dem Feld *Language* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchie-settings).|
+| *HierName* | Entspricht dem Feld *Hierarchy Name* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchy). |
+| *Language* | Entspricht dem Feld *Language* der DeltaQ Komponente, siehe [Settings - Hierarchie Settings](./extraktionseinstellungen#hierarchy).|
 | *NewTimeStampFormatInRequestLog* | Wenn dieser Wert auf *true* (X) gesetzt wird, wird das Format des Zeitstempels im Request Protokoll geändert.|
 | *OLTPSourceName* | Name der zu extrahierenden OLTP-Quelle.|
 | *OLTPSourceType* | Typ der zu extrahierenden OLTP-Quelle.|
 | *ProgramID* | Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *RequestID* | Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
-| *StringConversion* | Siehe [Settings - String Conversion](./extraktionseinstellungen#string-conversion).|
 | *TargetSystem* | Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *Timeout* | Setzen Sie einen Timeout für die Extraktion.|
 | *TransferMethod* | Sie können zwischen Transfer via tRTF (T) oder IDoc (I) wählen.|
 | *TransferStructure* | Transferstruktur der zu extrahierenden Quelle.|
 | *UpdateType* | Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
+| *UseLegacyVarUpdate* | Wenn dieser Wert auf *True* gesetzt wird, wird der veralteten Update-Modus (V)Variable unterstützt, siehe [Settings](./extraktionseinstellungen#misc).|
+| *UseWideString* | Definiert, ob DT_WSTR / DT_NTEXT (true) oder DT_STR / DT_TEXT (false) als Datentyp für String-Spalten verwendet wird. |
 
 {% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}
 
@@ -47,8 +48,8 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 | *[Xtract DeltaQ].[GatewayHost]*|Entspricht dem Feld *Gateway Host* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *[Xtract DeltaQ].[GatewayService]*|Entspricht dem Feld *Gateway Service* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *[Xtract DeltaQ].[ProgramID]*|Entspricht dem Feld *Program ID* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
-| *[Xtract DeltaQ].[TargetSystem]*|Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *[Xtract DeltaQ].[RequestID]*|Entspricht dem Feld *RequestID* in den [Settings](./extraktionseinstellungen) der DeltaQ Komponente.|
+| *[Xtract DeltaQ].[TargetSystem]*|Entspricht dem Feld *Log. Destination* der DeltaQ Komponente, siehe [Customizing Check](./deltaq-customizing).|
 | *[Xtract DeltaQ].[UpdateType]*|Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.  |
 
 
@@ -72,6 +73,5 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 ****
 #### Weiterführende Links
 - [Use Property Expressions in Packages](https://docs.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages?view=sql-server-ver15)
-- [DeltaQ Datasource Parameters](./datasource-parameter) 
-- [Customizing Check](./deltaq-customizing) 
-- [Dynamization of WHERE conditions of the XIS table components](https://kb.theobald-software.com/tables/xtract-is-Dynamization-of-WHERE-conditions-of-the-XIS-table-components)
+- [DeltaQ Selektionen](./datasource-parameter) 
+- [DeltaQ Customizing](./deltaq-customizing) 

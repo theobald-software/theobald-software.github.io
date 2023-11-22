@@ -28,6 +28,7 @@ Specifies the name of the function module used for data extraction.
 This field is filled automatically depending on what function modules are installed on your SAP system.<br>
 The following function modules can be used to extract tables: <br>
 
+- /THEO/READ_TABLE
 - Z_THEO_READ_TABLE
 - /BODS/RFC_STREAM_READ_TABLE
 - /SAPDS/RFC_READ_TABLE2

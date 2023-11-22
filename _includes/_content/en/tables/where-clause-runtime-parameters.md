@@ -11,7 +11,7 @@ The window “Edit Runtime Parameters” opens.<br>
 **Tip:** Parameter0..-n is the default naming for the added parameter. You can enter a name of your choice.
 3. Click the drop-down menu (2) and assign one of the following data types to a parameter. <br>
 The data types may correlate to SAP data types.
-- String: Can be used for any type of SAP selection field.
+- String: Can be used for any type of SAP selection field.{% if page.product == "xtract-for-alteryx" %} List parameters are always of type *String*.{% endif %}
 - Number: Can be used for numeric SAP selection fields.
 - Flag: Can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
 4. Click **[OK]** (3) to confirm. 

@@ -12,28 +12,33 @@ lang: de_DE
 ---
 ### Custom Properties
 Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.
-Bei der Parametrisierung der Komponente durch SSIS Variablen werden diese Eigenschaften überschrieben.
 
 Liste der relevanten *Custom Properties*:
 
 |Property|Beschreibung|
 |:----|:----|
 | *MaxRows* | Entspricht dem Feld *MaxRows* in den [Settings](./query-settings) der Query Komponente.|
-| *QueryDescription* | Beschreibung der zu extrahierenden Query.|
-| *QueryName* | Name der zu extrahierenden Query.|
-| *StringConversion* | Entspricht den Einstellungen in den [Settings](./query-settings) der Query Komponente.|
-| *UserGroup* | Name der Benutzergruppe, unter der die Query abgelegt ist.|
 | *Variant* | Entspricht dem Feld *Use Variant Variable* in den [Settings](./query-settings) der Query Komponente. |
-| *VariantDescription* | Beschreibung der Variante.|
 
-{% include _content/de/xis-specific/parametrisierung/parametrization-via-variables.md  %}
+{% include _content/de/xis-specific/parametrisierung/parametrisierung-properties.md  %}
 
-#### Verfügbare Parameter für SSIS Variablen
-Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
+#### Verfügbare Data Flow Properties
+Liste der *Data Flow Properties*, die parametrisiert werden können:
 
-|Feldname|Beschreibung|
+|Property|Beschreibung|
 |:----|:----|
-| *Variant* | Aktivieren Sie die Checkbox *Use Variant Variable* in den [Settings](./query-settings) der Query Komponente. <br>Dadurch ermöglichen Sie die Verwendung von SSIS-Variablen für das Feld *Variant*.|
+| *[Xtract Report].[Variant]*| Siehe [Varianten und Selektionen](./variants-and-selections).|
+
+### Parametrierung mit SSIS Variablen
+
+SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.<br>
+Verfügbare SSIS Variablen werden direkt in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./variants-and-selections#selektionen-bearbeiten).<br>
+![Selection-via-Variables](/img/content/xis/report_selection_via_variables.png){:class="img-responsive"}
+
+{: .box-note }
+**Hinweis**: Die Xtract Report Komponente unterstützt bei der Parametrisierung durch Variablen alle Datentypen, bis auf *DateTime* und *DBNull*.
+Für mehr Informationen über Datentypen von Systemvariablen, siehe [Microsoft-Hilfe: Systemvariablen](https://docs.microsoft.com/de-de/sql/integration-services/system-variables?view=sql-server-ver15).
+
 
 
 ****

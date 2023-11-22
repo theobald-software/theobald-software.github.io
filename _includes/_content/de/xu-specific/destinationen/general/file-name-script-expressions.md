@@ -16,7 +16,7 @@ Unterstützt werden Skript-Ausdrücke, die auf .NET basieren, sowie folgende XU-
 |```#{Extraction.SapObjectName.Replace('/', '_')}#``` | Entfernt alle Schrägstriche eines SAP Objekts, z.B. wird aus /BIO/TMATERIAL dann _BIO_TMATERIAL. Dadurch wird verhindert, dass die Schrägstriche innerhalb des Namens des SAP Objekts, nicht als Verzeichnistrenner interpretiert werden.         |
 |```#{Extraction.Context}# ```|  Nur für ODP Extraktionen: Kontext des ODP Objekts (*SAPI*, *ABAP_CDS*, etc.). |
 |```#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#```| Nur für ODP Extraktionen: Eingabewert einer definierten Selektion / eines Filter.|  
+|```#{Odp.UpdateMode}#```| Nur für ODP Extraktionen: Load-Verfahren (*Delta*, *Full*, *Repeat*) der Extraktion.| 
 |```#{TableExtraction.WhereClause}#``` | Nur für Table Extraktionen: WHERE-Bedingung der Extraktion.  |
 
-Für mehr Informationen zu Skript-Ausdrücken, siehe [Skript-Ausdrücke](../fortgeschrittene-techniken/script-ausdruecke).
 

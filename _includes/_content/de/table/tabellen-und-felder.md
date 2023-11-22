@@ -48,7 +48,7 @@ Durch Aktivieren der Tri-State-Checkbox wird festgelegt, ob die im Data Dictiona
 |:-----:|-----|
 |(1) | keine Konvertierungsroutine ausgewählt | | 
 |(2)| Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein Z_XTRACT_IS_TABLE_COMPRESSION verfügbar| keine Datentypsicherheit |
-|(3)  | Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein Z_THEO_READ_TABLE verfügbar| Datentypsicherheit garantiert |
+|(3)  | Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein /THEO/READ_TABLE oder Z_THEO_READ_TABLE verfügbar| Datentypsicherheit garantiert |
 
 ![Conversion routine](/img/content/table/table_fields_filter3.png){:class="img-responsive"}
 

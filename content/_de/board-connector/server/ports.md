@@ -17,7 +17,7 @@ Der Board Connector Server läuft als Windows-Service mit dem Hauptprozess `C:\P
 Listener Prozesse| Standard Port | Beschreibung
 ------------ | ------------- | -------------
 *Theobald.Bc.Web.Listener.exe* | 8097 (HTTP) und 8197 (HTTPS) | Ports können geändert werden
-*BCConfigServer.exe* | 8096 | Port kann geändert werden
+*Theobald.Bc.Rpc.Listener.exe* | 8096 | Port kann geändert werden
 *BCAPIServer.exe* | 8098 | Port kann nicht geändert werden, keine Verschlüsselung
 
 Die Server-Prozesse nutzen verschiedene Ports für die Kommunikation. 

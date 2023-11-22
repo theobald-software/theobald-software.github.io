@@ -11,12 +11,17 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-note }
+**Note:** When using Board SaaS with Board Connector, a recent software change requires users to update Board and to change the connection URL of the Data Reader.
+Set the connection URL of the Board Data Reader from TCP to an HTTP connection (port 8097) or an HTTPS (port 8197) connection.
+For more information, see [Board Release Notes Summer 2023](https://www.boardmanual.com/2021/summer/whats-new-release-notes/2023-summer-release/other-enhancements.htm?rhsearch=sap%20connector&rhhlterm=sap%20connector)
+
 Extractions can be loaded in Board using the Data Reader. In the following example an extraction "Plants" is created in the Board Designer. 
 The extraction "Plants" extracts the table *T001W* from SAP. 
 
 1. In Board, select **[+ DATA READER]**  to create a new Data Reader. Enter a name (here: "Plants") and a group (here: "Main Group"). Select the source type "SAP". <br>
 ![Load-Extraction-01](/img/content/board/Load-Extraction-01.png)
-2. Create a new connection for the Board Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the Board Connector server (e.g., localhost:8098).<br>
+2. Create a new connection for the Board Connector Server. Optionally, you can select an existing connection. Set a *name* and the *URL* of the Board Connector server (e.g., localhost:8197).<br>
 3. Click the "Connect" icon (1) to pull a list of extractions from the Board Connector.
 4. Select an extraction (here: T001W)  from the EXTRACTOR box on the right hand-side. The extraction's metadata (field names, data types) is listed in the window below.
 ![Load-Extraction-02](/img/content/board/Load-Extraction-02.png)

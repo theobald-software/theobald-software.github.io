@@ -10,6 +10,8 @@ weight: 5
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-extraktionseinstellungen
 ---
+Eine Extraktion hat zwei Einstellungen: die Extraktionseinstellungen beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen, während die [Allgemeinen Einstellungen](../erste-schritte/allgemeine-einstellungen) bei allen Extraktionstypen gleich sind.
+
 {% include _content/de/abap_reports/report-extraktionseinstellungen.md %}
 
 #### Weiterführende Links

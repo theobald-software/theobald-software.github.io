@@ -14,6 +14,9 @@ progessstate: 5
 
 The Designer features different functionalities for data extractions. 
 
+{: .box-tip }
+**Tip:** Press **[F1]** to open the online help articles for particular windows.
+
 ### Main Menu Bar
 
 ![main-window-menubar](/img/content/xu/main-window-menubar.png){:class="img-responsive"}

@@ -63,7 +63,6 @@ The list below shows several most important files that are placed into the defau
 | gac-uninstall.bat | **For debugging only**. Tool to clear the GAC of all Xtract IS related components in case of installation issues.|
 | Eula_XtractIS.rtf | Document containing the license agreement for the use of the software Xtract IS.|
 | XtractISLicense.json | License file with information about the server, the component and runtime. |
-| UninstallDllLicense.bat| **For older license files**. See [Updating the Xtract.License.dll to XtractISLicense.json](./installing-the-license#updating-the-xtractlicensedll-to-xtractislicensejson)|
 
 
 ### Unattended Installation

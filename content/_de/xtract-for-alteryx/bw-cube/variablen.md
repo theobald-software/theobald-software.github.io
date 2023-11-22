@@ -14,6 +14,4 @@ lang: de_DE
 
 {% include _content/de/bw-infocubes-und-bex-queries/variablen.md %}
 
-*****
-#### Weiterführende Links
-- [Variablen in Alteryx Designer](https://help.alteryx.com/10.6/Reference/Variables.htm)
+

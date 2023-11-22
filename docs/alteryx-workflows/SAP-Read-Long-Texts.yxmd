@@ -1,0 +1,882 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="Theobald.Alteryx.Bapi.BapiToolFactory">
+        <Position x="306" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>EC5</Connection>
+          <Definition>{
+    "name": "RFC_READ_TEXT",
+    "description": "",
+    "serialization": 
+    [
+        {
+            "typeDescriptions": 
+            [
+                {
+                    "BAPI_MTYPE": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+                        "fieldLabel": {
+                            "short": "Msg type",
+                            "medium": "Message type",
+                            "long": "Message type",
+                            "heading": "MsgType"
+                        }
+                    },
+                    "SYMSGID": {
+                        "length": 20,
+                        "rfcType": "CHAR",
+                        "description": "Message Class",
+                        "fieldLabel": {
+                            "short": "Message ID",
+                            "medium": "Message Class",
+                            "long": "Message Class",
+                            "heading": "Message ID"
+                        }
+                    },
+                    "SYMSGNO": {
+                        "length": 3,
+                        "rfcType": "NUM",
+                        "description": "Message Number",
+                        "fieldLabel": {
+                            "short": "Message no",
+                            "medium": "Message number",
+                            "long": "Message number",
+                            "heading": "Msg.no."
+                        }
+                    },
+                    "BAPI_MSG": {
+                        "length": 220,
+                        "rfcType": "CHAR",
+                        "description": "Message Text",
+                        "fieldLabel": {
+                            "short": "Message",
+                            "medium": "Message text",
+                            "long": "Message text",
+                            "heading": ""
+                        }
+                    },
+                    "BALOGNR": {
+                        "length": 20,
+                        "rfcType": "CHAR",
+                        "description": "Application log: log number",
+                        "fieldLabel": {
+                            "short": "Log no.",
+                            "medium": "Log number",
+                            "long": "Log number",
+                            "heading": "Log number"
+                        }
+                    },
+                    "BALMNR": {
+                        "length": 6,
+                        "rfcType": "NUM",
+                        "description": "Application log: Internal message serial number",
+                        "fieldLabel": {
+                            "short": "Msg. no.",
+                            "medium": "Message no.",
+                            "long": "Message serial no.",
+                            "heading": "Msg.no"
+                        }
+                    },
+                    "SYMSGV": {
+                        "length": 50,
+                        "rfcType": "CHAR",
+                        "description": "Message Variable",
+                        "fieldLabel": {
+                            "short": "Msg. Var.",
+                            "medium": "Message Variable",
+                            "long": "Message Variable",
+                            "heading": "Message Variable"
+                        }
+                    },
+                    "BAPI_PARAM": {
+                        "length": 32,
+                        "rfcType": "CHAR",
+                        "description": "Parameter Name",
+                        "fieldLabel": {
+                            "short": "Parameters",
+                            "medium": "Parameter Name",
+                            "long": "Parameter Name",
+                            "heading": "Param. Name"
+                        }
+                    },
+                    "BAPI_LINE": {
+                        "length": 4,
+                        "rfcType": "INT",
+                        "description": "Lines in parameter",
+                        "fieldLabel": {
+                            "short": "Line",
+                            "medium": "Parameter line",
+                            "long": "Lines in parameter",
+                            "heading": "Lines in parameter"
+                        }
+                    },
+                    "BAPI_FLD": {
+                        "length": 30,
+                        "rfcType": "CHAR",
+                        "description": "Field in parameter",
+                        "fieldLabel": {
+                            "short": "Field",
+                            "medium": "Field name",
+                            "long": "Field name",
+                            "heading": "Fld."
+                        }
+                    },
+                    "BAPILOGSYS": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Logical system from which message originates",
+                        "fieldLabel": {
+                            "short": "System",
+                            "medium": "Logical system",
+                            "long": "Logical system (source of message)",
+                            "heading": "System from which message comes"
+                        }
+                    },
+                    "LKENZ": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Deletion Indicator",
+                        "fieldLabel": {
+                            "short": "Delet.Ind.",
+                            "medium": "Deletion Ind.",
+                            "long": "Deletion Indicator",
+                            "heading": "DeID"
+                        }
+                    },
+                    "DOKOB": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Linked SAP Object",
+                        "fieldLabel": {
+                            "short": "Object",
+                            "medium": "Object",
+                            "long": "SAP object",
+                            "heading": "Obj."
+                        }
+                    },
+                    "OBJKY": {
+                        "length": 50,
+                        "rfcType": "CHAR",
+                        "description": "Document management object key",
+                        "fieldLabel": {
+                            "short": "Object key",
+                            "medium": "Object key",
+                            "long": "Object key",
+                            "heading": "Object key"
+                        }
+                    },
+                    "DRADDIR": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Direction of document link active",
+                        "fieldLabel": {
+                            "short": "Active",
+                            "medium": "Active",
+                            "long": "Active",
+                            "heading": ""
+                        }
+                    },
+                    "OBJTXT": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Object Text",
+                        "fieldLabel": {
+                            "short": "ObjectText",
+                            "medium": "Object text",
+                            "long": "Object text",
+                            "heading": "Object text"
+                        }
+                    },
+                    "LONGTEXT_ID": {
+                        "length": 32,
+                        "rfcType": "CHAR",
+                        "description": "DMS: GUID for allocation of long texts",
+                        "fieldLabel": {
+                            "short": "",
+                            "medium": "",
+                            "long": "",
+                            "heading": ""
+                        }
+                    },
+                    "TABELLE": {
+                        "length": 30,
+                        "rfcType": "CHAR",
+                        "description": "Name of database table for object",
+                        "fieldLabel": {
+                            "short": "Table",
+                            "medium": "Table",
+                            "long": "Table",
+                            "heading": "Table"
+                        }
+                    },
+                    "CAD_POS": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "CAD: Assignment document  &lt;-&gt; material",
+                        "fieldLabel": {
+                            "short": "CAD",
+                            "medium": "CAD",
+                            "long": "CAD indicator",
+                            "heading": "CAD indicator"
+                        }
+                    },
+                    "DOKAR": {
+                        "length": 3,
+                        "rfcType": "CHAR",
+                        "description": "Document Type",
+                        "fieldLabel": {
+                            "short": "Type",
+                            "medium": "Document Type",
+                            "long": "Document Type",
+                            "heading": "Ty."
+                        }
+                    },
+                    "DOKNR": {
+                        "length": 25,
+                        "rfcType": "CHAR",
+                        "description": "Document number",
+                        "fieldLabel": {
+                            "short": "Document",
+                            "medium": "Document",
+                            "long": "Document",
+                            "heading": "Document"
+                        }
+                    },
+                    "DOKVR": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "Document Version",
+                        "fieldLabel": {
+                            "short": "Version",
+                            "medium": "Doc. Version",
+                            "long": "Document version",
+                            "heading": "Vr"
+                        }
+                    },
+                    "DOKTL_D": {
+                        "length": 3,
+                        "rfcType": "CHAR",
+                        "description": "Document Part",
+                        "fieldLabel": {
+                            "short": "Part",
+                            "medium": "Document Part",
+                            "long": "Document Part",
+                            "heading": "DPt"
+                        }
+                    },
+                    "TTIDX": {
+                        "length": 4,
+                        "rfcType": "INT",
+                        "description": "Index in category table",
+                        "fieldLabel": {
+                            "short": "Index",
+                            "medium": "CatTabIdx",
+                            "long": "CatTabIndex",
+                            "heading": "Idx"
+                        }
+                    },
+                    "MANDT": {
+                        "length": 3,
+                        "rfcType": "CHAR",
+                        "description": "Client",
+                        "fieldLabel": {
+                            "short": "Client",
+                            "medium": "Client",
+                            "long": "Client",
+                            "heading": "Cl."
+                        }
+                    },
+                    "TDOBJECT": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Texts: Application Object",
+                        "fieldLabel": {
+                            "short": "Object",
+                            "medium": "Text Object",
+                            "long": "Text Object",
+                            "heading": "Object"
+                        }
+                    },
+                    "TDOBNAME": {
+                        "length": 70,
+                        "rfcType": "CHAR",
+                        "description": "Name",
+                        "fieldLabel": {
+                            "short": "Text Name",
+                            "medium": "Text Name",
+                            "long": "Text Name",
+                            "heading": "Text"
+                        }
+                    },
+                    "TDID": {
+                        "length": 4,
+                        "rfcType": "CHAR",
+                        "description": "Text ID",
+                        "fieldLabel": {
+                            "short": "ID",
+                            "medium": "Text ID",
+                            "long": "Text ID",
+                            "heading": "ID"
+                        }
+                    },
+                    "SPRAS": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Language Key",
+                        "fieldLabel": {
+                            "short": "Language",
+                            "medium": "Language",
+                            "long": "Language Key",
+                            "heading": "Language"
+                        }
+                    },
+                    "COUNT": {
+                        "length": 3,
+                        "rfcType": "NUM",
+                        "description": "Counter",
+                        "fieldLabel": {
+                            "short": "Counter",
+                            "medium": "Counter",
+                            "long": "Counter",
+                            "heading": "Cntr."
+                        }
+                    },
+                    "TDFORMAT": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "Tag column",
+                        "fieldLabel": {
+                            "short": "Format",
+                            "medium": "Tag column",
+                            "long": "Tag column",
+                            "heading": "Format"
+                        }
+                    },
+                    "TDLINE": {
+                        "length": 132,
+                        "rfcType": "CHAR",
+                        "description": "Text Line",
+                        "fieldLabel": {
+                            "short": "",
+                            "medium": "",
+                            "long": "",
+                            "heading": ""
+                        }
+                    }
+                },
+                {
+                    "BAPIRET2": {
+                        "fields": 
+                        [
+                            {
+                                "name": "TYPE",
+                                "typeReference": "BAPI_MTYPE"
+                            },
+                            {
+                                "name": "ID",
+                                "typeReference": "SYMSGID"
+                            },
+                            {
+                                "name": "NUMBER",
+                                "typeReference": "SYMSGNO"
+                            },
+                            {
+                                "name": "MESSAGE",
+                                "typeReference": "BAPI_MSG"
+                            },
+                            {
+                                "name": "LOG_NO",
+                                "typeReference": "BALOGNR"
+                            },
+                            {
+                                "name": "LOG_MSG_NO",
+                                "typeReference": "BALMNR"
+                            },
+                            {
+                                "name": "MESSAGE_V1",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "MESSAGE_V2",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "MESSAGE_V3",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "MESSAGE_V4",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "PARAMETER",
+                                "typeReference": "BAPI_PARAM"
+                            },
+                            {
+                                "name": "ROW",
+                                "typeReference": "BAPI_LINE"
+                            },
+                            {
+                                "name": "FIELD",
+                                "typeReference": "BAPI_FLD"
+                            },
+                            {
+                                "name": "SYSTEM",
+                                "typeReference": "BAPILOGSYS"
+                            }
+                        ]
+                    },
+                    "BAPI_DOC_DRAD_KEYS": {
+                        "fields": 
+                        [
+                            {
+                                "name": "DELETEVALUE",
+                                "typeReference": "LKENZ"
+                            },
+                            {
+                                "name": "OBJECTTYPE",
+                                "typeReference": "DOKOB"
+                            },
+                            {
+                                "name": "OBJECTKEY",
+                                "typeReference": "OBJKY"
+                            },
+                            {
+                                "name": "DOCUMENTDIRECTION",
+                                "typeReference": "DRADDIR"
+                            },
+                            {
+                                "name": "OBJECTDESCRIPTION",
+                                "typeReference": "OBJTXT"
+                            },
+                            {
+                                "name": "OBJECTLINKID",
+                                "typeReference": "LONGTEXT_ID"
+                            },
+                            {
+                                "name": "ADDOBJECTTYPE",
+                                "typeReference": "TABELLE"
+                            },
+                            {
+                                "name": "ADDOBJECTKEY",
+                                "typeReference": "OBJKY"
+                            },
+                            {
+                                "name": "CAD_POS",
+                                "typeReference": "CAD_POS"
+                            },
+                            {
+                                "name": "DOCUMENTTYPE",
+                                "typeReference": "DOKAR"
+                            },
+                            {
+                                "name": "DOCUMENTNUMBER",
+                                "typeReference": "DOKNR"
+                            },
+                            {
+                                "name": "DOCUMENTVERSION",
+                                "typeReference": "DOKVR"
+                            },
+                            {
+                                "name": "DOCUMENTPART",
+                                "typeReference": "DOKTL_D"
+                            },
+                            {
+                                "name": "TAB_INDEX",
+                                "typeReference": "TTIDX"
+                            }
+                        ],
+                        "includes": 
+                        [
+                            {
+                                "name": "BAPI_DOC_DRAD",
+                                "offset": 0,
+                                "length": 9
+                            },
+                            {
+                                "name": "BAPI_DOC_KEYS",
+                                "offset": 9,
+                                "length": 4
+                            }
+                        ]
+                    },
+                    "IBIPTEXTLN": {
+                        "fields": 
+                        [
+                            {
+                                "name": "MANDT",
+                                "typeReference": "MANDT"
+                            },
+                            {
+                                "name": "TDOBJECT",
+                                "typeReference": "TDOBJECT"
+                            },
+                            {
+                                "name": "TDNAME",
+                                "typeReference": "TDOBNAME"
+                            },
+                            {
+                                "name": "TDID",
+                                "typeReference": "TDID"
+                            },
+                            {
+                                "name": "TDSPRAS",
+                                "typeReference": "SPRAS"
+                            },
+                            {
+                                "name": "COUNTER",
+                                "typeReference": "COUNT"
+                            },
+                            {
+                                "name": "TDFORMAT",
+                                "typeReference": "TDFORMAT"
+                            },
+                            {
+                                "name": "TDLINE",
+                                "typeReference": "TDLINE"
+                            }
+                        ],
+                        "includes": 
+                        [
+                            {
+                                "name": "TLINE",
+                                "offset": 6,
+                                "length": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                }
+            ]
+        },
+        {
+            "tables": 
+            [
+                {
+                    "name": "MESSAGES",
+                    "description": "Return Parameter(s)",
+                    "typeReference": "BAPIRET2"
+                },
+                {
+                    "name": "OBJECTLINKS",
+                    "description": "Return Parameter(s)",
+                    "typeReference": "BAPI_DOC_DRAD_KEYS"
+                },
+                {
+                    "name": "TEXT_LINES",
+                    "description": "IBIP: Long text line with logical key",
+                    "typeReference": "IBIPTEXTLN"
+                }
+            ]
+        },
+        {
+        },
+        {
+        },
+        {
+            "TEXT_LINES": {
+                "table": "#1"
+            }
+        },
+        {
+            "parameters": 
+            [
+                "TEXT_LINES"
+            ]
+        }
+    ]
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Code"
+}</DestinationSettings>
+          <ExtractorsVersion>1.48.1.1</ExtractorsVersion>
+          <RuntimeParameters />
+          <OutputMappings>
+            <Mapping>
+              <Result>TEXT_LINES</Result>
+              <Connection>1</Connection>
+            </Mapping>
+          </OutputMappings>
+          <CommitTransaction>False</CommitTransaction>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RFC_READ_TEXT</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.BapiTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Bapi.BapiTool" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="MANDT" />
+            <Field name="TDOBJECT" />
+            <Field name="TDNAME" />
+            <Field name="TDID" />
+            <Field name="TDSPRAS" />
+            <Field name="COUNTER" />
+            <Field name="TDFORMAT" />
+            <Field name="TDLINE" />
+          </Fields>
+          <Data>
+            <r>
+              <c />
+              <c>VBBP</c>
+              <c>0000008221000010</c>
+              <c>0001</c>
+              <c>D</c>
+              <c />
+              <c />
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="510" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_28416_9279e83f7d09554684972ce9add1e744_\Engine_28416_42b835ea0d394649bd7426129b1d73c7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TDNAME" selected="True" />
+            <SelectField field="TDLINE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="18" y="42" width="1032" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to read Long Text descripbtions from a SAP ERP system using SAP provided function module RFC_READ_TEXT.
+
+To use the Xtract BAPI component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="18" y="234" width="240" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="258" y="234" width="792" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Function Module execution]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="18" y="474" width="756" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>We have to fill the table TEXT_LINES for each text we want to fetch. These elements must be filled:
+
+TDOBJECT is the name of the text object (e.g. VBBK for sales order header or VBBP for sales order item)
+TBNAME is the key (in case of VBBP it is the sales order number and the Sales order item number)
+TDID is the text id
+TDSPRAS is the language key</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="1" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SAP Read Long Texts</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a2776d86-cf4c-4dc3-a7a6-5eaa86bd9f47" />
+      <Telemetry>
+        <PreviousWorkflowId value="9c9abc4c-0f54-4b7f-9460-f793e35d5935" />
+        <OriginWorkflowId value="f5389899-6ac8-4442-b634-4dccbfe74068" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

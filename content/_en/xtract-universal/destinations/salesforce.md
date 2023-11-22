@@ -27,7 +27,7 @@ The Salesforce edition has to include the Integration via web service API featur
 **Permissions**<br>
 To run an extraction the API-Enabled permission is needed.
 If the object has to be created the user also needs following permissions:
-- *Mofidy All Data*
+- *Modify All Data*
 - *Customize Application*
 - *Manage Profiles and Permission Sets*
 

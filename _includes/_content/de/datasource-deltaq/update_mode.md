@@ -19,21 +19,19 @@ Wählen Sie im Hauptfenster der Komponente ein **Update Mode** aus einem Dropdow
 | S | Delta Init (without data) | Initiliaziert das Delta-Verfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis der *Delta Init* ist eine **[Maintenance]** (Wartung) auf der SAP-Seite.Wenn Sie einen Deltaprozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen] (./extraktionseinstellungen) auf **[Maintenance]** klicken.|
 | I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
 | A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
-| V | **[Xtract IS only]** SSIS-Variable; veraltet, siehe [Variablen](../bwcube/variablen) | Wenn **V** ausgewählt ist, muss in den [Extraktionseinstellungen](./extraktionseinstellungen) ein Variablenname eingegeben werden. Die gleiche SSIS-Variable muss in SSIS angelegt und mit einem Wert versehen werden. Die folgenden Werte sind möglich: F, D, C, R, S, I und A. |
+
 
 {% if page.product == "xtract-universal" %}
 **Update mode** kann zur Laufzeit mithilfe des Extraktionsparameters **updateType** dynamisch festgelegt werden, siehe [Extraktion ausführen](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#extraktion-ausführen).<br>
 ![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
-{% elsif page.product == "xtract-is" %}
-**Update mode** kann zur Laufzeit mithilfe von SSIS-Variablen dynamisch festgelegt werden.
 {% endif %}
 
-Für weitere Informationen darüber, wann welcher Update-Modus verwendet werden soll, siehe [Initialisierung des Delta-Prozesses](#Initialisierung-des-delta-prozesses).
+Für weitere Informationen darüber, wann welcher Update-Modus verwendet werden soll, siehe [Initialisierung des Delta-Prozesses](#initialisierung-des-delta-prozesses).
 
 
 ### Initialisierung des Delta-Prozesses
 
-Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modus](../datasource-deltaq/update-modus).
+Um einen echten Delta-Prozess zum Laufen zu bringen, muss Delta zunächst initialisiert werden. Eine Übersicht über die Modi finden Sie unter [Update-Modi](#update-modi).
 
 #### Schritt 1: Delta Initialisierung [C]
 In diesem Modus werden alle Daten angefordert, die den von Ihnen eingestellten Auswahlkriterien entsprechen.

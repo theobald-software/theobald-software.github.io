@@ -99,4 +99,3 @@ End Sub
 ****
 #### Related Links
 - [Executing BW Queries](https://kb.theobald-software.com/erpconnect-samples/executing-bw-queries)
-- [Transferring data packets with BWQuery class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-bwquery-class)

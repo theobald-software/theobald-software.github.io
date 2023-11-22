@@ -31,7 +31,7 @@ Das Xtract BAPI verfügt über folgende Ein-und Ausgabemöglichkeiten:
 - Eingabeanker "I" - Eingabe für Laufzeitparameter (1).
 - Eingabeanker "P" - Eingabe für Tabellen (2).
 - Ausgabeanker "1" bis "5" - benutzerdefinierte Ausgabe (3).
-- Ausgabeanker "E" - Ausgabe für Status-und Fehlermeldungen (4).
+- Ausgabeanker "E" - Ausgabe für Export-Parameter (4).
 
 ![bapi-input](/img/content/xfa/bapi-input.png){:class="img-responsive" }
 
