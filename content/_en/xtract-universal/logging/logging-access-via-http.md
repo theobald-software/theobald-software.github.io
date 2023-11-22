@@ -288,14 +288,9 @@ The web call returns the following information:
 
 <table>
 <thead><tr><th>Example URL</th><th>Example Response</th></tr></thead>
-<tbody><tr><td><code>https://todd.theobald.local:8165/status/?name=KNA1&timestamp=2023-09-08_10:43:13.234</code></td>
+<tbody><tr><td><code>https://todd.theobald.local:8165/status/?name=KNA1&timestamp=2023-11-22_10:15:32.390</code></td>
 <td><div style="width:600px;overflow:auto"><pre>
-{
-    "duration": "PT00H00M01.177S",
-    "rowsCount": 9895,
-    "state": "FinishedNoErrors",
-    "webLogTimestamp": "2023-09-08_10:43:02.361"
-}
+FinishedNoErrors
 </pre></div></td></tr></tbody>
 </table>
 
