@@ -260,7 +260,7 @@ Follow the steps below to create a status check routine:
 `http(s)://[host]:[port]/?name=[extraction_name]&wait=false`<br>
 The asynchronous extraction immediately returns an HTTP-response, while the extraction is still running. 
 For more information on how to trigger extractions, see [Execute and Automate - Call via Webservice](../execute-and-automate-extractions/call-via-webservice).
-2. Copy the timestamp that is returned in the HTTP-response header and body of the asynchronous extraction. <br>Example: *X-XU-Timestamp: 2023-01-28_09:58:47.312*.
+2. Copy the timestamp that is returned in the HTTP-response header of the asynchronous extraction. <br>Example: *X-XU-Timestamp: 2023-01-28_09:58:47.312*.
 3. Use the extraction name and the timestamp to query the status of the extraction using the following URL schema:<br>
 `http(s)://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`<br>
 4. The status of an extraction changes in time. 
