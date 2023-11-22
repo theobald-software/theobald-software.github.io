@@ -252,7 +252,7 @@ Führen Sie die folgenden Schritte aus, um eine Routine für einen Status-Check 
 `http(s)://[host]:[port]/?name=[extraction_name]&wait=false`<br>
 Der asynchrone Aufruf erzeugt sofort eine HTTP-Antwort, noch während die Extraktion ausgeführt wird.
 Für mehr Informationen zum Ausführen von Extraktionen, siehe [Extraktionen Ausführen und Einplanen - Aufruf via Webservice](../extraktionen-ausfuehren-und-einplanen/call-via-webservice).
-2. Kopieren Sie den Zeitstempel, der in der HTTP-Antwort des asynchronen Extraktionsaufrufs zurpckgegeben wird.<br>
+2. Kopieren Sie den Zeitstempel, der im HTTP-Response Header des asynchronen Extraktionsaufrufs zurückgegeben wird.<br>
 Beispiel: *X-XU-Timestamp: 2023-01-28_09:58:47.312*.
 3. Verwenden Sie den Extraktionsnamen und den Zeitstempel, um den Status der Extraktion mit folgendem URL-Schema abzurufen:<br>
 `http(s)://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]`<br>
