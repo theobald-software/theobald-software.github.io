@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="474" y="582" />
+        <Position x="462" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -2357,7 +2357,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="606" y="582" />
+        <Position x="654" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2375,7 +2375,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="684" y="582" />
+        <Position x="750" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2396,7 +2396,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="918" y="558" />
+        <Position x="942" y="558" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2418,7 +2418,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="1074" y="570" />
+        <Position x="1230" y="570" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2443,7 +2443,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BlobConvert.BlobConvert">
-        <Position x="1152" y="570" />
+        <Position x="1326" y="570" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2461,7 +2461,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BlobOutput.BlobOutput">
-        <Position x="1230" y="570" />
+        <Position x="1422" y="570" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2480,7 +2480,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="870" y="618" />
+        <Position x="942" y="618" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2578,7 +2578,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="996" y="618" />
+        <Position x="1038" y="618" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2597,7 +2597,7 @@ Download the file to a temporary folder]]></Text>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="Theobald.Alteryx.Bapi.BapiToolFactory">
-        <Position x="762" y="570" />
+        <Position x="846" y="570" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4506,6 +4506,53 @@ Download the file to a temporary folder]]></Text>
       </Properties>
       <EngineSettings EngineDll="Theobald.Alteryx.BapiTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Bapi.BapiTool" />
     </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1134" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FileName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="558" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[FileExtension] = "pdf"
+or
+[FileExtension] = "PDF"
+or
+[FileExtension] = "Pdf"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>[FileExtension] = "pdf</AnnotationText>
+          <DefaultAnnotationText>[FileExtension] = "pdf"
+or
+[FileExtension] = "PDF"
+or
+[FileExtension] = "Pdf"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
         <Position x="149" y="425" width="251" height="180" />
@@ -5667,7 +5714,7 @@ OBJYR = Right(...</DefaultAnnotationText>
   <Connections>
     <Connection>
       <Origin ToolID="42" Connection="Join" />
-      <Destination ToolID="44" Connection="Input" />
+      <Destination ToolID="76" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="74" Connection="Output" />
@@ -5714,7 +5761,7 @@ OBJYR = Right(...</DefaultAnnotationText>
       <Destination ToolID="29" Connection="Targets" />
     </Connection>
     <Connection>
-      <Origin ToolID="37" Connection="Output" />
+      <Origin ToolID="75" Connection="Output" />
       <Destination ToolID="29" Connection="Source" />
     </Connection>
     <Connection>
@@ -5730,12 +5777,20 @@ OBJYR = Right(...</DefaultAnnotationText>
       <Destination ToolID="37" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="7" Connection="2" />
       <Destination ToolID="28" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="7" Connection="Exports" />
       <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="True" />
+      <Destination ToolID="44" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="Output" />
