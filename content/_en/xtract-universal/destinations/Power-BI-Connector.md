@@ -20,7 +20,7 @@ The target environment *Power BI Connector* offers two ways to connect Power BI 
 - Power BI custom connector
 - Generic Power Query M-script
 
-![Power-BI-Connector-](/img/content/xu/PowerBI_Connector_Architecture_SSO.svg){:class="img-responsive"}
+![Power-BI-Connector](/img/content/xu/PowerBI_Connector_Architecture_SSO.png){:class="img-responsive"}
 
 ### Supported Power BI environments
 
