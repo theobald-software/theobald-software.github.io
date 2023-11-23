@@ -4,6 +4,8 @@ Additionally to the Online Help, Theobald Software describes the more advanced t
 
 Theobald Software's claim is to keep the Online Help up to date according to the latest product version. Information concerning the older version is removed gradually from the Online Help content. It is generally recommended to always install the latest version of the product.
 
+Theobald Software's claim is to always update all the used screenshots of other software vendors, nevertheless this cannot be guaranteed. 
+
 ©2023 Theobald Software GmbH. All rights reserved.
 
 ### Target group and audience

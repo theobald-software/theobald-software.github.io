@@ -4,6 +4,8 @@ Zusätzlich zur Online-Help beschreibt Theobald Software die fortgeschritteneren
 
 Der Anspruch von Theobald Software ist es, die Online-Help entsprechend der neuesten Produktversion auf dem neuesten Stand zu halten. Informationen, die die ältere Version betreffen, werden schrittweise aus dem Inhalt der Online-Help entfernt.  Es wird allgemein empfohlen, immer die neueste Version des Produkts zu installieren.
 
+Der Anspruch von Theobald Software besteht darin, alle verwendeten Screenshots anderer Softwareanbieter stets zu aktualisieren, eine Garantie hierfür kann jedoch nicht übernommen werden.
+
 Zur besseren Lesbarkeit wird in der Online-Help das generische Maskulinum verwendet. 
 
 ©2023 Theobald Software GmbH. Alle Rechte vorbehalten.
