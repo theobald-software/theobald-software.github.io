@@ -22,17 +22,29 @@ Before integrating a service, test the service directly in yunIO or a REST clien
 
 #### Run Service Menu
 
-Follow the steps below to testrun a service:
+Follow the steps below to testrun a service in yunIO:
 1. If [Global Access Control](./access-control#global-access-control) and/or [Service Access Control](./access-control#service-access-control) is enabled, enter valid credentials (1).
-2. If the service requires input parameters, enter values for the parameters listed under *Service parameters* (2).
-The depicted example uses an input parameter *NAME1*.<br>
+2. If the service requires input parameters, enter values for the parameters listed under *Input Parameters* (2).
+The depicted example uses an input parameter *NAME*.<br>
 ![Run-Service](/img/content/yunio/run-service.png){:class="img-responsive" }
-3. Click **[Run]**. The response body of the service is displayed at the bottom of the menu (3).
-4. If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
+3. Click **[Run]**. The response body of the service is displayed under *Output Parameters* (3).<br>
+If the service returns multiple items, expand the items to view the content or use the control buttons to adjust how the parameters are displayed.<br>
+If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
 5. Click **[Close]** to close the *Run Service* menu.
 
 {: .box-tip}
 **Tip:** Click **[Edit]** to edit the service or add parameters.
+
+#### Control Buttons
+
+The control buttons adjust how input and output parameters are displayed in the Run Service menu.
+
+- **[Collapse]** - collapses all parameter items.
+- **[Expand]** - expands all parameter items.
+- **[Maximize]** - displays the parameters in a full screen view. To close the full screen view, click **[Close]**.
+- **[JSON]** - displays the parameters in JSON format.
+- **[To top]** - scrolls to the top of the parameter list.
+- **[Reset]** - removes all defines input parameters. This option is only available for input parameters.
 
 ### Integrating a Service
 

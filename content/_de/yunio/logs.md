@@ -32,7 +32,7 @@ Die Liste der Service-Läufe besteht aus den folgenden Spalten:
 - Duration of the service run (Dauer des Service-Laufs)
 - State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*) (Status des Serivce-Laufs)
 
-Klicken Sie auf einen Service-Lauf, um das entsprechende Extraktions-Log unten im Menü anzuzeigen (1).
+Klicken Sie auf einen Service-Lauf, um das entsprechende Extraktions-Log anzuzeigen (1).
 
 ![yunIO-Logs](/img/content/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
 
@@ -67,6 +67,8 @@ Jeder Logeintrag ist einem der folgenden Typen zugewiesen:
 - **I - Information:** Statusmeldungen, über Vorgänge, die nicht zu einem Fehler führen.<br>
 - **W - Warnings:**  Informationen über Probleme, die nicht zu einem Extraktionsfehler führen. Zum Beispiel Authentifizierungsfehler.<br>
 - **D - Debug Details:** detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
+
+<!---
 
 #### Struktur eines Server-Worker-Logs
 
@@ -129,6 +131,7 @@ PT00H00M43.781S I yunIOWorker: Cleaning up...
 PT00H00M43.785S D AsyncHttpServer: Closing connection: False
 PT00H00M43.785S D AsyncHttpServer: Reading...
 ```
+-->
 
 ### Log-Verzeichnis
 

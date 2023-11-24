@@ -32,7 +32,7 @@ The list of service runs consists of the following columns:
 - Duration of the service run
 - State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*)
 
-Click a service run to display the corresponding extraction log at the bottom of the menu (1).
+Click a service run to display the corresponding extraction log (1).
 
 ![yunIO-Logs](/img/content/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
 
@@ -65,6 +65,7 @@ Each log entry is assigned one of the following message types:
 - **W - Warnings:** information about problems that do not lead to an extraction error, e.g., authentication errors.<br>
 - **D - Debug Details:** detailed information that helps finding error cause.
 
+<!---
 #### Structure of a Service Worker Log
 
 The following example highlights the basic structure of service logs that are created when running a yunIO service.<br>
@@ -126,6 +127,7 @@ PT00H00M43.785S D AsyncHttpServer: Closing connection: False
 PT00H00M43.785S D AsyncHttpServer: Reading...
 ```
 
+-->
 
 ### Logs Directory
 
