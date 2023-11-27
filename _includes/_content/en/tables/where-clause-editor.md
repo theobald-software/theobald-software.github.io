@@ -3,7 +3,8 @@
 
 {% if page.parent != "table-cdc" %}
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.<br>
-{% if page.product != "yunio" %}Click **[Editor mode]** to open the editor. 
+{% if page.product == "yunio" %}Switch to *Editor mode* to open the WHERE clause editor. <br>
+![WHERE-Clause-Builder-01](/img/content/yunio/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Click **[Editor mode]** to open the editor. 
 
 ![WHERE-Clause-Builder-01](/img/content/where-clause-builder.png){:class="img-responsive"}
 {% endif %} {% endif %}

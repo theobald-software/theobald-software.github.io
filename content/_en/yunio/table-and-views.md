@@ -35,13 +35,10 @@ The extraction settings of *SAP Table and Views* open automatically.<br>
 The *SAP Table or View* settings consist of the following subsections:
 - [Table or View](#table-or-view) (4) displays the name and description of the selected SAP Table or View.
 - [Advanced Settings](#advanced-settings) (5) define how the data is extract from SAP.
-- [Output Columns](#output-columns) (6) define which columns are extracted.
-- [WHERE Clause](#where-clause) (7) offers an optional data filter.
-- [WHERE Clause Editor](#where-clause-editor) (8) offers a toolkit for creating WHERE clauses.
+- [Output Columns](#output-columns) (6) define what columns to extract.
+- [WHERE Clause](#where-clause) and [WHERE Clause Editor](#where-clause-editor) (7) define what rows to extract.
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
-
-
 
 ### Table or View
 
@@ -103,6 +100,7 @@ Deselect the columns you don’t want to extract.
 
 ### WHERE Clause
 A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
+Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#where-clause-editor) in *Editor Mode*.<br>
 
 {% include _content/en/tables/where-clause-syntax.md%}
 

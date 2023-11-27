@@ -35,8 +35,7 @@ Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 - [Table or View](#table-or-view) (4) zeigt den Namen und die Beschreibung der gewählten SAP Tabelle oder View an.
 - [Advanced Settings](#advanced-settings) (5) definieren, wie Daten aus SAP extrahiert werden.
 - [Output Columns](#output-columns) (6) definieren, welche Spalten extrahiert werden.
-- [WHERE Clause](#where-clause) (7) ermöglicht das Filtern von Daten.
-- [WHERE Clause Editor](#where-clause-editor) (8) bietet ein Toolkit zum Erstellen von WHERE-Bedingungen.
+- [WHERE Clause](#where-clause) und [WHERE Clause Editor](#where-clause-editor) (7) definieren, welche Zeilen extrahiert werden.
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
 
@@ -99,6 +98,7 @@ Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.
 
 ### WHERE Clause
 Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abapwhere.htm).
+Geben Sie die WHERE-Bedingung entweder über die manuelle Texteingabe oder über den [WHERE Clause Editor](#where-clause-editor) ein.<br>
 
 {% include _content/de/table/where-bedingung-syntax.md%}
 
