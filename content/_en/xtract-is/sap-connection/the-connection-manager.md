@@ -143,3 +143,46 @@ To manually assign a Connection Manager to an Xtract BAPI component, open the ma
 The main window of the Xtract BAPI component contains a *Change Connection Manager* menu. 
 
 ![assign-connection-manager](/img/content/xis/assign-connection-manager.png)
+
+### Parameterizing a Connection Manager
+
+The properties of a Connection Manager can be parameterized.
+The following example shows how to set up project parameters for Connection Manager properties:
+
+1. Right-click a Connection Manager and choose **Parameterize...**. The window "Parameterize" opens.
+2. Select the property you want to parameterize.<br>
+![connection-manager-parameterize](/img/content/xis/connection-manager-parameterize.png){:class="img-responsive"}
+3. Select **Use existing parameter** to assign a parameter to the selected property or select **Create New Parameter** to create a new parameter.
+4. In the section *Scope* select **Project** to create a project parameter. 
+5. Click **[OK]**. The new project parameter is now available under *Project.params* in the "Solution Explorer".<br>
+![connection-manager-project-params](/img/content/xis/connection-manager-project-params.png){:class="img-responsive"}
+
+For more information on package and project parameters, see [Microsoft Documentation: Integration Services (SSIS) Package and Project Parameters](https://learn.microsoft.com/en-us/sql/integration-services/integration-services-ssis-package-and-project-parameters?view=sql-server-ver16).
+
+#### List of Connection Manager Properties
+
+|Property Name|Description|
+|:----|:----|
+| *AppServer* | Host name or IP address of the SAP application server. |
+| *AttachesSapGui* | Set to *True* for Reports and BAPIs that require an installed SAP GUI.|
+| *Client* | The three-digit number of the SAP client between 000 and 999. |
+| *InstanceNumber* | A two-digit number between 00 und 99. |
+| *InternalTableFunction*| The function module used for Xtract IS’ internal communication with SAP, e.g., retrieving metadata. |
+| *Language* | The logon language for the SAP system, e.g., EN for English or DE for German. |
+| *LegacyStorageMode* | Enables backward compatibility. SAP connection parameters are no longer stored as Connection Strings, but as Properties. |
+| *LoadBalancingEnabled* | Enables load balancing (SAP message server). |
+| *LogOnGroup*| SAP Logon group for Load Balancing. |
+| *MessageServer* | Name or IP address of the SAP message server. |
+| *Name* | Name of the Connection Manager.|
+| *Password* | Password of the SAP user. |
+| *PasswordObfuscated* | If *LegacySorageMode* is enabled, this property determines if the password is stored as plain text or if it is masked. |
+| *RfcLibrary* | Select an RFC library to establish an RFC connection to an SAP system. |
+| *SncEnabled* | Enables Secure Network Connection (SNC).|
+| *SncLibraryPathX64* |  The complete path to the library location for 64 bit systems. |
+| *SncLibraryPathX86* | The complete path to the library location for 32 bit systems.|
+| *SncPartnerName* | The SAP Partner Name configured for the SAP application server, e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`` |
+| *SncQualityOfProtection* | The SNC level of protection, e.g., *9 - Maximum* |
+| *SystemId* | A three-digit System ID, e.g., MSS. |
+| *TraceDirectory* | A local path to a folder, where you want to save the debug information. |
+| *User*| Name of the SAP user.|
+
