@@ -29,12 +29,25 @@ Führen Sie die folgenden Schritte aus, um einen Service zu testen:
 2. Wenn der Service Eingabeparameter erfordert, geben Sie Werte für die unter *Service parameters* (2) aufgeführten Parameter ein.
 Das dargestellte Beispiel verwendet einen Eingabeparameter *NAME1*.<br>
 ![Run-Service](/img/content/yunio/run-service.png){:class="img-responsive" }
-3. Klicken Sie auf **[Run]**. Das Response-Body des Service wird im unteren Abschnitt des Menüs angezeigt (3).
-4. Wenn das Response-Body eine Fehlermeldung zurückgibt, klicken Sie auf **[Logs]**, um die [Logs](./logs) des Service-Laufs anzeigen zu lassen.
-5. Klicken Sie auf **[Close]**, um das *Run Service* Menü zu schließen.
+3. Klicken Sie auf **[Run]**. Das Response-Body (Antworttext) des Service wird unter *Output Parameters*(3) angezeigt.<br>
+Wenn der Service mehrere Elemente zurückgibt, erweitern Sie die Elemente, um den Inhalt anzuzeigen, oder verwenden Sie die Kontrollschaltflächen, um die Anzeige der Parameter anzupassen.<br>
+Wenn das Response-Body eine Fehlermeldung zurückgibt, klicken Sie auf **[Logs]**, um die [Logs](./logs) des Service-Laufs zu öffnen.
+4. Klicken Sie auf **[Close]**, um das *Run Service* Menü zu schließen.
+
 
 {: .box-tip}
 **Tipp:** Klicken Sie auf **[Edit]**, um den Service zu bearbeiten oder Parameter hinzuzufügen.
+
+#### Kontrollschaltfächen
+
+Die Kontrollschaltflächen im Menü „Run Service“ passen die Anzeige der Ein-und Ausgabeparameter an.
+
+- **[Collapse]** - klappt alle Parameterelemente zusammen.
+- **[Expand]** - erweitert alle Parameterelemente.
+- **[Maximize]** - zeigt die Parameter in einer Vollbildansicht an. Um die Vollbildansichtzu schließen, klicken Sie auf **[Close]**.
+- **[JSON]** - zeigt die Parameter im JSON-Format an.
+- **[To top]** - scrollt zum Anfang der Parameterliste.
+- **[Reset]** - Entfernt alle definierten Eingabeparameter. Diese Option ist nur für Eingabeparameter verfügbar.
 
 ### Integration eines Services
 

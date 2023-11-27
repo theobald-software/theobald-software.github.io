@@ -28,7 +28,7 @@ Follow the steps below to testrun a service in yunIO:
 The depicted example uses an input parameter *NAME*.<br>
 ![Run-Service](/img/content/yunio/run-service.png){:class="img-responsive" }
 3. Click **[Run]**. The response body of the service is displayed under *Output Parameters* (3).<br>
-If the service returns multiple items, expand the items to view the content or use the control buttons to adjust how the parameters are displayed.<br>
+If the service returns multiple items, expand the items to view the content or use the control buttons to adjust the display of the parameters.<br>
 If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
 5. Click **[Close]** to close the *Run Service* menu.
 
@@ -37,14 +37,14 @@ If the response body returns an error message, click **[Logs]** to open the [log
 
 #### Control Buttons
 
-The control buttons adjust how input and output parameters are displayed in the Run Service menu.
+The control buttons in the Run Service menu adjust the display of input and output parameters.
 
 - **[Collapse]** - collapses all parameter items.
 - **[Expand]** - expands all parameter items.
 - **[Maximize]** - displays the parameters in a full screen view. To close the full screen view, click **[Close]**.
 - **[JSON]** - displays the parameters in JSON format.
 - **[To top]** - scrolls to the top of the parameter list.
-- **[Reset]** - removes all defines input parameters. This option is only available for input parameters.
+- **[Reset]** - removes all defined input parameters. This option is only available for input parameters.
 
 ### Integrating a Service
 
