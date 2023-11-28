@@ -1,5 +1,5 @@
 ---
-ref: xtract-is-04
+ref: xtract-is-start
 layout: page
 title: Getting Started with Xtract IS
 description: Getting Started with Xtract IS
