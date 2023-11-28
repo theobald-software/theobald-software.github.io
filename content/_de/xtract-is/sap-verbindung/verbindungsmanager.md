@@ -10,6 +10,7 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
+
 ### SAP-Verbindung herstellen 
 Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
 
@@ -41,7 +42,7 @@ Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 - **Message Server**: Name oder IP-Adresse des Message-Servers (Eigenschaft MessageServer) 
 - **Logon group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
 
-Siehe auch SAP Online-Help: [Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm.
+Siehe auch SAP Online-Help:[Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm).
 
 
 #### Zugriff über SAP-Router

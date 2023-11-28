@@ -10,7 +10,9 @@ progressstate: 5
 permalink: /:collection/:path
 weight: 4
 lang: de_DE
+
 ---
+
 Der folgende Abschnitt gibt eine allgemeine Einführung in Xtract IS am Beispiel der Table-Komponente. 
 Die im folgenden Abschnitt beschriebenen Informationen sind eine Voraussetzung für alle nachfolgenden Abschnitte.
 

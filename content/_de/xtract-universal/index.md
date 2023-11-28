@@ -34,7 +34,7 @@ Je nach Art des SAP-Quellsystems gibt es unterschiedliche Szenarien beim Einsatz
 - [**Query**](./sap-queries) extrahiert ERP-Queries. **Hinweis: nicht die BEx-Queries von BW Cube**.
 - [**Report**](./report-abap-reports-ansteuern) extrahiert ABAP Reports.
 - [**Table**](./table) extrahiert Daten aus SAP-Tabellen und Views; ermöglicht das Zusammenführen mehrerer Tabellen auf der SAP-Seite.
-- [**TableCDC**](./table) extrahiert Delta-Inhalte von SAP-Tabellen und Views.
+- [**TableCDC**](./table-cdc) extrahiert Delta-Inhalte von SAP-Tabellen und Views.
 
 
 | Komponente   | ERP | BW |

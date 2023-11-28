@@ -11,6 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 progressstate: 5
 ---
+
 ### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
 
@@ -97,7 +98,7 @@ There is a *Property* for each component of the *Connection string*.
 - **Legacy storage mode (connection string):**<br>
 SAP connection parameters are set via a single *Connection string* (default in XIS versions pre 09.2017).
 You can either use *Connection properties* or a *Connection string*, not both.
-*Connection string* does not support [sensitive environment variable](./sensitive-environment-variable-in-ssis-catalog).
+*Connection string* does not support [sensitive environment variable](./sap-connection-parameters#sensitive-environment-variable-in-ssisdb-catalog).
 - **Obfuscate Password:**<br>
 Masks the SAP connection password. This option is switched on per default when activating **Legacy storage mode**.
 - **Internal Table Function:**<br>
