@@ -36,7 +36,7 @@ The following overview shows, which components are available to extract data fro
 - [**Query**](./sap-queries) extracts ERP queries. **Note: not BEx queries supplied by BW Cube**.
 - [**Report**](./abap-reports) extracts ABAP Reports.
 - [**Table**](./table) extracts data from SAP tables and views; allows joining several tables on the SAP side.
-- [**TableCDC**](./table) extracts delta content from SAP tables and views.
+- [**TableCDC**](./table-cdc) extracts delta content from SAP tables and views.
 
 Common scenarios when using the components depend on the type of the SAP source system:
 

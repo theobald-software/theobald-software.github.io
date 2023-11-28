@@ -47,7 +47,7 @@ For more information on package and project parameters, see [Microsoft Documenta
 | *SncEnabled* | Enables Secure Network Connection (SNC).|
 | *SncLibraryPathX64* |  The complete path to the library location for 64 bit systems. |
 | *SncLibraryPathX86* | The complete path to the library location for 32 bit systems.|
-| *SncPartnerName* | The SAP Partner Name configured for the SAP application server, e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`` |
+| *SncPartnerName* | The SAP Partner Name configured for the SAP application server, e.g., `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` |
 | *SncQualityOfProtection* | The SNC level of protection, e.g., *9 - Maximum* |
 | *SystemId* | A three-digit System ID, e.g., MSS. |
 | *TraceDirectory* | A local path to a folder, where you want to save the debug information. |

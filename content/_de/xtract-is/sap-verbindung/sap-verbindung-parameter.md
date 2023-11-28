@@ -47,7 +47,7 @@ Weitere Informationen zu Paket-und Projektparametern finden Sie unter [Microsoft
 | *SncEnabled* | Aktiviert eine sichere Netzwerkverbindung (SNC).|
 | *SncLibraryPathX64* |  Der vollständige Pfad zum Bibliotheksspeicherort für 64-Bit-Systeme. |
 | *SncLibraryPathX86* | Der vollständige Pfad zum Bibliotheksspeicherort für 32-Bit-Systeme.|
-| *SncPartnerName* | Der für den SAP-Application-Server konfigurierte SAP-Partnername, z. B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL`` |
+| *SncPartnerName* | Der für den SAP-Application-Server konfigurierte SAP-Partnername, z. B. `p:SAPserviceERP/do_not_care@THEOBALD.LOCAL` |
 | *SncQualityOfProtection* | Die SNC-Schutzstufe, z. B. *9 – Maximum*|
 | *SystemId* | Eine dreistellige System-ID, z.B. MSS. |
 | *TraceDirectory* | Ein lokaler Pfad zu einem Ordner, in dem Sie die Debug-Informationen speichern möchten. |
@@ -56,12 +56,13 @@ Weitere Informationen zu Paket-und Projektparametern finden Sie unter [Microsoft
 ### Sensible Umgebungsvariablen im SSIS Katalog
 
 Umgebungsvariablen im [SSISDB-Katalog](https://learn.microsoft.com/en-us/sql/integration-services/catalog/ssis-catalog?view=sql-server-ver16) können in Kombination mit den Projektparametern verwendet werden, um Folgendes zu erreichen:
-– Parametrisieren der SSIS-Pakete nach der Bereitstellung auf dem Server.
+
+- Parametrisieren der SSIS-Pakete nach der Bereitstellung auf dem Server.
 - Verschlüsseln der sensiblen Daten, z. B. SAP-Passwörter.
 
 Führen Sie die folgenden Schritte aus, um eine sensible Umgebungsvariable für eine Xtract Connection Manager-Eigenschaft einzurichten:
 
-1.Konfigurieren Sie einen Xtract Connection Manager, der Projektparameter verwendet, siehe [Parametrisieren eines Xtract Connection Managers](#parameterisieren-eines-xtract-connection-managers).
+1. Konfigurieren Sie einen Xtract Connection Manager, der Projektparameter verwendet, siehe [Parametrisieren eines Xtract Connection Managers](#parameterisieren-eines-xtract-connection-managers).
 2. Stellen Sie das Projekt in einem SSISDB-Katalog bereit. 
 3. Erstellen Sie eine Umgebung im SSISDB-Katalog.
 4. Erstellen Sie eine sensible Variable in den Umgebungseigenschaften.<br>
