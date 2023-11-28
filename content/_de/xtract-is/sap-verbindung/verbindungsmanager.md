@@ -10,6 +10,7 @@ weight: 1
 lang: de_DE
 progressstate: 5
 ---
+
 ### SAP-Verbindung herstellen 
 Jede Xtract IS Komponente benötigt einen Xtract IS Connection Manager, um auf das SAP-System zuzugreifen. 
 

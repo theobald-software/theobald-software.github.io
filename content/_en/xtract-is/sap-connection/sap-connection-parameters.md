@@ -56,11 +56,11 @@ For more information on package and project parameters, see [Microsoft Documenta
 
 ### Sensitive Environment Variable in SSISDB Catalog
 
-Environment variables in the [SSISDB catalog](https://learn.microsoft.com/en-us/sql/integration-services/catalog/ssis-catalog?view=sql-server-ver16) can be used in combination with project parameters to:
-- parameterize SSIS packages after they are deployed to the server.
-- encode sensible data, e.g., SAP passwords.
+Environment variables in the [SSISDB catalog](https://learn.microsoft.com/en-us/sql/integration-services/catalog/ssis-catalog?view=sql-server-ver16) can be used in combination with project parameters to achieve the following:
+- Parameterize SSIS packages after deploying to the server.
+- Encode sensitive data, e.g., SAP passwords.
 
-Follow the steps below to set up a sensible environment variable for an Xtract Connection Manager property:
+Follow the steps below to set up a sensitive environment variable for an Xtract Connection Manager property:
 
 1. Configure an Xtract Connection Manager that uses project parameters, see [Parameterizing a Connection Manager](#parameterizing-an-xtract-connection-manager).
 2. Deploy the project to an SSISDB catalog. 

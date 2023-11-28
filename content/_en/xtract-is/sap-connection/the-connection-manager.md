@@ -11,6 +11,7 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 progressstate: 5
 ---
+
 ### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
 
