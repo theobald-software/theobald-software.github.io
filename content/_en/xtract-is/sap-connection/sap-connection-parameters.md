@@ -68,7 +68,7 @@ Follow the steps below to set up a sensitive environment variable for an Xtract 
 4. Create a sensitive variable in the environment properties.<br>
 ![XIS_sensitive_variable_1](/img/content/XIS_sensitive_variable_1.png){:class="img-responsive" }
 5. Open the configuration menu of the project. The project parameters from step 1 are available in the parameter list.
-6. Click **[...]** to assign sensitive environment variables to a project parameter.<br>
+6. Click **[...]** to assign a sensitive environment variable to a project parameter.<br>
 ![XIS_sensitive_variable_1](/img/content/XIS_sensitive_variable_2.png){:class="img-responsive" }
 7. Execute a package using the environment.
 
