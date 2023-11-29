@@ -101,7 +101,7 @@ Für jede Komponente des *Connection Strings* existiert eine *Property*.
 
 - **Legacy storage mode (connection string):**<br>
 Die SAP-Verbindungsparameter werden über einen einzigen *Connection String* eingestellt (Standard in XIS-Versionen vor 09/2017).
-Der *Connection String* unterstützt keine [sensitiven Umgebungsvariablen](./sensitive-umgebungsvariablen-in-ssis).
+Der *Connection String* unterstützt keine [sensible Umgebungsvariablen](./sap-verbindung-parameter#sensible-umgebungsvariablen-im-ssis-katalog).
 Sie können entweder *Connection Properties* oder einen *Connection String* verwenden, nicht beides.
 - **Obfuscate Password:**<br>
 Das SAP-Verbindungspasswort wird maskiert, so dass es nicht im Klartext gespeichert wird. 

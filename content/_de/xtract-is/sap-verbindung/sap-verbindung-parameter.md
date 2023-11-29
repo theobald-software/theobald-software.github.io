@@ -13,7 +13,7 @@ lang: de_DE
 
 ### Parametrisieren eines Xtract Connection Managers
 
-Den Eigenschaften des [Xtract Connection Managers](./the-connection-manager) können Parameter zugewiesen werden.
+Den Eigenschaften des [Xtract Connection Managers](./verbindungsmanager) können Parameter zugewiesen werden.
 Führen Sie die folgenden Schritte aus, um Projektparameter für Connection-Manager-Eigenschaften einzurichten:
 
 1. Klicken Sie mit der rechten Maustaste auf einen Xtract Connection Manager und wählen Sie **Parameterize...**. Das Fenster "Parameterize" öffnet sich.
