@@ -1,12 +1,12 @@
 ---
-ref: xu-table-06
+ref: xu-table-05
 layout: page
 title: General Settings
 description: General settings
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
-weight: 6
+weight: 5
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
