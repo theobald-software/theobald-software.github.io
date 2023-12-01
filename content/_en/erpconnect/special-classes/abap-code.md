@@ -22,68 +22,68 @@ The following sample shows how to create a simple ABAP interpreter that executes
 3. Execute the report using *Execute*.
 4. Read the result set (regarding the ABAP list) using *GetResultLine*.
 
-
 ```csharp
-private void button1_Click(object sender, System.EventArgs e)
+using System;
+using ERPConnect;
+using ERPConnect.Utils;
+
+// Set your ERPConnect license
+LIC.SetLic("xxxx");
+
+// Open the connection to SAP
+using var connection = new R3Connection(
+    host: "server.acme.org",
+    systemNumber: 00,
+    userName: "user",
+    password: "passwd",
+    language: "EN",
+    client: "001")
 {
-	using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-            {
-                ERPConnect.LIC.SetLic("LicenseNumber");
-                con.Open(false);
-				
-                ERPConnect.Utils.ABAPCode code = new ERPConnect.Utils.ABAPCode();
-                code.Connection = con;
-				
-                foreach (string s in txtABAPCode.Lines)
-                {
-                    code.AddCodeLine(s);
-                }
-                if (code.Execute())
-                {
-                    for (int i = 0; i < code.ResultLineCount; i++)
-                        txtResult.Text += code.GetResultLine(i) + "\r\n";
-                }
-                else
-                {
-                    txtResult.Text = "ABAP Error: " + code.LastABAPSyntaxError;
-                }
-            }
+    Protocol = ClientProtocol.NWRFC,
+};
+
+connection.Open();
+
+const string code =
+    """
+    REPORT ztestreport NO STANDARD PAGE HEADING.
+
+    TABLES kna1.
+
+    DATA c TYPE i.
+
+    SELECT COUNT(*) INTO c FROM kna1.
+
+    WRITE: /'System time ', sy-timlo.
+    WRITE: /'Number of rows in KNA1: ', c.
+    """;
+
+var abapCode = new ABAPCode
+{
+    Connection = connection
+};
+
+string[] lines = code.Split('\n');
+foreach (string s in lines)
+{
+    abapCode.AddCodeLine(s.Trim());
+}
+
+if (abapCode.Execute())
+{
+    for (int i = 0; i < abapCode.ResultLineCount; i++)
+    {
+        Console.WriteLine(abapCode.GetResultLine(i));
+    }
+}
+else
+{
+    Console.WriteLine($"ABAP Error: {abapCode.LastABAPSyntaxError}");
 }
 ```
-<!---
-<details>
-<summary>Click to open VB example.</summary>
-{% highlight visualbasic %}
-Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
- 
- 
-    Using con As New ERPConnect.R3Connection
-        con.UserName = "erpconnect"
-        con.Password = "pass"
-        con.Language = "DE"
-        con.Client = "800"
-        con.Host = "sapserver"
-        con.SystemNumber = 11
- 
-        con.Open(False)
- 
-        Dim code = New ERPConnect.Utils.ABAPCode
-        code.Connection = con
-        Dim s As String
-        For Each s In textBox1.Lines
-            code.AddCodeLine(s)
-        Next
- 
-        Dim i As Integer
-        If code.Execute() Then
-            For i = 0 To code.ResultLineCount - 1
-                textBox2.Text += code.GetResultLine(i) + vbCrLf
-            Next
-        Else
-            textBox2.Text = "ABAP Error:" + code.LastABAPSyntaxError
-        End If
-    End Using
-End Sub
-{% endhighlight %}
-</details>
--->
+
+Output:
+```
+System time  11:17:46
+Number of rows in KNA1:       7.705
+```

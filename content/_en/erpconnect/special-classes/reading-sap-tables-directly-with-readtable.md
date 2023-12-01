@@ -26,81 +26,66 @@ The following sample shows how to use the *ReadTable* class to select data from 
 For this the columns *MATNR* (material number) and *MAKTX* (material text) are needed.
 - To make sure only the English language texts are read, add a corresponding WHERE statement `SPRAS='EN'`(SPRAS is the column that contains the language keys).
 
-```csharp
-static void Main(string[] args) 
-{ 
-    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-            {
-                ERPConnect.LIC.SetLic("LicenseNumber");
-                con.Open(false);
-				
-                ReadTable table = new ReadTable(con);
-                table.AddField("MATNR");
-                table.AddField("MAKTX");
-                table.WhereClause = "SPRAS = 'EN' AND MATNR LIKE '%23'";
-                table.TableName = "MAKT";
-                table.RowCount = 10;
-				
-                table.Run();
-				
-                DataTable resulttable = table.Result;
-                for (int i = 0; i < resulttable.Rows.Count; i++)
-                {
-                    Console.WriteLine(
-                     resulttable.Rows[i]["MATNR"].ToString() + " " +
-                     resulttable.Rows[i]["MAKTX"].ToString());
-                }
-                Console.ReadLine();
-            }
+
+``` csharp
+using System;
+using System.Data;
+using ERPConnect;
+using ERPConnect.Utils;
+
+// Set your ERPConnect license
+LIC.SetLic("xxxx");
+
+// Open the connection to SAP
+using var connection = new R3Connection(
+    host: "server.acme.org",
+    systemNumber: 00,
+    userName: "user",
+    password: "passwd",
+    language: "EN",
+    client: "001")
+{
+    Protocol = ClientProtocol.NWRFC,
+};
+
+connection.Open();
+
+var table = new ReadTable(connection)
+{
+    WhereClause = "SPRAS = 'EN'",
+    TableName = "MAKT",
+    RowCount = 10
+};
+
+// Select columns to read
+table.AddField("MATNR");
+table.AddField("MAKTX");
+
+table.Run();
+
+DataTable result = table.Result;
+for (int i = 0; i < result.Rows.Count; i++)
+{
+    Console.WriteLine($"{result.Rows[i]["MATNR"]} {result.Rows[i]["MAKTX"]}");
 }
 
+Console.ReadLine();
 ```
-<!---
-<details>
-<summary>Click to open VB example.</summary>
-{% highlight visualbasic %}
-Module Module1 
-     
-   Sub Main() 
-     
-      Using con As New R3Connection 
-          con.Host = "Hamlet"
-          con.SystemNumber = 00 
-          con.UserName = "SAPUser"
-          con.Password = "SAPPassword"
-          con.Client = "800"
-          con.Language = "DE"
-         
-          con.Open(False) 
-         
-          Dim table As New ReadTable(con) 
-         
-          table.AddField("MATNR") 
-          table.AddField("MAKTX") 
-          table.AddCriteria("SPRAS = 'EN'")
-          table.AddCriteria("AND MATNR LIKE '%23'")
-                  
-          table.TableName = "MAKT"
-         
-          table.RowCount = 10 
-         
-           table.Run() 
-         
-           Dim resulttable As DataTable resulttable = table.Result 
-         
-           Dim i As Integer
-           For i = 0 To resulttable.Rows.Count - 1 
-              Console.WriteLine( _ CStr(resulttable.Rows(i)(0)) + " " + _ 
-                 CStr(resulttable.Rows(i)(1))) 
-           Next
-         
-           Console.ReadLine() 
-        End Using
-   End Sub
-End Module
-{% endhighlight %}
-</details>
--->
+
+Output:
+```
+000000000000000023 Pawan Kalyan_08
+000000000000000038 Test US colleagues upd4
+000000000000000043 English Check 25_01
+000000000000000058 Ventilation, complete build
+000000000000000059 Filter Ereteam
+000000000000000068 a portable 1 ton crane
+000000000000000078 Component Full Repair Service ...
+000000000000000088 AS-100 T-shirt XL
+000000000000000089 AS-100 T-shirt
+000000000000000098 PCB Subassembly
+```
+
 The screenshot below shows the output of the sample program. 
 
 ![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive" }
