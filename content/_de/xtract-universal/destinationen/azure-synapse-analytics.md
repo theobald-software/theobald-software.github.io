@@ -1,7 +1,7 @@
 ---
 ref: destinations-25
 layout: page
-title: Azure Synapse Analytics (SQl pool)
+title: Azure Synapse SQl Pool
 description: Azure Synapse Analytics (SQl pool)
 product: xtract-universal
 parent: destinationen
