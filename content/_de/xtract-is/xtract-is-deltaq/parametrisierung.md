@@ -34,7 +34,7 @@ Liste der relevanten *Custom Properties*:
 | *Timeout* | Setzen Sie einen Timeout für die Extraktion.|
 | *TransferMethod* | Sie können zwischen Transfer via tRTF (T) oder IDoc (I) wählen.|
 | *TransferStructure* | Transferstruktur der zu extrahierenden Quelle.|
-| *UpdateType* | Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: (F)ull, (D)elta, (C) Init, (S) Init w/o data, (R)epeat, (I) non cumulative Init, (A)ctivate.|
+| *UpdateType* | Entspricht dem Drop-down-Menü *Update Mode* in der DeltaQ Komponente. Erlaubte Werte sind: Full (70), Delta (68), Init (67), InitNoData (83), Repeat (82), InitNonCumulative (73), Activate (65).|
 | *UseLegacyVarUpdate* | Wenn dieser Wert auf *True* gesetzt wird, wird der veralteten Update-Modus (V)Variable unterstützt, siehe [Settings](./extraktionseinstellungen#misc).|
 | *UseWideString* | Definiert, ob DT_WSTR / DT_NTEXT (true) oder DT_STR / DT_TEXT (false) als Datentyp für String-Spalten verwendet wird. |
 
