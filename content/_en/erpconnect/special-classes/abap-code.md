@@ -16,13 +16,11 @@ You can execute ABAP code on the fly and retrieve the result in a string array.<
 The following sample shows how to create a simple ABAP interpreter that executes a dynamic SQL statement, see screenshot below.<br>
 ![AbapPad](/img/content/AbapPad.png){:class="img-responsive"  }
 
-
 ### Creating an ABAP Interpreter
-
-1. Open a client connection to the R/3 system using the R3Connection class. 
-2. Use the method *AddCodeLine* to add a new line of code to the dynamic report. 
-3. Execute the report via *Execute*. 
-4. Read the result set (regarding the ABAP list) by using the method *GetResultLine*.
+1. Open a client connection to the R/3 system using *R3Connection*.
+2. Add a new line of code to the dynamic report using *AddCodeLine*.
+3. Execute the report using *Execute*.
+4. Read the result set (regarding the ABAP list) using *GetResultLine*.
 
 
 ```csharp
