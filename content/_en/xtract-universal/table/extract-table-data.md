@@ -15,6 +15,6 @@ The following section shows how to use the Table component.
 
 An extraction has two types of settings: 
 - [*Extraction Settings*](../table/extraction-settings) include settings that affect only the respective extraction type.
-- [*General Settings*](../getting-started/general-settings) are the same for all extraction types.
+- [*General Settings*](../table/general-settings) are the same for all extraction types.
 
 {% include _content/en/tables/define-a-table-extraction.md  %}

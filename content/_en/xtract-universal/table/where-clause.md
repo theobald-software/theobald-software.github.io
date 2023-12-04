@@ -16,7 +16,7 @@ When defining a WHERE clause, you may want to adjust the settings.
 
 An extraction has two types of settings: 
 - [*Extraction Settings*](../table/extraction-settings) include settings that affect only the respective extraction type
-- [*General Settings*](../getting-started/general-settings) are the same for all extraction types.
+- [*General Settings*](../table/general-settings) are the same for all extraction types.
 
  Additionally, you can adjust [*Runtime parameters*](#runtime-parameters-in-the-where-clause-editor) in the WHERE Clause editor.
 

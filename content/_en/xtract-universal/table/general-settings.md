@@ -8,7 +8,7 @@ parent: table
 permalink: /:collection/:path
 weight: 5
 lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
+
 ---
 
 An extraction has two types of settings: 
