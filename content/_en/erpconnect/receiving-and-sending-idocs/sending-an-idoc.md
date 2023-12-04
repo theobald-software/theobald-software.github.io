@@ -11,7 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-sending-an-idoc-from-your-net-application
 ---
 
-This section shows how to write a sample console program that sends a *STATUS IDoc*.
+There are two possible ways to create an IDoc object: 
+- The `CreateIdoc` method creates an IDoc with all segments located in the segment collections. This is useful for sending simple IDocs. 
+- The `CreateEmptyIdoc` method in combination with the `CreateSegment` method creates only the needed segments. 
+
+This section shows how to write a sample console program that sends a *STATUS IDoc* using the `CreateIdoc` method.
 
 The *STATUS* message type is used to manipulate the status of another outbound IDoc e.g., 
 when a subsystem receives an IDoc and acknowledges the receive with a status change.
@@ -24,8 +28,8 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 
 1. Open a client connection to the R/3 system using the *R3Connection* class. 
 2. Inquire the IDoc number of the IDoc to be manipulated and read the input.
-3. Use the *CreateIdoc* method to instance a valid *IDoc* object. 
-"SYSTAT01" is the IDoc type for the appropriate message type STATUS. <br> <br>
+3. Use `CreateIdoc` to instance a valid *IDoc* object. 
+"SYSTAT01" is the IDoc type for the appropriate message type STATUS. <br> 
 	 ```csharp
      static void Main(string[] args)  
      {  
@@ -38,7 +42,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
         
 			Idoc i = con.CreateIdoc("SYSTAT01","");
      ```
-4. Provide receiver and sender information as shown in the code below. <br> <br>
+4. Provide receiver and sender information as shown in the code below. <br> 
 	 ```csharp
 			// Fill Message Type 
 			i.MESTYP = "STATUS"; 
@@ -53,7 +57,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 			i.SNDPRT = "LS"; // Partner type
      ```
 5. Fill in the following fields in segment *E1STATS*: the new status code (*STATUS*), date and time (*LOGDAT*, *LOGTIM*) and the number of the IDoc to be manipulated. 
-6. Send the IDoc using the *Send* method. <br> <br>
+6. Send the IDoc using the `Send`. <br> 
 	 ```csharp
 			// Fill the right fields in the segments 
 			i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20210901";
@@ -67,13 +71,13 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 			}
 	}
      ```
-7. Run the program and check the result.<br>
+7. Run the program using and check the result.<br>
 The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
 ![SAP-Send-IDoc-001](/img/content/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
 
 ****
 #### Related Links
-- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc-by-using-createemptyidoc-method)
+- [Sending an ORDER IDoc using the CreateEmptyIdoc method](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc-by-using-createemptyidoc-method)
 - [Sending a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-a-matmas-idoc)
 - [Resend IDocs which where set to CPICERR in SM58](https://kb.theobald-software.com/erpconnect-samples/resend-idocs-which-where-set-to-cpicerr-in-sm58)
 - [Setting Up an RFC-Destination](./prerequisites#setting-up-an-rfc-destination)

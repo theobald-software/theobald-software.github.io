@@ -11,7 +11,8 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sso-single-sign-on
 ---
 
-As of ERPConnect version 1.6 SSO scenarios are supported.
+As of ERPConnect version 1.6 SSO scenarios are supported.<br>
+There are several methods to get an SSO Ticket depending on the SAP Infrastructure in the company. 
 
 {: .box-note }
 **Note**: To use SSO the SAP system must be configured as described in [SAP Help - Single Sign-On Configuration](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/48/ca0fe42fbb5c97e10000000a42189d/content.htm?no_cache=true).
@@ -19,7 +20,7 @@ As of ERPConnect version 1.6 SSO scenarios are supported.
 ### Logon with SSO-Tickets
 
 #### Creating SSO-Tickets
-To create an SSO ticket the R3Connection class provides the method *GetSSOTicket*. 
+To create an SSO ticket the *R3Connection* class provides the method `GetSSOTicket`. 
 All logon data must be provided once to create the ticket as shown in the code below.
 
 ```csharp
@@ -51,4 +52,6 @@ using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
     conts.Open();
 }
 ```
+
+For information on how to login to SAP using the cookie from the SAP Portal Ticketissuer, refer to the knowledge base article [Login to SAP with an SSO Logonticket](https://kb.theobald-software.com/erpconnect-samples/login-to-sap-with-an-sso-logonticket).
 
