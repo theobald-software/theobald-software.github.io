@@ -10,11 +10,25 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
+A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
+
+When defining a WHERE clause, you may want to adjust the settings. 
+
+An extraction has two types of settings: 
+- [*Extraction Settings*](../table/extraction-settings) include settings that affect only the respective extraction type
+- [*General Settings*](../getting-started/general-settings) are the same for all extraction types.
+
+ Additionally, you can adjust [*Runtime parameters*](#runtime-parameters-in-the-where-clause-editor) in the WHERE Clause editor.
+
+![Extraction-Settings](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
 
 {% include _content/en/tables/where-clause.md %}
 {% include _content/en/tables/where-clause-syntax.md%}
 {% include _content/en/tables/where-clause-editor.md%}
-{% include _content/en/tables/where-clause-runtime-parameters.md %}
+
+### Runtime Parameters in the WHERE Clause Editor
+You can create and assign [runtime parameters](../table/runtime-parameters), when using WHERE Clause.
+
 
 **** 
 #### Related Links

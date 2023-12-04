@@ -1,12 +1,4 @@
 
-
-When defining a WHERE clause, you may want to adjust the settings. 
-An extraction has two types of settings: the [*Extraction Settings*](../extraction-settings) include settings that affect only the respective extraction type, while [*General Settings*](../getting-started/general-settings) are the same for all extraction types. Additionally, you can adjust [*Runtime parameters*](#runtime-parameters-in-the-where-clause-editor).
-
-![Extraction-Settings](/img/content/xu/Table-Extraction-Where-Clause.png){:class="img-responsive"}
-
-A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
-
 ### Using a WHERE Clause 
 
 {% if page.product == "xtract-universal" or page.product == "board-connector" %}1. Open a Table (CDC) extraction. {% else %}1. Open an Xtract Table component.{% endif %}
