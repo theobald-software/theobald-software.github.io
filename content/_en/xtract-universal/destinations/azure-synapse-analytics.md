@@ -1,8 +1,8 @@
 ---
 ref: destinations-25
 layout: page
-title: Azure Synapse SQL Pool
-description: Azure Synapse SQL pool
+title: Azure Synapse Analytics (SQL pool)
+description: Azure Synapse Analytics (SQL pool)
 product: xtract-universal
 parent: destinations
 childidentifier: azure-synapse-analytics
@@ -17,7 +17,7 @@ The following section describes the loading of the SAP extraction data to Azure 
 
 ## Requirements
 
-To use the Azure Synapse SQL Pool destination, you need:
+To use the Azure Synapse Analytics SQL Pool destination, you need:
 
 - an existing [Azure Analytics SQL database](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal).
 - [Azure portal firewall rules](https://docs.microsoft.com/en-us/azure/azure-sql/database/secure-database-tutorial#create-firewall-rules) that grant access for the IP addresses Xtract Universal is running on.
