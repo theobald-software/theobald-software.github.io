@@ -1,23 +1,38 @@
 ### About
 Xtract Universal offers a Web API that allows querying different meta information from Xtract Universal through a web call.
-The following section contains information about the available metadata and the URLs to retrieve that data.
+The following section contains information about the available metadata and the URLs to query that data.
 
 {: .box-note }
 **Note:** This metadata-API returns the result as an http-json stream. The API is available as of [version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history).
 
+### Product Version
+
+The URL pattern to query the current product version is: <br> 
+``` http://[host]:[port]/CurrentVersion ```
+
+Example: <br>
+Calling ```https://todd.theobald.local:8165/CurrentVersion``` returns the following:
+- Version numbers of [Xtract Universal](https://kb.theobald-software.com/version-history/xtract-universal-version-history) 
+- Version numbers of the [Kernel component](https://kb.theobald-software.com/version-history/xtract-kernel-version-history) of the product.
+
+```
+ProductMajor,ProductMinor,ProductRevision,ProductBuild,KernelMajor,KernelMinor,KernelRevision,KernelBuild
+6,2,1,0,5,6,0,19";
+```
+
 ### Result columns of an extraction
 
-The URL pattern to retrieve the result columns of an extraction is: <br> 
+The URL pattern to query the result columns of an extraction is: <br> 
 ``` http://[host]:[port]/config/extractions/[extraction_name]/result-columns ```
 
-The result column has the following schema:
+The result columns have the following schema:
 
 | Column       | Type    | Description                         |
 |--------------|---------|-------------------------------------|
 | name         | String  | column name                         |
 | description  | String  | column description                  |
 | type         | String  | column datatype                     |
-| length       | Integer | column lenght                       |
+| length       | Integer | column length                       |
 | isPrimaryKey | boolean | column is primary key of extraction |
 | isEncrypted  | boolean | encryption for column is active     |
 | decimalsCount  | Integer | number of decimal places |
@@ -28,7 +43,7 @@ Possible values for *type* are: <br>
 *Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*
 
 Example: <br>
-Calling the metadata of extraction *BSEG* using the URL ```http://localhost:8065/config/extractions/BSEG/result-columns``` returns the following result:<br>
+Calling the metadata of extraction *BSEG* using the URL ```https://todd.theobald.local:8165/config/extractions/BSEG/result-columns``` returns the following result:<br>
 
 <details>
 <summary>Click here to show the example</summary>
@@ -111,7 +126,7 @@ The URL pattern is:
 This delivers a list of runtime parameters. <br>
 
 Example: <br>
-Calling the metadata of extraction *plants* using this URL: ```http://localhost:8065/config/extractions/plants/parameters/``` returns the following result:<br>
+Calling the metadata of extraction *plants* using this URL: ```https://todd.theobald.local:8165/config/extractions/plants/parameters/``` returns the following result:<br>
 
 <details>
 <summary>Click here to show the example</summary>
@@ -191,11 +206,11 @@ Calling the metadata of extraction *plants* using this URL: ```http://localhost:
 </details>
 
 ### List of extractions
-A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:<br>
+A list of all extractions defined in Xtract Universal can be queried by the following URL pattern:<br>
 ```http://[host]:[port]/config/extractions/```
 
 Example: <br>
-Calling ```http://localhost:8065/config/extractions/``` returns a list of all extractions defined on the Xtract Universal server running on localhost:8065.
+Calling ```https://todd.theobald.local:8165/config/extractions/``` returns a list of all extractions defined on the Xtract Universal server running on localhost:8065.
 
 <details>
 <summary>Click here to show the example</summary>
@@ -286,7 +301,7 @@ Possible entries for [typename] are:
 *Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
 
 Example: <br>
-Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` returns a list of all extractions that write data to a csv flatfile destination. 
+Calling ```https://todd.theobald.local:8165/config/extractions/?destinationType=FileCSV``` returns a list of all extractions that write data to a csv flatfile destination. 
 
 <details>
 <summary>Click here to show the example</summary>
@@ -338,8 +353,4 @@ Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` 
 }
 {% endhighlight %}
 </details>
-
-
-
-
 
