@@ -13,8 +13,8 @@ Das URL-Pattern zum Abfragen der aktuellen Produktversion lautet: <br>
 
 Beispiel: <br>
 Aufrufen von ```https://todd.theobald.local:8165/CurrentVersion``` gibt Folgendes zurück:
- - Nummern der Version von [Xtract Universal](https://kb.theobald-software.com/version-history/xtract-universal-version-history) 
-- Nummern der Version von der [Kernel-Komponente](https://kb.theobald-software.com/version-history/xtract-kernel-version-history) des Produkts.
+- Nummer der Version von [Xtract Universal](https://kb.theobald-software.com/version-history/xtract-universal-version-history) 
+- Nummer der Version von [Xtract Kernel](https://kb.theobald-software.com/version-history/xtract-kernel-version-history) des Produkts.
 
 ```
 ProductMajor,ProductMinor,ProductRevision,ProductBuild,KernelMajor,KernelMinor,KernelRevision,KernelBuild
