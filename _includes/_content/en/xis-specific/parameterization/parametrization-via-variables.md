@@ -1,3 +1,5 @@
+<link rel="canonical" href="https://help.theobald-software.com/en/xtract-is/table/table-parametrization" />
+
 ### Parameterizing Using SSIS Variables
 
 SSIS variables store values that an SQL Server Integration Services package and its containers, tasks, and event handlers can use at run time.<br>

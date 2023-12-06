@@ -1,3 +1,5 @@
+<link rel="canonical" href="https://help.theobald-software.com/en/xtract-is/table/table-parametrization" />
+
 ### Parameterizing Using Expression Properties
 
 The recommended way of parameterization is to use SSIS expressions to set *Data Flow Properties*. <br>
