@@ -1,16 +1,33 @@
 ### Über diese Seite
 Xtract Universal bietet die Möglichkeit, verschiedene Metadaten-Informationen über eine Web-API abzurufen.
-Der folgende Abschnitt beinhaltet Informationen über die verfügbaren Metadaten und die dazugehörigen URLs.
+
+Der folgende Abschnitt enthält Informationen zu den verfügbaren Metadaten und den URLs, um diese Daten abzufragen.
 
 {: .box-note }
 **Hinweis:** Die Metadaten-API gibt Daten im http-json Format aus. Die API ist ab [Version 4.27.1](https://kb.theobald-software.com/version-history/xtract-universal-version-history) verfügbar.
 
+###  Produktversion
+
+Das URL-Pattern zum Abfragen der aktuellen Produktversion lautet: <br> 
+``` http://[host]:[port]/CurrentVersion ```
+
+Beispiel: <br>
+Aufrufen von ```https://todd.theobald.local:8165/CurrentVersion``` gibt Folgendes zurück:
+ - Nummern der Version von [Xtract Universal](https://kb.theobald-software.com/version-history/xtract-universal-version-history) 
+- Nummern der Version von der [Kernel-Komponente](https://kb.theobald-software.com/version-history/xtract-kernel-version-history) des Produkts.
+
+```
+ProductMajor,ProductMinor,ProductRevision,ProductBuild,KernelMajor,KernelMinor,KernelRevision,KernelBuild
+6,2,1,0,5,6,0,19";
+```
+
+
 ### Ergebnisspalten einer Extraktion
 
-Das URL Pattern zum Abruf von Ergebnisspalten einer Extraktion lautet: <br> 
+Das URL-Pattern zum Abfragen der Ergebnisspalten einer Extraktion lautet: <br> 
 ``` http://[host]:[port]/config/extractions/[extraction_name]/result-columns ```
 
-Die Ergebnisspalte wird über folgende Felder definiert:
+Die Ergebnisspalten werden über folgende Felder definiert:
 
 | Spalte       | Typ    | Beschreibung                         |
 |--------------|---------|-------------------------------------|
@@ -28,7 +45,7 @@ Mögliche Werte für *type* sind: <br>
 *Byte, Short, Int, Long, Double, Decimal, NumericString, StringLengthMax, StringLengthUnknown, ByteArrayLengthExact, ByteArrayLengthMax, ByteArrayLengthUnknown, Date, ConvertedDate, Time*
 
 Beispiel: <br>
-```http://localhost:8065/config/extractions/BSEG/result-columns``` ruft die Metadaten der Extraktion *BSEG* auf:
+```https://todd.theobald.local:8165/config/extractions/BSEG/result-columns``` ruft die Metadaten der Extraktion *BSEG* auf:
 
 <details>
 <summary>Klicken Sie hier, um das Beispiel anzuzeigen</summary>
@@ -111,7 +128,7 @@ Das URL-Pattern zum Abruf der Parameter lautet: <br>
 ```http://[host]:[port]/config/extractions/[extraction_name]/parameters```
 
 Beispiel: <br>
-```http://localhost:8065/config/extractions/plants/parameters/``` ruft die Metadaten der Extraktion *plants* auf:
+```https://todd.theobald.local:8165/config/extractions/plants/parameters/``` ruft die Metadaten der Extraktion *plants* auf:
 
 <details>
 <summary>Klicken Sie hier, um das Beispiel anzuzeigen</summary>
@@ -196,7 +213,8 @@ Eine Liste aller in Xtract Universal definierten Extraktionen kann über folgend
 ```http://[host]:[port]/config/extractions/```
 
 Beispiel: <br>
-```http://localhost:8065/config/extractions/``` ruft eine Liste aller Extraktions auf localhost:8065 auf.
+
+Aufruf von ```https://todd.theobald.local:8165/config/extractions/``` gibt eine Liste aller auf dem Xtract Universal Server definierten Extraktionen zurück. Der Xtract Universal Server läuft dabei auf localhost:8065.
 
 <details>
 <summary>Klicken Sie hier, um das Beispiel anzuzeigen</summary>
@@ -285,7 +303,7 @@ Mögliche Einträge für [typename] sind:<br>
 *Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
 
 Beispiel: <br>
-```http://localhost:8065/config/extractions/?destinationType=FileCSV``` ruft eine Liste aller Extraktionen auf, die Daten in eine csv-Datei schreiben.
+```https://todd.theobald.local:8165/config/extractions/?destinationType=FileCSV``` ruft eine Liste aller Extraktionen auf, die Daten in eine csv-Datei schreiben.
 
 <details>
 <summary>Klicken Sie hier, um das Beispiel anzuzeigen</summary>

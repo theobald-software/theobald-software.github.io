@@ -11,7 +11,9 @@ The URL pattern to query the current product version is: <br>
 ``` http://[host]:[port]/CurrentVersion ```
 
 Example: <br>
-Calling ```https://todd.theobald.local:8165/CurrentVersion``` returns the version numbers of [Xtract Universal](https://kb.theobald-software.com/version-history/xtract-universal-version-history) and the [Kernel component](https://kb.theobald-software.com/version-history/xtract-kernel-version-history) of the product.
+Calling ```https://todd.theobald.local:8165/CurrentVersion``` returns the following:
+- Version numbers of [Xtract Universal](https://kb.theobald-software.com/version-history/xtract-universal-version-history) 
+- Version numbers of the [Kernel component](https://kb.theobald-software.com/version-history/xtract-kernel-version-history) of the product.
 
 ```
 ProductMajor,ProductMinor,ProductRevision,ProductBuild,KernelMajor,KernelMinor,KernelRevision,KernelBuild
@@ -204,7 +206,7 @@ Calling the metadata of extraction *plants* using this URL: ```https://todd.theo
 </details>
 
 ### List of extractions
-A list of all extractions defined in Xtract Universal can be queryd by the following URL pattern:<br>
+A list of all extractions defined in Xtract Universal can be queried by the following URL pattern:<br>
 ```http://[host]:[port]/config/extractions/```
 
 Example: <br>
