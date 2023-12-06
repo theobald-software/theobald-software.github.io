@@ -14,6 +14,8 @@ Look up the SAP table you want to track.
 The application now returns to the main window of the component.
 All relevant metadata information of the table is retrieved from SAP.
 
+{: .box-note } 
+**Note:** Changes to the source table structures are only possible after the CDC related resources associated with that table are cleared from the SAP system.
 
 ### Define a Table CDC Extraction
 
