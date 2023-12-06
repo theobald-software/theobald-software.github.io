@@ -29,7 +29,7 @@ Required function modules:
 - /THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.10 or higher. 
 
 
-The SAP transport requests for the function modules are provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
+The SAP transport requests for the function modules are provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 
 <!---
 - Access to the SAP authority object `S_TABU_NAM ACTVT=02` must be granted.

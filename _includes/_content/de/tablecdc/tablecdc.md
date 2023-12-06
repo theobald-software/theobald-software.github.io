@@ -23,24 +23,14 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 
 ### Voraussetzungen
 
-- SAP Version 7.40 SP05 oder höher.
-- Installation der Funktionbausteine Z_THEO_DELETE_LOG_ENTRIES und Z_THEO_READ_TABLE Version 2.10 oder höher. Die SAP Transportaufträge für beide Funktionbausteine befinden sich im Installationsverzeichnis
-`C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Funktionsbaustein für TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
-- Benötigte Funktionsbausteine und ihre Pakethierarchie:
+Erforderliche Funktionsmodule:
 
-	| Funktionsbaustein | Pakethierarchie |
-	|-----------------|----------|
-	| DMC_DDIF_TABL_GET_WRAPPER |ECC: *CNVM &rarr; DMIS_BASIS_MWB &rarr; DMIS_BASIS &rarr; DMIS* <br> S4: *CNV_DMC_REMOTE &rarr; DMIS_BASIS_MWB &rarr; DMIS_BASIS &rarr; DMIS*|
-	| IUUC_CREATE_TABLE | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_DD_TABL_DEL_WRAPPER | *IUUC_DD_TABL_DEL_WRAPPER &rarr; CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_COUNT_ENTRIES_LOGGING_TBL | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_CRE_ACT_ADBC_TRIGGER | *IUUC_CRE_ACT_ADBC_TRIGGER : CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_DELETE_ADBC_TRIGGER | *CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| /THEO/READ_TABLE oder Z_THEO_READ_TABLE | */THEO/READ_TABLE* oder *Z_THEO_READ_TABLE* |
-	| Z_THEO_DELETE_LOG_ENTRIES | *Z_THEO_CDC* |
+- /THEO/CDC_ECC oder /THEO/CDC_S4 
+- /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version 2.10 oder höher.
 
-{: .box-note }
-**Hinweis:** IBM Datenbanken aktuell nicht von Table CDC unterstützt. Die Unterstützung von IBM Datenbanken ist geplant für Q4 2023.
+
+Die SAP-Transportaufträge für die Funktionsmodule werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
+
 
 <!---
 

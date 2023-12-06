@@ -14,6 +14,10 @@ Wählen die SAP Tabelle, die Sie mit Table CDC aufzeichnen möchten.
 Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
+
+{: .box-note } 
+**Hinweis:**  Die Strukturen der Ursprungstabelle können nur geändert werden, nachdem die mit dieser Tabelle verbundenen CDC-bezogenen Ressourcen in SAP gelöscht wurden.
+
 ### Eine Table CDC Extraktion Einrichten
 
 Richten Sie die Table CDC Komponente ein, um Daten zu extrahieren:

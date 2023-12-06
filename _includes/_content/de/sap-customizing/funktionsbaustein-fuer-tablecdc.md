@@ -4,8 +4,12 @@ Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installiere
 
 ### Installation von Z_THEO_DELETE_LOG_ENTRIES
 
-Installieren Sie den Funktionsbaustein Z_THEO_DELETE_LOG_ENTRIES über den mitgelieferten Transportauftrag Z_THEO_DELETE_LOG_ENTRIES-transport.zip.<br>
-Der Transportauftrag befindet sich in folgendem Installationsverzeichnis: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\Z_THEO_DELETE_LOG_ENTRIES-transport.zip`.
+- Installieren Sie den Funktionsbaustein THEO_CDC_ECC, wenn Sie ein SAP ECC-System verwenden.
+Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_ECC.zip`.
+
+- Installieren Sie den Funktionsbaustein THEO_CDC_S4, wenn Sie ein SAP S/4-System verwenden.
+Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4.zip`.
+
 
 Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
 
@@ -19,6 +23,7 @@ Installieren Sie den Funktionsbaustein /THEO/READ_TABLE oder Z_THEO_READ_TABLE V
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
 
+****
 #### Weiterführende Links
 - [Knowledge Base: How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
 - [Table CDC - Voraussetzungen](../table-cdc#voraussetzungen)
