@@ -27,7 +27,7 @@ If the row limit is reached, the extraction fails with an exception. The maximum
 Note that once a log table is initialized, you cannot change the size limit anymore.
 4. Optional: Define a [WHERE Clause](./where-clause) to filter table records.
 5. Click **[Load Preview]** to load 1000 records for the preview.<br>
-The column IUUC_OPERAT_FLAG indicates if a row was inserted (I), updated (U) or deleted (D).
+The column TS_OPERATION indicates if a row was inserted (I), updated (U) or deleted (D).
 6. Click **[OK]** to confirm your settings.
 7. Run the extraction to create a log table in SAP that records any changes made to a selected table, see [Run the Extraction for the First Time](#run-the-extraction-for-the-first-time). <br>
 

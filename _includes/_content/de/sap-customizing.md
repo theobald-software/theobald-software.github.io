@@ -24,7 +24,8 @@ Die folgenden Transportaufträge finden Sie im ABAP-Unterordner des Installation
 - `THEO_READ_TABLE_46C.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Versionen von 4.6C bis 6.40
 - `Z_THEO_READ_TABLE-transport.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br>kompatibel mit ABAP Version 7.40 SP05 und höher
 - `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - enthält den Z-Funktionsbaustein für die *Table Komponente*; <br> kompatibel mit ABAP Version 640 - 740 SP04 
-{% if page.product == "xtract-universal" or page.product == "board-connector" %}- `Z_THEO_DELETE_LOG_ENTRIES-transport.zip` - enthält den Z-Funktionsbaustein für die *TableCDC Komponente*{% endif %}
+{% if page.product != "xtract-for-alteryx" %}- `THEO_CDC_ECC.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table CDC Komponente*; <br>kompatibel mit SAP ECC Systemen
+- `THEO_CDC_S4.zip` - enthält den aktuellen Z-Funktionsbaustein für die *Table CDC Komponente*; <br>kompatibel mit SAP S/4 Systemen {% endif %}
 
 Weiterführende Informationen zur Installation eines Transportauftrags finden Sie im Knowledge Base-Artikel [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms). <br>
 

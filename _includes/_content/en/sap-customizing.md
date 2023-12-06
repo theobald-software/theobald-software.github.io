@@ -24,7 +24,8 @@ The following transport requests can be found in the ABAP subfolder of the insta
 - `THEO_READ_TABLE_46C.zip` - contains the latest custom function module for the *Table component*; <br> compatible with ABAP versions from 4.6C until 6.40
 - `Z_THEO_READ_TABLE-transport.zip` - contains the custom function module for the *Table component*; <br> compatible with ABAP version 7.40 SP05 and higher
 - `Z_THEO_READ_TABLE-transport-before-740SP05.zip` - contains the custom function module for the *Table component*; <br>compatible with ABAP versions 6.40 to 7.40 SP04
-{% if page.product == "xtract-universal" or page.product == "board-connector" %}- `Z_THEO_DELETE_LOG_ENTRIES-transport.zip` - contains the custom function module for the *TableCDC component*{% endif %}
+{% if page.product != "xtract-for-alteryx" %}- `THEO_CDC_ECC.zip` - contains the custom function module for the *Table CDC component*;<br> compatible with SAP ECC systems
+- `THEO_CDC_S4.zip` - contains the custom function module for the *Table CDC component*;<br> compatible with SAP S/4 systems {% endif %}
 
 
 For more information on installing transport request, see the knowledge base article [How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms) or check the SAP help. <br>

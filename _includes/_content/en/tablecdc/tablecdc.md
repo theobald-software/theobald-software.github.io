@@ -22,24 +22,14 @@ The content of the log table is cleared after every successful run of the extrac
 
 ### Requirements
 
-- SAP version 7.40 SP05 or higher.
-- The installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and Z_THEO_READ_TABLE version 2.10 or higher is mandatory. 
-The SAP transport requests for the installation are provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
-- Required function modules and their package hierarchy:
+<!--- - SAP version 7.40 SP05 or higher. (weglassen, d anoch nicht bekannt)-->
+Required function modules:
 
-	| Function Module | Package Hierarchy |
-	|-----------------|----------|
-	| DMC_DDIF_TABL_GET_WRAPPER |ECC: *CNVM &rarr; DMIS_BASIS_MWB &rarr; DMIS_BASIS &rarr; DMIS* <br> S4: *CNV_DMC_REMOTE &rarr; DMIS_BASIS_MWB &rarr; DMIS_BASIS &rarr; DMIS*|
-	| IUUC_CREATE_TABLE | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_DD_TABL_DEL_WRAPPER | *IUUC_DD_TABL_DEL_WRAPPER &rarr; CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_COUNT_ENTRIES_LOGGING_TBL | *CNV_INC_PROCESSING_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_CRE_ACT_ADBC_TRIGGER | *IUUC_CRE_ACT_ADBC_TRIGGER : CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| IUUC_DELETE_ADBC_TRIGGER | *CNV_IUUC_REMOTE &rarr; DMIS_BASIS_INC_FW &rarr; DMIS_BASIS &rarr; DMIS* |
-	| /THEO/READ_TABLE or Z_THEO_READ_TABLE | */THEO/READ_TABLE* or *Z_THEO_READ_TABLE* |
-	| Z_THEO_DELETE_LOG_ENTRIES | *Z_THEO_CDC* |
+- /THEO/CDC_ECC or /THEO/CDC_S4 
+- /THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.10 or higher. 
 
-{: .box-note }
-**Note:** IBM databases are currently not supported for Table CDC. Support for IBM databases is planned for Q4 2023.
+
+The SAP transport requests for the function modules are provided in the installation directory `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 
 <!---
 - Access to the SAP authority object `S_TABU_NAM ACTVT=02` must be granted.

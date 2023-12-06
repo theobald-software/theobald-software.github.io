@@ -1,11 +1,14 @@
 The TableCDC component requires the installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and THEO/READ_TABLE in your SAP system.<br>
-If you cannot install the function mudules, turn to your SAP Basis team for help.
+If you cannot install the function modules, turn to your SAP Basis team for help.
 
 
-### Installation of Z_THEO_DELETE_LOG_ENTRIES
+### Installation of THEO_CDC_ECC or THEO_CDC_S4
 
-Install the custom function module Z_THEO_DELETE_LOG_ENTRIES using the transport request Z_THEO_DELETE_LOG_ENTRIES-transport.zip.<br>
-The transport request is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\Z_THEO_DELETE_LOG_ENTRIES-transport.zip`.
+Install the custom function module THEO_CDC_ECC if you use an SAP ECC system.
+The transport request for the installation is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\THEO_CDC_ECC.zip`.
+
+Install the custom function module THEO_CDC_S4 if you use an SAP S/4 system.
+The transport request the installation is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4.zip`.
 
 The transport request needs to be imported into SAP by your SAP Basis team.
 
