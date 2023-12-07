@@ -21,6 +21,8 @@ The following section offers Alteryx sample workflows and templates for download
 | [BAPI-ERP-Read-And-Write](/docs/alteryx-workflows/BAPI-ERP-ReadandWrite.yxmd){:download="BAPI-ERP-ReadandWrite.yxmd"}  | SAP ERP | This workflow demonstrates using [Xtract BAPI](./bapi) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.|
 | [SAP-Read-Long-Texts](/docs/alteryx-workflows/SAP-Read-Long-Texts.yxmd){:download="SAP-Read-Long-Texts.yxmd"} | SAP ERP | This workflow demonstrates reading SAP long texts in different languages.|
 | [SAP-Read-Attachment-Files](/docs/alteryx-workflows/SAP-Read-Attachment-Files.yxmd){:download="SAP-Read-Attachment-Files.yxmd"}  | SAP ERP | This workflow demonstrates extracting attachments of all formats from an SAP systems, e.g., .pdf files of purchase orders. For more information on this workflow, refer to the knowledge base article [Read and Download SAP Attachment Files](https://kb.theobald-software.com/xtract-for-alteryx/read-sap-attachment-files).|
+|[BAPI - Sync PRs from ERP to S4](/docs/alteryx-workflows/BAPI-Sync-PRs-from-ERP-to-S4.yxmd){:download="BAPI-Sync-PRs-from-ERP-to-S4.yxmd"} | SAP ERP |This workflow demonstrates syncing purchase requisitions from ERP to S/4. It involves creating a new requisition in ERP, checking its absence in S/4, syncing by generating corresponding entries in both systems, and confirming the presence in S/4. |
+
 
 ### Xtract Cube
 
