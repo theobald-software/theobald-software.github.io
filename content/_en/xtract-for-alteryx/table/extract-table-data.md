@@ -12,8 +12,8 @@ lang: en_GB
 ---
 The following section shows how to use the Table component.
 
-When using the Table component, you may want to adjust the following:
+<!--- When using the Table component, you may want to adjust the following:
 - [*Extraction Settings*](./extraction-settings). 
-- [*Runtime parameters*](./edit-runtime-parameters).
+- [*Runtime parameters*](./edit-runtime-parameters). -->
 
 {% include _content/en/tables/define-a-table-extraction.md  %}

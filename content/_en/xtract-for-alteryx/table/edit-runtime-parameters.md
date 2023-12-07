@@ -11,6 +11,7 @@ lang: en_GB
 ---
 
 Use runtime parameters for dynamic [WHERE Clauses](./where-clause).
+{% include _content/en/tables/where-clause-runtime-parameters.md %}
 
 {% include _content/en/edit-runtime-parameters.md %}
 
