@@ -29,7 +29,7 @@ Erforderliche Funktionsmodule:
 - /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version 2.10 oder höher.
 
 
-Die SAP-Transportaufträge für die Funktionsmodule werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
+Die SAP-Transportaufträge für die Funktionsmodule werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 
 
 <!---
