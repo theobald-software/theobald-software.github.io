@@ -1,12 +1,12 @@
 ---
-ref: xu-table-03
+ref: xu-table-04
 layout: page
 title: WHERE Clause
 description: WHERE Clause
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
-weight: 3
+weight: 4
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 ---
@@ -27,7 +27,7 @@ An extraction has two types of settings:
 {% include _content/en/tables/where-clause-editor.md%}
 
 ### Runtime Parameters in the WHERE Clause Editor
-You can create and assign [runtime parameters](../table/edit-runtime-parameters), when using WHERE Clause.
+You can create and assign [runtime parameters](./edit-runtime-parameters), when using WHERE Clause.
 
 
 **** 

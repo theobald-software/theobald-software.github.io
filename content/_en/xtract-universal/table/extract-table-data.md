@@ -1,5 +1,5 @@
 ---
-ref: xu-table-01
+ref: xu-table-02
 layout: page
 title: Defining a Table Extraction
 description: Extract Table Data
