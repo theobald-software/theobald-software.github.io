@@ -95,7 +95,7 @@ End complete sentences with a period. Phrases that are not full sentences don't 
 Don't end headings with periods.
 
 #### Periods in Lists
-End each [list](./yunio-style-guide/text-constructing#list) item with a period or other appropriate sentence-ending punctuation, except in the following cases:
+End each [list](./text-constructing#list) item with a period or other appropriate sentence-ending punctuation, except in the following cases:
 
 No end punctuation:
 
