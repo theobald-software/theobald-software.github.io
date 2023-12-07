@@ -23,8 +23,6 @@ Select a parameter from the list.<br>
 8. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
 
 {% if page.product == "xtract-for-alteryx" %}
-For more information on how to use runtime parameters in Alteryx, see [Edit Runtime Parameters](./edit-runtime-parameters).
-{% else %}
 
 {: .box-note }
 **Note:** List parameters are not yet available. This feature will be available soon.

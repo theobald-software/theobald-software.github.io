@@ -21,7 +21,7 @@ A WHERE clause can be used to filter table records, see [SAP ABAP Documentation:
 {% include _content/en/tables/where-clause-editor.md%}
 
 ### Runtime Parameters in the WHERE Clause Editor
-You can create and assign [runtime parameters](../table/runtime-parameters), when using WHERE Clause.
+You can create and assign [runtime parameters](../table/edit-runtime-parameters), when using WHERE Clause.
 
 {% include _content/en/alteryx-parameters.md %}
 
