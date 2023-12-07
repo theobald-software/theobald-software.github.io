@@ -38,7 +38,7 @@ Opens the WHERE clause editor. The WHERE clause editor offers a toolkit for thos
 Opens the extraction settings menu, see [Extraction Settings](./extraction-settings).
 
 **[Edit Parameters]** <br>
-Opens the runtime parameter menu, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).
+Opens the runtime parameter menu, see [Using Runtime Parameters in the WHERE Clause Editor](./edit-runtime-parameters#runtime-parameters-in-the-where-clause-editor).
 {% endif %}
 
 **[Load live preview]** <br>
