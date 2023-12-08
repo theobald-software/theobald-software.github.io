@@ -1,5 +1,4 @@
 
-
 ### Look up a Table
 1. In the main window of the component click **[Add]** to add a table. The window "Table Lookup" opens.<br>
 ![table_main-window_add](/img/content/table/table_main-window_add.png){:class="img-responsive"}
@@ -12,6 +11,7 @@ All relevant metadata information of the table is retrieved from SAP.
 The application now returns to the main window of the component.
 
 {% if page.parent == "getting-started" or page.childidentifier == "getting-started" %}
+
 ### Set Up a Table Extraction
 
 Set up the Table component to extract SAP tables:

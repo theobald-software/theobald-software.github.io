@@ -15,6 +15,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 
 {% if page.parent == "erste-schritte" or page.childidentifier == "erste-schritte" %}
+
 ### Eine Tabellen-Extraktion Einrichten
 
 Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
@@ -36,7 +37,7 @@ Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
 ![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
 3. Definieren Sie eine [WHERE Bedingung](./where-bedingung) oder eine [HAVING Bedingung](./having-bedingung), um Tabelleneinträge zu filtern. Standardmäßg werden alle Daten extrahiert.
 4. Klicken Sie auf **[Load live preview]**, um eine echtzeit-Vorschau der ersten 100 Datensätze anzuzeigen.
-5. Prüfen Sie die {% if page.product == "xtract-is" %}[Einstellungen](./extraktionseinstellungen){% else%}[Extraktionseinstellungen](./extraktionseinstellungen){% endif %}, bevor Sie die Extraktion ausführen.
+5. Prüfen Sie die {% if page.product == "xtract-is" %}[Settings - Einstellungen](./extraktionseinstellungen){% elsif page.product == "xtract-for-alteryx" %} die [[Extraction Settings] - Extraktionseinstellungen](./extraktionseinstellungen) {% else %} [General Settings - Allgemeine Einstellungen](./general-settings) und die [Extraction Settings - Extraktionseinstellungen](./extraktionseinstellungen){% endif %}, bevor Sie die Extraktion ausführen.
 6. Klicken Sie auf **[OK]**, um die Extraktion zu speichern.
 
 {% if page.product == "xtract-universal" %}Die Extraktion kann nun ausgeführt werden, siehe [Extraktionen ausführen und einplanen](../extraktionen-ausfuehren-und-einplanen). {% endif %}
