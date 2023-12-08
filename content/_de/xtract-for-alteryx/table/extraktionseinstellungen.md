@@ -1,5 +1,5 @@
 ---
-ref: xfa-table-05
+ref: xfa-table-06
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
@@ -11,8 +11,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Grundsätzlich hat jede Extraktion zwei Möglichkeiten, erweiterte Einstellungen vorzunehmen.
-Die *Extraction Settings* beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
+Die *Extraction Settings - Extraktionseinstellungen* beinhalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
  
 ### Extraction Settings Öffnen
 Innerhalb des Fensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **Extraction Settings**. Das Fenster "Table Settings" wird geöffnet. 
