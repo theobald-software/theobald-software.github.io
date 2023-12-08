@@ -1,5 +1,5 @@
 ---
-ref: xi-table-01
+ref: xi-table-define
 layout: page
 title: Eine Tabellen Extraktion definieren
 description: Tabellen extrahieren
