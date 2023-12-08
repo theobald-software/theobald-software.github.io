@@ -27,13 +27,13 @@ Both connection methods require the following input:
 | Client (*Client* property)| Client (*Client* property)|
 | Name of the application server (*Host* property)| Name of the message server (*MessageServer* property)|
 | System number between 0 and 99 (*SystemNumber* property)| System ID (*SID* property e.g., MBS)|
-| | Name of the group (*LogonGroup* property e.g., PUBLIC)|
+| Name of the group (*LogonGroup* property e.g., PUBLIC)|
 
 ### How to Connect
 1. Add the ERPConnect.dll class library as a reference to the project.
 2. Create a new R3Connection object and define all input parameters.
-3. Use the method *Open* to establish the connection. <br>
-To connect via Load Balancing, use *Open(true)*. For the single server approach, use *Open(false)*. 
+3. Establish the connection using `Open`. <br>
+To connect via Load Balancing, use `Open(true)`. For the single server approach, use `Open(false)`. 
 
 Example for single server login:
 
@@ -71,7 +71,29 @@ using (R3Connection con = new R3Connection())
 }
 ```
 
-The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). When using the NW RFC protocol you can explicitly set an encoding. 
+Example for RFC over WebSocket:
+
+```csharp
+using (R3Connection con = new R3Connection())
+{
+    con.UsesWebSocket = true;
+    con.WebSocketHost = "myinstance-api.s4hana.cloud.sap";
+    con.WebSocketPort = 443;
+    con.TlsSettings = new TlsSettings
+    {
+        TrustAll = false,
+        CryptoLibrary = @"C:\lib\sapcrypto.dll",
+        ClientPse = "CLIENT.PSE"
+    };
+
+    con.AliasUser = "TESTUSER",
+    con.Password = "Password",
+
+    con.Open();
+}
+```
+
+The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). When using the NW RFC protocol you can explicitly set an encoding.
 This is necessary if your SAP credentials contain characters that are not part of SAP code page 1100.
 
 
@@ -95,7 +117,8 @@ using (R3Connection con = new R3Connection())
     con.Password = "SAPPassword";
     con.Language = "DE";
     con.Client = "800";
-    con.Host = "/H/SAPRouter/H/SAPServer";
+    con.Host = "SAPServer";
+    con.SAProuterString = "/H/SAProuter";
     con.SystemNumber = 00;
     con.Protocol = ClientProtocol.NWRFC;
 

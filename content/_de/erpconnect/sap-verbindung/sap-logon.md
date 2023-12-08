@@ -34,8 +34,8 @@ Beide Verbindungsmethoden benötigen folgende Angaben:
 
 1. Binden Sie die ERPConnect.dll als Referenz in das aktuelle Projekt ein. 
 2. Erstellen Sie ein neues R3Connection-Object und definieren Sie alle Eingabeparameter.
-3. Verwenden Sie die Methode *Open*, um eine Verbindung herzustellen. <br>
-Um sich über Load Balancing zu verbinden, verwenden Sie *Open(true)*. Um sich über einen Application Server zu verbinden, verwenden Sie *Open(false)*.
+3. Verwenden Sie die Methode `Open`, um eine Verbindung herzustellen. <br>
+Um sich über Load Balancing zu verbinden, verwenden Sie `Open(true)`. Um sich über einen Application Server zu verbinden, verwenden Sie `Open(false)`.
 
 Beispiel für einen Login mit einem SAP Application Server:
 
@@ -68,6 +68,28 @@ using (R3Connection con = new R3Connection())
     con.SID = "ECC";
     con.Protocol = ClientProtocol.NWRFC;
     con.UsesLoadBalancing = true;
+
+    con.Open();
+}
+```
+
+Beispiel für einen Login via RFC über WebSocket:
+
+```csharp
+using (R3Connection con = new R3Connection())
+{
+    con.UsesWebSocket = true;
+    con.WebSocketHost = "myinstance-api.s4hana.cloud.sap";
+    con.WebSocketPort = 443;
+    con.TlsSettings = new TlsSettings
+    {
+        TrustAll = false,
+        CryptoLibrary = @"C:\lib\sapcrypto.dll",
+        ClientPse = "CLIENT.PSE"
+    };
+
+    con.AliasUser = "TESTUSER",
+    con.Password = "Password",
 
     con.Open();
 }
