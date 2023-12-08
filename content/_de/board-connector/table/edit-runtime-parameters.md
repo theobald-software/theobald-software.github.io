@@ -1,9 +1,9 @@
 ---
-ref: xu-table-08
+ref: bc-table-08
 layout: page
 title: Extraktionseinstellungen
 description: Extraktionseinstellungen
-product: xtract-universal
+product: board-connector
 parent: table
 permalink: /:collection/:path
 weight: 8

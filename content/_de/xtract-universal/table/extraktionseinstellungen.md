@@ -12,9 +12,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
 progressstate: 5
 ---
 
-An extraction has two types of settings: 
-- *Extraction Settings* include settings that affect only the respective extraction type.
-- [*General Settings - Allgemeine Einstellungen*](./general-settings) are the same for all extraction types. 
+Eine Extraktion hat zwei Arten von Einstellungen:
+- *Extraction Settings - Extraktionseinstellungen* enthalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
+- [*General Settings - Allgemeine Einstellungen*](./general-settings) sind für alle Extraktionstypen gleich. 
  
 ### Extraction Settings Öffnen
 1. Doppelklicken Sie im Hauptfenster des Designers auf eine Extraktion.<br>
