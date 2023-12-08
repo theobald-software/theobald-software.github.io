@@ -1,12 +1,12 @@
 ---
-ref: xu-table-04
+ref: xu-table-05
 layout: page
 title: HAVING Bedingung
 description: HAVING Bedingung
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
-weight: 4
+weight: 5
 lang: de_DE
 ---
 

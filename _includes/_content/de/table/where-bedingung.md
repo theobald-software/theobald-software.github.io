@@ -1,4 +1,3 @@
-Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abapwhere.htm).
 
 ### Verwendung einer WHERE-Bedingung
 
@@ -39,7 +38,7 @@ Ermöglicht die direkte Eingabe einer WHERE-Bedingung. **[Text mode]** ist der S
 Öffnet das Menü für die Extraktionseinstellungen, siehe [Extraktionseinstellungen](./extraktionseinstellungen).
 
 **[Edit Parameters]** <br>
-Öffnet das Menü für Laufzeitparameter, siehe [Laufzeitparameter im WHERE Clause Editor](##laufzeitparameter-im-where-clause-editor)
+Öffnet das Menü für Laufzeitparameter, siehe [Laufzeitparameter im WHERE Clause Editor](./edit-runtime-parameters#laufzeitparameter-im-WHERE-Clause-editor)
 {% endif %}
 
 **[Load live preview]** <br>

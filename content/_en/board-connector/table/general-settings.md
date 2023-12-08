@@ -1,14 +1,14 @@
 ---
-ref: xu-table-06
+ref: bc-table-06
 layout: page
 title: General Settings
-description: General settings
-product: xtract-universal
+description: General Settings
+product: board-connector
 parent: table
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
-
+progressstate: 5
 ---
 
 An extraction has two types of settings: 

@@ -32,7 +32,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 | *[Xtract Table].[InvalidDateReplacement]*|Im Fall unzulässiger Werte für Daten, geben Sie hier einen Standardwert ein. Jedes ungültige Datum bekommt diesen Wert zugewiesen, siehe [Benutzerdefinierte Eigenschaften](./eigenschaften-properties).|
 | *[Xtract Table].[PackageSize]*| Entspricht dem Feld *Package Size* in den [Settings](./extraktionseinstellungen) der Table Komponente.|
 
-### Parametrierung mit SSIS Variablen
+### Parametrisierung mit SSIS Variablen
 
 Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Variablen erlauben:
 

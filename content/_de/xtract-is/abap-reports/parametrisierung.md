@@ -44,7 +44,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 | *[Xtract Report].[BatchJobName]*        |Entspricht dem Feld *Batch Job Name* in der Report Komponente, siehe [Settings - BatchJobName](./report-settings).|
 | *[Xtract Report].[BatchJobTimeout]*     |Entspricht dem Feld *Batch Timeout* in der Report Komponente, siehe [Settings - BatchJobTimeout](./report-settings).|
 
-### Parametrierung mit SSIS Variablen
+### Parametrisierung mit SSIS Variablen
 
 SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.<br>
 Verfügbare SSIS Variablen werden direkt in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./variants-and-selections#selektionen-bearbeiten).<br>

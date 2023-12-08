@@ -1,5 +1,5 @@
 ---
-ref: xfa-table-02
+ref: xfa-table-03
 layout: page
 title: Table Joins
 description: Table Joins 

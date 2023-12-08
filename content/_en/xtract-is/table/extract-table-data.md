@@ -1,5 +1,5 @@
 ---
-ref: xi-table-01
+ref: xi-table-02
 layout: page
 title: Defining a Table Data Extraction
 description: Extract Table Data

@@ -29,7 +29,7 @@ Liste der *Data Flow Properties*, die parametrisiert werden können:
 |:----|:----|
 | *[Xtract Report].[Variant]*| Siehe [Varianten und Selektionen](./variants-and-selections).|
 
-### Parametrierung mit SSIS Variablen
+### Parametrisierung mit SSIS Variablen
 
 SSIS Variablen können verwendet werden, um Selektionen zu dynamisieren.<br>
 Verfügbare SSIS Variablen werden direkt in den Einstellungen für Selektionen angezeigt, wenn die Parametereingabe aktiv ist (1), siehe [Selektionen bearbeiten](./variants-and-selections#selektionen-bearbeiten).<br>

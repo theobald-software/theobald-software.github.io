@@ -3,7 +3,7 @@
 
 Follow the steps below to replace runtime parameters with actual values at runtime:
 
-1. [Create and assign runtime parameters](#create-runtime-parameters) in the Xtract component.
+1. [Create and assign runtime parameters](./edit-runtime-parameters) in the Xtract component.
 2. Close the Xtract component.
 3. Define the input values for the runtime parameters (1), e.g., single values or lists.<br>
 {% if page.parent == "odp" %}![odp-input](/img/content/odp/odp-input.png){:class="img-responsive" }{% elsif page.parent == "queries" %}![queries-input](/img/content/xfa/query-input.png){:class="img-responsive" }{% elsif page.parent == "bapi" %}![bapi-input](/img/content/xfa/bapi-input-single.png){:class="img-responsive" }{% elsif page.parent == "bw-cube" %}![bw-cube-input](/img/content/xfa/cube-input.png){:class="img-responsive" }{% elsif page.parent == "reports" %}![report-input](/img/content/xfa/report-input.png){:class="img-responsive" }{% elsif page.parent == "table" %}![table-input](/img/content/xfa/table-input.png){:class="img-responsive" }{% endif %}

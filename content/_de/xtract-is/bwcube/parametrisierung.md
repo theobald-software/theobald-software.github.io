@@ -20,9 +20,9 @@ Liste der relevanten *Custom Properties*:
 |Property |Beschreibung|
 |:----|:----|
 | *CubeName* | Entspricht dem Suchfeld *Cube Name* in der BW Cube Komponente, siehe [Eine BW Cube oder Query Extraktion finden](./cubes-suchen#eine-bw-cube-oder-query-extraktion-finden).|
-| *DelimiterForMultipleSSISVariableValues* | Trennzeichen für aufeinanderfolgende Variablen, siehe *Variables* in [Parametrierung mit SSIS Variablen](#parametrierung-mit-ssis-variablen).|
+| *DelimiterForMultipleSSISVariableValues* | Trennzeichen für aufeinanderfolgende Variablen, siehe *Variables* in [Parametrisierung mit SSIS Variablen](#Parametrisierung-mit-ssis-variablen).|
 | *IgnoreMDXErrors* | Wenn diese Option auf *true* gesetzt ist, führen MDX-Fehler nicht zu SSIS-Fehlern.|
-| *MDXVariable* | Geben Sie eine SSIS-Variable in die MDX Textbox ein und füllen Sie die SSIS-Variable mit dem kompletten MDX-Ausdruck, siehe *MDXVariable* in [Parametrierung mit SSIS Variablen](#parametrierung-mit-ssis-variablen). |
+| *MDXVariable* | Geben Sie eine SSIS-Variable in die MDX Textbox ein und füllen Sie die SSIS-Variable mit dem kompletten MDX-Ausdruck, siehe *MDXVariable* in [Parametrisierung mit SSIS Variablen](#Parametrisierung-mit-ssis-variablen). |
 | *StringConversion* | Siehe [Settings - String Conversion](./bw-cube-settings#string-conversion). |
 
 

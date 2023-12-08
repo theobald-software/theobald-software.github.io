@@ -10,6 +10,9 @@ weight: 4
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=where-clause
 ---
+A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
+
+When defining a WHERE clause, you may want to adjust the [settings](../table/extraction-settings). 
 
 {% include _content/en/tables/where-clause.md %}
 {% include _content/en/tables/where-clause-syntax.md%}
