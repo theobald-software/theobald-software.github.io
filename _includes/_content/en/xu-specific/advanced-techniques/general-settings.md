@@ -5,7 +5,6 @@ General Settings are independent of the extraction type.
 The main window of the component opens.<br>
 Example:
 ![General-Settings](/img/content/General-Settings_designer.png){:class="img-responsive"}
-
 2. Within the opened window, click **[General Settings]**.<br>
 The window "General Settings" opens.
 
@@ -62,7 +61,7 @@ They are generated from the selected primary key columns and the name of the SAP
 When extracting more than 200 million rows, there is a chance of duplicates.
 -->
 
-### Encryption
+### Encryption Tab
 
 The “Column Encryption” feature enables users to encrypt columns in the extracted data set before uploading them to the destination. 
 By encrypting the columns you can ensure the safety of sensitive information. 
@@ -79,3 +78,24 @@ If the column encryption feature is available, you can select the columns to enc
 ### Security Tab
 The security tab is described in the section [access management](../security/access-management).
 ![Extraction-Settings_](/img/content/XU_Extraction_Security3.png){:class="img-responsive"}
+
+### Columns Order Tab
+
+The "Columns Order" feature enables users to rearrange the order of result columns when running an extraction.<br>
+To rearrange the result order, assign indexes to the available result columns. 
+Index 0 defines the first column in the result set, index 1 the second columns, etc.
+
+![Extraction-Settings_](/img/content/xu/general-settings-column-order.png){:class="img-responsive"}
+
+**Enabled:**<br>
+If this option is active, a new column order is applied when running the extraction.
+
+**Swap:**<br>
+Swaps the index of 2 columns. All other columns keep their indexes.
+
+**Insert:**<br>
+Inserts the selected column into the selected index. All other indexes are recalculated.
+
+**[Reset default]:**<br>
+Restores the original column order.
+
