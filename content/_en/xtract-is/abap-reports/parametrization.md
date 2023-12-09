@@ -11,8 +11,6 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=report-settings
 ---
 
-<link rel="canonical" href="https://help.theobald-software.com/en/xtract-is/table/table-parametrization" />
-
 
 ### Custom Properties
 

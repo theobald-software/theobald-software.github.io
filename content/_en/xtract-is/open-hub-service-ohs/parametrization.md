@@ -10,8 +10,6 @@ weight: 5
 lang: en_GB
 ---
 
-<link rel="canonical" href="https://help.theobald-software.com/en/xtract-is/table/table-parametrization" />
-
 ### Custom Properties
 
 The *Custom Properties* define the properties unique to the component.
