@@ -1,8 +1,8 @@
 ---
 ref: bc-table-08
 layout: page
-title: Extraktionseinstellungen
-description: Extraktionseinstellungen
+title: Runtime Parameter - Laufzeitparameter
+description: Laufzeitparameter
 product: board-connector
 parent: table
 permalink: /:collection/:path

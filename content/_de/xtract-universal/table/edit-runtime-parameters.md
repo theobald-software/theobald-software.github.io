@@ -1,8 +1,8 @@
 ---
 ref: xu-table-08
 layout: page
-title: Extraktionseinstellungen
-description: Extraktionseinstellungen
+title: Runtime Parameter - Laufzeitparameter
+description: Laufzeit
 product: xtract-universal
 parent: table
 permalink: /:collection/:path
