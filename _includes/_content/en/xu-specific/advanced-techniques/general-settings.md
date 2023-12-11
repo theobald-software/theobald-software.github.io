@@ -63,9 +63,10 @@ When extracting more than 200 million rows, there is a chance of duplicates.
 
 ### Encryption Tab
 
-The “Column Encryption” feature enables users to encrypt columns in the extracted data set before uploading them to the destination. 
+The “Column Encryption” feature enables users to encrypt columns in the extracted data set, before uploading them to the destination. 
+
 By encrypting the columns you can ensure the safety of sensitive information. 
-You can store data in its encrypted form or decrypt it right away.
+You can store data in its encrypted form or decrypt it immediately.
 
 The feature also supports random access, meaning that the data is decryptable at any starting point. 
 Because random access has a significant overhead, it is not recommended to use column encryption for encrypting the whole data set.
