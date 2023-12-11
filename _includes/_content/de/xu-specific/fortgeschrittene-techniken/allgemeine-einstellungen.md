@@ -66,7 +66,8 @@ Sie werden auf Basis der gewählten Primärschlüssel-Spalten und des Namens der
 Bei der Extraktion von mehr als 200 Millionen Zeilen, können Duplikate vorkommen.
 -->
 
-### Encryption
+### Encryption Tab
+
 Sie können Daten sowohl verschlüsselt als auch unverschlüsselt speichern. 
 Die “Column Encryption” (Spalten-Verschlüsselung) ermöglicht Ihnen eine Verschlüsselung der Spalten bevor die extrahierten Daten in die Destination hochgeladen werden. 
 Dadurch kann sichergestellt werden, dass sensible Informationen geschützt sind.
@@ -82,3 +83,23 @@ Wenn die Spalten-Verschlüsselung verfügbar ist, können Sie die zu verschlüss
 
 Das Security Tab ist im Abschnitt [Zugriffsverwaltung](../sicherheit/zugriffsverwaltung#zugriffssteuerung-auf-extrakionsebene---extraction-settingsg) beschrieben. 
 ![Extraction-Settings_](/img/content/XU_Extraction_Security3.png){:class="img-responsive"}
+
+### Columns Order Tab
+
+Mit der Funktion "Columns Order - Spaltenreihenfolge" können Benutzer die Reihenfolge der Ergebnisspalten beim Ausführen einer Extraktion neu anordnen.<br>
+Um die Ergebnisreihenfolge neu zu ordnen, weisen Sie den verfügbaren Ergebnisspalten Indizes zu.
+Index 0 definiert die erste Spalte in der Ergebnismenge, Index 1 die zweiten Spalten usw.
+
+![Extraction-Settings_](/img/content/xu/general-settings-column-order.png){:class="img-responsive"}
+
+**Enabled:**<br>
+Wenn diese Option aktiv ist, wird beim Ausführen der Extraktion eine neue Spaltenreihenfolge angewendet.
+
+**Swap:**<br>
+Vertauscht den Index von 2 Spalten. Alle anderen Spalten behalten ihre Indizes.
+
+**Insert:**<br>
+Fügt die ausgewählte Spalte in den ausgewählten Index ein. Alle anderen Indizes werden neu berechnet.
+
+**[Reset default]:**<br>
+Stellt die ursprüngliche Spaltenreihenfolge wieder her.
