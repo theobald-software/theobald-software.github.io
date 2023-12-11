@@ -2,7 +2,7 @@
 ref: xu-table-07
 layout: page
 title: Extraktionseinstellungen
-description: Extraktionseinstellungen
+description: Extraction Settings - Extraktionseinstellungen
 product: xtract-universal
 parent: table
 permalink: /:collection/:path

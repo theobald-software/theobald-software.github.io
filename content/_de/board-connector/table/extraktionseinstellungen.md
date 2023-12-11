@@ -1,7 +1,7 @@
 ---
 ref: bc-table-07
 layout: page
-title: Extraktionseinstellungen
+title: Extraction Settings - Extraktionseinstellungen
 description: Extraktionseinstellungen
 product: board-connector
 parent: table
