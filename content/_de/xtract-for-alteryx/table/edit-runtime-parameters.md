@@ -12,7 +12,7 @@ lang: de_DE
 
 Verwenden Sie Laufzeitparameter für dynamische [WHERE Bedingungen](./where-bedingung).
 
-{% include _content/en/table/where-bedingung-laufzeitparameter %}
+{% include _content/de/table/where-bedingung-laufzeitparameter.md %}
 
 {% include _content/de/edit-runtime-parameters.md %}
 

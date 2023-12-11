@@ -23,11 +23,12 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 
 ### Voraussetzungen
 
-Erforderliche Funktionsmodule:
+Erforderliche Funktionsbausteine:
 
-- /THEO/CDC_ECC oder /THEO/CDC_S4 
-- /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version 2.10 oder höher.
-
+| Funktionsgruppe | Funktionsbausteine |
+| :------ |:--- |
+| /THEO/CDC_ECC oder /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS| 
+| /THEO/READ_TABLE oder Z_THEO_READ_TABLE | /THEO/READ_TABLE oder Z_THEO_READ_TABLE version 2.10 Version 2.10 oder höher |
 
 Die SAP-Transportaufträge für die Funktionsmodule werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 

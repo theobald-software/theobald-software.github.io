@@ -22,12 +22,13 @@ The content of the log table is cleared after every successful run of the extrac
 
 ### Requirements
 
-<!--- - SAP version 7.40 SP05 or higher. (weglassen, d anoch nicht bekannt)-->
+<!--- - SAP version 7.40 SP05 or higher. (weglassen, da noch nicht bekannt)-->
 Required function modules:
 
-- /THEO/CDC_ECC or /THEO/CDC_S4 
-- /THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.10 or higher. 
-
+| Function Group | Function Modules |
+| :------ |:--- |
+| /THEO/CDC_ECC or /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS| 
+| /THEO/READ_TABLE or Z_THEO_READ_TABLE | /THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.10 or higher |
 
 The SAP transport requests for the function modules are provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 

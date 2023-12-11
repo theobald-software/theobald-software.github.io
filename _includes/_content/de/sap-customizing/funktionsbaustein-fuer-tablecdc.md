@@ -4,14 +4,21 @@ Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installiere
 
 ### Installation von Z_THEO_DELETE_LOG_ENTRIES
 
-- Installieren Sie den Funktionsbaustein THEO_CDC_ECC, wenn Sie ein SAP ECC-System verwenden.
+- Installieren Sie die Funktionsgruppe THEO_CDC_ECC, wenn Sie ein SAP ECC-System verwenden.
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_ECC.zip`.
 
-- Installieren Sie den Funktionsbaustein THEO_CDC_S4, wenn Sie ein SAP S/4-System verwenden.
+- Installieren Sie die Funktionsgruppe THEO_CDC_S4, wenn Sie ein SAP S/4-System verwenden.
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4.zip`.
 
-
 Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
+Die Funktionsgruppen enthalten jeweils folgende Funktionsbausteine:
+
+- /THEO/CLEAR_LOGTAB
+- /THEO/COUNT_LOGTAB_ENTRIES
+- /THEO/CREATE_LOG_TABLE
+- /THEO/CREATE_TRIGGERS
+- /THEO/DELETE_LOG_TABLE
+- /THEO/DELETE_TRIGGERS
 
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
