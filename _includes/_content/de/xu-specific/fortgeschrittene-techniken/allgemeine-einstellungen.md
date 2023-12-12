@@ -23,13 +23,24 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 
 **Cache results** (1)
 
+{% if page.product == "xtract-universal" %} 
+
 {:.box-note}
 **Hinweis:** die Option *Cache results* ist nur Verfügbar in [Pull-Destinationen](../destinationen#pull--und-push-destinationen) (z.B. PBI, Qlik etc.).
 
 Pull-Destinationen ziehen die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
 so dass die Pull-Destination die Daten aus dem Cache und nicht aus dem SAP zieht.
+{% endif %}
+
+{% if page.product == "board-connector" %} 
+Daten oft mehrfach aus SAP gezogen. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
+so dass die Daten aus dem Cache und nicht aus dem SAP gezogen werden.
+{% endif %}
+
+
 Dies erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
 Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
+
  
 **Enable column level encryption** (2)<br>
 Die Checkbox muss angehakt werden, wenn Sie eine "Column Encryption" (Spalten-Verschlüsselung) verwenden, siehe [Encryption](#encryption).

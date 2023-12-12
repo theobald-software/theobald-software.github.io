@@ -12,7 +12,7 @@ progressstate: 5
 ---
 
 Eine Extraktion hat zwei Arten von Einstellungen:
-- *[Extraction Settings - Extraktionseinstellungen*](./extraktionseinstellungen) enthalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
+- [*Extraction Settings - Extraktionseinstellungen*](./extraktionseinstellungen) enthalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
 - *General Settings - Allgemeine Einstellungen* sind für alle Extraktionstypen gleich. 
  
 
