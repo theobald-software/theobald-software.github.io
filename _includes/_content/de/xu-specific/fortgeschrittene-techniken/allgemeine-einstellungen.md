@@ -33,7 +33,7 @@ so dass die Pull-Destination die Daten aus dem Cache und nicht aus dem SAP zieht
 {% endif %}
 
 {% if page.product == "board-connector" %} 
-Daten oft mehrfach aus SAP gezogen. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
+Daten werden oft mehrfach aus SAP gezogen. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen,
 so dass die Daten aus dem Cache und nicht aus dem SAP gezogen werden.
 {% endif %}
 
