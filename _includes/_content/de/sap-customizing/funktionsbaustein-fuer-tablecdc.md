@@ -1,5 +1,5 @@
 
-Die Report Komponente benötigt die Installation der Z-Funktionsbausteine Z_THEO_DELETE_LOG_ENTRIES und THEO/READ_TABLE auf Ihrem SAP-System.<br>
+Die Report Komponente benötigt die Installation der Z-Funktionsbausteine /THEO/CDC und THEO/READ_TABLE auf Ihrem SAP-System.<br>
 Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installieren, wenden Sie sich an Ihre SAP-Basis-Abteilung.
 
 ### Installation von Z_THEO_DELETE_LOG_ENTRIES
