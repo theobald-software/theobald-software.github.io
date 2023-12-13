@@ -1,4 +1,4 @@
-The TableCDC component requires the installation of the custom function modules Z_THEO_DELETE_LOG_ENTRIES and THEO/READ_TABLE in your SAP system.<br>
+The TableCDC component requires the installation of the custom function modules /THEO/CDC and THEO/READ_TABLE in your SAP system.<br>
 If you cannot install the function modules, turn to your SAP Basis team for help.
 
 
