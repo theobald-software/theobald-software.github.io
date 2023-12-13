@@ -49,3 +49,20 @@ The following components are available in the editor:
 #### Editing and Deleting Components
 - Click on a component to edit it. All areas that are marked green can be edited.<br>
 - To delete a component, click the {% if page.product == "yunio" %}![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) icon that appears when hovering over{% else %}(x) icon above{% endif %} the component.<br>
+
+### Using SAP system fields
+
+{: .box-note }
+**Note**: System fields can only be used with SAP NW 7.4 SP5 or higher and with the function modules Z_THEO_READ_TABLE or /THEO/READ_TABLE.
+
+You can use [SAP system fields for date and time](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-US/abentime_system_fields.htm).
+
+*Example:*
+1. Navigate to [WHERE-Clause-Editor](#where-clause-editor) and select a column of the type Date *here: BUDAT*. 
+![img-01](/img/content/table/table_where_syst_field_1.png){:class="img-responsive"}
+2. Delete the criterion "Value" and use the criterion "SQL".
+![img-02](/img/content/table/table_where_syst_field_2.png){:class="img-responsive"}
+3. Within the "SQL" criterion, use the supported system fields for date and time with a preceding "@" character, *here: @sy-datum*.
+![img-03](/img/content/table/table_where_syst_field_3.png){:class="img-responsive"}
+4. Click **[Load Live Preview]** to check the result. 
+5. Run an extraction.

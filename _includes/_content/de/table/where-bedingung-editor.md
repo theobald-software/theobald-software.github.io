@@ -54,3 +54,21 @@ Beispiel: **Operator** ist nur verfügbar, wenn eine Spalte oder eine SQL-Anweis
 Alle grün markierten Flächen können bearbeitet werden.<br>
 - Klicken Sie auf das {% if page.product == "yunio" %}![WHERE-Clause-Builder-Example](/img/content/icons/delete.png) Icon, das eingeblendet wird, wenn Sie über die Komponente hovern,{% else %}(x) Icon über einer Komponente,{% endif %} um die Komponente zu löschen.
 
+
+### Verwendung von SAP Systemfeldern
+
+{: .box-note }
+**Hinweis**: Systemfelder können nur mit SAP NW 7.4 SP5 oder höher und mit den Funktionsbausteinen Z_THEO_READ_TABLE oder /THEO/READ_TABLE verwendet werden.
+
+Sie können [SAP Systemfelder für Datum und Zeit](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/de-DE/abentime_system_fields.htm) verwenden.
+
+*Beispiel:*
+1. Im [WHERE-Clause-Editor](#where-clause-editor) wählen Sie eine Spalte vom Typ Datum aus *hier: BUDAT*. 
+![img-01](/img/content/table/table_where_syst_field_1.png){:class="img-responsive"}
+2. Löschen Sie das Kriterium "Value" und verwenden Sie das Kriterium "SQL".
+![img-02](/img/content/table/table_where_syst_field_2.png){:class="img-responsive"}
+3. Innerhalb des Kriteriums "SQL" verwenden Sie die unterstützten Systemfelder für Datum und Zeit mit einem vorangestellten "@"-Zeichen, *hier: @sy-datum*.
+![img-03](/img/content/table/table_where_syst_field_3.png){:class="img-responsive"}
+4. Klicken Sie auf **[Load Live Preview]**, um das Ergebnis zu überprüfen. 
+5. Führen Sie eine Extraktion aus. 
+
