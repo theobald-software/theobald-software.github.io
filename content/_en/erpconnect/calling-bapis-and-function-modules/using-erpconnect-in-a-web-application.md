@@ -22,17 +22,22 @@ The following section shows the development process for an ASP.NET/ERPConnect pr
 **Warning!** The standard demo license does not support working in web environments. 
 To test ERPConnect with your ASP.NET project, apply for a test license number at [sales@theobald-software.com](mailto:sales@theobald-software.com).    
 
-### ASP.NET Example
-This example uses an ASP page to enter data for a purchase order, see screenshot below. <br>
+### ASP.NET
+
+The following sample shows how to create a purchase order using the *BAPI_PO_CREATE*.
+The sample uses an ASP page to enter data for a purchase order, see screenshot below. <br>
 ![purchase-order1](/img/content/Create-Purchase-Order-IE.png){:class="img-responsive"}  
 
-The ASP page contains a button, a status message and the following textboxes:
-- vendor number (*txtVendor*)
-- the material number (*txtMaterial*)
-- the quantity (*txtQuan*)
-- plant the vendor should deliver the material to (*txtPlant*).
+Input:
+```
+Vendor: 0000001070
+Material: B-7000
+Plant: 1000
+Quantity: 10
+```
 
-#### How to Create a Purchase Order via BAPI
+#### How to Create a Purchase Order 
+
 To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps below:
 1. Establish a connection to the SAP system 
 2. Create an RFC-Function object for the BAPI *BAPI_PO_CREATE*.
@@ -47,49 +52,76 @@ To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps bel
 6. Execute the BAPI and process the return messages.
 
 ```csharp
-private void Button1_Click(object sender, System.EventArgs e) 
-{ 
-    ERPConnect.LIC.SetLic("xxxxxxxxxxxxx"); //Set your ERPConnect License. 
-    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-	    {
-	        con.Open(false); 
-          
-	        // Create a RFC-Function object 
-	        RFCFunction func = con.CreateFunction("BAPI_PO_CREATE");
+using System;
+using ERPConnect;
 
+Console.Write("Vendor: ");
+string vendor = Console.ReadLine();
 
-	        // Fill header structure
-	        RFCStructure Header = func.Exports["PO_HEADER"].ToStructure();
-	        Header["DOC_TYPE"]= "NB";
-	        Header["PURCH_ORG"] = "1000";
-	        Header["PUR_GROUP"] = "010";
-	        Header["DOC_DATE"]= ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
-	        Header["VENDOR"]= this.txtVendor.Text
-	
-	        // Create an Item
-	        RFCTable items = func.Tables["PO_ITEMS"];
-	        RFCStructure item = items.AddRow();
-	        item["PO_ITEM"] = "1";
-	        item["PUR_MAT"] = this.txtMaterial.Text;
-	        item["PLANT"] = this.txtPlant.Text;
-  
-	        // Create and fill shedules
-	        RFCTable shedules = func.Tables["PO_ITEM_SCHEDULES"];
-	        RFCStructure shedule = shedules.AddRow();
-	        shedule["PO_ITEM"] = "1";
-	        shedule["DELIV_DATE"] = ERPConnect.ConversionUtils.NetDate2SAPDate(DateTime.Now);
-	        shedule["QUANTITY"] = Convert.ToDecimal(this.txtQuan.Text);
+Console.Write("Material: ");
+string material = Console.ReadLine();
 
-	        // Exceute Bapi and process return messages
-	        func.Execute();
-	        this.txtReturn.Text = "";
-	        this.txtReturn.Text += func.Tables["RETURN"].Rows[0, "MESSAGE"] + "\r\n";
-	    }
-}
+Console.Write("Plant: ");
+string plant = Console.ReadLine();
+
+Console.Write("Quantity: ");
+decimal quantity = decimal.Parse(Console.ReadLine() ?? string.Empty);
+
+// Set your ERPConnect license
+LIC.SetLic("xxxx");
+
+using var connection = new R3Connection(
+    host: "server.acme.org",
+    systemNumber: 00,
+    userName: "user",
+    password: "passwd",
+    language: "EN",
+    client: "001")
+{
+    Protocol = ClientProtocol.NWRFC,
+};
+
+connection.Open();
+
+// Create an RFC-Function object
+RFCFunction func = connection.CreateFunction("BAPI_PO_CREATE");
+
+// Fill header structure
+RFCStructure header = func.Exports["PO_HEADER"].ToStructure();
+header["DOC_TYPE"] = "NB";
+header["PURCH_ORG"] = "1000";
+header["PUR_GROUP"] = "010";
+header["DOC_DATE"] = DateTime.Now.ToString("yyyyMMdd");
+header["VENDOR"] = vendor;
+
+// Create an Item
+RFCTable items = func.Tables["PO_ITEMS"];
+RFCStructure item = items.AddRow();
+item["PO_ITEM"] = "1";
+item["PUR_MAT"] = material;
+item["PLANT"] = plant;
+
+// Create and fill schedules
+RFCTable schedules = func.Tables["PO_ITEM_SCHEDULES"];
+RFCStructure schedule = schedules.AddRow();
+schedule["PO_ITEM"] = "1";
+schedule["DELIV_DATE"] = DateTime.Now.ToString("yyyyMMdd");
+schedule["QUANTITY"] = quantity;
+
+// Execute Bapi and process return messages
+func.Execute();
+
+var returnMessage = func.Tables["RETURN"].Rows[0, "MESSAGE"].ToString();
+
+Console.WriteLine($"Message: {returnMessage}");
 ```
 
+Output:
 
-The screenshot below shows the created purchase order.<br>
+```
+Message: Standard PO created under the number 4500018292
+```
+
 ![purchase-order2](/img/content/create-purchase-order-ie_02.png){:class="img-responsive"}  
   
 ****
