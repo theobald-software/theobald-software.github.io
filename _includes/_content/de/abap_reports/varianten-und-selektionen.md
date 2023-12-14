@@ -1,7 +1,7 @@
 Die meisten Reports erlauben die Eingabe von Selektionen vor Ausführung der Reports.
 Selektionen limitieren die Ausgabe des Reports, sodass nur Daten die der Selektion entsprechen ausgegeben werden.
 
-Eine Variante mit Selektionen kann in SAP im Eingabebildschirm eines ABAP-Reports erstellt werden.
+In SAP kann eine [Variante mit Selektionen](https://help.sap.com/docs/btp/ABAP/3353524716.html) kann im Eingabebildschirm eines ABAP-Reports erstellt werden.
 Der Zweck einer Variante ist es, Selektionen in Ihrem Eingabebildschirm zu speichern.
 Das minimiert die Eingabe von Selektionen, wenn Sie Reports ausführen.
 

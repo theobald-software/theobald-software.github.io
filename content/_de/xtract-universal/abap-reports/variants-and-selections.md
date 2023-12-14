@@ -11,3 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-report-extraktion-definieren
 ---
 {% include _content/de/abap_reports/varianten-und-selektionen.md %}
+
+****
+### Weiterführende Links
+[SAP - Report Varianten](https://help.sap.com/docs/btp/ABAP/3353524716.html)

@@ -1,9 +1,8 @@
 
 Most reports allow entering selections before report execution. Selections limit the result set of the report to extract only records that match the selection. 
 
-A selection variant can be created in SAP at the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
+In SAP a [selection variant](https://help.sap.com/docs/btp/ABAP/3353524716.html) can be created in the input screen of an ABAP report. The purpose of a variant is to save selection settings on your input screen. 
 The purpose of a variant is to minimize the necessity to enter selections when running a report.
-
 
 {: .box-note }
 **Note:** Manual selections and variants can be combined. Manual selections overwrite any selections in the variant.
