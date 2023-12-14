@@ -58,7 +58,7 @@ Enter the logical system as shown in the figure below and run the program via **
 The IDocs are created and sent to the specified port.<br>
 ![IDoc-Test-Environment_003](/img/content/IDoc-Test-Environment_003.png){:class="img-responsive" width="800px"}
 
-### Setting Up Receiving IDocs
+### Set Up Receiving IDocs
 
 The following instructions show how to customize your SAP system for processing IDocs and creating sales orders.
 

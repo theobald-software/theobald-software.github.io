@@ -16,7 +16,7 @@ This section shows how to create, register and use RFC server functions.
 In the following application sample a simple RFC server function is created that allows ABAP programs to add numbers.<br>
 Two input parameters (*NUMBER1* and *NUMBER2*) are added and result (*RES*) is passed back to the calling ABAP program.  
 
-### Registering the RFC Server Function
+### Register the RFC Server Function
 
 1. Initialize an *RFCServer* object by providing the gateway host, the gateway service and the program ID to register on the SAP gateway.
 For this, the program ID must be available as a registered destination in SAP, see [Setting Up an RFC Destination](./maintaining-rfc-destinations). 
@@ -52,37 +52,8 @@ static void Main(string[] args)
 }
 ```
 
-<!---
-<details>
-<summary>Click to open VB example.</summary>
-{% highlight visualbasic %}
-Imports ERPConnect 
   
-Module Module1 
-   Dim WithEvents s As New RFCServer 
-  
-   Sub Main() 
-      ' define server object 
-      s.GatewayHost = "sap-erp-as05.example.com" 
-      s.GatewayService = "sapgw11" 
-      s.ProgramID = "ERPTEST" 
-  
-      ' define registered function 
-      Dim f As RFCServerFunction f = s.RegisteredFunctions.Add("Z_ADD") 
-      f.Imports.Add("NUMBER1", RFCTYPE.INT) 
-      f.Imports.Add("NUMBER2", RFCTYPE.INT) 
-      f.Exports.Add("RES", RFCTYPE.INT) 
-        
-      ' start server s.Start() 
-  
-      Console.Write( _ "Server has started. Please press any key to stop.") 
-      Console.ReadLine() 
-   End Sub
-{% endhighlight %}
-</details>  
-  -->
-  
-### Handling Incoming Calls
+### Handle Incoming Calls
  
 The following code shows how the *IncomingCall* event is handled:
 
@@ -102,31 +73,10 @@ private static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFun
 }
 ```
 
-<!---
-<details>
-<summary>Click to open VB example.</summary>
-{% highlight visualbasic %}
-Private Sub s_IncomingCall( ByVal Sender As _
-   ERPConnect.RFCServer, _ 
-   ByVal CalledFunction As ERPConnect.RFCServerFunction) _ 
-   Handles s.IncomingCall 
-  
-      Dim i1 As Int32 
-      i1 = CalledFunction.Imports("NUMBER1").ParamValue 
-      Dim i2 As Int32 
-      i2 = CalledFunction.Imports("NUMBER2").ParamValue 
-      Dim res As Int32 
-      res = i1 + i2 
-      CalledFunction.Exports("RES").ParamValue = res 
-      Console.WriteLine("Incoming Call") 
-End Sub
-{% endhighlight %}
-</details>    
-  -->
 The import parameters are passed by the calling SAP system. <br>
 The export parameters are passed back to SAP.<br>
 
-### Calling RFC Server Functions in ABAP
+### Call RFC Server Functions in ABAP
 In this example the following ABAP code is used to call the new function **Z_ADD** in the remote destination *ERPTEST*. <br>
 The two numbers 26 and 25 are passed, and the result 51 is passed back. 
 

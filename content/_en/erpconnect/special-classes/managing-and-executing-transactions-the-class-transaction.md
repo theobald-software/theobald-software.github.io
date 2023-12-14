@@ -82,12 +82,12 @@ Material: 100-100
 Plant: 1000
 ```
 
-{: .box-note }
-**Note**: If you only want to execute a single transaction without adding several batch steps, simply set the property *TCode* and execute the transaction. 
-
-The screenshot below shows the sample program in action.
+Output:
 
 ![Call-Transaction-003](/img/content/Call-Transaction-003.png){:class="img-responsive"  }
+
+{: .box-note }
+**Note**: If you only want to execute a single transaction without adding several batch steps, simply set the property *TCode* and execute the transaction. 
 
 
 ### Background Processing (Batch Input)

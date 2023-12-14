@@ -22,9 +22,10 @@ The *ReadTable* class enables access to that data.
 
 The following sample shows how to use the *ReadTable* class to select data from the SAP table *MAKT* and how to process the ADO.NET result table object. 
 
-- This sample reads the material description texts of the table *MAKT*. 
+The SAP table MAKT contains material descriptions.
+- This sample reads the material description texts of *MAKT*. 
 For this the columns *MATNR* (material number) and *MAKTX* (material text) are needed.
-- To make sure only the English language texts are read, add a corresponding WHERE statement `SPRAS='EN'`(SPRAS is the column that contains the language keys).
+- Add a corresponding WHERE statement `SPRAS='EN'` to make sure only the English language texts are read (SPRAS is the column that contains the language keys).
 
 
 ``` csharp
@@ -85,8 +86,6 @@ Output:
 000000000000000089 AS-100 T-shirt
 000000000000000098 PCB Subassembly
 ```
-
-The screenshot below shows the output of the sample program. 
 
 ![ReadTable-Console](/img/content/ReadTable-Console.png){:class="img-responsive" }
 

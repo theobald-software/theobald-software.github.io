@@ -15,7 +15,7 @@ The class ABAPCode offers nearly unlimited possibilities.
 You can execute ABAP code on the fly and retrieve the result in a string array.<br>
 The following sample shows how to create a simple ABAP interpreter that executes a dynamic SQL statement.<br>
 
-### Creating an ABAP Interpreter
+### Create an ABAP Interpreter
 
 Follow the steps below to crate an ABAP interpreter:
 
@@ -85,6 +85,7 @@ else
 ```
 
 ![AbapPad](/img/content/AbapPad.png){:class="img-responsive"  }
+
 <!---
 Output:
 ```

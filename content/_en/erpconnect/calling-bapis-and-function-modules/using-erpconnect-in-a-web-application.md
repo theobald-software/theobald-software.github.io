@@ -22,20 +22,22 @@ The following section shows the development process for an ASP.NET/ERPConnect pr
 **Warning!** The standard demo license does not support working in web environments. 
 To test ERPConnect with your ASP.NET project, apply for a test license number at [sales@theobald-software.com](mailto:sales@theobald-software.com).    
 
-### ASP.NET Example
-This example uses an ASP page to enter data for a purchase order, see screenshot below. <br>
+### ASP.NET
+
+The following sample shows how to create a purchase order using the *BAPI_PO_CREATE*.
+The sample uses an ASP page to enter data for a purchase order, see screenshot below. <br>
 ![purchase-order1](/img/content/Create-Purchase-Order-IE.png){:class="img-responsive"}  
 
-Input/Output:
+Input:
 ```
 Vendor: 0000001070
 Material: B-7000
 Plant: 1000
 Quantity: 10
-Message: Standard PO created under the number 4500018292
 ```
 
-#### How to Create a Purchase Order via BAPI
+#### How to Create a Purchase Order 
+
 To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps below:
 1. Establish a connection to the SAP system 
 2. Create an RFC-Function object for the BAPI *BAPI_PO_CREATE*.
@@ -114,7 +116,12 @@ var returnMessage = func.Tables["RETURN"].Rows[0, "MESSAGE"].ToString();
 Console.WriteLine($"Message: {returnMessage}");
 ```
 
-The screenshot below shows the created purchase order.<br>
+Output:
+
+```
+Message: Standard PO created under the number 4500018292
+```
+
 ![purchase-order2](/img/content/create-purchase-order-ie_02.png){:class="img-responsive"}  
   
 ****
