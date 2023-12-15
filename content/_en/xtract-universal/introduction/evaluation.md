@@ -27,6 +27,10 @@ In case of any questions or doubts, feel free to contact Theobald Software: <br>
 **Note:** To evaluate Xtract Universal's Report component, a custom function module must be installed in your SAP system, see [Custom function module for Report](../sap-customizing/install-report-custom-function-module). 
 Customizations for the Table component are available, but not mandatory, see [Custom function module for Table](../sap-customizing/custom-function-module-for-table-extraction) for more information.
 
+{: .box-tip }
+**Tip:** To start evaluating Xtract Universal more quickly, Theobald Software offers Xtract Universal as a pre-configured Amazon Machine Image (AMI) on AWS EC2.
+For more information, refer to the knowledge base article [Run Xtract Universal in a VM on AWS EC2](https://kb.theobald-software.com/xtract-universal/run-xu-in-aws)
+
 <!---
 ### Support
 -->
