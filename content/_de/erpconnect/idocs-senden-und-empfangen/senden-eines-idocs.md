@@ -73,8 +73,8 @@ Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worde
 
 ****
 #### Weiterführende Links
-- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc-by-using-createemptyidoc-method)
-- [Sending a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-a-matmas-idoc)
+- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/send-an-order-idoc-by-using-createemptyidoc-method)
+- [Sending a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/send-a-matmas-idoc)
 - [Resend IDocs which where set to CPICERR in SM58](https://kb.theobald-software.com/erpconnect-samples/resend-idocs-which-where-set-to-cpicerr-in-sm58)
 - [Eine RFC-Destination anlegen](./voraussetzungen#eine-rfc-destination-anlegen)
 

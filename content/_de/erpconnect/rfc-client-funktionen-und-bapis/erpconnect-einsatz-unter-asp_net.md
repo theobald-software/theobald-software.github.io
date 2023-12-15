@@ -97,4 +97,4 @@ Der folgende Screenshot zeigt die angelegte Bestellung im SAP-System.<br>
   
 ****
 #### Weiterführende Links
-- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)
+- [Implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/implement-a-connection-pool)

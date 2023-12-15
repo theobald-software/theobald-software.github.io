@@ -101,6 +101,6 @@ The SAP standard module *RFC_READ_TABLE* for table extraction can only extract t
 
 ****
 #### Related Links
-- [Transferring data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transferring-data-packets-with-readtable-class)
+- [Transfer data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transfer-data-packets-with-readtable-class)
 - [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)
 - [Get CostCenter hierarchies](https://kb.theobald-software.com/erpconnect-samples/get-costcenter-hierarchies)

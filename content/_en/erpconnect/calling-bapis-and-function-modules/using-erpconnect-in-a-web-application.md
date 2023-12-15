@@ -126,4 +126,4 @@ Message: Standard PO created under the number 4500018292
   
 ****
 #### Related Links
-- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)
+- [Implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/implement-a-connection-pool)
