@@ -28,7 +28,7 @@ Sollten Sie Fragen oder Zweifel haben, können Sie sich jederzeit an Theobald So
 Für die Table-Komponente gibt es optionale Anpassungen, mit denen Sie Limitationen des SAP Standardfunktionsbausteins umgehen können, siehe [Funktionsbaustein für Table](../sap-customizing/funktionsbaustein-fuer-table-extraktion).
 
 {: .box-tip }
-**Tipp:** Für einen schnelleren Start in die Evaluierung, bietet Theobald Software Xtract Universal als vorkonfigurierte Amazon Machine Image (AMI) in AWS EC2 an. 
+**Tipp:** Für einen schnelleren Start in die Evaluierung, bietet Theobald Software Xtract Universal als vorkonfiguriertes Amazon Machine Image (AMI) in AWS EC2 an. 
 Für mehr Informationen, siehe [Run Xtract Universal in a VM on AWS EC2](https://kb.theobald-software.com/xtract-universal/run-xu-in-aws)
 
 <!---
