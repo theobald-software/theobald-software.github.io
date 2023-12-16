@@ -123,3 +123,6 @@ Net&value of the invoice item in the docCurrency (SAP Demo): 11118,00
 Clearing value in document currency (SAP Demo): 0,00
 ```
 
+****
+#### Related Links
+- [Execute BW Queries](https://kb.theobald-software.com/erpconnect-samples/execute-bw-queries)

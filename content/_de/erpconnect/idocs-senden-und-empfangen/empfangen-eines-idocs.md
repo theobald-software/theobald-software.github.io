@@ -15,62 +15,78 @@ progessstate: 5
 Der folgende Abschnitt zeigt, wie Sie ein *MATMAS* IDoc empfangen und verarbeiten.
 Um Ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, folgen Sie der Anleitung im Abschnitt [Einrichten einer IDoc-Testumgebung](./voraussetzungen#einrichten-einer-idoc-testumgebung).
 
-### Ein MATMAX IDoc empfangen
-
-1. Erstellen Sie ein *RFCServer* Objekt, um Aufrufe von SAP zu verarbeiten, siehe [RFC-Server](../rfc-server/rfc-server-beispiel) für weitere Informationen.
-2. Um IDocs mit dem *RFCServer* zu empfangen, setzten Sie die Eigenschaft *CanReceiveIdocs* auf True.  
-3. Wenn ein IDoc von ERPConnect empfangen wird, wird das Ereignis *IncomingIdoc* getriggert und eine Referenz auf die Objekte *RFCServer* und *IDoc* transferriert.
-Nutzen Sie das Ereignis *IncomingIdoc*, um das eingehende IDoc zu verarbeiten. 
-```csharp
-
-static void Main(string[] args) 
-{ 
-	 // define server object and start 
-	 RFCServer s = new RFCServer(); 
-	 s.Logging = true; 
-	 s.GatewayHost = "sap-erp-as05.example.com"; 
-	 s.GatewayService = "sapgw11"; 
-	 s.ProgramID = "ERPTEST"; 
-	 s.CanReceiveIdocs = true; 
-	 s.IncomingIdoc+= new ERPConnect.RFCServer.OnIncomingIdoc(s_IncomingIdoc); 
-	 s.InternalException+= new ERPConnect.RFCServer.OnInternalException (s_InternalException); 
-	 s.Start(); 
-  
-	 Console.WriteLine("Server is running. Press any key to exit."); 
-	 Console.ReadLine(); 
-	 s.Stop(); 
-}
-```
-
-### Ein eingehendes IDoc verarbeiten
+### Über MATMAS
 
 In diesem Beispiel enthält das empfangene IDoc u.a. Materialbeschreibungen, die in das Konsolenfenster geschrieben werden können, um den Inhalt des empfangenen IDocs zu prüfen. <br>
+
 Der Inhalt der *IDocs* kann mit Hilfe des *E2MARAM005* Segments analysiert und ausgelesen werden.
 Das *E2MARAM005* Segment enthält mehrere *E2MAKTM001*-Segmente, die jeweils einen Kurztext des Materials beinhalten.
 
-{: .box-note }
-**Hinweis**: Sie können in SAP mit der Transaktion **WE60** die Strukturen Ihrer IDocs einsehen.
+{: .box-tip }
+**Tipp**: Sie können in SAP mit der Transaktion **WE60** die Strukturen Ihrer IDocs einsehen.
 
-1. Lesen Sie den Datenpuffer mit der Methode *ReadDataBuffer* aus, um auf die Materialbeschreibungen in *E2MAKTM001* zuzugreifen. 
+
+### Ein MATMAX IDoc empfangen
+
+1. Erstellen Sie ein *RFCServer* Objekt, um Aufrufe von SAP zu verarbeiten, siehe [RFC-Server](../rfc-server/rfc-server-beispiel) für weitere Informationen.
+2. Um IDocs mit dem *RFCServer* zu empfangen, setzten Sie die Eigenschaft *CanReceiveIdocs* auf *True*.  
+3. Wenn ein IDoc von ERPConnect empfangen wird, wird das Ereignis *IncomingIdoc* getriggert und eine Referenz auf die Objekte *RFCServer* und *IDoc* transferriert.
+Nutzen Sie das Ereignis *IncomingIdoc*, um das eingehende IDoc zu verarbeiten. 
+4. Lesen Sie den Datenpuffer mit der Methode `ReadDataBuffer` aus, um auf die Materialbeschreibungen in *E2MAKTM001* zuzugreifen. 
 Der Text befindet sich an der Stelle 4 und ist 40 Zeichen lang.<br>
+5. Geben Sie alle Texte in der Konsole aus.
+6. Führen Sie das Programm aus.
+7. Senden Sie das IDoc in SAP und prüfen Sie das Ergebnis. 
+
 ```csharp
-private static void s_IncomingIdoc(RFCServer Sender, Idoc idoc) 
-{ 
-	 Console.WriteLine("Received Idoc " + idoc.IDOCTYP); 
-	 IdocSegment e2maram = idoc.Segments["E2MARAM005",0]; 
-	 for (int i=0; i < e2maram.ChildSegments.Count;i++) 
-	 { 
-		 if (e2maram.ChildSegments[i].SegmentName == "E2MAKTM001") 
-		 { 
-			 Console.WriteLine("Materialtext found: " + e1maram.ChildSegments[i].ReadDataBuffer(4,40)); 
-		 } 
-	 } 
-}
+using System;
+using ERPConnect;
+using ERPConnect.Idocs;
+
+// Set your ERPConnect license
+LIC.SetLic("xxxx");
+
+using var server = new RFCServer();
+server.Logging = true;
+server.GatewayHost = "hamlet";
+server.GatewayService = "sapgw11";
+server.ProgramID = "ERPTEST";
+server.CanReceiveIdocs = true;
+
+server.InternalException += (_, exception) =>
+{
+    Console.WriteLine($"Internal error: {exception.Message}");
+};
+
+server.IncomingIdoc += (_, idoc) =>
+{
+    Console.WriteLine("Received Idoc " + idoc.IDOCTYP);
+    IdocSegment e1maram = idoc.Segments["E2MARAM005", 0];
+    for (int i = 0; i < e1maram.ChildSegments.Count; i++)
+    {
+        if (e1maram.ChildSegments[i].SegmentName != "E2MAKTM001")
+        {
+            continue;
+        }
+
+        string text = e1maram.ChildSegments[i].ReadDataBuffer(4, 40);
+        Console.WriteLine($"Material text found: {text}");
+    }
+};
+
+server.Start();
+
+Console.WriteLine("Server is running. Press any key to exit.");
+Console.ReadLine();
+
+server.Stop();
 ```
-2. Geben Sie alle Texte in der Konsole aus.
-3. Führen Sie das Programm aus, senden Sie das IDoc in SAP und prüfen Sie das Ergebnis. 
+
+Ausgabe:
+
 In diesem Fall werden 5 *E2MAKTM001* Segmente gefunden und somit 5 Teste ausgegeben. <br>
 ![SAP-Receive-IDoc](/img/content/SAP-Receive-IDoc.png){:class="img-responsive" width="800px" }
+
 
 {: .box-note }
 **Hinweis**: Falls Sie die Texte nicht unter Angabe des Offsets und der Länge direkt auf den Daten-Puffer lesen möchten, können Sie den Datenpuffer alternativ über ein XML-Schema in Felder aufzulösen. 
