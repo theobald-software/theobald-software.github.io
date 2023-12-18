@@ -27,75 +27,67 @@ By clicking a button, the SAP GUI is launched and the transaction **MMBE** (stoc
 **Tip**: The installation package of ERPConnect includes the *Transaction-Recorder* tool. 
 This tool records transactions and implements them to code, see [Transaction-Recorder](../tools/transaction-recorder). 
 
-The code below shows how to add batch steps with the method *AddStep*. 
-When connecting to SAP it is important to set the *UseGui* property to true. 
+The code below shows how to add batch steps with the method *AddStep*. <br>
+When connecting to SAP set the *UseGui* property to true. 
 The SAP GUI is launched using the method *Execute*.
 
+
 ```csharp
-private void button1_Click(object sender, System.EventArgs e)
-    {
-    using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-        {
-            Transaction transaction1 = new Transaction();
-            transaction1.Connection = con;
-            // Reset the batch steps
-            transaction1.BatchSteps.Clear();
-  
-            // fill new steps
-            transaction1.ExecutionMode = ERPConnect.Utils.TransactionDialogMode.ShowOnlyErrors;
-            transaction1.TCode = "MMBE";
-            transaction1.AddStepSetNewDynpro("RMMMBEST", "1000");
-            transaction1.AddStepSetOKCode("ONLI");
-            transaction1.AddStepSetCursor("MS_WERKS-LOW");
-            transaction1.AddStepSetField("MS_MATNR-LOW", textBox1.Text);
-            transaction1.AddStepSetField("MS_WERKS-LOW", textBox2.Text);
-  
-            // connect to SAP
-            con.UseGui = true;
-            con.Open(false);
-            // Run
-            transaction1.Execute();
-        }
-    }
+using System;
+using ERPConnect;
+using ERPConnect.Utils;
+
+// Set your ERPConnect license
+LIC.SetLic("xxxx");
+
+using var connection = new R3Connection(
+    host: "server.acme.org",
+    systemNumber: 00,
+    userName: "user",
+    password: "passwd",
+    language: "EN",
+    client: "001")
+{
+    Protocol = ClientProtocol.NWRFC,
+    UseGui = true,
+};
+
+connection.Open();
+
+Console.Write("Material: ");
+string material = Console.ReadLine();
+
+Console.Write("Plant: ");
+string plant = Console.ReadLine();
+
+var transaction = new Transaction(connection)
+{
+    ExecutionMode = TransactionDialogMode.ShowAll,
+    TCode = "MMBE"
+};
+
+transaction.AddStepSetNewDynpro("RMMMBEST", "1000");
+transaction.AddStepSetOKCode("ONLI");
+transaction.AddStepSetCursor("MS_WERKS-LOW");
+transaction.AddStepSetField("MS_MATNR-LOW", material);
+transaction.AddStepSetField("MS_WERKS-LOW", plant);
+
+// run
+transaction.Execute();
 ```
-<!---
-<details>
-<summary>Click to open VB example.</summary>
-{% highlight visualbasic %}
-Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
-    Dim R3Connection1 As R3Connection = New R3Connection("SAPServer", 0, "SAPUser", "Password", "EN", "800")
-    Dim transaction1 As Transaction = New Transaction()
-    transaction1.Connection = R3Connection1
-    ' Reset the batch steps
-    transaction1.BatchSteps.Clear()
-    ' fill new steps
-    transaction1.ExecutionMode = _
-       ERPConnect.Utils.TransactionDialogMode.ShowOnlyErrors
-    transaction1.TCode = "MMBE"
-    transaction1.AddStepSetNewDynpro("RMMMBEST", "1000")
-    transaction1.AddStepSetOKCode("ONLI")
-    transaction1.AddStepSetCursor("MS_WERKS-LOW")
-    transaction1.AddStepSetField("MS_MATNR-LOW", "100-100")
-    transaction1.AddStepSetField("MS_WERKS-LOW", "100-200")
-    ' connect to SAP
-  
-  
-    R3Connection1.UseGui = True
-    R3Connection1.Open(False)
-    ' Run
-    transaction1.Execute()
-  
-End Sub
-{% endhighlight %}
-</details>
--->
+
+Input:
+```
+Material: 100-100
+Plant: 1000
+```
+
+Output:
+
+![Call-Transaction-003](/img/content/Call-Transaction-003.png){:class="img-responsive"  }
 
 {: .box-note }
 **Note**: If you only want to execute a single transaction without adding several batch steps, simply set the property *TCode* and execute the transaction. 
-
-The screenshot below shows the sample program in action.
-
-![Call-Transaction-003](/img/content/Call-Transaction-003.png){:class="img-responsive"  }
 
 
 ### Background Processing (Batch Input)

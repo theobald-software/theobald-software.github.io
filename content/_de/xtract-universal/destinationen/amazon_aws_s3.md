@@ -185,6 +185,7 @@ Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werde
 {% include _content/de/xu-specific/destinationen/general/file-splitting.md %}
 
 ## Weiterführende Links
+- [Knowledge Base Artikel: Run Xtract Universal in a VM on AWS EC2](https://kb.theobald-software.com/xtract-universal/run-xu-in-aws)
 - [Amazon AWS: Erste Schritte mit Backup und Wiederherstellung mit AWS](https://aws.amazon.com/de/backup-restore/getting-started/)
 - [Amazon S3: Erste Schritte mit Amazon S3](https://aws.amazon.com/de/s3/getting-started/)
 - [Amazon EC2: Erste Schritte mit Amazon EC2](https://aws.amazon.com/de/ec2/getting-started/)

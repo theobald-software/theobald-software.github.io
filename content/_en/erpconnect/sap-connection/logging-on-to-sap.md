@@ -163,4 +163,4 @@ Example: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password
 #### Related Links
 - [SSO with Log On Tickets](./sso-with-log-on-tickets).
 - [SSO with SNC](sso-with-snc).
-- [How to implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/how-to-implement-a-connection-pool)
+- [Implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/implement-a-connection-pool)

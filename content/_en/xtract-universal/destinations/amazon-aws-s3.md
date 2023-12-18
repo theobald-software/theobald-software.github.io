@@ -191,6 +191,7 @@ Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}
 
 ## Related Links
+- [Knowledge Base Article: Run Xtract Universal in a VM on AWS EC2](https://kb.theobald-software.com/xtract-universal/run-xu-in-aws)
 - [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/)
 - [Amazon S3: Getting Started with Amazon S3](https://aws.amazon.com/s3/getting-started/)
 - [Amazon EC2: Getting Started with Amazon EC2](https://aws.amazon.com/ec2/getting-started/)

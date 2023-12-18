@@ -24,57 +24,76 @@ Das *STATUS*-IDoc enthält nur einen Datensatz und ist somit sehr einfach aufgeb
 
 1. Bauen Sie mit der *R3Connection*-Klasse eine Verbindung zum R/3 System auf.
 2. Fragen Sie die IDoc-Nummer des zu manipulierenden IDocs ab und lesen Sie die Eingabe aus.
-3. Erzeugen Sie mit der Methode *CreateIdoc* ein IDoc Objekt. 
-"SYSTAT01" ist der entsprechende IDoc-Typ für den Nachrichtentyp *STATUS*. <br> <br>
-	 ```csharp
-     static void Main(string[] args)  
-     {  
-        using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
-        {
-			con.Open(false); 
-        
-			Console.WriteLine("Which IDocnumber would you like to manipulate?");  
-			string IdocNo = Console.ReadLine(); 
-        
-			Idoc i = con.CreateIdoc("SYSTAT01","");
-     ```
-4. Geben Sie Angaben zum Empfänger und Absender für den Kopfsatz des IDoc-Objekts ein. <br> <br>
-	 ```csharp
-			// Fill Message Type 
-			i.MESTYP = "STATUS"; 
-  
-			// Fill Information about IDoc Reciever 
-			i.RCVPRN = "PT4_800"; // Partner number 
-			i.RCVPRT = "LS"; // Partner type 
-  
-			// Fill information about idoc sender 
-			i.SNDPOR = "ERPCONNECT"; // Partner port 
-			i.SNDPRN = "ERPCONNECT"; // Partner number 
-			i.SNDPRT = "LS"; // Partner type
-     ```
-5. Fügen Sie die folgenden Daten Segment *E1STATS* hinzu: Zielstatus (*STATUS*), Datum und Uhrzeit (*LOGDAT*, *LOGTIM*) und die zu manipulierende IDoc-Nummer (*DOCNUM*). 
-6. Senden Sie das IDoc mit der Methode *Send*. 
-	 ```csharp
-			// Fill the right fields in the segments 
-			i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20210901";
-			i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
-			i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
-			i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
-  
-			i.Send(); 
-			Console.WriteLine("IDoc sent"); 
-			Console.ReadLine();
-			}
-	}
-     ```
+3. Erzeugen Sie mit der Methode `CreateIdoc` ein IDoc Objekt. 
+"SYSTAT01" ist der entsprechende IDoc-Typ für den Nachrichtentyp *STATUS*. 
+4. Geben Sie Angaben zum Empfänger und Absender für den Kopfsatz des IDoc-Objekts ein. 
+5. Fügen Sie die folgenden Daten Segment *E1STATS* hinzu: 
+	- Zielstatus (*STATUS*)
+	- Datum und Uhrzeit (*LOGDAT*, *LOGTIM*) 
+	- die zu manipulierende IDoc-Nummer (*DOCNUM*). 
+6. Senden Sie das IDoc mit der Methode `Send`. 
 7. Führen Sie das Programm aus und prüfen Sie in SAP den Status des manipulierten IDocs.<br>
+
+```csharp
+
+using System;
+using ERPConnect;
+using ERPConnect.Utils;
+
+// Set your ERPConnect license
+LIC.SetLic("xxxx");
+
+using var connection = new R3Connection(
+    host: "server.acme.org",
+    systemNumber: 00,
+    userName: "user",
+    password: "passwd",
+    language: "EN",
+    client: "001")
+{
+    Protocol = ClientProtocol.NWRFC,
+};
+
+connection.Open(false);
+        
+Console.WriteLine("Which IDoc number would you like to manipulate?");  
+string IdocNo = Console.ReadLine(); 
+        
+Idoc i = connection.CreateIdoc("SYSTAT01","");
+ 
+// Fill Message Type 
+i.MESTYP = "STATUS"; 
+  
+// Fill Information about IDoc Reciever 
+i.RCVPRN = "PT4_800"; // Partner number 
+i.RCVPRT = "LS"; // Partner type 
+  
+// Fill information about IDoc sender 
+i.SNDPOR = "ERPCONNECT"; // Partner port 
+i.SNDPRN = "ERPCONNECT"; // Partner number 
+i.SNDPRT = "LS"; // Partner type
+
+// Fill the right fields in the segments 
+i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20210901";
+i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
+i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
+i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
+  
+i.Send(); 
+Console.WriteLine("IDoc sent"); 
+Console.ReadLine();
+ ```
+ 
+Ausgabe: 
+
 Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worden.<br>
 ![SAP-Send-IDoc-001](/img/content/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
 
+
 ****
 #### Weiterführende Links
-- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-an-order-idoc-by-using-createemptyidoc-method)
-- [Sending a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/sending-a-matmas-idoc)
+- [Sending an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/send-an-order-idoc)
+- [Sending a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/send-a-matmas-idoc)
 - [Resend IDocs which where set to CPICERR in SM58](https://kb.theobald-software.com/erpconnect-samples/resend-idocs-which-where-set-to-cpicerr-in-sm58)
 - [Eine RFC-Destination anlegen](./voraussetzungen#eine-rfc-destination-anlegen)
 
