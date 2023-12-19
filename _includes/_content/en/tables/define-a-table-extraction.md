@@ -36,7 +36,7 @@ Set up the Table component to extract SAP tables:
 3. Define a [WHERE clause](./where-clause) or a [HAVING clause](./having-clause) to filter table records. By default all data is extracted.
 4. Click **[Load live preview]** to display a live preview of the first 100 records. 
 <!--- {% if page.product == "xtract-universal" or page.product == "board-connector" %}5. Check the [General Settings](./general-settings). The *General Settings* include keywords, definition of primary keys, column level encryption and access restrictions.{% endif %}-->
-5. Check the {% if page.product == "xtract-is" %}[Settings](./extraction-settings){% endif %} {% elsif page.product == "xtract-for-alteryx" %} the [[Extraction Settings]](./extraction-settings) {% endif %} {% else %} [General Settings](./general-settings) and the [Extraction Settings](./extraction-settings) {% endif %} before running the extraction.
+5. Check the {% if page.product == "xtract-is" %}[Settings](./extraction-settings){% elsif page.product == "xtract-for-alteryx" %} the [[Extraction Settings]](./extraction-settings) {% endif %} {% else %} [General Settings](./general-settings) and the [Extraction Settings](./extraction-settings) {% endif %} before running the extraction.
 6. Click **[OK]** to save the extraction.
 
 {% if page.product == "xtract-universal" %}The extraction can be run, see [Execute and Automate Extractions](../execute-and-automate-extractions).{% endif %}
