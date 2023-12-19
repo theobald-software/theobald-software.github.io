@@ -42,7 +42,7 @@ Select *Exclude* in the **Sign** (3) column to exclude the filtered data from th
 If runtime parameters are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
 Clicking on the icon switches between static input values and runtime parameters.
 - Runtime Parameters: Click ![static-value](/img/content/icons/runtime-parameters-static.png) to change the input type to parameters ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
-If no icons are displayed, open the [Edit Runtime Parameters](./edit-runtime-parameters) menu and create runtime parameters.
+If no icons are displayed, open the [Edit Runtime Parameters](./report-edit-runtime-parameters) menu and create runtime parameters.
 Select a runtime parameter from the drop-down list.
 6. Click **[OK]** to confirm your input.
 7. Click **[Load Preview]** in the main window of the component to check the result of your selection. <br>
