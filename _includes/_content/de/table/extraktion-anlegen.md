@@ -20,7 +20,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 Richten Sie die Table Komponente ein, um SAP Tabellen zu extrahieren:
 
-1. Wählen Sie die Spalten aus, die Sie extrahieren möchten. Standardmäßig sind alle Spalten ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.<br>
+1. Wählen Sie die Spalten aus, die Sie extrahieren möchten. Standardmäßg sind alle Spalten ausgewählt. Deaktivieren Sie die Felder, die Sie nicht extrahieren möchten.<br>
 ![Table-Form](/img/content/table/table_fields_filter2.png){:class="img-responsive"}
 2. Optional: Definieren Sie eine WHERE Bedingung oder eine HAVING Bedingung, um Tabelleneinträge zu filtern. Standardmäßg werden alle Daten extrahiert.
 3. Klicken Sie auf **[Load live preview]**, um eine echtzeit-Vorschau der ersten 100 Datensätze anzuzeigen.
