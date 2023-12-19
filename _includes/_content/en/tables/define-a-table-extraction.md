@@ -40,4 +40,5 @@ Set up the Table component to extract SAP tables:
 6. Click **[OK]** to save the extraction.
 
 {% if page.product == "xtract-universal" %}The extraction can be run, see [Execute and Automate Extractions](../execute-and-automate-extractions).{% endif %}
-{% endif %}
+
+
