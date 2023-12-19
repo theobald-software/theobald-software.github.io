@@ -4,4 +4,4 @@
 - ABAP CDS views
 - Views
 - Pool Tabellen (kein Joining möglich)
-- Cluster Tabellen (kein Joining möglich)
+- Cluster Tabellen (kein Joining möglich) 
