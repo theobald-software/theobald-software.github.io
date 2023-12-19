@@ -47,7 +47,7 @@ Wählen Sie in der Spalte **Sign** (3) die Option *Exclude*, um die gefilterten 
 Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
 Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
 - Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
-Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./report-edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
+Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
 Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
 6. Klicken Sie auf **[OK]**, um Ihre Selektion zu bestätigen.
 7. Klicken Sie im Hauptfenster der Komponente auf **[Load Preview]**, um die Selektion zu prüfen. <br>
