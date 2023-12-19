@@ -12,7 +12,7 @@ The application now returns to the main window of the component.
 
 ### Define Import, Export, Changings and Tables
 
-The main window of the {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}Xtract {% endif %}BAPI component shows all parameters of the selected BAPI. From this window you can additionally {% if page.product == "xtract-for-alteryx" %} [Edit parameters](#edit-runtime-parameters) {% elsif page.product == "xtract-is" %} check the Xtract IS Info or Refresh Metadata {% endif %} access the [General Settings](#general-settings) or [Edit runtime parameters](#edit-runtime-parameters).
+The main window of the {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}Xtract {% endif %}BAPI component shows all parameters of the selected BAPI. 
 
 1. Add input parameters to send to SAP in **Imports**, see [Import Parameters](./parameters#import-parameters). <br>
 You can enter scalar values (1) or structures (2).
