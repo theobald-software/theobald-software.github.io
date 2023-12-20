@@ -3,7 +3,7 @@ layout: page
 title: Text Constructing
 description: Formatting, forming and constructing sentences
 parent: editorial-guide
-parent: yunio-style-guide
+parent: ui-style-guide
 weight: 14
 permalink: /:collection/:path
 lang: en_GB
@@ -37,7 +37,7 @@ Don't make a list for just one item; a single item doesn't make a proper list. I
 |Input values can be set to the following options:<br> &bull; supplied by caller when running the service <br> &bull; set to a constant value <br> &bull; default value defined in SAP | Input values can either be supplied by the caller when running the service, set to a constant value, or left to their defaults as defined in SAP.|
 
 
-[Capitalization](./yunio-style-guide/spelling-and-grammar#punctuation) and end [punctuation](./yunio-style-guide/spelling-and-grammar#punctuation) depend on the type of list and the contents of the list.
+[Capitalization](./ui-style-guide/spelling-and-grammar#punctuation) and end [punctuation](./ui-style-guide/spelling-and-grammar#punctuation) depend on the type of list and the contents of the list.
 
 Introduce a list with a complete sentence, not a fragment that's completed by the list items.
 

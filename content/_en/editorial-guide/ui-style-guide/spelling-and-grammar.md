@@ -3,7 +3,7 @@ layout: page
 title: Spelling and Grammar
 description: Spelling and Grammar
 parent: editorial-guide
-parent: yunio-style-guide
+parent: ui-style-guide
 weight: 10
 permalink: /:collection/:path
 lang: en_GB
@@ -12,7 +12,7 @@ lang: en_GB
 Spelling refers to the correct arrangement of letters in a word, while grammar refers to the rules and structure of a language, including the correct arrangement of words in a sentence and the proper use of punctuation. Spelling and grammar are important for effective communication and understanding in written language.
 
 For reference you can use the spelling dictionary [Merriam Webster](https://www.merriam-webster.com). The preferable English for Theobald Software products is US English.
-The yunIO Style Guide of Theobald Software also deals with cases that require a more detailed explanation than one can find in a spelling dictionary.
+The User Interface Style Guide of Theobald Software also deals with cases that require a more detailed explanation than one can find in a spelling dictionary.
 
 ### Present Tense
 
@@ -43,8 +43,8 @@ Tip: Here is an article on distinguishing active and passive voice: [Active vs. 
 
 | Recommended | Not recommended | 
 | :------ |:--- |
-| Define the endpoint of yunIO web services. | Define how the yunIO web services can be reached. | 
-| Restart the yunIO service, when transitioning to this option or modifying the connection string.| Restarting the yunIO service is required when you are switching to this option or changing the connection string.|
+| Define the endpoint of User Interface web services. | Define how the User Interface web services can be reached. | 
+| Restart the User Interface service, when transitioning to this option or modifying the connection string.| Restarting the yunIO service is required when you are switching to this option or changing the connection string.|
 |Restart the yunIO service, when transitioning to this option or modifying the connection string.|Restarting the yunIO service is required when you are switching to this option or changing the connection string.|
 
 Appeal to the reader using active and direct language. 

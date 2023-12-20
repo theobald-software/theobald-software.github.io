@@ -3,7 +3,7 @@ layout: page
 title: Style
 description: Style
 parent: editorial-guide
-parent: yunio-style-guide
+parent: ui-style-guide
 weight: 5
 permalink: /:collection/:path
 lang: en_GB
@@ -13,7 +13,7 @@ When creating content style can be defined as “the way the author writes texts
 
 Keep in mind that readers have diverse cultural backgrounds and different English reading skills. As much as possible, avoid culturally specific references. Writing in a straightforward and uniform manner can also simplify the translation of documents into other languages.
 
-Make big chunks of text easier to scan. Split bigger paragraphs into smaller paragraphs, make headings, and use [lists](./yunio-style-guide/text-constructing#list).
+Make big chunks of text easier to scan. Split bigger paragraphs into smaller paragraphs, make headings, and use [lists](./ui-style-guide/text-constructing#list).
 
 Use shorter words and shorter sentences. Try to use fewer than 26 words per sentence.
 
