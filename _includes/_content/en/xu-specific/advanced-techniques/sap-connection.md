@@ -100,6 +100,14 @@ The Windows Active Directory user is used for authentication.
 For this scenario "HTTPS - Restricted to AD users with Designer read access" must be selected and configured in the [Server Settings](../server/server-settings#web-server).<br>
 For more information, see the knowledge base article [SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
 
+{% if page.product == "board-connector" %}
+
+{: .box-note }
+**Note:**
+The option "SSO - Impersonate caller via Kerberos" is not available for Board Cloud. 
+
+{% endif %}
+
 **SSO - Enroll certificate on behalf of caller** <br>
 This option activates Certificate SSO.
 The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user who calls the extraction.
