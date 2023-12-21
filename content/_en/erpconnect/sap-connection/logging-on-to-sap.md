@@ -11,29 +11,30 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=logging-on-to-sap
 ---
 
-There are two ways to log on to your SAP system with ERPConnect:
+There are multiple ways to log on to your SAP system with ERPConnect:
 - Connect to a single application server.
-- Connect to a message server (Load Balancing). 
+- Connect to a message server (Load Balancing).
+- Connect to a single application server or public or private cloud instance via RFC over WebSocket.
 
 ### Input Parameters
 
-Both connection methods require the following input:
+The connection methods require the following input:
 
-| Single Application Server | Load Balancing |
+| Single Application Server | Load Balancing | RFC over WebSocket |
 | :------ |:--- | :--- |
-| Name of the user (*UserName* property)| Name of the user (*UserName* property)|
-| Password (*Password* property)| Password (*Password* property)|
-| Language (*Language* property)| Language (*Language* property)|
-| Client (*Client* property)| Client (*Client* property)|
-| Name of the application server (*Host* property)| Name of the message server (*MessageServer* property)|
-| System number between 0 and 99 (*SystemNumber* property)| System ID (*SID* property e.g., MBS)|
-| Name of the group (*LogonGroup* property e.g., PUBLIC)|
+| Name of the user (*UserName* property)| Name of the user (*UserName* property)| Name of the user (*UserName* property)|
+| Password (*Password* property)| Password (*Password* property)| Password (*Password* property)|
+| Language (*Language* property)| Language (*Language* property)| Language (*Language* property)|
+| Client (*Client* property)| Client (*Client* property)| Client (*Client* property)|
+| Name of the application server (*Host* property)| Name of the message server (*MessageServer* property)| WebSocket host (*WebSocketHost* property)|
+| System number between 0 and 99 (*SystemNumber* property)| System ID (*SID* property e.g., MBS)| WebSocket port (*WebSocketPort* property)|
+| | Name of the group (*LogonGroup* property e.g., PUBLIC)| *AliasUser* property instead of *UserName* for cloud systems|
+||| Various TLS settings (*TlsSettings* property)|
 
 ### How to Connect
 1. Add the ERPConnect.dll class library as a reference to the project.
 2. Create a new R3Connection object and define all input parameters.
 3. Establish the connection using `Open`. <br>
-To connect via Load Balancing, use `Open(true)`. For the single server approach, use `Open(false)`. 
 
 Example for single server login:
 
@@ -102,6 +103,15 @@ conn.Protocol = ClientProtocol.NWRFC;
 conn.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 ```
 
+The default client protocol is the NWRFC Protocol. To use the old RFC Protocol add the following command:<br>
+`conn.Protocol = ClientProtocol.RFC;`
+
+
+{: .box-tip }
+**Tip**: If you use the constructor of the R3Connection class to provide the login properties, you can save lines.<br>
+Example: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`.
+
+
 {: .box-note }
 **Note**: For more information on authentication, see [SSO with Log On Tickets](./sso-with-log-on-tickets) and [SSO with SNC](sso-with-snc).
 
@@ -125,38 +135,6 @@ using (R3Connection con = new R3Connection())
     con.Open();
 }
 ```
-
-### Connection String
-
-You can use a connection string to open an SAP connection. 
-
-Example for single server login:
-
-```csharp
-R3Connection con = new R3Connection();
-string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
-
-con.ParseConnectionString(ConnectionString);
-con.Open();
-```
-
-Example for Load Balancing:
-
-```csharp
-R3Connection con = new R3Connection();
-string ConnectionString = "R3NAME=con GROUP=ADAPTER MSHOST=MSSERVER CLIENT=800 LANG=EN USER=YourUserName PASSWD=YourPassword";
-
-con.ParseConnectionString(ConnectionString);
-con.Open();
-```
-
-The default client protocol is the NWRFC Protocol. To use the old RFC Protocol add the following command:<br>
-`conn.Protocol = ClientProtocol.RFC;`
-
-
-{: .box-tip }
-**Tip**: If you use the constructor of the R3Connection class to provide the login properties, you can save lines.<br>
-Example: `R3Connection con = new R3Connection("SAPServer",00,"SAPUser","Password","EN","800");`.
 
 
 ****
