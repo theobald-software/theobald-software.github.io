@@ -4,6 +4,14 @@ Es gibt zwei Ansätze für die Erstellung eines X.509-Zertifikats:
 - Ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat 
 - Ein selbst signiertes Zertifikat (self-signed certificate)
 
+{% if page.product == "board-connector" %}
+
+{: .box-note }
+**Hinweis:**
+Bei Verwendung von Board Cloud kann zur Erstellung eines X.509-Zertifikats nur ein von einer öffentlichen Zertifizierungsstelle freigegebenes Zertifikat verwendet werden.
+
+{% endif %}
+
 {: .box-note }
 **Hinweis:** In Testumgebungen können Sie ein selbst signiertes Zertifikat verwenden. Für Ihre Produktionsumgebung wird ein von einer (internen) Zertifizierungsstelle (CA) freigegebenes Zertifikat empfohlen. 
 
