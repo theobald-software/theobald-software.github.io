@@ -8,7 +8,7 @@ There are two main approaches for creating an X.509 certificate:
 
 {: .box-note }
 **Note:**
-When using Board Cloud, only a certificate released by a public certification authority can be used for creating an X.509 certificate.
+When using Board Cloud, make sure to use a certificate released by a public certification authority (CA).
 
 {% endif %}
 

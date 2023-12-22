@@ -8,7 +8,7 @@ Es gibt zwei Ansätze für die Erstellung eines X.509-Zertifikats:
 
 {: .box-note }
 **Hinweis:**
-Bei Verwendung von Board Cloud kann zur Erstellung eines X.509-Zertifikats nur ein von einer öffentlichen Zertifizierungsstelle freigegebenes Zertifikat verwendet werden.
+Stellen Sie bei der Nutzung von Board Cloud sicher, dass Sie ein von einer öffentlichen Zertifizierungsstelle (CA) freigegebenes Zertifikat verwenden.
 
 {% endif %}
 
