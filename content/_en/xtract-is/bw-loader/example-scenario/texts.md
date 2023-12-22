@@ -17,7 +17,7 @@ Create a new data flow (or a new package), prepare the connection manager and de
 ![BWLoader-Text-01](/img/content/BWLoader-Text-01.png){:class="img-responsive"}
 
 
-Because we already created all necessary BW objects in the last section, all we need now is a new InfoPackage. This can be created by clicking the *Create New InfoPackage* button. The dialog should be filled in as follows:
+As all necessary BW objects have been already created in the last section. Now create a new InfoPackage by clicking *Create New InfoPackage* button. The dialog should be filled in as follows:
 
 ![BWLoader-Text-02](/img/content/BWLoader-Text-02.png){:class="img-responsive"}
 

@@ -40,7 +40,7 @@ These parts are buffered on the S3 side. If the extraction is successful, those 
 While the extraction is still running this file is not visible on S3.
 
 {: .box-tip}
-**Recommendation:** We recomment you enable S3 versioning or perform data backups regularly, see [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/).
+**Recommendation:** It's recommended you enable S3 versioning or perform data backups regularly, see [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/).
 
 ### Extraction failed
 In case the extraction fails, for example because of an exception in the Xtract Universal software, Xtract Universal will take care that the already uploaded parts will be deleted from S3. In case of an "uncontrolled" extraction failure, for example due to network issues, Xtract Universal won't be able to delete those uploaded parts from S3.
