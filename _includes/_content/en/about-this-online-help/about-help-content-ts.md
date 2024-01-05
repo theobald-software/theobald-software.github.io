@@ -6,7 +6,7 @@ Theobald Software's claim is to keep the Online Help up to date according to the
 
 Theobald Software's claim is to always update all the used screenshots of other software vendors, nevertheless this cannot be guaranteed. 
 
-©2023 Theobald Software GmbH. All rights reserved.
+©2024 Theobald Software GmbH. All rights reserved.
 
 ### Target group and audience
 This Online Help is intended for all users of products of Theobald Software. The Online Help offers an overview of the interface, of the navigation and of the basic information to the users who have never or rarely worked with the product. 

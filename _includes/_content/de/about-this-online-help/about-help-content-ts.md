@@ -8,7 +8,7 @@ Der Anspruch von Theobald Software besteht darin, alle verwendeten Screenshots a
 
 Zur besseren Lesbarkeit wird in der Online-Help das generische Maskulinum verwendet. 
 
-©2023 Theobald Software GmbH. Alle Rechte vorbehalten.
+©2024 Theobald Software GmbH. Alle Rechte vorbehalten.
 
 ### Zielgruppe und Kundenkreis
 Diese Online-Help richtet sich an alle Benutzer von Produkten von Theobald Software. Die Online-Help bietet Benutzern, die noch nie oder selten mit dem Produkt gearbeitet haben, einen Überblick über die Schnittstelle, die Navigation und die grundlegenden Informationen. 
