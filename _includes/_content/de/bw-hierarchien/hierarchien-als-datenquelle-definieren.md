@@ -12,7 +12,7 @@
 1. Klicken Sie auf **[Extraction Settings]** (3), um das Ausgabeformat der Hierarchie zu definieren, siehe [{% if page.product == "xtract-is" %}Einstellungen{% else %}Extraktionseinstellungen{% endif %}](./hierarchie-extraktionseinstellungen).
 {% if page.product == "xtract-for-alteryx" %}![Hierarchy](/img/content/extractors.bwhier/Define-Data-Source-Hierarchy.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Hierarchy](/img/content/xis/xis-hierarchy.png){:class="img-responsive"} {% else" %}![Hierarchy](/img/content/xu/hierarchy-settings.png){:class="img-responsive"} {% endif %}
 2. Klicken Sie auf **[Load live preview]** (4), um eine Echtzeitvorschau anzuzeigen, ohne eine Extraktion auszuführen.
-{% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}  {% else" %}3. Optional: Öffnen Sie die **General Settings**, um Primärschlüssel zu definieren, die Verschlüsselung von Daten und andere Einstellungen zu ändern, siehe [Allgemeine Einstellungen](../erste-schritte/allgemeine-einstellungen).
+{% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}  {% else" %}3. Optional: Öffnen Sie die **General Settings**, um Primärschlüssel zu definieren, die Verschlüsselung von Daten und andere Einstellungen zu ändern, siehe [Allgemeine Einstellungen](./allgemeine-einstellungen).
 4. Optional: Der Standardwert von **Date To** ist 99991231. Um diesen Wert zu ändern, überschreiben Sie den Laufzeitparameter *dateTo* im [Fenster "Run Extraction"](../erste-schritte/eine-extraktion-ausfuehren). {% endif %}
 
 ****
