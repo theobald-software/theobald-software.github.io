@@ -17,7 +17,7 @@ Das Fenster der {% if page.product == "xtract-for-alteryx" or page.product == "x
 
 {% if page.product == "xtract-universal" or page.product == "board-connector" %} 
 {: .box-note }
-**Hinweis:** Prüfen Sie die [Allgemeinen Einstellungen - General Settings](./allgemeine-einstellungen) vor dem Ausführen der Extraktion. <br>
+**Hinweis:** Prüfen Sie die [Allgemeinen Einstellungen - General Settings](./general-settings) vor dem Ausführen der Extraktion. <br>
 {% endif %}
 
 1. Geben Sie in **Imports** Eingabeparameter an, die an SAP gesendet werden, siehe [Import-Parameter](./parameter#import-parameter). <br>
