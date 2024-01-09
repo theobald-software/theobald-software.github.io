@@ -27,7 +27,7 @@ Required function modules:
 
 | Function Group | Function Modules |
 | :------ |:--- |
-| /THEO/CDC_ECC or /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS| 
+| /THEO/CDC_ECC or /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS<br>/THEO/GET_DB| 
 | /THEO/READ_TABLE or Z_THEO_READ_TABLE | /THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.10 or higher |
 
 The SAP transport requests for the function modules are provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
