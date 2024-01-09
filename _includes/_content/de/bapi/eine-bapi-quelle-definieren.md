@@ -13,6 +13,12 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 ### Import, Export, Changings und Tables definieren
 
 Das Fenster “Xtract BAPI” zeigt die Parameter des ausgewählten BAPI.
+Das Fenster der {% if page.product == "xtract-for-alteryx" or page.product == "xtract-is" %}Xtract {% endif %}BAPI-Komponente zeigt die Parameter des ausgewählten BAPI.
+
+{% if page.product == "xtract-universal" or page.product == "board-connector" %} 
+{: .box-note }
+**Hinweis:** Prüfen Sie die [Allgemeinen Einstellungen - General Settings](./general-settings) vor dem Ausführen der Extraktion. <br>
+{% endif %}
 
 1. Geben Sie in **Imports** Eingabeparameter an, die an SAP gesendet werden, siehe [Import-Parameter](./parameter#import-parameter). <br>
 Sie können Skalarwerte (1) oder Strukturen (2) übergeben.
