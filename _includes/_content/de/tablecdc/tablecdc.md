@@ -27,7 +27,7 @@ Erforderliche Funktionsbausteine:
 
 | Funktionsgruppe | Funktionsbausteine |
 | :------ |:--- |
-| /THEO/CDC_ECC oder /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS| 
+| /THEO/CDC_ECC oder /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS<br>/THEO/GET_DB| 
 | /THEO/READ_TABLE oder Z_THEO_READ_TABLE | /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version 2.10 oder höher |
 
 Die SAP-Transportaufträge für die Funktionsmodule werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
