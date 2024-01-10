@@ -16,7 +16,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 1. Wenn im Hauptfenster der Komponente das Feld **Process Chain** leer ist, geben Sie eine SAP Prozesskette ein, die Ihrer OHS Extraktion zugewiesen ist, siehe [SAP Dokumentation: Display/Maintenance of Process Chain Attributes](https://help.sap.com/docs/SAP_NETWEAVER_701/6da591e86c4b1014b43de329b9ffb859/4a2cf30c6ed91c62e10000000a42189c.html).
 Wenn **Process Chain** leer bleibt, schlägt die Extraktion fehl.
 2. Optional: Setzen Sie neben **Timeout** ein Zeitlimit für die Rückmeldung des BWs. Wenn das Zeitlimit überschritten wird, schlägt die Extraktion fehl.
-3. Prüfen / bearbeiten Sie die [Extraktionseinstellungen](./open-hub-services-settings) und [Allgemeinen Einstellungen](../erste-schritte/allgemeine-einstellungen).
+3. Prüfen / bearbeiten Sie die [Extraktionseinstellungen](./open-hub-services-settings) und [Allgemeinen Einstellungen](./allgemeine-einstellungen).
 
 {: .box-note }
 **Hinweis:** Um die OHS-Datenquelle nutzen zu können, müssen Anpassungen im SAP BW vorgenommen werden, siehe [Vorbereitungen für OHS im BW](../sap-customizing/vorbereitung-fuer-ohs-im-bw). 
