@@ -3,8 +3,8 @@ ref:  bc-bw-hierarchies-06
 layout: page
 title: General Settings
 description: General settings
-product: xtract-universal
-parent:  board-connector
+product: board-connector
+parent:  bw-hierarchies
 permalink: /:collection/:path
 weight: 6
 lang: en_GB
