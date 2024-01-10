@@ -8,7 +8,6 @@ parent: bw-hierarchien
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-
 ---
 
 Eine Extraktion hat zwei Arten von Einstellungen:

@@ -10,4 +10,5 @@ weight: 3
 lang: en_GB
 
 ---
+
 {% include _content/en/bw-hierarchies/hierarchies-extraction-settings.md %}
