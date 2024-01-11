@@ -36,8 +36,6 @@ Der Tab "Misc." besteht aus zwei Unterabschnitten:
 
 Board zieht die Daten oft mehrfach aus SAP. Um die Belastung des SAP-Servers zu verringern, können Sie die Option **Cache results** auswählen, sodass Board die Daten aus dem Cache und nicht aus dem SAP zieht.
 Das erhöht die Performance und begrenzt die Auswirkungen auf das SAP-System.
-Wenn dieses Verhalten nicht erwünscht ist (z.B. weil die Daten immer zu 100% aktuell sein müssen), muss die Cache-Option explizit ausgeschaltet werden.
-
 
 #### Keywords (Schlüsselwörter)
 
