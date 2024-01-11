@@ -54,6 +54,11 @@ The following example shows how to set up a simple report extraction:
 ![Report-Animation](/img/content/report.gif){:class="img-responsive" style="border:1px solid black;"}
 {% endif %}
 
+{% if page.product == "xtract-universal" or page.product == "board-connector" %} 
+{: .box-note }
+**Note:** Check the [General Settings](./general-settings) before running an extraction. <br>
+{% endif %}
+
 #### Related Links
 - [Types of ABAP Reports](https://wiki.scn.sap.com/wiki/display/ABAP/Types+of+Reports)
 - [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)
