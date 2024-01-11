@@ -34,7 +34,7 @@ The miscellaneous tab consists of two subsections:
 **Cache results** 
 
 BOARD often pulls the data from SAP for several times. To decrease the SAP server load, you can select the **Cache results** option, this way BOARD pulls the data from cache and not from the SAP.
-This increases the performance and limits the impact on the SAP system. If this behavior is not wanted (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
+This increases the performance and limits the impact on the SAP system.
 
 
 #### Keywords
