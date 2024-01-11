@@ -1,7 +1,7 @@
 ---
 ref: xu-bw-hierarchies-06
 layout: page
-Allgemeine Einstellungen -  General Settings
+title: Allgemeine Einstellungen -  General Settings
 description: General Settings
 product: board-connector
 parent: bw-hierarchien
