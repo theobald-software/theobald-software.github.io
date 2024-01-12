@@ -57,8 +57,10 @@ Das folgende Beispiel zeigt, wie Sie eine einfache Report-Extraktion einrichten:
 {% endif %}
 
 {% if page.product == "xtract-universal" or page.product == "board-connector" %} 
+
 {: .box-note }
 **Hinweis:** Prüfen Sie die [Allgemeinen Einstellungen - General Settings](./allgemeine-einstellungen) vor dem Ausführen der Extraktion. <br>
+
 {% endif %}
 
 #### Weiterführende Links
