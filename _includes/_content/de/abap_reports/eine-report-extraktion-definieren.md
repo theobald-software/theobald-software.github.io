@@ -55,6 +55,7 @@ Das folgende Beispiel zeigt, wie Sie eine einfache Report-Extraktion einrichten:
 
 ![Report-Animation](/img/content/report.gif){:class="img-responsive" style="border:1px solid black;"}
 {% endif %}
+{% endif %}
 
 {% if page.product == "xtract-universal" or page.product == "board-connector" %} 
 
