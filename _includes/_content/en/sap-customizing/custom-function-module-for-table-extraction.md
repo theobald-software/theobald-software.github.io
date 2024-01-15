@@ -26,44 +26,11 @@ There are two custom function modules available for Table extractions:
 - /THEO/READ_TABLE
 - Z_THEO_READ_TABLE
 
-We recommend installing the latest custom function module THEO/READ_TABLE:
+It is recommended to install the latest custom function module THEO/READ_TABLE:
 - `THEO_READ_TABLE_740SP05.zip` - compatible with ABAP version 7.40 SP05 and higher
 - `THEO_READ_TABLE_710.zip` - compatible with ABAP version 7.10 and higher
 - `THEO_READ_TABLE_640.zip` - compatible with ABAP versions from 6.40 until 7.03
 - `THEO_READ_TABLE_46C.zip` - compatible with ABAP versions from 4.6C until 6.40
-
-
-<!---
-| Transport Request | SAP versions | Features |
-| :------ |:--- | :--- |
-| *THEO_READ_TABLE_740SP05.zip* | >= 7.40 SP5 | - WHERE Clause <br>- HAVING Clause <br>- INNER JOIN <br>- LEFT OUTER JOIN <br>- Conversion exits <br>- Aggregate functions <br>- SQL expressions (subqueries) <br>- Background jobs |
-| *THEO_READ_TABLE_640.zip* | 6.40 to 7.40 SP04 | - WHERE Clause <br>- HAVING Clause <br>- INNER JOIN <br>- LEFT OUTER JOIN <br>- Conversion exits <br>- Aggregate functions <br>- Background jobs  |
-| *THEO_READ_TABLE_46C.zip* | 4.6C to 6.40 | - WHERE Clause <br>- INNER JOIN <br>- LEFT OUTER JOIN <br>- Conversion exits <br>- Aggregate functions  |
-| *Z_THEO_READ_TABLE.zip* | >= 7.40 SP5 | - WHERE Clause <br>- INNER JOIN <br>- LEFT OUTER JOIN <br>- Conversion exits <br>- Aggregate functions  |
-| *Z_THEO_READ_TABLE-before_740SP05.zip* | < 7.40 SP5 | - WHERE Clause <br>- INNER JOIN <br>- LEFT OUTER JOIN <br>- Conversion exits <br>- Aggregate functions  |
-
-
-| Transport Request | SAP versions | WHERE Clause | HAVING Clause | INNER JOIN | LEFT OUTER JOIN | Conversion exits | Aggregate functions | SQL expressions (subqueries) | Background jobs |
-| :------ |:--- | :--- |
-| *THEO_READ_TABLE_740SP05.zip* | >= 7.40 SP5 | - | -  | -  | -  | -  | -  | -  | -  |
-| *THEO_READ_TABLE_640.zip* | 6.40 to 7.40 SP04 |  - | -  | -  | -  | -  | -  | -  | -  |
-| *THEO_READ_TABLE_46C.zip* | 4.6C to 6.40 |  - | -  | -  | -  | -  | -  | -  | -  |
-| *Z_THEO_READ_TABLE.zip* | >= 7.40 SP5 |  - | -  | -  | -  | -  | -  | -  | -  |
-| *Z_THEO_READ_TABLE-before_740SP05.zip* | < 7.40 SP5 |  - | -  | -  | -  | -  | -  | -  | -  |
-
-
-|  | *THEO_READ_TABLE_740SP05.zip* | *THEO_READ_TABLE_640.zip* | *THEO_READ_TABLE_46C.zip*  | *Z_THEO_READ_TABLE.zip* | *Z_THEO_READ_TABLE-before_740SP05.zip* |
-| :------ |:--- | :--- |
-|  SAP versions | >= 7.40 SP5 | 6.40 to 7.40 SP04 | 4.6C to 6.40 | >= 7.40 SP5 | 6.40 to 7.40 SP04 |
-|  WHERE Clause | X | X | X | X | X |
-|  HAVING Clause | X | X | - | X | X |
-|  INNER JOIN | X | X | X | X | X |
-|  LEFT OUTER JOIN | X | X | X | X | - |
-|  Conversion exits | X | X | X | - | - |
-|  Aggregate functions | X | X | X | X | X |
-|  SQL expressions (subqueries) | X | - | - | X | - |
-|  Background jobs| X | X | - | X | - | 
--->
 
 When importing the transport requests on older SAP releases a syntax error may occur. Contact [Theobald Support](https://support.theobald-software.com) and send the dedicated error message text.
 
@@ -73,3 +40,18 @@ When importing the transport requests on older SAP releases a syntax error may o
 **Warning! Generating Short Dumps** <br>
 The function modules /THEO/READ_TABLE and Z_THEO_READ_TABLE can only be called by Theobald products due to the callback function of the module.
 Testing the function modules on an SAP system is therefore not possible.
+
+
+### Supported Features
+
+| Supported Features | THEO_READ_TABLE_740SP05 | THEO_READ_TABLE_710 | THEO_READ_TABLE_640 | THEO_READ_TABLE_46C |
+| :------ |:---: | :---: | :---: | :---: |
+| WHERE Clause | x | x | x | x | 
+| HAVING Clause | x | x | x | - |
+| INNER JOIN | x | x | x | x |
+| LEFT OUTER JOIN | x | x | x | x |
+| Conversion exits | x | x | x | x |
+| Aggregate functions | x | x | x | x |
+| SQL expressions (subqueries) | x | - | - | - |
+| Background jobs | x | x | x | - |
+

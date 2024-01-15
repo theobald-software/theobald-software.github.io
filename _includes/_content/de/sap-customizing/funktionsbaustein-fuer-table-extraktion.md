@@ -39,3 +39,17 @@ Beim Einspielen der Z_THEO_READ_TABLE-transport-before-740SP05 auf älteren SAP-
 {: .box-warning }
 **Warnung! Erzeugung von Short Dumps** <br>
 Die Funktionsbausteine /THEO/READ_TABLE und Z_THEO_READ_TABLE können wegen ihrer Callback-Funktionalität nur von Theobald-Produkten gestartet werden. Das Testen der Bausteine in einem SAP-System ist daher nicht möglich.
+
+### Unterstützte Funktionen
+
+| Unterstützte Funktionen | THEO_READ_TABLE_740SP05 | THEO_READ_TABLE_710 | THEO_READ_TABLE_640 | THEO_READ_TABLE_46C |
+| :------ |:---: | :---: | :---: | :---: |
+| WHERE Bedingung | x | x | x | x | 
+| HAVING Bedingung | x | x | x | - |
+| INNER JOIN | x | x | x | x |
+| LEFT OUTER JOIN | x | x | x | x |
+| Konvertierungs-Exits | x | x | x | x |
+| Aggregatfunktionen | x | x | x | x |
+| SQL Ausdrücke (Subqueries) | x | - | - | - |
+| Hintergrundjobs | x | x | x | - |
+
