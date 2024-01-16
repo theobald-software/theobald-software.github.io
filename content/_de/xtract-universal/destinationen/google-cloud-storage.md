@@ -171,11 +171,13 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
-### Folder name - Verzeichnisname
+### Folder Name - Verzeichnisname
 
 Um Extraktionsdaten an einen Speicherort innerhalb eines bestimmten Ordners in einem Google Cloud Storage-Bucket zu schreiben, geben Sie einen Ordnernamen ohne Slashes ein.
 Unterordner werden unterstützt und können mit der folgenden Syntax definiert werden: 
 `[Verzeichnis]/[Unterverzeichnis_1]/[Unterverzeichnis_2]/…`
+
+{% include _content/de/xu-specific/destinationen/general/folder-script-expressions.md %}
 
 {% include _content/de/xu-specific/destinationen/general/compression.md %}
 

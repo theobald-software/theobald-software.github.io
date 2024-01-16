@@ -21,8 +21,9 @@ The content of the log table is cleared after every successful run of the extrac
 **Note:** Clusters, pool tables and views are not supported by the Table CDC component. 
 
 ### Requirements
+ 
+Table CDC is compatible with SAP version < 7.40.
 
-<!--- - SAP version 7.40 SP05 or higher. (weglassen, da noch nicht bekannt)-->
 Required function modules:
 
 | Function Group | Function Modules |

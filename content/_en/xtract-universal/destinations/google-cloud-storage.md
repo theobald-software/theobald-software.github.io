@@ -183,6 +183,8 @@ To write extraction data to a location within a specific folder in a Google Clou
 Subfolders are supported and can be defined using the following syntax: 
 `[folder]/[subfolder_1]/[subfolder_2]/…`
 
+{% include _content/en/xu-specific/destinations/general/folder-script-expressions.md %}
+
 {% include _content/en/xu-specific/destinations/general/compression.md %}
 
 {% include _content/en/xu-specific/destinations/general/file-splitting.md %}

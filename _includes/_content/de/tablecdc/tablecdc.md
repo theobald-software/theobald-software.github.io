@@ -23,6 +23,8 @@ Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. D
 
 ### Voraussetzungen
 
+Table CDC ist mit SAP Versionen < 7.40 kompatibel.
+
 Erforderliche Funktionsbausteine:
 
 | Funktionsgruppe | Funktionsbausteine |

@@ -18,6 +18,7 @@ The following section describes the functions of the **Table CDC** component of 
 {% include _content/en/tablecdc/tablecdc.md %}
 
 ### How to use the Table CDC component
+
 {% include _content/en/xu-specific/define-extraction.md %}
 
 More information on working with the Table CDC component is provided in the following sections.
