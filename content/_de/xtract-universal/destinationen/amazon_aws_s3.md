@@ -172,7 +172,7 @@ Damit wird die Kompatibilität zu Azure Data Factory, Hadoop und Spark sicherges
 
 {% include _content/de/xu-specific/destinationen/general/date-conversion.md %}
 
-### Folder
+### Folder Name
 
 Geben Sie hier einen Ordnernamen ohne Schrägstriche ein, wenn die Extraktion in einen Ordner innerhalb eines S3 Buckets extrahiert werden soll.<br>
 Unterordner werden ebenfalls unterstützt und können wie folgt eingegeben werden:`Ordner/Unterordner1/Unterordner2/`<br>

@@ -178,7 +178,7 @@ This is to ensure that all uploaded objects are compatible with Azure Data Facto
 
 {% include _content/en/xu-specific/destinations/general/date-conversion.md %}
 
-### Folder
+### Folder Name
 
 Enter a folder name without slashes here if you want the extraction to be extracted to a folder within an S3 bucket.<br>
 Subfolders are also supported and can be entered as follows: `Folder/Subfolder1/Subfolder2/` <br>
