@@ -34,6 +34,8 @@ Recommendation: avoid.
 | :------ |:--- |
 | Select the columns to include in the output of the service. |Select the columns that **should be** included in the output of the service.|
 | Password must consist 8 characters or more. | The password has to be at least 8 characters long.|
+|Navigate through the transaction like you would in SAP GUI. |Navigate through the transaction as if it was SAP GUI.|
+
 
 "Must" is acceptable, when something will not function otherwise.
 
