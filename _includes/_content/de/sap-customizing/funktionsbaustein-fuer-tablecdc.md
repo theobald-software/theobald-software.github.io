@@ -11,14 +11,18 @@ Der Transportauftrag für die Installation befindet sich im folgenden Installati
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4.zip`.
 
 Der Transportauftrag muss von Ihrem SAP-Basis-Team in SAP importiert werden.
-Die Funktionsgruppen enthalten jeweils folgende Funktionsbausteine:
+Die Funktionsgruppen /THEO/CDC_ECC and /THEO/CDC_S4 enthalten jeweils folgende Funktionsbausteine:
 
-- /THEO/CLEAR_LOGTAB
-- /THEO/COUNT_LOGTAB_ENTRIES
-- /THEO/CREATE_LOG_TABLE
-- /THEO/CREATE_TRIGGERS
-- /THEO/DELETE_LOG_TABLE
-- /THEO/DELETE_TRIGGERS
+| Funktionsbaustein | Beschreibung |
+| :------ |:--- |
+| /THEO/CLEAR_LOGTAB | Löscht Einträge in der Log-Tabelle bis zu einer gegebenen Sequenznummer | 
+| /THEO/COUNT_LOGTAB_ENTRIES | Zählt die Einträge in der Log-Tabelle |
+| /THEO/CREATE_LOG_TABLE | Funktionsbaustein zum Erstellen der Log-Tabellen |
+| /THEO/CREATE_TRIGGERS | Funktionsbaustein zum Erstellen der DB Trigger für CDC |
+| /THEO/DELETE_LOG_TABLE | Funktionsbaustein zum Löschen der Log-Tabellen |
+| /THEO/DELETE_TRIGGERS | Funktionsbaustein zum Löschen der DB Trigger für CDC |
+| /THEO/GET_DB | Liest die System-ID der Datenbank |
+
 
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.
@@ -33,4 +37,5 @@ Installieren Sie den Funktionsbaustein /THEO/READ_TABLE oder Z_THEO_READ_TABLE V
 ****
 #### Weiterführende Links
 - [Knowledge Base: How to import an SAP Transport Request](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
+- [Knowledge Base: Delta Mechanism of TableCDC](https://kb.theobald-software.com/tables/table-cdc-mechanism)
 - [Table CDC - Voraussetzungen](../table-cdc#voraussetzungen)

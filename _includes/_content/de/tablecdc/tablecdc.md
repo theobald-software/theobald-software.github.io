@@ -17,22 +17,18 @@ Change Data Capture (CDC) ist eine Methode, um Datenänderungen nachzuverfolgen,
 Die Table CDC component ertsellt in SAP eine Log-Tabelle, die alle Änderungen in einer ausgewählten SAP Tabelle erfasst. 
 Der Inhalt der Log-Tabelle wird nach jeder erfolgreichen Extraktion gelöscht. Daten, die nicht extrahiert wurden, werden nicht aus der Log-Tabelle gelöscht.
 
+Eine detailierte Übersicht dieses Prozesses finden Sie in dem Knowledge Base Artikel [Delta Mechanism of TableCDC](https://kb.theobald-software.com/tables/table-cdc-mechanism).
 
 {: .box-note }
 **Hinweis:** Views, Cluster- und Pool-Tabellen werden von der Table CDC Komponente nicht unterstützt.
 
 ### Voraussetzungen
 
-Table CDC ist mit SAP Versionen < 7.40 kompatibel.
+- SAP Version < 7.40
+- Benutzerdefinierter Funktionsbaustein [/THEO/CDC_ECC oder /THEO/CDC_S4](./sap-customizing/funktionsbaustein-fuer-tablecdc)
+- Benutzerdefinierter Funktionsbaustein [/THEO/READ_TABLE oder Z_THEO_READ_TABLE](./sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.10 oder höher
 
-Erforderliche Funktionsbausteine:
-
-| Funktionsgruppe | Funktionsbausteine |
-| :------ |:--- |
-| /THEO/CDC_ECC oder /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS<br>/THEO/GET_DB| 
-| /THEO/READ_TABLE oder Z_THEO_READ_TABLE | /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version 2.10 oder höher |
-
-Die SAP-Transportaufträge für die Funktionsmodule werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
+Die SAP-Transportaufträge für die Funktionsbausteine werden im Installationsverzeichnis bereitgestellt: `C:\ProgramFiles\[XtractProduct]\ABAP\`, siehe [Custom function module for TableCDC](./sap-customizing/funktionsbaustein-fuer-tablecdc).
 
 
 <!---

@@ -17,19 +17,16 @@ Change Data Capture (CDC) is a method to keep track of data changes such as inse
 The Table CDC component creates a log table in SAP that records any changes made to a selected table. 
 The content of the log table is cleared after every successful run of the extraction. Data that was not extracted is not cleared from the log table.
 
+For a detailed overview of this process, refer to the Knowledge Base article [Delta Mechanism of TableCDC](https://kb.theobald-software.com/tables/table-cdc-mechanism).
+
 {: .box-note }
 **Note:** Clusters, pool tables and views are not supported by the Table CDC component. 
 
 ### Requirements
  
-Table CDC is compatible with SAP version < 7.40.
-
-Required function modules:
-
-| Function Group | Function Modules |
-| :------ |:--- |
-| /THEO/CDC_ECC or /THEO/CDC_S4 | /THEO/CLEAR_LOGTAB<br> /THEO/COUNT_LOGTAB_ENTRIES<br> /THEO/CREATE_LOG_TABLE<br> /THEO/CREATE_TRIGGERS<br> /THEO/DELETE_LOG_TABLE<br>/THEO/DELETE_TRIGGERS<br>/THEO/GET_DB| 
-| /THEO/READ_TABLE or Z_THEO_READ_TABLE | /THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.10 or higher |
+- SAP version < 7.40
+- SAP custom function module [/THEO/CDC_ECC or /THEO/CDC_S4](./sap-customizing/custom-function-module-for-tablecdc)
+- SAP custom function module [/THEO/READ_TABLE or Z_THEO_READ_TABLE](./sap-customizing/custom-function-module-for-table-extraction) version 2.10 or higher
 
 The SAP transport requests for the function modules are provided in the installation directory: `C:\ProgramFiles\[XtractProduct]\ABAP\`, see [Custom function module for TableCDC](./sap-customizing/custom-function-module-for-tablecdc).
 
