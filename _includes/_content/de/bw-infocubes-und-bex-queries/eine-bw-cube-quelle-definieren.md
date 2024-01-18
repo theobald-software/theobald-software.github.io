@@ -29,7 +29,7 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. 
 Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries).
 
-#### MDX und BICS (beta)
+### MDX und BICS (beta)
 
 |                                    | MDX                                                                                         | BICS (beta)                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
