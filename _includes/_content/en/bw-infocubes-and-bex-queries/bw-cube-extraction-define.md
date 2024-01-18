@@ -31,7 +31,8 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 **Warning! Invalid action**<br>
  A BW Query must have the attribute *Allow External Access to this Query* switched on in the BEx Query Designer or the BW Modeling Tool to appear in the list.
  For additional details see the knowledge base article [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries). 
-#### MDX versus BICS (beta)
+
+### MDX versus BICS (beta)
 
 |                                    | MDX                                                                                         | BICS (beta)                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
