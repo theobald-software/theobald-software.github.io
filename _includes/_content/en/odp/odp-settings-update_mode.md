@@ -21,4 +21,6 @@ A subscription is deleted, if the error message "Illegal change in selection par
 **Delta recovery:**<br/>
 Re-runs the last delta update 
 
-
+**Direct read (without ODQ):**<br/>
+Directly reads all available data, bypassing the ODQ (Operational Delta Queue). 
+This is not suited for extracting large amounts of data, because there is no packaging available. It is also the only update mode that supports data aggregation.
