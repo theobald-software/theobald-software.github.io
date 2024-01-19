@@ -122,11 +122,10 @@ Das Befüllen der neuen Spalte wird dynamisch mit einer .NET basierten Funktion 
 **Hinweis:** Die verwendbaren Datentypen im SQL-Statement sind abhängig von der SQL-Server Datenbank Version.
 
 1. Wählen Sie im Fenster "Destination Settings" im Abschnitt **Preparation** die Option *Custom SQL* und klicken Sie auf **Edit SQL**.
-![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 2. Wählen Sie im Dropdown-Menü die Option *Drop & Create* und klicken Sie auf **[Generate Statement]** (5). 
 3. Fügen Sie dem generierten Statement die folgende Zeile hinzu: <br>
 ```sql
-[Extraction_Date] DATETIME
+[Extraction_Date] NATIONAL CHARACTER VARYING(23)
 ```
 4. Bestätigen Sie mit **[OK]**. <br>
 
@@ -135,12 +134,9 @@ Im Abschnitt **Finalization** werden die `NULL` Werte mit folgenden SQL-Statemen
 
 ```sql
 UPDATE [dbo].[KNA1] 
-SET [Extraction_Date] = '#{DateTime.Now}#' 
+SET [Extraction_Date] = '#{Extraction.Timestamp}#' 
 WHERE [Extraction_Date] IS NULL; 
 ```
-
-![Custom-SQL_Final](/img/content/custom_sql_finalization_statement.png){:class="img-responsive"}
-
 #### Ergebnis überprüfen
 
 Überprüfen Sie die Existenz der erweiterten Spalte *Extraction_Date* in der SQL Server-Ansicht der Tabelle *KNA1*.
