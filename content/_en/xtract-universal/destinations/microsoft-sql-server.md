@@ -122,11 +122,10 @@ The new column is filled dynamically using a .NET-based function.
 **Note:** The data types that can be used in the SQL statement depend on the SQL Server database version.
 
 1. In the window "Destination Settings", within the section **Preparation**, select *Custom SQL* and click **[Edit SQL]**.
-![Custom-SQL_Prep](/img/content/custom_sql_preparation_statement.png){:class="img-responsive"}
 2. In the drop-down menu, select the option *Drop & Create* and click **[Generate Statement]** (5). 
 3. Add the following line in the generated statement: <br>
 ```sql
-[Extraction_Date] DATETIME
+[Extraction_Date] NATIONAL CHARACTER VARYING(23)
 ```
 4. Confirm with **[OK]**. <br>
 
@@ -135,7 +134,7 @@ In the section section **Finalization**, the `NULL` values are filled with the f
 
 ```sql
 UPDATE [dbo].[KNA1] 
-SET [Extraction_Date] = '#{DateTime.Now}#' 
+SET [Extraction_Date] = '#{Extraction.Timestamp}#' 
 WHERE [Extraction_Date] IS NULL;
 ```
 
