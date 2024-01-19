@@ -39,6 +39,15 @@ For more information on Azure Relay, refer to the knowledge base article [Establ
 {: .box-tip }
 **Tip:** To set up multiple endpoints, use multiple yunIO servers, one for each endpoint.
 
+The **OpenAPI Target Kind** option defines properties that can be added to the Swagger/OpenAPI json file of yunIO services.
+
+- *Default*: <br>
+If this option is active, the Swagger/OpenAPI json file contains no additional properties.
+- *Nintex Gateway*: <br>
+Select this option when integrating yunIO services with the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm). 
+Nintex properties are added to into Swagger/OpenAPI json file so that no manual changes to the swagger definition are necessary.
+For more information, refer to the knowledge base article [Integrating a yunIO Service via Nintex Gateway](https://kb.theobald-software.com/yunio/integrating-yunio-via-nintex-gateway).
+
 ### Transport Layer Security
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
