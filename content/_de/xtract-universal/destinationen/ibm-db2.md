@@ -16,7 +16,7 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine IBM 
 
 ## Voraussetzungen
 
-Um Daten in dieses Ziel zu laden, müssen Sie den zugehörigen ADO .NET Provider für Windows installieren. 
+Um Daten in diese Zielumgebung zu laden, müssen Sie den zugehörigen ADO .NET Provider für Windows installieren. 
 Die 32bit Version für 32bit basierte Betriebssysteme, die 64bit Version für 64bit basierte Betriebssysteme. 
 Selektieren Sie das *IBM Data Server Driver Package* und danach *IBM Data Server Driver Package (Windows AMD64 and Intel EM64T) oder IBM Data Server Driver Package (Windows 32-bit AMD and Intel x86), siehe [IBM Data Server Client Packages - Version 11.5 GA](http://www-01.ibm.com/support/docview.wss?uid=swg27016878).
 

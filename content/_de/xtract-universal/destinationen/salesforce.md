@@ -16,7 +16,7 @@ Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in ein Sales
 ## Voraussetzungen
 
 **Salesforce Edition**<br>
-Um das Salesforce-Ziel zu verwenden, benötigen Sie ein Salesforce Account mit der Enterprise, Unlimited oder Performance Edition. <br>
+Um die Salesforce-Zielumgebung zu verwenden, benötigen Sie ein Salesforce Account mit der Enterprise, Unlimited oder Performance Edition. <br>
 Wichtig ist, dass die Salesforce Edition die Option Integration über *Webservice-API enthält*.
 
 **Berechtigung** <br>

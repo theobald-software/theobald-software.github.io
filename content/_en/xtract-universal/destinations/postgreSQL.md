@@ -18,17 +18,11 @@ The following section describes the loading of the SAP extraction data into Post
 
 ### Data Provider
 
-To load data into this destination, you need the Open Source ADO.NET Data Provider [Npgsql.dll](https://www.postgresql.org/docs/11/external-interfaces.html).
-This is already available in the setup of the Xtract Universal and is provided when the **XtractUniversalSetup.exe** is executed. 
+Data is pushed into the PostgreSQL DB system through the [Npgsql data provider version 8.1](https://www.npgsql.org/index.html). This data provider is integrated into the setup of Xtract Universal and is automatically provided during the execution of *XtractUniversalSetup.exe*.
 
 ### Supported Versions
 
-The following PostgreSQL versions are supported:
-- 15
-- 14
-- 13
-- 12
-- 11
+Xtract Universal supports all [PostgreSQL](https://www.npgsql.org/doc/compatibility.html#postgresql) versions compatible with Npgsql.
 
 For further information on versioning, refer to the official [website](https://www.postgresql.org/support/versioning/).
 

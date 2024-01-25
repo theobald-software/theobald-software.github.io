@@ -41,9 +41,9 @@ Liste der Eingabefelder / *Custom Properties*, die die Verwendung von SSIS-Varia
 |Feldname|Beschreibung|
 |:----|:----|
 | *Package Size* | Entspricht dem Feld *Package Size* in der BW Loader Komponente, siehe [Settings](./bw-loader-settings#general).|
-| *Gateway host* | Entspricht dem Feld *Gateway host* in der BW Loader Komponente, siehe [Datenquelle und Ziel verbinden](./datenquelle-und-ziel-verbinden). |
-| *Gateway service* | Entspricht dem Feld *Gateway service* in der BW Loader Komponente, siehe [Datenquelle und Ziel verbinden](./datenquelle-und-ziel-verbinden).|
-| *Program ID* | Entspricht dem Feld *Program ID* in der BW Loader Komponente, siehe [Datenquelle und Ziel verbinden](./datenquelle-und-ziel-verbinden).|
+| *Gateway host* | Entspricht dem Feld *Gateway host* in der BW Loader Komponente, siehe [Datenquelle und Zielumgebung verbinden](./datenquelle-und-ziel-verbinden). |
+| *Gateway service* | Entspricht dem Feld *Gateway service* in der BW Loader Komponente, siehe [Datenquelle und Zielumgebung verbinden](./datenquelle-und-ziel-verbinden).|
+| *Program ID* | Entspricht dem Feld *Program ID* in der BW Loader Komponente, siehe [Datenquelle und Zielumgebung verbinden](./datenquelle-und-ziel-verbinden).|
 
 
 
