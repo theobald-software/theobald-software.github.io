@@ -24,7 +24,7 @@ For a detailed overview of this process, refer to the Knowledge Base article [De
 
 ### Requirements
  
-- SAP ECC 5.0 or higher
+- Compatible with SAP ECC 5.0 and higher
 - SAP custom function module [/THEO/CDC_ECC or /THEO/CDC_S4](./sap-customizing/custom-function-module-for-tablecdc)
 - SAP custom function module [/THEO/READ_TABLE or Z_THEO_READ_TABLE](./sap-customizing/custom-function-module-for-table-extraction) version 2.10 or higher
 
