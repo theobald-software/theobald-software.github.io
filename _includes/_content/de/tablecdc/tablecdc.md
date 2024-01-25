@@ -24,7 +24,7 @@ Eine detailierte Übersicht dieses Prozesses finden Sie in dem Knowledge Base Ar
 
 ### Voraussetzungen
 
-- SAP Version < 7.40
+- Kompatibel mit SAP ECC 5.0 und höher
 - Benutzerdefinierter Funktionsbaustein [/THEO/CDC_ECC oder /THEO/CDC_S4](./sap-customizing/funktionsbaustein-fuer-tablecdc)
 - Benutzerdefinierter Funktionsbaustein [/THEO/READ_TABLE oder Z_THEO_READ_TABLE](./sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.10 oder höher
 
