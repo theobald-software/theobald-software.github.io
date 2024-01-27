@@ -15,12 +15,12 @@ progressstate: 5
 
 Die folgenden Abschnitte beschreiben, wie Xtract Universal mit QlikSense oder QlikView verbunden wird.
 
-Zum Zweck der Verbindung verfügt Xtract Universal über eine Destination vom Typ *Qlik*. Die Destination Qlik generiert ein Datenladeskript, das in den Data Load-Editor Ihrer Qlik-Anwendung eingefügt werden muss. Je nachdem, ob Sie eine QlikSense- oder QlikView-Anwendung ausführen, erstellt Xtract Univeral ein passendes Datenladeskript.
+Zum Zweck der Verbindung verfügt Xtract Universal über eine Destination vom Typ *QlikSense & QlikView*. Die Destination Qlik generiert ein Datenladeskript, das in den Data Load-Editor Ihrer Qlik-Anwendung eingefügt werden muss. Je nachdem, ob Sie eine QlikSense- oder QlikView-Anwendung ausführen, erstellt Xtract Univeral ein passendes Datenladeskript.
 
-Die Ausführung der Qlik-Anwendung triggert die entsprechende Extraktion von Xtract Univeral über das Datenladeskript. Xtract Universal sendet die extrahierten SAP-Daten über einen http-csv-Stream direkt an Ihre Qlik-Anwendung.
+Die Ausführung der Qlik-Anwendung triggert die entsprechende Extraktion von Xtract Univeral über das Datenladeskript. Xtract Universal sendet die extrahierten SAP-Daten über einen HTTP-CSV-Stream direkt an Ihre Qlik-Anwendung.
 
 ## Voraussetzungen
-Für die Nutzung der Qlik Destination müssen keine besonderen Voraussetzungen erfüllt sein.
+Für die Nutzung der QlikSense & QlikView Destination müssen keine besonderen Voraussetzungen erfüllt sein.
 
 
 ## Verbindung
@@ -28,7 +28,7 @@ Für die Nutzung der Qlik Destination müssen keine besonderen Voraussetzungen e
 {% include _content/de/xu-specific/destinationen/general/connection.md %}	
 
 ### Destination Details
-Um Qlik zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.
+Um QlikSense & QlikView zu verwenden, müssen keine weiteren Einstellungen vorgenommen werden.
 
 ![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive}
 
@@ -53,7 +53,7 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ## Datenladeskript generieren
 
 ### Anzeigen eines Qlik-Skripts
-1. Führen Sie eine Extraktion mit der Destination "Qlik" aus. Das Fenster "Run Extraction" wird geöffnet.
+1. Führen Sie eine Extraktion mit der Destination "QlikSense & QlikView" aus. Das Fenster "Run Extraction" wird geöffnet.
 ![XU_qlik_generate_Script](/img/content/XU_qlik_generate_Script.png){:class="img-responsive"}
 2. *Optional (bei Verwendung von QlikSense)*: Markieren Sie im Abschnitt *Parameter* die Checkboxen für die Parameter, die Sie als SET-Variablen im QlikSense-Skript hinzufügen möchten.
 3. Klicken Sie auf **[Generate Qlik Script]**, um ein Datenladeskript zu generieren. Das Fenster "Script" wird geöffnet.

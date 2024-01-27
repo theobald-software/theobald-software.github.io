@@ -1,7 +1,7 @@
 ---
 ref: destinations-11
 layout: page
-title: Webservice - CSV
+title: HTTP - CSV
 description: CSV (via HTTP)
 product: xtract-universal
 parent: destinationen

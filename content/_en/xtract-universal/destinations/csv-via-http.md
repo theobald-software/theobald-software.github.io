@@ -1,7 +1,7 @@
 ---
 ref: destinations-11
 layout: page
-title: Web Service - CSV
+title: HTTP - CSV
 description: CSV (via HTTP)
 product: xtract-universal
 parent: destinations
@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 This destination is a generic CSV stream over HTTP. 
-The CSV (via HTTP) destination is supported by many products. The following products have been tested: Layer2, INFONEA and KNIME. 
+The CSV-HTTP destination is supported by many products. The following products have been tested: Layer2, INFONEA and KNIME. 
 
 ## Connection
 ### Adding a Destination
