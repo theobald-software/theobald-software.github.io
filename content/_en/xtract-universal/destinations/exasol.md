@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=exasol
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to an EXASOL Database destination.
+The following section describes the loading of the SAP extraction data to an EXASolution Database destination.
 
 ## Requirements
 
