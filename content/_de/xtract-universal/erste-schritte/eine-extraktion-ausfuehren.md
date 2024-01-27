@@ -107,7 +107,7 @@ Die Anzeige ist nur bei folgenden Destinationen verfügbar:
 - HTTP-JSON 
 - Alteryx
 - Microsoft SQL Server
-- SQL Server Reporting Services 
+- Power BI Report Server (SQL Server Reporting Services) 
 - QlikSense&QlikView
 
 ![Run-Extraction-Output](/img/content/xu/xu_run_extraction_output.png){:class="img-responsive"}

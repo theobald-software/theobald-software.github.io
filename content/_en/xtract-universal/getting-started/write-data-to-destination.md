@@ -67,7 +67,7 @@ For more information about the destination details, select your destination: <se
 	<option value="sap-hana">SAP HANA</option>
 	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">SQL Server Reporting Services</option>
+	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
 	<option value="tableau">Tableau</option>
   </select>
 6. Click **[Test Connection]** to check the connection to the destination.
@@ -126,7 +126,7 @@ For more information about the destination settings, select your destination: <s
 	<option value="sap-hana">SAP HANA</option>
 	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">SQL Server Reporting Services</option>
+	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
 	<option value="tableau">Tableau</option>
   </select><br>
 5. Click **[OK]** to confirm your input.       

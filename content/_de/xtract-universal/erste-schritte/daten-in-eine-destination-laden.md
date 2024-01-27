@@ -63,7 +63,7 @@ Für mehr Informationen über die Details von Destinationen, geben Sie Ihre Dest
 	<option value="hana">SAP HANA</option>
 	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">SQL Server Reporting Services</option>
+	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
 	<option value="tableau">Tableau</option>
   </select><br>
 6. Klicken Sie auf **[Test connection]**, um die Verbindung zur Destination zu überprüfen. 
@@ -117,7 +117,7 @@ Für mehr Informationen über Destinationseinstellungen, geben Sie Ihre Destinat
 	<option value="hana">SAP HANA</option>
 	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">SQL Server Reporting Services</option>
+	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
 	<option value="tableau">Tableau</option>
   </select><br>
 5. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.

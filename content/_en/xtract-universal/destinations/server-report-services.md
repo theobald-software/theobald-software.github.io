@@ -1,23 +1,23 @@
 ---
 ref: destinations-108
 layout: page
-title: SQL Server Reporting Services
-description: SQL Server Reporting Services (SSRS)
+title: Power BI Report Server (SQL Server Reporting Services)
+description: Power BI Report Server (SQL Server Reporting Services)
 product: xtract-universal
 parent: destinations
 childidentifier: ssrs
 permalink: /:collection/:path
-weight: 108
+weight: 85
 lang: en_GB
 progressstate: 5
 ---
 
-The following section describes the usage of Xtract Universal for SAP integration in SSRS.
+The following section describes the usage of Xtract Universal for SAP integration in Power BI Report Server (SSRS).
 
 ## Requirements
 
 
-To use the SSRS destination, you need the following components:
+To use the Power BI Report Server destination, you need the following components:
 
 - Visual Studio 2017 or higher
 - the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) plugin (version 2.6.11 or higher) for Visual Studio.
@@ -30,10 +30,10 @@ To use the SSRS destination, you need the following components:
 
 ## Installation
 
-To use the SSRS destination, install the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)
+To use the Power BI Report Server destination, install the [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)
 plugin in Visual Studio. After the installation is complete, close Visual Studio.
 
-Microsoft SQL Server Reporting Services supports a wide variety of data sources out of the box.
+Microsoft Power BI Report Server (SQL Server Reporting Services) supports a wide variety of data sources out of the box.
 To add Xtract Universal to the list of data sources, install the [Xtract Universal Data Extension](#installation-using-the-xtract-universal-data-extension) for Visual Studio **and** the Report Server.
 The data extension must be installed on both environments to consume the data extracted by Xtract Universal, see graphic below:
 
@@ -78,7 +78,7 @@ Should you encounter issues with the installation of the Xtract Universal Data E
 {% include _content/en/xu-specific/destinations/general/connection.md %}	 
 
 ### Destination Details
-To use the SSRS destination, no further settings have to be made.
+To use the Power BI Report Server destination, no further settings have to be made.
 
 ![ssrs-create-destination](/img/content/ssrs-create-destination.png){:class="img-responsive"}
 
@@ -101,14 +101,14 @@ The following settings can be defined for the destination:
 
 ## SSRS in Visual Studio
 
-The following section contains step-by-step instructions on how to access SAP data in the SQL Server Reporting Services (SSRS) environment via Xtract Universal.
+The following section contains step-by-step instructions on how to access SAP data in the SSRS environment via Xtract Universal.
 
 ### Extracting SAP Data in Xtract Universal Designer
 
-To make SAP data available in the SQL Server Report Server (SSRS) environment, the first step is to create an extraction in the Xtract Universal Designer.
+To make SAP data available in the SSRS environment, the first step is to create an extraction in the Xtract Universal Designer.
 
 For information on how to set up an extraction, see [Getting Started](../getting-started).<br>
-Make sure the extraction uses the [*SQL Server Reporting Services* destination](#connection).
+Make sure the extraction uses the [*Power BI Report Server (SQL Server Reporting Services)* destination](#connection).
 
 
 ### Adding an Extraction as a Data Source in Visual Studio
@@ -137,7 +137,7 @@ If *Xtract Universal* is not available in the drop-down list (2) even though the
 
 The following steps guide you through the creation of a Report in Visual Studio using an Xtract Universal data source: 
 
-1. [Add an SSRS extraction as a data source in Visual Studio](#add-an-extraction-as-a-data-source-in-visual-studio).
+1. [Add a Power BI Report Server extraction as a data source in Visual Studio](#add-an-extraction-as-a-data-source-in-visual-studio).
 2. Right-click the *Reports* folder in the *Solution Explorer* and select **Add New Report**. The "Report Wizard" opens.
 3. In the wizard, select a data source and click **[Next]**.
 4. Click **[Query Builder...]**. The window "Query Designer" opens.
