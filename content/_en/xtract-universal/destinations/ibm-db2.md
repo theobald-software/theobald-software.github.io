@@ -1,8 +1,8 @@
 ---
 ref: destinations-50
 layout: page
-title: IBM DB2
-description: IBM DB2
+title: IBM Db2
+description: IBM Db2
 product: xtract-universal
 parent: destinations
 childidentifier: ibm-db2
@@ -13,7 +13,7 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=db2
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to an IBM DB2 destination.
+The following section describes the loading of the SAP extraction data to an IBM Db2 destination.
 
 
 ## Requirements
@@ -39,7 +39,7 @@ Enter the .Net provider for DB2. To install the provider refer to requirements.
 Enter the name or IP of the DB2 server and the port number. 
 
 **Username / Password**<br>
-IBM DB2 authentication user name and password.
+IBM Db2 authentication user name and password.
 
 **Database name**<br>
 Enter the name of the IBM database.

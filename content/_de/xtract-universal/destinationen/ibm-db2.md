@@ -1,8 +1,8 @@
 ---
 ref: destinations-50
 layout: page
-title: IBM DB2
-description: IBM DB2
+title: IBM Db2
+description: IBM Db2
 product: xtract-universal
 parent: destinationen
 childidentifier: ibm-db2
@@ -12,7 +12,7 @@ lang: de_DE
 progressstate: 5
 ---
 
-Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine IBM DB2-Zieldatenbank.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine IBM Db2-Zieldatenbank.
 
 ## Voraussetzungen
 
@@ -36,7 +36,7 @@ Netz-Anbieter für DB2 eingeben. Zur Installation des Providers siehe bei Anford
 Name bzw. IP des Datenbankservers und die Portnummer eingeben.
 
 **User Id / Password** <br>
-IBM DB2 Authentifizierung: Name und Passwort des Datenbankbenutzers.
+IBM Db2 Authentifizierung: Name und Passwort des Datenbankbenutzers.
 
 **Database Name** <br>
 Name der IBM Datenbank eingeben.

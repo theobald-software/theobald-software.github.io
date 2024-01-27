@@ -17,7 +17,7 @@ For delta processing it is advisable to use a database on the destination side.
 - [Azure Synapse Analytics ](../destinations/azure-synapse-analytics#merging-data)
 - [Azure SQL Database](../destinations/microsoft-sql-server#merging-data) 
 - [EXASolution](../destinations/exasol#merging-data) 
-- [IBM DB2](../destinations/ibm-db2#merging-data) 
+- [IBM Db2](../destinations/ibm-db2#merging-data) 
 - [MySQL](../destinations/mysql#merging-data) 
 - [Oracle](../destinations/oracle#merging-data) 
 - [PostgreSQL](../destinations/postgreSQL#merging-data)

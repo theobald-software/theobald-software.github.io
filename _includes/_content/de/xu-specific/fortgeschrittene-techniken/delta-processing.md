@@ -16,7 +16,7 @@ Für Deltaverarbeitung ist es ratsam auf der Destinationsseite eine Datenbank zu
 - [Azure Synapse Analytics (SQl pool)](../destinationen/azure-synapse-analytics#daten-mergen) 
 - [Azure SQL Database](../destinationen/microsoft-sql-server#daten-mergen) 
 - [EXASolution](../destinationen/exasol#daten-mergen) 
-- [IBM DB2](../destinationen/ibm-db2#daten-mergen) 
+- [IBM Db2](../destinationen/ibm-db2#daten-mergen) 
 - [MySQL](../destinationen/mysql#daten-mergen) 
 - [Oracle](../destinationen/oracle#daten-mergen) 
 - [PostgreSQL](../destinationen/postgreSQL#daten-mergen)

@@ -22,7 +22,7 @@ Die folgenden Zielumgebungen sind verfügbar:
 - [Azure Synapse Analytics (SQl pool)](./destinationen/azure-synapse-analytics) 
 - [Azure SQL Database](./destinationen/microsoft-sql-server) 
 - [EXASolution](./destinationen/exasol) 
-- [IBM DB2](./destinationen/ibm-db2) 
+- [IBM Db2](./destinationen/ibm-db2) 
 - [MySQL](./destinationen/mysql) 
 - [Oracle](./destinationen/oracle) 
 - [PostgreSQL](./destinationen/postgreSQL)

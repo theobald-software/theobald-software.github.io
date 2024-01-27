@@ -55,7 +55,7 @@ For more information about the destination details, select your destination: <se
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
 	<option value="huawei">Huawei Cloud OBS</option>
-	<option value="ibm-db2">IBM DB2</option>
+	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
@@ -114,7 +114,7 @@ For more information about the destination settings, select your destination: <s
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
 	<option value="huawei">Huawei Cloud OBS</option>
-	<option value="ibm-db2">IBM DB2</option>
+	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>

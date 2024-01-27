@@ -23,7 +23,7 @@ The following destinations are available:
 - [Azure Synapse Analytics (SQL pool)](./destinations/azure-synapse-analytics)
 - [Azure SQL Database](./destinations/microsoft-sql-server) 
 - [EXASolution](./destinations/exasol) 
-- [IBM DB2](./destinations/ibm-db2) 
+- [IBM Db2](./destinations/ibm-db2) 
 - [MySQL](./destinations/mysql) 
 - [Oracle](./destinations/oracle) 
 - [PostgreSQL](./destinations/postgreSQL)
