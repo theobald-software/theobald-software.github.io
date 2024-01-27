@@ -13,7 +13,6 @@ progressstate: 5
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
-
 Xtract Universal allows you to extract data from SAP systems and load them to different destination environments.
 The following destinations are available:  
 

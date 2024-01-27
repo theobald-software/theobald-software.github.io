@@ -101,8 +101,8 @@ In the *xu.exe* tab the log of the command-line tool is displayed.
 
 In the *Output* tab the results of the extraction are displayed.
 This option is only available for the following destinations:
-- Web Service CSV 
-- Web Service JSON 
+- HTTP-CSV 
+- HTTP-JSON 
 - Alteryx
 - Microsoft SQL Server
 - SQL Server Reporting Services 

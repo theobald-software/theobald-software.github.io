@@ -103,8 +103,8 @@ Im *xu.exe* Tab werden die Befehle der xu.exe Kommandozeile angezeigt.
 
 Im *Output* Tab werden die Ergebnisse der Extraktion angezeigt.
 Die Anzeige ist nur bei folgenden Destinationen verfügbar:
-- Web Service CSV 
-- Web Service JSON 
+- HTTP-CSV 
+- HTTP-JSON 
 - Alteryx
 - Microsoft SQL Server
 - SQL Server Reporting Services 
