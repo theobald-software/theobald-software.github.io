@@ -18,7 +18,7 @@ Für mehr Informationen über Amazon Redshift, siehe [Erste Schritte mit Amazon 
 ## Voraussetzungen
 - Sie benötigen eine laufende Instanz und gültige Anmeldedaten.
 - Ihr Client-Rechner muss für den Zugriff auf den Cluster autorisiert sein.
-- Für den Aufbau einer Verbindung zu Redshift wird ein geeigneter Datenbanktreiber benötigt.
+- Für den Aufbau einer Verbindung zu Amazon Redshift wird ein geeigneter Datenbanktreiber benötigt.
 - Laden Sie den 64-Bit-Amazon-Redshift-ODBC-Treiber von der offiziellen [Website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html) herunter und installieren Sie ihn.
 
 {: .box-note }
@@ -27,7 +27,7 @@ Für mehr Informationen über Amazon Redshift, siehe [Erste Schritte mit Amazon 
 ![XU-fehlender-redshift-treiber](/img/content/XU-fehlender-redshift-treiber.png){:class="img-responsive"}
 
 Vor Xtract Universal Version 2.102.0 müssen Sie die Mono.Security.dll Assembly anstelle des oben genannten ODBC-Treibers installieren.
-Sie können das komplette Mono-Paket von [der offiziellen Projektseite](http://download.mono-project.com/archive/2.0/download/) des Herstellers, oder die Mono.Security.dll von einer beliebigen Quelle Ihrer Wahl herunterladen. Bitte stellen Sie sicher, dass Sie die Mono.Security-Assembly installieren, die auf .NET 2.0 kompiliert wurde. Andere Versionen könnten Probleme mit den Assemblies verursachen, die für den Zugriff auf die Redshift-Datenbank verwendet werden.
+Sie können das komplette Mono-Paket von [der offiziellen Projektseite](http://download.mono-project.com/archive/2.0/download/) des Herstellers, oder die Mono.Security.dll von einer beliebigen Quelle Ihrer Wahl herunterladen. Bitte stellen Sie sicher, dass Sie die Mono.Security-Assembly installieren, die auf .NET 2.0 kompiliert wurde. Andere Versionen könnten Probleme mit den Assemblies verursachen, die für den Zugriff auf die Amazon Redshift-Datenbank verwendet werden.
 
 ### Installation
 Um die Datei zu installieren, gibt es zwei Möglichkeiten:
@@ -49,7 +49,7 @@ Weitere Informationen finden Sie in dem Artikel über das [Installieren einer As
 ![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
 
 **Endpoint**<br>
-Server-Adresse des Redshift-Systems.<br>
+Server-Adresse des Amazon Redshift-Systems.<br>
 (Zu finden in der Redshift Management Console)
 
 **Port**<br>
