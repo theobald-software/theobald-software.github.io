@@ -21,7 +21,6 @@ Use shorter words and shorter sentences. Try to use fewer than 26 words per sent
 | :------ |:--- |
 |Access to this yunIO server is restricted. Enter username and password to log in. |Access to this yunIO server is restricted. Please provide username and password to log in.|
 |If you cannot log in, delete the <code>config\servers\permission.json</code> file [...]. | If you get shut out and can't log in, delete the <code>config\servers\permission.json</code> [...]. |
-|The columns that are included in the output of the service.|Provide the constant values for the parameters that should be included for the execution of the report in SAP|
 |Add any additional information. The information is then available as part of the service metadata via Swagger/OpenAPI. | In the description, you can provide additional info that will be available e. g. as part of the service metadata via Swagger/OpenAPI.|
 
 Put the most important information in the first sentence of a paragraph so it's easy to spot when scanning.
@@ -58,7 +57,6 @@ Writing in a simple, straightforward language does not mean writing in a childis
 |View current license details.| Here you can see details of the currently installed license.|simpler, more straightforward language.|
 |Unchecking the option prevents users from logging in. No users deletion or changing passwords needed.|You can prevent a user from logging in without deleting them or changing their password, by unchecking the checkbox.|Only one main idea per sentence.|
 
-Writing in a simple, straightforward language does not mean writing in a childish or simplistic manner. The widest possible audience in terms of customers should be able to understand easy-to-read content. Even if you do feel comfortable with more complex vocabulary, use the simpler synonym if that has the same meaning.  
 
 Try to use easier grammatical constructions, e.g., avoid "neither nor" - construction.
 
