@@ -10,15 +10,15 @@ Wählen Sie im Hauptfenster der Komponente ein **Update Mode** aus einem Dropdow
 
 <!---    ab hier überprüfen -->
 
-| Bruchstabe| Bezeichnung | Beschreibung |
-| :------: |:--- | :--- |
-| F | Full | Extrahiert alle Daten, die den festgelegten Auswahlkriterien entsprechen.
-| D | Delta Update | Extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden. [Initialisieren](#initialisierung-des-delta-prozesses) Sie das Delta-Verfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Deltalaufs zu vermeiden, führen Sie die nächste Extraktion im Updatemodus **Repeat** durch. |
-| C | Delta Initialisation | Initialisiert das Delta-Verfahren und extrahiert gleichzeitig alle Daten im *Full Load*. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen](./extraktionseinstellungen) auf **[Maintenance]** klicken.
-| R | Repeat | Wiederholt den letzten Delta-Lauf und aktualisiert alle seit dem letzten Lauf angesammelten Deltadaten. Löscht alle Daten des letzten (erfolglosen) Delta-Updates, bevor eine Wiederholung ausgeführt wird. Sie können eine Wiederholung mehrmals ausführen.
-| S | Delta Init (without data) | Initiliaziert das Delta-Verfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis der *Delta Init* ist eine **[Maintenance]** (Wartung) auf der SAP-Seite.Wenn Sie einen Deltaprozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen] (./extraktionseinstellungen) auf **[Maintenance]** klicken.|
-| I | Non-cumulative Init | Relevant für DataSources wie *2LIS_03_BX*.  |
-| A | Activate (don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
+| Modus | Beschreibung |
+|:--- | :--- |
+| Full | Extrahiert alle Daten, die den festgelegten Auswahlkriterien entsprechen.
+| Delta (Delta Update) | Extrahiert nur Daten, die seit der letzten Delta-Anforderung im SAP-System hinzugefügt oder geändert wurden. [Initialisieren](#initialisierung-des-delta-prozesses) Sie das Delta-Verfahren, bevor Sie ein Delta-Update durchführen. Um Fehler, Abbrüche und Lücken in Ihren Daten während eines Deltalaufs zu vermeiden, führen Sie die nächste Extraktion im Updatemodus **Repeat** durch. |
+| Init (Delta Initialization) | Initialisiert das Delta-Verfahren und extrahiert gleichzeitig alle Daten im *Full Load*. Wenn Sie ein Delta-Verfahren neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen](./extraktionseinstellungen) auf **[Maintenance]** klicken.
+| Repeat | Wiederholt den letzten Delta-Lauf und aktualisiert alle seit dem letzten Lauf angesammelten Deltadaten. Löscht alle Daten des letzten (erfolglosen) Delta-Updates, bevor eine Wiederholung ausgeführt wird. Sie können eine Wiederholung mehrmals ausführen.
+| InitNoData (Delta Init without data) | Initiliaziert das Delta-Verfahren, ohne Daten aus der SAP-Datenquelle zu extrahieren. Das Ergebnis der *Delta Init* ist eine **[Maintenance]** (Wartung) auf der SAP-Seite.Wenn Sie einen Deltaprozess neu initialisieren, löschen Sie zunächst alle vorhandenen Inits, indem Sie in den [Extraktionseinstellungen] (./extraktionseinstellungen) auf **[Maintenance]** klicken.|
+| InitNoncumulative (Non-cumulative init) | Relevant für DataSources wie *2LIS_03_BX*.  |
+| Activate (Activate don't extract) | Aktiviert eine DataSource ähnlich wie das Klicken auf **[Activate]**, ist aber praktischer, wenn alle DataSources im Batch aktiviert werden. **[Activate]** ist eine Alternative zu **[Automatic Synchronization]**.  Es werden keine Daten extrahiert. |
 
 
 {% if page.product == "xtract-universal" %}

@@ -9,15 +9,15 @@ In the main window of the component select an **Update Mode** from the drop-down
 
 **Update Mode** offers the following options:
 
-| Letter |  Mode   | Description |
-| :------: |:--- | :--- |
-| F | Full  | Extracts all data that match the set selection criteria.|
-| D | Delta Update | Only extracts data added or changed on the SAP system since the last delta request. [Initialize the delta process](#initializing-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
-| C | Delta Initialization | Extracts all data as full load and initializes the delta process. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
-| R | Repeat  | Repeats the last delta run and updates and any delta data accumulated since the last run. Deletes any data from the last (unsuccessful) delta update before running a repeat. You can run a repeat multiple times.|
-| S | Delta Init (without data)   | Initializes the delta process without extracting any data from the SAP DataSources. The result of the *Delta Init* is a **[Maintenance]** on the SAP side. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
-| I | Non-cumulative Init    |  Relevant for DataSources like *2LIS_03_BX*.  |
-| A | Activate (don't extract)  | Activates a DataSource similar to clicking **[Activate]**, but it is more practical when activating DataSources in a batch. No data is extracted. |
+|  Mode   | Description |
+|:--- | :--- |
+| Full  | Extracts all data that match the set selection criteria.|
+| Delta (Delta Update)| Only extracts data added or changed on the SAP system since the last delta request. [Initialize the delta process](#initializing-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
+| Init (Delta Initialization)| Extracts all data as full load and initializes the delta process. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
+| Repeat  | Repeats the last delta run and updates and any delta data accumulated since the last run. Deletes any data from the last (unsuccessful) delta update before running a repeat. You can run a repeat multiple times.|
+| InitNoData (Delta Init without data)| Initializes the delta process without extracting any data from the SAP DataSources. The result of the *Delta Init* is a **[Maintenance]** on the SAP side. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
+| InitNoncumulative (Non-cumulative init)|  Relevant for DataSources like *2LIS_03_BX*.  |
+| Activate (Activate don't extract)| Activates a DataSource similar to clicking **[Activate]**, but it is more practical when activating DataSources in a batch. No data is extracted. |
 
 {% if page.product == "xtract-universal" %}
 **Update mode** can be set dynamically at runtime using the **updateType** extraction parameter, see [Run an Extraction](../execute-and-automate-extractions/extraction-parameters#run-an-extraction).<br>
