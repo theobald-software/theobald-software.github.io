@@ -34,14 +34,17 @@ Recommendation: avoid.
 | :------ |:--- |
 | Select the columns to include in the output of the service. |Select the columns that **should be** included in the output of the service.|
 | Password must consist 8 characters or more. | The password has to be at least 8 characters long.|
-|Navigate through the transaction like you would in SAP GUI. |Navigate through the transaction as if it was SAP GUI.|
+|Navigate through the transaction as if it was SAP GUI.|Navigate through the transaction like you would in SAP GUI. |
 
 
 "Must" is acceptable, when something will not function otherwise.
 
 ### Active Voice
 When you're writing, it's usually better to use active voice instead of passive voice. Active voice makes it clear who is doing the action in a sentence. Passive voice can sometimes make it confusing to know who is supposed to do something. For example, it might be unclear if it's the reader, the computer, the server, a user, or a visitor to a website. So, it's generally a good idea to use active voice to make your writing clearer.
-Tip: Here is an article on distinguishing active and passive voice: [Active vs. Passive Voice: What's The Difference?](https://www.merriam-webster.com/grammar/active-vs-passive-voice-difference)
+
+{: .box-note }
+**Tip:** Here is an article on distinguishing active and passive voice: [Active vs. Passive Voice: What's The Difference?](https://www.merriam-webster.com/grammar/active-vs-passive-voice-difference)
+
 
 | Recommended | Not recommended | 
 | :------ |:--- |
@@ -67,10 +70,10 @@ Avoid "need" and try to always use the active form of the verb.
 Passive can be used in the following instances:
 
 To emphasize an object over an action.
-Recommended: Access to this yunIO server is restricted. 
+**Recommended:** Access to this yunIO server is restricted. 
 
 To de-emphasize a subject or actor.
-Recommended: The service port settings are adopted.
+**Recommended:** The service port settings are adopted.
 
 | Recommended | Not recommended | 
 | :------ |:--- |
@@ -108,12 +111,12 @@ No end punctuation:
 
 #### Commas
 Use commas to separate items in a series, and use commas to separate certain kinds of clauses.
-In a series of three or more items, use a comma before the final and or or to avoid potentially changing the meaning of the sentence. This comma is called a serial comma or an Oxford comma.
+In a series of three or more items, use a comma before the final and or to avoid potentially changing the meaning of the sentence. This comma is called a serial comma or an Oxford comma.
 
 | Recommended | Not recommended | 
 | :------ |:--- |
 |yunIO is a no-code application for designing, automating, and integrating SAP processes in the cloud.| yunIO is a no-code application for designing, automating and integrating SAP processes in the cloud.|
 
 #### Semicolons
-If possible, avoid using semicolons. When joining two closely related independent clauses where a period or a comma is not as effective.
+If possible, avoid using semicolons. Otherwhise, when joining two closely related independent clauses where a period or a comma is not as effective.
 
