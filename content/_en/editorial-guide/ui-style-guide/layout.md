@@ -177,7 +177,6 @@ Text color: `--table_gray`
 The following rules apply to checkboxes and radios:
 - labels are right of the checkbox
 - labels align to the center of the checkbox
-- the space between checkbox and label is `5px`
 
 ![Checkboxes](/img/content/help_concept/yunIO/checkbox.png){:class="img-responsive"}
 
