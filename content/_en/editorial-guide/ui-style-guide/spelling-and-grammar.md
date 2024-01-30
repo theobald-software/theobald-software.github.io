@@ -56,7 +56,7 @@ Appeal to the reader using active and direct language.
 
 | Recommended | Not recommended | 
 | :------ |:--- |
-|For a certificate to appear here, it must be added to the Local Computer certificates in the Personal store on the yunIO server, and must have subjectAltName set.|To display a certificate here, add it to the "Local Computer" certificates in the "Personal" store on the yunIO server. Make sure to set "subjectAltName".|
+|To display a certificate here, add it to the "Local Computer" certificates in the "Personal" store on the yunIO server. Make sure to set "subjectAltName".|For a certificate to appear here, it must be added to the Local Computer certificates in the Personal store on the yunIO server, and must have subjectAltName set.|
 |View current license details.|Here you can see details of the currently installed license.|
 
 Avoid "need" and try to always use the active form of the verb.
