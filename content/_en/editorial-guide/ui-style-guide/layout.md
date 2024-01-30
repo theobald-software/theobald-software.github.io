@@ -16,9 +16,9 @@ A good layout design considers factors like hierarchy, balance, spacing, and ali
 ### Containers
 
 The following rules apply to the menu containers:
-- containers are left-justified at the same horizontal point as the page title (1).<br>
+- every container includes an H3 headline (1).<br>
 ![Containers](/img/content/help_concept/yunIO/even-containers.png){:class="img-responsive"}
-- every container includes an H3 headline (2).
+- large tables that need scrolling have a fixed header (2).
 - the last containers on a page level evenly (3).
 - space between container and text (top and left) is `20px`, see definition in `main.css`.
 
