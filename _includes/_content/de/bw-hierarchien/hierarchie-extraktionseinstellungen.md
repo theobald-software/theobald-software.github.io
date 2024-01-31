@@ -19,7 +19,9 @@ Die Umwandlung funktioniert auch für zusammengesetzte InfoObjects.<br>
 Beispiel: 0CO_AREA (1000) und 0COSTCENTER (0000003100) wird zu 1000/3100.
 
 **Fetch description texts (Beschreibungstexte holen)**<br>
-Setzt das *NodeText* auf den Knotentext basierend auf den Einstellungen der Systemsprache. 
+Setzt den Knotentext in die Spalte *NodeText*.<br> 
+Alle Knotentexte eines InfoObjects werden in der Sprache abgerufen, die zum Erstellen der SAP-Verbindung verwendet wird. 
+Wenn keine Knotentexte vorhanden sind, enthält die Spalte dieses InfoObjects keine Texte.
 
 ### Natural Settings - Darstellungseinstellungen
 

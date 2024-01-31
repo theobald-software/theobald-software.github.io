@@ -17,7 +17,9 @@ The conversion works for compound InfoObjects, too.
 Example: 0CO_AREA (1000) and 0COSTCENTER (0000003100) become 1000/3100.
 
 **Fetch description texts:**<br>
-Sets the node text in the column *NodeText* based on the system language settings. 
+Sets the node text in the column *NodeText*. <br>
+All texts of InfoObjects that have language dependent texts will be retrieved in the language that the SAP source connection uses. 
+If no texts exist, the result does not contain any texts for entries of that InfoObject.
 
 ### Natural Settings
 
