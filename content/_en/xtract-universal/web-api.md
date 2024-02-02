@@ -8,17 +8,18 @@ parent: xtract-universal
 permalink: /:collection/:path
 weight: 100
 lang: en_GB
-published: false
 old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
-Xtract Universal offers a Web API that allows running extractions and querying meta information and extraction logs from Xtract Universal through web calls.
-The following section contains information about the available web calls.
+Xtract Universal offers a web API that allows running extractions and querying meta information and extraction logs from Xtract Universal through web calls.
+The web API returns the result as an http-json stream.
+
+The following section contains information about available metadata and URLs.
 
 ### Overview
 
 
-#### Metadata:
+### Metadata:
 
 | URL       | Description  | 
 |-----------|--------------|
@@ -31,39 +32,76 @@ The following section contains information about the available web calls.
 | ```http://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result table/file for a specific timestamp. |
 | ```http://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
 
-#### Run extractions:
 
-| URL       | Description  | 
+
+### Run Extractions
+
+```
+http://[host]:[port]/?name=[extraction_name]
+```   
+
+Runs the specified extraction.
+
+| Parameter    | Description  | 
 |-----------|--------------|
-| ```http://[host]:[port]/?name=[extraction_name]```  |   Runs the specified extraction. |
-| ```http://[host]:[port]/?name=[extraction_name]&[parameter1_name]=[value]&[parameter2_name]=[value]```  |   Runs the specified extraction and passes values to the specified runtime parameters. |
-| ```http://[host]:[port]/?name=[extraction_name]&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. |
-| ```http://[host]:[port]/?name=[extraction_name]&wait=false```  |   Runs the specified extraction asynchronously. |
-| ```http://[host]:[port]/abort?name=[extraction_name]```  |   Aborts the specified extraction. |
+| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified runtime parameters. |
+| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. |
+| ```&wait=false```  |   Runs the specified extraction asynchronously. |
 
+#### Abort Extraction
 
-#### Logs:
+```
+http://[host]:[port]/abort?name=[extraction_name]
+```  
 
-| URL       | Description  | 
+Aborts the specified extraction.
+
+### Get Logs
+
+```
+http://[host]:[port]/log/?req_type=all
+```    
+
+Returns a list of all logs. 
+
+| Parameter    | Description  | 
 |-----------|--------------|
-| ```http://[host]:[port]/log/?req_type=server```  |   Returns a list of timestamps that have server logs. |
-| ```http://[host]:[port]/log/?req_type=server&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server logs of the specified timestamp. |
-| ```http://[host]:[port]/log/?req_type=all```  |   Returns a list of all logs. |
-| ```http://[host]:[port]/log/?req_type=all&past_days=[number_of_days]```  |   Returns all logs since n days. |
-| ```http://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
-| ```http://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
-| ```http://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
-| ```http://[host]:[port]/log/?req_type=all&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
-| ```http://[host]:[port]/log/?req_type=extraction&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
-| ```http://[host]:[port]/log/?req_type=extraction&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
+| ```&past_days=[number_of_days]```  |   Returns all logs since n days. |
+| ```&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
+| ```&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
+| ```&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
+| ```&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
+
+#### Server Logs
+
+```
+http://[host]:[port]/log/?req_type=server
+```   
+
+Returns a list of timestamps that have server logs.
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
+
+#### Extraction Logs
+
+```
+http://[host]:[port]/log/?req_type=extraction
+```
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
+
+
+### ???
+
 | ```http://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result file for a specific timestamp. |
 | ```http://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
 
 
-
-
 ### Query Metadata
-
 
 
 ### Result columns of an extraction
@@ -133,11 +171,16 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
 
 The URL pattern is: 
-```http://[host]:[port]/config/extractions/[extraction_name]/parameters```
+
+```
+http://[host]:[port]/config/extractions/[extraction_name]/parameters
+```
+
 This delivers a list of runtime parameters. <br>
 
 Example: <br>
-Calling the metadata of extraction *plants* using this URL: ```http://localhost:8065/config/extractions/plants/parameters/``` returns the following result:<br>
+Calling the metadata of extraction *plants* using this URL: 
+```http://localhost:8065/config/extractions/plants/parameters/``` returns the following result:<br>
 
 <details>
 <summary>Click here to show the example</summary>
