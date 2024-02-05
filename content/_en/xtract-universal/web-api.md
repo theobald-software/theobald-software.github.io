@@ -16,99 +16,154 @@ The web API returns the result as an http-json stream.
 
 The following section contains information about available metadata and URLs.
 
-### Overview
+### Base URL Format
 
+The basic URL for web calls uses the following format: `[protocol]://[host or IP address]:[port]/`.
 
-### Metadata:
+#### Examples
 
-| URL       | Description  | 
-|-----------|--------------|
-| ```http://[host]:[port]```  |   Returns a list of all extractions [Name,Type,Source,Destination,Connection,LastRun,RowCount,LastChange,Created], see |
-| ```http://[host]:[port]/config/extractions/```  |   Returns a list of all defined extractions in JSON format, see [List of Extractions](#list-of-extractions). |
-| ```http://[host]:[port]/destinations```  |   Returns a list of all defined destinations, see [List of extractions with a specific destination](#list-of-extractions-with-a-specific-destination-type). |
-| ```http://[host]:[port]/config/extractions/?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination, see [List of extractions with a specific destination](#list-of-extractions-with-a-specific-destination-type). |
-| ```http://[host]:[port]/config/extractions/[extraction_name]/parameters```  |   Returns a list of runtime parameters, see [Parameters](#parameters). |
-| ```http://[host]:[port]/config/extractions/[extraction_name]/result-columns```  |   Returns the result columns of an extraction, see [Result columns of an extraction](#result-columns-of-an-extraction). |
-| ```http://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result table/file for a specific timestamp. |
-| ```http://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
+| Protocol	  | Syntax	      | Example       |
+|:----------- | :------------ | :------------ | 
+| HTTP	| `http://[host].[domain]:[port]` | `http://sherri.theobald.local:8065` | 
+| HTTP	| `http://[host]:[port]` | 	`http://localhost:8065` | 
+| HTTPS | `https://[host].[domain]:[port]` | `https://sherri.theobald.local:8165` <br>Requires a dedicated host name and X.509 certificate, see [web server settings](./server/server-settings#web-server). | 
 
+{: .box-note } 
+**Note:** Make sure to use the correct ports, see [Server Ports](./server/ports).
 
-
-### Run Extractions
+### Get Version
 
 ```
-http://[host]:[port]/?name=[extraction_name]
-```   
+[protocol]://[host]:[port]/CurrentVersion
+``` 
 
-Runs the specified extraction.
+Returns the software version of Xtract Universal. \* This endpoint is marked as deprecated. \*
 
-| Parameter    | Description  | 
-|-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified runtime parameters. |
-| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. |
-| ```&wait=false```  |   Runs the specified extraction asynchronously. |
+<!---
+/version
+Returns the current version of the server installation as JSON.
 
-#### Abort Extraction
+Response:
+
+{ "version": "String" }
+
+
+/version-history
+Returns the version history entries as JSON.
+
+Response:
+
+{
+   "versions":
+   [
+      {
+        "version": "1.2.3.4",
+        "releaseDate": "",
+        "priority": "L",
+        "subcomponent": "General",
+        "description": "Fixed X which caused Y.",
+      }
+   ]
+}
+-->
+
+### Get Destinations
 
 ```
-http://[host]:[port]/abort?name=[extraction_name]
+[protocol]://[host]:[port]/config/destinations
 ```  
 
-Aborts the specified extraction.
+Returns a list of all defined destinations. 
+\* This endpoint is marked as deprecated. \* <br>
+For a list of extractions with a specific destination, see [Get Extraction Details](#get-extraction-details).
 
-### Get Logs
+#### Example 
+
+`http://sherri.theobald.local:8065/config/destinations`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "destinations": 
+    [
+        {
+            "name": "csv",
+            "type": "FileCSV",
+            "directory": "C:\\Users\\alice\\Documents\\csv\\"
+        },
+        {
+            "name": "http-csv",
+            "type": "CSV"
+        },
+        {
+            "name": "http-json",
+            "type": "HTTPJSON"
+        },
+        {
+            "name": "json",
+            "type": "FileJSON",
+            "directory": "C:\\Users\\alice\\Documents\\json"
+        },
+        {
+            "name": "sql-server",
+            "type": "SQLServer",
+            "host": "dbtest-ws2019.theobald.local",
+            "port": 1433,
+            "database": "alice",
+            "user": "THEOBALD\\alice"
+        },
+        {
+            "name": "tableau",
+            "type": "Tableau",
+            "directory": "C:\\Users\\alice\\Documents\\tableau"
+        }
+    ]
+}
+{% endhighlight %}
+</details>
+
+### Get Extraction Details
 
 ```
-http://[host]:[port]/log/?req_type=all
-```    
+[protocol]://[host]:[port]/config/extractions/
+```  
 
-Returns a list of all logs. 
+Returns a list of all defined extractions in JSON format. The result contains the following elements:
+
+|  Item   | Description    |
+|--------------|---------|
+| name  | name of the extraction |
+| type  |extraction type |
+| technical name|  name of the extracted SAP object |
+| source|  name of the source connection |
+| destination| name of the target connection |
+| latestRun| contains rowCount, duration, state and startedAt |
+| row count| number of the last extracted data records |
+| duration | duration of the last execution |
+| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| startedAt| timestamp of the last execution |
+| created| contains machine, timestamp and user |
+| machine| machine on which the extraction was created |
+| timestamp| timestamp of the creation |
+| user| user that created the extraction |
+| lastChange| contains machine, timestamp and user |
+| machine| machine on which the extraction was last changed|
+| timestamp| timestamp of the last change |
+| user| user that last changed the extraction |
+
+#### Parameters
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```&past_days=[number_of_days]```  |   Returns all logs since n days. |
-| ```&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
-| ```&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
-| ```&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
-| ```&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
-
-#### Server Logs
-
-```
-http://[host]:[port]/log/?req_type=server
-```   
-
-Returns a list of timestamps that have server logs.
-
-| Parameter    | Description  | 
-|-----------|--------------|
-| ```&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
-
-#### Extraction Logs
-
-```
-http://[host]:[port]/log/?req_type=extraction
-```
-
-| Parameter    | Description  | 
-|-----------|--------------|
-| ```&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
+| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. |
+| ```[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). The parameters are available in the Xtract Universal Designer's "Run Extraction" window.<br>. |
+| ```[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 
 
-### ???
+The result of `[protocol]://[host]:[port]/config/extractions/[extraction_name]/result-columns` contains the following elements:
 
-| ```http://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result file for a specific timestamp. |
-| ```http://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the status of the specified extraction at the specified timestamp. |
-
-
-### Query Metadata
-
-
-### Result columns of an extraction
-
-The result column has the following schema:
-
-| Column       | Type    | Description                         |
+| Item         | Type    | Description                         |
 |--------------|---------|-------------------------------------|
 | name         | String  | column name                         |
 | description  | String  | column description                  |
@@ -116,81 +171,249 @@ The result column has the following schema:
 | length       | Integer | column length                       |
 | isPrimaryKey | boolean | column is primary key of extraction |
 | isEncrypted  | boolean | encryption for column is active     |
-| decimalsCount  | Integer | number of decimal places |
+| decimalsCount| Integer | number of decimal places |
 | [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity |
 | [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity |
 
-Example: <br>
-```http://example.local:8065/config/extractions/BSEG/result-columns``` <br>
+{: .box-note }
+**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. 
+If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
+
+#### Examples
+
+```
+http://sherri.theobald.local:8065/config/extractions/
+```
 
 <details>
 <summary>Click here to show the response body</summary>
 {% highlight json %}
 {
-    "columns": 
+    "extractions": 
     [
         {
-            "name": "BELNR",
-            "description": "Accounting Document Number",
-            "type": "StringLengthMax",
-            "length": 10,
-            "isPrimaryKey": true,
-            "isEncrypted": false
+            "name": [
+                "0MAT"
+            ],
+            "type": "DeltaQ",
+            "technicalName": "0MATERIAL_ATTR",
+            "source": "saperp",
+            "destination": "GoogleCloudStorage",
+            "latestRun": {
+                "rowCount": 20275,
+                "duration": "00:00:13.383",
+                "state": "FinishedNoErrors",
+                "startedAt": "2023-08-17_11:24:07.770"
+            },
+            "created": {
+                "machine": "TODD",
+                "timestamp": "2022-10-05_08:06:18.544",
+                "user": "THEOBALD\\steffan"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2024-01-29_13:15:30.701",
+                "user": "THEOBALD\\alice"
+            }
         },
         {
-            "name": "GJAHR",
-            "description": "Fiscal Year",
-            "type": "NumericString",
-            "length": 4,
-            "isPrimaryKey": true,
-            "isEncrypted": false
+            "name": [
+                "0MATERIAL"
+            ],
+            "type": "DeltaQ",
+            "technicalName": "0COSTCENTER_0101_HIER",
+            "source": "saperp",
+            "destination": "csv",
+            "latestRun": {
+                "rowCount": 200,
+                "duration": "00:00:00.114",
+                "state": "FinishedNoErrors",
+                "startedAt": "2023-08-17_11:31:44.029"
+            },
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-08-15_11:46:51.045",
+                "user": "THEOBALD\\alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-08-17_11:33:28.786",
+                "user": "THEOBALD\\alice"
+            }
+        }
+		{% endhighlight %}
+</details>
+
+`http://sherri.theobald.local:8065/config/extractions/`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "extractions": 
+    [
+        {
+            "name": [
+                "ACDOCA"
+            ],
+            "type": "Table",
+            "technicalName": "ACDOCA",
+            "source": "s4h",
+            "destination": "http-csv",
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-10-04_05:50:56.893",
+                "user": "THEOBALD\\alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-10-05_11:40:13.166",
+                "user": "THEOBALD\\alice"
+            }
         },
         {
-            "name": "DMBTR",
-            "description": "Amount in Local Currency",
-            "type": "Decimal",
-            "length": 13,
-            "decimalsCount": 2,
-            "isPrimaryKey": false,
-            "isEncrypted": false,
-            "referenceField": "WAERS",
-            "referenceTable": "T001"
+            "name": [
+                "bw2--0ADDR_SHORT_T"
+            ],
+            "type": "ODP",
+            "technicalName": "0ADDR_SHORT$T",
+            "source": "ec5",
+            "destination": "csv",
+            "latestRun": {
+                "rowCount": 0,
+                "duration": "00:00:01.498",
+                "state": "FinishedErrors",
+                "webServerLog": "2023-10-30_07:25:57.435",
+                "startedAt": "2023-10-30_07:25:58.417"
+            },
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-06-22_06:39:10.994",
+                "user": "alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-10-30_07:25:33.707",
+                "user": "THEOBALD\\alice"
+            }
+        }
+	]
+}
+{% endhighlight %}
+</details>
+
+`http://sherri.theobald.local:8065/config/extractions/?destinationType=sqlserver`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "extractions": 
+    [
+        {
+            "name": [
+                "bw2--UCONRFC_ATTR_F"
+            ],
+            "type": "ODP",
+            "technicalName": "UCONRFC_ATTR$F",
+            "source": "bw2",
+            "destination": "sql-server",
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-06-22_06:24:54.495",
+                "user": "alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-07-03_07:06:09.890",
+                "user": "THEOBALD\\alice"
+            }
+        },
+        {
+            "name": [
+                "ec5--KNA1_DELTA"
+            ],
+            "type": "TableCDC",
+            "technicalName": "KNA1_DELTA",
+            "source": "ec5",
+            "destination": "sql-server",
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-06-22_05:15:26.003",
+                "user": "alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-07-03_07:06:09.955",
+                "user": "THEOBALD\\alice"
+            }
+        },
+        {
+            "name": [
+                "HIERARCHY"
+            ],
+            "type": "Hierarchy",
+            "technicalName": "TEST_DEP_01",
+            "source": "bw2",
+            "destination": "sql-server",
+            "latestRun": {
+                "rowCount": 13,
+                "duration": "00:00:02.710",
+                "state": "FinishedNoErrors",
+                "startedAt": "2023-07-19_06:04:04.139"
+            },
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-07-19_05:15:13.542",
+                "user": "THEOBALD\\alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-08-15_07:46:27.575",
+                "user": "THEOBALD\\alice"
+            }
+        },
+        {
+            "name": [
+                "MAKT"
+            ],
+            "type": "Table",
+            "technicalName": "MAKT",
+            "source": "ec5",
+            "destination": "sql-server",
+            "latestRun": {
+                "rowCount": 0,
+                "duration": "00:00:02.133",
+                "state": "FinishedErrors",
+                "startedAt": "2023-08-04_06:43:17.233"
+            },
+            "created": {
+                "machine": "SHERRI",
+                "timestamp": "2023-06-13_16:50:52.580",
+                "user": "THEOBALD\\alice"
+            },
+            "lastChange": {
+                "machine": "SHERRI",
+                "timestamp": "2023-08-04_06:43:11.830",
+                "user": "THEOBALD\\alice"
+            }
         }
     ]
 }
 {% endhighlight %}
 </details>
 
-
-{: .box-note }
-**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. 
-If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
-
-
-### Parameters
-Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). These parameters are shown in the Xtract Universal Designer's "Run Extraction" window.<br>
-
-The URL pattern is: 
-
-```
-http://[host]:[port]/config/extractions/[extraction_name]/parameters
-```
-
-This delivers a list of runtime parameters. <br>
-
-Example: <br>
-Calling the metadata of extraction *plants* using this URL: 
-```http://localhost:8065/config/extractions/plants/parameters/``` returns the following result:<br>
+`http://sherri.theobald.local:8065/config/extractions/KNA1/parameters`
 
 <details>
-<summary>Click here to show the example</summary>
+<summary>Click here to show the response body</summary>
 {% highlight json %}
 {
     "extraction": 
     [
         {
-            "name": "clearBuffer",
-            "description": "Clear/keep the result buffer",
+            "name": "ignoreCache",
+            "description": "Ignore the result cache",
             "type": "Flag",
             "default": "False"
         },
@@ -204,13 +427,13 @@ Calling the metadata of extraction *plants* using this URL:
             "name": "source",
             "description": "Sets the name of the source",
             "type": "Text",
-            "default": "erp"
+            "default": "ec5"
         },
         {
             "name": "destination",
             "description": "Sets the name of the destination",
             "type": "Text",
-            "default": "http-csv"
+            "default": "csv"
         },
         {
             "name": "rows",
@@ -219,25 +442,16 @@ Calling the metadata of extraction *plants* using this URL:
             "default": "0"
         },
         {
-            "name": "where",
+            "name": "whereClause",
             "description": "Where Clause",
             "type": "Text",
-            "default": "WERKS= @v_werks"
+            "default": null
         },
         {
             "name": "packageSize",
             "description": "Package Size",
             "type": "Number",
             "default": "50000"
-        }
-    ],
-    "custom": 
-    [
-        {
-            "name": "v_werks",
-            "description": "",
-            "type": "Text",
-            "default": ""
         }
     ],
     "source": 
@@ -247,265 +461,226 @@ Calling the metadata of extraction *plants* using this URL:
             "description": "Logon Language",
             "type": "Text",
             "default": "EN"
-        },
-        {
-            "name": "logonTicket",
-            "description": "SAP Logon Ticket",
-            "type": "Text",
-            "default": ""
         }
     ]
 }
 {% endhighlight %}
 </details>
 
-### List of extractions
-A list of all extractions defined in Xtract Universal can be retrieved by the following URL pattern:<br>
-```http://[host]:[port]/config/extractions/```
-
-Example: <br>
-Calling ```http://localhost:8065/config/extractions/``` returns a list of all extractions defined on the Xtract Universal server running on localhost:8065.
+`http://sherri.theobald.local:8065/config/extractions/KNA1/result-columns`
 
 <details>
-<summary>Click here to show the example</summary>
+<summary>Click here to show the response body</summary>
 {% highlight json %}
 {
-    "extractions": 
+    "columns": 
     [
         {
-            "name": "0COSTCENTER_0101_HIER",
-            "type": "DeltaQ",
-            "source": "ec5",
-            "destination": "parquet",
-            "latestRun": {
-                "started": "20210219T132323.542Z",
-                "duration": "PT00H00M07.101S",
-                "rowsCount": 0,
-                "state": "FinishedErrors"
-            },
-            "lastChange": {
-                "machine": "[::ffff:169.254.223.102%10]:58691",
-                "user": "THEOBALD\\white",
-                "timestamp": "20210219T132508.602Z"
-            },
-            "created": {
-                "machine": "[::ffff:127.0.0.1]:53835",
-                "user": "THEOBALD\\walter",
-                "timestamp": "20210212T105033.605Z"
-            }
+            "name": "KUNNR",
+            "description": "Customer Number",
+            "type": "StringLengthMax",
+            "length": 10,
+            "isPrimaryKey": true,
+            "isEncrypted": false,
+            "referenceField": "",
+            "referenceTable": ""
         },
         {
-            "name": "0FI_GL_4_ODP",
-            "type": "ODP",
-            "source": "ec5",
-            "destination": "sqlserver",
-            "latestRun": {
-                "started": "20210311T095741.184Z",
-                "duration": "PT00H07M03.024S",
-                "rowsCount": 1309110,
-                "state": "FinishedNoErrors"
-            },
-            "lastChange": {
-                "machine": "[::ffff:169.254.223.102%10]:50070",
-                "user": "THEOBALD\\mario",
-                "timestamp": "20210311T095739.174Z"
-            },
-            "created": {
-                "machine": "[::ffff:169.254.223.102%10]:50070",
-                "user": "THEOBALD\\brothers",
-                "timestamp": "20210311T093800.095Z"
-            }
+            "name": "LAND1",
+            "description": "Country Key",
+            "type": "StringLengthMax",
+            "length": 3,
+            "isPrimaryKey": false,
+            "isEncrypted": false,
+            "referenceField": "",
+            "referenceTable": ""
         },
-               {
-            "name": "0MATERIAL_ATTR",
-            "type": "DeltaQ",
-            "source": "ec5",
-            "destination": "http-csv",
-            "latestRun": {
-                "started": "20210219T145568.237Z",
-                "duration": "PT00H00M24.433S",
-                "rowsCount": 18011,
-                "state": "FinishedNoErrors"
-            },
-            "lastChange": {
-                "machine": "[::ffff:169.254.223.102%10]:58691",
-                "user": "THEOBALD\\giana",
-                "timestamp": "20210219T145555.517Z"
-            },
-            "created": {
-                "machine": "[::ffff:169.254.223.102%9]:60483",
-				"user": "THEOBALD\\sisters",
-                "timestamp": "20200708T091200.544Z"
-            }
+        {
+            "name": "NAME1",
+            "description": "Name 1",
+            "type": "StringLengthMax",
+            "length": 35,
+            "isPrimaryKey": false,
+            "isEncrypted": false,
+            "referenceField": "",
+            "referenceTable": ""
+        },
+        {
+            "name": "ORT01",
+            "description": "City",
+            "type": "StringLengthMax",
+            "length": 35,
+            "isPrimaryKey": false,
+            "isEncrypted": false,
+            "referenceField": "",
+            "referenceTable": ""
+        },
+        {
+            "name": "Mean_UMSAT",
+            "description": "Annual sales",
+            "type": "Double",
+            "isPrimaryKey": false,
+            "isEncrypted": false,
+            "referenceField": "UWAER",
+            "referenceTable": "KNA1"
         }
     ]
 }
 {% endhighlight %}
 </details>
 
+### Run Extractions
 
-### List of extractions with a specific destination
-
-A list of extractions writing data to a specific type of destination can be retrieved by the following URL pattern:
-
-```http://[host]:[port]/config/extractions/?destinationType=[destination]```
-
-Possible entries for [destination] are:
-
-*Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
-
-Example: <br>
-Calling ```http://localhost:8065/config/extractions/?destinationType=FileCSV``` returns a list of all extractions that write data to a csv flatfile destination. 
-
-<details>
-<summary>Click here to show the example</summary>
-{% highlight json %}
-{
-    "extractions": 
-    [
-        {
-            "name": "2LIS_02_ITM",
-            "type": "ODP",
-            "source": "MySAPerp",
-            "destination": "flatfile",
-            "latestRun": {
-                "duration": "PT00H00M27.085S",
-                "rowsCount": 109589,
-                "state": "FinishedNoErrors"
-            },
-            "lastChange": {
-                "machine": "[::ffff:169.254.223.102%10]:50070",
-                "user": "THEOBALD\\walter",
-                "timestamp": "20210311T095624.786Z"
-            },
-            "created": {
-                "machine": "[::ffff:127.0.0.1]:57734",
-                "timestamp": "20210202T151301.038Z"
-            }
-        },
-        {
-            "name": "DEMO_Table",
-            "type": "Table",
-            "source": "MySAPBW",
-            "destination": "flatfile",
-            "latestRun": {
-                "started": "20210317T10552.653Z",
-                "duration": "PT00H00M01.049S",
-                "rowsCount": 1000,
-                "state": "FinishedNoErrors"
-            },
-            "lastChange": {
-                "machine": "[::ffff:127.0.0.1]:57862",
-                "timestamp": "20210317T105222.993Z"
-            },
-            "created": {
-                "machine": "[::ffff:127.0.0.1]:57862",
-                "timestamp": "20210317T105032.768Z"
-            }
-        }
-    ]
-}
-{% endhighlight %}
-</details>
-
-
-
-
-## Run Extractions
-
-For testing purposes extractions can be called via web service.
-Calling extractions is usually done via script, scheduler or BI-tool. 
-
-### URL Format
-To call an extraction via web services, use the following URL-format: `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`.
-
- Format | Description
-:----------- | :------------
-`<Protocol>` | HTTP or HTTPS - Activates a safe data transfer.
-`<HOST or IP address>` | Host name or IP address of the XU server.
-`<Port>` | The port on which the Xtract Universal service runs. The default is 8065. You can find the current value in the "Run" window of the [Designer](../getting-started/run-an-extraction#run-extraction).
-`<Name of the Extraction>` | Name of the extraction.
-`{&<parameter_i>=<value_i>}` | Optional parameter to be set when running the extraction. Multiple parameters can be set.
-
-#### Examples
-These are examples of URLs that call extractions:
 ```
-http://localhost:8065/?name=Plants
-http://localhost:8065/?name=Plants&rows=100
-http://localhost:8065/?name=Plants&rows=100&lang=EN
+[protocol]://[host]:[port]/?name=[extraction_name]
 ```
 
-### HTTP Status Code & Header
+Runs the specified extraction.
+\* This endpoint is marked as deprecated. \*<br>
 The response of a web service call contains the following information:
-- HTTP status code (1)
-- Information in the HTTP header (2)
-- Response in the HTTP body (3)
+
+|     | Response | Description | 
+|-----|-----------|--------------|
+| (1) | HTTP status code | The HTTP status code *200* indicates a successful extraction call. It does not indicate a successful execution of the extraction. <br> The HTTP status code *404* indicates that the called extraction does not exist. Detailed information can be found in the log of the web service. | 
+| (2) | HTTP header | Shows the timestamp of the extraction in the HTTP header e.g., X-XU-Timestamp: *2021-04-09_19:03:09.971* | 
+| (3) | HTTP response body | The Response in the HTTP body depends on the destination type of the extraction. Depending on the destination type, the extracted data is returned in either CSV or JSON format | 
 
 ![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
-Response | Description
-:----------:| :------------
- (1) | The HTTP status code *200* indicates a successful extraction call. It does not indicate a successful execution of the extraction. <br> The HTTP status code *404* indicates that the called extraction does not exist. Detailed information can be found in the log of the web service.
- (2) | Shows the timestamp of the extraction in the following HTTP header e.g., X-XU-Timestamp: *2021-04-09_19:03:09.971*
- (3) | The Response in the HTTP body depends on the destination type of the extraction. 
+#### Parameters
 
-#### Response in the HTTP Body (3)
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified runtime parameters. |
+| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
+| ```&wait=false``` |   Runs the specified extraction asynchronously and returns the timestamp in the HTTP body. Default (true) waits for the extraction to finish. |
 
-Status code | Destination type | Description
-:----------: | :-----------: | :-----
-*200* | Pull | Depending on the destination type, the extracted data is returned in either CSV or JSON format (3).
-*200* | Push | The extraction log is returned in CSV format.
+#### Example 
 
-### Options for Calling Extractions
+`http://sherri.theobald.local:8065/?name=KNA1&wait=false&city=Stuttgart&name1=Theobald%20Software`
 
-Multiple options are available to use with the URL-format <br>
-`<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`.
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight csv %}
+KUNNR,LAND1,NAME1,ORT01,Mean_UMSAT
+0000000779,DE,Theobald Software,Stuttgart,"0,00000000000000000E+000"
+{% endhighlight %}
+</details>
 
-#### Suppress Output of Extraction Logs
-The log output of a synchronous called extraction with a push destination can be suppressed using the parameter `&quiet-push=true`.<br>
-Example: `http://todd.theobald.local:8065/?name=Plants&quiet-push=true`
+<!---
+/run/$name
+POST starts the extraction with name $name and waits for it to finish. The response is either the extractions content in case it is an HTTP destination or the log output. (Synchronous execution)
 
-That parameters is set to `false` by default, meaning the extraction log of a push destination is added to the output by default. 
+/start/$name
+POST starts the extraction with name $name and returns the run status immediately. (Asynchronous execution)
 
-{: .box-note }
-**Note:** That parameter has no effect on pull destinations and asynchronous extractions.
+/stop
+Stops extractions. If no parameter is supplied all running extractions are cancelled. A parameter may be given in the path in for form of /stop/yyyy-MM-dd_hh:mm:ss.fff to identify a single extraction run or /stop/$name to stop all running instances of a single extraction definition.
+-->
 
-#### Asynchronous Call
-Extraktions are called synchronous by default. The parameter `&wait=false` calls an asynchronous extraction.<br> 
-Example: `http://todd.theobald.local:8065/?name=Plants&wait=false`
+### Get Status of an Extraction
 
-In this case the timestamp (4) of the extraction is returned in the HTTP body.
-![Webservice Call async](/img/content/xu/automation/webservice/xu_call_webservice_push_asynch.png){:class="img-responsive"}
+```
+[protocol]://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]
+``` 
 
-#### Abort Extraction
-A running extraction can be aborted using the `abort` command before entering the extraction name.<br>
-Example: `http://todd.theobald.local:8065/abort?name=Plants`
+Returns the status of a (running) extraction at the specified timestamp: 
 
-If the abortion is successfull, a confirmation message (5) is returned in the HTTP body.
-![Webservice Call abort](/img/content/xu/automation/webservice/xu_call_webservice_abort.png){:class="img-responsive"}
+| State            | Explanation                                                  |
+|------------------|--------------------------------------------------------------|
+| Running          | The extraction is running.                                   |
+| FinishedNoErrors | The extraction has been finished without errors.             |
+| FinishedErrors   | The extraction has been finished but with minimum one error. |
 
--------------------------------------------
+The timestamp corresponds to the *startedAt* property returned by `[protocol]://[host]:[port]/config/extractions/`.
+
+#### Example
+
+`http://sherri.theobald.local:8065/status/?name=KNA1&timestamp=2024-02-05_10:23:08.025`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight csv %}
+FinishedNoErrors
+{% endhighlight %}
+</details>
+
+### Abort Extraction
+
+```
+[protocol]://[host]:[port]/abort?name=[extraction_name]
+```  
+
+Aborts the specified extraction.
+If the abortion is successful, a confirmation message is returned in the HTTP body.
+
+#### Example
+
+`http://sherri.theobald.local:8065//abort?name=KNA1`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight csv %}
+All runs of extraction 'KNA1' aborted.
+{% endhighlight %}
+</details>
+
+### Get Logs
+
+```
+[protocol]://[host]:[port]/log/?req_type=all
+```    
+
+Returns a list of all logs. 
+
+#### Parameters
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```&past_days=[number_of_days]```  |   Returns all logs since n days. |
+| ```&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
+| ```&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
+| ```&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
+| ```&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
+
+#### Server Logs
+
+```
+[protocol]://[host]:[port]/log/?req_type=server
+```   
+
+Returns a list of timestamps that have server logs.
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
+
+#### Extraction Logs
+
+```
+[protocol]://[host]:[port]/log/?req_type=extraction
+```
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
+
+
+### ???
+
+| ```[protocol]://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result file for a specific timestamp. |
+
+
+
+
 
 ## Query Extraction Logs
 
 
 The server provides access to various metadata and logging information via HTTP. <br>
-The following examples use the following URL *http://localhost:8065/*.
 
 **Listing of all defined extractions**
 
-The following URL 
-
-```
-http://localhost:8065/
-```
-lists the defined extraction. 
-
-Name,Type,Source,Destination,Connection,LastRun,RowCount,LastChange,Created<br>
-Bilanz_GuV_Report,Report,erp,sqlserver,,,2016-07-25_03:05:55.250,2016-07-25_03:05:55.250<br>
-BKPF,Table,erp,tableau,,,2016-07-26_06:04:38.239,2016-07-26_06:03:06.171<br>
-BSEG,Table,erp,alteryx,2016-08-01_11:20:40.521,0,2016-07-21_04:22:12.681,2016-06-13_11:28:23.180<br>
-demobexquery,BWCube,bw,powerbi,2016-07-29_09:43:13.675,210,2016-07-29_09:40:18.505,2016-05-23_02:25:31.273
 
 The log contains the following columns:<br>
 - **Name**: contains the name of the extraction.
@@ -520,9 +695,9 @@ The log contains the following columns:<br>
 **List of all defined target connections**
 
 The following URL
-```
+`
 http://localhost:8065/destinations
-```
+`
 lists the defined target connections. 
 
 Name,Type,Host,Port,Database,User,Schema,Directory<br>
@@ -544,18 +719,18 @@ The log contains the following columns:
 **Name of the result table/file for a specific timestamp**
 
 Under
-```
+`
 http://localhost:8065/ResultName?name=kna1&timestamp=2016-08-04_15:17:02.025
-```
+`
 there is the name of the result table/file for a specific timestamp (this only works if the destination/extraction-specific settings have not been changed since the run) 
 
 **Serverlog**
 
 The server creates a separate log for each day with the corresponding timestamp. You can access the list of the server logs with the following parameter **req_type=server**:<br>
 
-```
+`
 http://localhost:8065/log/?req_type=server&timestamp
-```
+`
 
 
 **Server log of a specified timestamp**
@@ -563,56 +738,56 @@ http://localhost:8065/log/?req_type=server&timestamp
 You can access the server log of a specified timestamp (e.g. 2010-04-28_00:00:00.000) with the following parameters **req_type=server &
 timestamp=2010-04-28_00:00:00.000** :
 
-```
+`
 http://localhost:8065/log/?req_type=server&timestamp=2010-04-28_00:00:00.000
-```
+`
 
 You can use the shortdate format instead of the timestamp format:
 
-```
+`
 http://localhost:8065/log/?req_type=server&timestamp=2010-04-28
-```
+`
 
 **Log of a specified extraction**
 
 You can access the log of a specified extraction (e.g. vardemo)  with the following  parameters: **req_type=extraction&name=vardemo** 
 
-```
+`
 http://localhost:8065/log/?req_type=extraction&name=vardemo
-```
+`
 
 **Log of a specified extraction at a specified timespamp**
 
 You can access the server log of a specified timestamp (e.g. 2010-04-28_00:00:00.000) with the following parameters **req_type=extraction&name=vardemo & 
 timestamp=2010-04-27_10:24:47.674 :**
 
-```
+`
 http://localhost:8065/log/?req_type=extraction&name=vardemo&timestamp=2010-04-27_10:24:47.674
-```
+`
 
 **All logs**
 
 You can access the list of all logs with the following parameter **req_type=all**:
 
-```
+`
 http://localhost:8065/log/?req_type=all
-```
+`
 
 **All logs since n days**
 
 You can access all logs since n days with the following parameters **req_type=all&past_days=n**:
 
-```
+`
 http://localhost:8065/log/?req_type=all&past_days=1
-```
+`
 
 **All logs since a specified timestamp**
 
 You can access all logs since a specified timestamp with the following parameters **req_type=all&min=2010-04-28_09:49:17.831:**
 
-```
+`
 http://localhost:8065/log/?req_type=all&min=2010-04-28_09:49:17.831
-```
+`
 
 You can use a short date instead of a min timestamp.
 
@@ -621,9 +796,9 @@ You can use a short date instead of a min timestamp.
 
 You can access all logs until a specified timestamp with the following parameters  **req_type=all&min=2010-04-28_09:49:17.831**:
 
-```
+`
 http://localhost:8065/log/?req_type=all&max=2010-04-28_09:49:17.831
-```
+`
 
 You can use a short date instead of a min timestamp.
 All logs between two specified timestamps
