@@ -38,6 +38,15 @@ Wenn eine Azure Relay Hybrid Verbindung eingerichtet ist, verwenden die Services
 {: .box-tip }
 **Tipp:** Um mehrere Endpunkte zu verwenden, richten Sie mehrere yunIO Server ein, einen Server für jeden Endpunkt.
 
+Die Option **OpenAPI Target Kind** definiert Eigenschaften, die der Swagger/OpenAPI-JSON-Datei von yunIO-Diensten hinzugefügt werden können.
+
+- *Default*: <br>
+Wenn diese Option aktiv ist, enthält die Swagger/OpenAPI-JSON-Datei keine zusätzlichen Eigenschaften.
+- *Nintex Gateway*: <br>
+Wählen Sie diese Option, wenn Sie yunIO-Dienste mit dem [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm) integrieren. 
+Nintex-Eigenschaften werden zur Swagger/OpenAPI-JSON-Datei hinzugefügt und es besteht keine Notwendigkeit, die Swagger-Definition manuell zu ändern.
+Weitere Informationen finden Sie im Knowledge Base Artikel [Integrating a yunIO Service via Nintex Gateway](https://kb.theobald-software.com/yunio/integrating-yunio-via-nintex-gateway).
+
 
 ### Transport Layer Security
 
