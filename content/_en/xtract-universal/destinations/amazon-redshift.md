@@ -1,5 +1,5 @@
 ---
-ref: destinations-23
+ref: destinations-22
 layout: page
 title: Amazon Redshift
 description: Amazon Redshift
@@ -7,20 +7,20 @@ product: xtract-universal
 parent: destinations
 childidentifier: amazon-redshift
 permalink: /:collection/:path
-weight: 23
+weight: 22
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=redshift
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to the [Redshift Database](https://aws.amazon.com/redshift/) destination.<br>
+The following section describes the loading of the SAP extraction data to the [Amazon Redshift Database](https://aws.amazon.com/redshift/) destination.<br>
 For more information on Amazon Redshift, see [Getting Started with Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html).
 
 ## Requirements
 
 - Run a running instance and valid credentials.
 - Your client computer has to be authorized to access the cluster.
-- For establishing a connection to Redshift a suitable database driver is required.
+- For establishing a connection to Amazon Redshift a suitable database driver is required.
 - Download and install the 64 bit Amazon Redshift ODBC driver from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
 
 {: .box-note }
@@ -29,7 +29,7 @@ For more information on Amazon Redshift, see [Getting Started with Amazon Redshi
 ![XU-fehlender-redshift-treiber](/img/content/XU-fehlender-redshift-treiber.png){:class="img-responsive"}
 
 Prior to Xtract Universal version 2.102.0 you have to install the Mono.Security.dll assembly instead of above mentioned ODBC driver.
-You can download the complete Mono package from [the official project site](http://download.mono-project.com/archive/2.0/download/) or from any source of your choice. Please make sure to install the Mono.Security assembly, compiled on .NET 2.0. Other versions could cause problems with the assemblies used for accessing the Redshift Database.
+You can download the complete Mono package from [the official project site](http://download.mono-project.com/archive/2.0/download/) or from any source of your choice. Please make sure to install the Mono.Security assembly, compiled on .NET 2.0. Other versions could cause problems with the assemblies used for accessing the Amazon Redshift Database.
 
 ### Installation
 There are two ways to install the assembly: 
@@ -51,7 +51,7 @@ There are two ways to install the assembly:
 ![XU_redshift_destination](/img/content/XU_redshift_destination.png){:class="img-responsive"}
 
 **Endpoint**<br>
-Defines the server address of the Redshift System.
+Defines the server address of the Amazon Redshift System.
 (Found in the Redshift Management Console)
 
 **Port**<br>
@@ -101,7 +101,7 @@ The following settings can be defined for the destination:
 ## Configuring AnySQL Maestro
 
 
-This example shows how to configure and use AnySQL Maestro to manage your Redshift database.
+This example shows how to configure and use AnySQL Maestro to manage your Amazon Redshift database.
 You can use any other [db client](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html) for that matter. Steps should be similar. 
 
 - Download and install AnySQL Maestro from [here](http://www.sqlmaestro.com/de/products/anysql/maestro/download/).

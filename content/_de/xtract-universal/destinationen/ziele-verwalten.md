@@ -32,10 +32,10 @@ Das Fenster "Manage Destinations" öffnet sich.
 
 #### Vordefinierte Zielumgebungen
 Die folgenden Zielumgebungen sind vordefiniert und können nicht gelöscht werden:
-- [Web Service CSV](./csv-via-http)
+- [HTTP-CSV](./csv-via-http)
 
 
 ******
 #### Weiterführende Links
-- [Extraktionsspezifische Einstellungen](./csv-via-http#csv-settings) (Am Beispiel von Web Service CSV)
+- [Extraktionsspezifische Einstellungen](./csv-via-http#csv-settings) (Am Beispiel von HTTP-CSV)
 

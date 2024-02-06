@@ -32,8 +32,8 @@ The window "Manage Destinations" opens.
 #### Default Destinations
 
 The following destinations are created per default and can not be deleted:
-- [Web Service CSV](./csv-via-http)
+- [HTTP-CSV](./csv-via-http)
 
 *****
 #### Related Links
-- [Extraction Settings](./csv-via-http#csv-settings) (Example Web Service CSV)
+- [Extraction Settings](./csv-via-http#csv-settings) (Example HTTP-CSV)

@@ -18,11 +18,11 @@ Die folgenden Zielumgebungen sind verfügbar:
 
 ### Datenbanken / Data Warehouses
 
-- [Amazon Redshift](./destinationen/redshift) 
+- [Amazon Redshift](./destinationen/amazon-redshift) 
 - [Azure Synapse Analytics (SQl pool)](./destinationen/azure-synapse-analytics) 
 - [Azure SQL Database](./destinationen/microsoft-sql-server) 
 - [EXASolution](./destinationen/exasol) 
-- [IBM DB2](./destinationen/ibm-db2) 
+- [IBM Db2](./destinationen/ibm-db2) 
 - [MySQL](./destinationen/mysql) 
 - [Oracle](./destinationen/oracle) 
 - [PostgreSQL](./destinationen/postgreSQL)
@@ -45,7 +45,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 ### Cloud Speicher
 
 - [Amazon S3](./destinationen/amazon_aws_s3)
-- [Azure Storage](./destinationen/azure-storage) 
+- [Azure Storage (Blob / Data Lake)](./destinationen/azure-storage) 
 - [Google Cloud Storage](./destinationen/google-cloud-storage)
 - [Huawei Cloud OBS](./destinationen/huawei)
 

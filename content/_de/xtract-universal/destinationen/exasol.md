@@ -13,7 +13,7 @@ progressstate: 5
 ---
 
 
-Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine EXASOL-Zieldatenbank.
+Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in eine EXASolution-Zieldatenbank.
 
 ## Voraussetzungen
 

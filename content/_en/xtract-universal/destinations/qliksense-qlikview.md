@@ -15,13 +15,13 @@ progressstate: 5
 
 The following sections describe how Xtract Universal connects with QlikSense or QlikView.
 
-For connection purposes Xtract Universal offers a destination of type *Qlik*. Qlik destination generates a data load script, which needs to be inserted into the data load editor of your Qlik application. Depending on whether you run a QlikSense of QlikView application, Xtract Univeral creates a different data load script.
+For connection purposes Xtract Universal offers a destination of type *QlikSense & QlikView*. The QlikSense & QlikView destination generates a data load script, which needs to be inserted into the data load editor of your Qlik application. Depending on whether you run a QlikSense of QlikView application, Xtract Univeral creates a different data load script.
 
-Running the Qlik application triggers the respective Xtract Universal extraction via the data load script. Xtract Universal sends the extracted SAP data through an http-csv stream directly to your Qlik application.
+Running the Qlik application triggers the respective Xtract Universal extraction via the data load script. Xtract Universal sends the extracted SAP data through an HTTP-CSV stream directly to your Qlik application.
 
 ## Requirements
 
-There are no particular technical prerequisites for using the Qlik destination.
+There are no particular technical prerequisites for using the QlikSense & QlikView destination.
 
 
 ## Connection
@@ -29,7 +29,7 @@ There are no particular technical prerequisites for using the Qlik destination.
 {% include _content/en/xu-specific/destinations/general/connection.md %}	
 
 ### Destination Details
-To use the Qlik destination, no further settings have to be made.
+To use the QlikSense & QlikView destination, no further settings have to be made.
 
 ![XU_qlik_destination](/img/content/XU_qlik_destination.png){:class="img-responsive"}
 
@@ -53,7 +53,7 @@ The following settings can be defined for the destination:
 ## Generating a Data Load Script
 
 ### Displaying the Qlik Data Load Script
-1. Run an extraction with a "Qlik" destination. The window "Run Extraction" opens.
+1. Run an extraction with a "QlikSense & QlikView" destination. The window "Run Extraction" opens.
 ![XU_qlik_generate_Script](/img/content/xu/XU_qlik_generate_Script.png){:class="img-responsive"}
 2. *Optional (when using QlikSense)*: In the *Parameters* section, mark the check boxes for the parameters which you wish to add as SET variables in the QlikSense script.
 3. Click **[Generate Qlik Script]** to generate a data load script. The window "Script" opens.

@@ -13,7 +13,6 @@ progressstate: 5
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
-
 Xtract Universal allows you to extract data from SAP systems and load them to different destination environments.
 The following destinations are available:  
 
@@ -23,7 +22,7 @@ The following destinations are available:
 - [Azure Synapse Analytics (SQL pool)](./destinations/azure-synapse-analytics)
 - [Azure SQL Database](./destinations/microsoft-sql-server) 
 - [EXASolution](./destinations/exasol) 
-- [IBM DB2](./destinations/ibm-db2) 
+- [IBM Db2](./destinations/ibm-db2) 
 - [MySQL](./destinations/mysql) 
 - [Oracle](./destinations/oracle) 
 - [PostgreSQL](./destinations/postgreSQL)
@@ -51,7 +50,7 @@ More information can be found under the *Requirements* section of each destinati
 ### Cloud Storage
 
 - [Amazon S3](./destinations/amazon-aws-s3)
-- [Azure Storage](./destinations/azure-storage) 
+- [Azure Storage (Blob / Data Lake)](./destinations/azure-storage) 
 - [Google Cloud Storage](./destinations/google-cloud-storage)
 - [Huawei Cloud OBS](./destinations/huawei)
 

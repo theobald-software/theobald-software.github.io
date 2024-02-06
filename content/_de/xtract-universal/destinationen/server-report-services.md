@@ -1,23 +1,23 @@
 ---
 ref: destinations-108
 layout: page
-title: SQL Server Reporting Services
-description: SQL Server Reporting Services (SSRS)
+title: Power BI Report Server (SQL Server Reporting Services)
+description: Power BI Report Server (SQL Server Reporting Services) (SSRS)
 product: xtract-universal
 parent: destinationen
 childidentifier: ssrs
 permalink: /:collection/:path
-weight: 108
+weight: 85
 lang: de_DE
 progressstate: 5
 ---
 
-Der folgende Abschnitt behandelt die Verwendung von Xtract Universal für eine SAP Integration in SSRS.
+Der folgende Abschnitt behandelt die Verwendung von Xtract Universal für eine SAP Integration in Power BI Report Server (SSRS).
 
 ## Voraussetzung
 
 
-Um die SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
+Um die Power BI Report Server Destination zu nutzen, benötigen Sie folgende Komponenten:
 
 - Visual Studio 2017 oder höher
 - das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin (Version 2.6.11 oder höher) für Visual Studio.
@@ -31,10 +31,10 @@ Um die SSRS-Destination zu nutzen, benötigen Sie folgende Komponenten:
 
 ## Installation
 
-Um die SSRS-Destination zu nutzen, installieren Sie das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin in Visual Studio.
+Um die Power BI Report Server Destination zu nutzen, installieren Sie das [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) Plugin in Visual Studio.
 Nach der Installation, schließen Sie Visual Studio.
 
-Microsoft SQL Server Reporting Services unterstützt eine große Auswahl von Datenquellen out-of-the-box. 
+Microsoft Power BI Report Server (SQL Server Reporting Services) unterstützt eine große Auswahl von Datenquellen out-of-the-box. 
 Um Xtract Universal als Datenquelle hinzuzufügen, installieren Sie die [Xtract Universal Data Extension](#installation-der-xtract-universal-data-extension) für Visual Studio **und** den Report Server.
 Die Erweiterung muss auf beiden Umgebungen installiert sein, um die von Xtract Universal extrahierten Daten zu konsumieren, siehe folgende Grafik:
 
@@ -105,14 +105,14 @@ Die folgenden Einstellungen können für die Destination definiert werden.
 ## SSRS in Visual Studio
 
 
-Der folgende Abschnitt zeigt, wie man in der SQL Server Reporting Services (SSRS) Umgebung über Xtract Universal auf SAP-Daten zugreift.
+Der folgende Abschnitt zeigt, wie man in der Power BI Report Server (SSRS) Umgebung über Xtract Universal auf SAP-Daten zugreift.
 
 ### SAP-Daten im Xtract Universal Designer extrahieren
 
-Um SAP-Daten in der SQL Server Report Server (SSRS) Umgebung zur Verfügung zu stellen, wird im ersten Schritt eine entsprechende Extraktion im Xtract Universal Designer erstellt.
+Um SAP-Daten in der SSRS-Umgebung zur Verfügung zu stellen, wird im ersten Schritt eine entsprechende Extraktion im Xtract Universal Designer erstellt.
 
 Informationen bzgl. der Erstellung von Extraktionen finden Sie unter [Erste Schritte](../erste-schritte).<br>
-Verwenden Sie für die Extraktion die [*SQL Server Reporting Service* Destination](#verbindung).
+Verwenden Sie für die Extraktion die [*Power BI Report Server* Destination](#verbindung).
 
 
 ### Eine Extraktion als Datenquelle in Visual Studio hinzufügen
@@ -147,7 +147,7 @@ Die folgenden Schritte beschreiben, wie man in Visual Studio einen Report mit ei
 3. Wählen Sie im Assistenten eine Datenquelle und klicken Sie auf **[Next]**.
 4. Klicken Sie auf **[Query Builder...]**. Das Fenster "Query Designer" öffnet sich.
 5. Wählen Sie eine Xtract Universal Extraktion aus dem Drop-Down-Menü aus (5). <br>
-Wenn keine Extraktionen angezeigt werden, prüfen Sie den *connection string* (3) in der Datenquelle und prüfen Sie, ob in Xtract Universal eine Extraktion mit einer *SQL Server Reporting Services* Destination existiert.
+Wenn keine Extraktionen angezeigt werden, prüfen Sie den *connection string* (3) in der Datenquelle und prüfen Sie, ob in Xtract Universal eine Extraktion mit einer *Power BI Report Server (SQL Server Reporting Services)* Destination existiert.
 Wenn Ihnen der unten abgebildete Editor nicht angezeigt wird, klicken Sie auf **Edit as Text**.
 ![Query-Designer](/img/content/xu/ssrs/Query-Designer.png){:class="img-responsive"}
 6. Optional: Bearbeiten Sie die [Laufzeitparameter](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter) der Extraktion (6). 

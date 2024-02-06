@@ -300,7 +300,7 @@ Eine Liste aller Extraktionen, die Daten in eine bestimmte Destination schreiben
 ```http://[host]:[port]/config/extractions/?destinationType=[typename]```
 
 Mögliche Einträge für [typename] sind:<br>
-*Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASOL, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
+*Unknown, Alteryx, AlteryxConnect, AzureDWH, AzureBlob, CSV, DB2, EXASolution, FileCSV, FileJSON, GoodData, GoogleCloudStorage, HANA, HTTPJSON, MicroStrategy, MySQL, ODataAtom,Oracle, Parquet, PostgreSQL, PowerBI, PowerBIConnector, Qlik, Redshift, S3Destination, Salesforce, SharePoint, Snowflake, SQLServer, SqlServerReportingServices, Tableau, Teradata, Vertica*
 
 Beispiel: <br>
 ```https://todd.theobald.local:8165/config/extractions/?destinationType=FileCSV``` ruft eine Liste aller Extraktionen auf, die Daten in eine csv-Datei schreiben.

@@ -1,7 +1,7 @@
 ---
 ref: destinations-11
 layout: page
-title: Webservice - CSV
+title: HTTP - CSV
 description: CSV (via HTTP)
 product: xtract-universal
 parent: destinationen
@@ -11,7 +11,7 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=csv-via-http
 ---
 
-Die Destination *HTTP - CSV*  liefert die extrahierten Daten im generischen CSV-Format über einen HTTP-Stream bzw. Webservice. 
+Die Destination *HTTP-CSV*  liefert die extrahierten Daten im generischen CSV-Format über einen HTTP-Stream bzw. Webservice. 
 CSV (via HTTP) wird von mehreren Produkten unterstützt. Die folgenden Produkte wurden getestet: Layer2, INFONEA und KNIME. 
 
 ## Verbindung

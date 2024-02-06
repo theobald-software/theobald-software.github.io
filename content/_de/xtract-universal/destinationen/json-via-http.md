@@ -1,7 +1,7 @@
 ---
 ref: destinations-10
 layout: page
-title:  Webservice - JSON
+title: HTTP - JSON
 description: JSON (via HTTP)
 product: xtract-universal
 parent: destinationen

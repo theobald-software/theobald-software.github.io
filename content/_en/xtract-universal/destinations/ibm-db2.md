@@ -1,8 +1,8 @@
 ---
 ref: destinations-50
 layout: page
-title: IBM DB2
-description: IBM DB2
+title: IBM Db2
+description: IBM Db2
 product: xtract-universal
 parent: destinations
 childidentifier: ibm-db2
@@ -13,13 +13,13 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=db2
 progressstate: 5
 ---
 
-The following section describes the loading of the SAP extraction data to an IBM DB2 destination.
+The following section describes the loading of the SAP extraction data to an IBM Db2 destination.
 
 
 ## Requirements
 
 For the use of this destination, the appropriate version (32bit for 32bit OS, 64bit for 64bit OS) of the ADO .NET driver must be installed.  Select the *IBM Data Server Driver Package* and then the *IBM Data Server Driver Package (Windows AMD64 and Intel EM64T)* or 
-*IBM Data Server Driver Package (Windows 32-bit AMD and Intel x86), see [IBM Data Server Client Packages - Version 11.5 GA](https://www.ibm.com/support/pages/node/387577.
+*IBM Data Server Driver Package (Windows 32-bit AMD and Intel x86), see [IBM Data Server Client Packages - Version 11.5 GA](https://www.ibm.com/support/pages/node/387577).
 
 
 If a fixed version is available, download the fixed version of the provider from the software vendor's website, see [Overview IBM Data Server Client Packages](https://www.ibm.com/support/pages/node/323035).<br> 
@@ -39,7 +39,7 @@ Enter the .Net provider for DB2. To install the provider refer to requirements.
 Enter the name or IP of the DB2 server and the port number. 
 
 **Username / Password**<br>
-IBM DB2 authentication user name and password.
+IBM Db2 authentication user name and password.
 
 **Database name**<br>
 Enter the name of the IBM database.
