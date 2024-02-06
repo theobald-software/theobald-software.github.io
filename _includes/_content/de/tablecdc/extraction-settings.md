@@ -30,3 +30,9 @@ Diese Einstellung bezieht sich i.d.R. auf Destinationen, bei denen das Schreiben
 **Background job timeout (seconds)** legt den Timeout für Extraktionen fest, die als Hintergrund-Job ausgeführt werden. <br>
 Der Standardwert ist 180 Sekunden. Der maximale Wert für den Timeout liegt bei 3600 Sekunden. 
 
+### Function Module
+Bezeichnet den Namen des verwendeten Funktionsbausteins für die Datenextraktion. Dieses Feld wird automatisch befüllt in Abhängigkeit davon, welche Funktionsbausteine auf Ihrem SAP System vorhanden sind.
+Folgende Funktionsbausteine können zur Extraktion von Tabellen verwendet werden: <br>
+
+- [/THEO/READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion#installation-von-theoread_table)
+- Z_THEO_READ_TABLE (für SAP Versionen > 7.40 SP05)

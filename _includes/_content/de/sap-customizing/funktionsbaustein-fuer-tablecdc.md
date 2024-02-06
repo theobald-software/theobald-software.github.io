@@ -2,7 +2,7 @@
 Die Report Komponente benötigt die Installation der Z-Funktionsbausteine /THEO/CDC und THEO/READ_TABLE auf Ihrem SAP-System.<br>
 Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installieren, wenden Sie sich an Ihre SAP-Basis-Abteilung.
 
-### Installation von Z_THEO_DELETE_LOG_ENTRIES
+### Installation von THEO_CDC_ECC oder THEO_CDC_S4 #
 
 - Installieren Sie die Funktionsgruppe THEO_CDC_ECC, wenn Sie ein SAP ECC-System verwenden.
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_ECC.zip`.

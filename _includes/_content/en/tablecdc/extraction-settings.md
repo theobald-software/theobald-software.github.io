@@ -2,6 +2,7 @@
 ![table-cdc-extraction-settings](/img/content/tablecdc/table-cdc-extraction-settings.png){:class="img-responsive"}
 
 ### Initial Load
+
 #### Package size
 The extracted data is split into packages of the defined size. The default value is 50000 lines. <br>
 A package size between 20000 and 50000 is advisable for large amounts of data. 
@@ -30,3 +31,11 @@ SAP recommends a Shared Memory size of 800MB~1.5GB for a production/test system 
 **Background job timeout (seconds)** sets a timeout period for extractions that run in background mode.<br>
 The default value is 180 seconds. The maximum timeout value is 3600 seconds. 
 
+### Function Module
+
+Specifies the name of the function module used for data extraction. 
+This field is filled automatically depending on what function modules are installed on your SAP system.
+The following function modules can be used to extract tables: <br>
+
+- [/THEO/READ_TABLE](../sap-customizing/custom-function-module-for-table-extraction#installation-of-theoread_table)
+- Z_THEO_READ_TABLE (for SAP version > 7.40 SP05)
