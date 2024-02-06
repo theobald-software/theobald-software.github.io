@@ -1,5 +1,5 @@
 ---
-ref: destinations-22
+ref: destinations-23
 layout: page
 title: Amazon S3
 description: Amazon S3
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: destinations
 childidentifier: amazon-aws-s3
 permalink: /:collection/:path
-weight: 22
+weight: 23
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=amazon-aws-s3
 progressstate: 5

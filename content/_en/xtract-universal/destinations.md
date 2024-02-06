@@ -50,7 +50,7 @@ More information can be found under the *Requirements* section of each destinati
 ### Cloud Storage
 
 - [Amazon S3](./destinations/amazon-aws-s3)
-- [Azure Storage](./destinations/azure-storage) 
+- [Azure Storage (Blob / Data Lake)](./destinations/azure-storage) 
 - [Google Cloud Storage](./destinations/google-cloud-storage)
 - [Huawei Cloud OBS](./destinations/huawei)
 

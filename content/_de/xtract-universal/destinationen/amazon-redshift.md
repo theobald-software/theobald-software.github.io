@@ -1,5 +1,5 @@
 ---
-ref: destinations-23
+ref: destinations-22
 layout: page
 title: Amazon Redshift
 description: Amazon Redshift
@@ -7,7 +7,7 @@ product: xtract-universal
 parent: destinationen
 childidentifier: redshift
 permalink: /:collection/:path
-weight: 23
+weight: 22
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=redshift
 progressstate: 5

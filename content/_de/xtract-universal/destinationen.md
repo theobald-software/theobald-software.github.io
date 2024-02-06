@@ -45,7 +45,7 @@ Weitere Informationen bzgl. der Treiber erhalten Sie im Kapitel *Voraussetzungen
 ### Cloud Speicher
 
 - [Amazon S3](./destinationen/amazon_aws_s3)
-- [Azure Storage](./destinationen/azure-storage) 
+- [Azure Storage (Blob / Data Lake)](./destinationen/azure-storage) 
 - [Google Cloud Storage](./destinationen/google-cloud-storage)
 - [Huawei Cloud OBS](./destinationen/huawei)
 
