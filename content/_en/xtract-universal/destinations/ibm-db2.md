@@ -19,7 +19,7 @@ The following section describes the loading of the SAP extraction data to an IBM
 ## Requirements
 
 For the use of this destination, the appropriate version (32bit for 32bit OS, 64bit for 64bit OS) of the ADO .NET driver must be installed.  Select the *IBM Data Server Driver Package* and then the *IBM Data Server Driver Package (Windows AMD64 and Intel EM64T)* or 
-*IBM Data Server Driver Package (Windows 32-bit AMD and Intel x86), see [IBM Data Server Client Packages - Version 11.5 GA](https://www.ibm.com/support/pages/node/387577.
+*IBM Data Server Driver Package (Windows 32-bit AMD and Intel x86), see [IBM Data Server Client Packages - Version 11.5 GA](https://www.ibm.com/support/pages/node/387577).
 
 
 If a fixed version is available, download the fixed version of the provider from the software vendor's website, see [Overview IBM Data Server Client Packages](https://www.ibm.com/support/pages/node/323035).<br> 
