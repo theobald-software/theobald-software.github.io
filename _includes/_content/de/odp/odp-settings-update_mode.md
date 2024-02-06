@@ -21,4 +21,7 @@ Ein Abonnement wird gelöscht, wenn die Fehlermeldung "Illegale Änderung der Se
 **Delta recovery:**<br/>
 wiederholt das letzte Delta-Update.
 
+**Direct read (without ODQ):**<br/>
+Liest alle verfügbaren Daten direkt und umgeht die ODQ (Operational Delta Queue).
+Diese Option eignet sich nicht zum Extrahieren großer Datenmengen, da keine Paketierung verfügbar ist. Direct read ist der einzige  Update Mode, der Datenaggregationsfunktionen (*Maximum*, *Minimum* and *Sum*) unterstützt.
 
