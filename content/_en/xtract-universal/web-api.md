@@ -6,15 +6,16 @@ description: Web-API
 product: xtract-universal
 parent: xtract-universal
 permalink: /:collection/:path
-weight: 100
+weight: 17
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
 ---
 
+The following section contains information about Xtract Universal's web API.
+
 Xtract Universal offers a web API that allows running extractions and querying meta information and extraction logs from Xtract Universal through web calls.
 The web API returns the result as an http-json stream.
 
-The following section contains information about available metadata and URLs.
 
 ### Base URL Format
 
@@ -34,20 +35,25 @@ The basic URL for web calls uses the following format: `[protocol]://[host or IP
 ### Get Version
 
 ```
-[protocol]://[host]:[port]/CurrentVersion
+[protocol]://[host]:[port]/version
 ``` 
 
-Returns the software version of Xtract Universal. \* This endpoint is marked as deprecated. \*
+Returns the software version of the Xtract Universal server installation in JSON format. 
+
+#### Example 
+
+`http://sherri.theobald.local:8065/version`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "version": "6.2.13.4"
+}
+{% endhighlight %}
+</details>
 
 <!---
-/version
-Returns the current version of the server installation as JSON.
-
-Response:
-
-{ "version": "String" }
-
-
 /version-history
 Returns the version history entries as JSON.
 
@@ -67,15 +73,29 @@ Response:
 }
 -->
 
-### Get Destinations
+### Get Destination Details
 
 ```
 [protocol]://[host]:[port]/config/destinations
 ```  
 
 Returns a list of all defined destinations. 
-\* This endpoint is marked as deprecated. \* <br>
-For a list of extractions with a specific destination, see [Get Extraction Details](#get-extraction-details).
+The result contains the following elements:
+
+|  Item   | Description    |
+|--------------|---------|
+| name | name of the target connection |
+| type | connection type |
+| host | host name, if applicable |
+| port | port name, if applicable |
+| database | database name, if applicable | 
+| user | user name in the connection, if applicable |  
+| schema | schema name, if applicable |
+| directory | directory name, if applicable |
+
+
+{: .box-tip } 
+**Tip:**  For a list of extractions with a specific destination, see [Get Extraction Details](#get-extraction-details).
 
 #### Example 
 
@@ -181,9 +201,7 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 
 #### Examples
 
-```
-http://sherri.theobald.local:8065/config/extractions/
-```
+`http://sherri.theobald.local:8065/config/extractions/`
 
 <details>
 <summary>Click here to show the response body</summary>
@@ -584,15 +602,14 @@ Stops extractions. If no parameter is supplied all running extractions are cance
 [protocol]://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]
 ``` 
 
-Returns the status of a (running) extraction at the specified timestamp: 
+Returns the status of a (running) extraction at the specified timestamp. 
+The timestamp corresponds to the *startedAt* element returned by `[protocol]://[host]:[port]/config/extractions/`, see [Get Extraction Details](#get-extraction-details).
 
-| State            | Explanation                                                  |
+| State            | Description                                                  |
 |------------------|--------------------------------------------------------------|
 | Running          | The extraction is running.                                   |
 | FinishedNoErrors | The extraction has been finished without errors.             |
 | FinishedErrors   | The extraction has been finished but with minimum one error. |
-
-The timestamp corresponds to the *startedAt* property returned by `[protocol]://[host]:[port]/config/extractions/`.
 
 #### Example
 
@@ -625,210 +642,252 @@ All runs of extraction 'KNA1' aborted.
 {% endhighlight %}
 </details>
 
-### Get Logs
+### Get Extraction Logs
 
 ```
-[protocol]://[host]:[port]/log/?req_type=all
-```    
+[protocol]://[host]:[port]/logs/extractions
+``` 
 
-Returns a list of all logs. 
+Returns a list of extraction runs. 
 
 #### Parameters
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```&past_days=[number_of_days]```  |   Returns all logs since n days. |
-| ```&min=[yyyy-MM-dd]```  |   Returns all logs since the specified date. |
-| ```&min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs since the specified timestamp. |
-| ```&max=[yyyy-MM-dd]```  |   Returns all logs until the specified date. |
-| ```&max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns all logs until the specified timestamp. |
+| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction runs after the specified date and time. |
+| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction runs before the specified date and time. |
+| ```/[extraction-name]```  |   Returns all extraction runs of the specified extraction. |
+| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction run of the specified extraction with the specified timestamp. |
+| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Returns the extraction log of the specified extraction with the specified timestamp. |
 
-#### Server Logs
+
+#### Example
+
+`http://sherri.theobald.local:8065/logs/extractions?min=2023-08-17_11:20:44.029`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "extractions": 
+    [
+        {
+            "extractionName": [
+                "0MATERIAL"
+            ],
+            "runs": [
+                {
+                    "rowCount": 200,
+                    "duration": "00:00:00.114",
+                    "state": "FinishedNoErrors",
+                    "startedAt": "2023-08-17_11:31:44.029"
+                }
+            ]
+        }
+        {
+            "extractionName": [
+                "KNA1"
+            ],
+            "runs": [
+                {
+                    "rowCount": 0,
+                    "duration": "00:00:00.214",
+                    "state": "FinishedErrors",
+                    "webServerLog": "2024-02-05_08:13:48.132",
+                    "startedAt": "2024-02-05_08:14:13.771"
+                },
+                {
+                    "rowCount": 9995,
+                    "duration": "00:00:01.429",
+                    "state": "FinishedNoErrors",
+                    "webServerLog": "2024-02-05_10:20:51.851",
+                    "startedAt": "2024-02-05_10:20:52.344"
+                }
+            ]
+        }
+    ]
+}
+{% endhighlight %}
+</details>
+
+`http://sherri.theobald.local:8065/logs/extractions/KNA1`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "runs": [
+        {
+            "rowCount": 0,
+            "duration": "00:00:00.214",
+            "state": "FinishedErrors",
+            "webServerLog": "2024-02-05_08:13:48.132",
+            "startedAt": "2024-02-05_08:14:13.771"
+        },
+        {
+            "rowCount": 9995,
+            "duration": "00:00:01.429",
+            "state": "FinishedNoErrors",
+            "webServerLog": "2024-02-05_10:20:51.851",
+            "startedAt": "2024-02-05_10:20:52.344"
+        }
+    ]
+}
+{% endhighlight %}
+</details>
+
+`http://sherri.theobald.local:8065/logs/extractions/KNA1/2024-02-05_10:20:52.344`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "rowCount": 9995,
+    "duration": "00:00:01.429",
+    "state": "FinishedNoErrors",
+    "webServerLog": "2024-02-05_10:20:51.851",
+    "startedAt": "2024-02-05_10:20:52.344"
+}
+{% endhighlight %}
+</details>
+
+`http://sherri.theobald.local:8065/logs/extractions/KNA1/2024-02-05_10:20:52.344/log`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "rowCount": 9995,
+    "duration": "00:00:01.429",
+    "state": "FinishedNoErrors",
+    "webServerLog": "2024-02-05_10:20:51.851",
+    "startedAt": "2024-02-05_10:20:52.344",
+    "logEntries": [
+        {
+            "timestamp": "2024-02-05_10:20:52.377",
+            "logLevel": "Info",
+            "source": "Table",
+            "message": "Xtract Universal server version: 999.999.999.691"
+        },
+        {
+            "timestamp": "2024-02-05_10:20:52.470",
+            "logLevel": "Debug",
+            "source": "Table",
+            "message": "Attempting to load Theobald.Extractors.Table.TableExtractionDefinition information for extraction KNA1"
+        },
+		
+		...
+		
+        {
+            "timestamp": "2024-02-05_10:20:53.774",
+            "logLevel": "Info",
+            "source": "Table",
+            "message": "Extraction finished with status FinishedNoErrors."
+        },
+        {
+            "timestamp": "2024-02-05_10:20:53.774",
+            "logLevel": "Debug",
+            "source": "Table",
+            "message": "Writing run information."
+        },
+        {
+            "timestamp": "2024-02-05_10:20:53.779",
+            "logLevel": "Info",
+            "source": "Table",
+            "message": "Extraction run information was updated."
+        }
+    ]
+}
+{% endhighlight %}
+</details>
+
+{: .box-note } 
+**Note:** For information on how to interpret logs, see [Logging](./logging/).
+
+### Get Server Logs
 
 ```
-[protocol]://[host]:[port]/log/?req_type=server
-```   
+[protocol]://[host]:[port]/logs/web
+```  
 
-Returns a list of timestamps that have server logs.
+Returns a list of timestamps that correspond to server logs.
+
+#### Parameters
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```&name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the logs of the specified extraction at the specified timestamp. |
+| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs after the specified date and time. |
+| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs before the specified date and time. |
+| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server log entries with the specified timestamp. |
 
-#### Extraction Logs
+#### Example
 
-```
-[protocol]://[host]:[port]/log/?req_type=extraction
-```
+`http://sherri.theobald.local:8065/logs/web?min=2024-02-05_12:39:29.022`
 
-| Parameter    | Description  | 
-|-----------|--------------|
-| ```&name=[extraction_name]```  |   Returns the logs of the specified extraction. |
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "logs": 
+    [
+        "2024-02-05_12:44:44.741",
+        "2024-02-05_13:09:11.899",
+        "2024-02-07_08:52:17.487",
+        "2024-02-07_08:58:14.920",
+        "2024-02-07_10:44:21.652",
+        "2024-02-07_10:50:58.202",
+        "2024-02-07_10:54:25.552"
+    ]
+}
+{% endhighlight %}
+</details>
 
+`http://sherri.theobald.local:8065/logs/web/2024-02-05_12:44:44.741`
 
-### ???
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "logEntries": 
+    [
+        {
+            "timestamp": "2024-02-05_12:44:44.815",
+            "logLevel": "Info",
+            "source": "WebServerHandler",
+            "message": "Client [fe80::d3ac:77ba:ce0f:83b1%8]:55904"
+        },
+        {
+            "timestamp": "2024-02-05_12:44:45.012",
+            "logLevel": "Debug",
+            "source": "HttpServer",
+            "message": "Reading..."
+        },
+        {
+            "timestamp": "2024-02-05_12:44:45.060",
+            "logLevel": "Info",
+            "source": "HttpServer",
+            "message": "Processing /."
+        },
+        {
+            "timestamp": "2024-02-05_12:44:45.251",
+            "logLevel": "Info",
+            "source": "WebServer",
+            "message": "Attempting to load server permissions."
+        },
+		
+		...
+        
+        {
+            "timestamp": "2024-02-05_12:44:45.808",
+            "logLevel": "Debug",
+            "source": "HttpServer",
+            "message": "Reading..."
+        }
+    ]
+}
+{% endhighlight %}
+</details>
 
-| ```[protocol]://[host]:[port]/ResultName?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]``` | Returns the name of the result file for a specific timestamp. |
-
-
-
-
-
-## Query Extraction Logs
-
-
-The server provides access to various metadata and logging information via HTTP. <br>
-
-**Listing of all defined extractions**
-
-
-The log contains the following columns:<br>
-- **Name**: contains the name of the extraction.
-- **Type**: contains the extraction type.
-- **Source**: contains the name of the source connection.
-- **Destination**: contains the name of the target connection.
-- **LastRun**: contains the timestamp of the last execution. 
-- **RowCount**: contains the number of last extracted data records. 
-- **LastChange**: contains the timestamp of the last change. 
-- **Created**: contains the timestamp of the creation. 
-
-**List of all defined target connections**
-
-The following URL
-`
-http://localhost:8065/destinations
-`
-lists the defined target connections. 
-
-Name,Type,Host,Port,Database,User,Schema,Directory<br>
-alteryx,Alteryx,,,,,,<br>
-http-csv,CSV,,,,,,<br>
-http-odata-atom,ODataAtom,,,,,<br>
-sqlserver,SQLServer,localhost,1433,SAPDemos,test,,
-
-The log contains the following columns:
-- **Name**: contains the name of the target connection.
-- **Type**: contains the connection type.
-- **Host**: contains the host name, if applicable.
-- **Port**: contains the port name, if applicable.
-- **Database**: contains the database name, if applicable. 
-- **User**: contains the user name in the connection, if applicable.  
-- **Schema**: contains the schema name, if applicable.  
-- **Directory**: contains the directory name, if applicable.
-
-**Name of the result table/file for a specific timestamp**
-
-Under
-`
-http://localhost:8065/ResultName?name=kna1&timestamp=2016-08-04_15:17:02.025
-`
-there is the name of the result table/file for a specific timestamp (this only works if the destination/extraction-specific settings have not been changed since the run) 
-
-**Serverlog**
-
-The server creates a separate log for each day with the corresponding timestamp. You can access the list of the server logs with the following parameter **req_type=server**:<br>
-
-`
-http://localhost:8065/log/?req_type=server&timestamp
-`
-
-
-**Server log of a specified timestamp**
-
-You can access the server log of a specified timestamp (e.g. 2010-04-28_00:00:00.000) with the following parameters **req_type=server &
-timestamp=2010-04-28_00:00:00.000** :
-
-`
-http://localhost:8065/log/?req_type=server&timestamp=2010-04-28_00:00:00.000
-`
-
-You can use the shortdate format instead of the timestamp format:
-
-`
-http://localhost:8065/log/?req_type=server&timestamp=2010-04-28
-`
-
-**Log of a specified extraction**
-
-You can access the log of a specified extraction (e.g. vardemo)  with the following  parameters: **req_type=extraction&name=vardemo** 
-
-`
-http://localhost:8065/log/?req_type=extraction&name=vardemo
-`
-
-**Log of a specified extraction at a specified timespamp**
-
-You can access the server log of a specified timestamp (e.g. 2010-04-28_00:00:00.000) with the following parameters **req_type=extraction&name=vardemo & 
-timestamp=2010-04-27_10:24:47.674 :**
-
-`
-http://localhost:8065/log/?req_type=extraction&name=vardemo&timestamp=2010-04-27_10:24:47.674
-`
-
-**All logs**
-
-You can access the list of all logs with the following parameter **req_type=all**:
-
-`
-http://localhost:8065/log/?req_type=all
-`
-
-**All logs since n days**
-
-You can access all logs since n days with the following parameters **req_type=all&past_days=n**:
-
-`
-http://localhost:8065/log/?req_type=all&past_days=1
-`
-
-**All logs since a specified timestamp**
-
-You can access all logs since a specified timestamp with the following parameters **req_type=all&min=2010-04-28_09:49:17.831:**
-
-`
-http://localhost:8065/log/?req_type=all&min=2010-04-28_09:49:17.831
-`
-
-You can use a short date instead of a min timestamp.
-
-
-**All logs until a specified timestamp**
-
-You can access all logs until a specified timestamp with the following parameters  **req_type=all&min=2010-04-28_09:49:17.831**:
-
-`
-http://localhost:8065/log/?req_type=all&max=2010-04-28_09:49:17.831
-`
-
-You can use a short date instead of a min timestamp.
-All logs between two specified timestamps
-
-Use both parameters min and max to access all logs between two specified timestamps.
-
-**Log content**
-
-The log output contains the following columns:
-
-**LineCount**: contains the row number.<br>
-**Name**: contains the name of the extraction or the server name in case of a server log.<br>
-**Timestamp**: contains the timestamp. <br>
-**State**: contains a number between 2 and 4 for a server extraction or the number 5 for a server log.<br>
-**StateDescr**: contains the state description.
-
-| State | StateDescr       | Explanation                                                  |
-|-------|------------------|--------------------------------------------------------------|
-| 2     | Running          | The extraction is running.                                   |
-| 3     | FinishedNoErrors | The extraction has been finished without errors.             |
-| 4     | FinishedErrors   | The extraction has been finished but with minimum one error. |
-| 5     | NotAvailable     | The status for a server log.                                 |
-
-- **LogLevel**: has one of the following values **Error**, **Info** or **Debug** and describes the log type.
-- **Source**: is the technical name of the component that generates the log info.
-- **Mode**: has the value console or service.
-- **Message**: is the log content. 
-
-
-
-
-
+{: .box-note } 
+**Note:** For information on how to interpret logs, see [Logging](./logging/).
 
