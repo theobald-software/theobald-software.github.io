@@ -16,18 +16,7 @@ The following section contains information about Xtract Universal's web API.
 Xtract Universal offers a web API that allows running extractions and querying meta information and extraction logs from Xtract Universal through web calls.
 The web API returns the result as an http-json stream.
 
-
-### Base URL Format
-
-The basic URL for web calls uses the following format: `[protocol]://[host or IP address]:[port]/`.
-
-#### Examples
-
-| Protocol	  | Syntax	      | Example       |
-|:----------- | :------------ | :------------ | 
-| HTTP	| `http://[host].[domain]:[port]` | `http://sherri.theobald.local:8065` | 
-| HTTP	| `http://[host]:[port]` | 	`http://localhost:8065` | 
-| HTTPS | `https://[host].[domain]:[port]` | `https://sherri.theobald.local:8165` <br>Requires a dedicated host name and X.509 certificate, see [web server settings](./server/server-settings#web-server). | 
+{% include _content/en/xu-specific/advanced-techniques/api-base-url.md %}
 
 {: .box-note } 
 **Note:** Make sure to use the correct ports, see [Server Ports](./server/ports).
@@ -158,16 +147,16 @@ Returns a list of all defined extractions in JSON format. The result contains th
 | technical name|  name of the extracted SAP object |
 | source|  name of the source connection |
 | destination| name of the target connection |
-| latestRun| contains rowCount, duration, state and startedAt |
+| latestRun| contains *rowCount*, *duration*, *state* and *startedAt* of the latest extraction run |
 | row count| number of the last extracted data records |
 | duration | duration of the last execution |
 | state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
 | startedAt| timestamp of the last execution |
-| created| contains machine, timestamp and user |
+| created| contains *machine*, *timestamp* and *user* of when the extraction was created|
 | machine| machine on which the extraction was created |
 | timestamp| timestamp of the creation |
 | user| user that created the extraction |
-| lastChange| contains machine, timestamp and user |
+| lastChange| contains *machine*, *timestamp* and *user* of when the extraction was last changed|
 | machine| machine on which the extraction was last changed|
 | timestamp| timestamp of the last change |
 | user| user that last changed the extraction |
@@ -547,6 +536,7 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 {% endhighlight %}
 </details>
 
+
 ### Run Extractions
 
 ```
@@ -554,7 +544,8 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 ```
 
 Runs the specified extraction.
-\* This endpoint is marked as deprecated. \*<br>
+\* This endpoint is marked as deprecated and will be replaced by `/run/[extraction_name]` in the future. \*
+
 The response of a web service call contains the following information:
 
 |     | Response | Description | 
@@ -571,7 +562,11 @@ The response of a web service call contains the following information:
 |-----------|--------------|
 | ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified runtime parameters. |
 | ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
-| ```&wait=false``` |   Runs the specified extraction asynchronously and returns the timestamp in the HTTP body. Default (true) waits for the extraction to finish. |
+| ```&wait=false``` |   Runs the specified extraction asynchronously and returns the timestamp in the HTTP body. Default (true) waits for the extraction to finish. \* This endpoint is marked as deprecated and will be replaced by `/start/[extraction_name]` in the future. \*|
+
+{: .box-tip }
+**Tip:** You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](../getting-started/run-an-extraction#run-extraction).{% endif %}
+
 
 #### Example 
 
@@ -596,6 +591,29 @@ POST starts the extraction with name $name and returns the run status immediatel
 Stops extractions. If no parameter is supplied all running extractions are cancelled. A parameter may be given in the path in for form of /stop/yyyy-MM-dd_hh:mm:ss.fff to identify a single extraction run or /stop/$name to stop all running instances of a single extraction definition.
 -->
 
+
+### Abort Extraction
+
+```
+[protocol]://[host]:[port]/abort?name=[extraction_name]
+```  
+
+Aborts the specified extraction.
+If the abortion is successful, a confirmation message is returned in the HTTP body. 
+
+\* This endpoint is marked as deprecated and will be replaced by `/stop/[extraction_name]` in the future. \*
+
+#### Example
+
+`http://sherri.theobald.local:8065//abort?name=KNA1`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight csv %}
+All runs of extraction 'KNA1' aborted.
+{% endhighlight %}
+</details>
+
 ### Get Status of an Extraction
 
 ```
@@ -603,7 +621,7 @@ Stops extractions. If no parameter is supplied all running extractions are cance
 ``` 
 
 Returns the status of a (running) extraction at the specified timestamp. 
-The timestamp corresponds to the *startedAt* element returned by `[protocol]://[host]:[port]/config/extractions/`, see [Get Extraction Details](#get-extraction-details).
+The timestamp corresponds to the *startedAt* element returned by [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) or [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs).
 
 | State            | Description                                                  |
 |------------------|--------------------------------------------------------------|
@@ -622,33 +640,24 @@ FinishedNoErrors
 {% endhighlight %}
 </details>
 
-### Abort Extraction
-
-```
-[protocol]://[host]:[port]/abort?name=[extraction_name]
-```  
-
-Aborts the specified extraction.
-If the abortion is successful, a confirmation message is returned in the HTTP body.
-
-#### Example
-
-`http://sherri.theobald.local:8065//abort?name=KNA1`
-
-<details>
-<summary>Click here to show the response body</summary>
-{% highlight csv %}
-All runs of extraction 'KNA1' aborted.
-{% endhighlight %}
-</details>
-
 ### Get Extraction Logs
 
 ```
 [protocol]://[host]:[port]/logs/extractions
 ``` 
 
-Returns a list of extraction runs. 
+Returns a list of extraction runs. The result contains the following elements:
+
+|  Item   | Description    |
+|--------------|---------|
+| extractionName  | name of the extraction |
+| runs  | contains *rowCount*, *duration*, *state*, *webServerLog* and *startedAt* of extraction runs |
+| row count| number of extracted data records |
+| duration | duration of the execution |
+| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| webServerLog| timestamp of the corresponding [server log](#get-server-logs) |
+| startedAt| timestamp of the execution |
+
 
 #### Parameters
 

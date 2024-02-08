@@ -79,7 +79,7 @@ The following HTTP requests are possible:
 - running an extraction
 - Emptying the result cache of an extraction
 - Canceling all runs of an extraction
-- REST API requests e.g., [Logs](./logging/logging-access-via-http), [Metadata](./advanced-techniques/metadata-access-via-http-json) etc.
+- [Web API requests](./web-api)
 
 {: .box-tip }
 **Tip:** The Theobald.Xu.Web.Listener.exe logs its actions in log files. 
