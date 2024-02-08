@@ -6,8 +6,6 @@ description: Step 5 - Load extracted Data to a Destination
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-redirect_from:
-  - xtract-universal/getting-started/load-an-extraction-into_database
 weight: 5
 lang: en_GB
 progressstate: 5

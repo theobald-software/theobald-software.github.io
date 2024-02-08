@@ -5,6 +5,8 @@ title: Web-API
 description: Web-API
 product: xtract-universal
 parent: xtract-universal
+redirect_from:
+  - en/xtract-universal/advanced-techniques/metadata-access-via-http
 permalink: /:collection/:path
 weight: 17
 lang: en_GB
