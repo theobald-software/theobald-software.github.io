@@ -20,11 +20,11 @@ Before integrating a service, test the service directly in yunIO or a REST clien
 - Click ![copy](/img/content/yunio/icons/run.png) to open the *Run Service* menu, where you can define parameters and run the service directly in yunIO.<br>
 ![yunIO-Services](/img/content/yunio/yunio-run-services1.png){:class="img-responsive" }
 
-#### Run Service Menu
+#### Running Services in yunIO
 
 Follow the steps below to testrun a service in yunIO:
 1. If [Global Access Control](./access-control#global-access-control) and/or [Service Access Control](./access-control#service-access-control) is enabled, enter valid credentials (1).
-2. If the service requires input parameters, enter values for the parameters listed under *Input Parameters* (2).
+2. If the service requires input parameters, enter values for the parameters listed under *Input Parameters* (2). Use the **[ + ]** button to display nested items.
 The depicted example uses an input parameter *NAME*.<br>
 ![Run-Service](/img/content/yunio/run-service.png){:class="img-responsive" }
 3. Click **[Run]**. The response body of the service is displayed under *Output Parameters* (3).<br>
@@ -35,16 +35,15 @@ If the response body returns an error message, click **[Logs]** to open the [log
 {: .box-tip}
 **Tip:** Click **[Edit]** to edit the service or add parameters.
 
-#### Control Buttons
+**Control Buttons:**<br>
+The control buttons in the Run Service menu adjust how input and output parameters are displayed.
 
-The control buttons in the Run Service menu adjust the display of input and output parameters.
-
-- **[Collapse]** - collapses all parameter items.
-- **[Expand]** - expands all parameter items.
-- **[Maximize]** - displays the parameters in a full screen view. To close the full screen view, click **[Close]**.
-- **[JSON]** - displays the parameters in JSON format.
-- **[To top]** - scrolls to the top of the parameter list.
-- **[Reset]** - removes all defined input parameters. This option is only available for input parameters.
+- [![collapse](/img/content/yunio/icons/run-collapse.svg){:class="img-responsive" style="display:inline" width="20px"}] collapses all parameter items.
+- ![expand](/img/content/yunio/icons/run-expand.svg){:class="img-responsive" style="display:inline" width="20px"} expands all parameter items.
+- ![download](/img/content/yunio/icons/run-download.svg){:class="img-responsive" style="display:inline" width="20px"} saves all entered parameters in a .json file. The file can be used to reload the parameter values or to share values with other yunIO instances.
+- ![upload](/img/content/yunio/icons/run-upload.svg){:class="img-responsive" style="display:inline" width="20px"} uploads parameter values from a local .json file. The json file can be created using the ![download](/img/content/yunio/icons/run-download.svg){:class="img-responsive" style="display:inline" width="20px"} button.
+- ![reset](/img/content/yunio/icons/run-reset.svg){:class="img-responsive" style="display:inline" width="20px"} removes all defined input parameters. This option is only available for input parameters.
+- ![fullscreen](/img/content/yunio/icons/run-fullscreen.svg){:class="img-responsive" style="display:inline" width="20px"} displays the parameters in a full screen view. To close the full screen view, click **[ X ]**.
 
 ### Integrating a Service
 
