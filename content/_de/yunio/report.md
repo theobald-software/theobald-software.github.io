@@ -16,12 +16,6 @@ Der folgende Abschnitt zeigt, wie der Integrationstyp *Report* verwendet wird.<b
 Integrationstyp *Report* extrahiert Daten aus den am häufigsten verwendeten und benutzerdefinierten ABAP-Reports und SAP-Transaktionen.
 Eine Report-Extraktion ist möglich, wenn der Report in SAP eine tabellenartige Struktur zurückgibt.
 
-{: .box-warning}
-**Warnung:** **Beta-Version - Grundlegende Änderungen möglich**
-Der Integrationstyp im Preview-Modus. Grundlegende Änderungen können jederzeit veröffentlicht werden. 
-Erstellen Sie regelmäßige Backups der Konfigurationsdateien, um bei Bedarf auf die vorige Version zu wechseln.
-
-
 {: .box-note }
 **Hinweis:** Die Report Komponente setzt die Installation des benutzerdefinierten Funktionsbausteins in Ihrem SAP-System voraus. `Z_XTRACT_IS_REMOTE_REPORT`
 Nähere Informationen finden Sie unter [Report Funktionsbaustein installieren ](#sap-customizing).
