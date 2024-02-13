@@ -129,5 +129,4 @@ Das folgende Beispiel zeigt, wie man einen yunIO-Service einrichtet, der den SAP
 
 ## SAP Customizing
 
-{% include _content/en/sap-customizing/install-report-custom-function-module.md  %}
-
+{% include _content/de/sap-customizing/report-funktionsbaustein-installieren.md  %}
