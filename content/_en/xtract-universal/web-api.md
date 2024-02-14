@@ -137,7 +137,7 @@ The result contains the following elements:
 ### Get Extraction Details
 
 ```
-[protocol]://[host]:[port]/config/extractions/
+[protocol]://[host]:[port]/config/extractions
 ```  
 
 Returns a list of all defined extractions in JSON format. The result contains the following elements:
@@ -163,13 +163,13 @@ Returns a list of all defined extractions in JSON format. The result contains th
 | timestamp| timestamp of the last change |
 | user| user that last changed the extraction |
 
-#### Parameters
+#### Parameters & Options
 
 | Parameter    | Description  | 
 |-----------|--------------|
 | ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. |
-| ```[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). The parameters are available in the Xtract Universal Designer's "Run Extraction" window.<br>. |
-| ```[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
+| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). The parameters are available in the Xtract Universal Designer's "Run Extraction" window.<br>. |
+| ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 
 
 The result of `[protocol]://[host]:[port]/config/extractions/[extraction_name]/result-columns` contains the following elements:
@@ -562,7 +562,7 @@ The response of a web service call contains the following information:
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified runtime parameters. |
+| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified [extraction parameters](./execute-and-automate-extractions/extraction-parameters#extraction). |
 | ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
 | ```&wait=false``` |   Runs the specified extraction asynchronously and returns the timestamp in the HTTP body. Default (true) waits for the extraction to finish. \* This endpoint is marked as deprecated and will be replaced by `/start/[extraction_name]` in the future. \*|
 
@@ -661,7 +661,7 @@ Returns a list of extraction runs. The result contains the following elements:
 | startedAt| timestamp of the execution |
 
 
-#### Parameters
+#### Parameters & Options
 
 | Parameter    | Description  | 
 |-----------|--------------|
@@ -823,7 +823,7 @@ Returns a list of extraction runs. The result contains the following elements:
 
 Returns a list of timestamps that correspond to server logs.
 
-#### Parameters
+#### Parameters & Options
 
 | Parameter    | Description  | 
 |-----------|--------------|
