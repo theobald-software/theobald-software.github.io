@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=server
 ---
 
-The follwing section contains an overview of the Xtract Universal server.
+The following section contains an overview of the Xtract Universal server.
 
 The server performs two main tasks:
 
@@ -79,7 +79,7 @@ The following HTTP requests are possible:
 - running an extraction
 - Emptying the result cache of an extraction
 - Canceling all runs of an extraction
-- REST API requests e.g., [Logs](./logging/logging-access-via-http), [Metadata](./advanced-techniques/metadata-access-via-http-json) etc.
+- [Web API requests](./web-api)
 
 {: .box-tip }
 **Tip:** The Theobald.Xu.Web.Listener.exe logs its actions in log files. 

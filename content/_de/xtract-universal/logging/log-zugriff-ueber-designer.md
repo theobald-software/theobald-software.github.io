@@ -1,7 +1,7 @@
 ---
 ref: xu-logging-02
 layout: page
-title: Zugriff auf Logs im Designer
+title: Zugriffslogs
 description: Zugriff auf Logs im Designer
 product: xtract-universal
 parent: logging
@@ -12,10 +12,9 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktion-logging
 progressstate: 5
 ---
 
-### Logs im Designer
-Im Designer können Server- und Extraktions-Logs angezeigt werden.
-
-Sowohl die Server- als auch die Extraktions-Logs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) definiert werden.
+Auf Server-und Extraktionslogs kann man im Designer und über die [Web-API](../web-api) zugreifen.<br>
+Sowohl die Server- als auch die Extraktionslogs werden nach einem definierten Zeitraum automatisch gelöscht.
+Der Zeitraum kann in den [Servereinstellungen] definiert werden.(../server/servereinstellungen).
 
 ### Server-Logs (Web Worker)
 
@@ -23,7 +22,11 @@ Die Server-Logs (Web Worker) können im Designer über das Hauptmenü **[Server]
 
 ![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
  
-Die Logs werden pro TCP-Verbindung erstellt. Um zwischen den Logs zu wechseln, verwenden Sie die Liste auf der linken Seite. 
+Die Logs werden pro TCP-Verbindung erstellt. Um zwischen den Logs zu wechseln, verwenden Sie die Liste auf der linken Seite:
+
+Serverprotokolle werden nach einem definierten Zeitraum automatisch gelöscht, siehe [Servereinstellungen](../server/servereinstellungen).<br>
+For information on how to query server logs using the web API, see [Web API - Get Server Logs](../web-api#get-server-logs).
+
 
 ### Extraktions-Logs
 
@@ -33,16 +36,14 @@ Markieren Sie dafür die Extraktion, deren Logs angezeigt werden sollen.
 1. Der Zeitstempel für jeden Extraktionsprozess wird im linken Teil des Fensters "View Extraction Log" angezeigt.
 Um Extraktionen nach Ausführungsdatum zu filtern, geben Sie einen Zeitraum in (1) ein.
 2. Markieren Sie die Checkboxen unter der Log-Anzeige, um nach Log-Levels zu filtern (2).
-3. Klicken Sie auf das **[Copy To Clipboard]**-Symbol (3), um das aktuelle Log in die Zwischenablage zu kopieren. 
+3. Klicken Sie auf **[Copy To Clipboard]** Symbol (3) um das aktuelle Log in die Zwischenablage zu kopieren. 
 
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
 
 Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. 
 Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) eingestellt werden.
 
-### Kopieren von Logs
-Klicken Sie auf das **[Copy To Clipboard]**-Symbol (3), um das aktuelle Log in die Zwischenablage zu kopieren. 
-Das kopierte Log kann im Fall einer Supportanfrage in Ihre Nachricht eingefügt werden.
+Informationen zum Abfragen von Serverlogs mithilfe der Web-API finden Sie unter [Web API - Extraktionslogs abrufen](../web-api#extraktionslogs-abrufen).
 
 
 ****

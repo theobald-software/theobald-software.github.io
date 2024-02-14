@@ -1,22 +1,22 @@
 ---
 ref: xu-getting-started-04
 layout: page
-title: Step 5 - Write extracted Data to a Destination
-description: Step 5 - Load extracted Data to a Destination
+title: Schritt 5 - Extrahierte Daten in die Destination schreiben
+description: Schritt 5 - Extrahierte Daten in die Destination schreiben
 product: xtract-universal
-parent: getting-started
+parent: erste-schritte
 permalink: /:collection/:path
 weight: 5
-lang: en_GB
+lang: de_DE
 progressstate: 5
 ---
 
  
-A destination defines how the extracted SAP data is processed. 
-This could be a conversion to file-based formats for local or cloud-based file systems or to deliver the data to targets like databases and other APIs. 
-For a complete list of available destinations, see [Destinations](../destinations).
+Eine Destination definiert, wie die extrahierten SAP-Daten verarbeitet werden.
+Dies könnte eine Konvertierung in dateibasierte Formate für lokale oder cloudbasierte Dateisysteme oder die Bereitstellung der Daten an Destinationen wie Datenbanken und andere APIs sein.
+Die verfügbaren Destinationen sind unter ["Destinationen"](../destinationen) aufgelistet.
 
-### Creating a new Destination
+### Eine neue Destination erstellen
 <!---
 this script generates a link to the destination details of the selected destination (in step 5)
 the option in the list must be set as follows:
@@ -29,16 +29,16 @@ the option in the list must be set as follows:
 	}
   </script> 
 
-Follow the steps below to create a new destination:
-1. In the main window of the designer, open the menu **[Server] > [Manage Destinations]**. The window "Manage Destinations" opens.
+Führen Sie die folgenden Schritte aus, um eine neue Destination anzulegen:
+1. Im Hauptfenster des Designers, öffnen Sie das Menü **[Server] > [Manage Destinations]**. Das Fenster "Manage Destinations" wird geöffnet.
 ![Load-Destinations](/img/content/xu/xu_destination.png){:class="img-responsive"}
-2. Click **[Add]** (1) to create a new destination. The window "Destination Details" opens.<br>
+2. Klicken Sie auf **[Add]** (1) um eine neue Destination zu erstellen. Das Fenster "Destination Details" wird geöffnet.<br>
 ![Load-Manage-Shared-Destination](/img/content/destinations_load_manage_shared.png){:class="img-responsive"}
-3. Enter a unique name for the destination (2). 
-4. Select a destination type from the drop down list (3). The destination details are displayed.<br>
+3. Geben Sie einen eindeutigen Namen für die Destination ein (2). 
+4. Wählen Sie den Typ der Destination aus der Dropdown-Liste (3) aus. Die Destinationsdetails werden angezeigt.<br>
 ![Select-Destination-Type](/img/content/sqlserver_destination-details.png){:class="img-responsive"}
-5. Fill out the destination details. The destination details vary depending on the destination type. <br>
-For more information about the destination details, select your destination: <select name="destinationlist" id="destination" onChange="getSelectedValueDetails();">
+5. Geben Sie die Destinationsdetails ein. Die Destinationsdetails variieren je nach Destinationstyp. <br>
+Für weitere Informationen zu den Destinationsdetails wählen Sie Ihre Destination aus: <select name="destinationlist" id="destination" onChange="getSelectedValueDetails();">
     <option value=" " disabled selected>Select a destination</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
@@ -53,7 +53,7 @@ For more information about the destination details, select your destination: <se
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
 	<option value="huawei">Huawei Cloud OBS</option>
-	<option value="ibm-db2">IBM Db2</option>
+	<option value="ibm-db2">IBM DB2</option>
 	<option value="knime">KNIME</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
@@ -65,15 +65,15 @@ For more information about the destination details, select your destination: <se
 	<option value="sap-hana">SAP HANA</option>
 	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
+	<option value="server-report-services">SQL Server Reporting Services</option>
 	<option value="tableau">Tableau</option>
   </select>
-6. Click **[Test Connection]** to check the connection to the destination.
-7. Click **[OK]** to save the destination. 
+6. Klicken Sie auf **[Test Connection]** um die Verbindung zur Destination zu überprüfen.
+7. Klicken Sie auf **[OK]**, um die Destinationen zu speichern. 
 
-The destination is now available and can be assigned to extractions.
+Die Destination ist nun verfügbar und kann Extraktionen zugeordnet werden.
 
-### Assigning Destinations to Extractions
+### Zuweisen von Destinationen zu Extraktionen
 
 <!---
 this script generates a link to the destination settings of the selected destination (in step 4)
@@ -87,17 +87,17 @@ the option in the list must be set as follows:
 	}
   </script> 
   
-Extractions write data to their assigned destination.
-Follow the steps below to assign a destination to an extraction:
+Extraktionen schreiben Daten an die ihnen zugewiesene Destinationen.
+Führen Sie die folgenden Schritte aus, um einer Extraktion eine Destination zuzuweisen:
 
-1. In the main window of the designer, select an extraction.
-2. Click **[Destination]**. The window "Destination Settings" opens.<br>
+1. Wählen Sie im Hauptfenster des Designers eine Extraktion aus.
+2. Klicken Sie auf **[Destination]**. Das Fenster "Destination Settings" wird geöffnet.<br>
 ![Load-Destinations](/img/content/xu/xu_designer_destination.png){:class="img-responsive"}
-3. In the "Destination Settings" window, select a destination from the drop down menu.
+3. Im Fenster "Destination Settings", Wählen Sie eine Destination aus dem Dropdown-Menü aus.
 ![Load-Shared-Destination-SQLServer](/img/content/sqlserver_destination-settings.png){:class="img-responsive"}
-4. Optional: change the destination settings.<br>
-Destination settings are specific to the selected extraction and vary depending on the destination type. <br>
-For more information about the destination settings, select your destination: <select id="destinationsettings" onChange="getSelectedValueSettings();">
+4. Optional: Ändern Sie die Destinationseinstellungen.<br>
+Destinationseinstellungen sind spezifisch für die ausgewählte Extraktion und variieren je nach Destinationstyp. <br>
+Für weitere Informationen zu den Destinationseinstellungen, wählen Sie Ihre Destination aus: <select id="destinationsettings" onChange="getSelectedValueSettings();">
     <option value=" " disabled selected>Select a destination</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
@@ -112,7 +112,7 @@ For more information about the destination settings, select your destination: <s
 	<option value="exasol">EXASolution</option>
 	<option value="google-cloud-storage">Google Cloud Storage</option>
 	<option value="huawei">Huawei Cloud OBS</option>
-	<option value="ibm-db2">IBM Db2</option>
+	<option value="ibm-db2">IBM DB2</option>
 	<option value="knime">KNIME</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
@@ -124,12 +124,12 @@ For more information about the destination settings, select your destination: <s
 	<option value="sap-hana">SAP HANA</option>
 	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
+	<option value="server-report-services">SQL Server Reporting Services</option>
 	<option value="tableau">Tableau</option>
   </select><br>
-5. Click **[OK]** to confirm your input.       
+5. Klicken Sie auf **[OK]**, um Ihre Eingabe zu bestätigen.       
 
-When [running the extraction](./run-an-extraction), the extracted SAP data is now written to the destination.
+Beim [Ausführen der Extraktion](./eine-extraktion-ausfuehren), werden Die extrahierten SAP-Daten  in die Destination geschrieben.
 
-#### Related Links
-- [Manage Destinations](../destinations/managing-destinations)
+#### Weiterführende Links
+- [Destinationen Verwalten](../ziele-verwalten#destinationen-verwalten)

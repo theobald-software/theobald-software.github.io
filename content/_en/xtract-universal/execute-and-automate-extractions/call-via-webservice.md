@@ -13,24 +13,10 @@ lang: en_EN
 For testing purposes extractions can be called via web service.
 Calling extractions is usually done via script, scheduler or BI-tool. 
 
-### URL Format
-To call an extraction via web services, use the following URL-format: `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`.
+{% include _content/en/xu-specific/advanced-techniques/api-base-url.md %}
 
- Format | Description
-:----------- | :------------
-`<Protocol>` | HTTP or HTTPS - Activates a safe data transfer.
-`<HOST or IP address>` | Host name or IP address of the XU server.
-`<Port>` | The port on which the Xtract Universal service runs. The default is 8065. You can find the current value in the "Run" window of the [Designer](../getting-started/run-an-extraction#run-extraction).
-`<Name of the Extraction>` | Name of the extraction.
-`{&<parameter_i>=<value_i>}` | Optional parameter to be set when running the extraction. Multiple parameters can be set.
-
-#### Examples
-These are examples of URLs that call extractions:
-```
-http://localhost:8065/?name=Plants
-http://localhost:8065/?name=Plants&rows=100
-http://localhost:8065/?name=Plants&rows=100&lang=EN
-```
+{: .box-note } 
+**Note:** Make sure to use the correct ports, see [Server Ports](../server/ports).
 
 ### HTTP Status Code & Header
 The response of a web service call contains the following information:
@@ -68,7 +54,7 @@ That parameters is set to `false` by default, meaning the extraction log of a pu
 **Note:** That parameter has no effect on pull destinations and asynchronous extractions.
 
 #### Asynchronous Call
-Extraktions are called synchronous by default. The parameter `&wait=false` calls an asynchronous extraction.<br> 
+Extractions are called synchronous by default. The parameter `&wait=false` calls an asynchronous extraction.<br> 
 Example: `http://todd.theobald.local:8065/?name=Plants&wait=false`
 
 In this case the timestamp (4) of the extraction is returned in the HTTP body.
@@ -78,12 +64,5 @@ In this case the timestamp (4) of the extraction is returned in the HTTP body.
 A running extraction can be aborted using the `abort` command before entering the extraction name.<br>
 Example: `http://todd.theobald.local:8065/abort?name=Plants`
 
-If the abortion is successfull, a confirmation message (5) is returned in the HTTP body.
+If the abortion is successful, a confirmation message (5) is returned in the HTTP body.
 ![Webservice Call abort](/img/content/xu/automation/webservice/xu_call_webservice_abort.png){:class="img-responsive"}
-
-
-****
-#### Related Links
-- [Metadata access via HTTP-JSON](../advanced-techniques/metadata-access-via-http-json)
-- [Log Access via Web Service](../logging/logging-access-via-http)
-
