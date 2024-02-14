@@ -11,27 +11,14 @@ lang: de_DE
 ---
 Sie können eine Extraktion via Webservice-Aufruf ausführen. 
 Der Aufruf einer Extraktion erfolgt in der Regel über ein Skript, Scheduler oder BI-Tool. 
-Zu Testzwecken kann der Aufruf wie beim XU-Designer auch aus einem Webbrowser erfolgen.
 
-### URL-Format
-Der Aufruf erfolgt über eine URL in folgendem Fomat: `<Protokoll>://<HOST oder IP-Adresse>:<Port>/?name=<Name der Extraktion>{&<parameter_i>=<wert_i>}`
+{% include _content/de/xu-specific/fortgeschrittene-techniken/api-base-url.md %}
 
- Format | Beschreibung
-:----------- | :------------
-`<Protokoll>` | HTTP oder HTTPS - Aktiviert den sicheren Datentransfer.
-`<HOST oder IP-Adresse>` | Host Name oder IP-Adresse des XU-Servers.
-`<Port>` | Der Port, unter dem der XU-Server läuft. Der Standardwert ist *8065*. Den aktuellen Wert finden Sie im [Run Fenster](../erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen) des Xtract Universal Designers.
-`<Name der Extraktion>` | Name der Extraktion.
-`{&<parameter_i>=<wert_i>}` | Optionale Parameter, deren Werte beim Ausführen der Extraktion gesetzt werden sollen. Es können mehrere Parameter verwendet werden.
 
-#### Beispiele  
-Eine URL zum Aufruf einer Extraktion sieht wie folgt aus:
+{: .box-note } 
+**Hinweis:** Stellen Sie sicher, dass Sie die richtigen Ports verwenden, siehe [Server-Ports](../server/ports).
 
-```
-http://localhost:8065/?name=Plants
-http://localhost:8065/?name=Plants&rows=100
-http://localhost:8065/?name=Plants&rows=100&lang=EN
-```
+
 
 ### HTTP Status Code & Header der Antwort
 Die Antwort eines Webservice-Aufrufs enthält folgende Informationen:
