@@ -6,32 +6,32 @@ description: Web-API
 product: xtract-universal
 parent: xtract-universal
 redirect_from:
-  - en/xtract-universal/advanced-techniques/metadata-access-via-http
+  - de/xtract-universal/fortgeschrittene-techniken/metadata-zugriff-ueber-http-json
 permalink: /:collection/:path
 weight: 17
-lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=SAPCustomizing-EN:sap-customizing-en
+lang: de_DE
+
 ---
 
-The following section contains information about the web API of Xtract Universal.
+Der folgende Abschnitt enthält Informationen zur Web-API von Xtract Universal.
 
-Xtract Universal offers a web API that allows running extractions and querying meta information and extraction logs from Xtract Universal through web calls.
-The web API returns the result as an http-json stream.
+Xtract Universal bietet eine Web-API, die das Ausführen von Extraktionen und das Abfragen von Metainformationen und Extraktionsprotokollen von Xtract Universal über Webaufrufe ermöglicht.
+Die Web-API gibt das Ergebnis als http-json-Stream zurück.
 
-{% include _content/en/xu-specific/advanced-techniques/api-base-url.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/api-base-url.md %}
 
 {: .box-note } 
-**Note:** Make sure to use the correct ports, see [Server Ports](./server/ports).
+**Hinweis:** Stellen Sie sicher, dass Sie die richtigen Ports verwenden, siehe [Server Ports](./server/ports).
 
-### Get Version
+### Version abrufen
 
 ```
 [protocol]://[host]:[port]/version
 ``` 
 
-Returns the software version of the Xtract Universal server installation in JSON format. 
+Gibt die Softwareversion der Xtract Universal-Serverinstallation im JSON-Format zurück. 
 
-#### Example 
+#### Beispiel 
 
 `http://sherri.theobald.local:8065/version`
 
@@ -64,31 +64,31 @@ Response:
 }
 -->
 
-### Get Destination Details
+### Destinationsdetails abrufen
 
 ```
 [protocol]://[host]:[port]/config/destinations
 ```  
 
-Returns a list of all defined destinations. 
-The result contains the following elements:
+Gibt eine Liste aller definierten Definitionen zurück.
+Das Ergebnis enthält die folgenden Elemente:
 
-|  Item   | Description    |
+|  Element   | Beschreibung    |
 |--------------|---------|
-| name | name of the target connection |
-| type | connection type |
-| host | host name, if applicable |
-| port | port name, if applicable |
-| database | database name, if applicable | 
-| user | user name in the connection, if applicable |  
-| schema | schema name, if applicable |
-| directory | directory name, if applicable |
+| name | Name der Zielverbindung |
+| type | Verbindungstyp |
+| host | Hostname, wenn vorhanden |
+| port | Portname, wenn vorhanden |
+| database | Datenbankname, wenn vorhanden | 
+| user | Nutzername in der Verbindung, wenn vorhanden |  
+| schema | Schemaname, wenn vorhanden |
+| directory | Verzeichnisname, wenn vorhanden |
 
 
 {: .box-tip } 
-**Tip:**  For a list of extractions with a specific destination, see [Get Extraction Details](#get-extraction-details).
+**Tipp:**  Für eine Liste von Extraktionen mit einer bestimmten Destination, siehe [Extraktionsdetails abrufen](#extraktionsdetails-abrufen).
 
-#### Example 
+#### Beispiel 
 
 `http://sherri.theobald.local:8065/config/destinations`
 
@@ -134,63 +134,64 @@ The result contains the following elements:
 {% endhighlight %}
 </details>
 
-### Get Extraction Details
+### Extraktionsdetails
 
 ```
 [protocol]://[host]:[port]/config/extractions
 ```  
 
-Returns a list of all defined extractions in JSON format. The result contains the following elements:
+Gibt eine Liste aller definierten Extraktionen im JSON-Format zurück. Das Ergebnis enthält die folgenden Elemente:
 
-|  Item   | Description    |
+|  Element   | Beschreibung    |
 |--------------|---------|
-| name  | name of the extraction |
-| type  |extraction type |
-| technical name|  name of the extracted SAP object |
-| source|  name of the source connection |
-| destination| name of the target connection |
-| latestRun| contains *rowCount*, *duration*, *state* and *startedAt* of the latest extraction run |
-| row count| number of the last extracted data records |
-| duration | duration of the last execution |
-| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
-| startedAt| timestamp of the last execution |
-| created| contains *machine*, *timestamp* and *user* of when the extraction was created|
-| machine| machine on which the extraction was created |
+| name  | Name der Extraktion |
+| type  |Extraktionstyp |
+| technical name|  Name des extrahierten SAP-Objekts |
+| source|  Name der Quellverbindung |
+| destination| Name der Zielverbindung|
+| latestRun| Enthält *rowCount*, *duration*, *state* und *startedAt* des letzten Extraktionslaufs |
+| row count| Anzahl der zuletzt extrahierten Datensätze |
+| duration | Dauer der letzten Ausführung |
+| state| Status der Extraktion (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| startedAt| Zeitstempel der letzten Ausführung |
+| created| Enthält Angaben zur *Maschine*, zum *Zeitstempel* und zum *Benutzer* zum Zeitpunkt der Extraktionserstellung|
+| machine| Maschine, auf der die Extraktion erstellt wurde |
 | timestamp| timestamp of the creation |
-| user| user that created the extraction |
-| lastChange| contains *machine*, *timestamp* and *user* of when the extraction was last changed|
-| machine| machine on which the extraction was last changed|
-| timestamp| timestamp of the last change |
-| user| user that last changed the extraction |
+| user| Benutzer, der die Extraktion erstellt hat |
+| lastChange| Enthält Angaben zur *Maschine*, zum *Zeitstempel* und zum *Benutzer* zum Zeitpunkt der letzten Änderung  der Extraktion|
+| machine| Maschine, auf der die Extraktion zuletzt geändert wurde|
+| timestamp| Zeitstempel der letzten Änderung |
+| user| Benutzer, der die Extraktion zuletzt geändert hat |
 
-#### Parameters & Options
+#### Parameter und Optionen
 
-| Parameter    | Description  | 
+| Parameter    | Beschreibung  | 
 |-----------|--------------|
-| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. |
-| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). The parameters are available in the Xtract Universal Designer's "Run Extraction" window.<br>. |
+| ```?destinationType=[destination]```  |   Gibt eine Liste von Extraktionen zurück, die in eine bestimmte Destination schreiben. |
+| ```/[extraction_name]/parameters```  |   Gibt eine Liste der Laufzeitparameter zurück, die in der angegebenen Extraktion verwendet werden. Jede Extraktion verfügt über eine Reihe von Laufzeitparametern *Extraction*, *Source* und *Custom*](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter). Die Parameter stehen im Fenster „Run Extraction“ des Xtract Universal Designers zur Verfügung.  |
 | ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 
 
-The result of `[protocol]://[host]:[port]/config/extractions/[extraction_name]/result-columns` contains the following elements:
+Das Ergebnis von `[protocol]://[host]:[port]/config/extractions/[extraction_name]/result-columns` enthält die folgenden Elemente:
 
-| Item         | Type    | Description                         |
+| Element         | Typ    | Beschreibung                         |
 |--------------|---------|-------------------------------------|
-| name         | String  | column name                         |
-| description  | String  | column description                  |
-| type         | String  | column datatype                     |
-| length       | Integer | column length                       |
-| isPrimaryKey | boolean | column is primary key of extraction |
-| isEncrypted  | boolean | encryption for column is active     |
-| decimalsCount| Integer | number of decimal places |
-| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity |
-| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity |
+| name         | String  | Spalte name                         |
+| description  | String  | Spalte description                  |
+| type         | String  | Spalte datatype                     |
+| length       | Integer | Spalte length                       |
+| isPrimaryKey | boolean | Spalte ist der Primärschlüssel der Extraktion |
+| isEncrypted  | boolean | Verschlüsselung für Spalte ist aktiv  |
+| decimalsCount| Integer | Anzahl der Dezimalstellen |
+| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | Referenzfeld für Währung/Menge |
+| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | Referenztabelle für Währung/Menge |
 
 {: .box-note }
-**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. 
-If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
+**Hinweis:** Datenfelder, die Datumsangaben enthalten, haben den Datentyp *ConvertedDate*, wenn die Option *Date Conversion (Datumsumrechnung)* in den *Destination Settings (Destinationseinstellungen)* aktiv ist.
+Wenn inaktiv, ist der Datentyp *StringLengthMax* mit einer Länge von 8 (*Datum*).
 
-#### Examples
+
+#### Beispiele
 
 `http://sherri.theobald.local:8065/config/extractions/`
 
@@ -539,35 +540,35 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 </details>
 
 
-### Run Extractions
+### Extraktionen ausführen
 
 ```
 [protocol]://[host]:[port]/?name=[extraction_name]
 ```
 
-Runs the specified extraction.
-\* This endpoint is marked as deprecated and will be replaced by `/run/[extraction_name]` in the future. \*
+Führt die angegebene Extraktion aus.
+\* Dieser Endpunkt ist als veraltet markiert und wird in Zukunft durch `/run/[extraction_name]` ersetzt. \*
 
-The response of a web service call contains the following information:
+Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
 
-|     | Response | Description | 
+|     | Antwort | Beschreibung | 
 |-----|-----------|--------------|
-| (1) | HTTP status code | The HTTP status code *200* indicates a successful extraction call. It does not indicate a successful execution of the extraction. <br> The HTTP status code *404* indicates that the called extraction does not exist. Detailed information can be found in the log of the web service. | 
-| (2) | HTTP header | Shows the timestamp of the extraction in the HTTP header e.g., X-XU-Timestamp: *2021-04-09_19:03:09.971* | 
-| (3) | HTTP response body | The Response in the HTTP body depends on the destination type of the extraction. Depending on the destination type, the extracted data is returned in either CSV or JSON format. | 
+| (1) | HTTP Statuscode | Der HTTP-Statuscode *200* zeigt einen erfolgreichen Extraktionsaufruf an. Dies weist nicht auf eine erfolgreiche Ausführung der Extraktion hin. <br> Der HTTP-Statuscode *404* zeigt an, dass die aufgerufene Extraktion nicht existiert. Detaillierte Informationen finden Sie im Protokoll des Webservices. | 
+| (2) |HTTP-Header | Zeigt den Zeitstempel der Extraktion im HTTP-Header an, z. B., X-XU-Timestamp: *2021-04-09_19:03:09.971* | 
+| (3) | HTTP Response-Body | Die Antwort im HTTP-Body hängt vom Typ der Destination der Extraktion ab. | 
 
 ![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
-#### Parameters
+#### Parameter
 
-| Parameter    | Description  | 
+| Parameter    | Beschreibung  | 
 |-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified [extraction parameters](./execute-and-automate-extractions/extraction-parameters#extraction). |
-| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
-| ```&wait=false``` |   Runs the specified extraction asynchronously and returns the timestamp in the HTTP body. Default (true) waits for the extraction to finish. \* This endpoint is marked as deprecated and will be replaced by `/start/[extraction_name]` in the future. \*|
+| ```&[parameter1_name]=[value]```  |   Führt die angegebene Extraktion aus und übergibt Werte an die angegebenen [Extraktionsparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter#extraction). |
+| ```&quiet-push=true```  |   Führt die angegebene Extraktion aus und unterdrückt die Ausgabe von Extraktionsprotokollen für Push-Destinationen. Dieser Parameter hat keine Auswirkung auf Pull-Destinationen und asynchrone Extraktionen.|
+| ```&wait=false``` |   Führt die angegebene Extraktion asynchron aus und gibt den Zeitstempel im HTTP-Body zurück. Standardmäßig (true) wartet, bis die Extraktion abgeschlossen ist. \* Dieser Endpunkt ist als veraltet markiert und wird durch `/start/[extraction_name]` ersetzt. \*|
 
 {: .box-tip }
-**Tip:** You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](../getting-started/run-an-extraction).{% endif %}
+**Tipp:** Sie können die Benutzeroberfläche im Menu "Run Extraction" verwenden, um eine URL für Extraktionsläufe zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen).{% else %}[Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren).{% endif %}
 
 
 #### Example 
@@ -594,18 +595,18 @@ Stops extractions. If no parameter is supplied all running extractions are cance
 -->
 
 
-### Abort Extraction
+### Extraktion abbrechen
 
 ```
 [protocol]://[host]:[port]/abort?name=[extraction_name]
 ```  
 
-Aborts the specified extraction.
-If the abortion is successful, a confirmation message is returned in the HTTP body. 
+Bricht die angegebene Extraktion ab.
+Bei erfolgreichem Abbruch wird im HTTP-Body eine Bestätigungsmeldung zurückgegeben.
 
-\* This endpoint is marked as deprecated and will be replaced by `/stop/[extraction_name]` in the future. \*
+\* Dieser Endpunkt ist als veraltet markiert und wird durch `/stop/[extraction_name]` ersetzt. \*
 
-#### Example
+#### Beispiel
 
 `http://sherri.theobald.local:8065//abort?name=KNA1`
 
@@ -616,22 +617,22 @@ All runs of extraction 'KNA1' aborted.
 {% endhighlight %}
 </details>
 
-### Get Status of an Extraction
+### Status einer Extraktion abrufen
 
 ```
 [protocol]://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]
 ``` 
 
-Returns the status of a (running) extraction at the specified timestamp. 
-The timestamp corresponds to the *startedAt* element returned by [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) or [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs).
+Gibt den Status einer (laufenden) Extraktion zum angegebenen Zeitstempel zurück. 
+Der Zeitstempel entspricht dem von zurückgegebenen *startedAt*-Element [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) oder [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs).
 
-| State            | Description                                                  |
+| Status            | Beschreibung                                                  |
 |------------------|--------------------------------------------------------------|
-| Running          | The extraction is running.                                   |
-| FinishedNoErrors | The extraction is finished without errors.             |
-| FinishedErrors   | The extraction is finished, but with minimum one error. |
+| Running          | Die Extraktion läuft.                                   |
+| FinishedNoErrors | Die Extraktion wurde ohne Fehler abgeschlossen.             |
+| FinishedErrors   | Die Extraktion wurde abgeschlossen, weist jedoch mindestens einen Fehler auf. |
 
-#### Example
+#### Beispiel
 
 `http://sherri.theobald.local:8065/status/?name=KNA1&timestamp=2024-02-05_10:23:08.025`
 
@@ -642,37 +643,37 @@ FinishedNoErrors
 {% endhighlight %}
 </details>
 
-### Get Extraction Logs
+### Extraktionslogs abrufen
 
 ```
 [protocol]://[host]:[port]/logs/extractions
 ``` 
 
-Returns a list of extraction runs. The result contains the following elements:
+Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgenden Elemente:
 
-|  Item   | Description    |
+|  Element   | Beschreibung   |
 |--------------|---------|
-| extractionName  | name of the extraction |
-| runs  | contains *rowCount*, *duration*, *state*, *webServerLog* and *startedAt* of extraction runs |
-| row count| number of extracted data records |
-| duration | duration of the execution |
-| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
-| webServerLog| timestamp of the corresponding [server log](#get-server-logs) |
-| startedAt| timestamp of the execution |
+| extractionName  | Name der Extraktion |
+| runs  | enthält *rowCount*, *duration*, *state*, *webServerLog* und *startedAt* der Extraktionsläufe |
+| row count| Anzahl der extrahierten Datensätze |
+| duration | Dauer der Ausführung |
+| state| Status der Extraktion (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| webServerLog| Zeitstempel des entsprechenden[Serverlogs](#serverlogs-abrufen) |
+| startedAt| Zeitstempel der Ausführung |
 
 
-#### Parameters & Options
+#### Parameter & Optionen
 
-| Parameter    | Description  | 
+| Parameter    | Beschreibung  | 
 |-----------|--------------|
-| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction runs after the specified date and time. |
-| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction runs before the specified date and time. |
-| ```/[extraction-name]```  |   Returns all extraction runs of the specified extraction. |
-| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction run of the specified extraction with the specified timestamp. |
-| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Returns the extraction log of the specified extraction with the specified timestamp. |
+| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Extraktionsläufe nach dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
+| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Extraktionsläufe vor dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
+| ```/[extraction-name]```  |   Gibt alle Extraktionsläufe der angegebenen Extraktion zurück. |
+| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt den Extraktionslauf der angegebenen Extraktion mit dem angegebenen Zeitstempel zurück. |
+| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Gibt das Extraktionslog der angegebenen Extraktion mit dem angegebenen Zeitstempel zurück. |
 
 
-#### Example
+#### Beispiel
 
 `http://sherri.theobald.local:8065/logs/extractions?min=2023-08-17_11:20:44.029`
 
@@ -813,25 +814,25 @@ Returns a list of extraction runs. The result contains the following elements:
 </details>
 
 {: .box-note } 
-**Note:** For information on how to interpret logs, see [Logging](./logging/).
+**Hinweis:** Informationen zur Interpretation von Protokollen, sie [Logging](./logging/).
 
-### Get Server Logs
+### Serverlogs abrufen
 
 ```
 [protocol]://[host]:[port]/logs/web
 ```  
 
-Returns a list of timestamps that correspond to server logs.
+Gibt eine Liste von Zeitstempeln zurück, die den Serverlogs entsprechen.
 
-#### Parameters & Options
+#### Parameter & Optionen
 
-| Parameter    | Description  | 
+| Parameter    | Beschreibung  | 
 |-----------|--------------|
-| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs after the specified date and time. |
-| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs before the specified date and time. |
-| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server log entries with the specified timestamp. |
+| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Zeitstempel der Serverlogs nach dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
+| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Zeitstempel der Serverlogs vor dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
+| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Serverlogeinträge mit dem angegebenen Zeitstempel zurück. |
 
-#### Example
+#### Beispiel
 
 `http://sherri.theobald.local:8065/logs/web?min=2024-02-05_12:39:29.022`
 
@@ -900,5 +901,5 @@ Returns a list of timestamps that correspond to server logs.
 </details>
 
 {: .box-note } 
-**Note:** For information on how to interpret logs, see [Logging](./logging/).
+**Hinweis:** Informationen zur Interpretation von Logs, siehe [Logging](./logging/).
 

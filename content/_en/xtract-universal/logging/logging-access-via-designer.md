@@ -20,10 +20,10 @@ The period can be defined in the [server settings](../server/server-settings).
 
 The server Logs (Web Worker) can be displayed in the Designer via the main menu **[Server]>[Log (Web Worker)]**.
 
+![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
+
 The logs are created per TCP connection. 
 To switch between logs, use the list of timestamps on the left:
-
-![View-Server-Log](/img/content/View-Server-Log.png){:class="img-responsive"}
  
 Server logs are automatically deleted after a defined period of time, see [server settings](../server/server-settings).<br>
 For information on how to query server logs using the web API, see [Web API - Get Server Logs](../web-api#get-server-logs).

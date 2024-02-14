@@ -12,7 +12,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=server
 ---
 
-The follwing section contains an overview of the Xtract Universal server.
+The following section contains an overview of the Xtract Universal server.
 
 The server performs two main tasks:
 
