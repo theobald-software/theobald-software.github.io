@@ -21,7 +21,8 @@ Es sind keine zusätzlichen Installationen für die Nutzung der Snowflake Destin
 
 - Installieren Sie den [SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
 - Konfigurieren Sie die folgenden Umgebungsvariablen, um sich mit einem Proxy-Server zu verbinden: `http_proxy`, `https_proxy`, `no_proxy`.<br>
-Für mehr Informationen, siehe [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables)
+Für mehr Informationen, siehe [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables).
+- Der ODBC Port (443) für HTTPS muss freigegeben sein und ausgehenden Traffic vom Netzwerk zu Snowflake erlauben.
 - Das Snowflake-Konto, mit dem Daten auf Snowflake hochgeladen werden, braucht entsprechende Zugriffsberechtigungen, siehe [Snowflake Documentation: Übersicht zur Zugriffssteuerung - Rollen](https://docs.snowflake.com/de/user-guide/security-access-control-overview#roles).
 Die folgenden Berechtigungen sind Voraussetzung:
   - PUT-Befehl
