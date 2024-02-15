@@ -22,7 +22,7 @@ No additional installations are required to use the Snowflake destination.
 - Download and install the [SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
 - To connect through a proxy server, configure the following environment variables: `http_proxy`, `https_proxy`, `no_proxy`.<br>
 For more information, see [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables).
-- the ODBC default port (443) for HTTPS is enabled and allows outbound traffic from the network to Snowflake's services.
+- The ODBC default port (443) for HTTPS is enabled and allows outbound traffic from the network to Snowflake's services.
 - The Snowflake account used to upload data to Snowflake needs the corresponding access and role privileges, see [Snowflake Documentation: Overview of Access Control - Roles](https://docs.snowflake.com/en/user-guide/security-access-control-overview#roles).
 The following privileges are required:
   - PUT command
