@@ -814,7 +814,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 </details>
 
 {: .box-note } 
-**Hinweis:** Informationen zur Interpretation von Protokollen, sie [Logging](./logging/).
+**Hinweis:** Informationen zur Interpretation von Protokollen, sie [Logging](./logging).
 
 ### Serverlogs abrufen
 

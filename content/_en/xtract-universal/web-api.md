@@ -813,7 +813,7 @@ Returns a list of extraction runs. The result contains the following elements:
 </details>
 
 {: .box-note } 
-**Note:** For information on how to interpret logs, see [Logging](./logging/).
+**Note:** For information on how to interpret logs, see [Logging](./logging).
 
 ### Get Server Logs
 
