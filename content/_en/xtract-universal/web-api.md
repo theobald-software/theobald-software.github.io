@@ -7,6 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 redirect_from:
   - en/xtract-universal/advanced-techniques/metadata-access-via-http
+  - en/xtract-universal/advanced-techniques/metadata-access-via-http-json
   - en/xtract-universal/logging/logging-access-via-http
 permalink: /:collection/:path
 weight: 17
