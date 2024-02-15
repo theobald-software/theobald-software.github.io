@@ -14,7 +14,7 @@ progressstate: 5
 
 Auf Server-und Extraktionslogs kann man im Designer und über die [Web-API](../web-api) zugreifen.<br>
 Sowohl die Server- als auch die Extraktionslogs werden nach einem definierten Zeitraum automatisch gelöscht.
-Der Zeitraum kann in den [Servereinstellungen] definiert werden.(../server/servereinstellungen).
+Der Zeitraum kann in den [Servereinstellungen] definiert werden.(../server/server_einstellungen).
 
 ### Server-Logs (Web Worker)
 

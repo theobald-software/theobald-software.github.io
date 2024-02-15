@@ -132,4 +132,4 @@ Für weitere Informationen zu den Destinationseinstellungen, wählen Sie Ihre De
 Beim [Ausführen der Extraktion](./eine-extraktion-ausfuehren), werden Die extrahierten SAP-Daten  in die Destination geschrieben.
 
 #### Weiterführende Links
-- [Destinationen Verwalten](../ziele-verwalten#destinationen-verwalten)
+- [Destinationen Verwalten](../destinationen/ziele-verwalten)

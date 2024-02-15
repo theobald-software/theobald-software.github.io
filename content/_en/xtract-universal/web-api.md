@@ -170,7 +170,7 @@ Returns a list of all defined extractions in JSON format. The result contains th
 | Parameter    | Description  | 
 |-----------|--------------|
 | ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. |
-| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](../execute-and-automate-extractions/extraction-parameters). The parameters are available in the Xtract Universal Designer's "Run Extraction" window.<br>. |
+| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [runtime parameters](./execute-and-automate-extractions/extraction-parameters). The parameters are available in the Xtract Universal Designer's "Run Extraction" window.<br>. |
 | ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 
 

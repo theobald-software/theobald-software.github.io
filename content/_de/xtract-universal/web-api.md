@@ -168,7 +168,7 @@ Gibt eine Liste aller definierten Extraktionen im JSON-Format zurück. Das Ergeb
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
 | ```?destinationType=[destination]```  |   Gibt eine Liste von Extraktionen zurück, die in eine bestimmte Destination schreiben. |
-| ```/[extraction_name]/parameters```  |   Gibt eine Liste der Laufzeitparameter zurück, die in der angegebenen Extraktion verwendet werden. Jede Extraktion verfügt über eine Reihe von Laufzeitparametern *Extraction*, *Source* und *Custom*](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter). Die Parameter stehen im Fenster „Run Extraction“ des Xtract Universal Designers zur Verfügung.  |
+| ```/[extraction_name]/parameters```  |   Gibt eine Liste der Laufzeitparameter zurück, die in der angegebenen Extraktion verwendet werden. Jede Extraktion verfügt über eine Reihe von Laufzeitparametern *Extraction*, *Source* und *Custom*](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter). Die Parameter stehen im Fenster „Run Extraction“ des Xtract Universal Designers zur Verfügung.  |
 | ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 
 
