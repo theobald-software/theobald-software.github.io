@@ -9,4 +9,5 @@ The basic URL for web calls uses the following format: `[protocol]://[host or IP
 |:----------- | :------------ | :------------ | 
 | HTTP	| `http://[host].[domain]:[port]` | `http://sherri.theobald.local:8065` | 
 | HTTP	| `http://[host]:[port]` | 	`http://localhost:8065` | 
-| HTTPS | `https://[host].[domain]:[port]` | `https://sherri.theobald.local:8165` <br>Requires a dedicated host name and X.509 certificate, see [web server settings](../server/server-settings#web-server). | 
+| HTTPS | `https://[host].[domain]:[port]` | `https://sherri.theobald.local:8165` <br>Requires a dedicated host name and X.509 certificate, see {% if page.parent == "xtract-universal" or page.parent == "board-connector"%}[web server settings](./server/server-settings#web-server).{% else %}[web server settings](../server/server-settings#web-server).{% endif %} | 
+

@@ -878,5 +878,5 @@ Gibt eine Liste von Zeitstempeln zurück, die den Serverlogs entsprechen.
 </details>
 
 {: .box-note } 
-**Hinweis:** Informationen zur Interpretation von Logs, siehe [Logging](./logging/).
+**Hinweis:** Informationen zur Interpretation von Logs, siehe [Logging](./logging).
 

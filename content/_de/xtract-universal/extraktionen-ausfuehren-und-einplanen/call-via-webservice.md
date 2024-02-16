@@ -69,7 +69,4 @@ Beispiel: `http://todd.theobald.local:8065/abort?name=Plants`
 Wenn der Abbruch erfolgreich ist, wird eine entsprechende Meldung (5) im HTTP-Body zurückgegeben.<br>
 ![Webservice Call abort](/img/content/xu/automation/webservice/xu_call_webservice_abort.png){:class="img-responsive"}
 
-****
-#### Weiterführende Links
-- [Metadaten-Zugriff über HTTP-JSON](../fortgeschrittene-techniken/metadata-zugriff-ueber-http-json)
-- [Log-Zugriff über Web-Service](../logging/log-zugriff-ueber-http)
+

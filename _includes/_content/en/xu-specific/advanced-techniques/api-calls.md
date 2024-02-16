@@ -876,5 +876,5 @@ Returns a list of timestamps that correspond to server logs.
 </details>
 
 {: .box-note } 
-**Note:** For information on how to interpret logs, see [Logging](./logging/).
+**Note:** For information on how to interpret logs, see [Logging](./logging).
 
