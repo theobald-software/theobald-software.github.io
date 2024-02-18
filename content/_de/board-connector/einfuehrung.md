@@ -23,7 +23,7 @@ Board Connector besteht aus zwei Komponenten:
 
 ![Architecture-01](/img/content/Architecture-01.png){:class="img-responsive"}
 
-Während der Designphase kann der Benutzer Extraktionen, Quellen und die [Servereinstellungen](./server/server_einstellungen) mit Hilfe des [Designers](./erste-schritte/bc-designer-overview) erstellen, modifizieren und anpassen. 
+Während der Designphase kann der Benutzer Extraktionen, Quellen und die [Servereinstellungen](./server/server-einstellungen) mit Hilfe des [Designers](./erste-schritte/bc-designer-overview) erstellen, modifizieren und anpassen. 
 
 Während der Ausführungsphase kann der Benutzer die in der Designphase entworfenen Extraktionen ausführen. Die Ausführung der Extraktionen findet auf dem [Server](./server) statt. 
 

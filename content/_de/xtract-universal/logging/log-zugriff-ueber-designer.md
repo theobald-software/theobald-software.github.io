@@ -14,7 +14,7 @@ progressstate: 5
 
 Auf Server-und Extraktionslogs kann man im Designer und über die [Web-API](../web-api) zugreifen.<br>
 Sowohl die Server- als auch die Extraktionslogs werden nach einem definierten Zeitraum automatisch gelöscht.
-Der Zeitraum kann in den [Servereinstellungen] definiert werden.(../server/server_einstellungen).
+Der Zeitraum kann in den [Servereinstellungen](../server/server-einstellungen) definiert werden.
 
 ### Server-Logs (Web Worker)
 
@@ -24,7 +24,7 @@ Die Server-Logs (Web Worker) können im Designer über das Hauptmenü **[Server]
  
 Die Logs werden pro TCP-Verbindung erstellt. Um zwischen den Logs zu wechseln, verwenden Sie die Liste auf der linken Seite:
 
-Serverprotokolle werden nach einem definierten Zeitraum automatisch gelöscht, siehe [Servereinstellungen](../server/servereinstellungen).<br>
+Serverprotokolle werden nach einem definierten Zeitraum automatisch gelöscht, siehe [Servereinstellungen](../server/server-einstellungen).<br>
 For information on how to query server logs using the web API, see [Web API - Get Server Logs](../web-api#get-server-logs).
 
 

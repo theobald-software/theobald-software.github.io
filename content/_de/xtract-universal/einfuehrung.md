@@ -61,7 +61,7 @@ Die Verwendung von Xtract Universal umfasst zwei Hauptphasen: Entwurfsphase und 
 
 Während der Designphase kann der Benutzer:
 - Extraktionen, Quellen und Destinationen erstellen und modifizieren.
-- die [Servereinstellungen](./server/server_einstellungen) im [Designers](./erste-schritte/designer-overview) anpassen. 
+- die [Servereinstellungen](./server/server-einstellungen) im [Designers](./erste-schritte/designer-overview) anpassen. 
 
 Während der Ausführungsphase kann der Benutzer:
 - die in der Designphase entworfenen Extraktionen ausführen. 
