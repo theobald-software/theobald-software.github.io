@@ -44,7 +44,7 @@ Response:
 ### Destinationsdetails abrufen
 
 ```
-[protocol]://[host]:[port]/config/destinations
+[protocol]://[host]:[port]/destinations
 ```  
 
 Gibt eine Liste aller definierten Definitionen zurück.
@@ -67,47 +67,18 @@ Das Ergebnis enthält die folgenden Elemente:
 
 #### Beispiel 
 
-`http://sherri.theobald.local:8065/config/destinations`
+`http://sherri.theobald.local:8065/destinations`
 
 <details>
 <summary>Click here to show the response body</summary>
 {% highlight json %}
-{
-    "destinations": 
-    [
-        {
-            "name": "csv",
-            "type": "FileCSV",
-            "directory": "C:\\Users\\alice\\Documents\\csv\\"
-        },
-        {
-            "name": "http-csv",
-            "type": "CSV"
-        },
-        {
-            "name": "http-json",
-            "type": "HTTPJSON"
-        },
-        {
-            "name": "json",
-            "type": "FileJSON",
-            "directory": "C:\\Users\\alice\\Documents\\json"
-        },
-        {
-            "name": "sql-server",
-            "type": "SQLServer",
-            "host": "dbtest-ws2019.theobald.local",
-            "port": 1433,
-            "database": "alice",
-            "user": "THEOBALD\\alice"
-        },
-        {
-            "name": "tableau",
-            "type": "Tableau",
-            "directory": "C:\\Users\\alice\\Documents\\tableau"
-        }
-    ]
-}
+Name,Type,Host,Port,Database,User,Schema,Directory
+csv,FileCSV,,,,,,"C:\Users\alice\Documents\csv\"
+http-csv,CSV,,,,,,
+http-json,HTTPJSON,,,,,,
+json,FileJSON,,,,,,"C:\Users\alice\Documents\json"
+sql-server,SQLServer,dbtest-ws2019.theobald.local,1433,alice,THEOBALD\alice,,
+tableau2022,Tableau,,,,,,"C:\Users\alice\Documents\csv"
 {% endhighlight %}
 </details>
 
@@ -667,7 +638,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
             "runs": [
                 {
                     "rowCount": 200,
-                    "duration": "00:00:00.114",
+                    "duration": "PT00H00M00.2651",
                     "state": "FinishedNoErrors",
                     "startedAt": "2023-08-17_11:31:44.029"
                 }
@@ -680,14 +651,14 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
             "runs": [
                 {
                     "rowCount": 0,
-                    "duration": "00:00:00.214",
+                    "duration": "PT00H00M01.3741",
                     "state": "FinishedErrors",
                     "webServerLog": "2024-02-05_08:13:48.132",
                     "startedAt": "2024-02-05_08:14:13.771"
                 },
                 {
                     "rowCount": 9995,
-                    "duration": "00:00:01.429",
+                    "duration": "PT00H00M00.477S",
                     "state": "FinishedNoErrors",
                     "webServerLog": "2024-02-05_10:20:51.851",
                     "startedAt": "2024-02-05_10:20:52.344"
@@ -708,14 +679,14 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
     "runs": [
         {
             "rowCount": 0,
-            "duration": "00:00:00.214",
+            "duration": "PT00H00M01.3741",
             "state": "FinishedErrors",
             "webServerLog": "2024-02-05_08:13:48.132",
             "startedAt": "2024-02-05_08:14:13.771"
         },
         {
             "rowCount": 9995,
-            "duration": "00:00:01.429",
+            "duration": "PT00H00M00.477S",
             "state": "FinishedNoErrors",
             "webServerLog": "2024-02-05_10:20:51.851",
             "startedAt": "2024-02-05_10:20:52.344"
@@ -732,7 +703,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 {% highlight json %}
 {
     "rowCount": 9995,
-    "duration": "00:00:01.429",
+    "duration": "PT00H00M00.477S",
     "state": "FinishedNoErrors",
     "webServerLog": "2024-02-05_10:20:51.851",
     "startedAt": "2024-02-05_10:20:52.344"
@@ -747,7 +718,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 {% highlight json %}
 {
     "rowCount": 9995,
-    "duration": "00:00:01.429",
+    "duration": "PT00H00M00.477S",
     "state": "FinishedNoErrors",
     "webServerLog": "2024-02-05_10:20:51.851",
     "startedAt": "2024-02-05_10:20:52.344",
