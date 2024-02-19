@@ -190,7 +190,7 @@ Das Ergebnis von `[protocol]://[host]:[port]/config/extractions/[extraction_name
 **Hinweis:** Datenfelder, die Datumsangaben enthalten, haben den Datentyp *ConvertedDate*, wenn die Option *Date Conversion (Datumsumrechnung)* in den *Destination Settings (Destinationseinstellungen)* aktiv ist.
 Wenn inaktiv, ist der Datentyp *StringLengthMax* mit einer Länge von 8 (*Datum*).
 
-
+<!---
 #### Beispiele
 
 `http://sherri.theobald.local:8065/config/extractions/`
@@ -538,7 +538,7 @@ Wenn inaktiv, ist der Datentyp *StringLengthMax* mit einer Länge von 8 (*Datum*
 }
 {% endhighlight %}
 </details>
-
+--->
 
 ### Extraktionen ausführen
 
@@ -672,7 +672,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt den Extraktionslauf der angegebenen Extraktion mit dem angegebenen Zeitstempel zurück. |
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Gibt das Extraktionslog der angegebenen Extraktion mit dem angegebenen Zeitstempel zurück. |
 
-
+<!---
 #### Beispiel
 
 `http://sherri.theobald.local:8065/logs/extractions?min=2023-08-17_11:20:44.029`
@@ -812,6 +812,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 }
 {% endhighlight %}
 </details>
+--->
 
 {: .box-note } 
 **Hinweis:** Informationen zur Interpretation von Protokollen, sie [Logging](./logging/).

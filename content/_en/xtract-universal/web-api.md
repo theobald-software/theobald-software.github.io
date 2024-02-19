@@ -190,6 +190,7 @@ The result of `[protocol]://[host]:[port]/config/extractions/[extraction_name]/r
 **Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. 
 If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 
+<!---
 #### Examples
 
 `http://sherri.theobald.local:8065/config/extractions/`
@@ -537,7 +538,7 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 }
 {% endhighlight %}
 </details>
-
+--->
 
 ### Run Extractions
 
@@ -671,7 +672,7 @@ Returns a list of extraction runs. The result contains the following elements:
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction run of the specified extraction with the specified timestamp. |
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Returns the extraction log of the specified extraction with the specified timestamp. |
 
-
+<!---
 #### Example
 
 `http://sherri.theobald.local:8065/logs/extractions?min=2023-08-17_11:20:44.029`
@@ -811,6 +812,7 @@ Returns a list of extraction runs. The result contains the following elements:
 }
 {% endhighlight %}
 </details>
+--->
 
 {: .box-note } 
 **Note:** For information on how to interpret logs, see [Logging](./logging/).
