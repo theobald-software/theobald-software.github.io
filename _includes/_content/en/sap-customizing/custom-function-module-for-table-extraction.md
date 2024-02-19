@@ -53,5 +53,5 @@ Testing the function modules on an SAP system is therefore not possible.
 | Conversion exits | x | x | x | x |
 | Aggregate functions | x | x | x | x |
 | SQL expressions (subqueries) | x | - | - | - |
-| Background jobs | x | x | x | - |
+| Background jobs | x | x | - | - |
 
