@@ -51,5 +51,5 @@ Die Funktionsbausteine /THEO/READ_TABLE und Z_THEO_READ_TABLE können wegen ihre
 | Konvertierungs-Exits | x | x | x | x |
 | Aggregatfunktionen | x | x | x | x |
 | SQL Ausdrücke (Subqueries) | x | - | - | - |
-| Hintergrundjobs | x | x | x | - |
+| Hintergrundjobs | x | x | - | - |
 
