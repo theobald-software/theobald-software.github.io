@@ -83,6 +83,7 @@ tableau2022,Tableau,,,,,,"C:\Users\alice\Documents\csv"
 
 ### Get Extraction Details
 
+<!---
 ```
 [protocol]://[host]:[port]/config/extractions
 ```  
@@ -109,6 +110,7 @@ Returns a list of all defined extractions in JSON format. The result contains th
 | machine| machine on which the extraction was last changed|
 | timestamp| timestamp of the last change |
 | user| user that last changed the extraction |
+
 
 #### Parameters & Options
 
@@ -198,64 +200,6 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             }
         }
 		{% endhighlight %}
-</details>
-
-`http://sherri.theobald.local:8065/config/extractions/`
-
-<details>
-<summary>Click here to show the response body</summary>
-{% highlight json %}
-{
-    "extractions": 
-    [
-        {
-            "name": [
-                "ACDOCA"
-            ],
-            "type": "Table",
-            "technicalName": "ACDOCA",
-            "source": "s4h",
-            "destination": "http-csv",
-            "created": {
-                "machine": "SHERRI",
-                "timestamp": "2023-10-04_05:50:56.893",
-                "user": "THEOBALD\\alice"
-            },
-            "lastChange": {
-                "machine": "SHERRI",
-                "timestamp": "2023-10-05_11:40:13.166",
-                "user": "THEOBALD\\alice"
-            }
-        },
-        {
-            "name": [
-                "bw2--0ADDR_SHORT_T"
-            ],
-            "type": "ODP",
-            "technicalName": "0ADDR_SHORT$T",
-            "source": "ec5",
-            "destination": "csv",
-            "latestRun": {
-                "rowCount": 0,
-                "duration": "00:00:01.498",
-                "state": "FinishedErrors",
-                "webServerLog": "2023-10-30_07:25:57.435",
-                "startedAt": "2023-10-30_07:25:58.417"
-            },
-            "created": {
-                "machine": "SHERRI",
-                "timestamp": "2023-06-22_06:39:10.994",
-                "user": "alice"
-            },
-            "lastChange": {
-                "machine": "SHERRI",
-                "timestamp": "2023-10-30_07:25:33.707",
-                "user": "THEOBALD\\alice"
-            }
-        }
-	]
-}
-{% endhighlight %}
 </details>
 
 `http://sherri.theobald.local:8065/config/extractions/?destinationType=sqlserver`
@@ -479,6 +423,142 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             "isEncrypted": false,
             "referenceField": "UWAER",
             "referenceTable": "KNA1"
+        }
+    ]
+}
+{% endhighlight %}
+</details>
+
+-->
+
+```
+[protocol]://[host]:[port]/config/extractions
+```  
+
+Returns a list of all defined extractions in JSON format. The result contains the following elements:
+
+|  Item   | Description    |
+|--------------|---------|
+| name  | name of the extraction |
+| type  |extraction type |
+| source|  name of the source connection |
+| destination| name of the target connection |
+| latestRun| contains *started*, *duration*, *rows count* and *state* of the latest extraction run |
+| started| timestamp of the last execution |
+| duration | duration of the last execution |
+| rows count| number of the last extracted data records |
+| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| created| contains *machine*, *timestamp* and *user* of when the extraction was created|
+| machine| machine on which the extraction was created |
+| user| user that created the extraction |
+| timestamp| timestamp of the creation |
+| lastChange| contains *machine*, *timestamp* and *user* of when the extraction was last changed|
+| machine| machine on which the extraction was last changed|
+| user| user that last changed the extraction |
+| timestamp| timestamp of the last change |
+
+
+#### Parameters & Options
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. |
+| ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
+
+
+The result of `[protocol]://[host]:[port]/config/extractions/[extraction_name]/result-columns` contains the following elements:
+
+| Item         | Type    | Description                         |
+|--------------|---------|-------------------------------------|
+| name         | String  | column name                         |
+| description  | String  | column description                  |
+| type         | String  | column datatype                     |
+| length       | Integer | column length                       |
+| isPrimaryKey | boolean | column is primary key of extraction |
+| isEncrypted  | boolean | encryption for column is active     |
+| decimalsCount| Integer | number of decimal places |
+| [referenceField](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference field for currency/quantity |
+| [referenceTable](https://help.sap.com/viewer/6f3c662f6c4b1014b3c1f279a90f707f/7.01.18/en-US/cf21ea5d446011d189700000e8322d00.html) | String  | reference table for currency/quantity |
+
+{: .box-note }
+**Note:** Data fields that contain dates have the data type *ConvertedDate* if the option *Date Conversion* in the *Destination Settings* is active. 
+If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
+
+#### Examples
+
+`http://sherri.theobald.local:8065/config/extractions/`
+
+<details>
+<summary>Click here to show the response body</summary>
+{% highlight json %}
+{
+    "extractions": 
+    [
+        {
+            "name": "0COSTCENTER_0101_HIER",
+            "type": "DeltaQ",
+            "source": "ec5",
+            "destination": "parquet",
+            "latestRun": {
+                "started": "20210219T132323.542Z",
+                "duration": "PT00H00M07.101S",
+                "rowsCount": 0,
+                "state": "FinishedErrors"
+            },
+            "lastChange": {
+                "machine": "[::ffff:169.254.223.102%10]:58691",
+                "user": "THEOBALD\\white",
+                "timestamp": "20210219T132508.602Z"
+            },
+            "created": {
+                "machine": "[::ffff:127.0.0.1]:53835",
+                "user": "THEOBALD\\walter",
+                "timestamp": "20210212T105033.605Z"
+            }
+        },
+        {
+            "name": "0FI_GL_4_ODP",
+            "type": "ODP",
+            "source": "ec5",
+            "destination": "sqlserver",
+            "latestRun": {
+                "started": "20210311T095741.184Z",
+                "duration": "PT00H07M03.024S",
+                "rowsCount": 1309110,
+                "state": "FinishedNoErrors"
+            },
+            "lastChange": {
+                "machine": "[::ffff:169.254.223.102%10]:50070",
+                "user": "THEOBALD\\mario",
+                "timestamp": "20210311T095739.174Z"
+            },
+            "created": {
+                "machine": "[::ffff:169.254.223.102%10]:50070",
+                "user": "THEOBALD\\brothers",
+                "timestamp": "20210311T093800.095Z"
+            }
+        },
+               {
+            "name": "0MATERIAL_ATTR",
+            "type": "DeltaQ",
+            "source": "ec5",
+            "destination": "http-csv",
+            "latestRun": {
+                "started": "20210219T145568.237Z",
+                "duration": "PT00H00M24.433S",
+                "rowsCount": 18011,
+                "state": "FinishedNoErrors"
+            },
+            "lastChange": {
+                "machine": "[::ffff:169.254.223.102%10]:58691",
+                "user": "THEOBALD\\giana",
+                "timestamp": "20210219T145555.517Z"
+            },
+            "created": {
+                "machine": "[::ffff:169.254.223.102%9]:60483",
+				"user": "THEOBALD\\sisters",
+                "timestamp": "20200708T091200.544Z"
+            }
         }
     ]
 }
