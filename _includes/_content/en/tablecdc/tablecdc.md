@@ -29,7 +29,9 @@ For a detailed overview of this process, refer to the Knowledge Base article [De
 	- HANA
 	- SQL Server
 	- Oracle
-	- IBM Db2, Db4, Db6
+	- IBM Db2
+	- IBM for i (Db4)
+	- IBM for z/os (Db6)
 	- MaxDB
 - SAP custom function module [/THEO/CDC_ECC or /THEO/CDC_S4](./sap-customizing/custom-function-module-for-tablecdc)
 - SAP custom function module [/THEO/READ_TABLE or Z_THEO_READ_TABLE](./sap-customizing/custom-function-module-for-table-extraction) version 2.10 or higher

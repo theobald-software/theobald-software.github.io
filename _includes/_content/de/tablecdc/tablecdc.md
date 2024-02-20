@@ -29,7 +29,9 @@ Eine detailierte Übersicht dieses Prozesses finden Sie in dem Knowledge Base Ar
 	- HANA
 	- SQL Server
 	- Oracle
-	- IBM Db2, Db4, Db6
+	- IBM Db2
+	- IBM for i (Db4)
+	- IBM for z/os (Db6)
 	- MaxDB
 - Benutzerdefinierter Funktionsbaustein [/THEO/CDC_ECC oder /THEO/CDC_S4](./sap-customizing/funktionsbaustein-fuer-tablecdc)
 - Benutzerdefinierter Funktionsbaustein [/THEO/READ_TABLE oder Z_THEO_READ_TABLE](./sap-customizing/funktionsbaustein-fuer-table-extraktion) Version 2.10 oder höher
