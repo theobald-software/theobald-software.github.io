@@ -25,6 +25,12 @@ For a detailed overview of this process, refer to the Knowledge Base article [De
 ### Requirements
  
 - Compatible with SAP ECC 5.0 and higher
+- Supported databases:
+	- HANA
+	- SQL Server
+	- Oracle
+	- IBM Db2, Db4, Db6
+	- MaxDB
 - SAP custom function module [/THEO/CDC_ECC or /THEO/CDC_S4](./sap-customizing/custom-function-module-for-tablecdc)
 - SAP custom function module [/THEO/READ_TABLE or Z_THEO_READ_TABLE](./sap-customizing/custom-function-module-for-table-extraction) version 2.10 or higher
 

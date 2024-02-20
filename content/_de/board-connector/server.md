@@ -56,7 +56,7 @@ BCService.exe startet zwei Listener-Prozesse:
 Die Log-Datei befindet sich im Logs-Unterverzeichnis des Programmverzeichnisses: `C:ProgramFiles\Board Connector\logs` (standartmäßig).
 
 
-Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
+Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server-einstellungen) definiert sind.
 
 BCConfigServer.exe wartet auf neue Verbindungsanfragen vom Designer. 
 
