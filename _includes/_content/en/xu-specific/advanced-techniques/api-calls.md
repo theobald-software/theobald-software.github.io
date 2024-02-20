@@ -43,7 +43,7 @@ Response:
 ### Get Destination Details
 
 ```
-[protocol]://[host]:[port]/config/destinations
+[protocol]://[host]:[port]/destinations
 ```  
 
 Returns a list of all defined destinations. 
@@ -66,47 +66,18 @@ The result contains the following elements:
 
 #### Example 
 
-`http://sherri.theobald.local:8065/config/destinations`
+`http://sherri.theobald.local:8065/destinations`
 
 <details>
 <summary>Click here to show the response body</summary>
 {% highlight json %}
-{
-    "destinations": 
-    [
-        {
-            "name": "csv",
-            "type": "FileCSV",
-            "directory": "C:\\Users\\alice\\Documents\\csv\\"
-        },
-        {
-            "name": "http-csv",
-            "type": "CSV"
-        },
-        {
-            "name": "http-json",
-            "type": "HTTPJSON"
-        },
-        {
-            "name": "json",
-            "type": "FileJSON",
-            "directory": "C:\\Users\\alice\\Documents\\json"
-        },
-        {
-            "name": "sql-server",
-            "type": "SQLServer",
-            "host": "dbtest-ws2019.theobald.local",
-            "port": 1433,
-            "database": "alice",
-            "user": "THEOBALD\\alice"
-        },
-        {
-            "name": "tableau",
-            "type": "Tableau",
-            "directory": "C:\\Users\\alice\\Documents\\tableau"
-        }
-    ]
-}
+Name,Type,Host,Port,Database,User,Schema,Directory
+csv,FileCSV,,,,,,"C:\Users\alice\Documents\csv\"
+http-csv,CSV,,,,,,
+http-json,HTTPJSON,,,,,,
+json,FileJSON,,,,,,"C:\Users\alice\Documents\json"
+sql-server,SQLServer,dbtest-ws2019.theobald.local,1433,alice,THEOBALD\alice,,
+tableau2022,Tableau,,,,,,"C:\Users\alice\Documents\csv"
 {% endhighlight %}
 </details>
 
@@ -122,11 +93,11 @@ Returns a list of all defined extractions in JSON format. The result contains th
 |--------------|---------|
 | name  | name of the extraction |
 | type  |extraction type |
-| technical name|  name of the extracted SAP object |
+| sapObject|  name of the extracted SAP object |
 | source|  name of the source connection |
 | destination| name of the target connection |
 | latestRun| contains *rowCount*, *duration*, *state* and *startedAt* of the latest extraction run |
-| row count| number of the last extracted data records |
+| rowCount| number of the last extracted data records |
 | duration | duration of the last execution |
 | state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
 | startedAt| timestamp of the last execution |
@@ -138,6 +109,7 @@ Returns a list of all defined extractions in JSON format. The result contains th
 | machine| machine on which the extraction was last changed|
 | timestamp| timestamp of the last change |
 | user| user that last changed the extraction |
+
 
 #### Parameters & Options
 
@@ -186,18 +158,18 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             "destination": "GoogleCloudStorage",
             "latestRun": {
                 "rowCount": 20275,
-                "duration": "00:00:13.383",
+                "duration": "PT00H00M13.383S",
                 "state": "FinishedNoErrors",
                 "startedAt": "2023-08-17_11:24:07.770"
             },
             "created": {
                 "machine": "TODD",
-                "timestamp": "2022-10-05_08:06:18.544",
+                "timestamp": "20221005T080618.544Z",
                 "user": "THEOBALD\\steffan"
             },
             "lastChange": {
                 "machine": "SHERRI",
-                "timestamp": "2024-01-29_13:15:30.701",
+                "timestamp": "20240129T131530.701Z",
                 "user": "THEOBALD\\alice"
             }
         },
@@ -211,80 +183,22 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             "destination": "csv",
             "latestRun": {
                 "rowCount": 200,
-                "duration": "00:00:00.114",
+                "duration": "PT00H00M00.114S",
                 "state": "FinishedNoErrors",
                 "startedAt": "2023-08-17_11:31:44.029"
             },
             "created": {
                 "machine": "SHERRI",
-                "timestamp": "2023-08-15_11:46:51.045",
+                "timestamp": "20230815T114651.045Z",
                 "user": "THEOBALD\\alice"
             },
             "lastChange": {
                 "machine": "SHERRI",
-                "timestamp": "2023-08-17_11:33:28.786",
+                "timestamp": "20230817T113328.786Z",
                 "user": "THEOBALD\\alice"
             }
         }
 		{% endhighlight %}
-</details>
-
-`http://sherri.theobald.local:8065/config/extractions/`
-
-<details>
-<summary>Click here to show the response body</summary>
-{% highlight json %}
-{
-    "extractions": 
-    [
-        {
-            "name": [
-                "ACDOCA"
-            ],
-            "type": "Table",
-            "technicalName": "ACDOCA",
-            "source": "s4h",
-            "destination": "http-csv",
-            "created": {
-                "machine": "SHERRI",
-                "timestamp": "2023-10-04_05:50:56.893",
-                "user": "THEOBALD\\alice"
-            },
-            "lastChange": {
-                "machine": "SHERRI",
-                "timestamp": "2023-10-05_11:40:13.166",
-                "user": "THEOBALD\\alice"
-            }
-        },
-        {
-            "name": [
-                "bw2--0ADDR_SHORT_T"
-            ],
-            "type": "ODP",
-            "technicalName": "0ADDR_SHORT$T",
-            "source": "ec5",
-            "destination": "csv",
-            "latestRun": {
-                "rowCount": 0,
-                "duration": "00:00:01.498",
-                "state": "FinishedErrors",
-                "webServerLog": "2023-10-30_07:25:57.435",
-                "startedAt": "2023-10-30_07:25:58.417"
-            },
-            "created": {
-                "machine": "SHERRI",
-                "timestamp": "2023-06-22_06:39:10.994",
-                "user": "alice"
-            },
-            "lastChange": {
-                "machine": "SHERRI",
-                "timestamp": "2023-10-30_07:25:33.707",
-                "user": "THEOBALD\\alice"
-            }
-        }
-	]
-}
-{% endhighlight %}
 </details>
 
 `http://sherri.theobald.local:8065/config/extractions/?destinationType=sqlserver`
@@ -305,12 +219,12 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             "destination": "sql-server",
             "created": {
                 "machine": "SHERRI",
-                "timestamp": "2023-06-22_06:24:54.495",
+                "timestamp": "20230622T062454.495Z",
                 "user": "alice"
             },
             "lastChange": {
                 "machine": "SHERRI",
-                "timestamp": "2023-07-03_07:06:09.890",
+                "timestamp": "20230703T070609.890Z",
                 "user": "THEOBALD\\alice"
             }
         },
@@ -324,12 +238,12 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             "destination": "sql-server",
             "created": {
                 "machine": "SHERRI",
-                "timestamp": "2023-06-22_05:15:26.003",
+                "timestamp": "20230622T051526.003Z",
                 "user": "alice"
             },
             "lastChange": {
                 "machine": "SHERRI",
-                "timestamp": "2023-07-03_07:06:09.955",
+                "timestamp": "20230703T070609.955Z",
                 "user": "THEOBALD\\alice"
             }
         },
@@ -343,43 +257,18 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
             "destination": "sql-server",
             "latestRun": {
                 "rowCount": 13,
-                "duration": "00:00:02.710",
+                "duration": "PT00H00M02.710S",
                 "state": "FinishedNoErrors",
                 "startedAt": "2023-07-19_06:04:04.139"
             },
             "created": {
                 "machine": "SHERRI",
-                "timestamp": "2023-07-19_05:15:13.542",
+                "timestamp": "20230719T051513.542Z",
                 "user": "THEOBALD\\alice"
             },
             "lastChange": {
                 "machine": "SHERRI",
-                "timestamp": "2023-08-15_07:46:27.575",
-                "user": "THEOBALD\\alice"
-            }
-        },
-        {
-            "name": [
-                "MAKT"
-            ],
-            "type": "Table",
-            "technicalName": "MAKT",
-            "source": "ec5",
-            "destination": "sql-server",
-            "latestRun": {
-                "rowCount": 0,
-                "duration": "00:00:02.133",
-                "state": "FinishedErrors",
-                "startedAt": "2023-08-04_06:43:17.233"
-            },
-            "created": {
-                "machine": "SHERRI",
-                "timestamp": "2023-06-13_16:50:52.580",
-                "user": "THEOBALD\\alice"
-            },
-            "lastChange": {
-                "machine": "SHERRI",
-                "timestamp": "2023-08-04_06:43:11.830",
+                "timestamp": "20230815T074627.575Z",
                 "user": "THEOBALD\\alice"
             }
         }
@@ -665,7 +554,7 @@ Returns a list of extraction runs. The result contains the following elements:
             "runs": [
                 {
                     "rowCount": 200,
-                    "duration": "00:00:00.114",
+                    "duration": "PT00H00M00.2651",
                     "state": "FinishedNoErrors",
                     "startedAt": "2023-08-17_11:31:44.029"
                 }
@@ -678,14 +567,14 @@ Returns a list of extraction runs. The result contains the following elements:
             "runs": [
                 {
                     "rowCount": 0,
-                    "duration": "00:00:00.214",
+                    "duration": "PT00H00M01.3741",
                     "state": "FinishedErrors",
                     "webServerLog": "2024-02-05_08:13:48.132",
                     "startedAt": "2024-02-05_08:14:13.771"
                 },
                 {
                     "rowCount": 9995,
-                    "duration": "00:00:01.429",
+                    "duration": "PT00H00M00.477S",
                     "state": "FinishedNoErrors",
                     "webServerLog": "2024-02-05_10:20:51.851",
                     "startedAt": "2024-02-05_10:20:52.344"
@@ -706,14 +595,14 @@ Returns a list of extraction runs. The result contains the following elements:
     "runs": [
         {
             "rowCount": 0,
-            "duration": "00:00:00.214",
+            "duration": "PT00H00M01.3741",
             "state": "FinishedErrors",
             "webServerLog": "2024-02-05_08:13:48.132",
             "startedAt": "2024-02-05_08:14:13.771"
         },
         {
             "rowCount": 9995,
-            "duration": "00:00:01.429",
+            "duration": "PT00H00M00.477S",
             "state": "FinishedNoErrors",
             "webServerLog": "2024-02-05_10:20:51.851",
             "startedAt": "2024-02-05_10:20:52.344"
@@ -730,7 +619,7 @@ Returns a list of extraction runs. The result contains the following elements:
 {% highlight json %}
 {
     "rowCount": 9995,
-    "duration": "00:00:01.429",
+    "duration": "PT00H00M00.477S",
     "state": "FinishedNoErrors",
     "webServerLog": "2024-02-05_10:20:51.851",
     "startedAt": "2024-02-05_10:20:52.344"
@@ -738,14 +627,14 @@ Returns a list of extraction runs. The result contains the following elements:
 {% endhighlight %}
 </details>
 
-`http://sherri.theobald.local:8065/logs/extractions/KNA1/2024-02-05_10:20:52.344/log`
+`http://sherri.theobald.local:8065/logs/extractions/KNA1/2024-02-20_07:12:54.774/log`
 
 <details>
 <summary>Click here to show the response body</summary>
 {% highlight json %}
 {
     "rowCount": 9995,
-    "duration": "00:00:01.429",
+    "duration": "PT00H00M00.477S",
     "state": "FinishedNoErrors",
     "webServerLog": "2024-02-05_10:20:51.851",
     "startedAt": "2024-02-05_10:20:52.344",
