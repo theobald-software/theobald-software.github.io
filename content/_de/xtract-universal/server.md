@@ -58,7 +58,7 @@ XtractService.exe startet zwei Listener-Prozesse:
 - Theobald.Xu.Web.Listener.exe
 - Theobald.Xu.Rpc.Listener.exe
 
-Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server_einstellungen) definiert sind.
+Die beiden Listener-Prozesse lauschen auf den [Ports](./server/ports), die in den [Server-Einstellungen](./server/server-einstellungen) definiert sind.
 
 {: .box-tip }
 **Tipp:** Die XtractService.exe protokolliert ihre Aktionen in ServiceLog.txt. 

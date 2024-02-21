@@ -50,7 +50,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | BCApiServer.exe| Unverschlüsselter WCF-Service zum Abrufen von Metadaten durch den Designer.  |
 | Theobald.Bc.Web.Listener.exe| Theobald.Bc.Web.Listener.exe ein Listener-Prozess, der auf HTTP-Anfragen wartet. |
 | Theobald.Bc.Web.Worker.exe| Für jede TCP-Verbindung startet die Theobald.Bc.Web.Listener.exe eine neue Instanz von Theobald.Bc.Web.Worker.exe, die alle über die TCP-Verbindung eingehenden HTTP-Requests abarbeitet. |
-| BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server_einstellungen) definiert. |
+| BCCleanup.exe| Anwendung, die die alten Server-Logs aufräumt, wie in den [Server-Einstellungen](../server/server-einstellungen) definiert. |
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Sources (Quellen) usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Hauptversionen (Major Releases) und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von Board Connector mit allen dazugehörigen Komponenten von Ihrem Rechner. |
 | BOARDConnectorSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](./backup-und-migration#migration-auf-eine-andere-maschine).|
