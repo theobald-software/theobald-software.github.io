@@ -61,7 +61,7 @@ Das Zwischenspeichern (Result Cache) des Ergebnisses von Extraktionen ist inakti
 In Xtract Universal werden Sie zur Eingabe der SAP-Anmeldeinformation aufgefordert, wenn Sie Extraktionen im Designer ausführen, siehe [Eine Extraktion ausführen](./eine-extraktion-ausfuehren).
 
 {: .box-note }
-**Hinweis:** Die Option **Request SAP credentials from caller when running extractions** erfordert, dass die Extraktionen über [HTTPS - unrestricted](../server/server_einstellungen#web-server) aufgerufen werden.
+**Hinweis:** Die Option **Request SAP credentials from caller when running extractions** erfordert, dass die Extraktionen über [HTTPS - unrestricted](../server/server-einstellungen#web-server) aufgerufen werden.
 
 ### Secure Network Communication (SNC)
 
@@ -95,7 +95,7 @@ Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with External ID](ht
 **SSO - Impersonate caller via Kerberos** <br>
 Diese Einstellung aktiviert Kerberos SSO.  
 Die Authentifizierung erfolgt über den Windows Active Directory Benutzer des Aufrufers. 
-Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server_einstellungen#web-server) ausgewählt und eingestellt werden.<br>
+Dafür muss "HTTPS - Restricted to AD users with Designer read access" in den [Server Settings](../server/server-einstellungen#web-server) ausgewählt und eingestellt werden.<br>
 Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Kerberos SNC](https://kb.theobald-software.com/sap-connection/sso-with-kerberos-snc).
 
 
@@ -110,7 +110,7 @@ Die Option "SSO - Impersonate caller via Kerberos" ist für Board Cloud nicht ve
 **SSO - Enroll certificate on behalf of caller** <br>
 Diese Einstellung aktiviert Certifcate SSO. 
 Die Authentifizierung erfolgt über ein Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services für den Windows AD Benutzer des Aufrufers.
-Dafür muss "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server_einstellungen#web-server) eingestellt sein.<br>
+Dafür muss "HTTPS - Restricted to AD users with Designer read access" muss in den [Server Settings](../server/server-einstellungen#web-server) eingestellt sein.<br>
 Für mehr Informationen, siehe [Knowledge Base Artikel: SSO with Client Certificates](https://kb.theobald-software.com/sap-connection/sso-with-client-certificates).
 
 ### SAP Logon Ticket

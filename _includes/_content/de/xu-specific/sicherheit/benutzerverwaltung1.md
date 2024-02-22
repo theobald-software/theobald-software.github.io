@@ -15,12 +15,12 @@ Weitere Informationen zu diesem Thema, finden Sie im Knowledge-Base-Artikel [How
 | :------ |:--- | :---: |
 | Windows credentials (current user) | Der AD-Benutzer, der den Designer ausführt, authentisiert sich gegenüber dem Server per Kerberos. Alle zwischen Designer und Server ausgetauschten Daten werden per Kerberos verschlüsselt. | x |
 | Windows credentials (different user)| Der AD-Benutzer, dessen Benutzername und Passwort in das Anmeldefenster eingegeben werden, authentisiert sich gegenüber dem Server per Kerberos. Alle zwischen Designer und Server ausgetauschten Daten werden per Kerberos verschlüsselt. | x|
-| Custom credentials (TLS encryption) | Der Custom User, dessen Benutzername und Passwort in das Anmeldefenster eingegeben werden, authentisiert sich gegenüber dem Server. Alle zwischen Designer und Server ausgetauschten Daten werden per TLS verschlüsselt. Um TLS Transportverschlüsselung zu verwenden, wird ein [X.509 Serverzertifikat](./x.509-zertifikat-installieren) für den Service benötigt. Das Zertifikat kann in den [Server-Einstellungen](../server/server_einstellungen) hinterlegt werden. Im Anmeldefenster muss im Feld *Server* der DNS Hostname des Servers eingetragen werden, für den das Zertifikat ausgestellt wurde. | - |
+| Custom credentials (TLS encryption) | Der Custom User, dessen Benutzername und Passwort in das Anmeldefenster eingegeben werden, authentisiert sich gegenüber dem Server. Alle zwischen Designer und Server ausgetauschten Daten werden per TLS verschlüsselt. Um TLS Transportverschlüsselung zu verwenden, wird ein [X.509 Serverzertifikat](./x.509-zertifikat-installieren) für den Service benötigt. Das Zertifikat kann in den [Server-Einstellungen](../server/server-einstellungen) hinterlegt werden. Im Anmeldefenster muss im Feld *Server* der DNS Hostname des Servers eingetragen werden, für den das Zertifikat ausgestellt wurde. | - |
 | Custom credentials (Kerberos encryption)| Der Custom User, dessen Benutzername und Passwort in das Anmeldefenster eingegeben werden, authentisiert sich gegenüber dem Server. Alle zwischen Designer und Server ausgetauschten Daten werden per Kerberos verschlüsselt. | x |
 | Anonymous (no encryption) | Es findet keine Authentisierung statt. Die zwischen Designer und Server ausgetauschten Daten werden ohne Transportverschlüsselung im Klartext übertragen. | - |
 
 ### Aktivieren von Authentifizierungsmethoden 
-Diese unterschiedlichen Anmeldeoptionen können Sie in den [Server-Einstellungen](../server/server_einstellungen) aktivieren/deaktivieren.
+Diese unterschiedlichen Anmeldeoptionen können Sie in den [Server-Einstellungen](../server/server-einstellungen) aktivieren/deaktivieren.
 1. Öffnen Sie im Hauptfenster **Server > Settings**.
 ![XU_security-manage-users](/img/content/server-settings_manage.png){:class="img-responsive"}
 2. Wählen Sie den Tab *Configuration Server*.
