@@ -41,7 +41,7 @@ Um Extraktionen nach Ausführungsdatum zu filtern, geben Sie einen Zeitraum in (
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
 
 Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. 
-Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) eingestellt werden.
+Der Zeitraum kann in den [Servereinstellungen](../server/server-einstellungen) eingestellt werden.
 
 Informationen zum Abfragen von Serverlogs mithilfe der Web-API finden Sie unter [Web API - Extraktionslogs abrufen](../web-api#extraktionslogs-abrufen).
 

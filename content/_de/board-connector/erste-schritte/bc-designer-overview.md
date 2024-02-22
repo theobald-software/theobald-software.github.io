@@ -49,7 +49,7 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/>| Details<img width=200/>
 -----|------------ | ------------ | -------------
 ![designer-icon](/img/content/icons/designer/log1.png) | Logs  | Server-Log aufrufen | [Server-Logging](../logging/log-zugriff-ueber-designer#server-logs-run)
-![designer-icon](/img/content/icons/designer/settings.png) | Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/server_einstellungen)
+![designer-icon](/img/content/icons/designer/settings.png) | Settings | Server-Einstellungen aufrufen | [Server-Einstellungen](../server/server-einstellungen)
 ![designer-icon](/img/content/icons/designer/source.png) | Manage Sources | Verbindung zum Quellsystem bearbeiten | [SAP-Verbindung](../einfuehrung/sap-verbindungen-anlegen)
 
 #### Security

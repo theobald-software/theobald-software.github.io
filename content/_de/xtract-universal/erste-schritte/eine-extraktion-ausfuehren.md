@@ -127,5 +127,5 @@ Um die Filter wieder rückgängig zu machen, klicken Sie auf **[Clear search]** 
 
 {: .box-note }
 **Hinweis:** Wenn die Option *Request SAP credentials from caller when running extraction* in den [Einstellungen der SAP Quelle](./sap-verbindungen-anlegen#authentication) aktiv ist, werden Sie zur Eingabe Ihrer SAP-Anmeldedaten aufgefordert, sobald Sie eine Extraktion ausführen.
-Dafür müssen Extraktionen via  [HTTPS - unrestricted](../server/server_einstellungen#web-server) aufgerufen werden.
+Dafür müssen Extraktionen via  [HTTPS - unrestricted](../server/server-einstellungen#web-server) aufgerufen werden.
 

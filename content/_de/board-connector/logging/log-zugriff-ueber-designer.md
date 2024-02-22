@@ -15,7 +15,7 @@ progressstate: 5
 ### Logs im Designer
 Im Designer können Server (Run)- und Extraktions-Logs angezeigt werden.
 
-Sowohl die Server- als auch die Extraktions-Logs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) definiert werden.
+Sowohl die Server- als auch die Extraktions-Logs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server-einstellungen) definiert werden.
 
 ### Server-Logs (Run)
 
@@ -39,11 +39,11 @@ Um Extraktionen nach Ausführungsdatum zu filtern, geben Sie einen Zeitraum in (
 ![View-Extraction-Log](/img/content/View-Extraction-Log.png){:class="img-responsive"}
 
 Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. 
-Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) eingestellt werden.
+Der Zeitraum kann in den [Servereinstellungen](../server/server-einstellungen) eingestellt werden.
 
 
 ### Kopieren von Logs
 Klicken Sie auf **[Copy To Clipboard]**, um das aktuelle Log in die Zwischenablage zu kopieren. Das kopierte Log kann an beliebiger Stelle eingefügt werden (z.B. in eine E-Mail).
 
-Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server_einstellungen) eingestellt werden.
+Sowohl die Server- als auch die Extraktionslogs werden nach einer definierten Zeitspanne automatisch gelöscht. Der Zeitraum kann in den [Servereinstellungen](../server/server-einstellungen) eingestellt werden.
 

@@ -29,7 +29,7 @@ Verwenden Sie das `config` Verzeichnis für [Versionskontrolle](#versionskontrol
 |Dateiname | Beschreibung |
 |:----|:---|
 | `extractions` | Verzeichnis mit den [Extraktionen](../erste-schritte/eine-neue-extraktion-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Extraktion. |
-|`servers`  | Verzeichnis mit den [Servereinstellungen](../server/server_einstellungen).|
+|`servers`  | Verzeichnis mit den [Servereinstellungen](../server/server-einstellungen).|
 | `sources` | Verzeichnis mit den [SAP-Verbindungen](../einfuehrung/sap-verbindungen-anlegen). Jedes Unterverzeichnis enthält eine gleichnamige Quelle (Source). |
 | `version.txt` | Textdatei mit der Versionsnummer, die mit der aktuellen Konfiguration übereinstimmt. Mehr Details dazu finden Sie auch im Abschnitt [Neuinstallation und Update](../einfuehrung/installation-und-update#neuinstallation-und-update).|
 
