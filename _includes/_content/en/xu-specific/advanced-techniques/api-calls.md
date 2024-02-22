@@ -70,7 +70,7 @@ The result contains the following elements:
 
 <details>
 <summary>Click here to show the response body</summary>
-{% highlight json %}
+{% highlight csv %}
 Name,Type,Host,Port,Database,User,Schema,Directory
 csv,FileCSV,,,,,,"C:\Users\alice\Documents\csv\"
 http-csv,CSV,,,,,,
@@ -112,6 +112,8 @@ Returns a list of all defined extractions in JSON format. The result contains th
 
 
 #### Parameters & Options
+
+`[protocol]://[host]:[port]/config/extractions`
 
 | Parameter    | Description  | 
 |-----------|--------------|
@@ -425,6 +427,8 @@ The response of a web service call contains the following information:
 
 #### Parameters
 
+`[protocol]://[host]:[port]/?name=[extraction_name]?`
+
 | Parameter    | Description  | 
 |-----------|--------------|
 | ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.product == "xtract-universal" %}[extraction parameters](./execute-and-automate-extractions/extraction-parameters).{% else %}[extraction parameters](./getting-started/run-an-extraction).{% endif %} |
@@ -527,6 +531,8 @@ Returns a list of extraction runs. The result contains the following elements:
 
 
 #### Parameters & Options
+
+`[protocol]://[host]:[port]/logs/extractions`
 
 | Parameter    | Description  | 
 |-----------|--------------|
@@ -689,6 +695,8 @@ Returns a list of extraction runs. The result contains the following elements:
 Returns a list of timestamps that correspond to server logs.
 
 #### Parameters & Options
+
+`[protocol]://[host]:[port]/logs/web`
 
 | Parameter    | Description  | 
 |-----------|--------------|

@@ -71,7 +71,7 @@ Das Ergebnis enthält die folgenden Elemente:
 
 <details>
 <summary>Click here to show the response body</summary>
-{% highlight json %}
+{% highlight csv %}
 Name,Type,Host,Port,Database,User,Schema,Directory
 csv,FileCSV,,,,,,"C:\Users\alice\Documents\csv\"
 http-csv,CSV,,,,,,
@@ -112,6 +112,8 @@ Gibt eine Liste aller definierten Extraktionen im JSON-Format zurück. Das Ergeb
 | user| Benutzer, der die Extraktion zuletzt geändert hat |
 
 #### Parameter und Optionen
+
+`[protocol]://[host]:[port]/config/extractions`
 
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
@@ -428,6 +430,8 @@ Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
 
 #### Parameter
 
+`[protocol]://[host]:[port]/?name=[extraction_name]`
+
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
 | ```&[parameter1_name]=[value]```  |   Führt die angegebene Extraktion aus und übergibt Werte an die angegebenen {% if page.product == "xtract-universal" %}[Extraktionsparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter).{% else %}[Extraktionsparameter](./erste-schritte/eine-extraktion-ausfuehren#definieren-der-extraktionseigenschaften).{% endif %} |
@@ -530,6 +534,8 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 
 
 #### Parameter & Optionen
+
+`[protocol]://[host]:[port]/logs/extractions`
 
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
@@ -692,6 +698,8 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 Gibt eine Liste von Zeitstempeln zurück, die den Serverlogs entsprechen.
 
 #### Parameter & Optionen
+
+`[protocol]://[host]:[port]/logs/web`
 
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
