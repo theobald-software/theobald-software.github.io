@@ -4,11 +4,15 @@ If you cannot install the function modules, turn to your SAP Basis team for help
 
 ### Installation of THEO_CDC_ECC or THEO_CDC_S4
 
-- When using an SAP ECC system, install the custom function group THEO_CDC_ECC.
+- For SAP ECC systems, install the custom function group THEO_CDC_ECC.
 The transport request for the installation is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\THEO_CDC_ECC.zip`.
 
-- When using an SAP S/4 system, install the custom function group THEO_CDC_S4.
+- For SAP S/4 systems < version 7.55, install the custom function group THEO_CDC_S4.
 The transport request for the installation is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4.zip`.
+
+- For SAP S/4 systems version 7.55 or higher, install the custom function group THEO_CDC_S4_755.
+The transport request for the installation is located in the following installation directory: `C:\Program Files\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4_755.zip`.
+
 
 The transport request needs to be imported into SAP by your SAP Basis team.<br>
 The function groups /THEO/CDC_ECC and /THEO/CDC_S4 both contain the following function modules:
