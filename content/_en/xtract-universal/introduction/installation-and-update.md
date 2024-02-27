@@ -33,7 +33,9 @@ When starting the setup, components can be selected during the installation.
 |Server | | Installs the Xtract Universal Server |
 |<!---->| Install Service| Installs the server component as a windows service. See also section [Start Server](../server/start-server). |
 | <!---->  |  Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
+|XtractUniversal Report Server Plugin |- | Plugin required by the [Power BI Report Server](../destinations/server-report-services) destination.|
 |Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
+
 
 {: .box-note }
 **Note:** Mark the option “Server > Install Service” during the installation, as installing a server without the service is only used for development purposes.
@@ -57,7 +59,8 @@ The list below shows several most important files that are placed into the defau
 | XtractDesigner.exe | [Xtract Universal Designer](../getting-started/designer-overview) application to create, test and monitor extractions.|
 | ConfigConverter.exe| Application that converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Xtract Universal with all its components from your machine. |
-|XtractUniversalSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](./backup-and-migration#migration-to-a-different-machine).|
+| XtractUniversalSetup.exe| Setup of the currently installed version. See also [Migrating to a Different Machine](./backup-and-migration#migration-to-a-different-machine).|
+|XtractUniversal Report Server Plugin | Plugin required by the [Power BI Report Server](../destinations/server-report-services) destination.|
 | Eula_XtractUniversal.rtf | Document containing the license agreement for the use of the software Xtract Universal.|
 | XtractUniversalLicense.json |  License file with information about the server, the component and runtime. |
 
