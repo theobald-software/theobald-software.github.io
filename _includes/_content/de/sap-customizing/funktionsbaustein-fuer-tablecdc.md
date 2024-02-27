@@ -7,10 +7,10 @@ Falls es Ihnen nicht möglich ist, den Z-Funktionsbaustein selbst zu installiere
 - Installieren Sie die Funktionsgruppe THEO_CDC_ECC, wenn Sie ein SAP ECC-System verwenden.
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_ECC.zip`.
 
-- Installieren Sie die Funktionsgruppe THEO_CDC_S4, wenn Sie ein SAP S/4-System < Version 7.55 verwenden.
+- Installieren Sie die Funktionsgruppe THEO_CDC_S4, wenn Sie ein SAP S/4-System mit SAP_BASIS Version < 7.55 verwenden.
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4.zip`.
 
-- Installieren Sie die Funktionsgruppe THEO_CDC_S4_755, wenn Sie ein SAP S/4-System Version 7.55 oder höher verwenden.
+- Installieren Sie die Funktionsgruppe THEO_CDC_S4_755, wenn Sie ein SAP S/4-System mit SAP_BASIS Version 7.55 oder höher verwenden.
 Der Transportauftrag für die Installation befindet sich im folgenden Installationsverzeichnis: `C:\Programme\[XtractProduct]\ABAP\TableCDC\THEO_CDC_S4_755.zip`.
 
 
