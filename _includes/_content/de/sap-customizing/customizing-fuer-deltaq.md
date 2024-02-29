@@ -41,6 +41,7 @@ Activation Type | Registered Server Program |
 Program ID | XTRACT01 |
 Gateway Host | sap-erp-as05.example.com | Name oder IP-Adresse des SAP-Systems.
 Gateway service | sapgw00 | In der Form sapgwnn, wobei nn die SAP Instanznummer, eine zweistellige Zahl zwischen *00* und *99*, ist.
+Serializer | Classic Serializer | Wählen Sie im Tab "Special Options" den *Classic serializer* aus.
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 
