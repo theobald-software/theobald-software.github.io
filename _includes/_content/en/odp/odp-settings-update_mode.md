@@ -22,5 +22,4 @@ A subscription is deleted, if the error message "Illegal change in selection par
 Re-runs the last delta update 
 
 **Direct read (without ODQ):**<br/>
-Directly reads all available data, bypassing the ODQ (Operational Delta Queue). 
-This option is not suited for extracting large amounts of data, because no packaging is available. Direct read is the only update mode that supports data aggregation functions (*Maximum*, *Minimum* and *Sum*).
+Directly reads all available data, bypassing the ODQ (Operational Delta Queue). Direct read is the only update mode that supports data aggregation functions (*Maximum*, *Minimum* and *Sum*).
