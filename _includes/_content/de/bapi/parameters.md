@@ -140,6 +140,7 @@ Um eine Eingabetabelle aus einer Struktur zu entfernen, klicken Sie auf ![x-icon
 
 **Exceptions** bezieht sich auf die ABAP Exceptions / Fehlermeldungen eines BAPIs. 
 Wenn zur Laufzeit eine Ausnahme auftritt, gibt {% if page.product == "xtract-is" %}Xtract IS{% elsif page.product == "xtract-for-alteryx" %}Xtract for Alteryx{% elsif page.product == "xtract-universal" %}Xtract Universal{% elsif page.product == "board-connector" %}Board Connector{% endif %} eine entsprechende Fehlermeldung zurück.
+
 Standardmäßig resultieren alle Ausnahmen in Fehlern, wenn die {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract {% endif %}BAPI Komponente ausgeführt wird.
 Um Ausnahmen zur Laufzeit zu ignorieren, deaktivieren Sie die Ausnahmen im Tab **Extractions**.
 
