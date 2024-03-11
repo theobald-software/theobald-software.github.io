@@ -11,14 +11,14 @@ weight: 86
 lang: de_DE
 progressstate: 5
 ---
-Der folgende Abschnitt beschreibt die Funktion der Xtract Universal **Table CDC** Komponente.<br>
+Der folgende Abschnitt beschreibt die Funktion von Xtract Universal **Table CDC** Extraktionstyp.<br>
 {% include _content/de/tablecdc/tablecdc.md  %}
 
 
 ### Table CDC verwenden
 {% include _content/de/xu-specific/define-extraction.md %}
 
-Weitere Informationen zum Arbeiten mit der TableCDC Komponente finden Sie in den folgenden Unterabschnitten.
+Weitere Informationen zum Arbeiten mit dem TableCDC Extraktionstyp finden Sie in den folgenden Unterabschnitten.
 
 ---
 
