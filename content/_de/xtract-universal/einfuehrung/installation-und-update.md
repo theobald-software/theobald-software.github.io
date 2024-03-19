@@ -34,7 +34,8 @@ Beim Starten des Setups können die optionalen Komponenten (1) für die Installa
 |Server || Installiert Xtract Universal Server. | 
 |<!----> | Install Service |Installiert die Serverkomponente als Windows-Service. Mehr Details im Abschnitt [Server Starten](../server/server-starten) |
 | <!---->| Convert config files| Konvertiert Extraktionen, Sources (Quellen), Destinationen usw. vom Format der vorherigen Version in das neue Format. Diese Komponente ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
-|Start Menu Shortcuts | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
+|XtractUniversal Report Server Plugin | - | Plugin für die [Power BI Report Server](../destinationen/server-report-services) Destination.|
+|Start Menu Shortcuts | - | Komponente, die dem Startmenü Verknüpfungen hinzufügt.|
 
 {: .box-note }
 **Hinweis:** Markieren Sie bei der Installation die Option “Server > Install Service”. Eine Installation des Servers ohne Service dient nur Entwicklungszwecken.
@@ -59,6 +60,7 @@ Die folgende Liste zeigt einige der wichtigsten Dateien, die nach der Installati
 | ConfigConverter.exe|  Anwendung, die Extraktionen, Quellen (Sources), Destinationen usw. vom Format der vorherigen Version in das neue Format konvertiert. Diese Anwendung ist entscheidend bei der Installation von Major Releases und Upgrades von z.B. Version 3.x auf 4.x. |
 | uninstall.exe| Tool zum Deinstallieren und Entfernen von Xtract Universal mit allen dazugehörigen Komponenten von Ihrer Maschine. |
 |XtractUniversalSetup.exe| Setup der aktuell installierten Version. Mehr Details dazu finden Sie auch in [Migration auf eine andere Maschine](./backup-und-migration#migration-auf-eine-andere-maschine).|
+|XtractUniversal Report Server Plugin | Plugin für die [Power BI Report Server](../destinationen/server-report-services) Destination.|
 | Eula_XtractUniversal.rtf | Dokument mit der Lizenzvereinbarung zur Nutzung der Software Xtract Universal.|
 | XtractUniversalLicense.json | Lizenzdatei mit Server-, Komponenten- und Laufzeitinformationen. |
 
