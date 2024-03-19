@@ -20,10 +20,12 @@ Xtract Universal verwendet die folgenden Begriffe für seine Komponenten:
 | Begriff | Beschreibung |
 |:------------ | :------------ |
 | Extraktion | Eine [Extraktion](./erste-schritte/eine-neue-extraktion-anlegen) ist eine Kombination aus einem Quellsystem (SAP-System), einer Destination (z.B. SQL-Server), einem Extraktionstyp (z.B. Table) und den zu extrahierenden SAP-Daten. Wenn eine Extraktion ausgeführt wird, werden die im Extraktionstyp definierten SAP-Daten vom Quellsystem extrahiert und in die zugewiesene Destination geschrieben. Beispiel: Die SAP Tabelle KNA1 wird aus einem SAP S/4HANA System extrahiert und in einen SQL Server geschrieben. <br>Alle angelegten Extraktionen sind im Hauptfenster des Designers aufgelistet: ![extraction](/img/content/xu/main-window-extractionlist.png){:class="img-responsive"}| 
-| Extraktionstyp | Der Extraktionstyp definiert, welche SAP Daten extrahiert werden und mit welcher Methode. Xract Universal bietet die folgenden Extraktionstypen: [BAPI](./bapis-und-funktionsbausteine), [BWCube](./bw-infocubes-und-bex-queries), [BW Hierarchy](./bw-hierarchien), [DeltaQ](./datasource-deltaq), [ODP](./odp), [OHS](./bw-open-hub-services), [SAP Query](./sap-queries), [Report](./report-abap-reports-ansteuern), [Table](./table) and [Table CDC](./table-cdc). | 
+| Extraktionstyp (Komponente) | Der Extraktionstyp definiert, welche SAP Daten extrahiert werden und mit welcher Methode. Xract Universal bietet die folgenden Extraktionstypen: [BAPI](./bapis-und-funktionsbausteine), [BWCube](./bw-infocubes-und-bex-queries), [BW Hierarchy](./bw-hierarchien), [DeltaQ](./datasource-deltaq), [ODP](./odp), [OHS](./bw-open-hub-services), [SAP Query](./sap-queries), [Report](./report-abap-reports-ansteuern), [Table](./table) and [Table CDC](./table-cdc). | 
 | Quellsystem | Ein Quellsystem stellt eine Verbindung zu einem SAP-System dar, siehe [SAP-Verbindung anlegen](./einfuehrung/sap-verbindungen-anlegen). | 
 | Destination | Eine Destination definiert, wie die extrahierten SAP Daten verarbeitet werden. Daten können für lokale oder cloudbasierte Dateisysteme in ein entsprechendes Datenformat konvertiert werden oder direkt an Zielumgebungen wie Datenbanken und andere APIs übergeben werden. Für eine komplette Liste verfügbarer Destinationen, siehe [Destinationen](./destinationen). | 
 
+{: .box-note }
+**Hinweis:** Extraktionstyp ist der bevorzugte Begriff für die Definition, welche SAP-Daten mit welcher Methode extrahiert werden. Der Begriff „Komponente“ oder „Extraktionskomponente“ kann aufgrund der Wiederverwendung von Informationen in allen Produkten von Theobald Software als Synonym angesehen werden.
 <!---
 | Begriff | Beschreibung |
 |:------------ | :------------ |
