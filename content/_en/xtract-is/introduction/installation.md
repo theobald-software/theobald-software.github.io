@@ -16,8 +16,7 @@ Xtract IS is required when developing and running SSIS packages.
 
 ### Prerequisites
 
-{: .box-note }
-**Note:** Administrator permissions are required to install Xtract IS.
+Administrator permissions are required to install Xtract IS.
 
 Make sure to install the necessary tools in the correct order:
 
@@ -25,12 +24,12 @@ Make sure to install the necessary tools in the correct order:
 Order | Runtime Environment | Development Environment(s)
 ------------ | -------------
 1 | SQL Server (+ [Integration Services](https://learn.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services?view=sql-server-ver16#install-integration-services))| [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
-2 | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+2 | Optional: [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 3 |Xtract IS| Xtract IS
 
 {: .box-note }
 **Note:**
-When you install Visual Studio, make sure to select the Data Storage & Processing toolset. 
+When installing Visual Studio, select the Data Storage & Processing toolset. 
 
 ![xis_client_server_generell](/img/content/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 

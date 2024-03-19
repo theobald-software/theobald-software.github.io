@@ -16,15 +16,14 @@ Xtract IS wird für die Entwicklung und Ausführung von SSIS-Paketen benötigt.
 
 ### Voraussetzungen 
 
-{: .box-note }
-**Hinweis:** Administratorberechtigungen sind notwendig, um Xtract IS zu installieren.
+Administratorberechtigungen sind notwendig, um Xtract IS zu installieren.
 
 Achten Sie darauf die notwendigen Tools in der richtigen Reihenfolge zu installieren:
 
 Reihenfolge | Laufzeitumgebung | Entwicklungsumgebung(en)
 ------------ | -------------
 1 | SQL Server (+ [Integration Services](https://learn.microsoft.com/en-us/sql/integration-services/install-windows/install-integration-services?view=sql-server-ver16#install-integration-services)) | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)
-2 | [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
+2 | Optional: [Visual Studio](https://visualstudio.microsoft.com/downloads) + [SQL Server Data Tools](https://learn.microsoft.com/de-de/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver16)| [SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices)
 3 |Xtract IS| Xtract IS
 
 {: .box-note }
