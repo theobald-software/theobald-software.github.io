@@ -47,21 +47,21 @@ To complete the installation close all Visual Studio windows.
 ### Installation using the Xtract Universal Report Server Plugin
 
 The Xtract Universal Report Server Plugin can be installed as part of the [Xtract Universal Setup](../introduction/installation-and-update).<br>
-To install the Xtract Universal Report Server Plugin on multiple environments without installing the Xtract Universal Designer, follow thee steps below:
+To install the Xtract Universal Report Server Plugin on multiple environments without installing the Xtract Universal Designer, follow the steps below:
 
 
 1. Make sure the *Microsoft Reporting Services Projects* plugin for Visual Studio is installed and active. 
 2. Close Visual Studio.
 3. [Install Xtract Universal](../introduction/installation-and-update) on the environment on which the license runs.
 4. Download the [XtractUniversalReportServerPluginSetup.exe](/docs/xu/XtractUniversalReportServerPluginSetup.exe).
-5. Run the *XtractUniversalReportServerPluginSetup.exe* on any environment on which Visual Studio is used to design reports or on which the Report Server runs.
+5. Run the *XtractUniversalReportServerPluginSetup.exe* on any environment that uses Visual Studio to design reports or where the Report Server runs.
 This installs the Xtract Universal Report Server Plugin on all compatible versions of Visual Studio and/or Report Server found on the environment.<br>
 ![XU-Setup](/img/content/xu/ssrs/XtractUniversalReportServerPluginSetup.png){:class="img-responsive"}
 6. After the installation on the Report Server is complete, restart the Report Server for the changes to take effect. 
 You can restart the server in the Report Server Configuration Manager by clicking **[stop]** and then **[start]**.
 
 {: .box-note }
-**Note:** If the *Reporting Services Projects* plugin for Visual Studio is updated, the Xtract Universal Report Server Plugin won't be available anymore. The Report Server Plugin must be reinstalled.
+**Note:** If the *Reporting Services Projects* plugin for Visual Studio is updated, the Xtract Universal Report Server Plugin is not available anymore. The Report Server Plugin must be reinstalled.
 
 After installation of Xtract Universal Report Server Plugin the following entries and extensions are available in the Visual Studio installation directory:
 - `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\XUDataExtension2020.05.dll`
