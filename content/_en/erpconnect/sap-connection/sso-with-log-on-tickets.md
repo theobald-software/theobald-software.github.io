@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sso-single-sign-on
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 As of ERPConnect version 1.6 SSO scenarios are supported.<br>
 There are several methods to get an SSO Ticket depending on the SAP Infrastructure in the company. 
 

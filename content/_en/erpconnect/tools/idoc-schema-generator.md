@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=idoc-schema-generator
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 The *IDoc-Schema-Generator* generates an XML file that can be used to load IDoc schemas.<br>
 Loading IDoc schemas via XML usually has higher performance than loading them via `CreateIdoc` or `CreateEmptyIdoc`, because no SAP connection is necessary.<br>
 See [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming) for more information on using the generated XML file.
