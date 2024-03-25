@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 Willkommen in der Online Help für ERPConnect.
 
 ERPConnect ist eine .NET Programmierbibliothek zum Entwickeln von SAP-Schnittstellen in allen .NET-fähigen Umgebungen.

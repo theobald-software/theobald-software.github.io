@@ -12,6 +12,11 @@ old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-empfangen-eines-id
 progessstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 Der folgende Abschnitt zeigt, wie Sie ein *MATMAS* IDoc empfangen und verarbeiten.
 Um Ihr SAP-System so konfigurieren, dass es MATMAS-IDocs sendet, folgen Sie der Anleitung im Abschnitt [Einrichten einer IDoc-Testumgebung](./voraussetzungen#einrichten-einer-idoc-testumgebung).
 
@@ -99,6 +104,11 @@ Siehe [XML für IDocs verwenden](../idocs-senden-und-empfangen/idocs-als-xml-ver
 
 
 <!---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
 
 <details>
 <summary>[VB]</summary>

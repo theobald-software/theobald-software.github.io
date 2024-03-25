@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=abap-code-dynamisch-generieren-und-ausfuehren
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 
 Die Klasse *ABAPCode* bietet die Möglichkeit, den Code von ABAP-Reports an SAP zu übergeben und dort on the fly auszuführen. 
 Dadurch ergeben sich nahezu unbegrenzte Möglichkeiten.<br>

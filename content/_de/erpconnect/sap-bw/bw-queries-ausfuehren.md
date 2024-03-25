@@ -10,6 +10,13 @@ weight: 1
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=bw-queries-ausfuehren
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
+
 Die folgende Beispielanwendung zeigt wie Sie mit ERPConnect Daten aus einer BW Query auslesen.
 
 ### Über die Beispiel-Query
