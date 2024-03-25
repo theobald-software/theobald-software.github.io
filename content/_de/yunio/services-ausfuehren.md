@@ -40,14 +40,15 @@ Wenn das Response-Body eine Fehlermeldung zurückgibt, klicken Sie auf **[Logs]*
 
 #### Kontrollschaltfächen
 
-Die Kontrollschaltflächen im Menü „Run Service“ passen die Anzeige der Ein-und Ausgabeparameter an.
+Die Kontrollschaltflächen im Menü *Run Service* regulieren die Anzeige der Ein-und Ausgabeparameter.
 
-- **[Collapse]** - klappt alle Parameterelemente zusammen.
-- **[Expand]** - erweitert alle Parameterelemente.
-- **[Maximize]** - zeigt die Parameter in einer Vollbildansicht an. Um die Vollbildansichtzu schließen, klicken Sie auf **[Close]**.
-- **[JSON]** - zeigt die Parameter im JSON-Format an.
-- **[To top]** - scrollt zum Anfang der Parameterliste.
-- **[Reset]** - Entfernt alle definierten Eingabeparameter. Diese Option ist nur für Eingabeparameter verfügbar.
+- [![collapse](/img/content/yunio/icons/run-collapse.svg){:class="img-responsive" style="display:inline" width="20px"}] Klappt alle Parameterelemente zusammen.
+- ![expand](/img/content/yunio/icons/run-expand.svg){:class="img-responsive" style="display:inline" width="20px"} erweitert alle Parameterelemente.
+- ![download](/img/content/yunio/icons/run-download.svg){:class="img-responsive" style="display:inline" width="20px"} speichert alle eingegebenen Parameter in einer .json-Datei. Die Datei kann zum Neuladen der Parameterwerte oder zum Teilen von Werten mit anderen yunIO-Instanzen verwendet werden.
+- ![upload](/img/content/yunio/icons/run-upload.svg){:class="img-responsive" style="display:inline" width="20px"} lädt Parameterwerte aus einer lokalen .json-Datei hoch. Die JSON-Datei kann mit der ![Download-Scahltfläche](/img/content/yunio/icons/run-download.svg){:class="img-responsive" style="display:inline" width="20px"} erstellt werden.
+- ![reset](/img/content/yunio/icons/run-reset.svg){:class="img-responsive" style="display:inline" width="20px"} entfernt alle definierten Eingabeparameter. Diese Option ist nur für Eingabeparameter verfügbar.
+- ![fullscreen](/img/content/yunio/icons/run-fullscreen.svg){:class="img-responsive" style="display:inline" width="20px"} zeigt die Parameter in einer Vollbildansicht an. Um die Vollbildansicht zu schließen, klicken Sie auf **[ X ]**.
+
 
 ### Integration eines Services
 
