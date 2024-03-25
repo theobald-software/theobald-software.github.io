@@ -36,7 +36,8 @@ If the response body returns an error message, click **[Logs]** to open the [log
 **Tip:** Click **[Edit]** to edit the service or add parameters.
 
 **Control Buttons:**<br>
-The control buttons in the Run Service menu adjust how input and output parameters are displayed.
+
+The control buttons within the *Run Service* menu regulate the display of input and output parameters.
 
 - [![collapse](/img/content/yunio/icons/run-collapse.svg){:class="img-responsive" style="display:inline" width="20px"}] collapses all parameter items.
 - ![expand](/img/content/yunio/icons/run-expand.svg){:class="img-responsive" style="display:inline" width="20px"} expands all parameter items.
