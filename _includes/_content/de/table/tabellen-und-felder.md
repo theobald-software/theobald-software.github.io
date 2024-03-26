@@ -12,8 +12,15 @@ Der Tab *Tables and Fields* besteht aus drei Unterabschnitten:
 
 
 ### Fields
-![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+
+
 Folgende Optionen stehen rechts unter *Fields* bei der Spaltenselektion zur Verfügung: <br>
+
+{% if page.product == "xtract-for-alteryx" %}
+![Fields](/img/content/table/table_fields_filter_xis.png){:class="img-responsive"}
+{% else %}
+![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+{% endif %}
 
 Die Table-Komponente importiert und markiert die dedizierten Indizes, wie z.B. Primärschlüssel oder Sortieroptionen, aus SAP.
 
@@ -50,9 +57,8 @@ Durch Aktivieren der Tri-State-Checkbox wird festgelegt, ob die im Data Dictiona
 |(2)| Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein Z_XTRACT_IS_TABLE_COMPRESSION verfügbar| keine Datentypsicherheit |
 |(3)  | Konvertierungsroutine aktiviert;<br> nur mit dem Funktionsbaustein /THEO/READ_TABLE oder Z_THEO_READ_TABLE verfügbar| Datentypsicherheit garantiert |
 
-![Conversion routine](/img/content/table/table_fields_filter3.png){:class="img-responsive"}
 
-Typische Beispiele für Konvertierungsroutinen sind der Sprachenschlüssel (z.B. D **(4)** auf der Datenbank, aber DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in der Transaktion *SE16N* im SAP GUI erscheinen würde
+Typische Beispiele für Konvertierungsroutinen sind der Sprachenschlüssel (z.B. D auf der Datenbank, DE nach der Konvertierung) oder die Projektnummer (z.B. T000012738GT auf der Datenbank, T/12738/GT nach der Konvertierung). Nach der Konvertierung wird immer der Wert angezeigt, so wie er auch in der Transaktion *SE16N* im SAP GUI erscheinen würde
 
 ### Preview
 Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und Tabellendaten an. 
@@ -62,6 +68,15 @@ Das Fenstersegment *Preview* eine Echtzeit-Vorschau der ausgewählten Felder und
 
 
 ### Schaltflächen
+
+{% if page.product == "xtract-for-alteryx" %}
+**[Extraction Settings]** <br>
+Öffnet das Menü mit den Extraktionseinstellungen, siehe [Extraktionseinstellungen](./extraktionseinstellungen). 
+ 
+**[Edit parameters]** <br>
+Öffnet das Menü mit den Laufzeitparametern, siehe [Laufzeitparameter](./edit-runtime-parameters). 
+{% endif %}
+
 **[Load live preview]** <br>
 Ermöglicht eine Echtzeit-Vorschau der Extraktionsdaten ohne dafür die Extraktion auszuführen. <br>
 Daten mit Aggregatfunktionen lassen sich auch als Vorschau anzeigen. 

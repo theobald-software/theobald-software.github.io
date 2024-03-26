@@ -6,14 +6,24 @@ The tab *Tables and Fields* consists of three main subsections:
 
 
 ### Tables
+
 To add a new table or remove an existing table, click **[Add]** or **[Remove]**.
  
 ![Add_table](/img/content/table/table_main-window_add.png){:class="img-responsive"}
 
 
 ### Fields
-![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+
+
 The following options are available on the right under *Fields* for the column selection: <br>
+
+
+{% if page.product == "xtract-for-alteryx" %}
+![Fields](/img/content/table/table_fields_filter_xis.png){:class="img-responsive"}
+{% else %}
+![Fields](/img/content/table/table_fields_filter.png){:class="img-responsive"}
+{% endif %}
+
 
 The Table component imports and highlights the dedicated indices, such as primary key and/or sorting options, from SAP. 
 
@@ -46,15 +56,15 @@ Activating the tri-state checkbox defines whether the conversion routines stored
 |Checkbox State | Description | Comment |
 |:-----:|-----|
 |(1) | no conversion routines selected | | 
-|(2)| conversion routines enabled;<br> only avaiable with function module Z_XTRACT_IS_TABLE_COMPRESSION | no data type safety |
-|(3)  | conversion routines enabled;<br> only avaiable with function module /THEO/READ_TABLE or Z_THEO_READ_TABLE | assured data type safety |
+|(2)| conversion routines enabled;<br> only available with function module Z_XTRACT_IS_TABLE_COMPRESSION | no data type safety |
+|(3)  | conversion routines enabled;<br> only available with function module /THEO/READ_TABLE or Z_THEO_READ_TABLE | assured data type safety |
 
-![Conversion routine](/img/content/table/table_fields_filter3.png){:class="img-responsive"}
 
-Typical examples for conversition routines are the language key (for example, D **(4)** in the database, but DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
+Typical examples for conversion routines are the language keys (for example, D in the database, DE after conversion) or the project number (for example, T000012738GT in the database, T/12738/GT after conversion). 
 After the conversion, the value is always displayed as it appears in the transaction *SE16N* in the SAP GUI. 
 
 ### Preview
+
 The subsection *Preview* displays a real-time preview of the selected fields, when the button **"[Load live preview]** is clicked.
 
 {: .box-note }
@@ -62,6 +72,16 @@ The subsection *Preview* displays a real-time preview of the selected fields, wh
 
 
 ### Buttons
+
+{% if page.product == "xtract-for-alteryx" %}
+**[Extraction Settings]** <br>
+Opens the extraction settings menu, see [Extraction Settings](./extraction-settings). 
+ 
+**[Edit parameters]** <br>
+Open the runtime parameter menu, see [Runtime Parameters](./edit-runtime-parameters). 
+
+{% endif %}
+
 **[Load live preview]** <br>
 Allows a real-time preview of the extraction data without executing the extraction. <br>
 You can also preview the data with aggregation functions. 
