@@ -21,7 +21,7 @@ For more information on Amazon Redshift, see [Getting Started with Amazon Redshi
 - Run a running instance and valid credentials.
 - Your client computer has to be authorized to access the cluster.
 - For establishing a connection to Amazon Redshift a suitable database driver is required.
-- Download and install the 64 bit Amazon Redshift ODBC driver from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html).
+- Download and install the x64 Redshift ODBC driver version 2.x from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/odbc20-install-config-win.html).
 
 {: .box-note }
 **Note:** If the driver is missing the connection test will fail.
