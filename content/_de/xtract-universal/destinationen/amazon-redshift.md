@@ -19,7 +19,7 @@ Für mehr Informationen über Amazon Redshift, siehe [Erste Schritte mit Amazon 
 - Sie benötigen eine laufende Instanz und gültige Anmeldedaten.
 - Ihr Client-Rechner muss für den Zugriff auf den Cluster autorisiert sein.
 - Für den Aufbau einer Verbindung zu Amazon Redshift wird ein geeigneter Datenbanktreiber benötigt.
-- Laden Sie den 64-Bit-Amazon-Redshift-ODBC-Treiber von der offiziellen [Website](https://docs.aws.amazon.com/redshift/latest/mgmt/install-odbc-driver-windows.html) herunter und installieren Sie ihn.
+- Laden Sie den 64-Bit-Amazon-Redshift-ODBC-Treiber Version 2.x von der offiziellen [Website](https://docs.aws.amazon.com/redshift/latest/mgmt/odbc20-install-config-win.html) herunter und installieren Sie ihn.
 
 {: .box-note }
 **Hinweis:** Wenn der Treiber fehlt, schlägt der Verbindungstest fehl.
