@@ -13,7 +13,7 @@
 |ODP                   | SAP_BASIS >= 730, BW >= 7,3X   | No requirements.   |
 |DeltaQ                | Rel. > 4.6C       | Customizing required, see [Customizing for DeltaQ](../sap-customizing/customizing-for-deltaq).                                                                   |
 |OHS                   | Rel. > BW 3.5     | Customizing required, see [Customizing for OHS in BW](../sap-customizing/preparation-for-ohs-in-bw).                                                                   |
-{% if page.product != "xtract-is" %}|Table CDC            | Rel. 7.4 or above     | Installation of a custom function modules is necessary, see [Table CDC Requirements](../table-cdc#requirements).     |{% endif %}
+{% if page.product != "xtract-for-alteryx" %}|Table CDC            | SAP ECC 5.0 or above     | Installation of a custom function modules is necessary, see [Table CDC Requirements](../table-cdc#requirements).     |{% endif %}
 
 
 For Information about the installation of the custom function modules and the SAP customizing, check the section [SAP customizing](../sap-customizing).
