@@ -43,3 +43,4 @@ The name of the currently saved certificate is displayed at the bottom of the wi
 
 #### Related Links:
 - [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)
+- [Setting Up an XU Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account)

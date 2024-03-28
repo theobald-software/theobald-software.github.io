@@ -42,3 +42,4 @@ Der Name des aktuell gespeicherten Zertifikats wird im unteren Bereich des Fenst
 
 #### Weiterführende Links:
 - [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file)
+- [XU-Service-Account einrichten](https://help.theobald-software.com/de/xtract-universal/fortgeschrittene-techniken/service-account)

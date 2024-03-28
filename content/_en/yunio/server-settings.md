@@ -54,18 +54,26 @@ Transport Layer Security (TLS) protocol allows the user to communicate with the 
 This requires the installation of an X.509 certificate, see [Knowledge Base: Installing an X.509 Certificate](https://kb.theobald-software.com/yunio/x509-certificate). <br>
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
-#### Pick Certificate
-Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
-If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
-The certificate must have *Subject Alternative Name* set. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
-A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
-
-For information on how to renew a certificate, refer to our knowledge base article [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
-
 {: .box-note }
 **Note:** Depending on whether yunIO is hosted on a local server or a cloud environment, the procedure for certificate creation differs.
 Refer to the documentation available on the internet or contact your network administrators.
 
+#### Certificate Access
+1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc).
+2. Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.<br>
+
+{: .box-note }
+**Note:**
+If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
+The certificate must have *Subject Alternative Name* set. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
+A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
+
+3. After selecting the desired X.509 certificate, manage its private keys to add a permission entry for the Windows user. 
+4. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. 
+![Access](/img/content/yunio/x.509-certificate-permission){:class="img-responsive" }
+
+
+For information on how to renew a certificate, refer to our knowledge base article [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
 #### TLS enabled
 Once a certificate is selected, the option **TLS enabled** is available.<br>
