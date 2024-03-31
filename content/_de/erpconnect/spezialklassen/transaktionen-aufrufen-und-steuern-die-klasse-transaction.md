@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=transaktionen-aufrufen-und-steuern-die-klasse-transaction
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 Dieser Abschnitt zeigt, wie Sie die *Transaction*-Klasse verwenden, um SAP-Transaktionen sowohl direkt als auch als Hintergrundprozess (Batch Input) auszuführen.<br>
 Die Hintergrundverarbeitung eignet sich zur Verarbeitung und Sendung von Massendaten an Ihr SAP-System. 
 Dieses Technik wird häufig verwendet, wenn es für die Datenerfassung kein geeignetes BAPI gibt.

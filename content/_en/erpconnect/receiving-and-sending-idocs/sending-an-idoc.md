@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=example-sending-an-idoc-from-your-net-application
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 There are two possible ways to create an IDoc object: 
 - The `CreateIdoc` method creates an IDoc with all segments located in the segment collections. This is useful for sending simple IDocs. 
 - The `CreateEmptyIdoc` method in combination with the `CreateSegment` method creates only the needed segments. 

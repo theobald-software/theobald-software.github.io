@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-function-modules-and-bapis
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 The following section shows how to use the Function component of the *LINQ to ERP* toolbox. <br>
 The component includes Function Modules and BAPIs. 
 In the LINQ application, Function Modules and BAPIs are handled nearly the same way as stored procedures in *LINQ to SQL*. 
