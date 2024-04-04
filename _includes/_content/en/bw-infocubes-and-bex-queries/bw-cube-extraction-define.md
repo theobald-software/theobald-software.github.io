@@ -11,9 +11,9 @@ The BW Queries can be based on all possible InfoProviders.
 ![Look-Up-Cube](/img/content/xfa/xfa_cube-query-look.png){:class="img-responsive"} 
 
    |------------------------------------|---------------------------------------------------------------------------------------------|
-   | *Extractor*   | defines if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection). BICS is still in beta phase. This means that breaking changes can be released any time. Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update. Therefore we recommend to not use BICS in the production environment. |
+   | *Extractor*   | defines if data is extracted using the OLAP BAPI Interface (MDX) or the native BICS Interface. BICS can only be used in combination with the [NetWeaver RFC protocol](../introduction/sap-connection). |
    | *Datasource Type* | defines if the look up searches for a BEx Query or an InfoProvider.  | 
-   | *Extraction Settings*  | **Only Structure**: Only available for the MDX Extractor. Use **Only Structure** if your BWCube extraction was created in an older software version, see [Extraction Settings](./bw-cube-extraction-settings#extraction-settings) for more information. <br>**Use BICS fast mode**: Only available for the BICS Extractor, see [Extraction Settings: Experimental](./bw-cube-extraction-settings#experimental) for more information.  | 
+   | *Extraction Settings*  | only available for the MDX extractor. Use **Only Structure** if your BWCube extraction was created in an older software version, see [Extraction Settings](./bw-cube-extraction-settings#extraction-settings) for more information. | 
 
 3. Enter the name of a Query or a BW Cube / InfoProvider in the search bar (2). Use wildcards (*), if needed.
 4. Click  ![magnifying-glass](/img/content/icons/magnifying-glass.png) and select the object of your choice from the displayed list (3).<br>
@@ -43,11 +43,6 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 | Column names of Key figures           | EnterpriseID                                              | Technical name<br>  If techn. name is empty: name of the base measure.  <br> If name of the base measure is empty: EnterpriseID. <br>**Tip:** In case of duplicate names, change the technical name in the BEx Query Designer. |
 | Character limit for dimension members | max. 60 characters      | -      |
 
-{: .box-warning }
-**Warning:** **Beta-Version - Breaking changes possible**
-The component is in beta phase. Breaking changes can be released anytime.  
-Extractions might not be backward-compatible, i.e. it can be necessary to rebuild all BICS extractions from scratch after a software update.
-Avoid using BICS in the production environment.
 
 ### Selecting Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 

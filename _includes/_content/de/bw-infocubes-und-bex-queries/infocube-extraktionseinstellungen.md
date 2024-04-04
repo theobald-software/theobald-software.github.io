@@ -73,16 +73,11 @@ Beispiel:
 Die folgenden Einstellungen sind nur für BICS Extraktionen verfügbar.
 Sie werden angezeigt, nachdem die Metadaten einer BICS Extraktion abgerufen wurden.
 
-![XU_BWCube_Settings](/img/content/bwcube-bics-fast-mode.png){:class="img-responsive"}
+![XU_BWCube_Settings](/img/content/bwcube-bics-settings.png){:class="img-responsive"}
 
-**BICS Fast Mode**<br>
-Wenn diese Checkbox aktiv ist, wird das interne Verhalten der BICS-Komponente gewechselt.
-Anstatt RFC-Funktionsdefinitionen bei jedem Aufruf aus SAP zu laden, verwendet der BICS Fast Mode lokal abgelegte BAPI Definitionen.
-Dieses Verhalten kann die Performance der BICS-Komponente erhöhen.
 
 **Create BICS Compatibility Report**<br>
-Weil sich der BICS Modus noch in der Beta-Phase befindet, sind Fehler beim Ausführen des BICS Modus nicht ausgeschlossen.
-Klicken Sie auf **[Create BICS Compatibility Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.<br>
+Wenn der BICS Modus beim Ausführen einen Fehler verursacht, klicken Sie auf **[Create BICS Compatibility Report]**, um eine Testreihe auszuführen, die uns hilft die Ursache des Fehlers zu finden und den Fehler zu beheben.<br>
 Die Ergebnisse der Testreihe werden in einer .zip-Datei zusammengefasst.
 Wenn Sie mehrere SAP-Systeme verwenden, führen Sie diese Testreihe auf jeder Ihrer SAP-Quellen aus. <br>
 Senden Sie die resultierende .zip-Dateien an den [Theobald Support](https://support.theobald-software.com).
