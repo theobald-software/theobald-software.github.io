@@ -12,18 +12,19 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-parameters
 progressstate: 5
 ---
 
-The Xtract Universal Designer can run extractions by passing runtime parameters and other options.
+The Xtract Universal Designer can run extractions by passing parameters that define how data is extracted from the source.
 
-### Run an Extraction
+The following categories of extraction parameters are available:
 
-The extraction parameters define how data is extracted from the source.
-They are set under *Runtime Parameters* in the "Run Extraction" window.
+- [Extraction](#extraction) parameters affect the extraction type and destination.
+- [Source](#source) parameters affect the SAP connection settings.
+- [Custom](#custom) parameters correspond to the user-defined runtime parameters or [SQL parameters](./xu-parameter-sql) of an extraction.
 
+The parameters can be accessed in the "Run Extraction" window. <br>
+Select an extraction in the Main Window Overview and click **[Run]** to open the "Run Extraction" window. 
+For more information see [Running an extraction](../getting-started/run-an-extraction)).
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
-
-Select an extraction in the Main Window Overview and click 
-**[Run]** to open the "Run Extraction" window. For more information see [Running an extraction](../getting-started/run-an-extraction)).
 
 
 ### Extraction
@@ -95,7 +96,7 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 ### Custom
 
 {: .box-note }
-**Note:** The tab *Custom* is only active when a runtime parameter is available. 
+**Note:** The tab *Custom* is only active when user-defined runtime parameters or [SQL parameters](./xu-parameter-sql) are available. 
 
 Check the checkbox and enter a new value to set the user defined parameter.
 
