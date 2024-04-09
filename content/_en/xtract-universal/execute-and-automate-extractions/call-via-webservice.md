@@ -18,6 +18,10 @@ Calling extractions is usually done via script, scheduler or BI-tool.
 {: .box-note } 
 **Note:** Make sure to use the correct ports, see [Server Ports](../server/ports).
 
+Use the following URL format to trigger an extraction:
+
+`[protocol]://[host or IP address]:[port]/?name=[name of the extraction]`
+
 ### HTTP Status Code & Header
 The response of a web service call contains the following information:
 - HTTP status code (1)
@@ -42,7 +46,7 @@ Status code | Destination type | Description
 ### Options for Calling Extractions
 
 Multiple options are available to use with the URL-format <br>
-`<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`.
+`[protocol]://[host or IP address]:[port]/?name=[name of the extraction]{&[parameter_i]=[value_i]}`.
 
 #### Suppress Output of Extraction Logs
 The log output of a synchronous called extraction with a push destination can be suppressed using the parameter `&quiet-push=true`.<br>
