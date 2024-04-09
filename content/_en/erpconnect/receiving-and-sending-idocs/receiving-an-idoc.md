@@ -13,11 +13,6 @@ progressstate: 5
 
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 This section shows how to receive and process an IDoc.
 To configure your SAP system to send IDocs, see [Setting Up a Test Environment for IDocs](./prerequisites#setting-up-a-test-environment-for-idocs).
 

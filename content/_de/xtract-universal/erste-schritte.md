@@ -21,7 +21,7 @@ Einen kurzen Einblick in die Benutzung von Xtract Universal erhalten Sie in unse
 Installieren Sie Xtract Universal auf einem Windows Server / einer VM. 
 2. Prüfen Sie, ob der Netzwerk-Zugriff auf Ihr SAP-System gewährleistet ist, siehe [SAP TCP/IP Ports](https://kb.theobald-software.com/sap/sap-tcpip-ports). 
 3. Richten Sie die nötigen SAP Benutzerrechte für den Zugriff auf Ihr SAP-System ein, siehe [Authority Objects - SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
-4. Für folgende Xtract Universal-Komponenten sind Anpassungen in Ihrem SAP-System notwendig: [Table](./sap-customizing/funktionsbaustein-fuer-table-extraktion) (optional), [Table CDC](./sap-customizing/funktionsbaustein-fuer-tablecdc), [Report](./sap-customizing/report-funktionsbaustein-installieren), [OHS](./sap-customizing/vorbereitung-fuer-ohs-im-bw) und [DeltaQ](./sap-customizing/customizing-fuer-deltaq). <br>
+4. Für folgende Xtract Universal-Komponenten sind Anpassungen in Ihrem SAP-System notwendig: [Table](./sap-customizing/funktionsbaustein-fuer-table-extraktion) (optional), [Report](./sap-customizing/report-funktionsbaustein-installieren), [OHS](./sap-customizing/vorbereitung-fuer-ohs-im-bw) und [DeltaQ](./sap-customizing/customizing-fuer-deltaq). <br>
 Für alle anderen Xtract Universal-Komponenten sind keine Anpassungen erforderlich.
 5. Starten Sie Xtract Universal und folgen Sie den Schritten aus den folgenden Unterabschnitten.
 

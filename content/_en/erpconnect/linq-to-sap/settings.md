@@ -11,11 +11,6 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-settings
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 ### Properties of LINQ to SAP
 
 The properties of *LINQ to SAP* are displayed in the **Properties** window of the .erp file.<br>

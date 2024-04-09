@@ -11,11 +11,6 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-table-access-restrictions
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 ### Restriction on LINQ Expressions
 Not all LINQ expressions are technically feasible or make sense in *LINQ to SAP*. <br>
 Apart from classical expressions like the operators <, > and =, *LINQ to SAP* offers all character-like functions: 

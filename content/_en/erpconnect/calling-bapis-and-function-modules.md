@@ -12,16 +12,6 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=calling-bapis-and-function-modules
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERP Connect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 Function modules are single functions managed by the SAP Function Builder (transaction **SE37**) and developed in SAP's programming language ABAP.
 
 {: .box-note }

@@ -11,11 +11,6 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=abap-code
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 The class ABAPCode offers nearly unlimited possibilities. 
 You can execute ABAP code on the fly and retrieve the result in a string array.<br>
 The following sample shows how to create a simple ABAP interpreter that executes a dynamic SQL statement.<br>

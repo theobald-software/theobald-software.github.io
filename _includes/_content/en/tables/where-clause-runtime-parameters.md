@@ -22,20 +22,9 @@ Select a parameter from the list.<br>
 ![WHERE-Clause-Builder-Example](/img/content/where-clause-param.png){:class="img-responsive"}
 8. To test the WHERE clause, click **[Load live Preview]**. Provide parameter values when prompted.
 
-{% if page.product == "xtract-universal" %}
-Runtime parameters are overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom).
+{% if page.product == "xtract-for-alteryx" %}
+
+{: .box-note }
+**Note:** List parameters are not yet available. This feature will be available soon.
+
 {% endif %}
-{% if page.product == "board-connector" %}
-Runtime parameters are overwritten at runtime, see [Extraction Parameters - Custom](../advanced-techniques/extraction-parameters#custom)
-{% endif %}
-
-### Runtime Parameters in Text Mode
-
-Add an @ symbol before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.<br>
-{% if page.product == "xtract-universal" %}The marked value is overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom).{% endif %}
-{% if page.product == "board-connector" %}The marked value is overwritten at runtime, see [Extraction Parameters - Custom](../advanced-techniques/extraction-parameters#custom).{% endif %}
-
-Example: <br>
-`T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
-
-![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}

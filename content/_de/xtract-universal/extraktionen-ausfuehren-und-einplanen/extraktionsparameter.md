@@ -9,24 +9,22 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 ---
+Der Xtract Universal Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie Laufzeitparameter und andere Optionen übergeben.
 
-Der Xtract Universal Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie Extraktionsparameter übergeben, die definieren wie Daten aus der Datenquelle extrahiert werden.
+### Extraktion ausführen 			 
 
-Die folgenden Parameter-Kategorien sind verfügbar:
+Der folgende Abschnitt beschreibt die Parameter einer Extraktion, welche dynamisch zur Laufzeit gesetzt werden können. Zu diesen Parametern gelangen Sie über das Fenster "Run Extraction". 
 
-- [Extraction](#extraction)-Parameter beeinflussen die Extraktions- und Destinationseinstellungen.
-- [Source](#source)-Parameter beeinflussen die Einstellungen der SAP Verbindung.
-- [Custom](#custom)-Parameters entsprechen den benutzerdefinierten Laufzeitparametern oder [SQL-Parametern](./xu-parameter-sql) einer Extraktion.
-
-Die Parameter sind im Fenster "Run Extraction" aufgeführt. <br>
-Wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** um das Fenster "Run extractions" zu öffnen. 
-Weitere Informationen finden Sie in [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren).
+Die Extraktionsparameter definieren wie Daten aus der Datenquelle extrahiert werden.
+Sie werden im Fenster "Run extractions" unter *Runtime Parameters* eingestellt. 
 
 ![Extraction parameters](/img/content/xu/xu_run_extraction_param_gen_2.png){:class="img-responsive"}
 
+Wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** 
+um das Fenster "Run extractions" zu öffnen. Weitere Informationen finden Sie in [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren).
+
 
 ### Extraction
-
 Die Anzahl der verfügbaren Parameter ist abhängig von dem Extraktionstyp und der Destination, z.B. ist **decimalSeparator** ein Parameter, der nur in der CSV-Destination vorhanden ist.
 
 Parametername | Beschreibung | Spezielle Infos
@@ -56,7 +54,6 @@ decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlt
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV Destinationen
 
 #### Beispiel
-
 1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
 2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
 - Extraktions-URL vor der Parameteränderung<br>
@@ -65,7 +62,6 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 `http://localhost:8085/?name=Plants&source=SAP_PROD`  
 
 ### Source
-
 Die Verbindungseinstellungen zu einer SAP Quelle können dynamisch über die URL oder die xu.exe geändert werden. 
 
 Im Tab *Source* können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) definiert sind.
@@ -93,7 +89,6 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 ![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
 #### Beispiel
-
 1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
 2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
 - Extraktions-URL vor der Parameteränderung<br>
@@ -110,7 +105,7 @@ packageSize | setzt die Paketgröße | verfügbar bei Table-Extraktionen
 ### Custom
 
 {: .box-note }
-**Hinweis:** Der Tab *Custom* ist nur dann aktiv, wenn mindestens ein Laufzeitparameter oder ein [SQL-Parameter](./xu-parameter-sql) angelegt ist.
+**Hinweis:** Der Tab *Custom* ist nur dann aktiv, wenn mindestens ein Laufzeitparameter angelegt ist.
 
 Aktivieren Sie die Checkbox und geben Sie einen neuen Wert ein, um den Parameter zu überschreiben.
  

@@ -13,11 +13,6 @@ progressstate: 5
 
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 ### Setting Up an RFC Destination
 
 To enable calls from an SAP system to a subsystem, the subsystem must be known to SAP.<br>

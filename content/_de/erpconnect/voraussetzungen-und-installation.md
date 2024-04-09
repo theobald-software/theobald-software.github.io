@@ -12,11 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=voraussetzungen-und-installation
 ---
 
-{: .box-warning}
-**Warnung: Veraltete Dokumentation!** <br>
-Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
-Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 ERPConnect ist eine flexible und modulare .NET Bibliothek, sie von SAP für die Integration mit SAP ECC und SAP S/4HANA zertifiziert wurde.
 
 Allgemeine Informationen über ERPConnect, FAQs und hilfreiche Artikel finden Sie in der Theobald Knowledge Base, siehe [ERPConnect](https://kb.theobald-software.com/erpconnect-samples).

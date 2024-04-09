@@ -11,11 +11,6 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-tabellen-lesen-mit-der-readtable-klasse
 ---
 
-{: .box-warning}
-**Warnung: Veraltete Dokumentation!** <br>
-Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
-Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 Dieser Abschnitt beschreibt die Verwendung der *ReadTable*-Klasse.<br>
 Eine oft wiederkehrende Aufgabe bei der Arbeit mit .NET und SAP ist das direkte Lesen von Daten aus der SAP-Datenbank.
 Die Klasse *ReadTable* ermöglicht den Zugriff auf diese Daten.

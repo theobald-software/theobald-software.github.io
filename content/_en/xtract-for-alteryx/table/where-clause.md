@@ -20,8 +20,11 @@ A WHERE clause can be used to filter table records, see [SAP ABAP Documentation:
 {% include _content/en/tables/where-clause-syntax.md%}
 {% include _content/en/tables/where-clause-editor.md%}
 
-### Runtime Parameters 
-You can create and assign [runtime parameters](./edit-runtime-parameters), when using WHERE Clause.
+### Runtime Parameters in the WHERE Clause Editor
+You can create and assign [runtime parameters](../table/edit-runtime-parameters), when using WHERE Clause.
+
+### Values at Runtime
+Values can be passed during [runtime](./edit-runtime-parameters#how-to-pass-values-at-runtime).
 
 **** 
 #### Related Links

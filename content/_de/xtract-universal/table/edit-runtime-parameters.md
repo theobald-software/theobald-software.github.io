@@ -11,7 +11,6 @@ lang: de_DE
 progressstate: 5
 ---
 
-
 Laufzeitparameter können im Zusammenhang mit der Verwendung der WHERE-Bedingung erstellt werden.
 
 {% include _content/de/table/where-bedingung-laufzeitparameter.md %}

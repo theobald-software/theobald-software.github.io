@@ -12,17 +12,12 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=zusaetzliche-funktionen-im-desi
 progressstate: 5
 ---
 
-Der Board Connector Designer bietet die Möglichkeit Extraktionen auszuführen, indem Sie Extraktionsparameter übergeben, die definieren wie Daten aus der Datenquelle extrahiert werden.
+Der folgende Abschnitt beschreibt die Extraktionsparameter, die im Fenster "Run extractions" geändert werden können. 
 
-Die folgenden Parameter-Kategorien sind verfügbar:
+### Eine Extraktion ausführen
 
-- [Extraction](#extraction)-Parameter beeinflussen die Extraktionseinstellungen.
-- [Source](#source)-Parameter beeinflussen die Einstellungen der SAP Verbindung.
-- [Custom](#custom)-Parameters entsprechen den benutzerdefinierten Laufzeitparametern einer Extraktion.
-
-Die Parameter sind im Fenster "Run Extraction" aufgeführt. <br>
-Wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** um das Fenster "Run extractions" zu öffnen. 
-Weitere Informationen finden Sie in [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren).
+Die Extraktionsparameter definieren wie Daten aus der Datenquelle extrahiert werden.
+Sie werden im Fenster "Run extractions" unter *Runtime Parameters* eingestellt. 
 
 ![Extraction parameters](/img/content/board/Run-Extraction.png){:class="img-responsive"}
 
@@ -85,7 +80,7 @@ logonTicket | ändert dynamisch das Anmeldeticket. Siehe [SSO mit SAP Logon Tick
 ### Custom
 
 {: .box-note }
-**Hinweis:** Der Tab *Custom* ist nur dann aktiv, wenn ein Laufzeitparameter angelegt ist.
+**Hinweis:** Der Tab *Custom* ist nur dann aktiv, wenn eine [benutzerdefinierte Variable](../fortgeschrittene-techniken/benutzerdefinierte-variablen) angelegt ist.
 
 Aktivieren Sie die Checkbox und geben Sie einen neuen Wert ein, um den Parameter zu überschreiben.
  

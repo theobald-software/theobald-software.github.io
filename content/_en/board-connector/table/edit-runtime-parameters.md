@@ -10,8 +10,6 @@ weight: 8
 lang: en_GB
 progressstate: 5
 ---
-
-
 Runtime parameters can be created in context of using the WHERE clause.
 
 {% include _content/en/tables/where-clause-runtime-parameters.md %}

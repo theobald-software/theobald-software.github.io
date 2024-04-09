@@ -12,11 +12,6 @@ old_url: /ERPConnect-DE/default.aspx?pageid=sso-mit-snc
 progressstate: 5
 ---
 
-{: .box-warning}
-**Warnung: Veraltete Dokumentation!** <br>
-Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
-Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 Eine SAP-Verbindung ist ab ERPConnect Version 4.1.59 über Single-Sign-On (SSO) und Secure Network Communication (SNC) möglich. 
 Bei dem SNC-Mechanismus haben Sie die Optionen [NTLM](#ntlm) und [Kerberos5](#Kerberos). 
 

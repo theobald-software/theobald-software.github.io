@@ -12,11 +12,6 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-client-funktionen-und-bapis
 ---
 
-{: .box-warning}
-**Warnung: Veraltete Dokumentation!** <br>
-Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
-Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 Funktionsbausteine sind einzelne Funktionen, die im SAP Function Builder (Transaktion **SE37**) verwaltet und in ABAP entwickelt werden. 
 
 {: .box-note }

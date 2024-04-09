@@ -11,11 +11,6 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=retrieving-customer-information-by-calling-sd-rfc-customer-get
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 
 This section contains a list of available resources for the BAPI/Function Module classes.<br>
 For a complete list of example codes and applications, see [ERPConnect - Samples](https://kb.theobald-software.com/erpconnect-samples).

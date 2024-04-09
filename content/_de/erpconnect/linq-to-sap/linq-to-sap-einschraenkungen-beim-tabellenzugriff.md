@@ -11,11 +11,6 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=linq-to-sap-einschraenkungen-beim-tabellenzugriff
 ---
 
-{: .box-warning}
-**Warnung: Veraltete Dokumentation!** <br>
-Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
-Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 ### Einschränkung der LINQ-Ausdrücke
 Nicht alle LINQ-Ausdrücke sind bei *LINQ to SAP* technisch realisierbar oder sinnvoll. <br>
 Neben den klassischen Ausdrücken wie den Operatoren <, > und =, bietet *LINQ to SAP* ausgeschriebene Funktionen:

@@ -11,11 +11,6 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=improve-your-performance-by-using-templates
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 Using XML templates can improve the performance of your application by loading the complete object hierarchy from an XML file. 
 
 ### How to Create an XML Template

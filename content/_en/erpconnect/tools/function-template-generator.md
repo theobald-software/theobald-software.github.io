@@ -11,11 +11,6 @@ lang: en_GB
 old_url: /ERPConnect-DE/default.aspx?pageid=idoc-schema-generator
 ---
 
-{: .box-warning}
-**Warning: Deprecated documentation** <br>
-You are using the old version of the online help for ERPConnect.<br>
-Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
-
 The *Function-Template-Generator* generates reusable XML templates for Function Modules and BAPIs.
 
 ### How to Use *Function-Template-Generator*
