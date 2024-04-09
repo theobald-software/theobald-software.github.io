@@ -27,14 +27,14 @@ Weisen Sie den Parametern Werte zu, wenn Sie aufgefordert werden.
 Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../execute-and-automate-extractions/extraction-parameters#custom).
 {% endif %}
 {% if page.product == "board-connector" %}
-Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Benutzerdefinierte Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen)
+Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../fortgeschrittene-techniken/extraktionsparameter#custom)
 {% endif %}
 
 ### Laufzeitparameter-Syntax im Text Modus
 
 Fügen Sie vor dem Wert ein @-Symbol hinzu, um ihn als Laufzeitparameter zu kennzeichnen. Beispielsweise geben Sie `@myParameter` anstatt des Wertes ein.<br>
 {% if page.product == "xtract-universal" %}Der markierte Wert wird zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../execute-and-automate-extractions/extraction-parameters#custom).{% endif %}
-{% if page.product == "board-connector" %}Der markierte Wert wird zur Laufzeit überschrieben, siehe [Benutzerdefinierte Variablen](../fortgeschrittene-techniken/benutzerdefinierte-variablen){% endif %}
+{% if page.product == "board-connector" %}Der markierte Wert wird zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../fortgeschrittene-techniken/extraktionsparameter#custom){% endif %}
 
 Beispiel: <br>
 `T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.

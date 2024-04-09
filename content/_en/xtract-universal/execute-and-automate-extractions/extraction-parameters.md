@@ -16,7 +16,7 @@ The Xtract Universal Designer can run extractions by passing parameters that def
 
 The following categories of extraction parameters are available:
 
-- [Extraction](#extraction) parameters affect the extraction type and destination.
+- [Extraction](#extraction) parameters affect the extraction and destination settings.
 - [Source](#source) parameters affect the SAP connection settings.
 - [Custom](#custom) parameters correspond to the user-defined runtime parameters or [SQL parameters](./xu-parameter-sql) of an extraction.
 

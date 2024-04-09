@@ -16,7 +16,7 @@ Die folgenden Parameter-Kategorien sind verfügbar:
 
 - [Extraction](#extraction)-Parameter beeinflussen die Extraktions- und Destinationseinstellungen.
 - [Source](#source)-Parameter beeinflussen die Einstellungen der SAP Verbindung.
-- [Custom](#custom)-Parameters entsprechen den benutzerdefinierten Laufzeitparametern oder [SQL-Parametern](./xu-parameter-sql) der Extraktion.
+- [Custom](#custom)-Parameters entsprechen den benutzerdefinierten Laufzeitparametern oder [SQL-Parametern](./xu-parameter-sql) einer Extraktion.
 
 Die Parameter sind im Fenster "Run Extraction" aufgeführt. <br>
 Wählen Sie eine Extraktion im Hauptfenster des Designers und klicken Sie auf **[Run]** um das Fenster "Run extractions" zu öffnen. 
@@ -26,6 +26,7 @@ Weitere Informationen finden Sie in [Eine Extraktion ausführen](../erste-schrit
 
 
 ### Extraction
+
 Die Anzahl der verfügbaren Parameter ist abhängig von dem Extraktionstyp und der Destination, z.B. ist **decimalSeparator** ein Parameter, der nur in der CSV-Destination vorhanden ist.
 
 Parametername | Beschreibung | Spezielle Infos
@@ -55,6 +56,7 @@ decimalSeparator | setzt ein Symbol zwischen dem Ganzzahlteil und dem Bruchzahlt
 columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | verfügbar in CSV Destinationen
 
 #### Beispiel
+
 1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
 2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
 - Extraktions-URL vor der Parameteränderung<br>
@@ -63,6 +65,7 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 `http://localhost:8085/?name=Plants&source=SAP_PROD`  
 
 ### Source
+
 Die Verbindungseinstellungen zu einer SAP Quelle können dynamisch über die URL oder die xu.exe geändert werden. 
 
 Im Tab *Source* können Sie die Werte überschreiben, die in den [SAP-Source-Einstellungen](../einfuehrung/sap-verbindungen-anlegen) definiert sind.
@@ -90,6 +93,7 @@ columnSeparator | setzt ein Symbol, das den Anfang einer Spalte bezeichnet | ver
 ![Run-Extraction-Connection-Parameters](/img/content/xu/xu_run_extraction_source_param.png){:class="img-responsive"}
 
 #### Beispiel
+
 1. Wählen Sie eine Checkbox aus, um einen Parameter zu überschreiben.
 2. Tragen Sie den neuen Wert ein und bestätigen Sie ihn über die Eingabetaste.
 - Extraktions-URL vor der Parameteränderung<br>
