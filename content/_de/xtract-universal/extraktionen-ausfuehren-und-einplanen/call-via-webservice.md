@@ -18,7 +18,9 @@ Der Aufruf einer Extraktion erfolgt in der Regel über ein Skript, Scheduler ode
 {: .box-note } 
 **Hinweis:** Stellen Sie sicher, dass Sie die richtigen Ports verwenden, siehe [Server-Ports](../server/ports).
 
+Verwenden Sie das folgende URL-Format, um eine Extraktion zu starten:
 
+`[Protokoll]://[Host oder IP Adresse]:[port]/?name=[Name der Extraktion]`
 
 ### HTTP Status Code & Header der Antwort
 Die Antwort eines Webservice-Aufrufs enthält folgende Informationen:
@@ -44,7 +46,7 @@ Status-Code | Destinationstyp | Beschreibung
 ### Weitere Optionen zum Aufruf einer Extraktion
 
 Für den Aufruf einer Extraktion sind mehrere Optionen für das URL-Format verfügbar. <br>
-`<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`
+`[Protokoll]://[Host oder IP Adresse]:[port]/?name=[Name der Extraktion]{&[Parameter_i]=[Wert_i]}`
 
 #### Log-Ausgabe einer Extraktion unterdrücken 
 Mit dem Parameter `&quiet-push=true` kann man die Log-Ausgabe unterdrücken, wenn die Extraktion synchron aufgerufen wird und mit einer Push-Destination verbunden ist. <br>

@@ -17,5 +17,9 @@ The placeholders need to be populated with actual values at runtime. <br>
 *Flag*: This data type can only be used for SAP selection fields, which require an 'X'&nbsp;(true) or a blank ''&nbsp;(false) as input value.
 4. Click **[OK]** (3) to confirm.
 
-The runtime parameters are now available in the component, e.g., for filters and selections.
-
+{% if page.product == "xtract-universal" %}
+Runtime parameters are overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom).
+{% endif %}
+{% if page.product == "board-connector" %}
+Runtime parameters are overwritten at runtime, see [Extraction Parameters - Custom](../advanced-techniques/extraction-parameters#custom)
+{% endif %}

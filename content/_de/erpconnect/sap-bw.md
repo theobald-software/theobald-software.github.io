@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=sap-bw
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 Dieses Abschnitt enthält Informationen und Beispiele für BW-Datenextraktionen. 
 
 Die *BW*-Klasse kann verwendet werden, um Daten aus BW InfoProvidern (z.B. Cubes) direkt oder aus BW Queries zu extrahieren. 
