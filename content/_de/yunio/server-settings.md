@@ -55,11 +55,16 @@ Wenn TLS aktiviert ist, wird auf den jeweiligen Service über eine HTTPS-Verbind
 Dafür muss ein X.509 Zertifikat installiert sein, siehe [Knowledge Base: Installing an X.509 Certificate](https://kb.theobald-software.com/yunio/x509-certificate). <br>
 Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.microsoft.com/de-de/windows/win32/secauthn/transport-layer-security-protocol).
 
-#### Pick Certificate
-Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509 Zertifikat aus der Liste verfügbarer Zertifikate aus.
-Falls das Zertifikat nicht in der Liste oder im Windows Certificate Store aufgelistet ist, installieren Sie das X.509 Zertifikat.
-In dem Zertifikat muss ein *Subject Alternative Name* hinterlegt sein. Dieser wird als neuer Hostname verwendet.
-Einen benutzerdefinierten Hostnamen können Sie in der [Services Endpoint](#endpoint) Einstellung angeben.
+
+#### Zertifikatszugriff
+1. Importieren Sie das Zertifikat mithilfe der Microsoft Management Console (mmc) in den Windows-Zertifikatspeicher.
+2. Wenn das Zertifikat nicht im Menü oder im Windows-Zertifikatspeicher aufgeführt ist, installieren Sie das X.509-Zertifikat.
+Das Zertifikat muss einen *alternativen Antragstellernamen (Subject Alternative Name)* haben. Bei der Aktivierung von TLS, wird der *alternative Antragstellername (Subject Alternative Name)* als neuer Hostname verwendet. 
+A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
+3. After importing the desired X.509 certificate, manage its private keys to add a permission entry for the Windows user. 
+4. Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.
+5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. 
+![Access](/img/content/yunio/x509-certificate-permission.png){:class="img-responsive" }
 
 Informationen zur Erneuerung eines Zertifikats, finden Sie in dem Knowledge Base Artikel [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
