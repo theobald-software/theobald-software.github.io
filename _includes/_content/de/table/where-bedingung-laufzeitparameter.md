@@ -30,7 +30,7 @@ Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparamete
 Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../fortgeschrittene-techniken/extraktionsparameter#custom)
 {% endif %}
 
-### Laufzeitparameter-Syntax im Text Modus
+### Laufzeitparameter im Text Modus
 
 Fügen Sie vor dem Wert ein @-Symbol hinzu, um ihn als Laufzeitparameter zu kennzeichnen. Beispielsweise geben Sie `@myParameter` anstatt des Wertes ein.<br>
 {% if page.product == "xtract-universal" %}Der markierte Wert wird zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../execute-and-automate-extractions/extraction-parameters#custom).{% endif %}
