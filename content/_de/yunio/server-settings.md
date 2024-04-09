@@ -61,7 +61,7 @@ Für mehr Informationen zu TLS, siehe [Microsoft: TLS-Protokoll](https://docs.mi
 2. Wenn das Zertifikat nicht im Menü oder im Windows-Zertifikatspeicher aufgeführt ist, installieren Sie das X.509-Zertifikat.
 Das Zertifikat muss einen *alternativen Antragstellernamen (Subject Alternative Name)* haben. Bei der Aktivierung von TLS, wird der *alternative Antragstellername (Subject Alternative Name)* als neuer Hostname verwendet. 
 Ein benutzerdefinierter Hostname kann unter der Einstellung [Services Endpoint](#endpoint) eingegeben werden.
-3. ANachdem Sie das gewünschte X.509-Zertifikat importiert haben, verwalten Sie dessen private Schlüssel, um einen Berechtigungseintrag für den Windows-Benutzer hinzuzufügen.
+3. Nachdem Sie das gewünschte X.509-Zertifikat importiert haben, verwalten Sie dessen private Schlüssel, um einen Berechtigungseintrag für den Windows-Benutzer hinzuzufügen.
 4. Klicken Sie auf **[Pick Certificate]** und wählen Sie ein X.509-Zertifikat aus der Liste der verfügbaren Zertifikate aus.
 5. Geben Sie "NT Service\yunIO Service" innerhalb der Objektauswahl-Benutzeroberfläche ein. Überprüfen Sie die erteilte Berechtigung und übernehmen Sie die Änderungen.
 ![Access](/img/content/yunio/x509-certificate-permission.png){:class="img-responsive" }
