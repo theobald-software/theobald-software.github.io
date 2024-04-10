@@ -16,7 +16,7 @@ Die Platzhalter müssen zur Laufzeit mit echten Werten befüllt werden.  <br>
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
 
 {% if page.product == "xtract-universal" %}
-Die Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../execute-and-automate-extractions/extraction-parameters#custom).
+Die Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../extraktionen-ausfuehren-und-einplanen/extraktionsparameter#custom).
 {% endif %}
 {% if page.product == "board-connector" %}
 Die Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../fortgeschrittene-techniken/extraktionsparameter#custom)
