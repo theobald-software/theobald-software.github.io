@@ -12,6 +12,17 @@ lang: de_DE
 
 Der folgende Abschnitt bietet Beispiel-Workflows und Vorlagen zum Download an.
 
+### SAP Migration Scenarios
+
+Die folgenden Workflows sind darauf ausgelegt, eine SAP-Migration, z. B. ECC nach S/4HANA, zu unterstützen.
+
+| Workflow | Beschreibung  |
+| :------ | :--- |
+| [Data Anonymization and Replication to QA system](/docs/alteryx-workflows/S4 Migration - Data Anonymization and Replication to QA system.yxzp){:download="S4 Migration - Data Anonymization and Replication to QA system.yxzp"}  | Dieser Workflow nutzt die Komponente [Xtract Table](./table), um Entwicklungs-und Testdatensätze mit anonymisierten Daten aus dem Produktivsystem zu erstellen und so Qualitätssicherungsprozesse zu beschleunigen. |
+| [Short-term bridge app.yxwz](/docs/alteryx-workflows/S4 Migration - Short-term bridge app.yxwz){:download="S4 Migration - Short-term bridge app.yxwz"}  | TSein Workflow verwendet die Komponente [Xtract Table](./table), um eine SAP-Migration zu unterstützen, die in einem schrittweisen Ansatz erfolgt, indem die Daten abhängig von der Benutzereingabe aus dem relevanten System extrahiert werden. |
+| [Source & Target Validations - Report level.yxmd](/docs/alteryx-workflows/S4 Migration - Source & Target Validations - Report level.yxmd){:download="S4 Migration - Source & Target Validations - Report level.yxmd"}  | Dieser Workflow verwendet die Komponente [Xtract Report](./reports), um die Datenintegrität zwischen Quell- und Zielumgebung zu validieren. |
+| [Source & Target Validations - Table level.yxmd](/docs/alteryx-workflows/S4 Migration - Source & Target Validations - Table level.yxmd){:download="S4 Migration - Source & Target Validations - Table level.yxmd"}  | Dieser Workflow verwendet die Komponente [Xtract Table](./table), um die Datenintegrität zwischen Quell- und Zielumgebung zu validieren.|
+| [Source & Target Validations - Table & other.yxzp](/docs/alteryx-workflows/S4 Migration - Source & Target Validations - Table & other.yxzp){:download="S4 Migration - Source & Target Validations - Table & other.yxzp"}  | Dieser Workflow verwendet die Komponente [Xtract Table](./table), um die Datenintegrität zwischen Quell- und Zielumgebung zu validieren. Dieser Workflow kann für Tests und Demos verwendet werden, da er eine Flatfile als Zielumgebung verwendet. Diese Zielumgebung ähnelt dem Quellsystem und enthält kleine Änderungen, die beim Abgleich entdeckt werden.
 
 ### Xtract BAPI
 
