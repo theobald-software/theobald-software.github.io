@@ -10,6 +10,13 @@ weight: 2
 lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=rfc-server-beispiel
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
+
 Dieser Abschnitt zeigt, wie Sie eine RFC-Server-Funktion erstellen, registrieren und Aufrufe verarbeiten.
 
 Im folgenden Anwendungsbeispiel wird eine RFC-Server-Funktion erstellt, die es einem ABAP-Programm ermöglicht, zwei Ziffern zu addieren.<br>

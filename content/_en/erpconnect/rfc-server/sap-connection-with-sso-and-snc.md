@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-connection-with-sso-and-snc
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 The RFCServer class supports SAP connection with SSO and SNC.<br>
 The RFCServer class works similarly to the R3Connection class, see [ERPConnect with SSO with SNC](../sap-connection/sso-with-snc).
 

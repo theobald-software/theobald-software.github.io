@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=kundeninfos-abrufen-mit-sd_rfc_customer_get
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 Dieser Abschnitt beinhaltet eine Liste verfügbarerer Beispiele für die BAPI/Funktionsbaustein-Klassen.<br>
 Für eine komplette Liste aller verfügbaren Beispiele, siehe [ERPConnect - Samples](https://kb.theobald-software.com/erpconnect-samples).
 

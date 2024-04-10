@@ -12,14 +12,19 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-parameters
 progressstate: 5
 ---
 
-The following section contains information about the extraction parameters that can be edited in the window "Run extractions".
+The Board Connector Designer can run extractions by passing parameters that define how data is extracted from the source.
 
-### Run an Extraction
+The following categories of extraction parameters are available:
 
-The extraction parameters define how data is extracted from the source. 
+- [Extraction](#extraction) parameters affect the extraction settings.
+- [Source](#source) parameters affect the SAP connection settings.
+- [Custom](#custom) parameters correspond to the user-defined runtime parameters of an extraction.
+
+The parameters can be accessed in the "Run Extraction" window. <br>
+Select an extraction in the Main Window Overview and click **[Run]** to open the "Run Extraction" window. 
+For more information see [Running an extraction](../getting-started/run-an-extraction)).
+ 
 ![Extraction parameters](/img/content/board/Run-Extraction.png){:class="img-responsive"}
-
-To open the "Run extractions" window, select an extraction in the main window of the Designer and click **[Run]** (see details in [Running an extraction](../getting-started/run-an-extraction)).
 
 
 ### Extraction
@@ -52,6 +57,14 @@ updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Re
 decimalSeparator | to set a symbol between integer and fractional part | available in CSV destinations
 columnSeparator |  to set a symbol which indicates the start of a new column | available in CSV destinations
 
+#### Example
+1. Select the checkbox of the parameter you want to override.
+2. Enter the value and confirm by pressing enter. 
+- Extraction URL before changing the parameter:<br>
+`http://localhost:8065?name=Plants`
+- Extraction URL after editing the parameter **source**:<br>
+`http://localhost:8065/?name=Plants&source=SAP_PROD` 
+
 ### Source
 
 ![Source parameters](/img/content/board/Run-Extraction-Source.png){:class="img-responsive"}
@@ -79,7 +92,7 @@ logonTicket | to dynamically change the ticket issuer of the [SAP logon ticket](
 ### Custom
 
 {: .box-note }
-**Note:** The tab *Custom* is only active when a [User-Defined Variable](../advanced-techniques/user-defined-variables) was created. 
+**Note:** The tab *Custom* is only active when a runtime parameter was created. 
 
 Check the checkbox of the parameter and enter a new value to set the user defined parameter.
 

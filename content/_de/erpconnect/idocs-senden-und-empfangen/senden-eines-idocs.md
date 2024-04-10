@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=beispiel-fuer-das-senden-eines-idocs
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 Der folgende Abschnitt zeigt, wie Sie ein Konsolenprogramm schreiben, das ein IDoc vom Typ *STATUS* sendet.
  
 Der *STATUS*-Nachrichtentyp wird verwendet, um den Status eines anderen ausgehenden IDocs anzupassen, z.B. 
@@ -98,6 +103,11 @@ Der Status ist von 3 (an Subsystem übergeben) auf 12 (Versand OK) erhöht worde
 - [Eine RFC-Destination anlegen](./voraussetzungen#eine-rfc-destination-anlegen)
 
 <!---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
 
 <details>
 <summary>[VB]</summary>

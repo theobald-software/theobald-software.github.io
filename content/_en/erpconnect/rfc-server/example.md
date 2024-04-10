@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=rfc-server-example
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 This section shows how to create, register and use RFC server functions.
 
 In the following application sample a simple RFC server function is created that allows ABAP programs to add numbers.<br>

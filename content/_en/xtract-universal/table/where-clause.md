@@ -26,8 +26,9 @@ An extraction has two types of settings:
 {% include _content/en/tables/where-clause-syntax.md%}
 {% include _content/en/tables/where-clause-editor.md%}
 
-### Runtime Parameters in the WHERE Clause Editor
-You can create and assign [runtime parameters](./edit-runtime-parameters), when using WHERE Clause.
+### Runtime Parameters
+
+You can create and assign [runtime parameters](./edit-runtime-parameters) for the WHERE Clause.
 
 
 **** 

@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /ERPConnect-DE/default.aspx?pageid=idocs-senden-und-empfangen
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für ERPConnect.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 IDocs sind elektronische Dokumente, die an und von SAP-Systemen gesendet werden können. <br>
 IDocs werden von SAP sowohl für die Kommunikation zwischen SAP-Systemen als auch zwischen SAP und externen Subsystemen eingesetzt.
 ERPConnect bietet Klassen an, die das Senden, Empfangen und Konstruieren von IDocs ermöglichen.

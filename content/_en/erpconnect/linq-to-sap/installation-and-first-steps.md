@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=linq-to-sap-installation-and-first-steps
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 {: .box-note }
 **Note:** Visual Studio Express versions don't support the LINQ to SAP Designer. 
 

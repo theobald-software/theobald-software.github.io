@@ -11,6 +11,12 @@ weight: 2
 lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=sap-connection
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 This section contains information on connection to SAP systems and is therefore a prerequisite for all subsequent sections.
 
 ### RFC Library (API)

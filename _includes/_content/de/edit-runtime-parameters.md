@@ -15,4 +15,9 @@ Die Platzhalter müssen zur Laufzeit mit echten Werten befüllt werden.  <br>
 *Flag*: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. 
 4. Klicken Sie auf **[OK]** (3) zum Bestätigen.
 
-Die Laufzeitparameter sind jetzt in der Komponente verfügbar.
+{% if page.product == "xtract-universal" %}
+Die Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../execute-and-automate-extractions/extraction-parameters#custom).
+{% endif %}
+{% if page.product == "board-connector" %}
+Die Laufzeitparameter werden zur Laufzeit überschrieben, siehe [Extraktionsparameter - Custom](../fortgeschrittene-techniken/extraktionsparameter#custom)
+{% endif %}

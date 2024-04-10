@@ -15,7 +15,7 @@ Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP
 {% include _content/de/table/where-bedingung-syntax.md  %}
 {% include _content/de/table/where-bedingung-editor.md  %}
 
-### Laufzeitparameter im WHERE Clause Editor
+### Laufzeitparameter
 Sie können [Laufzeitparameter](./edit-runtime-parameters) anlegen und zuweisen, wenn Sie eine WHERE-Bedingung verwenden.
 
 

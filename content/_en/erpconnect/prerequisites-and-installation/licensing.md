@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /ERPConnect-EN/default.aspx?pageid=licensing
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for ERPConnect.<br>
+Make sure to use the documentation within the new [HelpCenter for ERPConnect](https://helpcenter.theobald-software.com/erpconnect/documentation/introduction/).
+
 A demo license is automatically installed with the installation of ERPConnect.<br>
 A regular license is provided in the [Theobald Software Customer Portal](https://my.theobald-software.com/) after purchasing the product. 
 
