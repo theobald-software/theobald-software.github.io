@@ -36,6 +36,7 @@ Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 - [Advanced Settings](#advanced-settings) (5) definieren, wie Daten aus SAP extrahiert werden.
 - [Output Columns](#output-columns) (6) definieren, welche Spalten extrahiert werden.
 - [WHERE Clause](#where-clause) und [WHERE Clause Editor](#where-clause-editor) (7) definieren, welche Zeilen extrahiert werden.
+- [Joins](#joins) (8) Verbindet zwei oder mehr Tabellen und extrahiert das Ergebnis der Verknüpfung.
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
 
@@ -43,7 +44,9 @@ Das *SAP Table and Views* Menü ist in folgende Unterabschnitte unterteilt:
 ### Table or View
 
 Der Name und die Beschreibung der gewählten Tabelle oder View werden im Abschnitt **Table or View** angezeigt.<br>
-Um eine neue Tabelle oder View auszuwählen, klicken Sie auf **Select** in der oberen rechten Ecke des Abschnitts.
+
+- Klicken Sie auf ![add](/img/content/icons/where-clause-add.png){:class="img-responsive" style="display:inline"} um dem Service eine Tabelle oder ein View hinzuzufügen.
+- Klicken Sie auf ![add](/img/content/yunio/icons/delete.svg){:class="img-responsive" style="display:inline" width="16px"} um eine Tabelle oder ein View vom Service zu entfernen.
 
 ### Advanced Settings
 
@@ -115,6 +118,11 @@ Für mehr Informationen über die Parametrisierung von Services, siehe folgende 
 
 {: .box-note }
 **Hinweis:** Die WHERE-Bedingung wird überschrieben, wenn eine WHERE-Bedingung manuell in das dafür vorgesehene Textfeld eingetragen wird, bzw. wenn beim Aufruf des Service’ eine WHERE-Bedingung in dem Body der Service-Definition übergeben wird.
+
+
+### Joins
+
+{% include _content/de/table/table-joins.md  %}
 
 ## SAP Customizing
 

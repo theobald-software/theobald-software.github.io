@@ -1,4 +1,4 @@
-Die *Join*-Funktionalität der Xtract Table-Komponente ermöglicht es, zwei oder mehr Tabellen zu verknüpfen (joinen) und das Ergebnis des Joins zu extrahieren. 
+Die *Join*-Funktionalität ermöglicht das Verknüpfen von zwei oder mehr Tabellen und das Extrahieren des Verknüpfungsergebnisses.
 Um die Extraktion durchzuführen, wird der entsprechende SQL-Befehl dynamisch generiert und der Join auf dem SAP-Server ausgeführt. <br>
 
 Mögliche Szenarien sind die Verknüpfung von Tabellen für Kopf- und Positionsdaten oder Tabellen für Stammdaten und Texte. 
@@ -10,12 +10,28 @@ Unterstützte Join-Typen:
 Weitere Informationen über Join-Typen finden Sie in der [SAP-Online-Help](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true).
 
 {: .box-note }
-**Hinweis**: Die Verwendung von Table Join ist mit dem Funktionsbaustein [/THEO/READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion) in SAP möglich. 
-Version 1.x des Funktionsbausteins unterstützt Inner Join, ab Version 2.10 werden sowohl Inner Join als auch Left Outer Join unterstützt.<br> 
+**Note**: Um die Join-Funktionalität zu verwenden, muss der Funktionsbaustein {% if page.product == "yunio" %}[/THEO/READ_TABLE](#installation-von-theoread_table){% else %}[/THEO/READ_TABLE](../sap-customizing/funktionsbaustein-fuer-table-extraktion){% endif %} in SAP verfügbar sein.
 
 {: .box-note }
 **Hinweis**: Das Joinen von Cluster- oder Pool-Tabellen wird nicht unterstützt. Cluster- und Pool-Tabellen müssen einzeln extrahiert und im Datenziel miteinander verknüpft (gejoint) werden.
 
+{% if page.product == "yunio" %}
+#### Tabellen Joinen
+
+Das folgende Beispiel zeigt, wie die Tabellen KNA1 und KNVV verknüpft werden.
+
+1. Suchen Sie mit Hilfe von [Look up](#eine-sap-tabelle-oder-view-finden) (1) nach Tabellen, die Sie joinen möchten,z.B. KNA1 und KNVV.<br>
+![table-joins](/img/content/yunio/table-joins.png){:class="img-responsive"}
+2. Definieren Sie die Spalten für die Extraktion [Output Columns](#output-columns) (2) für beide Tabellen.
+3. Optional:Definieren Sie eine [WHERE-Bedingung](#where-clause-editor) für die Tabellen.
+4. Klicken Sie auf **[Add join]** (3). Der *Join Editor* wird geöffnet.<br>
+![join-editor](/img/content/yunio/join-editor.png){:class="img-responsive"}
+5.Ändern Sie bei Bedarf die Standardwerte von *Left Table*, *Right Table* und *Join Type*.
+6. Klicke Sie auf **[Join/Add]**. Dem Join wird eine neue Join-Bedingung hinzugefügt.
+7. Wählen Sie im Feld *Left Table* und im Feld *Right Table* eine Tabellenspalte aus, um den Tabelleninhalt abzubilden. Es ist möglich, mehrere Join-Bedingungen hinzuzufügen.
+8. Klicken Sie auf **[OK]**, um die Verknüpfung zu speichern.
+
+{% else %} 
 
 ### Joinen von zwei Tabellen
 
@@ -38,8 +54,9 @@ Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen KNA1 (linke 
 
 *Left Table* (linke Tabelle), *Right Table* (rechte Tabelle), *Join Type* (Join-Typ) und *Join Mapping* sind mit Standardwerten voreingestellt. Sie können bei Bedarf modifiziert werden. Das *Join Mapping* basiert auf der Fremdschlüsselbeziehung der verknüpften Tabellen.<br>
 - Klicken Sie auf **[Add]**, um die Join-Bedingung auf weitere Felder auszudehnen. 
-- Klicken Sie auf **[Remove]** ( ![trashbin](/img/content/icons/trashbin.png) Symbol), um bestehende Verknüpfungen zu entfernen. 
+- Klicken Sie auf ![trashbin](/img/content/icons/trashbin.png) Symbol, um bestehende Verknüpfungen zu entfernen. 
 - Joinen Sie zusätzliche Tabellen im Tab *Tables and Fields*. 
+{% endif %} 
 
 {: .box-tip }
 **Empfehlung**: Um Performance-Probleme zu vermeiden, joinen Sie nicht mehr als fünf Tabellen.
@@ -48,7 +65,7 @@ Im dargestellten Beispiel wird ein Left Outer Join auf die Tabellen KNA1 (linke 
 **Tipp**: Verschiedene Tabellen können identische Feldnamen haben. Die Definition einer Join-Bedingung auf der Grundlage der identischen Feldnamen liefert nicht immer das erwartete Ergebnis (z.B. VBAK~VBELN <> LIPS~VBELN).
 Stellen Sie sicher, dass die Felder, die Sie in einer Join-Bedingung verwenden, den gleichen Inhalt/die gleichen Daten enthalten.
 
-
+{% if page.product != "yunio" %}
 ##### Auto-Mapping-Funktion (optional)
 
 Der Button **[Auto-Map]** löscht bestehende Join-Bedingungen und führt eine neue Feldzuordnung auf der Grundlage der Fremdschlüsselbeziehung der verknüpften Tabellen durch. 
@@ -63,5 +80,5 @@ Beispiel für einen Join mit einer dritten Tabelle KNB1:
 
 ![Table-Join-Verknüpfungen3](/img/content/join_verknüpfungen_03.png){:class="img-responsive"}
 
-   
+{% endif %}   
 

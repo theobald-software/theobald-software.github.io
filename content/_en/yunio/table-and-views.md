@@ -37,13 +37,16 @@ The *SAP Table or View* settings consist of the following subsections:
 - [Advanced Settings](#advanced-settings) (5) define how the data is extract from SAP.
 - [Output Columns](#output-columns) (6) define what columns to extract.
 - [WHERE Clause](#where-clause) and [WHERE Clause Editor](#where-clause-editor) (7) define what rows to extract.
+- [Joins](#joins) (8) joins two or more tables and extracts the result of the join.
 
 ![yunIO-table](/img/content/yunio/table-settings.png){:class="img-responsive"}
 
 ### Table or View
 
 The **Table or View** section displays the name and description of the selected table or view.<br>
-To select a different source file, click **Select** in the upper right corner of the section.
+
+- Click ![add](/img/content/icons/where-clause-add.png){:class="img-responsive" style="display:inline"} to add a table or view to the service.
+- Click ![add](/img/content/yunio/icons/delete.svg){:class="img-responsive" style="display:inline" width="16px"} to remove a table or view from the service. 
 
 ### Advanced Settings
 
@@ -118,13 +121,16 @@ For more information on parameterizing services, refer to the following knowledg
 {: .box-note }
 **Note:** The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
 
+### Joins
+
+{% include _content/en/tables/table-joins.md  %}
+
 ## SAP Customizing
 
 {: .box-note }
 **Note:** SAP customizing is optional. The installation of the custom function module `/THEO/READ_TABLE` is recommended.
 
 {% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
-
 
 *****
 #### Related Links
