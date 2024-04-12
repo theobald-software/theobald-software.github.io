@@ -1,7 +1,7 @@
 The *Join* functionality allows joining two or more tables and extract the result of the join. 
 To perform the extraction the corresponding SQL command is generated dynamically and the join is executed on the SAP server. <br>
 
-Possible scenarios are joining tables for header and item data or tables for master data and texts. 
+Possible scenarios can be joining tables for header and item data or tables for master data and texts. 
 
 Supported join types:
 
