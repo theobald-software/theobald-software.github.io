@@ -431,8 +431,8 @@ The response of a web service call contains the following information:
 
 ![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
-\* Deprecated: `[protocol]://[host]:[port]/?name=[extraction_name]` \*<br>
-\* Deprecated: `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` \*
+\* Deprecated: `[protocol]://[host]:[port]/?name=[extraction_name]` (synchronous) \*<br>
+\* Deprecated: `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` (asynchronous) \*
 
 {: .box-tip }
 **Tip:** You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](./getting-started/run-an-extraction).{% endif %}
@@ -459,18 +459,6 @@ KUNNR,LAND1,NAME1,ORT01
 0000000779,DE,Theobald Software,Stuttgart
 {% endhighlight %}
 </details>
-
-
-<!---
-/run/$name
-POST starts the extraction with name $name and waits for it to finish. The response is either the extractions content in case it is an HTTP destination or the log output. (Synchronous execution)
-
-/start/$name
-POST starts the extraction with name $name and returns the run status immediately. (Asynchronous execution)
-
-/stop
-Stops extractions. If no parameter is supplied all running extractions are cancelled. A parameter may be given in the path in for form of /stop/yyyy-MM-dd_hh:mm:ss.fff to identify a single extraction run or /stop/$name to stop all running instances of a single extraction definition.
--->
 
 
 ### Abort Extraction
