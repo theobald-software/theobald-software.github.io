@@ -12,11 +12,6 @@ progressstate: 5
 ---
 Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in den Huawei Cloud Object Storage Service (OBS).
 
-{: .box-warning }
-**Warnung!** **Beta-Version - Grundlegende Änderungen möglich** <br>
-Die Komponente befindet sich in der Beta-Phase. Grundlegende Änderungen sind jederzeit möglich. 
-Erstellen Sie regelmäßige Backups der Konfigurationsdateien, um bei Bedarf auf die vorige Version zu wechseln.
-
 
 {: .box-warning }
 **Warnung! Dateifragmente im Cloud-Speicher**<br>
