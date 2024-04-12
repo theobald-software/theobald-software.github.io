@@ -30,7 +30,7 @@ The following example shows how to join the tables KNA1 and KNVV.
 ![join-editor](/img/content/yunio/join-editor.png){:class="img-responsive"}
 5. If necessary, change the default values of *Left Table*, *Right Table* and *Join Type*. 
 6. Click **[Join/Add]**. A new join condition is added to the join. 
-7. Select a table column in *Left Table Fields* and *Right Table Field* that can be used to map the table contents. It is possible to add multiple join conditions.
+7. Select a table column in *Left Table* field and in the *Right Table* field to map the table contents. It is possible to add multiple join conditions.
 8. Click **[OK]** to save the join.
 
 {% else %} 
