@@ -409,11 +409,17 @@ If inactive, the data type is *StringLengthMax* with a length of 8 (*Date*).
 ### Run Extractions
 
 ```
-[protocol]://[host]:[port]/?name=[extraction_name]
+[protocol]://[host]:[port]/run/[extraction_name]
 ```
 
-Runs the specified extraction.
-\* This endpoint is marked as deprecated and will be replaced by `/run/[extraction_name]` in the future. \*
+Runs the specified extraction and waits for it to finish.
+
+```
+[protocol]://[host]:[port]/start/[extraction_name]
+```
+
+Runs the specified extraction asynchronously and returns the run status immediately.
+
 
 The response of a web service call contains the following information:
 
@@ -425,31 +431,35 @@ The response of a web service call contains the following information:
 
 ![Webservice Call pull](/img/content/xu/automation/webservice/xu_call_webservice_csv.png){:class="img-responsive"}
 
-#### Parameters
-
-`[protocol]://[host]:[port]/?name=[extraction_name]?`
-
-| Parameter    | Description  | 
-|-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.product == "xtract-universal" %}[extraction parameters](./execute-and-automate-extractions/extraction-parameters).{% else %}[extraction parameters](./getting-started/run-an-extraction).{% endif %} |
-| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
-| ```&wait=false``` |   Runs the specified extraction asynchronously and returns the timestamp in the HTTP body. Default (true) waits for the extraction to finish. \* This endpoint is marked as deprecated and will be replaced by `/start/[extraction_name]` in the future. \*|
+\* Deprecated: `[protocol]://[host]:[port]/?name=[extraction_name]` \*<br>
+\* Deprecated: `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` \*
 
 {: .box-tip }
 **Tip:** You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](./getting-started/run-an-extraction).{% endif %}
 
 
+#### Parameters
+
+`[protocol]://[host]:[port]/start/[extraction_name]?`
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```/&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.product == "xtract-universal" %}[extraction parameters](./execute-and-automate-extractions/extraction-parameters).{% else %}[extraction parameters](./getting-started/run-an-extraction).{% endif %} |
+| ```/&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
+
+
 #### Example 
 
-`http://sherri.theobald.local:8065/?name=KNA1&wait=false&city=Stuttgart&name1=Theobald%20Software`
+`http://sherri.theobald.local:8065/start/KNA1/?name1=heobald%20Software&city=Stuttgart`
 
 <details>
 <summary>Click here to show the response body</summary>
 {% highlight csv %}
-KUNNR,LAND1,NAME1,ORT01,Mean_UMSAT
-0000000779,DE,Theobald Software,Stuttgart,"0,00000000000000000E+000"
+KUNNR,LAND1,NAME1,ORT01
+0000000779,DE,Theobald Software,Stuttgart
 {% endhighlight %}
 </details>
+
 
 <!---
 /run/$name
@@ -466,17 +476,25 @@ Stops extractions. If no parameter is supplied all running extractions are cance
 ### Abort Extraction
 
 ```
-[protocol]://[host]:[port]/abort?name=[extraction_name]
+[protocol]://[host]:[port]/stop
 ```  
 
-Aborts the specified extraction.
+Aborts all extractions. 
 If the abortion is successful, a confirmation message is returned in the HTTP body. 
 
-\* This endpoint is marked as deprecated and will be replaced by `/stop/[extraction_name]` in the future. \*
+\* Deprecated: `[protocol]://[host]:[port]/abort?name=[extraction_name]` \*
+
+#### Parameters
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```/[extraction_name]```  |   Aborts the specified extraction. |
+| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Aborts the extraction with the specified timestamp. |
+
 
 #### Example
 
-`http://sherri.theobald.local:8065//abort?name=KNA1`
+`http://sherri.theobald.local:8065/stop/KNA1`
 
 <details>
 <summary>Click here to show the response body</summary>
