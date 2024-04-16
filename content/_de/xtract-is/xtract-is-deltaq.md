@@ -1,7 +1,7 @@
 ---
 ref: xtract-is-09
 layout: page
-title: Xtract DeltaQ (veraltet)
+title: Xtract DeltaQ 
 description: Xtract IS DeltaQ
 product: xtract-is
 parent: xtract-is
@@ -17,7 +17,7 @@ DeltaQ extrahiert DataSources (OLTP) und Extraktoren aus ERP- und ECC-Systemen.
 
 {: .box-warning } 
 **Warnung! Neuere Komponente verfügbar.**<br>
-DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
+DeltaQ ist eine ältere Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**

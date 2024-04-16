@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-13
 layout: page
-title: DeltaQ (veraltet)
+title: DeltaQ
 description: Datasource DeltaQ
 product: xtract-universal
 parent: xtract-universal
@@ -16,7 +16,7 @@ Der folgende Abschnitt beschreibt die Funktion der Xtract Universal DeltaQ Kompo
 
 {: .box-warning } 
 **Warnung! Neuere Komponente verfügbar.**<br>
-DeltaQ ist eine alte Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
+DeltaQ ist eine ältere Komponente. Wenn möglich, verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**

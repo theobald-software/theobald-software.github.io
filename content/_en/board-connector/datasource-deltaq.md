@@ -1,7 +1,7 @@
 ---
 ref: board-connector-13
 layout: page
-title: DeltaQ (deprecated)
+title: DeltaQ 
 description: Datasource DeltaQ
 product: board-connector
 parent: board-connector

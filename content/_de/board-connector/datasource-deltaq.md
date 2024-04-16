@@ -1,8 +1,7 @@
 ---
 ref: board-connector-13
 layout: page
-title: DeltaQ (veraltet)
-description: Datasource DeltaQ
+title: DeltaQ description: Datasource DeltaQ
 product: board-connector
 parent: board-connector
 childidentifier: datasource-deltaq
@@ -15,7 +14,7 @@ The following section describes the functions of the DeltaQ component of Xtract 
 
 {: .box-warning } 
 **Warnung! Neuere Komponente verfügbar**<br>
-DeltaQ ist eine alte Komponente. Wenn möglich verwenden Sie die neuere Komponente **[ODP](./odp)**.
+DeltaQ ist eine ältere Komponente. Wenn möglich verwenden Sie die neuere Komponente **[ODP](./odp)**.
 
 {: .box-warning}
 **Warnung!** **Fehlende Berechtigungen**

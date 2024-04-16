@@ -1,7 +1,7 @@
 ---
 ref: xtract-universal-13
 layout: page
-title: DeltaQ (deprecated)
+title: DeltaQ
 description: Datasource DeltaQ
 product: xtract-universal
 parent: xtract-universal
