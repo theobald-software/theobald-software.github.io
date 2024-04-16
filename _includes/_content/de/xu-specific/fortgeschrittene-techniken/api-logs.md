@@ -15,6 +15,7 @@ Der Zeitstempel entspricht dem von zurückgegebenen *startedAt*-Element [`[proto
 | FinishedNoErrors | Die Extraktion wurde ohne Fehler abgeschlossen.             |
 | FinishedErrors   | Die Extraktion wurde abgeschlossen, weist jedoch mindestens einen Fehler auf. |
 
+
 #### Beispiel
 
 `http://sherri.theobald.local:8065/status/?name=KNA1&timestamp=2024-02-05_10:23:08.025`

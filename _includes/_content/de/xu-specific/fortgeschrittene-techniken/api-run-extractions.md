@@ -3,11 +3,27 @@
 ### Extraktionen ausführen
 
 ```
-[protocol]://[host]:[port]/?name=[extraction_name]
+[protocol]://[host]:[port]/run/[extraction_name]
 ```
 
-Führt die angegebene Extraktion aus.
+Führt die angegebene Extraktion aus und wartet darauf, dass der Prozess angeschlossen ist.
 \* Dieser Endpunkt ist als veraltet markiert und wird in Zukunft durch `/run/[extraction_name]` ersetzt. \*
+
+```
+[protocol]://[host]:[port]/start/[extraction_name]
+```
+Führt die angegebene Extraktion asynchron aus und gibt den Ausführungsstatus sofort zurück.
+
+{: .box-warning }
+**Warnung! Veraltete Endpunkte:**<br>
+`[protocol]://[host]:[port]/?name=[extraction_name]` (synchron) <br>
+`[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` (asynchron) 
+
+{: .box-tip }
+**Tipp:** Sie können die Benutzeroberfläche im Menü "Run Extraction" verwenden, um eine URL für das Ausführen einer Extraktion zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen).{% else %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).{% endif %}
+
+
+#### Response
 
 Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
 
