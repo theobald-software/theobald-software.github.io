@@ -23,7 +23,7 @@ Führt die angegebene Extraktion asynchron aus und gibt den Ausführungsstatus s
 **Tipp:** Sie können die Benutzeroberfläche im Menü "Run Extraction" verwenden, um eine URL für das Ausführen einer Extraktion zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen).{% else %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).{% endif %}
 
 
-#### Response
+#### Antwort
 
 Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
 

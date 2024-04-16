@@ -19,7 +19,7 @@ Runs the specified extraction asynchronously and returns the run status immediat
 `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` (asynchronous) 
 
 {: .box-tip }
-**Tip:** You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](./getting-started/run-an-extraction).{% endif %}
+**Tip:** You can use the UI in the "Run Extraction" menu to generate an URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](./getting-started/run-an-extraction).{% endif %}
 
 #### Response
 
