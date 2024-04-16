@@ -15,8 +15,8 @@ Alle relevanten Metadaten der Tabelle werden aus SAP abgerufen.
 Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 
 
-{: .box-note } 
-**Hinweis:**  Die Strukturen der Ursprungstabelle können nur geändert werden, nachdem die mit dieser Tabelle verbundenen CDC-bezogenen Ressourcen in SAP gelöscht wurden.
+{: .box-warning } 
+**Warnung!** **Tabellenänderung nicht möglich**<br> Die Strukturen der Ursprungstabelle können nur geändert werden, nachdem die mit dieser Tabelle verbundenen CDC-bezogenen Ressourcen in SAP gelöscht wurden, siehe [SAP Note 2284776](https://userapps.support.sap.com/sap/support/sfm/notes/print/0002284776?language=E&token=320D8156C64BBC51EF82342B87789B8D) 
 
 ### Eine Table CDC Extraktion Einrichten
 
