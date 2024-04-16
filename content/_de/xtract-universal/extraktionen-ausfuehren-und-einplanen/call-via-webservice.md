@@ -15,7 +15,6 @@ Der Aufruf einer Extraktion erfolgt in der Regel über ein Skript, Scheduler ode
 
 {% include _content/de/xu-specific/fortgeschrittene-techniken/api-base-url.md %}
 
-
 {: .box-note } 
 **Hinweis:** Stellen Sie sicher, dass Sie die richtigen Ports verwenden, siehe [Server-Ports](../server/ports).
 
