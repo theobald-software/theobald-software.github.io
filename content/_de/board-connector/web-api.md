@@ -8,7 +8,6 @@ parent: board-connector
 permalink: /:collection/:path
 weight: 6
 lang: de_DE
-
 ---
 
 Der folgende Abschnitt enthält Informationen zur Web-API von Board Connector.
@@ -21,4 +20,8 @@ Die Web-API gibt das Ergebnis als http-json-Stream zurück.
 {: .box-note } 
 **Hinweis:** Stellen Sie sicher, dass Sie die richtigen Ports verwenden, siehe [Server Ports](./server/ports).
 
-{% include _content/de/xu-specific/fortgeschrittene-techniken/api-calls.md %}
+{% include _content/de/xu-specific/fortgeschrittene-techniken/api-config.md %}
+
+{% include _content/de/xu-specific/fortgeschrittene-techniken/api-run-extractions.md %}
+
+{% include _content/de/xu-specific/fortgeschrittene-techniken/api-logs.md %}
