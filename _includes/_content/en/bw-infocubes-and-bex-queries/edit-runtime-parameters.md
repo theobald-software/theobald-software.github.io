@@ -19,6 +19,9 @@ The placeholders need to be populated with actual values at extraction runtime. 
 
 -->
 
+{: .box-note } 
+**Note:** In the BWCube component, runtime parameters usually represent key values. 
+The filter options of BWCube do not support filtering text descriptions.
 
 #### Adding Scalar Parameters
 {% if page.product == "xtract-for-alteryx" %} ![Add Scalar](/img/content/xfa/xfa_scalar_2.gif){:class="img-responsive" style="border:1px solid black;"}
