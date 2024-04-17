@@ -35,7 +35,7 @@ Before deleting an extraction, click **[Delete CDC resources]** in the Table CDC
 
 {: .box-warning } 
 **Warning!** **Table change not possible** <br>
-The source table structures can be changed only after clearing the CDC-related resources connected to that table in SAP, see [SAP Note 2284776](https://userapps.support.sap.com/sap/support/sfm/notes/print/0002284776?language=E&token=320D8156C64BBC51EF82342B87789B8D) 
+The source table structures can be changed only after clearing the CDC-related resources connected to that table in SAP, see [SAP Note 2284776](https://userapps.support.sap.com/sap/support/sfm/notes/print/0002284776?language=E) 
 
 <!---
 
