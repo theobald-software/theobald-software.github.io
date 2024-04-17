@@ -41,7 +41,7 @@ To run an extraction on the Xtract Universal server, call the command line tool 
     xu.exe -n MaterialText -s 10.0.0.42 -p 80 -o "rows=1000"
     xu.exe -n MaterialText -s xusrv.corp.local -p 443 -o "rows=1000" -o "SPRAS=D" -e
     xu.exe -n MaterialText -a
-    xu.exe "http://localhost:8065/start/MaterialText/&rows=1000"
+    xu.exe "http://localhost:8065/?name=MaterialText&rows=1000"
 ```
 
 ### Return Codes

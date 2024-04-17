@@ -25,8 +25,4 @@ The web API returns the result as an http-json stream.
 {: .box-note } 
 **Note:** Make sure to use the correct ports, see [Server Ports](./server/ports).
 
-{% include _content/en/xu-specific/advanced-techniques/api-config.md %}
-
-{% include _content/en/xu-specific/advanced-techniques/api-run-extractions.md %}
-
-{% include _content/en/xu-specific/advanced-techniques/api-logs.md %}
+{% include _content/en/xu-specific/advanced-techniques/api-calls.md %}
