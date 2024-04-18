@@ -19,7 +19,7 @@ Führt die angegebene Extraktion asynchron aus und gibt den Ausführungsstatus s
 `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` (asynchron) 
 
 {: .box-tip }
-**Tipp:** Sie können die Benutzeroberfläche im Menü "Run Extraction" verwenden, um eine URL für das Ausführen einer Extraktion zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen).{% else %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).{% endif %}
+**Tipp:** Sie können die Benutzeroberfläche im Menü "Run Extraction" verwenden, um eine URL für das Ausführen einer Extraktion zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen).{% else %}[Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren).{% endif %}
 
 <!-- {: .box-tip }
 **Tipp:** Sie können die Benutzeroberfläche im Menu "Run Extraction" verwenden, um eine URL für Extraktionsläufe zu generieren, siehe [Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).
@@ -44,7 +44,7 @@ Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
 
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Führt die angegebene Extraktion aus und übergibt Werte an die angegebenen {% if page.product == "xtract-universal" %}[Extraktionsparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter).{% else %}[Extraktionsparameter](./erste-schritte/eine-extraktion-ausfuehren#definieren-der-extraktionseigenschaften).{% endif %} |
+| ```&[parameter1_name]=[value]```  |   Führt die angegebene Extraktion aus und übergibt Werte an die angegebenen {% if page.product == "xtract-universal" %}[Extraktionsparameter](./extraktionsparameter).{% else %}[Extraktionsparameter](../erste-schritte/eine-extraktion-ausfuehren#definieren-der-extraktionseigenschaften).{% endif %} |
 | ```&quiet-push=true```  |   Führt die angegebene Extraktion aus und unterdrückt die Ausgabe von Extraktionsprotokollen für Push-Destinationen. Dieser Parameter hat keine Auswirkung auf Pull-Destinationen und asynchrone Extraktionen.|
 
 
