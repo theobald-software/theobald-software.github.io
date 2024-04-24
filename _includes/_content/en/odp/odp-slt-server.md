@@ -31,7 +31,7 @@ Consider the following when using an SLT server:
 ***
 ### Related Links
 - [SAP Documentation: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US)
-
+- [SLT-Performance-Guide (Nov 2022)](/docs/SLT-Performance-Guide_Nov_2022.pdf){:download="SLT-Performance-Guide_Nov_2022.pdf"}
 
 <!---
 2. The **Delta Update** option is selected by default. The full data load is not available when using an SLT server.
