@@ -32,16 +32,16 @@ Aufruf der Transaktion *SM59* und Löschen der RFC-Destination vom Typ R/3 über
 ### 4. RFC-Destination vom Typ T anlegen
 Anlage einer neuen Destination vom *Connection Type* **T=TCP/IP** mit identischem Namen und setzen nachfolgender Parameter.
 
-Feld | Beispielwert | Bemerkung
------------- | ------------- | ------------
-RFC Destination | XTRACT01 |
-Connection Type | TCP/IP Connection |
-Description 1| Xtract Destination | 
-Activation Type | Registered Server Program |
-Program ID | XTRACT01 |
-Gateway Host | sap-erp-as05.example.com | Name oder IP-Adresse des SAP-Systems.
-Gateway service | sapgw00 | In der Form sapgwnn, wobei nn die SAP Instanznummer, eine zweistellige Zahl zwischen *00* und *99*, ist.
-Serializer | Classic Serializer | Wählen Sie im Tab "Special Options" den *Classic serializer* aus.
+Tab | Feld | Beispielwert | Bemerkung
+---- | ------------ | ------------- | ------------
+Technical Settings | RFC Destination | XTRACT01 |
+Technical Settings | Connection Type | TCP/IP Connection |
+Technical Settings | Description 1| Xtract Destination | 
+Technical Settings | Activation Type | Registered Server Program |
+Technical Settings | Program ID | XTRACT01 |
+Technical Settings | Gateway Host | sap-erp-as05.example.com | Name oder IP-Adresse des SAP-Systems.
+Technical Settings | Gateway service | sapgw00 | In der Form sapgwnn, wobei nn die SAP Instanznummer (zwischen *00* und *99*).
+Special Options | Serializer | Classic Serializer | Wählen Sie den *Classic serializer* aus.
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 

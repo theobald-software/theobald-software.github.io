@@ -32,16 +32,16 @@ Call transaction *SM59* and delete the RFC destination of type R/3 via **Detaile
 ### 4. Create RFC destination of type T
 Create a new destination of the *Connection Type* **T=TCP/IP** with identical name and set the following parameters.
 
-Field | Example Value | Comment
------------- | ------------- | ------------
-RFC Destination | XTRACT01 |
-Connection Type | TCP/IP Connection |
-Description 1| Xtract Destination | 
-Activation Type | Registered Server Program |
-Program ID | XTRACT01 |
-Gateway Host | sap-erp-as05.example.com | Name or IP address of the SAP system.
-Gateway service | sapgw00 | In the form sapgwnn, where nn is the SAP instance number, a two-digit number between *00* and *99*.
-Serializer | Classic Serializer | Select the "Classic serializer" in the tab "Special Options".
+Tab | Field | Example Value | Comment
+---- | ------------ | ------------- | ------------
+Technical Settings | RFC Destination | XTRACT01 |
+Technical Settings | Connection Type | TCP/IP Connection |
+Technical Settings | Description 1| Xtract Destination | 
+Technical Settings | Activation Type | Registered Server Program |
+Technical Settings | Program ID | XTRACT01 |
+Technical Settings | Gateway Host | sap-erp-as05.example.com | Name or IP address of the SAP system.
+Technical Settings | Gateway service | sapgw00 | In the form sapgwnn, where nn is the SAP instance number (between *00* and *99*).
+Special Options | Serializer | Classic Serializer | Select the "Classic serializer".
 
 ![DeltaQ-Customizing-04](/img/content/DeltaQ-Customizing-04.png){:class="img-responsive"}
 
