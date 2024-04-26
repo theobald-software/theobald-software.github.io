@@ -19,7 +19,7 @@ Führt die angegebene Extraktion asynchron aus und gibt den Ausführungsstatus s
 `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` (asynchron) 
 
 {: .box-tip }
-**Tipp:** Sie können die Benutzeroberfläche im Menü "Run Extraction" verwenden, um eine URL für das Ausführen einer Extraktion zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren#extraktion-ausführen).{% else %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).{% endif %}
+**Tipp:** Sie können die Benutzeroberfläche im Menü "Run Extraction" verwenden, um eine URL für das Ausführen einer Extraktion zu generieren, siehe {% if page.parent == "xtract-universal" %}[Extraktion ausführen](https://help.theobald-software.com/de/xtract-universal/erste-schritte/eine-extraktion-ausfuehren).{% else %}[Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).{% endif %}
 <!-- {: .box-tip }
 **Tipp:** Sie können die Benutzeroberfläche im Menu "Run Extraction" verwenden, um eine URL für Extraktionsläufe zu generieren, siehe [Extraktion ausführen](./erste-schritte/eine-extraktion-ausfuehren).
 -->
