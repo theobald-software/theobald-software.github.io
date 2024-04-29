@@ -20,7 +20,7 @@ Runs the specified extraction asynchronously and returns the run status immediat
 
 
 {: .box-tip }
-**Tip:** You can use the UI in the "Run Extraction" menu to generate an URL for extraction runs, see {% if page.parent == "xtract-universal" %}[Run Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](https://help.theobald-software.com/en/board-connector/getting-started/run-an-extraction).{% endif %}
+**Tip:** You can use the UI in the "Run Extraction" menu to generate an URL for extraction runs, see {% if page.parent == "xtract-universal" or page.parent == "board-connector" %}[Run Extraction](./getting-started/run-an-extraction#run-extraction).{% else %}[Run Extraction](../getting-started/run-an-extraction).{% endif %}
 
 
 #### Response
@@ -42,7 +42,7 @@ The response of the web service calls contains the following information:
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```/&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.product == "xtract-universal" %}[extraction parameters](./extraction-parameters).{% else %}[extraction parameters](./advanced-techniques/extraction-parameters).{% endif %} |
+| ```/&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.product == "xtract-universal" %}[extraction parameters](./execute-and-automate-extractions/extraction-parameters).{% elsif page.parent == "board-connector"%}[extraction parameters](./advanced-techniques/extraction-parameters).{% else %}[extraction parameters](./extraction-parameters).{% endif %} |
 | ```/&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
 
 #### Example 
