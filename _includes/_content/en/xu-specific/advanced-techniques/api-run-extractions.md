@@ -42,7 +42,7 @@ The response of the web service calls contains the following information:
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```/&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.product == "xtract-universal" %}[extraction parameters](./execute-and-automate-extractions/extraction-parameters).{% elsif page.parent == "board-connector"%}[extraction parameters](./advanced-techniques/extraction-parameters).{% else %}[extraction parameters](./extraction-parameters).{% endif %} |
+| ```/&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified {% if page.parent == "xtract-universal" %}[extraction parameters](./execute-and-automate-extractions/extraction-parameters).{% elsif page.parent == "board-connector"%}[extraction parameters](./advanced-techniques/extraction-parameters).{% else %}[extraction parameters](./extraction-parameters).{% endif %} |
 | ```/&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.|
 
 #### Example 
