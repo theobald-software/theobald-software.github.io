@@ -44,7 +44,7 @@ Die Antwort eines Webservice-Aufrufs enthält die folgenden Informationen:
 
 | Parameter    | Beschreibung  | 
 |-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Führt die angegebene Extraktion aus und übergibt Werte an die angegebenen {% if page.product == "xtract-universal" %}[Extraktionsparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter){% elsif page.parent == "board-connector"%}[Extraktionsparameter](./fortgeschrittene-techniken/extraktionsparameter).{% else %}[Extraktionsparameter](./extraktionsparameter).{% endif %} |
+| ```&[parameter1_name]=[value]```  |   Führt die angegebene Extraktion aus und übergibt Werte an die angegebenen {% if page.parent == "xtract-universal" %}[Extraktionsparameter](./extraktionen-ausfuehren-und-einplanen/extraktionsparameter){% elsif page.parent == "board-connector"%}[Extraktionsparameter](./fortgeschrittene-techniken/extraktionsparameter).{% else %}[Extraktionsparameter](./extraktionsparameter).{% endif %} |
 | ```&quiet-push=true```  |   Führt die angegebene Extraktion aus und unterdrückt die Ausgabe von Extraktionsprotokollen für Push-Destinationen. Dieser Parameter hat keine Auswirkung auf Pull-Destinationen und asynchrone Extraktionen.|
 
 

@@ -95,7 +95,7 @@ Verschlüsselt die Datei [serverseitig](https://docs.aws.amazon.com/AmazonS3/lat
    Verschlüsselung über den für den AWS-Account AWS-seitig automatisch vorhandenen Schlüssel ([S3 Managed Encryption Keys](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html)).
 
 - **SSE-KMS und Key ID**
-   Verschlüsselung über einen AWS-seitig benutzerdefinierten Schlüssel ([AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html)). Der Schlüssel kann auf der [AWS-Webseite](httpshttps://console.aws.amazon.com/iam/home#/encryptionKeys/) angelegt werden.
+   Verschlüsselung über einen AWS-seitig benutzerdefinierten Schlüssel ([AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html)). Der Schlüssel kann auf der [AWS-Webseite](https://console.aws.amazon.com/iam/home#/encryptionKeys/) angelegt werden.
 
 #### Misc
 
