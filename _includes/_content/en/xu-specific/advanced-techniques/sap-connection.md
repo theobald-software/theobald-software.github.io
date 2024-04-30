@@ -16,7 +16,7 @@ Fill out the connection details to establish an SAP connection.
 ![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 
 #### System
-There are two possibilities to connect to an SAP source system:
+There are three possibilities to connect to an SAP source system:
 - connect via **Single Application Server**
 	- **Host**:  host name or IP address of the application server (Property Host) 
 	- **Instance No**: a two-digit number between 00 and 99 (Property SystemNumber)
@@ -30,7 +30,7 @@ For more information, see [SAP Documentation: Load Balancing](https://help.sap.c
 - connect via **WebSocket** 
 	- **Host**: name or IP address of the SAP cloud system 
 	- **Port**: port of the SAP cloud system, usually 443
-	- **Library**: directory of the SAP cryptographic library (can be downloaded in the SAP Service Marketplace)
+	- **Library**: directory of the SAP Cryptographic Library (download available in the SAP Service Marketplace)
 	- **Client PSE**: directory of the client .pse file, see [Knowledge Base Article: Create a Client PSE to connect to SAP Cloud Systems](https://kb.theobald-software.com/sap/create-personal-security-senvironment)
 
 {: .box-note }
@@ -64,7 +64,7 @@ The following authentication methods are supported:
 Enter your SAP username and password.
 
 **User name is alias** <br>
-Activate this option when connecting to an SAP cloud system using the [WebSocket](#system) connection method. 
+Activate the option **User name is alias** when connecting to an SAP cloud system using the [WebSocket](#system) connection method. 
 When this option is active, the name entered in the field **User** is used as the internet user alias.
 
 **Request SAP credentials from caller when running extractions** <br>

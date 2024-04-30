@@ -16,7 +16,7 @@ Ergänzen Sie die Verbindungsdetails, um eine SAP-Verbindung herzustellen.
 ![XU-Create-Connection-3-A](/img/content/xu/sap_source-details.png){:class="img-responsive"}
 
 #### System
-Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
+Es gibt drei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 - **Single Application Server** (Verwendung eines Single Application Servers)
 	- **Host**:  Name oder IP-Adresse des Applikationsservers (Eigenschaft Host) 
 	- **Instance No**: Instanznummer, eine Zahl zwischen 0 und 99 (Eigenschaft SystemNumber)
@@ -26,6 +26,16 @@ Es gibt zwei Möglichkeiten, sich mit einem SAP-Quellsystem zu verbinden:
 	- **Group**: Logon-Gruppe (Eigenschaft LogonGroup, i.d.R. *PUBLIC*)
 	- **SID**: Dreistellige System-ID (Eigenschaft SID, z.B. MSS) 
 Für mehr Informationen, siehe [SAP Dokumentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+
+- **WebSocket** 
+	- **Host**: Name oder IP-Adresse des SAP-Cloud-Systems
+	- **Port**: Port des SAP-Cloud-Systems, normalerweise 443
+	- **Library**: Verzeichnis der SAP Cryptographic Library (Download verfügbar im SAP Service Marketplace)
+	- **Client PSE**: Verzeichnis der Client-.pse-Datei, siehe [Knowledge Base Article: Create a Client PSE to connect to SAP Cloud Systems](https://kb.theobald-software.com/sap/create-personal-security-senvironment)
+
+{: .box-note }
+**Hinweis:** Bei der Verbindung zu einem SAP-Cloud-System über *WebSocket* aktivieren Sie die Checkbox **User name is alias** in [Plain Authentication](#plain-authentication). 
+Dies ist notwendig, da für die Verbindung zu SAP-Cloud-Systemen der Name eines Internet-Benutzeralias anstelle eines SAP-Benutzernamens erforderlich ist.
 
 
 #### Zugriff über SAP-Router
@@ -53,6 +63,10 @@ Die folgenden Authentifizierungsmethoden werden unterstützt:
 ### Plain Authentication
 
 Geben Sie Ihren SAP-Benutzernamen und Ihr Passwort ein.<br>
+
+**User name is alias** <br>
+Aktivieren Sie die Option **User name is alias** beim Herstellen einer Verbindung zu einem SAP-Cloud-System über die Verbindungsmethode [WebSocket](#system).
+Wenn diese Option aktiv ist, wird der im Feld **User** eingegebene Name als Internetbenutzer-Alias ​​verwendet.
 
 **Request SAP credentials from caller when running extractions** <br>
 Die SAP-Anmeldeinformationen in den Feldern *User* und *Password* werden nicht übernommen.
