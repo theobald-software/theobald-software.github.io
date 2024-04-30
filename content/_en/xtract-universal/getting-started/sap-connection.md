@@ -32,4 +32,5 @@ If extractions are already available:
 2. Click **[Add]** to add a new SAP connection or click ![pen](/img/content/icons/pen.png) to edit an existing connection. The window "Change Source" opens. <br>
 ![XU-Create-Connection-2](/img/content/xu_manage_source.png){:class="img-responsive"}
 
+
 {% include _content/en/xu-specific/advanced-techniques/sap-connection.md %}

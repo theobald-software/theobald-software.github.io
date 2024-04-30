@@ -27,6 +27,16 @@ There are two possibilities to connect to an SAP source system:
 	- **SID**: three-digit System ID (Property SID e.g.,  MSS) 
 For more information, see [SAP Documentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
+- connect via **WebSocket** 
+	- **Host**: name or IP address of the SAP cloud system 
+	- **Port**: port of the SAP cloud system, usually 443
+	- **Library**: directory of the SAP cryptographic library (can be downloaded in the SAP Service Marketplace)
+	- **Client PSE**: directory of the client .pse file, see [Knowledge Base Article: Create a Client PSE to connect to SAP Cloud Systems](https://kb.theobald-software.com/sap/create-personal-security-senvironment)
+
+{: .box-note }
+**Note:** When connecting to an SAP cloud system via *WebSocket*, activate the checkbox **User name is alias** in [Plain Authentication](#plain-authentication). 
+This is necessary, because the connection to SAP cloud systems, requires the name of an internet user alias instead of an SAP username. 
+
 
 #### Access via SAP Router
 
@@ -52,6 +62,10 @@ The following authentication methods are supported:
 ### Plain Authenthication
 
 Enter your SAP username and password.
+
+**User name is alias** <br>
+Activate this option when connecting to an SAP cloud system using the [WebSocket](#system) connection method. 
+When this option is active, the name entered in the field **User** is used as the internet user alias.
 
 **Request SAP credentials from caller when running extractions** <br>
 If this option is active, SAP credentials entered in the **User** and **Password** fields are not applied.
