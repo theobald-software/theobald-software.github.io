@@ -1,22 +1,19 @@
-@@ -0,0 +1,292 @@
-
-
-### Status einer Extraktion abrufen
+### Get Status of an Extraction
 
 ```
 [protocol]://[host]:[port]/status/?name=[extraction_name]&timestamp=[yyyy-MM-dd_HH:mm:ss.SSS]
 ``` 
 
-Gibt den Status einer (laufenden) Extraktion zum angegebenen Zeitstempel zurück. 
-Der Zeitstempel entspricht dem von zurückgegebenen *startedAt*-Element [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) oder [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs).
+Returns the status of a (running) extraction at the specified timestamp. 
+The timestamp corresponds to the *startedAt* element returned by [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) or [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs).
 
-| Status            | Beschreibung                                                  |
+| State            | Description                                                  |
 |------------------|--------------------------------------------------------------|
-| Running          | Die Extraktion läuft.                                   |
-| FinishedNoErrors | Die Extraktion wurde ohne Fehler abgeschlossen.             |
-| FinishedErrors   | Die Extraktion wurde abgeschlossen, weist jedoch mindestens einen Fehler auf. |
+| Running          | The extraction is running.                                   |
+| FinishedNoErrors | The extraction is finished without errors.             |
+| FinishedErrors   | The extraction is finished, but with minimum one error. |
 
-#### Beispiel
+#### Example
 
 `http://sherri.theobald.local:8065/status/?name=KNA1&timestamp=2024-02-05_10:23:08.025`
 
@@ -27,39 +24,39 @@ FinishedNoErrors
 {% endhighlight %}
 </details>
 
-### Extraktionslogs abrufen
+### Get Extraction Logs
 
 ```
 [protocol]://[host]:[port]/logs/extractions
 ``` 
 
-Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgenden Elemente:
+Returns a list of extraction runs. The result contains the following elements:
 
-|  Element   | Beschreibung   |
+|  Item   | Description    |
 |--------------|---------|
-| extractionName  | Name der Extraktion |
-| runs  | enthält *rowCount*, *duration*, *state*, *webServerLog* und *startedAt* der Extraktionsläufe |
-| row count| Anzahl der extrahierten Datensätze |
-| duration | Dauer der Ausführung |
-| state| Status der Extraktion (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
-| webServerLog| Zeitstempel des entsprechenden [Serverlogs](#serverlogs-abrufen) |
-| startedAt| Zeitstempel der Ausführung |
+| extractionName  | name of the extraction |
+| runs  | contains *rowCount*, *duration*, *state*, *webServerLog* and *startedAt* of extraction runs |
+| row count| number of extracted data records |
+| duration | duration of the execution |
+| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| webServerLog| timestamp of the corresponding [server log](#get-server-logs) |
+| startedAt| timestamp of the execution |
 
 
-#### Parameter & Optionen
+#### Parameters & Options
 
 `[protocol]://[host]:[port]/logs/extractions`
 
-| Parameter    | Beschreibung  | 
+| Parameter    | Description  | 
 |-----------|--------------|
-| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Extraktionsläufe nach dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
-| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Extraktionsläufe vor dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
-| ```/[extraction-name]```  |   Gibt alle Extraktionsläufe der angegebenen Extraktion zurück. |
-| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt den Extraktionslauf der angegebenen Extraktion mit dem angegebenen Zeitstempel zurück. |
-| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Gibt das Extraktionslog der angegebenen Extraktion mit dem angegebenen Zeitstempel zurück. |
+| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction runs after the specified date and time. |
+| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction runs before the specified date and time. |
+| ```/[extraction-name]```  |   Returns all extraction runs of the specified extraction. |
+| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction run of the specified extraction with the specified timestamp. |
+| ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Returns the extraction log of the specified extraction with the specified timestamp. |
 
 
-#### Beispiel
+#### Example
 
 `http://sherri.theobald.local:8065/logs/extractions?min=2023-08-17_11:20:44.029`
 
@@ -149,7 +146,7 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 {% endhighlight %}
 </details>
 
-`http://sherri.theobald.local:8065/logs/extractions/KNA1/2024-02-05_10:20:52.344/log`
+`http://sherri.theobald.local:8065/logs/extractions/KNA1/2024-02-20_07:12:54.774/log`
 
 <details>
 <summary>Click here to show the response body</summary>
@@ -200,27 +197,27 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 </details>
 
 {: .box-note } 
-**Hinweis:** Informationen zur Interpretation von Protokollen, siehe [Logging](./logging).
+**Note:** For information on how to interpret logs, see [Logging](./logging).
 
-### Serverlogs abrufen
+### Get Server Logs
 
 ```
 [protocol]://[host]:[port]/logs/web
 ```  
 
-Gibt eine Liste von Zeitstempeln zurück, die den Serverlogs entsprechen.
+Returns a list of timestamps that correspond to server logs.
 
-#### Parameter & Optionen
+#### Parameters & Options
 
 `[protocol]://[host]:[port]/logs/web`
 
-| Parameter    | Beschreibung  | 
+| Parameter    | Description  | 
 |-----------|--------------|
-| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Zeitstempel der Serverlogs nach dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
-| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Zeitstempel der Serverlogs vor dem angegebenen Datum und der angegebenen Uhrzeit zurück. |
-| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Gibt die Serverlogeinträge mit dem angegebenen Zeitstempel zurück. |
+| ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs after the specified date and time. |
+| ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs before the specified date and time. |
+| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server log entries with the specified timestamp. |
 
-#### Beispiel
+#### Example
 
 `http://sherri.theobald.local:8065/logs/web?min=2024-02-05_12:39:29.022`
 
@@ -289,5 +286,6 @@ Gibt eine Liste von Zeitstempeln zurück, die den Serverlogs entsprechen.
 </details>
 
 {: .box-note } 
-**Hinweis:** Informationen zur Interpretation von Logs, siehe [Logging](./logging).
+**Note:** For information on how to interpret logs, see [Logging](./logging).
+
 
