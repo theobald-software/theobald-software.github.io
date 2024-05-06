@@ -10,5 +10,10 @@ weight: 2
 lang: en_GB
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 {% include _content/en/about-this-online-help/about-help-content-ts.md %} 
 

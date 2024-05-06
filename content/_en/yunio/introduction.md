@@ -12,6 +12,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 yunIO is a connector focused on cloud environments that provides REST-based services for read and write access to connected SAP systems. <br>
 The web services can be easily integrated into your process automation solutions, e.g. Power Automate, Nintex, etc.
 

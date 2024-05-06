@@ -12,6 +12,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 The yunIO user management allows you to create custom users with credentials to restrict access to the yunIO Designer and to yunIO services.
 
 ### Creating Users

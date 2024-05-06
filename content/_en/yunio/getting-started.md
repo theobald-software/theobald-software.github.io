@@ -10,6 +10,11 @@ weight: 9
 lang: en_EN
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 
 The following section gives a general introduction to working with yunIO. 
 The information described in the following section is a prerequisite for all subsequent sections.
