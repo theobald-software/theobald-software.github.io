@@ -29,7 +29,6 @@ Beispiele:
 {: .box-warning}
 **Disclaimer:** SAP-Versionen, die vom Hersteller nicht mehr unterstützt werden, funktionieren i.d.R. noch mit Theobald Produkten, sind aber von den Theobald Software Support-Leistungen ausgeschlossen.
 
-{% include _content/de/einfuehrung/sap-authentication-xtract.md %}
 {% include _content/de/einfuehrung/sap-misc.md %}
 {% include _content/de/einfuehrung/operating-systems.md %}
 

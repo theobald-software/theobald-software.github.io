@@ -28,7 +28,6 @@ Examples:
 {: .box-warning}
 **Disclaimer:** While SAP versions that are no longer supported by SAP still work with Theobald Software products, they are excluded from the Theobald Software support service.
 
-{% include _content/en/requirements/sap-authentication-xtract.md %}
 {% include _content/en/requirements/sap-misc.md %}
 {% include _content/en/requirements/operating-systems.md %}
 
