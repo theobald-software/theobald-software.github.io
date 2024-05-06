@@ -69,3 +69,5 @@ The window "Destination Settings" consists of the following subsections:
 The option *Existing files* is connected to the *Directory* option defined in the [Destination Details](#destination-details). <br>
 **Replace file** - replaces the existing file in the directory, where the flat file is saved. <br>
 **Abort extraction** - aborts the extraction, if the flat file already exists in the defined directory.
+
+{% include _content/en/xu-specific/destinations/general/file-splitting.md %}
