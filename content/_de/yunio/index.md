@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Willkommen in der Online Help für yunIO. 
 
 yunIO ist eine No-Code-Lösung für die Gestaltung, Automatisierung und Integration von SAP-Prozessen in der Cloud.<br>

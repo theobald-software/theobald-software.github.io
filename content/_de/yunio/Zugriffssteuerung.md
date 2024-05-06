@@ -12,6 +12,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Die Zugriffssteuerung von yunIO ermöglicht es Ihnen, die folgenden Zugriffsrechte zu definieren:
 - Zugriffsberechtigung für Server und yunIO Designer, siehe [Global Access Control](#global-access-control-globale-zugriffssteuerung)
 - Zugriffsberechtigung für bestimmte Services, siehe [Service Access Control](#service-access-control-zugriffssteuerung-für-services)
