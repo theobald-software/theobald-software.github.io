@@ -1,5 +1,5 @@
 
-### Log-Tabelle und DB Triggers
+### Log-Tabelle und DB Trigger Löschen
 
 Wenn eine Table CDC Extraktion nicht mehr gebraucht wird oder die Struktur der Ursprungstabelle geändert werden soll, ist es nicht ausreichend, nur die Extraktion zu löschen.
 Um die Log-Tabelle und alle dazugehörigen Elemente aus Ihrem SAP-System zu löschen, öffnen Sie die Table CDC Extraktion und klicken Sie **[Delete CDC resources]**.
