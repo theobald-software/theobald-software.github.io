@@ -29,3 +29,5 @@ The content of the SAP log table is cleared after every successful run of the ex
 {: .box-tip }
 **Tip:** If you set the extraction to extract the whole table on your first run, follow steps 1 to 4, then change data in SAP and repeat the steps to check the delta extraction. 
 -->
+
+{% include _content/en/tablecdc/delete-table-cdc.md%}

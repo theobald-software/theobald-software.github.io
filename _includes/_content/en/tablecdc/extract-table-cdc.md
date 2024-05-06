@@ -31,12 +31,6 @@ The column TS_OPERATION indicates if a row was inserted (I), updated (U) or dele
 6. Click **[OK]** to confirm your settings.
 7. Run the extraction to create a log table in SAP that records any changes made to a selected table, see [Run the Extraction for the First Time](#run-the-extraction-for-the-first-time). <br>
 
-Before deleting an extraction, click **[Delete CDC resources]** in the Table CDC component. This also deletes the log table and all associated triggers from your SAP system.
-
-{: .box-warning } 
-**Warning!** **Table change not possible** <br>
-The source table structures can be changed only after clearing the CDC-related resources connected to that table in SAP, see [SAP Note 2284776](https://launchpad.support.sap.com/#/notes/2284776) 
-
 <!---
 
 #### Append Data to an Existing File

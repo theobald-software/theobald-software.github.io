@@ -31,8 +31,3 @@ Die Spalte TS_OPERATION zeigt an, ob die Daten eingefügt (I), aktualisiert (U) 
 6. Klicken Sie auf **[OK]**, um Ihre Eingaben zu bestätigen.
 7. Führen Sie die Extraktion aus, um eine Log-Tabelle in SAP zu erzeugen, die Änderungen an der ausgewählten SAP Tabelle nachverfolgt, siehe [Die Extraktion zum ersten Mal Ausführen](#die-extraktion-zum-ersten-mal-ausführen).
 
-Bevor Sie eine Extraktion löschen, klicken Sie in der {% if page.product == "xtract-is"%}Xtract {% endif %}Table CDC Komponente auf **[Delete CDC resources]**, um die Log-Tabelle und alle dazugehörigen Elemente aus Ihrem SAP-System zu löschen. 
-
-{: .box-warning } 
-**Warnung!** **Tabellenänderung nicht möglich**<br> Die Strukturen der Ursprungstabelle können nur geändert werden, nachdem die mit dieser Tabelle verbundenen CDC-bezogenen Ressourcen in SAP gelöscht wurden, siehe [SAP Note 2284776](https://launchpad.support.sap.com/#/notes/2284776).
-

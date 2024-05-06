@@ -27,3 +27,5 @@ Die Log-Tabelle in SAP ist jetzt angelegt und für die Table CDC Komponente verf
 {: .box-note }
 **Hinweis:** Wenn Sie die Extraktion regelmäßig ausführen, wird der Inhalt der Log-Tabelle in SAP extrahiert und in die Destination geschrieben. 
 Der Inhalt der Log-Tabelle in SAP wird nach jeder erfolgreichen Extraktion gelöscht. Daten, die noch nicht extrahiert wurden, werden nicht gelöscht.
+
+{% include _content/de/tablecdc/table-cdc-loeschen.md%}

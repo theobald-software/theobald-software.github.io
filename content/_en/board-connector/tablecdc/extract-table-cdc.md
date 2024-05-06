@@ -31,3 +31,4 @@ Depending on whether the option **[Extract table on first run]** in the Table CD
 **Note:** When running the extraction regularly the content of the log table in SAP is extracted and written to the destination.
 The content of the log table in SAP is cleared after every successful run of the extraction. Data that was not extracted is not cleared.
 
+{% include _content/en/tablecdc/delete-table-cdc.md%}

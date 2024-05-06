@@ -9,8 +9,8 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 ---
-{% include _content/de/tablecdc/extraktion-anlegen.md%}
 
+{% include _content/de/tablecdc/extraktion-anlegen.md%}
 
 ### Die Extraktion zum ersten Mal Ausführen
 
@@ -22,3 +22,5 @@ Führen Sie die Extraktion ein mal aus, um eine Log-Tabelle in SAP zu erzeugen, 
 {: .box-note }
 **Hinweis:** Wenn Sie die Extraktion regelmäßig ausführen, wird der Inhalt der Log-Tabelle in SAP extrahiert und in die Destination geschrieben. 
 Der Inhalt der Log-Tabelle in SAP wird nach jeder erfolgreichen Extraktion gelöscht. Daten, die noch nicht extrahiert wurden, werden nicht gelöscht.
+
+
