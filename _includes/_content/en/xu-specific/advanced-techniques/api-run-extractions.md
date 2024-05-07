@@ -92,8 +92,6 @@ If the abortion is successful, a confirmation message is returned in the HTTP bo
 Aborts the specified extraction.
 If the abortion is successful, a confirmation message is returned in the HTTP body. 
 
-\* This endpoint is marked as deprecated and will be replaced by `/stop/[extraction_name]` in the future. \*
-
 #### Example
 
 `http://sherri.theobald.local:8065/abort?name=KNA1`
