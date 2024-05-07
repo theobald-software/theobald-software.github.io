@@ -83,8 +83,6 @@ KUNNR,LAND1,NAME1,ORT01,Mean_UMSAT
 Bricht die angegebene Extraktion ab.
 Bei erfolgreichem Abbruch wird im HTTP-Body eine Bestätigungsmeldung zurückgegeben.
 
-\* Dieser Endpunkt ist als veraltet markiert und wird durch `/stop/[extraction_name]` ersetzt. \*
-
 #### Beispiel
 
 `http://sherri.theobald.local:8065//abort?name=KNA1`
