@@ -29,9 +29,9 @@ Die Anwendung kehrt zum Hauptfenster der Komponente zurück.
 Beachten Sie, dass für jede Query, die in dieser Liste erscheinen soll, das Feld *Externen Zugriff auf diese Query zulassen* im BEx Query Designer oder im BW Modeling Tool angehakt sein muss. 
 Mehr Details finden Sie im Knowledge Base Artikel [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries).
 
-### MDX und BICS (beta)
+### MDX und BICS
 
-|                                    | MDX                                                                                         | BICS (beta)                                        |
+|                                    | MDX                                                                                         | BICS                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Syntax bei der Suche von BEx-Queries   | `[tech. Name des InfoPoviders]/[tech. Name der BEx-Query]` <br /> Beispiel: 0SD_C03/0SD_C03_Q0018        | `[tech. Name der BEx-Query]` <br /> Beispiel: 0SD_C03_Q0018   |
 | Syntax bei der Suche von InfoProivders | `$[tech. Name des InfoProvoiders]`  <br /> Beispiel: $0SD_C03                                            | `[tech. Name des InfoProviders]` <br /> Beispiel: 0SD_C03      |
