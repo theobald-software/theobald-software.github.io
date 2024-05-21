@@ -1,4 +1,3 @@
-
 ![table-cdc-extraction-settings](/img/content/tablecdc/table-cdc-extraction-settings.png){:class="img-responsive"}
 
 ### Initial Load
