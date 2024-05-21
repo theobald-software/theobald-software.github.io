@@ -1,9 +1,9 @@
 ---
-ref: xu-tablecdc-07
+ref: bc-tablecdc-07
 layout: page
 title: Active CDC Watches
 description: Active CDC Watches
-product: xtract-universal
+product: board-connector
 parent: table-cdc
 permalink: /:collection/:path
 weight: 8
