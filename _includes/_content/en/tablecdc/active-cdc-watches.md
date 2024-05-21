@@ -2,7 +2,7 @@
 This page shows how to keep track of Table CDC log tables and triggers in your SAP system.<br>
 The "Active CDC Watches" menu lists all active log tables and their DB triggers in the SAP source system.
 
-### Open the Active CDC Watches
+### Open Active CDC Watches
 
 1. In the main window of the Designer, double-click an extraction.<br>
 The main window of the component opens.<br>
