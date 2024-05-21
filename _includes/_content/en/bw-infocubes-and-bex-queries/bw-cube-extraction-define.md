@@ -32,9 +32,9 @@ This is necessary if a data source has been adjusted in SAP, another source syst
  A BW Query must have the attribute *Allow External Access to this Query* switched on in the BEx Query Designer or the BW Modeling Tool to appear in the list.
  For additional details see the knowledge base article [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries). 
 
-### MDX versus BICS (beta)
+### MDX versus BICS
 
-|                                    | MDX                                                                                         | BICS (beta)                                        |
+|                                    | MDX                                                                                         | BICS                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Syntax in lookup for BEx Queries   | `[tech. name of InfoPovider]/[tech. name of BEx Query]` <br /> example: 0SD_C03/0SD_C03_Q0018        | `[tech. name of BEx Query]` <br /> example: 0SD_C03_Q0018   |
 | Syntax in lookup for InfoProivders | `$[tech. name of InfoProvoider]`  <br /> example: $0SD_C03                                            | `[tech. name of InfoProvider]` <br /> example: 0SD_C03      |
