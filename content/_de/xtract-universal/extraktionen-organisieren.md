@@ -7,7 +7,7 @@ product: xtract-universal
 parent: xtract-universal
 permalink: /:collection/:path
 weight: 14
-lang: en_GB
+lang: de_DE
 progessstate: 5
 ---
 
