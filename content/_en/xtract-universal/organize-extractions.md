@@ -30,6 +30,9 @@ Use **[CTRL]+[left mouse button]** to select multiple extractions.
 {: .box-tip }
 **Tip:** Nested groups are supported.
 
+{: .box-note }
+**Note:** The treeview in the main window of the Designer reflects the folder structure in the directory `C:\Program Files\XtractUniversal\config\extractions`.
+
 
 ### Rename a Group
 

@@ -31,6 +31,9 @@ Verwenden Sie **[STRG]+[linke Maustaste]**, um mehrere Extraktionen zu markieren
 {: .box-tip }
 **Tipp:** Verschachtelte Gruppen werden unterstützt.
 
+{: .box-note }
+**Hinweis:** Die Baumansicht im Hauptfenster des Designers entspricht der Ordnerstruktur im Verzeichnis `C:\Program Files\XtractUniversal\config\extractions`.
+
 ### Eine Gruppe Umbenennen
 
 Öffnen Sie per Rechtsklick das Kontextmenü einer Gruppe. Klicken Sie auf **Rename**, um der Gruppe einen anderen Namen zu geben.
