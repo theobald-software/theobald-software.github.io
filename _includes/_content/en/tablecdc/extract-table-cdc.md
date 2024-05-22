@@ -4,7 +4,7 @@ The following section shows how to use the Table CDC component.
 
 Look up the SAP table you want to track.
 
-1. In the main window of the component click **[Search]** ( ![magnifying-glass](/img/content/icons/magnifying-glass.png) icon). The window “Table Lookup” opens.<br>
+1. In the main window of the component click ![magnifying-glass](/img/content/icons/magnifying-glass.png). The window “Table Lookup” opens.<br>
 ![Table-CDC](/img/content/tablecdc/table-cdc.png){:class="img-responsive"}
 2. In the field **Table Name** (1) enter the name of the SAP table you want to track. Use wildcards (*) if needed.<br>
 ![Look-Up-Report](/img/content/table/table_look-up.png){:class="img-responsive"}
