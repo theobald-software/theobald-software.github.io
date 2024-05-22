@@ -1,12 +1,12 @@
 ---
-ref: xu-getting-started-06
+ref: xu-getting-started-08
 layout: page
 title: General Settings
 description: General Settings
 product: xtract-universal
 parent: getting-started
 permalink: /:collection/:path
-weight: 7
+weight: 8
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=general-settings-of-the-extractions
 progressstate: 5
