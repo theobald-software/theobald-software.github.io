@@ -4,7 +4,7 @@ The "Active CDC Watches" menu lists all active log tables and their DB triggers 
 
 ### Open Active CDC Watches
 
-1. In the main window of the Designer, double-click an extraction.<br>
+1. In the main window of the Designer, double-click an extraction.
 The main window of the component opens.<br>
 {% if page.product == "xtract-is" %} ![Active-CDC-Watches_designer](/img/content/tablecdc/Active-CDC-Watches_designer-xis.png){:class="img-responsive"}{% else %}![Active-CDC-Watches_designer](/img/content/tablecdc/Active-CDC-Watches_designer.png){:class="img-responsive"}{% endif %}
 2. Click **[Show Active CDC Watches]**.
