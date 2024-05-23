@@ -9,7 +9,7 @@ The main window of the component opens.<br>
 {% if page.product == "xtract-is" %} ![Active-CDC-Watches_designer](/img/content/tablecdc/Active-CDC-Watches_designer-xis.png){:class="img-responsive"}{% else %}![Active-CDC-Watches_designer](/img/content/tablecdc/Active-CDC-Watches_designer.png){:class="img-responsive"}{% endif %}
 2. Click **[Show Active CDC Watches]**.
 The window "Active CDC Watches" opens.<br>
-![Active-CDC-Watches](/img/content/tablecdc/Active-CDC-Watches.png){:class="img-responsive"}
+![Active-CDC-Watches](/img/content/tablecdc/Active-CDC-watches.png){:class="img-responsive"}
 
 ### Active CDC Watches
 
@@ -32,7 +32,7 @@ Number of rows in the log table.
 #### Show Details
 Click ![info](/img/content/icons/designer/info.png){:class="img-responsive" style="display:inline"} to display more information about the DB triggers in the "CDC watch details" window.
 
-![Active-CDC-Watches-details](/img/content/tablecdc/Active-CDC-Watches-details.png){:class="img-responsive"}
+![Active-CDC-Watches-details](/img/content/tablecdc/Active-CDC-watches-details.png){:class="img-responsive"}
 
 #### Delete CDC resources
 Click ![dustbin](/img/content/icons/trashbin.png){:class="img-responsive" style="display:inline"} to delete the log table and all associated triggers from your SAP system.<br>

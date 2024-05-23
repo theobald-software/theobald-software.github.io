@@ -10,7 +10,7 @@ Das Hauptfenster der Komponente wird geöffnet.<br>
 {% if page.product == "xtract-is" %} ![Active-CDC-Watches_designer](/img/content/tablecdc/Active-CDC-Watches_designer-xis.png){:class="img-responsive"}{% else %}![Active-CDC-Watches_designer](/img/content/tablecdc/Active-CDC-Watches_designer.png){:class="img-responsive"}{% endif %}
 2. Klicken Sie auf **[Show Active CDC Watches]**.
 Das Fenster "Active CDC Watches" wird geöffnet.<br>
-![Active-CDC-Watches](/img/content/tablecdc/Active-CDC-Watches.png){:class="img-responsive"}
+![Active-CDC-Watches](/img/content/tablecdc/Active-CDC-watches.png){:class="img-responsive"}
 
 ### Active CDC Watches
 
@@ -33,7 +33,7 @@ Anzahl der Zeilen in der Log-Tabelle.
 #### Show Details
 Klicken Sie auf ![info](/img/content/icons/designer/info.png){:class="img-responsive" style="display:inline"}, um im "CDC watch details" Fenster mehr Informationen zu den DB Triggern anzuzeigen. 
 
-![Active-CDC-Watches-details](/img/content/tablecdc/Active-CDC-Watches-details.png){:class="img-responsive"}
+![Active-CDC-Watches-details](/img/content/tablecdc/Active-CDC-watches-details.png){:class="img-responsive"}
 
 #### Delete CDC resources
 Klicken Sie auf ![dustbin](/img/content/icons/trashbin.png){:class="img-responsive" style="display:inline"}, um die Log-Tabelle und alle alle dazugehörigen Elemente aus Ihrem SAP-System zu löschen.<br>
