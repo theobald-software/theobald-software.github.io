@@ -15,24 +15,26 @@ Dieser Abschnitt zeigt, wie Extraktionen in Gruppen organisiert werden können.
 
 ### Extraktionen Gruppieren
 
-Führen Sie die folgenden Schritte aus, um eine neue Gruppe zue rstellen und der Gruppe Extraktionen hinzuzufügen.
+Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen und der Gruppe Extraktionen hinzuzufügen.
 
 1. In der Baumansicht des Designers, rechtsklicken Sie auf den *extractions* Ordner. Das Kontext-Menü öffnet sich.<br>
 ![main-window-treeview](/img/content/xu/main-window-treeview.png)
 2. Klicken Sie auf **New subfolder**. Das Fenster "Create new subdirectory" öffnet sich.<br>
 ![create-new-subdirectory](/img/content/xu/create-new-subdirectory.png)
 3. Geben Sie einen einzigartigen Namen für die Extraktionsgruppe ein und klicken Sie auf **[OK]**. 
-Der neue Unterordner wird in der Baumansicht angezeigt.
+Der neue Unterordner wird in der Baumansicht angezeigt. Verschachtelte Gruppen werden unterstützt.
 4. Um dem Unterordner Extraktion hinzuzufügen, öffnen Sie die Liste der Extraktionen in dem *extractions* Ordner (oder einem anderen Unterordner) und markieren Sie alle relevanten Extraktionen.
 Verwenden Sie **[STRG]+[linke Maustaste]**, um mehrere Extraktionen zu markieren.
 5. Verschieben Sie die markierten Extraktionen per drag & drop von der List der Extraktionen in den neuen Unterordner. <br>
 ![main-window-treeview-move-extractions](/img/content/xu/main-window-treeview-move-extractions.png)
 
-{: .box-tip }
-**Tipp:** Verschachtelte Gruppen werden unterstützt.
-
 {: .box-note }
 **Hinweis:** Die Baumansicht im Hauptfenster des Designers entspricht der Ordnerstruktur im Verzeichnis `C:\Program Files\XtractUniversal\config\extractions`.
+
+{: .box-tip }
+**Tipp:** Sie können allen Extraktionen in einer Gruppe ein SAP Quellsystem oder eine Destination zuweisen, indem Sie über **[Strg]+[A]** alle Extraktionen markieren.
+Um ein SAP Quellsystem zuzuweisen, verwenden Sie die GUI-Schaltfläche **[Source]**.
+Um eine Destination zuzuweisen, verwenden Sie die GUI-Schaltfläche **[Destination]**.
 
 ### Gruppen Umbenennen und Löschen
 

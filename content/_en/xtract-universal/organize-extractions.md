@@ -22,17 +22,18 @@ Follow the steps below to create a new group and add extractions to the group.
 2. Click **New subfolder**. The window "Create new subdirectory" opens.<br>
 ![create-new-subdirectory](/img/content/xu/create-new-subdirectory.png)
 3. Enter a unique name for the extraction group and click **[OK]**. The new subfolder is displayed in the tree view.
+Nested groups are supported.
 4. To add extractions to the subfolder, open the list of extractions in the *extractions* folder (or any other subfolder) and select all relevant extractions.
 Use **[CTRL]+[left mouse button]** to select multiple extractions.
 5. Drag and drop extractions from the list of extractions into the new subfolder. <br>
 ![main-window-treeview-move-extractions](/img/content/xu/main-window-treeview-move-extractions.png)
 
-{: .box-tip }
-**Tip:** Nested groups are supported.
-
 {: .box-note }
 **Note:** The treeview in the main window of the Designer reflects the folder structure in the directory `C:\Program Files\XtractUniversal\config\extractions`.
 
+{: .box-tip }
+**Tip:** You can assign an SAP source system or a destination to all extractions within an extraction group by using **[Ctrl]+[A]** to select all extractions in the group. 
+To assign an SAP source system, use the GUI button **[Source]**. To assign a destination, use the GUI button **[Destination]**.   
 
 ### Rename or Delete Groups
 
