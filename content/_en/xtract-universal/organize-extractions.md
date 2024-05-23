@@ -34,13 +34,30 @@ Use **[CTRL]+[left mouse button]** to select multiple extractions.
 **Note:** The treeview in the main window of the Designer reflects the folder structure in the directory `C:\Program Files\XtractUniversal\config\extractions`.
 
 
-### Rename a Group
+### Rename or Delete Groups
 
-Right-click a group to open the context menu. Click **Rename** to rename the group.
+Right-click a group to open the context menu. 
+Click **Rename** to rename the group.
+Click **Delete** to delete the group and its content.
 
-### Delete a Group
+### Look Up Extractions
 
-Right-click a group to open the context menu. Click **Delete** to delete the group and its content.
+#### Search within an Extraction Group
 
+Use the search bar above the extraction list to filter the displayed extractions. Wildcards (*) are not supported.
 
+![main-window-filter-extractions.png](/img/content/xu/main-window-filter-extractions.png)
 
+#### Search in all Extraction Groups
+
+Follow the steps below to look up an extraction in all extraction groups:
+
+1. In the main window of the Designer, click **[Search]**. The window "Search Extractions" opens.<br>
+![main-window-search](/img/content/xu/main-window-search.png)
+2. Enter the name of a group, extraction, extraction type, source system, destination or a keyword in the search bar.<br>
+![search-extractions](/img/content/xu/search-extractions.png)
+3. Click ![magnifying-glass](/img/content/icons/magnifying-glass.png). Search results are displayed.
+4. Select an extraction from search results.
+5. Click **[Go]**. 
+
+The corresponding extraction group opens and the extraction is is selected.

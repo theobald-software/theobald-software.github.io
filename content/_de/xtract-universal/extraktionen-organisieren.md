@@ -34,14 +34,31 @@ Verwenden Sie **[STRG]+[linke Maustaste]**, um mehrere Extraktionen zu markieren
 {: .box-note }
 **Hinweis:** Die Baumansicht im Hauptfenster des Designers entspricht der Ordnerstruktur im Verzeichnis `C:\Program Files\XtractUniversal\config\extractions`.
 
-### Eine Gruppe Umbenennen
+### Gruppen Umbenennen und Löschen
 
-Öffnen Sie per Rechtsklick das Kontextmenü einer Gruppe. Klicken Sie auf **Rename**, um der Gruppe einen anderen Namen zu geben.
+Öffnen Sie per Rechtsklick das Kontextmenü einer Gruppe. 
+Klicken Sie auf **Rename**, um der Gruppe einen anderen Namen zu geben.
+Klicken Sie auf **Delete**, um die Gruppe und ihren Inhalt zu löschen.
 
-### Eine Gruppe Löschen
+### Extraktionen Suchen
 
-Öffnen Sie per Rechtsklick das Kontextmenü einer Gruppe. Klicken Sie auf **Delete**, um die Gruppe und ihren Inhalt zu löschen.
+#### In einer Extraktionsgruppe Suchen
 
+Verwenden Sie die Suchleiste über der Extraktionsliste, um die angezeigten Extraktionen zu filtern.
+Platzhalterzeichen (*) werden nicht unterstützt.
 
+![main-window-filter-extractions.png](/img/content/xu/main-window-filter-extractions.png)
 
+#### In allen Extraktionsgruppen Suchen
 
+Führen Sie die folgenden Schritte aus, um eine Extraktion in allen Extraktionsgruppen zu finden:
+
+1. Im Hauptfenster des Designers, klicken Sie auf **[Search]**. Das Fenster "Search Extractions" öffnet sich.<br>
+![main-window-search](/img/content/xu/main-window-search.png)
+2. Geben Sie in der Suchleiste den Namen einer Gruppe, Extraktion, Extraktionstyp, SAP Quelle, Destination oder eines Schlüsselwortes ein.<br>
+![search-extractions](/img/content/xu/search-extractions.png)
+3. Klicken Sie auf ![magnifying-glass](/img/content/icons/magnifying-glass.png). Die Suchergebnisse werden angezeigt.
+4. Markieren Sie eine Extraktion aus den Suchergebnissen.
+5. Klicken Sie auf **[Go]**. 
+
+Die Extraktionsgruppe wird geöffnet und die markierte Extraktion angezeigt.
