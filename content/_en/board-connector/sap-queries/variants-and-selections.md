@@ -11,7 +11,7 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-query-extraction
 ---
 
-{% include _content/en/sap-queries/variants-selections.md %}
+{% include _content/en/variants-selections.md %}
 
 ### Data Format
 

@@ -5,7 +5,7 @@ title: Xtract Report
 description: Reports
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
-childidentifier: reports
+childidentifier: report
 permalink: /:collection/:path
 weight: 11
 lang: en_GB

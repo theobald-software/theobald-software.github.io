@@ -11,7 +11,7 @@ lang: en_GB
 progressstate: 5
 ---
 
-{% include _content/en/sap-queries/variants-selections.md %}
+{% include _content/en/variants-selections.md %}
 
 ### Data Format
 

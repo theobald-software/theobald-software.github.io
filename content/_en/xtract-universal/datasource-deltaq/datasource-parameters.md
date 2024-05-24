@@ -31,3 +31,6 @@ Script expressions are usually used to determine a dynamic date based on the cur
 |```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
 |```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
 
+### Data Format
+
+{% include _content/en/sap-data-format.md  %}

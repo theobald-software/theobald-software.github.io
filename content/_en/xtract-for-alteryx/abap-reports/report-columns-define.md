@@ -4,7 +4,7 @@ layout: page
 title: Define Columns and Rows
 description: Define a Report Extraction
 product: xtract-for-alteryx
-parent: reports
+parent: report
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

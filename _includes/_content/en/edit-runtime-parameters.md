@@ -36,12 +36,11 @@ Runtime parameters are overwritten at runtime, see [Extraction Parameters - Cust
 {% if page.parent == "table" %}
 ### Runtime Parameters in Text Mode
 
-Add an @ symbol before the value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.<br>
+Add an @ symbol before a value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.<br>
 {% if page.product == "xtract-universal" %}The marked value is overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom).{% endif %}
 {% if page.product == "board-connector" %}The marked value is overwritten at runtime, see [Extraction Parameters - Custom](../advanced-techniques/extraction-parameters#custom).{% endif %}
 
-Example: <br>
-`T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
+Example: `T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
 
 ![Extraction-User-Variables](/img/content/Extraction-User-Variables.png){:class="img-responsive"}
 {% endif %}
