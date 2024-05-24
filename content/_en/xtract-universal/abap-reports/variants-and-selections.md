@@ -18,5 +18,5 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-report-extraction
 {% include _content/en/sap-data-format.md  %}
 
 ****
-### Related Links
+#### Related Links
 [Report variants in SAP](https://help.sap.com/docs/btp/ABAP/3353524716.html)

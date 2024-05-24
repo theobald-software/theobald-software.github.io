@@ -11,7 +11,6 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=variants-and-selections
 ---
 
-
 {% include _content/en/variants-selections.md %}
 
 ### Data Format

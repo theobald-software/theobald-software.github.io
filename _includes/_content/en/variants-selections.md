@@ -33,7 +33,6 @@ If you create a new variant in SAP after creating the extraction, click ![refres
 ![Variants-Section](/img/content/xis/query-variant1.png){:class="img-responsive"}
 {% endif %}
 
-
 {: .box-note }
 **Note:** The selections of the variant are **not** displayed in the *Selection Screen* section of the window. 
 To see the definition of a variant, open the variant in SAP.
