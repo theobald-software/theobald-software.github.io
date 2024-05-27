@@ -16,6 +16,7 @@ The data types may correlate to SAP data types.
 - *Text*: Can be used for any type of SAP selection field.{% if page.product == "xtract-for-alteryx" %} List parameters are always of type *String*.{% endif %}
 - *Number*: Can be used for numeric SAP selection fields.
 - *Flag*: Can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
+- *List (string)*: Can only be used for SAP selection fields that allow multiple input values.
 4. Click **[OK]** to confirm.
 {% if page.parent == "table" %}5. Navigate to the WHERE clause tab in the main window of the extraction and open the WHERE clause editor.
 6. Add a new WHERE clause criteria that uses the **[Default with Parameter]** template.

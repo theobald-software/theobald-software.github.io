@@ -13,6 +13,7 @@ Die Platzhalter müssen zur Laufzeit mit echten Werten befüllt werden.  <br>
 *Text*: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.<br>
 *Number*: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.<br>
 *Flag*: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. 
+- *List (string)*: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die mehrere Eingabewerte unterstützen.
 4. Klicken Sie auf **[OK]** zum Bestätigen.
 
 {% if page.product == "xtract-universal" %}

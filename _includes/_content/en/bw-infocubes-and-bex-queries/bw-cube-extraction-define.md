@@ -44,12 +44,12 @@ This is necessary if a data source has been adjusted in SAP, another source syst
 | Character limit for dimension members | max. 60 characters      | -      |
 
 
-### Selecting Measure (Key Figures), Dimensions and Properties
+### Select Measure (Key Figures), Dimensions and Properties
 When an object is selected, in the main main window of the component, there is a tree structure at the left hand-side. 
 The tree structure represents the metadata of the Query (or InfoProvider). <br>
 ![Cube-Details](/img/content/xu/cube-measures.png){:class="img-responsive"}
-The first directory contains all the measures (key figures) (4). 
-The following directories correspond to dimensions and often contain additional dimension properties (5). <br>
+The first directory contains all the measures (key figures) (1). 
+The following directories correspond to dimensions and often contain additional dimension properties (2). <br>
 
 1. Select key figures, dimensions, and properties for the extraction.
 2. Within the key figures directory, click the arrow to display the available units. Select a unit, if needed.
@@ -58,14 +58,40 @@ The following directories correspond to dimensions and often contain additional 
 {: .box-note }
 **Note:** For every selected dimension or property, a key figure and a unit is displayed in the result. 
 
-### Setting a Dimension Filter 
-1. Right-click a dimension. The button **[Edit Filter]** pops-up.
-![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
-2. Click **[Edit Filter]**. The window "Member Filter" opens. You can set *Single Values*, define *Value Ranges* or select a *List Parameter*.
-![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Select a single value (6) or click **[Add]** (7) to add value ranges.
-4. Define static values or [runtime parameters](./edit-runtime-parameters) for filtering key values. Filtering text descriptions is not supported.<br>
-To use a dynamic list of values, select a *List Parameter* from the drop-down-menu (8). If needed, delete filters using the ![dustbin](/img/content/icons/trashbin.png) button.
-5. Click **[OK]** to confirm. The "Member Filter" window closes.
+### Set a Dimension Filter 
+ 
+Follow the steps below to create dimension filters.
 
-When filters are applied, a filter symbol appears in the metadata structure.
+{: .box-note }
+**Note:** BW queries often have variables defined in SAP to create filter options. To edit existing variables, see [Query Variables](./variables).
+
+1. Right-click a dimension to open the context menu.<br>
+![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
+2. Click **[Edit Filter]**. The window "Edit Selections" opens. 
+3. Add one or more of the following filter types:<br>
+a) Click **[Single]** to compare the data to a single specified value.<br>
+b) Click **[Range]** to check if the data is (not) withing a specified range of values.<br>{% if page.product != "xtract-is" %}c) Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}<br>
+3. In the **Sign** column (1), select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
+{% if page.product == "xtract-is" %} ![selections](/img/content/selections-xis.png){:class="img-responsive"} {% else %}![selections](/img/content/selections.png){:class="img-responsive"} {% endif %}
+4. Select an operator in the **Option** column (2). The operator filters data according to the table below.
+
+   | Operator   |      Meaning      |  
+   |:---------|:------------- |
+   |(not) like pattern |  True if data values do (not) contain to the content of operand 1.|
+   |(not) equal to |  True if data is (not)equal to the content of operand 1.|
+   |at least |  True if data is greater than or equal to the content of operand 1.|
+   |more than |  True if data is greater than the content of operand 1.|
+   |at most | True if data is less than or equal to the content of operand 1.|
+   |less than | True if data is less than the content of operand 1.|
+   |(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
+5. Enter values or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection fields (3). <br>
+a) Static values: Enter values directly into the **Low** and **High** input fields. 
+If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
+Clicking on the icon switches between static and dynamic input values.<br>
+b) {% if page.product == "xtract-is"%}SSIS variables:{% else %}Runtime parameters:{% endif %} Click ![static-value](/img/content/icons/runtime-parameters-static.png) to change the input type to dynamic values ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png).
+Select an existing {% if page.product == "xtract-is"%}SSIS variable{% else %}runtime parameter{% endif %} from the drop-down list.
+6. Click **[OK]** to confirm your input.
+7. Click **[Load Preview]** in the main window of the component to check the result of your selection. <br>
+If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are defined, you are prompted to populate the parameters with actual values.
+
+When filters are applied, the ![filter](/img/content/icons/designer/filter.png) symbol is displayed in the treeview of the cube dimensions.

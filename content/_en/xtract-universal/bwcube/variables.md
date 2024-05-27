@@ -10,4 +10,5 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=variables
 ---
+
 {% include _content/en/bw-infocubes-and-bex-queries/variables.md %}
