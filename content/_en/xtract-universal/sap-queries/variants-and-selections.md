@@ -11,7 +11,8 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=define-a-query-extraction
 ---
 
-{% include _content/en/variants-selections.md %}
+{% include _content/en/variants-selections.md %} 
+{% include _content/en/selections.md %}
 
 ### Data Format
 

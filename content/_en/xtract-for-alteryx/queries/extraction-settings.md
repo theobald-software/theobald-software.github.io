@@ -4,7 +4,7 @@ layout: page
 title: Extraction Settings
 description: Extraction Settings
 product: xtract-for-alteryx
-parent: queries
+parent: query
 permalink: /:collection/:path
 weight: 3
 lang: en_GB

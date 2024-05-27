@@ -10,12 +10,7 @@ weight: 5
 lang: en_GB
 ---
 
-{% include _content/en/datasource-deltaq/datasource-parameters.md %}
+Selections filter the data that is extracted. Not all elements of a DataSource support selections.
 
+{% include _content/en/selections.md %}
 
-### SSIS Variables
-
-SSIS Variables are supported, see [Parameterization](./parametrization). 
-
-{: .box-note }
-**Note:** Add an *@* symbol before the value to mark it as a variable. Avoid spaces.

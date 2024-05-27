@@ -16,4 +16,6 @@ The following section shows how to use the Xtract ODP component.
 
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 
-{% include _content/en/odp/odp-settings-filtering.md %}
+{% include _content/en/selections.md %}
+
+The number of defined filters is displayed in square brackets next to the *Edit* option.

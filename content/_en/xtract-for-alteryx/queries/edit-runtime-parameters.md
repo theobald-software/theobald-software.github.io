@@ -4,7 +4,7 @@ layout: page
 title: Runtime Parameters
 description: Runtime Parameters
 product: xtract-for-alteryx
-parent: queries
+parent: query
 permalink: /:collection/:path
 weight: 6
 lang: en_GB

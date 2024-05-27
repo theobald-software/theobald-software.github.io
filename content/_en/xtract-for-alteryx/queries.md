@@ -5,7 +5,7 @@ title: Xtract Query
 description: Xtract Query
 product: xtract-for-alteryx
 parent: xtract-for-alteryx
-childidentifier: queries
+childidentifier: query
 permalink: /:collection/:path
 weight: 10
 lang: en_GB

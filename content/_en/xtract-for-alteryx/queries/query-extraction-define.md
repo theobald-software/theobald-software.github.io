@@ -4,7 +4,7 @@ layout: page
 title: Defining a Query Extraction
 description: Define a Query Extraction
 product: xtract-for-alteryx
-parent: queries
+parent: query
 permalink: /:collection/:path
 weight: 1
 lang: en_GB
