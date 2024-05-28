@@ -13,7 +13,7 @@ The placeholders need to be populated with actual values at extraction runtime.<
 ![dd-parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}
 3. Select one of the following data types from the drop-down menu.
 The data types may correlate to SAP data types.
-- *Text*: Can be used for any type of SAP selection field.{% if page.product == "xtract-for-alteryx" %} List parameters are always of type *String*.{% endif %}
+- *Text*: Can be used for any type of SAP selection field.
 - *Number*: Can be used for numeric SAP selection fields.
 - *Flag*: Can only be used for SAP selection fields, which require an ‘X’ (true) or a blank ‘‘ (false) as input value.
 - *List (string)*: Can only be used for SAP selection fields that allow multiple input values.

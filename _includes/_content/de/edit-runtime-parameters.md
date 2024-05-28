@@ -10,9 +10,9 @@ Die Platzhalter müssen zur Laufzeit mit echten Werten befüllt werden.  <br>
 **Tipp:** Parameter0..-n sind die Standardnamen für die hinzugefügten Parameter. Sie können einen beliebigen Namen eingeben.
 ![ODP Add parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}
 3. Klicken Sie auf das Drop-Down-Menü und weisen Sie einen der folgenden Datentypen einem Parameter zu. Die Datentypen müssen mit den SAP-Datentypen übereinstimmen. <br>
-*Text*: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.<br>
-*Number*: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.<br>
-*Flag*: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. 
+- *Text*: dieser Datentyp kann für jeden Typ der SAP-Selektionsfelder verwendet werden.<br>
+- *Number*: dieser Datentyp kann nur für numerische SAP-Selektionsfelder verwendet werden.<br>
+- *Flag*: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die einen 'X'&nbsp;(true) oder eine leere Eingabe ''&nbsp;(false) als Eingabewert benötigen. <br>
 - *List (string)*: dieser Datentyp kann nur für SAP-Selektionsfelder verwendet werden, die mehrere Eingabewerte unterstützen.
 4. Klicken Sie auf **[OK]** zum Bestätigen.
 

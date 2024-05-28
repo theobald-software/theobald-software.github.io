@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus:
 {% if page.product == "xtract-universal" or page.product == "board-connector"%}![Variants-Section](/img/content/query/query-variant2.png){:class="img-responsive"}{% elsif page.product == "xtract-for-alteryx"%}![Variants-Section](/img/content/xfa/query-variant2.png){:class="img-responsive"}{% else %}![Variants-Section](/img/content/xis/query-variant2.png){:class="img-responsive"}{% endif %}
 2. Fügen Sie einen der folgenden Filtertypen ein:<br>
 a) Klicken Sie auf **[Single]**, um die Daten mit einzelnen Eingabewerten zu vergleichen.<br>
-b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. <br>{% if page.product != "xtract-is" %}c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}<br>
+b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. {% if page.product != "xtract-is" %}<br>c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}
 3. Wählen Sie in der Spalte **Sign** (1) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
 Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
 {% if page.product == "xtract-is" %} ![selections](/img/content/selections-xis.png){:class="img-responsive"} {% else %}![selections](/img/content/selections.png){:class="img-responsive"} {% endif %}

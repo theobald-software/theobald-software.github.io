@@ -22,14 +22,18 @@ Um die Definition der Variante einzusehen, öffnen Sie die Variante in SAP.
 ### Selektionen bearbeiten
 
 Dieser Abschnitt bezieht sich auf den Eingabebildschirm von Reports in SAP.
-Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibungen.
-Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP. <br>
+
+
+{: .box-note }
+**Hinweis:** Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibungen.
+Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP. 
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
 
-1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster “Edit Selections” öffnet sich.
+1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster “Edit Selections” öffnet sich.<br>
+![Report-Variants-Section2](/img/content/Report-Variants-Selection2.png)
 2. Fügen Sie einen der folgenden Filtertypen ein:<br>
 a) Klicken Sie auf **[Single]**, um die Daten mit einzelnen Eingabewerten zu vergleichen.<br>
-b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. <br>{% if page.product != "xtract-is" %}c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}<br>
+b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. {% if page.product != "xtract-is" %}<br>c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}
 3. Wählen Sie in der Spalte **Sign** (1) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
 Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
 {% if page.product == "xtract-is" %} ![selections](/img/content/selections-xis.png){:class="img-responsive"} {% else %}![selections](/img/content/selections.png){:class="img-responsive"} {% endif %}
@@ -45,12 +49,12 @@ Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten 
    |at least |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
    |(not) between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
    |elements equal | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
-5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter (3). <br>
+5. Geben Sie für die Filter feste Werte ein oder wählen Sie {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} (3). <br>
 - Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
-Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
+Wenn {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
 Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
-- Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
-Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
+- {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %}: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %} zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+Wenn keine Symbole angezeigt werden, erstellen Sie {% if page.product == "xtract-is"%}SSIS-Variablen{% else %}Laufzeitparameter{% endif %}.<br>
 Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
 6. Klicken Sie auf **[OK]**, um Ihre Selektion zu bestätigen.
 7. Klicken Sie im Hauptfenster der Komponente auf **[Load Preview]**, um die Selektion zu prüfen. <br>
