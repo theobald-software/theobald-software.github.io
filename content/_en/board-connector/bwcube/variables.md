@@ -1,5 +1,5 @@
 ---
-ref: bc-bw-infocubes-and-bex-queries-02
+ref: bc-bw-infocubes-and-bex-queries-variables
 layout: page
 title: Variables
 description: Variables
