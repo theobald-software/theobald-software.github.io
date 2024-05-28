@@ -54,14 +54,36 @@ Das erste Verzeichnis enthält alle Messwerte (Kennzahlen) (4). Die folgenden Ve
 **Hinweis:** Für jede ausgewählte Dimension oder Eigenschaft wird im Ergebnis eine Kennzahl und eine Einheit angezeigt. 
 
 ### Einstellen eines Dimensionsfilters 
-1. Klicken Sie mit der rechten Maustaste auf eine Dimension. Die Schaltfläche **[Edit Filter]** erscheint.
+1. Klicken Sie mit der rechten Maustaste auf eine Dimension. Das K0ntextmenü öffnet sich.<br>
 ![Query Filter](/img/content/cube-query-filter.png){:class="img-responsive"}
-2. Klicken Sie **[Edit Filter]**. Das Fenster "Member Filter" öffnet sich. Sie können *Einzelne Werte (Single Values)* setzen, *Wertebereiche (Value Ranges)* definieren oder *Listenparameter* selektieren.
-![Query Filter Define](/img/content/xfa/xfa_cube-query-filter-def.png){:class="img-responsive"}
-3. Wählen Sie einen einzelnen Wert (6) oder klicken Sie auf **[Add]** (7), um Wertebereiche hinzuzufügen. 
-4. Definieren Sie die Werte für die Filterung. Dynamische Parameter werden unterstützt, siehe [Laufzeitparameter](./edit-runtime-parameters). <br>
-Um eine Liste von dynamischen Werten zu verwenden, wählen Sie einen Listenparameter aus der Dropdown-Liste *List Parameter* (8).
-Wenn nötig, löschen Sie Filter über ![dustbin](/img/content/icons/trashbin.png).
-5. Klicken Sie auf **[OK]**, um Ihre Auswahl zu bestätigen. Das Fenster "Member Filter" schließt sich.
+2. Klicken Sie **[Edit Filter]**. Das Fenster "Edit Selections" öffnet sich. 
+3. Fügen Sie einen der folgenden Filtertypen ein:<br>
+a) Klicken Sie auf **[Single]**, um die Daten mit einzelnen Eingabewerten zu vergleichen.<br>
+b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. <br>{% if page.product != "xtract-is" %}c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}<br>
+4. Wählen Sie in der Spalte **Sign** (1) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
+Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
+{% if page.product == "xtract-is" %} ![selections](/img/content/selections-xis.png){:class="img-responsive"} {% else %}![selections](/img/content/selections.png){:class="img-responsive"} {% endif %}
+4. Wählen Sie in der Spalte **Option** (2) einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
+
+   | Operator   |      Bedeutung      |  
+   |:---------|:------------- |
+   |(not) like pattern |  Wahr, wenn die Daten (nicht) den Inhalt von Operand 1 beinhalten|
+   |(not) equal to|  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
+   |less than  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
+   |more than |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
+   |at most | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
+   |at least |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
+   |(not) between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
+   |elements equal | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
+5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter (3). <br>
+- Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
+Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
+Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.
+- Laufzeitparameter: Klicken Sie auf das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol, um auf die definierten Laufzeitparameter zuzugreifen ( ![dynamic-value](/img/content/icons/runtime-parameters-dynamic.png) Symbol).
+Wenn keine Symbole angezeigt werden, öffnen Sie das [Edit Runtime Parameters](./edit-runtime-parameters) Menü und erstellen Sie Laufzeitparameter.<br>
+Wählen Sie einen Laufzeitparameter aus der Dropdown-Liste aus.
+6. Klicken Sie auf **[OK]**, um Ihre Selektion zu bestätigen.
+7. Klicken Sie im Hauptfenster der Komponente auf **[Load Preview]**, um die Selektion zu prüfen. <br>
+Wenn Laufzeitparameter definiert sind, werden Sie aufgefordert, die Parameter mit echten Werten zu füllen. 
 
 Wenn ein Filter definiert ist, erscheint ein Filtersymbol in der Metadatenstruktur.

@@ -7,16 +7,29 @@ Sie können BEx-Variablen mit Werten definieren, die zur Laufzeit dynamisch gese
 
 ### Variablen anpassen
 1. Führen Sie eine [Query-Suche](./eine-bw-cube-quelle-definieren#nach-bw-cube-oder-query-suchen) durch und wählen Sie ein Query mit definierten Variablen aus (1).
-2. Laden Sie eine Echtzeitvorschau über **[Load Live Preview]** (2). 
 {% if page.product == "xtract-for-alteryx" %}![Edit Variables Button](/img/content/xfa/xfa_variables.png){:class="img-responsive"}{% else %}![Edit Variables Button](/img/content/XU-BExQuery-Variable.png){:class="img-responsive"}{% endif %}
-3. Klicken Sie auf **[Edit Variables]** (3). Das Fenster "Edit variables for [Name des Query]" öffnet sich und die Felder mit verfügbaren Variablen werden aktiviert.
-![Edit-Variables](/img/content/Edit-Variables.png){:class="img-responsive"}
-4. Definieren Sie die Variablen mit Hilfe der Dropdown-Listenoptionen in den Spalten **Sign** und **Option**. <br>
-Die Spezifikation **Sign** definiert, ob die zugehörige Auswahl in das Ergebnis ein- oder ausgeschlossen werden soll.<br>
-Die Spezifikation **Option** definiert, ob wie die Auswahl getroffen wird. <br>
-Um Mehrfachwerte und komplexe Auswahlen zu bearbeiten, klicken Sie auf **[Edit]**.
-5. Falls verfügbar, klicken Sie auf das ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol neben den Eingabefeldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
+2. Klicken Sie auf **[Edit Variables]** (2). Das Fenster "Edit variables for [Name des Query]" öffnet sich und die Felder mit verfügbaren Variablen werden aktiviert.
+3. Wählen Sie ein Feld aus, das eine VAriable hat (3).<br>
+![Edit-Variables](/img/content/selections-cube.png){:class="img-responsive"}
+4. Fügen Sie einen der folgenden Filtertypen ein:<br>
+a) Klicken Sie auf **[Single]**, um die Daten mit einzelnen Eingabewerten zu vergleichen.<br>
+b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. <br>{% if page.product != "xtract-is" %}c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}<br>
+5. Wählen Sie in der Spalte **Sign** (4) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
+Wählen Sie in der Spalte **Sign** (4) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
+6. Wählen Sie in der Spalte **Option** (5) einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
+
+   | Operator   |      Bedeutung      |  
+   |:---------|:------------- |
+   |(not) like pattern |  Wahr, wenn die Daten (nicht) den Inhalt von Operand 1 beinhalten|
+   |(not) equal to|  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
+   |less than  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
+   |more than |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
+   |at most | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
+   |at least |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
+   |(not) between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
+   |elements equal | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
+7. Geben Sie für die Filter feste Werte ein oder wählen Sie [Laufzeitparameter](./edit-runtime-parameters) (6). <br>
+Falls verfügbar, klicken Sie auf das ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol neben den Eingabefeldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
-Sie können einen Wert aus der Liste der Variablenwerte auswählen, einen Wert manuell eintragen oder einen [Laufzeitparameter](./edit-runtime-parameters) hinterlegen.
-6. Klicken Sie auf **[OK]** um Ihre Eingabe zu bestätigen. 
-7. Klicken Sie auf **[Load Live Preview]** um eine Vorschau der gefilterten Ergebnisse anzuzeigen.
+8. Klicken Sie auf **[OK]** um Ihre Eingabe zu bestätigen. 
+9. Klicken Sie auf **[Load Live Preview]** um eine Vorschau der gefilterten Ergebnisse anzuzeigen.

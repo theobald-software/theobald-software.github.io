@@ -10,7 +10,7 @@ Das minimiert die Eingabe von Selektionen, wenn Sie Reports ausführen.
 
 
 ### Eine Variante wählen
-Wählen Sie eine Variante aus der Dropdown-Liste *Variant* (1).
+Wählen Sie eine Variante aus der Dropdown-Liste *Variant*.
 Wenn Sie eine neue Variante in SAP erstellen, nachdem die Report Extraktion in XU erstellt wurde, klicken Sie auf den **[Refresh]** Button neben der Dropdown-Liste, um die neue Variante abzurufen.
 
 ![Report-Variants-Section](/img/content/Report-Variants-Selection.png){:class="img-responsive"}
@@ -26,23 +26,26 @@ Einige Selektionsfelder haben nur technische Bezeichnungen und keine Beschreibun
 Um zu verstehen, welche Felder welchen Feldern in SAP entsprechen, prüfen Sie den Eingabebildschirm in SAP. <br>
 Klicken Sie auf ein Selektionsfeld und drücken Sie die F1-Taste. Dadurch wird die technische Bezeichnung des Selektionsfelds angezeigt.
 
-1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]** (2). Das Fenster “Edit Selections” öffnet sich.
-2. Klicken Sie auf **[Add Selection]**, um Filterkriterien hinzuzufügen. <br>
-![ODP Selection With Parameters](/img/content/Report-Edit-Selections.png){:class="img-responsive"}
-3. Wählen Sie in der Spalte **Sign** (3) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
-Wählen Sie in der Spalte **Sign** (3) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
-4. Wählen Sie in der Spalte **Option** (4) einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
+1. Klicken Sie neben den Selektionen, die Sie bearbeiten möchten auf **[Edit]**. Das Fenster “Edit Selections” öffnet sich.
+2. Fügen Sie einen der folgenden Filtertypen ein:<br>
+a) Klicken Sie auf **[Single]**, um die Daten mit einzelnen Eingabewerten zu vergleichen.<br>
+b) Klicken Sie auf **[Range]**, um zu prüfen, ob die Daten (nicht) in einem Bereich zwischen zwei Eingabewerten liegen. <br>{% if page.product != "xtract-is" %}c) Klicken Sie auf **[List]**, um zu prüfen, ob die Daten (nicht) Teil einer Liste von Eingabewerten ist. {% endif %}<br>
+3. Wählen Sie in der Spalte **Sign** (1) die Option *Include*, um nur die gefilterten Daten zu extrahieren.<br>
+Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten Daten nicht nicht zu extrahieren.
+{% if page.product == "xtract-is" %} ![selections](/img/content/selections-xis.png){:class="img-responsive"} {% else %}![selections](/img/content/selections.png){:class="img-responsive"} {% endif %}
+4. Wählen Sie in der Spalte **Option** (2) einen Operator. Der Operator filtert Daten wie in der folgenden Tabelle beschrieben:
 
    | Operator   |      Bedeutung      |  
    |:---------|:------------- |
-   |(Not)Equal |  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
-   |LessThan  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
-   |GreaterThan |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
-   |LessOrEqual | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
-   |GreaterOrEqual |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
-   |(Not)Between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
-   |In | Wahr, wenn die Daten (nicht) Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
-5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter. <br>
+   |(not) like pattern |  Wahr, wenn die Daten (nicht) den Inhalt von Operand 1 beinhalten|
+   |(not) equal to|  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
+   |less than  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
+   |more than |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|
+   |at most | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
+   |at least |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
+   |(not) between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
+   |elements equal | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
+5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter (3). <br>
 - Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
 Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.
 Mit einem Klick auf das Symbol wechseln Sie zwischen statischen Werten und Laufzeitparametern.

@@ -70,7 +70,7 @@ Follow the steps below to create dimension filters.
 2. Click **[Edit Filter]**. The window "Edit Selections" opens. 
 3. Add one or more of the following filter types:<br>
 a) Click **[Single]** to compare the data to a single specified value.<br>
-b) Click **[Range]** to check if the data is (not) withing a specified range of values.<br>{% if page.product != "xtract-is" %}c) Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}<br>
+b) Click **[Range]** to check if the data is (not) within a specified range of values.<br>{% if page.product != "xtract-is" %}c) Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}<br>
 3. In the **Sign** column (1), select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
 {% if page.product == "xtract-is" %} ![selections](/img/content/selections-xis.png){:class="img-responsive"} {% else %}![selections](/img/content/selections.png){:class="img-responsive"} {% endif %}
 4. Select an operator in the **Option** column (2). The operator filters data according to the table below.
@@ -78,12 +78,13 @@ b) Click **[Range]** to check if the data is (not) withing a specified range of 
    | Operator   |      Meaning      |  
    |:---------|:------------- |
    |(not) like pattern |  True if data values do (not) contain to the content of operand 1.|
-   |(not) equal to |  True if data is (not)equal to the content of operand 1.|
+   |(not) equal to |  True if data is (not) equal to the content of operand 1.|
    |at least |  True if data is greater than or equal to the content of operand 1.|
    |more than |  True if data is greater than the content of operand 1.|
    |at most | True if data is less than or equal to the content of operand 1.|
    |less than | True if data is less than the content of operand 1.|
    |(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
+   |elements equal | True if data values are part of operand 1. This option is only available for type *List*.|
 5. Enter values or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection fields (3). <br>
 a) Static values: Enter values directly into the **Low** and **High** input fields. 
 If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
