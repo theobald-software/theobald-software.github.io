@@ -12,6 +12,7 @@ Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten 
 
    | Operator   |      Bedeutung      |  
    |:---------|:------------- |
+   |(not) like pattern |  Wahr, wenn die Daten (nicht) den Inhalt von Operand 1 beinhalten. {% if page.parent == "odp" %} Hinweis: nicht alle ODP Kontexts und ODP Datenquellen unterstützen diese Option.{% endif %}|
    |(not) equal to|  Wahr, wenn die Daten (nicht) gleich dem Inhalt von Operand 1 sind.|
    |less than  | Wahr, wenn die Daten kleiner sind als der Inhalt von Operand 1.|
    |more than |  Wahr, wenn die Daten größer sind als der Inhalt von Operand 1.|

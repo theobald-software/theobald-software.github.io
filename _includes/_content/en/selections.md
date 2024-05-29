@@ -30,6 +30,7 @@ b) Click **[Range]** to check if the data is (not) within a specified range of v
 
    | Operator   |      Meaning      |  
    |:---------|:------------- |
+   |(not) like pattern |  True if data values do (not) contain to the content of operand 1.{% if page.parent == "odp" %} Note that not all ODP contexts and data sources support this option.{% endif %}|
    |(not) equal to |  True if data is (not) equal to the content of operand 1.|
    |at least |  True if data is greater than or equal to the content of operand 1.|
    |more than |  True if data is greater than the content of operand 1.|
@@ -37,7 +38,6 @@ b) Click **[Range]** to check if the data is (not) within a specified range of v
    |less than | True if data is less than the content of operand 1.|
    |(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
    |elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
-   {% if page.parent != "odp" %}|(not) like pattern |  True if data values do (not) contain to the content of operand 1.|{% endif %}
 5. Enter values or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection fields (3). <br>
 a) Static values: Enter values directly into the **Low** and **High** input fields. 
 If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
