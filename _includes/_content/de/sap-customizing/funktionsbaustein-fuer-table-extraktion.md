@@ -23,7 +23,7 @@ Es gibt zwei Funktionsbausteine für Tabellen-Extraktionen:
 - /THEO/READ_TABLE
 - Z_THEO_READ_TABLE
 
-Wir empfehlen die Installation des aktuellen Funktionsbausteins THEO/READ_TABLE:
+Wir empfehlen die Installation des aktuellen Funktionsbausteins /THEO/READ_TABLE:
 - `THEO_READ_TABLE_740SP05.zip` - kompatibel mit ABAP Version 7.40 SP05 und höher
 - `THEO_READ_TABLE_710.zip` - kompatibel mit ABAP Version 7.10 und höher
 - `THEO_READ_TABLE_640.zip` - kompatibel mit ABAP Versionen von 6.40 bis 7.03

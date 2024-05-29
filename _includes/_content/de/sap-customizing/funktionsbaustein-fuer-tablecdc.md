@@ -33,7 +33,7 @@ Die Funktionsgruppen /THEO/CDC_ECC and /THEO/CDC_S4 enthalten jeweils folgende F
 
 ### Installation von /THEO/READ_TABLE
 
-Installieren Sie den Funktionsbaustein /THEO/READ_TABLE oder Z_THEO_READ_TABLE Version >= 2.10, siehe [Funktionsbaustein für Table](./funktionsbaustein-fuer-table-extraktion).
+Installieren Sie den Funktionsbaustein /THEO/READ_TABLE, siehe [Funktionsbaustein für Table](./funktionsbaustein-fuer-table-extraktion).
 
 {: .box-note}
 **Hinweis:** Lesen Sie die README.pdf, die sich im Installationsordner (z.B.`C:\Program Files\XtractProduct\ABAP\README.pdf`) befindet, bevor Sie den Z-Funktionsbaustein installieren.

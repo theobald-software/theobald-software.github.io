@@ -32,7 +32,7 @@ The function groups /THEO/CDC_ECC and /THEO/CDC_S4 both contain the following fu
 
 ### Installation of /THEO/READ_TABLE
 
-Install the custom function module /THEO/READ_TABLE or Z_THEO_READ_TABLE version >= 2.10, see [Custom function module for Table](./custom-function-module-for-table-extraction#installation-of-theoread_table).
+Install the custom function module /THEO/READ_TABLE, see [Custom function module for Table](./custom-function-module-for-table-extraction#installation-of-theoread_table).
 
 {: .box-note}
 **Note:** Take a look at the README.pdf in the installation directory (e.g.,`C:\Program Files\[XtractProduct]\ABAP\README.pdf`) before installing any custom function modules.
