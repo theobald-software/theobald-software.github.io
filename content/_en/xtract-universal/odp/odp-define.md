@@ -10,9 +10,12 @@ weight: 2
 lang: en_GB
 progressstate: 5
 ---
+
 The following section shows how to use the ODP component.
 
 {% include _content/en/odp/odp-define.md %}
+
+
 {% include _content/en/odp/odp-settings-update_mode.md %} 
 
 {: .box-note }
@@ -22,6 +25,7 @@ When working with identical data sets, the data set with the highest sequence nu
 {% include _content/en/selections.md %}
 
 The number of defined filters is displayed in square brackets next to the *Edit* option.
+
 ****
 #### Related Links
 - [Youtube Tutorial: SAP ODP incremental load to SQL server](https://www.youtube.com/watch?v=-7pEm2VVPRg)
