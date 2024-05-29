@@ -5,7 +5,7 @@ Um Laufzeitparameter anzulegen und zuzuweisen, führen Sie die folgenden Schritt
 
 1. Klicken Sie im Hauptfenster der Komponente auf {% if page.product == "xtract-for-alteryx" %}**[Edit Parameters]**{% else %}**Edit Runtime Parameters**{% endif %}.
 Das Fenster “Edit Runtime Parameters” öffnet sich.<br>
-![dd-parameters](/img/contentedit-runtime-parameters-list.png){:class="img-responsive"}
+![dd-parameters](/img/content/edit-runtime-parameters-list.png){:class="img-responsive"}
 2. Klicken Sie auf **[Add Scalar]**, um Skalarparameter zu definieren, die als Platzhalter für echte Werte verwendet werden können.<br>
 Klicken Sie auf **[Add List]**, um Listenparameter zu definieren, die mehrere Werten enthalten können. Die Werte werden durch Kommas voneinander getrennt, z.B. 1,10 oder “1”, “10”.<br>
 Die Platzhalter müssen zur Extraktionslaufzeit mit echten Werten befüllt werden.<br>
