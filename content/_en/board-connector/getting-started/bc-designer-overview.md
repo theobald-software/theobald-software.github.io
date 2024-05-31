@@ -83,10 +83,20 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete |  Delete existing extraction  | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone |  Clone existing extraction  | - 
 ![designer-icon](/img/content/icons/designer/refresh.png) | Refresh | Update of the extraction status  | -
-![designer-icon](/img/content/icons/designer/filter.png) | Filter |  Define filters or keywords | [Define Keywords](../getting-started/general-settings#misc-tab)
+![designer-icon](/img/content/icons/designer/search.png) | Search |  Filter extraction names | [List of Extractions](#list-of-extractions)
 ![designer-icon](/img/content/icons/designer/source.png) | Source|  Select existing SAP source system  | [SAP Connection](../introduction/sap-connection)
 ![designer-icon](/img/content/icons/designer/log1.png) | Log | Open extraction log  | [Extraction Logging](../logging/logging-access-via-designer#extraction-logs)
 ![designer-icon](/img/content/icons/designer/run.png) | Run  | Run a selected extraction  | [Running an Extraction](../getting-started/run-an-extraction)
+
+### Extraction Groups
+
+![main-window-extractionlist](/img/content/board/main-window-treeview-main.png){:class="img-responsive"}
+
+Extractions can be organized in groups, see [Organize Extractions](../organize-extractions).
+The treeview in the main window of the Designer displays all extraction groups and reflects the folder structure in the following directory: 
+`C:\Program Files\BOARDConnector\config\extractions`.
+
+Select a group to display the list of extractions that are located in the corresponding directory.
 
 
 ### List of Extractions
@@ -124,10 +134,10 @@ Icon <img width=0/>| Menu Item <img width=70/>|Description <img width=200/>| Det
 ![main-window-footer](/img/content/board/main-window-footer.png){:class="img-responsive"}
 
 The status bar contains information about: 
-- Credentials
+- Login username
 - Authentication method
 - Access rights
 - License type and validity period
-- Connected server
-- Connected client
+- Connected server version
+- Connected client version
 

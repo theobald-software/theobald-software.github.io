@@ -82,10 +82,22 @@ Symbol <img width=0/>| Menüeintrag <img width=70/>|Beschreibung <img width=200/
 ![designer-icon](/img/content/icons/designer/delete.png) | Delete | Vorhandene Extraktion bearbeiten | -
 ![designer-icon](/img/content/icons/designer/clone.png) | Clone | Vorhandene Extraktion klonen | -
 ![designer-icon](/img/content/icons/designer/refresh.png) | Refresh | Aktualisierung des Extraktionsstatus | -
-![designer-icon](/img/content/icons/designer/filter.png) | Filter | Filter oder Keywords definieren | [Keywords definieren](../erste-schritte/allgemeine-einstellungen#misc-tab)
+![designer-icon](/img/content/icons/designer/search.png) | Search | Filtern von Extraktionsnamen | [Auflistung der Extraktionen ](#auflistung-der-extraktionen)
 ![designer-icon](/img/content/icons/designer/source.png)| Source | Vorhandenes SAP Quellsystem auswählen | -
 ![designer-icon](/img/content/icons/designer/log1.png) | Log | Extraktions-Log aufrufen | [Extraktions-Logging](../logging/log-zugriff-ueber-designer#extraktions-logs)
 ![designer-icon](/img/content/icons/designer/run.png)| Run  | Ausgewählte Extraktion ausführen | [Eine Extraktion ausführen](../erste-schritte/eine-extraktion-ausfuehren)
+
+
+### Extraktionsgruppen
+
+![main-window-extractionlist](/img/content/board/main-window-treeview-main.png){:class="img-responsive"}
+
+Extraktionen können in Gruppen organisiert werden, siehe [Extraktionen Organisieren](../extraktionen-organisieren).
+Die Baumansicht im Hauptfenster des Designers zeigt alle Extraktionsgruppen an und entspricht der Ordnerstruktur im Verzeichnis
+`C:\Program Files\BOARDConnector\config\extractions`.
+
+Markieren Sie eine Gruppe, um die Liste der dazugehörigen Extraktionen anzuzeigen.
+
 
 ### Auflistung der Extraktionen 
 

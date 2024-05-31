@@ -1,12 +1,12 @@
 ---
-ref: xu-14
+ref: bc-14
 layout: page
 title: Organize Extractions
 description: How to group extractions
-product: xtract-universal
-parent: xtract-universal
+product: board-connector
+parent: board-connector
 permalink: /:collection/:path
-weight: 14
+weight: 4
 lang: en_GB
 progessstate: 5
 ---
