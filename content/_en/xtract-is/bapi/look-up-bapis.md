@@ -10,6 +10,7 @@ weight: 1
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=look-up-bapis
 ---
+
 The following section shows how to use the Xtract BAPI Component.
 
 {% include _content/en/bapis-and-function-modules/bapi-extraction-define.md %}

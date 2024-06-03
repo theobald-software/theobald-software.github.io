@@ -40,7 +40,7 @@ Der gesamten Struktur nur einen Wert zuzuweisen ist nicht möglich.
 
 ### Export-Parameter
 **Exports** repräsentiert die Ausgabewerte, die von SAP zurück an den Client gesendet werden, nachdem die Funktion ausgeführt wurden.<br>
-Im Tab **Exports** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen übergeben werden.
+Im Tab **Exports** können Sie Ausgabeparameter definieren, die entweder als Skalarwerte oder Strukturen von der Komponente ausgegeben werden.
 
 #### Der Ausgabe Elemente hinzufügen
 Aktivieren Sie die Checkbox in der Ausgabespalte, um ein Element der Ausgabe hinzuzufügen.
@@ -48,6 +48,14 @@ Aktivieren Sie die Checkbox in der Ausgabespalte, um ein Element der Ausgabe hin
 {% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-ExportParams](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"}{% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 
 Um die Filterfunktion zu verwenden, geben Sie in der Kopfzeile der Spalten **Name** und **Description** Suchbegriffe ein.<br>
+
+{% if page.product == "xtract-is" %}
+#### Den Ausgabeparametern SSIS Variablen zuweisen
+
+Um einen Ausgabeparameter einer SSIS Variable zuzuweisen, wählen Sie eine existierende SSIS Variable in der Spalte **Output parameter** aus.
+Stellen Sie sicher, dass der Datentyp der SSIS Variable mit dem Datentyp des Ausgabeparameters übereinstimmt.
+
+{% endif %}
 
 ### Changings-Parameter
 

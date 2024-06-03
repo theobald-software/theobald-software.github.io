@@ -47,6 +47,13 @@ Mark the checkbox in the output column to add an item to the output.
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
+{% if page.product == "xtract-is" %}
+#### Assign Output Parameters to SSIS Variables
+
+To assign an output parameter of a BAPI or function module to an SSIS variable, select an existing SSIS variable in the column **Output parameter**. 
+Make sure that the data type of the SSIS variable matches the datatype of the output parameter.
+{% endif %}
+
 ### Changing Parameters
 
 Changing parameters represent parameters that can be used for input and output. <br>
