@@ -23,7 +23,7 @@ The main window of the {% if page.product == "xtract-for-alteryx" or page.produc
 You can enter scalar values (1) or structures (2).
 {% if page.product == "xtract-for-alteryx" %}![Define-Bapi-Data-Source](/img/content/xfa/XfA-BAPI-Parameters.png){:class="img-responsive"}{% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_ImportParams.png){:class="img-responsive"}{% else %}![Define-Bapi-Data-Source](/img/content/XU-BAPI-Parameters.png){:class="img-responsive"} {% endif %}
 2. Define the output to receive from SAP in **Exports**, see [Export Parameters](./parameters#export-parameters). <br>
-Select output by activating the checkbox next to the items. {% if page.product == "xtract-is" %}You can assign the output to an existing SSIS variable in the column **Output parameter**. {% endif %}
+Select output by activating the checkbox next to the items. {% if page.product == "xtract-is" %}You can assign the output parameters to existing SSIS variables in the column **Output parameter**. {% endif %}
 {% if page.product == "xtract-for-alteryx" %}![BAPI export parameters](/img/content/xfa/XfA-Bapi-Exports-Edit.png){:class="img-responsive"} {% elsif page.product == "xtract-is" %}![Define-Bapi-Data-Source](/img/content/xis/XtractBAPI_ExportParams.png){:class="img-responsive"} {% else %}![BAPI export parameters](/img/content/Bapi-Exports-Edit.png){:class="img-responsive"} {% endif %}
 3. Optional: If available, define input and output parameters in **Changings**, see [Changings Parameters](./parameters#changings-parameters).
 4. Add tables to the output or add table parameters as input in **Tables**, see [Table Parameters](./parameters#table-parameters). <br>
