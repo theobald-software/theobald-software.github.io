@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 ### Konfigurationsdateien 
 Alle Einstellungen von Services, Quellen, Benutzern und Servern werden im `config`-Ordner des yunIO Installationsverzeichnisses gespeichert, z.B. in `C:\Program Files\Theobald Software\yunIO\config`.
 Verwenden Sie den `config`-Ordner für Versionskontrolle oder für manuelle Backups.

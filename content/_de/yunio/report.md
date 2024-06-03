@@ -12,6 +12,11 @@ lang: de_DE
 
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Der folgende Abschnitt zeigt, wie der Integrationstyp *Report* verwendet wird.<br>
 Integrationstyp *Report* extrahiert Daten aus den am häufigsten verwendeten und benutzerdefinierten ABAP-Reports und SAP-Transaktionen.
 Eine Report-Extraktion ist möglich, wenn der Report in SAP eine tabellenartige Struktur zurückgibt.

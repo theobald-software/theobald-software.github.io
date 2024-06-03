@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Dieser Abschnitt enthält Informationen über die Server-Logs und Transaktions-Logs, die von yunIO erstellt werden.<br>
 
 ### Logs Anzeigen
@@ -69,6 +74,11 @@ Jeder Logeintrag ist einem der folgenden Typen zugewiesen:
 - **D - Debug Details:** detaillierte Informationen, die helfen, den Grund für aufgetretene Fehler zu finden.
 
 <!---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
 
 #### Struktur eines Server-Worker-Logs
 

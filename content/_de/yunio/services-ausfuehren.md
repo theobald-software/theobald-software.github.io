@@ -10,6 +10,11 @@ weight: 11
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 
 Der folgende Abschnitt zeigt, wie Sie in yunIO erstellte Services testen, integrieren und Parameter übergeben können.
 

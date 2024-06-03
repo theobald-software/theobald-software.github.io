@@ -12,6 +12,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Detaillierte Informationen zu Integrationsszenarien und weitere nützliche Artikel finden Sie in der [Theobald Software Knowledge Base](https://kb.theobald-software.com/yunio).
 
 ### Einen Service testen

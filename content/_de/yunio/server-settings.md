@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Dieser Abschnitt enthält Informationen über die yunIO Server-Einstellungen.<br>
 Öffnen Sie die Einstellungen unter dem Menüpunkt **Settings**. 
 Speichern Sie Änderungen der Einstellungen mit **[Save]**.

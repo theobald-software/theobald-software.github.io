@@ -11,6 +11,11 @@ weight: 1
 lang: en_GB
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 Welcome to the Online Help for yunIO. 
 
 yunIO is a no-code application for designing, automating, and integrating SAP processes in the cloud. <br>

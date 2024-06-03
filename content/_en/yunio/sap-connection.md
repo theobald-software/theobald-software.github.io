@@ -13,6 +13,11 @@ progressstate: 5
 ---
 
 {: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
+{: .box-warning}
 **Warning!** **Missing Authorization**
 To establish a connection to SAP, the access to general authority objects must be available.
 For more information, refer to the knowledge base article [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).

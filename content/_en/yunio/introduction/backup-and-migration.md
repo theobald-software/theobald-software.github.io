@@ -11,6 +11,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 
 ### Configuration Files
 The configuration of services, sources, users and the server are stored in the `config` folder of the yunIO installation directory, e.g., `C:\Program Files\Theobald Software\yunIO\config`.

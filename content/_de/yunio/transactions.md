@@ -10,6 +10,13 @@ weight: 19
 lang: de_DE
 old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für yunIO.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [HelpCenter für yunIO](https://helpcenter.theobald-software.com/yunio/).
+
+
 Der folgende Abschnitt beschreibt die Anwendung des Integrationstyps *Transaction*.<br>
 Verwenden Sie *Transaction*, um auf SAP Transaktionen zuzugreifen und sie für die Automatisierung zu konfigurieren.
 

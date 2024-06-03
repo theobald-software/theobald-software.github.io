@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=where-clause
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for yunIO.<br>
+Make sure to use the documentation within the new [HelpCenter for yunIO](https://helpcenter.theobald-software.com/yunio/).
+
 This section shows how to use the integration type *SAP Table or View*.
 
 {: .box-warning}
