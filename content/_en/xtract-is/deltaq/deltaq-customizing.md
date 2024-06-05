@@ -11,4 +11,4 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=customizing-check
 ---
 
-{% include _content/en/selections.md %}
+{% include _content/en/datasource-deltaq/customizing-check.md %}
