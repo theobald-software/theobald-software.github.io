@@ -74,7 +74,7 @@ Wählen Sie in der Spalte **Sign** (1) die Option *Exclude*, um die gefilterten 
    |at most | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
    |at least |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
    |(not) between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
-   |elements equal | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
+   |elements of | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
 5. Geben Sie für die Filter feste Werte ein oder wählen Sie Laufzeitparameter (3). <br>
 - Feste Werte: Geben Sie Werte direkt in die Eingabefelder unter **Low** und **High** ein.
 Wenn Laufzeitparameter verfügbar sind, prüfen Sie ob das ![static-value](/img/content/icons/runtime-parameters-static.png) Symbol neben dem Eingabefeld angezeigt wird.

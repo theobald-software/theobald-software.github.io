@@ -15,9 +15,7 @@ Der folgende Abschnitt beschreibt die Anwendung der BW Cube Komponente.
 
 {% include _content/de/bw-infocubes-und-bex-queries/eine-bw-cube-quelle-definieren.md %}
 
-{: .box-note }
-**Hinweis:** 
-BEx-Queries verwenden häufig BEx-Variablen zum Erstellen von Filtern. Für Informationen zur Verwendung von BEx-Variablen, siehe [Query Variablen](./variablen).
+
 
 
 ****

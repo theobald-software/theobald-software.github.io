@@ -13,7 +13,7 @@ The *Selection Screen* in the main window of the component corresponds to the in
 {: .box-note }
 **Note:** Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, open the input screen in SAP. 
-Click on a selection field and press the function key **[F1]** to display the technical name of the selection field. 
+Click a selection field and press the function key **[F1]** to display the technical name of the selection field. 
 
 {% endif %}
 
@@ -37,7 +37,7 @@ b) Click **[Range]** to check if the data is (not) within a specified range of v
    |at most | True if data is less than or equal to the content of operand 1.|
    |less than | True if data is less than the content of operand 1.|
    |(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-   |elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
+   |elements of | True if data values are part of operand 1. This option is only available for type *List*. |
 5. Enter values or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection fields (3). <br>
 a) Static values: Enter values directly into the **Low** and **High** input fields. 
 If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.

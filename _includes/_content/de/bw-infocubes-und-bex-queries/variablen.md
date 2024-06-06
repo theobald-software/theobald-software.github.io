@@ -27,7 +27,7 @@ Wählen Sie in der Spalte **Sign** (4) die Option *Exclude*, um die gefilterten 
    |at most | Wahr, wenn die Daten kleiner oder gleich dem Inhalt von Operand 1. sind.|
    |at least |  Wahr, wenn die Daten größer oder gleich dem Inhalt von Operand 1. sind.|
    |(not) between | Wahr, wenn die Daten (nicht) zwischen den Werten der Operanden Operand 1 und Operand 2 liegen. |
-   |elements equal | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
+   |elements of | Wahr, wenn die Daten Teil des Inhalts von Operand 1 sind. Dieser Operator ist nur für Parameter vom Typ Liste verfügbar.|
 7. Geben Sie für die Filter feste Werte ein oder wählen Sie [Laufzeitparameter](./edit-runtime-parameters) (6). <br>
 Falls verfügbar, klicken Sie auf das ![magnifying-glass](/img/content/icons/magnifying-glass.png) Symbol neben den Eingabefeldern, um eine Liste auswählbarer Variablenwerte anzuzeigen. Beispiel:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
