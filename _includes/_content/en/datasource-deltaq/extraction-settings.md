@@ -1,4 +1,4 @@
-To access the extraction settings, click }**Extraction Settings** in the main window of the component.
+To access the extraction settings, click **Extraction Settings** in the main window of the component.
 The window “DeltaQ Settings” opens. The window contains two tabs:
 
 {% if page.product == "xtract-is" %}
