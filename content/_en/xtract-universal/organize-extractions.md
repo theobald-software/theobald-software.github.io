@@ -28,8 +28,8 @@ Use **[CTRL]+[left mouse button]** to select multiple extractions.
 5. Drag and drop extractions from the list of extractions into the new subfolder. <br>
 ![main-window-treeview-move-extractions](/img/content/xu/main-window-treeview-move-extractions.png)
 
-{: .box-note }
-**Note:** The treeview in the main window of the Designer reflects the folder structure in the directory `C:\Program Files\XtractUniversal\config\extractions`.
+The treeview in the main window of the Designer reflects the folder structure in the directory `C:\Program Files\XtractUniversal\config\extractions`.
+
 
 {: .box-tip }
 **Tip:** You can assign an SAP source system or a destination to all extractions within an extraction group by using **[Ctrl]+[A]** to select all extractions in the group. 

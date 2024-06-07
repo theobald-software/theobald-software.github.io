@@ -13,6 +13,14 @@ Runs the specified extraction and waits for it to finish.
 
 Runs the specified extraction asynchronously and returns the run status immediately.
 
+
+{: .box-note }
+**Note:**  If the extraction is part of an {% if page.parent == "xtract-universal" %}[extraction group](./organize-extractions){% else %}[extraction group](../organize-extractions){% endif %}, enter the name of the extraction group before the name of the extraction.
+Separate groups with a ','.<br>
+Example: The extraction "KNA" is part of a group "Tables". Use the following command to run the extraction:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
+
+
 {: .box-warning }
 **Warning! Deprecated Endpoints:**<br>
 `[protocol]://[host]:[port]/?name=[extraction_name]` (synchronous) <br>
@@ -91,6 +99,13 @@ If the abortion is successful, a confirmation message is returned in the HTTP bo
 
 Aborts the specified extraction.
 If the abortion is successful, a confirmation message is returned in the HTTP body. 
+
+
+{: .box-note }
+**Note:**  If the extraction is part of an {% if page.parent == "xtract-universal" %}[extraction group](./organize-extractions){% else %}[extraction group](../organize-extractions){% endif %}, enter the name of the extraction group before the name of the extraction.
+Separate groups with a ','.<br>
+Example: The extraction "KNA" is part of a group "Tables". Use the following command to run the extraction:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
 
 #### Example
 

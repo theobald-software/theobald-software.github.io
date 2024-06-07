@@ -13,6 +13,12 @@ Führt die angegebene Extraktion aus und wartet darauf, dass der Prozess angesch
 ```
 Führt die angegebene Extraktion asynchron aus und gibt den Ausführungsstatus sofort zurück.
 
+{: .box-note }
+**Hinweis:** Wenn die Extraktion Teil einer {% if page.parent == "xtract-universal" %}[Extractionsgruppe](./extraktionen-organisieren){% else %}[Extraktionsgruppe](../extraktionen-organisieren){% endif %} ist, geben Sie den Namen der Extraktionsgruppe vor dem Namen der Extraktion ein.
+Trennen Sie Gruppen mit ','.<br>
+Beispiel: Die Extraktion "KNA" ist Teil der Group "Tables". Verwenden Sie den folgenden Befehl, um die Extraktion auszuführen:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
+
 {: .box-warning }
 **Warnung! Veraltete Endpunkte:**<br>
 `[protocol]://[host]:[port]/?name=[extraction_name]` (synchron) <br>
@@ -82,6 +88,13 @@ KUNNR,LAND1,NAME1,ORT01,Mean_UMSAT
 
 Bricht die angegebene Extraktion ab.
 Bei erfolgreichem Abbruch wird im HTTP-Body eine Bestätigungsmeldung zurückgegeben.
+
+
+{: .box-note }
+**Hinweis:** Wenn die Extraktion Teil einer {% if page.parent == "xtract-universal" %}[Extractionsgruppe](./extraktionen-organisieren){% else %}[Extraktionsgruppe](../extraktionen-organisieren){% endif %} ist, geben Sie den Namen der Extraktionsgruppe vor dem Namen der Extraktion ein.
+Trennen Sie Gruppen mit ','.<br>
+Beispiel: Die Extraktion "KNA" ist Teil der Group "Tables". Verwenden Sie den folgenden Befehl, um die Extraktion auszuführen:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
 
 #### Beispiel
 

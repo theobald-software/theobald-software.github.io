@@ -8,7 +8,7 @@ Unterstützt werden Skript-Ausdrücke, die auf .NET basieren, sowie folgende XU-
 | Eingabe                                                  | Beschreibung|
 |:--------------------------------------------------------|:-----------|
 |```#{Source.Name}# ```|  Name der SAP Quelle. |
-|```#{Extraction.ExtractionName}# ```| Name der Extraktion. |
+|```#{Extraction.ExtractionName}# ```| Name der Extraktion.  Wenn die Extraktion Teil einer [Extraktionsgruppe](../extraktionen-organisieren) ist, geben Sie den Namen der Extraktionsgruppe vor dem Namen der Extraktion ein. Trennen Sie Gruppen mit ',', z.B., `Tables,KNA1`, `S4HANA,Tables,KNA1`.|
 |```#{Extraction.Type}# ```|  Extraktionstyp (*Table*, *ODP*, *DeltaQ*, etc.). |
 |```#{Extraction.SapObjectName}# ```|  Name des SAP Objekts, von dem die Extraktion Daten extrahiert. |
 |```#{Extraction.Timestamp}# ```|  Zeitstempel der Extraktion.  |

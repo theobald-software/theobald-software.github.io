@@ -13,6 +13,13 @@ The timestamp corresponds to the *startedAt* element returned by [`[protocol]://
 | FinishedNoErrors | The extraction is finished without errors.             |
 | FinishedErrors   | The extraction is finished, but with minimum one error. |
 
+
+{: .box-note }
+**Note:**  If the extraction is part of an {% if page.parent == "xtract-universal" %}[extraction group](./organize-extractions){% else %}[extraction group](../organize-extractions){% endif %}, enter the name of the extraction group before the name of the extraction.
+Separate groups with a ','.<br>
+Example: The extraction "KNA" is part of a group "Tables". Use the following command to run the extraction:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
+
 #### Example
 
 `http://sherri.theobald.local:8065/status/?name=KNA1&timestamp=2024-02-05_10:23:08.025`
@@ -198,6 +205,13 @@ Returns a list of extraction runs. The result contains the following elements:
 
 {: .box-note } 
 **Note:** For information on how to interpret logs, see [Logging](./logging).
+
+
+{: .box-note }
+**Note:**  If the extraction is part of an {% if page.parent == "xtract-universal" %}[extraction group](./organize-extractions){% else %}[extraction group](../organize-extractions){% endif %}, enter the name of the extraction group before the name of the extraction.
+Separate groups with a ','.<br>
+Example: The extraction "KNA" is part of a group "Tables". Use the following command to run the extraction:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
 
 ### Get Server Logs
 

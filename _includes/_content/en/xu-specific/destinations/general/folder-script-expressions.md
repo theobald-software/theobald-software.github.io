@@ -8,7 +8,7 @@ The described scenario supports script expressions based on .NET and the followi
 | Input                                                   | Description|
 |:--------------------------------------------------------|:-----------|
 |```#{Source.Name}# ```|  Name of the extraction's SAP source.|
-|```#{Extraction.ExtractionName}# ```| Name of the extraction. |
+|```#{Extraction.ExtractionName}# ```| Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions), enter the name of the extraction group before the name of the extraction. Separate groups with a ',', e.g, `Tables,KNA1`, `S4HANA,Tables,KNA1`.|
 |```#{Extraction.Type}# ```|  Extraction type (*Table*, *ODP*, *BAPI*, etc.). |
 |```#{Extraction.SapObjectName}# ```|  Name of the SAP object the extraction is extracting data from. |
 |```#{Extraction.Timestamp}# ```|  Timestamp of the extraction.  |

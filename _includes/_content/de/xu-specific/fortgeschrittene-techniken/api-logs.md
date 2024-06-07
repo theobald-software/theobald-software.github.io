@@ -16,6 +16,12 @@ Der Zeitstempel entspricht dem von zurückgegebenen *startedAt*-Element [`[proto
 | FinishedErrors   | Die Extraktion wurde abgeschlossen, weist jedoch mindestens einen Fehler auf. |
 
 
+{: .box-note }
+**Hinweis:** Wenn die Extraktion Teil einer {% if page.parent == "xtract-universal" %}[Extractionsgruppe](./extraktionen-organisieren){% else %}[Extraktionsgruppe](../extraktionen-organisieren){% endif %} ist, geben Sie den Namen der Extraktionsgruppe vor dem Namen der Extraktion ein.
+Trennen Sie Gruppen mit ','.<br>
+Beispiel: Die Extraktion "KNA" ist Teil der Group "Tables". Verwenden Sie den folgenden Befehl, um die Extraktion auszuführen:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
+
 #### Beispiel
 
 `http://sherri.theobald.local:8065/status/?name=KNA1&timestamp=2024-02-05_10:23:08.025`
@@ -201,6 +207,13 @@ Gibt eine Liste von Extraktionsläufen zurück. Das Ergebnis enthält die folgen
 
 {: .box-note } 
 **Hinweis:** Informationen zur Interpretation von Protokollen, siehe [Logging](./logging).
+
+
+{: .box-note }
+**Hinweis:** Wenn die Extraktion Teil einer {% if page.parent == "xtract-universal" %}[Extractionsgruppe](./extraktionen-organisieren){% else %}[Extraktionsgruppe](../extraktionen-organisieren){% endif %} ist, geben Sie den Namen der Extraktionsgruppe vor dem Namen der Extraktion ein.
+Trennen Sie Gruppen mit ','.<br>
+Beispiel: Die Extraktion "KNA" ist Teil der Group "Tables". Verwenden Sie den folgenden Befehl, um die Extraktion auszuführen:<br>
+`http://sherri.theobald.local:8065/start/Tables,KNA1/`
 
 ### Serverlogs abrufen
 
