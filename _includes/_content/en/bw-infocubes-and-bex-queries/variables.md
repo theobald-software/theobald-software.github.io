@@ -20,7 +20,6 @@ b) Click **[Range]** to check if the data is (not) withing a specified range of 
 
    | Operator   |      Meaning      |  
    |:---------|:------------- |
-   |(not) like pattern |  True if data values do (not) contain to the content of operand 1.|
    |(not) equal to |  True if data is (not)equal to the content of operand 1.|
    |at least |  True if data is greater than or equal to the content of operand 1.|
    |more than |  True if data is greater than the content of operand 1.|
