@@ -26,7 +26,8 @@ b) Click **[Range]** to check if the data is (not) withing a specified range of 
    |at most | True if data is less than or equal to the content of operand 1.|
    |less than | True if data is less than the content of operand 1.|
    |(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-7. Enter values directly into the **Low** and **High** input fields or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection (6). <br>
+   |elements of | rue if data is part of operand 1. This operator is only available for parameters of type *List*.|
+8. Enter values directly into the **Low** and **High** input fields or assign {% if page.product == "xtract-is"%}SSIS variables{% else %}[runtime parameters](./edit-runtime-parameters){% endif %} to the selection (6). <br>
 a) Static values: Enter values directly into the **Low** and **High** input fields. 
 If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are available, make sure that the ![static-value](/img/content/icons/runtime-parameters-static.png) icon is displayed next to the input field.
 Clicking on the icon switches between static and dynamic input values.<br>
@@ -34,6 +35,6 @@ b) {% if page.product == "xtract-is"%}SSIS variables:{% else %}Runtime parameter
 Select an existing {% if page.product == "xtract-is"%}SSIS variable{% else %}runtime parameter{% endif %} from the drop-down list.<br>
 c) Pre-defined values: If available, click ![magnifying-glass](/img/content/icons/magnifying-glass.png) next to the input field to display a list of pre-defined values from SAP. Example:<br>
 ![Edit Variables](/img/content/xfa/xfa_query_var.png){:class="img-responsive"}
-8. Click **[OK]** to confirm your input.
-9. Click **[Load Preview]** in the main window of the component to check the result of your selection. <br>
+9. Click **[OK]** to confirm your input.
+10. Click **[Load Preview]** in the main window of the component to check the result of your selection. <br>
 If {% if page.product == "xtract-is"%}SSIS variables{% else %}runtime parameters{% endif %} are defined, you are prompted to populate the parameters with actual values.
