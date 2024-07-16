@@ -11,6 +11,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
  
 A destination defines how the extracted SAP data is processed. 
 This could be a conversion to file-based formats for local or cloud-based file systems or to deliver the data to targets like databases and other APIs. 

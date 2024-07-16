@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=evaluation
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 ### Downloading Xtract Universal
 
 You can download a trial version from the [Theobald Software website](https://theobald-software.com/en/download-trial/) and evaluate it for 30 days.

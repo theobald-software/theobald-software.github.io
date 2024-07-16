@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=einstellungen_in_qlik_sense
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 The following sections describe how Xtract Universal connects with QlikSense or QlikView.
 
 For connection purposes Xtract Universal offers a destination of type *QlikSense & QlikView*. The QlikSense & QlikView destination generates a data load script, which needs to be inserted into the data load editor of your Qlik application. Depending on whether you run a QlikSense of QlikView application, Xtract Univeral creates a different data load script.

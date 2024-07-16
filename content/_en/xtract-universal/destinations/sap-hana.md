@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=hana
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 The following section describes how to setup Xtract Universal's HANA destination.
 The HANA destination supports loading SAP data to a SAP HANA database and to SAP Data Warehouse Cloud. <br>
 

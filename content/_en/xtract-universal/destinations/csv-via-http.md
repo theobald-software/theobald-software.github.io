@@ -12,6 +12,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=csv-via-http
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 This destination is a generic CSV stream over HTTP. 
 The CSV-HTTP destination is supported by many products. The following products have been tested: Layer2, INFONEA and KNIME. 
 

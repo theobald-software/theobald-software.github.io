@@ -12,6 +12,13 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=logging
 progressstate: 5
 ---
+
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Xtract Universal logs all steps performed on a system in log files. 
 The log files are stored in the installation directory `C:\Program Files\XtractUniversal\logs`.
 

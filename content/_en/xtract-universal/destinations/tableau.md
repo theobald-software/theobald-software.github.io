@@ -12,6 +12,12 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=tableau
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 The following section describes the loading of the SAP extraction data into Tableau Analytics Platform. 
 
 The Tableau Destination enables you to save data extracted from SAP as Hyper files.

@@ -10,6 +10,11 @@ weight: 4
 lang: en_EN
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 For testing purposes extractions can be called via web service.
 Calling extractions is usually done via script, scheduler or BI-tool. 
 
