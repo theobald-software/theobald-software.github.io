@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sqp-queries
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract for Alteryx.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract for Alteryx HelpCenter](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract Query Komponente in Xtract for Alteryx.
 
 {: .box-warning}

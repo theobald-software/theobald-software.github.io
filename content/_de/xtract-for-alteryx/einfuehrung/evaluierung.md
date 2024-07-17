@@ -9,6 +9,12 @@ permalink: /:collection/:path
 weight: 2
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract for Alteryx.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract for Alteryx HelpCenter](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 ### Download von Xtract for Alteryx
 
 Sie können eine Testversion von der [Theobald Software-Website](https://theobald-software.com/en/download-trial/) herunterladen und diese 30 Tage lang testen.

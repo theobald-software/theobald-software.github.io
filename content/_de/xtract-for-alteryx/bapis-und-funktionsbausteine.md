@@ -10,6 +10,12 @@ permalink: /:collection/:path
 weight: 6
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract for Alteryx.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract for Alteryx HelpCenter](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Anwendung der Xtract BAPI-Komponente in Xtract for Alteryx.<br> 
 Die Xtract BAPI-Komponente führt via RFC-Berbindung SAP BAPIs oder Funktionsbausteine aus.
 

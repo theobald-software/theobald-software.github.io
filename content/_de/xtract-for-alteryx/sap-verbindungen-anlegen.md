@@ -14,6 +14,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract for Alteryx.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract for Alteryx HelpCenter](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 Im folgenden Abschnitt wird gezeigt, wie Sie mit dem [Data Connection Manager](https://help.alteryx.com/current/en/designer/tools/dcm---designer.html) (DCM) von Alteryx eine SAP-Verbindung erstellen.<br>
 Für die Nutzung einer beliebigen Xtract for Alteryx-Komponente ist eine SAP-Verbindung erforderlich.
 

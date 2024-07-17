@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract for Alteryx.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract for Alteryx HelpCenter](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 Um die Extraktionseinstellungen zu öffnen, klicken Sie im Hauptfenster der Komponente auf **[Extraction Settings]**.
 Das Fenster “Hierarchy Settings” öffnet sich.<br>
 ![Hierarchies-Settings](/img/content/extractors.bwhier/Hierarchy-settings.png){:class="img-responsive"}
