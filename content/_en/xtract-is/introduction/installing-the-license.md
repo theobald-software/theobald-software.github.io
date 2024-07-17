@@ -12,6 +12,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=installing-the-license
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 
 <!---Xtract IS cannot be used outside SSIS,
 which is why an SQL Server license is required, even if the SQL Server database is not used.-->

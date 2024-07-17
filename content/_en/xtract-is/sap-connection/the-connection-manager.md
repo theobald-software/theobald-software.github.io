@@ -12,6 +12,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=connection-manager
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 ### Connecting to SAP
 Every Xtract IS component needs a connection manager to establish access to the SAP system. 
 

@@ -11,6 +11,14 @@ weight: 8
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bw-loader
 ---
+
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
+
 The following section describes the functions of the Xtract BW Loader component of Xtract IS.<br>
 Unlike the other components, the Xtract IS BW Loader component is a data destination, not a data source. 
 

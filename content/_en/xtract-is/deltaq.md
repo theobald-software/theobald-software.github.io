@@ -11,6 +11,13 @@ weight: 9
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=deltaq
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
+
 The following section describes the functions of the Xtract DeltaQ component of Xtract IS.<br>
 The Xtract IS DeltaQ component allows to conduct a real delta management between the productive system and the BI/staging layer.
 DeltaQ extracts DataSources (OLTP) and extractors from ERP and ECC systems.

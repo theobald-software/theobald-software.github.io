@@ -10,6 +10,13 @@ weight: 3
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=table-join
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
+
 ### Join Functionality
 
 As of Xtract IS version 5.0.0 table joins can be defined in the *Joins* tab of the Xtract Table component. 

@@ -13,6 +13,11 @@ old_url: /Xtract-IS-EN/default.aspx?pageid=bapi
 
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 The following section describes the functions of the Xtract BAPI component of Xtract IS.<br>
 The component Xtract BAPI accesses BAPIs and RFC function modules and integrates them in the SSIS package.
 

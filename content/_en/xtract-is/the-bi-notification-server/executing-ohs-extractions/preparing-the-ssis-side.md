@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=preparing-the-ssis-side1
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 To set up the SSIS package for the external trigger, create a variable for the RequestID.
 
 ![Notification-Server-OHS-ExtractExe-01](/img/content/Notification-Server-OHS-ExtractExe-01.png){:class="img-responsive" }

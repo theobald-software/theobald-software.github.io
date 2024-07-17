@@ -11,6 +11,13 @@ weight: 15
 lang: en_GB
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
+
 The following section describes the functions of the **Xtract Table CDC** component of Xtract IS. <br>
 {% include _content/en/tablecdc/tablecdc.md %}
 

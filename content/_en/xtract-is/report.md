@@ -11,6 +11,13 @@ weight: 13
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=report
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
+
 The following section describes the functions of the Xtract Report component of Xtract IS.<br>
 The Xtract IS Report component is a data source for SSIS that enables ABAP report execution and processing of the output in SSIS data flow.
 

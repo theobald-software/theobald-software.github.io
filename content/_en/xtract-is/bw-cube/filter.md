@@ -10,6 +10,12 @@ weight: 2
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=bwcubefilter
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Each characteristic (dimension) of a BEx query or an InfoCube offers the possibility to set a filter to execute the MDX statement in BW using the selected filter values.
 
 ![BWCube-Filter-01](/img/content/BWCube-Filter-01.png){:class="img-responsive" }
