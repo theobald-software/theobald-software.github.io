@@ -12,6 +12,11 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=extraktionseinstellungen
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Eine Extraktion hat zwei Arten von Einstellungen:
 - *Extraction Settings - Extraktionseinstellungen* enthalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
 - [*General Settings - Allgemeine Einstellungen*](./general-settings) sind für alle Extraktionstypen gleich. 

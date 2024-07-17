@@ -11,6 +11,13 @@ weight: 80
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-abap-reports-ansteuern
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal Report Komponente.<br>
 
 {% include _content/de/abap_reports/report-about.md %}

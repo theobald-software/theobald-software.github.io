@@ -10,6 +10,13 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=ports
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Der Xtract Universal Server läuft als Windows-Service mit dem Hauptprozess `C:\Program Files\XtractUniversal\XtractService.exe`. 
 
 *XtractService.exe* startet zwei Listener-Prozesse und lauscht standardmäßig auf folgenden Ports:

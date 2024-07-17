@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 ### Eine Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion mit der Komponente "SAP Table or View".
 1. Im Hauptfenster des Xtract Universal Designers klicken Sie auf **[Neu]** (1).

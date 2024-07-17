@@ -9,6 +9,13 @@ permalink: /:collection/:path
 weight: 11
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Bei allen ETL-Tools stehen folgende Möglichkeiten für die Ausführung von Extraktionen zur Verfügung:
 - [Aufruf via Kommandozeile](./call-via-commandline) 
 - [Aufruf via Webservices](./call-via-webservice)

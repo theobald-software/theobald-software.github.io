@@ -13,6 +13,11 @@ progressstate: 5
 old_url: /Xtract-Universal-DE/default.aspx?pageid=xu-zielumgebungen
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Xtract Universal bietet die Möglichkeit, Daten aus verschiedenen SAP-Systemen zu extrahierten und in Zielumgebungen zu schreiben. 
 Die folgenden Zielumgebungen sind verfügbar:
 

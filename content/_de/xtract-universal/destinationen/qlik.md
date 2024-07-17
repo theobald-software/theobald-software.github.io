@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=qlik
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Die folgenden Abschnitte beschreiben, wie Xtract Universal mit QlikSense oder QlikView verbunden wird.
 
 Zum Zweck der Verbindung verfügt Xtract Universal über eine Destination vom Typ *QlikSense & QlikView*. Die Destination Qlik generiert ein Datenladeskript, das in den Data Load-Editor Ihrer Qlik-Anwendung eingefügt werden muss. Je nachdem, ob Sie eine QlikSense- oder QlikView-Anwendung ausführen, erstellt Xtract Univeral ein passendes Datenladeskript.

@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=eine-ohs-extraktion-definieren
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Eine Extraktion hat zwei Arten von Einstellungen:
 - [*Extraction Settings - Extraktionseinstellungen*](./open-hub-services-settings) enthalten Einstellungen, die nur den jeweiligen Extraktionstyp betreffen.
 - *General Settings - Allgemeine Einstellungen* sind für alle Extraktionstypen gleich. 
