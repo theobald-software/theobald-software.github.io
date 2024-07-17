@@ -11,6 +11,12 @@ weight: 14
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=table
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract IS Table Komponente.<br>
 
 {: .box-warning}

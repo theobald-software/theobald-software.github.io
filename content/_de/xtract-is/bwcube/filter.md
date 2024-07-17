@@ -10,6 +10,12 @@ weight: 2
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=filter
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Für jedes Merkmal (Dimension) einer BEx Query oder eines Infocubes besteht die Möglichkeit, einen Filter zu setzen, um den MDX-Ausdruck für die Datenextraktion mit den ausgewählten Filterwerten im BW auszuführen.
 
 ![BWCube-Filter-01](/img/content/BWCube-Filter-01.png){:class="img-responsive"}

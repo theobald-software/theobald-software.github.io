@@ -11,6 +11,12 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=sap-verbindung-mit-snc
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Um die verschlüsselte Kommunikation zwischen Xtract IS und SAP zu nutzen, können Sie die Secure Network Communication (SNC) für die Verbindung zu Ihrem SAP-System verwenden. 
 Der folgende Abschnitt erläutert die erforderliche Konfiguration des "Connection Managers" in Abhängigkeit von Ihrem SAP-System. Weitere Informationen zur SNC-Konfiguration finden Sie auf der offiziellen [Hilfe-Seite von SAP](http://help.sap.com/saphelp_nw73/helpdata/en/44/0e2e0cc7330d19e10000000a114a6b/frameset.htm). 
 

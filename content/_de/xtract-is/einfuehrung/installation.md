@@ -12,6 +12,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=installation
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Xtract IS wird für die Entwicklung und Ausführung von SSIS-Paketen benötigt. 
 
 ### Voraussetzungen 

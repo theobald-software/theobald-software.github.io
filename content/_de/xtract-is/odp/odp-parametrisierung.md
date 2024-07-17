@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 3
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 ### Custom Properties
 
 Die Eigenschaften der Komponente werden in den *Custom Properties* der Komponente definiert.

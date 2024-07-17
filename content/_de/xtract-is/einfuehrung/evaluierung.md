@@ -10,6 +10,11 @@ weight: 4
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 ### Download von Xtract IS
 
 Sie können eine Testversion von der [Theobald Software-Website](https://theobald-software.com/en/download-trial/) herunterladen und diese 30 Tage lang testen.

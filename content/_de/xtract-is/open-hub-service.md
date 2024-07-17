@@ -11,6 +11,12 @@ weight: 11
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=open-hub-service
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract OHS Komponente.<br>
 Die Xtract IS OHS Komponente ist eine SSIS-Datenquelle, mit deren Hilfe OHS-Informationsspeichen und/oder Prozessketten der OHS ausgeführt werden können, um die Daten zu empfangen.
 

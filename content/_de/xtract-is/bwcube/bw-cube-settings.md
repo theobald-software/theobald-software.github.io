@@ -10,6 +10,12 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=bw-cube-settings
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Über den *Settings*-Link im Editor öffnet sich das Einstellungsfenster.
 
 ![XIS_BWCube_Settings](/img/content/XIS_BWCube_Settings.png){:class="img-responsive"}

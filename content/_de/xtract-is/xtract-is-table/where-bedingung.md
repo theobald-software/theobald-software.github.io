@@ -10,6 +10,12 @@ weight: 4
 lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=where-bedingung
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Mit einer WHERE-Bedingung können Tabelleneinträge gefiltert werden, siehe [SAP ABAP Dokumentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abapwhere.htm).
 
 Beim Definieren einer WHERE-Bedingung können Sie auch die [Einstellungen](./extraktionseinstellungen) anpassen.
