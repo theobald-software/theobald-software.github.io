@@ -10,6 +10,12 @@ weight: 2
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=ports
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 The Board Connector Server runs as a Windows service with the main process 'C:\Program Files\BOARDConnector\BCService.exe'. 
 
 *BCService.exe* starts the following listener processes and listens on the following ports by default:

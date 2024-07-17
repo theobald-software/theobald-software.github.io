@@ -10,6 +10,12 @@ weight: 1
 lang: en_GB
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 ### Connecting to a Server
 1. Launch the Board Connector Designer.
 2. Connect the Designer to the Board Connector Server and the extraction repository.

@@ -12,6 +12,11 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=user-management
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 There are two ways of upgrading the product version from Board Connector version 2.x and 3.x to version 4.x:
 - Upgrade during installation
 - Manual upgrade

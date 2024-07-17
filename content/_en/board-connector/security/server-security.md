@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=server-security
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 ### About
 
 This section is about restricting access to Xtract Universal/Board Connector's built in web server to predefined users or user groups. <br>

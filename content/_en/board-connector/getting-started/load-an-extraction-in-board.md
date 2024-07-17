@@ -11,6 +11,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 {: .box-note }
 **Note:** When using Board SaaS with Board Connector, a recent software change requires users to update Board and to change the connection URL of the Data Reader.
 Set the connection URL of the Board Data Reader from TCP to an HTTP connection (port 8097) or an HTTPS (port 8197) connection.
