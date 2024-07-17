@@ -11,6 +11,12 @@ weight: 5
 lang: en_GB
 
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract for Alteryx.<br>
+Make sure to use the documentation within the new [Xtract for Alteryx](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 The following section gives a general introduction to working with Xtract for Alteryx using the Xtract Table component as an example.
 The information described in the following section is a prerequisite for all subsequent sections.
 

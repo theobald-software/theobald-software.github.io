@@ -13,6 +13,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract for Alteryx.<br>
+Make sure to use the documentation within the new [Xtract for Alteryx](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 The following section shows how to create an SAP connection using the [Data Connection Manager](https://help.alteryx.com/current/en/designer/tools/dcm---designer.html) (DCM) of Alteryx.<br>
 An SAP connection is required to use any Xtract for Alteryx component.
 
