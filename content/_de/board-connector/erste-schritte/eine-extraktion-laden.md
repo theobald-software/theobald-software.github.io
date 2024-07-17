@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 
 {: .box-note }
 **Hinweis:** Wenn Sie Board SaaS mit Board Connector verwenden, müssen Sie im Rahmen eines kürzlichen Softwareupdates Ihre Board Version aktualisieren und die Verbindungs-URL im Data Reader anpassen.

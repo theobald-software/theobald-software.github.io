@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=tablejoin
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der **Table CDC** Komponente.<br>
 {% include _content/de/tablecdc/tablecdc.md  %}
 

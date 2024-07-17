@@ -10,6 +10,11 @@ weight: 6
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Der folgende Abschnitt enthält Informationen zur Web-API von Board Connector.
 
 Board Connector bietet eine Web-API, die das Ausführen von Extraktionen und das Abfragen von Metainformationen und Extraktionsprotokollen von Board Connector über Webaufrufe ermöglicht.

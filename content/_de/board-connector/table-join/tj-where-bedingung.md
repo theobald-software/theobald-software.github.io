@@ -10,6 +10,11 @@ weight: 4
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Im Bereich *Criteria* klicken Sie auf den Link, um die WHERE-Bedingung definieren. 
 
 ![tj-where-0](/img/content/tj-where-0.png){:class="img-responsive"}
