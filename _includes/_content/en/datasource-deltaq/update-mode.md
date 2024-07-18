@@ -7,20 +7,21 @@ The data that is extracted is defined by the **Update Mode** setting of the Delt
 In the main window of the component select an **Update Mode** from the drop-down menu.
 ![Update-Mode2](/img/content/deltaq-extraction-seetings.png ){:class="img-responsive"}
 
-**Update Mode** offers the following options:
+The {{ deltaq }} {{ component }} offers the following update modes:
 
-|  Mode   | Description |
-|:--- | :--- |
-| Full  | Extracts all data that match the set selection criteria.|
-| Delta (Delta Update)| Only extracts data added or changed on the SAP system since the last delta request. [Initialize the delta process](#initializing-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
-| Init (Delta Initialization)| Extracts all data as full load and initializes the delta process. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
-| Repeat  | Repeats the last delta run and updates and any delta data accumulated since the last run. Deletes any data from the last (unsuccessful) delta update before running a repeat. You can run a repeat multiple times.|
-| InitNoData (Delta Init without data)| Initializes the delta process without extracting any data from the SAP DataSources. The result of the *Delta Init* is a **[Maintenance]** on the SAP side. When re-initializing a delta process, first delete any existing Inits by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).|
-| InitNoncumulative (Non-cumulative init)|  Relevant for DataSources like *2LIS_03_BX*.  |
-| Activate (Activate don't extract)| Activates a DataSource similar to clicking **[Activate]**, but it is more practical when activating DataSources in a batch. No data is extracted. |
+|  Mode   | Parameter <br>Value | Description |
+|:--- | :--- | :--- |
+| Full  | *Full* | Extracts all data that match the set selection criteria.|
+| Delta Update| *Delta* | Only extracts data added or changed on the SAP system since the last delta request. [Initialize a delta process](#initialize-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
+| Delta Initialization| *Init* | Extracts all data as full load and initializes the delta process. When re-initializing a delta process, first delete any existing Inits using the **[Maintenance]** button in the [{{ settings }}](settings.md) menu.|
+| Repeat  | *Repeat* | Repeats the last delta run and updates and any delta data accumulated since the last run. Deletes any data from the last (unsuccessful) delta update before running a repeat. You can run a repeat multiple times.|
+| Delta Init (without data)| *InitNoData* | Initializes the delta process without extracting any data from the SAP DataSources. The result of the *Delta Init* on the SAP side. When re-initializing a delta process, first delete any existing Inits using the **[Maintenance]** button in the [{{ settings }}](settings.md) menu.|
+| Non-cumulative init| *InitNoncumulative* | Relevant for DataSources like *2LIS_03_BX*.  |
+| Activate (don't extract)| *Activate* | Activates a DataSource similar to the **[Activate]** button, but it is more practical when activating DataSources in a batch. No data is extracted. |
 
 {% if page.product == "xtract-universal" %}
-**Update mode** can be set dynamically at runtime using the **updateType** extraction parameter, see [Run an Extraction](../execute-and-automate-extractions/extraction-parameters#run-an-extraction).<br>
+**Update mode** can be set dynamically at runtime using the parameters values to overwrite the extraction parameter *updateMode*, see [Run an Extraction](../execute-and-automate-extractions/extraction-parameters#run-an-extraction).<br>
+
 ![Update-Mode1](/img/content/updatetype_runtime_parameter.png ){:class="img-responsive"}
 {% endif %}
 
