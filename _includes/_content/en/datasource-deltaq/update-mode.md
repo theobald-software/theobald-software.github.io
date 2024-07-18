@@ -9,7 +9,7 @@ In the main window of the component select an **Update Mode** from the drop-down
 
 The {{ deltaq }} {{ component }} offers the following update modes:
 
-|  Mode   | Parameter <br>Value | Description |
+|  Mode   | Parameter Value | Description |
 |:--- | :--- | :--- |
 | Full  | *Full* | Extracts all data that match the set selection criteria.|
 | Delta Update| *Delta* | Only extracts data added or changed on the SAP system since the last delta request. [Initialize a delta process](#initialize-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
