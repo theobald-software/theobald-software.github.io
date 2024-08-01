@@ -9,6 +9,13 @@ permalink: /:collection/:path
 weight: 9
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Der folgende Abschnitt zeigt die Verwendung des Konsolenprogramms *xu.exe* zum Einplanen von Extraktionen über Scheduler diverser Drittanbieter. 
 
 Exemplarisch wird die Einrichtung für den Windows Task Scheduler und den SQL Server Agent nachfolgend beschrieben.

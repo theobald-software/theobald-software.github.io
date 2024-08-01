@@ -11,6 +11,11 @@ lang: en_GB
 progessstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 This page shows how to organize extractions in groups to improve maintenance.
 
 ### Group Extractions

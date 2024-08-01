@@ -9,6 +9,12 @@ permalink: /:collection/:path
 weight: 3
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 ### Join-Funktionalität
 Ab Board Connector Version 5.0.0 können Table Joins in dem Tab *Joins* der Xtract Table-Komponente definiert werden.
 ![Table join ](/img/content/table-join-tab.png){:class="img-responsive"}

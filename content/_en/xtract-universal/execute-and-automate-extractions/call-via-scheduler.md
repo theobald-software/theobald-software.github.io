@@ -10,6 +10,11 @@ weight: 9
 lang: en_EN
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 This section shows how to use the console program *xu.exe* to schedule extractions with third party scheduling tools.
 Windows Task Scheduler and the SQL Server Agent are used as examples for setting up extraction schedules.
 

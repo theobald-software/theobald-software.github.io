@@ -10,6 +10,11 @@ weight: 4
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Sie können eine Extraktion via Webservice-Aufruf ausführen. 
 Der Aufruf einer Extraktion erfolgt in der Regel über ein Skript, Scheduler oder BI-Tool. 
 

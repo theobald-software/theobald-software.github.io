@@ -13,6 +13,11 @@ progressstate: 5
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Eine Destination definiert, wie die extrahierten SAP Daten verarbeitet werden. 
 Daten können für lokale oder cloudbasierte Dateisysteme in ein entsprechendes Datenformat konvertiert werden oder direkt an Zielumgebungen wie Datenbanken und andere APIs übergeben werden. 
 Für eine komplette Liste verfügbarer Destinationen, siehe [Destinationen](../destinationen).

@@ -11,6 +11,12 @@ weight: 55
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-hierarchien
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal BW Hierarchy Komponente.<br>
 Die Komponente BW Hierarchy ermöglicht die Extraktion von Hierarchien aus einem SAP BW System.
 

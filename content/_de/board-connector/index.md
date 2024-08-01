@@ -11,6 +11,12 @@ weight: 1
 lang: de_DE
 old_url: /BOARD-Connector-DE/
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Willkommen in der Online Help vom Board Connector.
 
 Der Board Connector ist ein SAP Connector, der diverse SAP Objekte im Pull-Verfahren im Board Server verfügbar macht. 

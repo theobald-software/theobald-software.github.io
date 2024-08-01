@@ -11,6 +11,13 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=zugriffsverwaltung1
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Die Zugriffsteuerung kann auf mehreren Ebenen erfolgen. Die hinterlegten Berechtigungen auf Server-Ebene werden durch Berechtigungen auf Source- und Extraktionsebene erweitert.
 
 

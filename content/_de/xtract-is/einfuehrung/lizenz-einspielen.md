@@ -11,6 +11,12 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=lizenz-einspielen
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 ### Über das Lizenzkonzept von Xtract IS
 Die folgende Grafik zeigt, auf welchen Rechnern die Installation von Xtract IS mit einer gültigen Lizenz erforderlich ist.  
 ![client_Server_architecture_xis_final](/img/content/xis/client_server_xis.png){:class="img-responsive" width="800px"} <br>

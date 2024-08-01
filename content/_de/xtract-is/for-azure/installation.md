@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=installation1
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Im folgenden Abschnitt wird beschrieben, wie Sie Xtract IS für Azure auf einer Azure SSIS-IR für die Ausführung von SSIS-Paketen mit Xtract IS-Komponenten einrichten.
 
 ### Manuelles Setup

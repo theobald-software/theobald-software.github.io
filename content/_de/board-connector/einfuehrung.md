@@ -11,6 +11,12 @@ weight: 3
 lang: de_DE
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 ### Grundfunktionalität - Architektur
 
 Board Connector für SAP ist eine Middleware-Komponente, die eine Datenextraktion aus SAP-Systemen ermöglicht, um die Daten in Board weiterzuverarbeiten.

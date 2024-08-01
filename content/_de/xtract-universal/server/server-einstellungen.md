@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=server-einstellungen
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 ### Servereinstellungen öffnen
 Navigieren Sie im Hauptfenster des Designers zu **[Server] > [Settings]**. Das Fenster  wird geöffnet. Im Fenster "Server-Settings" gibt es zwei Tabs:
 - *Configuration Server*

@@ -14,6 +14,11 @@ old_url: /BOARD-Connector-EN/default.aspx?pageid=sap-connection
 ---	
 
 {: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
+{: .box-warning}
 **Warning!** **Missing Authorization**
 To establish a connection to SAP the access to general authority objects (RFC) must be available.
 Make sure to gain access to the general authority objects. For more information, refer to the knowledge base article [SAP User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).

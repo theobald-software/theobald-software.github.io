@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Dieser Schritt ist optional. Es wird gezeigt, wie das Extraktionsergebnis in einem Webbrowser dargestellt werden kann, um sicherzustellen, dass die Extraktion ordnungsgemäß abläuft und das benötigte Ergebnis liefert.
 																																							 
 							

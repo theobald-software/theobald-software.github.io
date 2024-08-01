@@ -12,6 +12,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=erweiterte-table-eigenschaften
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 ### Extraction Settings Öffnen
 Innerhalb des Fensters "Extract Single and Joint SAP Tables or Views" klicken Sie auf **Settings**. Das Fenster "Table Settings" wird geöffnet. 
 

@@ -10,6 +10,13 @@ permalink: /:collection/:path
 weight: 10
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Dieser Abschnitt enthält eine allgemeine Einführung in Xtract Universal und die notwendigen Voraussetzungen zum Betrieb und Einsatz des SAP-Hubs.<br>
 Einen kurzen Einblick in die Benutzung von Xtract Universal erhalten Sie in unseren Tutorial-Videos [Get started with Xtract Universal - Creating a SAP source connection](https://www.youtube.com/watch?v=Qe8tRYNnYkc) und [Get started with Xtract Universal - Set up your first extraction](https://www.youtube.com/watch?v=pdlsfm0dLMA).
 

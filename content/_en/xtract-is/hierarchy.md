@@ -11,6 +11,13 @@ weight: 7
 lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=hierarchy
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
+
 The following section describes the functions of the Xtract Hierarchy component of Xtract IS.<br>
 The Xtract Hierarchy component is an SSIS data source that enables the extraction of hierarchies from an SAP BW / BI system.
 

@@ -11,17 +11,13 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=license
 progressstate: 5
 ---
-<!--- ### About the licensing concept of Xtract Universal
-Xtract Universal is licensed per target environment, source system and Windows server. <br>
-The following graphic shows on which workstations the installation of Xtract Universal with a valid license is required.   
 
-![client-server-archi](/img/content/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
-A demo license is automatically installed with the installation of Xtract Universal.<br>
-A regular license is provided in the [costumer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. 
-The product license is bound to your company and a specific server name.<br>
-If you run Xtract Universal Designer and Xtract Universal Server on different machines, it is only necessary to replace the license on the server.
- -->
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 
 ### About the licensing concept of Xtract Universal
 

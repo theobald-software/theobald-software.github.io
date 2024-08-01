@@ -12,6 +12,13 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=xtract_is_for_azure
 progressstate: 3
 ---
+
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/xtract-is-for-azure/introduction/).
+
 ### About Azure SSIS-IR
 
 *Xtract IS for Azure* is a solution that allows running SSIS packages, containing Xtract IS components, on an [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://docs.microsoft.com/en-us/azure/data-factory/create-azure-ssis-integration-runtime).

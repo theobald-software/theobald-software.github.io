@@ -10,6 +10,11 @@ weight: 11
 lang: en_EN
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 All ETL tools offer the following options for running extractions:
 - [Call via command line](./call-via-commandline) 
 - [Call via webservices](./call-via-webservice)

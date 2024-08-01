@@ -11,6 +11,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 The following section gives an overview of the functions accessible from the main window of the Xtract ODP component.
 ![ODP Component](/img/content/odp/odp_overview.png){:class="img-responsive"}
 

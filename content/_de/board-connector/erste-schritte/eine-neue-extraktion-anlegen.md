@@ -11,6 +11,11 @@ lang: de_DE
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 
 ### Eine Extraktion anlegen
 Das folgende Beispiel zeigt die Erstellung einer Extraktion unter Verwendung der Komponente "SAP Table or View".

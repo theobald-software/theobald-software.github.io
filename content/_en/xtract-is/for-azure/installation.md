@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /Xtract-IS-EN/default.aspx?pageid=installation1
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract IS.<br>
+Make sure to use the documentation within the new [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/xtract-is-for-azure/introduction/).
+
 The following section describes how to setup Xtract IS for Azure on an Azure SSIS-IR for running SSIS packages containing Xtract IS components.
 
 ### Manual Setup

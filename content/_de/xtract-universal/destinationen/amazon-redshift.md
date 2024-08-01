@@ -12,6 +12,13 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=redshift
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Der folgende Abschnitt behandelt das Laden der SAP-Extraktionsdaten in [Amazon Redshift](https://aws.amazon.com/de/redshift/).<br>
 Für mehr Informationen über Amazon Redshift, siehe [Erste Schritte mit Amazon Redshift](https://docs.aws.amazon.com/de_de/redshift/latest/gsg/getting-started.html).
 

@@ -12,6 +12,11 @@ lang: en_GB
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract for Alteryx.<br>
+Make sure to use the documentation within the new [Xtract for Alteryx](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 The following section describes the functions of the Table component of Xtract for Alteryx.<br>
 The Table component can be used to extract content from SAP tables and views and process it in Alteryx.
 The Table component is also used to join several tables on the SAP side, see [Table Joins](./table/table-joins).<br> 

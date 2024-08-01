@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=report-extraktionseinstellungen
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Verwenden Sie Laufzeitparameter, um [Query Variablen](./variablen) oder [Dimensionsfilter](./eine-bw-cube-quelle-definieren#einstellen-eines-dimensionsfilters) dynamisch zur Laufzeit anzupassen.
 
 

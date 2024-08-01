@@ -13,6 +13,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=sharepoint_list
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 The following section describes the loading of the SAP extraction data into a Custom list on a SharePoint server.
 
 ## Requirements

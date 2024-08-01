@@ -11,6 +11,12 @@ weight: 12
 lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=bw-hierarchies
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 The following section describes the functions of the Hierarchy component of Board Connector. <br>
 
 {: .box-warning}

@@ -13,6 +13,11 @@ progressstate: 5
 old_url: /Xtract-Universal-EN/default.aspx?pageid=destinations
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Xtract Universal allows you to extract data from SAP systems and load them to different destination environments.
 The following destinations are available:  
 

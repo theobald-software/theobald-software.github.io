@@ -11,6 +11,11 @@ lang: en_GB
 old_url: /BOARD-Connector-EN/default.aspx?pageid=start-server
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Board Connector.<br>
+Make sure to use the documentation within the new [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 When executing *BOARDConnectorSetup.exe* the Board Connector server is installed and started as a standard Windows..
 
 Make sure to mark the option "Server > Install Service" during the [Installation](../introduction/installation-and-update).

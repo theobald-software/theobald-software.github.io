@@ -10,6 +10,12 @@ permalink: /:collection/:path
 weight: 8
 lang: en_GB
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract for Alteryx.<br>
+Make sure to use the documentation within the new [Xtract for Alteryx](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 The following section describes the functions of the BW Hierarchy component of Xtract for Alteryx.<br>
 The component BW Hierarchy enables the extraction of hierarchies from an SAP BW system.
 
@@ -49,5 +55,10 @@ The **Preview** subsection [displays the fields](./bwhierarchy/bwhier-define#to-
 More information on working with the Xtract Hierarchy component is provided in the following sections.
 
 ----
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract for Alteryx.<br>
+Make sure to use the documentation within the new [Xtract for Alteryx](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
 
 {% include _content/table-of-contents.html parent=page.childidentifier collection=site.en %}

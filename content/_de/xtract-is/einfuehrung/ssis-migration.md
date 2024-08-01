@@ -11,6 +11,11 @@ lang: de_DE
 old_url: /Xtract-IS-DE/default.aspx?pageid=ssis-migration
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Der folgende Abschnitt befasst sich mit der Migration von SSIS Paketen mit Xtract-Komponenten von einer niedrigeren SQL Server Version auf eine höhere Version. 
 
 Wenn Sie von SQL Server 2012 oder niedriger nach SQL Server 2019 migrieren, folgen Sie der Anleitung [Migration von SQL Server 2008/2012 nach SQL Server 2019](#migration-von-sql-server-20082012-nach-sql-server-2019).<br>

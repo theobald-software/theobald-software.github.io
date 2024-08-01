@@ -10,6 +10,11 @@ weight: 2
 lang: de_DE
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Im Beispiel mit den MARA- und MAKT-Tabellen, ist das Feld MATNR (Materialnummer) in beiden Tabellen ein Schlüsselfeld. Daher wird MATNR anhand der Namensgleichheit für die Verknüpfung der beiden Tabellen verwendet. <br>
 Wenn der Mauszeiger sich über dem Join-Rechteck befindet, werden Tooltips mit den jeweiligen Feldverknüpfungen angezeigt.
 

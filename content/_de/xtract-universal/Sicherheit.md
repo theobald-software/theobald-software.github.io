@@ -12,6 +12,11 @@ lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=sicherheit_in_xu_3_x
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Die Kommunikationssicherheit zwischen dem Designer und dem Server wird mit Hilfe folgender Verfahren gewährleistet:
 - Authentisierung (authentication) 
 - Transportverschlüsselung (transport encryption)

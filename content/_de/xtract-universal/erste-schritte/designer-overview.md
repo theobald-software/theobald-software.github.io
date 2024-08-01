@@ -12,6 +12,11 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=zusaetzliche-funktionen-im-des
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Der Designer bietet verschiedenen Funktionalitäten für eine Extraktion.
 
 {: .box-tip }

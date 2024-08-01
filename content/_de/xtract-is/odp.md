@@ -10,6 +10,12 @@ permalink: /:collection/:path
 weight: 10
 lang: de_DE
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract IS ODP Komponente.<br>
 {% include _content/de/odp/odp-introduction.md %}
 

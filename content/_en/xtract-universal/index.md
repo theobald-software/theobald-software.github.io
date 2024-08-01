@@ -12,6 +12,12 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
+
 Welcome to the Online Help for Xtract Universal. 
 
 Xtract Universal is an SAP Connector for data extraction from SAP to various target environments. The extracted data can than be further processed  e.g., 

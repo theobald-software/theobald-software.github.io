@@ -12,6 +12,11 @@ old_url: /Xtract-Universal-EN/default.aspx?pageid=extraction-parameters
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 The Xtract Universal Designer can run extractions by passing parameters that define how data is extracted from the source.
 
 The following categories of extraction parameters are available:

@@ -13,6 +13,11 @@ old_url: /BOARD-Connector-DE/default.aspx?pageid=sicherheit
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Board Connector.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Board Connector HelpCenter](https://helpcenter.theobald-software.com/board-connector/documentation/introduction/).
+
 Die Kommunikationssicherheit zwischen dem Designer und dem Server wird mit Hilfe folgender Verfahren gewährleistet:
 - Authentisierung (authentication) 
 - Transportverschlüsselung (transport encryption)

@@ -11,6 +11,12 @@ weight: 50
 lang: de_DE
 old_url: /Xtract-Universal-DE/default.aspx?pageid=bw-infocubes-und-bex-queries
 ---
+
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract Universal.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 Der folgende Abschnitt beschreibt die Funktion der Xtract Universal BW Cube Komponente.<br>
 
 {: .box-warning}

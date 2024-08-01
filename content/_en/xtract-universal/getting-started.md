@@ -12,6 +12,11 @@ lang: en_GB
 old_url: /Xtract-Universal-EN/default.aspx?pageid=getting-started
 ---
 
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract Universal.<br>
+Make sure to use the documentation within the new [Xtract Universal HelpCenter](https://helpcenter.theobald-software.com/xtract-universal/documentation/introduction/).
+
 This section contains a general introduction to Xtract Universal.
 This section is therefore a prerequisite for all subsequent sections.<br>
 For a short introduction on how to use Xtract Universal, refer to our video tutorials [Get started with Xtract Universal - Creating an SAP source connection](https://www.youtube.com/watch?v=Qe8tRYNnYkc) and [Get started with Xtract Universal - Set up your first extraction](https://www.youtube.com/watch?v=pdlsfm0dLMA).

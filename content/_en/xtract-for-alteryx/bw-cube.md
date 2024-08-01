@@ -11,6 +11,12 @@ weight: 7
 lang: en_GB
 progressstate: 5
 ---
+
+{: .box-warning}
+**Warning: Deprecated documentation** <br>
+You are using the old version of the online help for Xtract for Alteryx.<br>
+Make sure to use the documentation within the new [Xtract for Alteryx](https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/introduction/).
+
 The following section describes the functions of the Xtract Cube component in Xtract for Alteryx.<br>
 The Xtract Cube component can be used to extract data from SAP BW (BEx) Queries and InfoProviders (e.g. InfoCubes). 
 The Xtract Cube component supports two different extraction modes: MDX and BICS (beta).

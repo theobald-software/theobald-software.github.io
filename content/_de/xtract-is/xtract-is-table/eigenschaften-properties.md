@@ -12,6 +12,11 @@ old_url: /Xtract-IS-DE/default.aspx?pageid=erweiterte-table-eigenschaften
 progressstate: 5
 ---
 
+{: .box-warning}
+**Warnung: Veraltete Dokumentation!** <br>
+Sie verwenden die alte Version der Online-Hilfe für Xtract IS.<br>
+Verwenden Sie die *englischsprachige* Dokumentation im neuen [Xtract IS HelpCenter](https://helpcenter.theobald-software.com/xtract-is/documentation/introduction/).
+
 
 Die Benutzerdefinierte Eigenschaften (Custom Properties) der Xtract Table Komponente repräsentieren die Eigenschaften der Komponente und werden im “Properties” Fenster der Komponente angezeigt.
 
